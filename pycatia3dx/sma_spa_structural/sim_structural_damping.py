@@ -14,59 +14,57 @@ from pycatia3dx.sma_spa_structural.sim_modal_damping import SimModalDamping
 
 
 class SimStructuralDamping(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimStructuralDamping
-                | 
-                | Represents the Structural Damping object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimStructuralDamping as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyStructuralDamping As SimStructuralDamping
-                |      Set MyStructuralDamping = MyFeatures.Add("SimStructuralDamping")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimStructuralDamping named
-                |     "Structural Damping.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyStructuralDamping As SimStructuralDamping
-                |      Set MyStructuralDamping = MyFeatures.Item("Structural Damping.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a
-                |     SimStructuralDamping as following:
-                | 
-                |      ...
-                |      myStructuralDamping = myFeatures.Add("SimStructuralDamping")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a
-                |     SimStructuralDamping named "Structural Damping.1" as
-                |     following:
-                | 
-                |      ...
-                |      myStructuralDamping = myFeatures.Item("Structural Damping.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimStructuralDamping
+                
+                Represents the Structural Damping object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimStructuralDamping as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyStructuralDamping As SimStructuralDamping
+                     Set MyStructuralDamping = MyFeatures.Add("SimStructuralDamping")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimStructuralDamping named
+                    "Structural Damping.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyStructuralDamping As SimStructuralDamping
+                     Set MyStructuralDamping = MyFeatures.Item("Structural Damping.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a
+                    SimStructuralDamping as following:
+                
+                     ...
+                     myStructuralDamping = myFeatures.Add("SimStructuralDamping")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a
+                    SimStructuralDamping named "Structural Damping.1" as
+                    following:
+                
+                     ...
+                     myStructuralDamping = myFeatures.Item("Structural Damping.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -78,11 +76,10 @@ class SimStructuralDamping(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -101,11 +98,10 @@ class SimStructuralDamping(AnyObject):
     def global_damping(self) -> SimGlobalDamping:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property GlobalDamping() As SimGlobalDamping (Read Only)
-                |     Returns the global damping.
+                Property GlobalDamping() As SimGlobalDamping (Read Only)
+                    Returns the global damping.
 
         :return: SimGlobalDamping
         """
@@ -116,11 +112,10 @@ class SimStructuralDamping(AnyObject):
     def modal_damping(self) -> SimModalDamping:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ModalDamping() As SimModalDamping (Read Only)
-                |     Returns the modal damping. 
+                Property ModalDamping() As SimModalDamping (Read Only)
+                    Returns the modal damping. 
 
         :return: SimModalDamping
         """
@@ -128,4 +123,4 @@ class SimStructuralDamping(AnyObject):
         return SimModalDamping(self.com_object.ModalDamping)
 
     def __repr__(self):
-        return f'SimStructuralDamping(name="{ self.name }")'
+        return f'SimStructuralDamping(name="{self.name}")'

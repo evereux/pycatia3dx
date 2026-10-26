@@ -12,22 +12,20 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrCategoryMngt(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrCategoryMngt
-                | 
-                | Object to manage Str functions category.
-                | Role: To access category of structure object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrCategoryMngt
+                
+                Object to manage Str functions category.
+                Role: To access category of structure object.
     
     """
 
@@ -39,20 +37,19 @@ class StrCategoryMngt(AnyObject):
     def automatic_name(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AutomaticName() As boolean
-                |     Returns or Sets the naming mode of this object: automatic or manual. (TRUE = automatic, FALSE = manual)
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in whether object has AutomaticName mode or
-                |              not.
-                |              
-                | 
-                |              StrAutomaticName = ObjStrCategoryMngt.AutomaticName
+                Property AutomaticName() As boolean
+                    Returns or Sets the naming mode of this object: automatic or manual. (TRUE = automatic, FALSE = manual)
+                
+                    Example:
+                
+                
+                             This example retrieves in whether object has AutomaticName mode or
+                             not.
+                             
+                
+                             StrAutomaticName = ObjStrCategoryMngt.AutomaticName
 
         :return: bool
         """
@@ -71,22 +68,21 @@ class StrCategoryMngt(AnyObject):
     def category_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CategoryName() As CATBSTR
-                |     Returns or Sets the CategoryName of this object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves CategoryName of the panel or
-                |              profile.
-                |              
-                | 
-                |              Dim ObjStrCategoryMngt As StrCategoryMngt
-                |              Set ObjStrCategoryMngt = ObjSfdPanel.StrCategoryMngt
-                |              StrCategoryName = ObjStrCategoryMngt.CategoryName
+                Property CategoryName() As CATBSTR
+                    Returns or Sets the CategoryName of this object.
+                
+                    Example:
+                
+                
+                             This example retrieves CategoryName of the panel or
+                             profile.
+                             
+                
+                             Dim ObjStrCategoryMngt As StrCategoryMngt
+                             Set ObjStrCategoryMngt = ObjSfdPanel.StrCategoryMngt
+                             StrCategoryName = ObjStrCategoryMngt.CategoryName
 
         :return: str
         """
@@ -104,19 +100,18 @@ class StrCategoryMngt(AnyObject):
     def get_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCategory() As CATBSTR
-                |     Returns the category of this object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in category of object.
-                |              
-                | 
-                |              StrCategory = ObjStrCategoryMngt.GetCategory
+                Func GetCategory() As CATBSTR
+                    Returns the category of this object.
+                
+                    Example:
+                
+                
+                             This example retrieves in category of object.
+                             
+                
+                             StrCategory = ObjStrCategoryMngt.GetCategory
 
         :return: str
         """
@@ -125,20 +120,19 @@ class StrCategoryMngt(AnyObject):
     def set_category(self, i_category: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCategory(CATBSTR iCategory)
-                |     Sets the category of this object.
-                | 
-                |     Parameters:
-                |         iCategory
-                |             New category of the object. 
-                | 
-                |     Example:
-                |              This example sets category of object.
+                Sub SetCategory(CATBSTR iCategory)
+                    Sets the category of this object.
+                
+                    Parameters:
+                        iCategory
+                            New category of the object. 
+                
+                    Example:
+                             This example sets category of object.
                 |
-                |              ObjStrCategoryMngt.SetCategory "SldPanel"
+                             ObjStrCategoryMngt.SetCategory "SldPanel"
 
         :param str i_category:
         :return: None
@@ -146,4 +140,4 @@ class StrCategoryMngt(AnyObject):
         return self.com_object.SetCategory(i_category)
 
     def __repr__(self):
-        return f'StrCategoryMngt(name="{ self.name }")'
+        return f'StrCategoryMngt(name="{self.name}")'

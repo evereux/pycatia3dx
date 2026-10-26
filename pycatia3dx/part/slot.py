@@ -12,28 +12,26 @@ from pycatia3dx.part.sweep import Sweep
 
 
 class Slot(Sweep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.SketchBasedShape
-                |                             CATPartIDLItf.Sweep
-                |                                 Slot
-                | 
-                | Represents the slot shape.
-                | The slot shape is made up of a profile represented by a sketch swept along a
-                | center curve represented by another sketch. This is a "negative" shape: it
-                | removes material from the body it belongs to. The profile sketch is usually
-                | drawn on another shape face.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.SketchBasedShape
+                                            CATPartIDLItf.Sweep
+                                                Slot
+                
+                Represents the slot shape.
+                The slot shape is made up of a profile represented by a sketch swept along a
+                center curve represented by another sketch. This is a "negative" shape: it
+                removes material from the body it belongs to. The profile sketch is usually
+                drawn on another shape face.
 
     """
 
@@ -42,4 +40,4 @@ class Slot(Sweep):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'Slot(name="{ self.name }")'
+        return f'Slot(name="{self.name}")'

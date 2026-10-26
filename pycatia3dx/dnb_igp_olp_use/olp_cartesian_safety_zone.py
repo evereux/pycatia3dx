@@ -13,25 +13,23 @@ from pycatia3dx.dnb_igp_olp_use.olp_shape import OLPShape
 
 
 class OLPCartesianSafetyZone(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     OlpCartesianSafetyZone
-                | 
-                | A Cartesian safety zone.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | This object can be retrieved using OlpCartesianSafetyZones
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    OlpCartesianSafetyZone
+                
+                A Cartesian safety zone.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                This object can be retrieved using OlpCartesianSafetyZones
     
     """
 
@@ -43,11 +41,10 @@ class OLPCartesianSafetyZone(AnyObject):
     def active(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Active() As boolean
-                |     Get/Set whether the zone is active.
+                Property Active() As boolean
+                    Get/Set whether the zone is active.
 
         :return: bool
         """
@@ -66,14 +63,13 @@ class OLPCartesianSafetyZone(AnyObject):
     def index(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Index() As long
-                |     Get the zone index.
-                |     In some robot languages an index is used to identify the zone. If the Index
-                |     property is not set (IndexIsSet returns FALSE), then getting the Index will
-                |     fail.
+                Property Index() As long
+                    Get the zone index.
+                    In some robot languages an index is used to identify the zone. If the Index
+                    property is not set (IndexIsSet returns FALSE), then getting the Index will
+                    fail.
 
         :return: int
         """
@@ -92,12 +88,11 @@ class OLPCartesianSafetyZone(AnyObject):
     def index_set(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IndexSet() As boolean
-                |     Get whether an index is set for the zone.
-                |     If not set, then getting the Index property will fail.
+                Property IndexSet() As boolean
+                    Get whether an index is set for the zone.
+                    If not set, then getting the Index property will fail.
 
         :return: bool
         """
@@ -116,12 +111,11 @@ class OLPCartesianSafetyZone(AnyObject):
     def safe_inside(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SafeInside() As boolean
-                |     Get/Set whether the safe state is when the robot is inside or outside the
-                |     zone.
+                Property SafeInside() As boolean
+                    Get/Set whether the safe state is when the robot is inside or outside the
+                    zone.
 
         :return: bool
         """
@@ -140,13 +134,12 @@ class OLPCartesianSafetyZone(AnyObject):
     def shape_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ShapeType() As CATBSTR
-                |     Get/Set the zone shape type.
-                |     Can be one of "Prism" or "Cylinder". When set, the existing shape (if any)
-                |     is deleted and a the new shape of this type is created.
+                Property ShapeType() As CATBSTR
+                    Get/Set the zone shape type.
+                    Can be one of "Prism" or "Cylinder". When set, the existing shape (if any)
+                    is deleted and a the new shape of this type is created.
 
         :return: str
         """
@@ -164,16 +157,15 @@ class OLPCartesianSafetyZone(AnyObject):
     def get_shape(self) -> OLPShape:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetShape() As OlpShape
-                |     Get the zone shape.
-                |     Shape is NULL during upload until ShapeType is set. 
+                Func GetShape() As OlpShape
+                    Get the zone shape.
+                    Shape is NULL during upload until ShapeType is set. 
 
         :return: OLPShape
         """
         return OLPShape(self.com_object.GetShape())
 
     def __repr__(self):
-        return f'OLPCartesianSafetyZone(name="{ self.name }")'
+        return f'OLPCartesianSafetyZone(name="{self.name}")'

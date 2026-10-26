@@ -13,36 +13,34 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimFrequencyBasedDamping(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimFrequencyBasedDamping
-                | 
-                | Represents the Frequency Based Damping object.
-                | 
-                | Example:
-                |     This example demonstrates how to retrieve the SimFrequencyBasedDamping
-                |     object from a SimRandomVibrationStep. The same pattern applies to all supported
-                |     steps.
-                | 
-                |      Dim MyRandomVibrationStep As SimRandomVibrationStep
-                |      ...
-                |      Dim MyFrequencyBasedDamping As SimFrequencyBasedDamping
-                |      Set MyFrequencyBasedDamping = MyRandomVibrationStep.FrequencyBasedDamping
-                |      
-                | 
-                | Example in Python:
-                | 
-                |      MyFrequencyBasedDamping = MyRandomVibrationStep.FrequencyBasedDamping
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimFrequencyBasedDamping
+                
+                Represents the Frequency Based Damping object.
+                
+                Example:
+                    This example demonstrates how to retrieve the SimFrequencyBasedDamping
+                    object from a SimRandomVibrationStep. The same pattern applies to all supported
+                    steps.
+                
+                     Dim MyRandomVibrationStep As SimRandomVibrationStep
+                     ...
+                     Dim MyFrequencyBasedDamping As SimFrequencyBasedDamping
+                     Set MyFrequencyBasedDamping = MyRandomVibrationStep.FrequencyBasedDamping
+                     
+                
+                Example in Python:
+                
+                     MyFrequencyBasedDamping = MyRandomVibrationStep.FrequencyBasedDamping
     
     """
 
@@ -54,11 +52,10 @@ class SimFrequencyBasedDamping(AnyObject):
     def damping_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DampingType() As SimFrequencyBasedDampingDampingType
-                |     Returns or sets the damping type.
+                Property DampingType() As SimFrequencyBasedDampingDampingType
+                    Returns or sets the damping type.
 
         :return: SimFrequencyBasedDampingDampingType
         """
@@ -77,11 +74,10 @@ class SimFrequencyBasedDamping(AnyObject):
     def modes_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ModesType() As SimFrequencyBasedDampingModesType
-                |     Returns or sets the modes type.
+                Property ModesType() As SimFrequencyBasedDampingModesType
+                    Returns or sets the modes type.
 
         :return: SimFrequencyBasedDampingModesType
         """
@@ -100,11 +96,10 @@ class SimFrequencyBasedDamping(AnyObject):
     def table(self) -> SimTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Table() As SimTable (Read Only)
-                |     Returns the table that determines the damping behavior.
+                Property Table() As SimTable (Read Only)
+                    Returns the table that determines the damping behavior.
 
         :return: SimTable
         """
@@ -114,21 +109,20 @@ class SimFrequencyBasedDamping(AnyObject):
     def get_table_column(self, i_table_column_name: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTableColumn(SimFrequencyBasedDampingTableColumn iTableColumnName) As
-                | SimTableColumn
-                |     Retrieves a specific column of the table that determines the damping
-                |     behavior.
-                | 
-                |     Parameters:
-                | 
-                |         iTableColumnName[in]
-                |             The table column name. 
-                | 
-                |     Returns:
-                |         The table column. 
+                Func GetTableColumn(SimFrequencyBasedDampingTableColumn iTableColumnName) As
+                SimTableColumn
+                    Retrieves a specific column of the table that determines the damping
+                    behavior.
+                
+                    Parameters:
+                
+                        iTableColumnName[in]
+                            The table column name. 
+                
+                    Returns:
+                        The table column. 
 
         :param int i_table_column_name:
         :return: SimTableColumn
@@ -136,4 +130,4 @@ class SimFrequencyBasedDamping(AnyObject):
         return SimTableColumn(self.com_object.GetTableColumn(i_table_column_name))
 
     def __repr__(self):
-        return f'SimFrequencyBasedDamping(name="{ self.name }")'
+        return f'SimFrequencyBasedDamping(name="{self.name}")'

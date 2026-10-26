@@ -13,58 +13,56 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimBearingLoad(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimBearingLoad
-                | 
-                | Represents the Bearing Load object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimBearingLoad as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyBearingLoad As SimBearingLoad
-                |      Set MyBearingLoad = MyFeatures.Add("SimBearingLoad")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimBearingLoad named
-                |     "Bearing Load.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyBearingLoad As SimBearingLoad
-                |      Set MyBearingLoad = MyFeatures.Item("Bearing Load.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a SimBearingLoad as
-                |     following:
-                | 
-                |      ...
-                |      myBearingLoad = myFeatures.Add("SimBearingLoad")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a SimBearingLoad
-                |     named "Bearing Load.1" as following:
-                | 
-                |      ...
-                |      myBearingLoad = myFeatures.Item("Bearing Load.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimBearingLoad
+                
+                Represents the Bearing Load object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimBearingLoad as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyBearingLoad As SimBearingLoad
+                     Set MyBearingLoad = MyFeatures.Add("SimBearingLoad")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimBearingLoad named
+                    "Bearing Load.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyBearingLoad As SimBearingLoad
+                     Set MyBearingLoad = MyFeatures.Item("Bearing Load.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a SimBearingLoad as
+                    following:
+                
+                     ...
+                     myBearingLoad = myFeatures.Add("SimBearingLoad")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a SimBearingLoad
+                    named "Bearing Load.1" as following:
+                
+                     ...
+                     myBearingLoad = myFeatures.Item("Bearing Load.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -76,11 +74,10 @@ class SimBearingLoad(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -99,11 +96,10 @@ class SimBearingLoad(AnyObject):
     def angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Angle() As double
-                |     Angle of the bearing load. Quantity: ANGLE, units: deg
+                Property Angle() As double
+                    Angle of the bearing load. Quantity: ANGLE, units: deg
 
         :return: float
         """
@@ -122,11 +118,10 @@ class SimBearingLoad(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the axis system used for the bearing load.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the axis system used for the bearing load.
 
         :return: SimAxisSystem
         """
@@ -137,11 +132,10 @@ class SimBearingLoad(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureHistory() As SimFeatureHistory (Read Only)
-                |     Returns the feature history.
+                Property FeatureHistory() As SimFeatureHistory (Read Only)
+                    Returns the feature history.
 
         :return: SimFeatureHistory
         """
@@ -152,11 +146,10 @@ class SimBearingLoad(AnyObject):
     def interaction_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InteractionType() As SimBearingLoadInteractionType
-                |     Interaction type of the bearing load.
+                Property InteractionType() As SimBearingLoadInteractionType
+                    Interaction type of the bearing load.
 
         :return: int
         """
@@ -175,11 +168,10 @@ class SimBearingLoad(AnyObject):
     def orientation_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OrientationType() As SimBearingLoadOrientationType
-                |     Orientation type of the bearing load.
+                Property OrientationType() As SimBearingLoadOrientationType
+                    Orientation type of the bearing load.
 
         :return: int
         """
@@ -198,11 +190,10 @@ class SimBearingLoad(AnyObject):
     def profile_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ProfileType() As SimBearingLoadProfileType
-                |     Profile type of the bearing load.
+                Property ProfileType() As SimBearingLoadProfileType
+                    Profile type of the bearing load.
 
         :return: int
         """
@@ -221,11 +212,10 @@ class SimBearingLoad(AnyObject):
     def x_magnitude(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property XMagnitude() As double
-                |     X component of the bearing load. Quantity: FORCE, units: N
+                Property XMagnitude() As double
+                    X component of the bearing load. Quantity: FORCE, units: N
 
         :return: float
         """
@@ -244,11 +234,10 @@ class SimBearingLoad(AnyObject):
     def y_magnitude(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property YMagnitude() As double
-                |     Y component of the bearing load. Quantity: FORCE, units: N
+                Property YMagnitude() As double
+                    Y component of the bearing load. Quantity: FORCE, units: N
 
         :return: float
         """
@@ -264,4 +253,4 @@ class SimBearingLoad(AnyObject):
         self.com_object.YMagnitude = value
 
     def __repr__(self):
-        return f'SimBearingLoad(name="{ self.name }")'
+        return f'SimBearingLoad(name="{self.name}")'

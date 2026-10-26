@@ -13,59 +13,57 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimDisplacementRestraint(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimDisplacementRestraint
-                | 
-                | Represents the Displacement Restraint object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimDisplacementRestraint as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyDisplacementRestraint As SimDisplacementRestraint
-                |      Set MyDisplacementRestraint = MyFeatures.Add("SimDisplacementRestraint")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimDisplacementRestraint
-                |     named "Displacement Restraint.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyDisplacementRestraint As SimDisplacementRestraint
-                |      Set MyDisplacementRestraint = MyFeatures.Item("Displacement Restraint.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a
-                |     SimDisplacementRestraint as following:
-                | 
-                |      ...
-                |      myDisplacementRestraint = myFeatures.Add("SimDisplacementRestraint")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a
-                |     SimDisplacementRestraint named "Displacement Restraint.1" as
-                |     following:
-                | 
-                |      ...
-                |      myDisplacementRestraint = myFeatures.Item("Displacement Restraint.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimDisplacementRestraint
+                
+                Represents the Displacement Restraint object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimDisplacementRestraint as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyDisplacementRestraint As SimDisplacementRestraint
+                     Set MyDisplacementRestraint = MyFeatures.Add("SimDisplacementRestraint")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimDisplacementRestraint
+                    named "Displacement Restraint.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyDisplacementRestraint As SimDisplacementRestraint
+                     Set MyDisplacementRestraint = MyFeatures.Item("Displacement Restraint.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a
+                    SimDisplacementRestraint as following:
+                
+                     ...
+                     myDisplacementRestraint = myFeatures.Add("SimDisplacementRestraint")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a
+                    SimDisplacementRestraint named "Displacement Restraint.1" as
+                    following:
+                
+                     ...
+                     myDisplacementRestraint = myFeatures.Item("Displacement Restraint.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -77,11 +75,10 @@ class SimDisplacementRestraint(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -100,11 +97,10 @@ class SimDisplacementRestraint(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the axis system.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the axis system.
 
         :return: SimAxisSystem
         """
@@ -115,11 +111,10 @@ class SimDisplacementRestraint(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureHistory() As SimFeatureHistory (Read Only)
-                |     Returns the feature history.
+                Property FeatureHistory() As SimFeatureHistory (Read Only)
+                    Returns the feature history.
 
         :return: SimFeatureHistory
         """
@@ -130,13 +125,12 @@ class SimDisplacementRestraint(AnyObject):
     def secondary_base_applied_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SecondaryBaseAppliedFlag() As boolean
-                |     Returns or sets the flag that determines if secondary base is applied.
-                |     TRUE: secondary base is applied
-                |     FALSE: secondary base is not applied .
+                Property SecondaryBaseAppliedFlag() As boolean
+                    Returns or sets the flag that determines if secondary base is applied.
+                    TRUE: secondary base is applied
+                    FALSE: secondary base is not applied .
 
         :return: bool
         """
@@ -155,12 +149,11 @@ class SimDisplacementRestraint(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. See SimFeatures.GetSpecTreeCategory for usage.
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. See SimFeatures.GetSpecTreeCategory for usage.
 
         :return: str
         """
@@ -170,21 +163,20 @@ class SimDisplacementRestraint(AnyObject):
     def get_dof_restraint(self, i_degree_of_freedom: int) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetDofRestraint(SimDof iDegreeOfFreedom) As boolean
-                |     Retrieves the flag that determines if the displacement is restrained in the
-                |     specified DOF.
-                | 
-                |     Parameters:
-                | 
-                |         iDegreeOfFreedom[in]
-                |             The degree of freedom. 
-                | 
-                |     Returns:
-                |         TRUE: the specified DOF is restrained.
-                |         FALSE: the specified DOF is not restrained.
+                Func GetDofRestraint(SimDof iDegreeOfFreedom) As boolean
+                    Retrieves the flag that determines if the displacement is restrained in the
+                    specified DOF.
+                
+                    Parameters:
+                
+                        iDegreeOfFreedom[in]
+                            The degree of freedom. 
+                
+                    Returns:
+                        TRUE: the specified DOF is restrained.
+                        FALSE: the specified DOF is not restrained.
 
         :param int i_degree_of_freedom:
         :return: bool
@@ -194,21 +186,20 @@ class SimDisplacementRestraint(AnyObject):
     def set_dof_restraint(self, i_degree_of_freedom: int, i_restraint: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetDofRestraint(SimDof iDegreeOfFreedom,boolean
-                | iRestraint)
-                |     Sets the flag that determines if the displacement is restrained in the
-                |     specified DOF.
-                | 
-                |     Parameters:
-                | 
-                |         iDegreeOfFreedom[in]
-                |             The degree of freedom. 
-                |         iRestraint[in]
-                |             TRUE: the specified DOF is restrained.
-                |             FALSE: the specified DOF is not restrained. 
+                Sub SetDofRestraint(SimDof iDegreeOfFreedom,boolean
+                iRestraint)
+                    Sets the flag that determines if the displacement is restrained in the
+                    specified DOF.
+                
+                    Parameters:
+                
+                        iDegreeOfFreedom[in]
+                            The degree of freedom. 
+                        iRestraint[in]
+                            TRUE: the specified DOF is restrained.
+                            FALSE: the specified DOF is not restrained. 
 
         :param SimDof i_degree_of_freedom:
         :param bool i_restraint:
@@ -217,4 +208,4 @@ class SimDisplacementRestraint(AnyObject):
         return self.com_object.SetDofRestraint(i_degree_of_freedom, i_restraint)
 
     def __repr__(self):
-        return f'SimDisplacementRestraint(name="{ self.name }")'
+        return f'SimDisplacementRestraint(name="{self.name}")'

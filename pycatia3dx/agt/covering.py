@@ -15,19 +15,18 @@ from pycatia3dx.system.any_object import AnyObject
 class Covering(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Covering
-                | 
-                | Object for Covering.
-                | To return the management object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Covering
+                
+                Object for Covering.
+                To return the management object.
     
     """
 
@@ -39,22 +38,21 @@ class Covering(AnyObject):
     def agt_category_mngt(self) -> AGTCategoryMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AGTCategoryMngt() As AGTCategoryMngt (Read Only)
-                |     Returns the AGTCategoryMngt object.
-                | 
-                |     Example:
-                | 
-                |          
-                | 
-                |              This example retrieves in ObjCategoryMngt the AGTCategoryMngt
-                |              object of the Covering.
-                |              
-                | 
-                |              Dim ObjCategoryMngt As AGTCategoryMngt 
-                |              Set ObjCategoryMngt = ObjCovering.AGTCategoryMngt
+                Property AGTCategoryMngt() As AGTCategoryMngt (Read Only)
+                    Returns the AGTCategoryMngt object.
+                
+                    Example:
+                
+                         
+                
+                             This example retrieves in ObjCategoryMngt the AGTCategoryMngt
+                             object of the Covering.
+                             
+                
+                             Dim ObjCategoryMngt As AGTCategoryMngt 
+                             Set ObjCategoryMngt = ObjCovering.AGTCategoryMngt
 
         :return: AGTCategoryMngt
         """
@@ -65,19 +63,18 @@ class Covering(AnyObject):
     def agt_material_mngt(self) -> AGTMaterialMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AGTMaterialMngt() As AGTMaterialMngt (Read Only)
-                |     Returns the AGTMaterialMngt object.
-                | 
-                |     Example:
+                Property AGTMaterialMngt() As AGTMaterialMngt (Read Only)
+                    Returns the AGTMaterialMngt object.
+                
+                    Example:
                 |
-                |              This example retrieves in ObjMaterialMngt the AGTMaterialMngt
-                |              object of the Covering.
+                             This example retrieves in ObjMaterialMngt the AGTMaterialMngt
+                             object of the Covering.
                 |
-                |              Dim ObjMaterialMngt As AGTMaterialMngt 
-                |              Set ObjMaterialMngt = ObjCovering.AGTMaterialMngt
+                             Dim ObjMaterialMngt As AGTMaterialMngt 
+                             Set ObjMaterialMngt = ObjCovering.AGTMaterialMngt
 
         :return: AGTMaterialMngt
         """

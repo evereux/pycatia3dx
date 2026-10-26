@@ -12,58 +12,56 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimBoltForce(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimBoltForce
-                | 
-                | Represents the Bolt Force object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimBoltForce as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyBoltForce As SimBoltForce
-                |      Set MyBoltForce = MyFeatures.Add("SimBoltForce")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimBoltForce named "Bolt
-                |     Force.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyBoltForce As SimBoltForce
-                |      Set MyBoltForce = MyFeatures.Item("Bolt Force.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a SimBoltForce as
-                |     following:
-                | 
-                |      ...
-                |      myBoltForce = myFeatures.Add("SimBoltForce")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a SimBoltForce
-                |     named "Bolt Force.1" as following:
-                | 
-                |      ...
-                |      myBoltForce = myFeatures.Item("Bolt Force.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimBoltForce
+                
+                Represents the Bolt Force object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimBoltForce as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyBoltForce As SimBoltForce
+                     Set MyBoltForce = MyFeatures.Add("SimBoltForce")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimBoltForce named "Bolt
+                    Force.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyBoltForce As SimBoltForce
+                     Set MyBoltForce = MyFeatures.Item("Bolt Force.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a SimBoltForce as
+                    following:
+                
+                     ...
+                     myBoltForce = myFeatures.Add("SimBoltForce")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a SimBoltForce
+                    named "Bolt Force.1" as following:
+                
+                     ...
+                     myBoltForce = myFeatures.Item("Bolt Force.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -75,11 +73,10 @@ class SimBoltForce(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -98,11 +95,10 @@ class SimBoltForce(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureHistory() As SimFeatureHistory (Read Only)
-                |     Returns the feature history.
+                Property FeatureHistory() As SimFeatureHistory (Read Only)
+                    Returns the feature history.
 
         :return: SimFeatureHistory
         """
@@ -113,11 +109,10 @@ class SimBoltForce(AnyObject):
     def magnitude(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Magnitude() As double
-                |     Returns or sets the magnitude. Quantity: FORCE, units: N
+                Property Magnitude() As double
+                    Returns or sets the magnitude. Quantity: FORCE, units: N
 
         :return: float
         """
@@ -136,12 +131,11 @@ class SimBoltForce(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. See SimFeatures.GetSpecTreeCategory for usage. 
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. See SimFeatures.GetSpecTreeCategory for usage. 
 
         :return: str
         """
@@ -149,4 +143,4 @@ class SimBoltForce(AnyObject):
         return self.com_object.SpecTreeCategory
 
     def __repr__(self):
-        return f'SimBoltForce(name="{ self.name }")'
+        return f'SimBoltForce(name="{self.name}")'

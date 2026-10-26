@@ -7,32 +7,36 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
+
 from pycatia3dx.mmr_automation_interfaces.shape import Shape
 from pycatia3dx.mode.reference import Reference
+
+if TYPE_CHECKING:
+    from pycatia3dx.mmr_automation_interfaces.body import Body
 
 
 class BooleanShape(Shape):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         BooleanShape
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        BooleanShape
                 |
-                | Represents the shapes based on boolean operations on other
-                | shapes.
-                | It is the base object for add, assemble, intersect, remove, and split
-                | shapes.
+                Represents the shapes based on boolean operations on other
+                shapes.
+                It is the base object for add, assemble, intersect, remove, and split
+                shapes.
                 |
-                | See also:
-                |     Add, Assemble, Intersect, Remove, Split, Trim
+                See also:
+                    Add, Assemble, Intersect, Remove, Split, Trim
 
     """
 
@@ -44,11 +48,10 @@ class BooleanShape(Shape):
     def body(self) -> 'Body':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Body() As Body (Read Only)
-                |     Returns the inserted body.
+                Property Body() As Body (Read Only)
+                    Returns the inserted body.
 
         :return: Body
         """
@@ -59,11 +62,10 @@ class BooleanShape(Shape):
     def set_operated_object(self, i_reference_object: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetOperatedObject(Reference iReferenceObject)
-                |     Modifies the Second Operand. input object to replace with Body or Volume
+                Sub SetOperatedObject(Reference iReferenceObject)
+                    Modifies the Second Operand. input object to replace with Body or Volume
 
         :param Reference i_reference_object:
         :return: None
@@ -73,12 +75,11 @@ class BooleanShape(Shape):
     def set_operating_volume(self, i_reference_object: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetOperatingVolume(Reference iReferenceObject)
-                |     Swaps the operands. Both the Operands must be Volume. This is available
-                |     only for Volume Add and Volume UnionTrim Operations 
+                Sub SetOperatingVolume(Reference iReferenceObject)
+                    Swaps the operands. Both the Operands must be Volume. This is available
+                    only for Volume Add and Volume UnionTrim Operations 
 
         :param Reference i_reference_object:
         :return: None

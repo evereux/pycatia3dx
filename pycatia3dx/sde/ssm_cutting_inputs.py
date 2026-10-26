@@ -17,18 +17,17 @@ from pycatia3dx.types.general import CATVariant
 class SsmCuttingInputs(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SsmCuttingInputs
-                | 
-                | Role: This interface is collection of CuttingInputs
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SsmCuttingInputs
+                
+                Role: This interface is collection of CuttingInputs
     
     """
 
@@ -39,16 +38,15 @@ class SsmCuttingInputs(Collection):
     def item(self, i_index: CATVariant) -> SsmCuttingInput:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As SsmCuttingInput
-                |     Retrieves a Cutting Input
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of Cutting Input 
+                Func Item(CATVariant iIndex) As SsmCuttingInput
+                    Retrieves a Cutting Input
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of Cutting Input 
 
         :param CATVariant i_index:
         :return: SsmCuttingInput

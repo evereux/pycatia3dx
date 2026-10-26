@@ -2,10 +2,10 @@ from pycatia3dx import CatConstraintMode, CatConstraintType
 from pycatia3dx.interfaces.application import Application
 from pycatia3dx.mmr_automation_interfaces.part import Part
 from pycatia3dx.mode.reference import Reference
-from pycatia3dx.plm_session_builder.plm_new_service import PLMNewService
 from pycatia3dx.plm_session_builder.plm_propagate_service import PLMPropagateService
-from tests.test_part_parameters import TEST_CATPART_ONE
-from tests.test_part_parameters import TEST_CATPART_ONE_DESCRIPTION
+from pycatia3dx.scripts.vba import vba_nothing
+from pycatia3dx.vpm_editor_context.plm_product_service import PLMProductService
+from tests.test_part_parameters import TEST_3DPART_ONE, geom_set_spheres
 from tests.test_part_parameters import geom_set_arcs
 from tests.test_part_parameters import geom_set_cylinders
 from tests.test_part_parameters import geom_set_lines
@@ -16,13 +16,18 @@ from tests.test_part_parameters import geom_set_surfaces
 from tests.test_part_parameters import geom_set_sketches
 
 
-def create_test_part_one(application: Application):
-    application.logger.info(f'Creating test file {TEST_CATPART_ONE}.')
-    plm_service: PLMNewService = application.get_session_service("PLMNewService")
-    plm_service.set_attribute_value("V_Name", TEST_CATPART_ONE)
-    plm_service.set_attribute_value("V_description", TEST_CATPART_ONE_DESCRIPTION)
-    editor = plm_service.plm_create("3DShape")
-    part = Part(editor.active_com_object)
+def create_part_geometry(application: Application):
+    # The 3DPart (VPMReference) shall already be open and be the active editor
+    application.logger.info(f'Populating 3DShape in "{TEST_3DPART_ONE}".')
+
+    editor = application.active_editor
+
+    plm_product_service: PLMProductService = editor.get_service('PLMProductService')
+    root_occurrence = plm_product_service.root_occurrence
+    vpm_reference = root_occurrence.reference_root_occurrence_of
+    vpm_rep_instance = vpm_reference.rep_instances[0]
+
+    part: Part = vpm_rep_instance.reference_instance_of.get_item('Part')
     relations = part.relations
 
     sf = part.shape_factory
@@ -30,6 +35,14 @@ def create_test_part_one(application: Application):
     hbs = part.hybrid_bodies
     parms = part.parameters
     main_body = part.main_body
+
+    _hb_names = [geom_set_arcs, geom_set_cylinders, geom_set_lines, geom_set_planes, geom_set_points, geom_set_sketches,
+                 geom_set_splines, geom_set_surfaces]
+    hb_names = [hb.name for hb in hbs]
+    status = [_hb_name for _hb_name in _hb_names if _hb_name not in hb_names]
+    if not status:
+        application.logger.info(f'"{TEST_3DPART_ONE}" is already populated.')
+        return
 
     # ########################### #
     # Create the Geometrical Sets #
@@ -52,6 +65,9 @@ def create_test_part_one(application: Application):
 
     hb_geom_set_sketches = hbs.add()
     hb_geom_set_sketches.name = geom_set_sketches
+
+    hb_geom_set_spheres = hbs.add()
+    hb_geom_set_spheres.name = geom_set_spheres
 
     hb_geom_set_splines = hbs.add()
     hb_geom_set_splines.name = geom_set_splines
@@ -82,10 +98,10 @@ def create_test_part_one(application: Application):
     point_3 = hsf.add_new_point_coord(pad_width, pad_height, 0)
     point_4 = hsf.add_new_point_coord(0, pad_height, 0)
 
-    ref_point_1 = Reference(point_1.com_object)
-    ref_point_2 = Reference(point_2.com_object)
-    ref_point_3 = Reference(point_3.com_object)
-    ref_point_4 = Reference(point_4.com_object)
+    # ref_point_1 = Reference(point_1.com_object)
+    # ref_point_2 = Reference(point_2.com_object)
+    # ref_point_3 = Reference(point_3.com_object)
+    # ref_point_4 = Reference(point_4.com_object)
 
     hb_geom_set_points.append_hybrid_shape(point_1)
     hb_geom_set_points.append_hybrid_shape(point_2)
@@ -141,52 +157,52 @@ def create_test_part_one(application: Application):
     con_line_1_start = constraints.add_bi_elt_cst(
         CatConstraintType.catCstTypeOn,
         Reference(line_1_2d.start_point.com_object),
-        ref_point_1,
+        point_1,
     )
     con_line_1_start.mode = CatConstraintMode.catCstModeDrivingDimension
     con_line_1_end = constraints.add_bi_elt_cst(
         CatConstraintType.catCstTypeOn,
         Reference(line_1_2d.end_point.com_object),
-        ref_point_2,
+        point_2,
     )
     con_line_1_end.mode = CatConstraintMode.catCstModeDrivingDimension
 
     con_line_2_start = constraints.add_bi_elt_cst(
         CatConstraintType.catCstTypeOn,
         Reference(line_2_2d.start_point.com_object),
-        ref_point_2,
+        point_2,
     )
     con_line_2_start.mode = CatConstraintMode.catCstModeDrivingDimension
     con_line_2_end = constraints.add_bi_elt_cst(
         CatConstraintType.catCstTypeOn,
         Reference(line_2_2d.end_point.com_object),
-        ref_point_3,
+        point_3,
     )
     con_line_2_end.mode = CatConstraintMode.catCstModeDrivingDimension
 
     con_line_3_start = constraints.add_bi_elt_cst(
         CatConstraintType.catCstTypeOn,
         Reference(line_3_2d.start_point.com_object),
-        ref_point_3,
+        point_3,
     )
     con_line_3_start.mode = CatConstraintMode.catCstModeDrivingDimension
     con_line_3_end = constraints.add_bi_elt_cst(
         CatConstraintType.catCstTypeOn,
         Reference(line_3_2d.end_point.com_object),
-        ref_point_4,
+        point_4,
     )
     con_line_3_end.mode = CatConstraintMode.catCstModeDrivingDimension
 
     con_line_4_start = constraints.add_bi_elt_cst(
         CatConstraintType.catCstTypeOn,
         Reference(line_4_2d.start_point.com_object),
-        ref_point_4,
+        point_4,
     )
     con_line_4_start.mode = CatConstraintMode.catCstModeDrivingDimension
     con_line_4_end = constraints.add_bi_elt_cst(
         CatConstraintType.catCstTypeOn,
         Reference(line_4_2d.end_point.com_object),
-        ref_point_1,
+        point_1,
     )
     con_line_4_end.mode = CatConstraintMode.catCstModeDrivingDimension
 
@@ -203,18 +219,18 @@ def create_test_part_one(application: Application):
     # create lines #
     # ############ #
 
-    line_1 = hsf.add_new_line_pt_pt(ref_point_1, ref_point_3)
+    line_1 = hsf.add_new_line_pt_pt(point_1, point_3)
     line_1.name = "Line.1"
     hb_geom_set_lines.append_hybrid_shape(line_1)
 
-    line_2 = hsf.add_new_line_pt_pt(ref_point_1, ref_point_4)
+    line_2 = hsf.add_new_line_pt_pt(point_1, point_4)
     line_2.name = "Line.2"
     hb_geom_set_lines.append_hybrid_shape(line_2)
 
     direction = hsf.add_new_direction(ref_xy_plane)
 
     line_3 = hsf.add_new_line_pt_dir(
-        ref_point_1,
+        point_1,
         direction,
         -100,
         100,
@@ -234,7 +250,7 @@ def create_test_part_one(application: Application):
     # ############## #
     # create circle  #
     # ############## #
-    circle = hsf.add_new_circle_ctr_rad(ref_point_4, ref_xy_plane, True, 25)
+    circle = hsf.add_new_circle_ctr_rad(point_4, ref_xy_plane, True, 25)
     hb_geom_set_arcs.append_hybrid_shape(circle)
 
     # ########### #
@@ -286,14 +302,28 @@ def create_test_part_one(application: Application):
     # create cylinder #
     # ############### #
     direction = hsf.add_new_direction(ref_xy_plane)
-    cylinder = hsf.add_new_cylinder(ref_point_3, 33, 100, 0, direction)
+    cylinder = hsf.add_new_cylinder(point_3, 33, 100, 0, direction)
     hb_geom_set_cylinders.append_hybrid_shape(cylinder)
+
+    # ############# #
+    # create sphere #
+    # ############# #
+    sphere = hsf.add_new_sphere(
+        point_3,
+        vba_nothing,
+        100.0,
+        -90.0,
+        90.0,
+        0.0,
+        360.0
+    )
+    hb_geom_set_spheres.append_hybrid_shape(sphere)
 
     part.update()
 
-    # ############### #
-    # create cylinder #
-    # ############### #
+    # #### #
+    # save #
+    # #### #
 
     plm_propagate_service: PLMPropagateService = application.get_session_service('PLMPropagateService')
     plm_propagate_service.plm_propagate()
@@ -304,4 +334,4 @@ def create_test_part_one(application: Application):
 
     application.active_window.close()
 
-    application.logger.info(f'Created {TEST_CATPART_ONE}.')
+    application.logger.info(f'Created {TEST_3DPART_ONE}.')

@@ -1,7 +1,10 @@
-from typing import Union
+from typing import Union, Any
+
+from pycatia3dx.mode.reference import Reference
+from pycatia3dx.scripts.vba import VBANothing
 
 CATVariant = Union[
-    int, str
+    int, str, tuple, Reference, VBANothing
 ]
 
 Variant = Union[

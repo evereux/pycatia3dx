@@ -16,18 +16,17 @@ from pycatia3dx.structure.str_references import StrReferences
 class StrBreak(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrBreak
-                | 
-                | Object to manage Structure Break of a SuperPlate or Profile.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrBreak
+                
+                Object to manage Structure Break of a SuperPlate or Profile.
     
     """
 
@@ -39,20 +38,19 @@ class StrBreak(AnyObject):
     def splitting_elements(self) -> StrReferences:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SplittingElements() As StrReferences (Read Only)
-                |     Returns the list of SplittingElements.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves SplittingElements of the panel or
-                |              profile.
-                |              
-                | 
-                |              Set ListOfSplittingElements = ObjStrBreak.SplittingElements
+                Property SplittingElements() As StrReferences (Read Only)
+                    Returns the list of SplittingElements.
+                
+                    Example:
+                
+                
+                             This example retrieves SplittingElements of the panel or
+                             profile.
+                             
+                
+                             Set ListOfSplittingElements = ObjStrBreak.SplittingElements
 
         :return: StrReferences
         """
@@ -62,35 +60,34 @@ class StrBreak(AnyObject):
     def break_(self, i_list_of_splitting_elements: StrReferences) -> StrObjects:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Break(StrReferences iListOfSplittingElements) As
-                | StrObjects
-                |     Returns the list of newly created SuperPlates or Profiles after Breaking a
-                |     SuperPlate or a Profile with splitting elements
-                | 
-                |     Parameters:
-                | 
-                |         iListOfSplittingElements
-                |             The list of features splitting this SuperPlate / Profile
-                |             
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example Breaks a panel into two panels.
-                |              
-                | 
-                |               'Create reference of splitting element
-                |               Dim SplittingElemRef As Reference
-                |               Set SplittingElemRef = ObjPart.CreateReferenceFromObject(SplittingPanel)
-                |               'Add splitting elements to the list
-                |               Dim ListOfSplitRef As StrReferences
-                |               Set ListOfSplitRef = ObjStrBreak.SplittingElements
-                |               ListOfSplitRef.Add SplittingElemRef
-                |               'Break the Panel
-                |               Set ListOfResults = ObjStrBreak.Break(ListOfSplitRef)
+                Func Break(StrReferences iListOfSplittingElements) As
+                StrObjects
+                    Returns the list of newly created SuperPlates or Profiles after Breaking a
+                    SuperPlate or a Profile with splitting elements
+                
+                    Parameters:
+                
+                        iListOfSplittingElements
+                            The list of features splitting this SuperPlate / Profile
+                            
+                
+                    Example:
+                
+                
+                             This example Breaks a panel into two panels.
+                             
+                
+                              'Create reference of splitting element
+                              Dim SplittingElemRef As Reference
+                              Set SplittingElemRef = ObjPart.CreateReferenceFromObject(SplittingPanel)
+                              'Add splitting elements to the list
+                              Dim ListOfSplitRef As StrReferences
+                              Set ListOfSplitRef = ObjStrBreak.SplittingElements
+                              ListOfSplitRef.Add SplittingElemRef
+                              'Break the Panel
+                              Set ListOfResults = ObjStrBreak.Break(ListOfSplitRef)
 
         :param StrReferences i_list_of_splitting_elements:
         :return: StrObjects

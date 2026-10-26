@@ -12,43 +12,41 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimLocalOptimizationArea(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimLocalOptimizationArea
-                | 
-                | Represents the Local Optimization Area object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimLocalOptimizationArea as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      Dim MyDesignSpace As SimDesignEnvelope
-                |      ...
-                |      Dim MyLocalOptimizationArea As SimLocalOptimizationArea
-                |      Set MyLocalOptimizationArea = MyFeatures.AddSubFeature("SimLocalOptimizationArea", MyDesignSpace)
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimLocalOptimizationArea as following:
-                | 
-                |      ...
-                |      MyLocalOptimizationArea = MyFeatures.AddSubFeature("SimLocalOptimizationArea", MyDesignSpace)
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimLocalOptimizationArea
+                
+                Represents the Local Optimization Area object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimLocalOptimizationArea as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     Dim MyDesignSpace As SimDesignEnvelope
+                     ...
+                     Dim MyLocalOptimizationArea As SimLocalOptimizationArea
+                     Set MyLocalOptimizationArea = MyFeatures.AddSubFeature("SimLocalOptimizationArea", MyDesignSpace)
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimLocalOptimizationArea as following:
+                
+                     ...
+                     MyLocalOptimizationArea = MyFeatures.AddSubFeature("SimLocalOptimizationArea", MyDesignSpace)
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -60,11 +58,10 @@ class SimLocalOptimizationArea(AnyObject):
     def specify_fixed_boundaries_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecifyFixedBoundariesFlag() As boolean
-                |     Returns or sets the Fixed Boundaries flag. FALSE : Do not prevent the movement of the open edges of local optimization area. TRUE : Prevents the movement of the open edges of local optimization area.
+                Property SpecifyFixedBoundariesFlag() As boolean
+                    Returns or sets the Fixed Boundaries flag. FALSE : Do not prevent the movement of the open edges of local optimization area. TRUE : Prevents the movement of the open edges of local optimization area.
 
         :return: bool
         """
@@ -82,24 +79,23 @@ class SimLocalOptimizationArea(AnyObject):
     def add(self, i_type: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add(CATBSTR iType) As CATBaseDispatch
-                |     Creates a sub features object and returns it.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The Feature Type to be created. Possible values for iType
-                |             are:
-                | 
-                |                 For Add:
-                |                     SimInPlaneControl : Creates a in plane control feature. It is of type SimInPlaneControl.
-                |                     SimTransitionControl : Creates a transition control feature. It is of type SimTransitionControl.
-                | 
-                |     Returns:
-                |         The created feature object.
+                Func Add(CATBSTR iType) As CATBaseDispatch
+                    Creates a sub features object and returns it.
+                
+                    Parameters:
+                
+                        iType
+                            The Feature Type to be created. Possible values for iType
+                            are:
+                
+                                For Add:
+                                    SimInPlaneControl : Creates a in plane control feature. It is of type SimInPlaneControl.
+                                    SimTransitionControl : Creates a transition control feature. It is of type SimTransitionControl.
+                
+                    Returns:
+                        The created feature object.
 
         :param str i_type:
         :return: AnyObject
@@ -109,16 +105,15 @@ class SimLocalOptimizationArea(AnyObject):
     def get_maximum_growth(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetMaximumGrowth(double oVal)
-                |     Gets the Maximum Growth of the design nodes
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Growth Value. Quantity: LENGTH, units:m
+                Sub GetMaximumGrowth(double oVal)
+                    Gets the Maximum Growth of the design nodes
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Growth Value. Quantity: LENGTH, units:m
 
         :param float o_val:
         :return: None
@@ -128,16 +123,15 @@ class SimLocalOptimizationArea(AnyObject):
     def get_maximum_shrinkage(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetMaximumShrinkage(double oVal)
-                |     Gets the Maximum Shrinkage of the design nodes.
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Shrinkage Value. Quantity: LENGTH, units:m
+                Sub GetMaximumShrinkage(double oVal)
+                    Gets the Maximum Shrinkage of the design nodes.
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Shrinkage Value. Quantity: LENGTH, units:m
 
         :param float o_val:
         :return: None
@@ -147,16 +141,15 @@ class SimLocalOptimizationArea(AnyObject):
     def get_transition_distance(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTransitionDistance(double oVal)
-                |     Gets the Maximum Transition Distance.
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Distance Value. Quantity: LENGTH, units:m
+                Sub GetTransitionDistance(double oVal)
+                    Gets the Maximum Transition Distance.
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Distance Value. Quantity: LENGTH, units:m
 
         :param float o_val:
         :return: None
@@ -166,16 +159,15 @@ class SimLocalOptimizationArea(AnyObject):
     def set_maximum_growth(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMaximumGrowth(double iVal)
-                |     Sets the Maximum Growth of the design nodes.
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Growth Value. Quantity: LENGTH, units:m
+                Sub SetMaximumGrowth(double iVal)
+                    Sets the Maximum Growth of the design nodes.
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Growth Value. Quantity: LENGTH, units:m
 
         :param float i_val:
         :return: None
@@ -185,16 +177,15 @@ class SimLocalOptimizationArea(AnyObject):
     def set_maximum_shrinkage(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMaximumShrinkage(double iVal)
-                |     Sets the Maximum Shrinkage of the design nodes.
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Shrinkage Value. Quantity: LENGTH, units:m
+                Sub SetMaximumShrinkage(double iVal)
+                    Sets the Maximum Shrinkage of the design nodes.
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Shrinkage Value. Quantity: LENGTH, units:m
 
         :param float i_val:
         :return: None
@@ -204,16 +195,15 @@ class SimLocalOptimizationArea(AnyObject):
     def set_transition_distance(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTransitionDistance(double iVal)
-                |     Sets the Transition Distance.
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Distance Value. Quantity: LENGTH, units:m
+                Sub SetTransitionDistance(double iVal)
+                    Sets the Transition Distance.
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Distance Value. Quantity: LENGTH, units:m
 
         :param float i_val:
         :return: None
@@ -221,4 +211,4 @@ class SimLocalOptimizationArea(AnyObject):
         return self.com_object.SetTransitionDistance(i_val)
 
     def __repr__(self):
-        return f'SimLocalOptimizationArea(name="{ self.name }")'
+        return f'SimLocalOptimizationArea(name="{self.name}")'

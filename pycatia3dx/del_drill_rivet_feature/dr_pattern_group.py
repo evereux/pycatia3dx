@@ -12,23 +12,21 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DrPatternGroup(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DrPatternGroup
-                | 
-                | Interface dedicated to Pattern Group.
-                | Role: This interface offers services to manage pattern group
-                | feature.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DrPatternGroup
+                
+                Interface dedicated to Pattern Group.
+                Role: This interface offers services to manage pattern group
+                feature.
     
     """
 
@@ -39,16 +37,15 @@ class DrPatternGroup(AnyObject):
     def create_drilling_riveting_pattern(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateDrillingRivetingPattern() As AnyObject
-                |     Creates a drilling riveting pattern in this group.
-                | 
-                |     Parameters:
-                | 
-                |         oDrMfgPattern
-                |             The newly created pattern.
+                Func CreateDrillingRivetingPattern() As AnyObject
+                    Creates a drilling riveting pattern in this group.
+                
+                    Parameters:
+                
+                        oDrMfgPattern
+                            The newly created pattern.
 
         :return: AnyObject
         """
@@ -57,20 +54,19 @@ class DrPatternGroup(AnyObject):
     def get_manufacturing_features(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetManufacturingFeatures() As CATSafeArrayVariant
-                |     Get the group children (patterns and groups).
-                | 
-                |     Parameters:
-                | 
-                |         oList
-                |             List of drilling riveting patterns and pattern groups
+                Func GetManufacturingFeatures() As CATSafeArrayVariant
+                    Get the group children (patterns and groups).
+                
+                    Parameters:
+                
+                        oList
+                            List of drilling riveting patterns and pattern groups
 
         :return: tuple
         """
         return self.com_object.GetManufacturingFeatures()
 
     def __repr__(self):
-        return f'DrPatternGroup(name="{ self.name }")'
+        return f'DrPatternGroup(name="{self.name}")'

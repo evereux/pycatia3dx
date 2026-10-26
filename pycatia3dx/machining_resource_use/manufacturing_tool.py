@@ -12,24 +12,22 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingTool(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingTool
-                | 
-                | Interface dedicated to tool object management.
-                | Role: This interface offers services to manage the tools
-                | parameters.
-                | Common attributes are declared in DELMfgToolConstant.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingTool
+                
+                Interface dedicated to tool object management.
+                Role: This interface offers services to manage the tools
+                parameters.
+                Common attributes are declared in DELMfgToolConstant.
     
     """
 
@@ -40,18 +38,17 @@ class ManufacturingTool(AnyObject):
     def add_component(self, i_component: AnyObject) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func AddComponent(AnyObject iComponent) As AnyObject
-                |     Adds a new component to tool.
-                | 
-                |     Parameters:
-                | 
-                |         iComponent
-                |             PLM object to add 
-                |         oInstance
-                |             return instance
+                Func AddComponent(AnyObject iComponent) As AnyObject
+                    Adds a new component to tool.
+                
+                    Parameters:
+                
+                        iComponent
+                            PLM object to add 
+                        oInstance
+                            return instance
 
         :param AnyObject i_component:
         :return: AnyObject
@@ -61,17 +58,16 @@ class ManufacturingTool(AnyObject):
     def get_all_components(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAllComponents() As CATSafeArrayVariant
-                |     Returns the list of all components associated with the
-                |     tool.
-                | 
-                |     Parameters:
-                | 
-                |         oListofComponent
-                |             List of PLM Object. First, all elements in list are removed.
+                Func GetAllComponents() As CATSafeArrayVariant
+                    Returns the list of all components associated with the
+                    tool.
+                
+                    Parameters:
+                
+                        oListofComponent
+                            List of PLM Object. First, all elements in list are removed.
 
         :return: tuple
         """
@@ -80,16 +76,15 @@ class ManufacturingTool(AnyObject):
     def get_inserts(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetInserts() As CATSafeArrayVariant
-                |     Returns the list of shank associated with the tool.
-                | 
-                |     Parameters:
-                | 
-                |         oListofInsert
-                |             List of Insert. First, all elements in list are removed.
+                Func GetInserts() As CATSafeArrayVariant
+                    Returns the list of shank associated with the tool.
+                
+                    Parameters:
+                
+                        oListofInsert
+                            List of Insert. First, all elements in list are removed.
 
         :return: tuple
         """
@@ -98,16 +93,15 @@ class ManufacturingTool(AnyObject):
     def get_shanks(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetShanks() As CATSafeArrayVariant
-                |     Returns the list of shank associated with the tool.
-                | 
-                |     Parameters:
-                | 
-                |         oListofShank
-                |             List of Shank. First, all elements in list are removed.
+                Func GetShanks() As CATSafeArrayVariant
+                    Returns the list of shank associated with the tool.
+                
+                    Parameters:
+                
+                        oListofShank
+                            List of Shank. First, all elements in list are removed.
 
         :return: tuple
         """
@@ -116,11 +110,10 @@ class ManufacturingTool(AnyObject):
     def remove_all_components(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveAllComponents()
-                |     Remove all the components of tool.
+                Sub RemoveAllComponents()
+                    Remove all the components of tool.
 
         :return: None
         """
@@ -129,16 +122,15 @@ class ManufacturingTool(AnyObject):
     def remove_component(self, i_component: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveComponent(AnyObject iComponent)
-                |     Removes a component of tool.
-                | 
-                |     Parameters:
-                | 
-                |         iComponent
-                |             PLM object to remove
+                Sub RemoveComponent(AnyObject iComponent)
+                    Removes a component of tool.
+                
+                    Parameters:
+                
+                        iComponent
+                            PLM object to remove
 
         :param AnyObject i_component:
         :return: None
@@ -146,4 +138,4 @@ class ManufacturingTool(AnyObject):
         return self.com_object.RemoveComponent(i_component.com_object)
 
     def __repr__(self):
-        return f'ManufacturingTool(name="{ self.name }")'
+        return f'ManufacturingTool(name="{self.name}")'

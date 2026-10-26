@@ -12,19 +12,17 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class PcbHoleAndPattern(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PCBHoleAndPattern
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PCBHoleAndPattern
 
     
     """
@@ -37,25 +35,24 @@ class PcbHoleAndPattern(AnyObject):
     def associated_part_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AssociatedPartName() As CATBSTR
-                |     Gets and sets the Associated Part of the hole.
-                | 
-                |         The available values are:
-                |         the name of the instance of component in which the hole is
-                |         defined.
-                |         BOARD if the hole is defined in the Board part
-                |         PANEL If the hole is defined in the Panel part
-                |         NOREFDES is the hole is defined in a non Electronic Part.
-                |         
-                | 
-                |     Returns:
-                | 
-                |             The result of the method:
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Property AssociatedPartName() As CATBSTR
+                    Gets and sets the Associated Part of the hole.
+                
+                        The available values are:
+                        the name of the instance of component in which the hole is
+                        defined.
+                        BOARD if the hole is defined in the Board part
+                        PANEL If the hole is defined in the Panel part
+                        NOREFDES is the hole is defined in a non Electronic Part.
+                        
+                
+                    Returns:
+                
+                            The result of the method:
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :return: str
         """
@@ -74,22 +71,21 @@ class PcbHoleAndPattern(AnyObject):
     def hole_owner(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HoleOwner() As CATBSTR
-                |     Gets and sets the owner of the hole.
-                | 
-                |         The available value are:
-                |         MCAD
-                |         ECAD
-                |         UNOWNED. 
-                | 
-                |     Returns:
-                | 
-                |             The result of the method:
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Property HoleOwner() As CATBSTR
+                    Gets and sets the owner of the hole.
+                
+                        The available value are:
+                        MCAD
+                        ECAD
+                        UNOWNED. 
+                
+                    Returns:
+                
+                            The result of the method:
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :return: str
         """
@@ -108,24 +104,23 @@ class PcbHoleAndPattern(AnyObject):
     def hole_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HoleType() As CATBSTR
-                |     Gets and sets the function of the hole.
-                | 
-                |         The available values are :
-                |         PIN if the hole is associated with a component pin
-                |         VIA if the hole is associated with a conductive via
-                |         MTG if the hole is used for mounting purposes
-                |         TOOL if the hole is used for tooling purposes
-                |         Other ( User defined ) 
-                | 
-                |     Returns:
-                | 
-                |             The result of the method:
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Property HoleType() As CATBSTR
+                    Gets and sets the function of the hole.
+                
+                        The available values are :
+                        PIN if the hole is associated with a component pin
+                        VIA if the hole is associated with a conductive via
+                        MTG if the hole is used for mounting purposes
+                        TOOL if the hole is used for tooling purposes
+                        Other ( User defined ) 
+                
+                    Returns:
+                
+                            The result of the method:
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :return: str
         """
@@ -144,21 +139,20 @@ class PcbHoleAndPattern(AnyObject):
     def plating_style(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PlatingStyle() As CATBSTR
-                |     Gets and sets the Plating Style of a hole.
-                | 
-                |         The available values are:
-                |         PTH
-                |         NPTH 
-                | 
-                |     Returns:
-                | 
-                |             The result of the method:
-                |             S_OK if succeeded
-                |             E_FAIL if failed 
+                Property PlatingStyle() As CATBSTR
+                    Gets and sets the Plating Style of a hole.
+                
+                        The available values are:
+                        PTH
+                        NPTH 
+                
+                    Returns:
+                
+                            The result of the method:
+                            S_OK if succeeded
+                            E_FAIL if failed 
 
         :return: str
         """
@@ -174,4 +168,4 @@ class PcbHoleAndPattern(AnyObject):
         self.com_object.PlatingStyle = value
 
     def __repr__(self):
-        return f'PcbHoleAndPattern(name="{ self.name }")'
+        return f'PcbHoleAndPattern(name="{self.name}")'

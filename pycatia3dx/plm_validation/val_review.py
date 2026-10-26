@@ -19,19 +19,18 @@ if TYPE_CHECKING:
 class VALReview(PLMEntity):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PLMModelerBaseIDLItf.PLMEntity
-                |                         VALReview
-                | 
-                | Allows management of Review entity
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PLMModelerBaseIDLItf.PLMEntity
+                                        VALReview
+                
+                Allows management of Review entity
     
     """
 
@@ -43,11 +42,10 @@ class VALReview(PLMEntity):
     def reviews(self) -> 'VALReviews':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Reviews() As VALReviews (Read Only)
-                |     Returns the Reviews collection.
+                Property Reviews() As VALReviews (Read Only)
+                    Returns the Reviews collection.
 
         :return: VALReviews
         """
@@ -57,27 +55,26 @@ class VALReview(PLMEntity):
     def get_factory(self, i_type: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetFactory(CATBSTR iType) As CATBaseDispatch
-                |     Returns the Factory for a given type.
-                | 
-                |     Example:
-                | 
-                |           Example to get the cMarkers collection.
-                |             
-                | 
-                |              Dim cMarkers As Markers 
-                |              Set cMarkers = TheVALReview.GetFactory("Markers")
-                |             
-                | 
-                | 
-                |           Example to get the cSlides collection.
-                |             
-                | 
-                |              Dim cSlides As Slides 
-                |              Set cSlides = TheVALReview.GetFactory("Slides")
+                Func GetFactory(CATBSTR iType) As CATBaseDispatch
+                    Returns the Factory for a given type.
+                
+                    Example:
+                
+                          Example to get the cMarkers collection.
+                            
+                
+                             Dim cMarkers As Markers 
+                             Set cMarkers = TheVALReview.GetFactory("Markers")
+                            
+                
+                
+                          Example to get the cSlides collection.
+                            
+                
+                             Dim cSlides As Slides 
+                             Set cSlides = TheVALReview.GetFactory("Slides")
 
         :param str i_type:
         :return: AnyObject

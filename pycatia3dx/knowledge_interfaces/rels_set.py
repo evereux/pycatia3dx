@@ -11,25 +11,23 @@ from pycatia3dx.knowledge_interfaces.knowledge_set import KnowledgeSet
 
 
 class RelsSet(KnowledgeSet):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     KnowledgeIDLItf.KnowledgeSet
-                |                         RelsSet
-                | 
-                | Knowledge set representing a relations set.
-                | 
-                | See also:
-                |     KnowledgeObjects.GetKnowledgeRootSet
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    KnowledgeIDLItf.KnowledgeSet
+                                        RelsSet
+                
+                Knowledge set representing a relations set.
+                
+                See also:
+                    KnowledgeObjects.GetKnowledgeRootSet
     
     """
 
@@ -38,4 +36,4 @@ class RelsSet(KnowledgeSet):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'RelsSet(name="{ self.name }")'
+        return f'RelsSet(name="{self.name}")'

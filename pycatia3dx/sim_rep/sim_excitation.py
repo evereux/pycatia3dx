@@ -18,18 +18,17 @@ if TYPE_CHECKING:
 class SimExcitation(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimExcitation
-                | 
-                | Represents the Scenario Excitation
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimExcitation
+                
+                Represents the Scenario Excitation
     
     """
 
@@ -41,18 +40,17 @@ class SimExcitation(AnyObject):
     def scenario_spec(self) -> 'SimScenarioSpec':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ScenarioSpec() As SimScenarioSpec (Read Only)
-                |     Gets the scenario aggregating this excitation(return Nothing if the
-                |     excitation is not aggregated by a scenario).
-                |     SimScenarioSpec
-                | 
-                |     Parameters:
-                | 
-                |         oScenarioSpec[out]
-                |             The scenario aggregating this excitation.
+                Property ScenarioSpec() As SimScenarioSpec (Read Only)
+                    Gets the scenario aggregating this excitation(return Nothing if the
+                    excitation is not aggregated by a scenario).
+                    SimScenarioSpec
+                
+                    Parameters:
+                
+                        oScenarioSpec[out]
+                            The scenario aggregating this excitation.
 
         :return: SimScenarioSpec
         """

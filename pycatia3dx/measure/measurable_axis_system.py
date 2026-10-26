@@ -7,26 +7,26 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia3dx import CATScriptLanguage
 from pycatia3dx.measure.measurable_in_context import MeasurableInContext
 
 
 class MeasurableAxisSystem(MeasurableInContext):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATOpnsMeasureIDLItf.MeasurableInContext
-                |                         MeasurableAxisSystem
-                | 
-                | Interface representing the measurement on an axis system.
-                | Get the position of the axis system.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATOpnsMeasureIDLItf.MeasurableInContext
+                                        MeasurableAxisSystem
+                
+                Interface representing the measurement on an axis system.
+                Get the position of the axis system.
     
     """
 
@@ -34,64 +34,80 @@ class MeasurableAxisSystem(MeasurableInContext):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def get_axis(self) -> tuple:
+    def get_axis(self) -> tuple | None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetAxis(CATSafeArrayVariant ioAxisPosition)
-                |     Retrieves the information of the axis system.
-                | 
-                |     Parameters:
-                | 
-                |         ioAxisPosition
-                |             The information of the axis system with respect to the product
-                |             coordinate system:
-                | 
-                |                 ioAxisPosition(0) is the X coordinate of the origin of the axis
-                |                 system
-                |                 ioAxisPosition(1) is the Y coordinate of the origin of the axis
-                |                 system
-                |                 ioAxisPosition(2) is the Z coordinate of the origin of the axis
-                |                 system
-                |                 ioAxisPosition(3) is the X coordinate of the first direction of
-                |                 the axis system
-                |                 ioAxisPosition(4) is the Y coordinate of the first direction of
-                |                 the axis system
-                |                 ioAxisPosition(5) is the Z coordinate of the first direction of
-                |                 the axis system
-                |                 ioAxisPosition(6) is the X coordinate of the second direction
-                |                 of the axis system
-                |                 ioAxisPosition(7) is the Y coordinate of the second direction
-                |                 of the axis system
-                |                 ioAxisPosition(8) is the Z coordinate of the second direction
-                |                 of the axis system
-                |                 ioAxisPosition(9) is the X coordinate of the third direction of
-                |                 the axis system
-                |                 ioAxisPosition(10) is the Y coordinate of the third direction
-                |                 of the axis system
-                |                 ioAxisPosition(11) is the Z coordinate of the third direction
-                |                 of the axis system 
-                | 
-                |     Example:
-                | 
-                |            This example retrieves information of the axis system of
-                |            theMeasurableAxisSystem measure.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasurableAxisSystem As
-                |              MeasurableAxisSystem
-                |              Set theMeasurableAxisSystem = theMeasureService.GetMeasurable(theSelection, CAAMeasurableAxisSystem)
-                |              Dim theAxisPosition(11)
-                |              theMeasurableAxisSystem.GetAxisSystem
-                |              theAxisPosition
+                Sub GetAxis(CATSafeArrayVariant ioAxisPosition)
+                    Retrieves the information of the axis system.
+                
+                    Parameters:
+                
+                        ioAxisPosition
+                            The information of the axis system with respect to the product
+                            coordinate system:
+                
+                                ioAxisPosition(0) is the X coordinate of the origin of the axis
+                                system
+                                ioAxisPosition(1) is the Y coordinate of the origin of the axis
+                                system
+                                ioAxisPosition(2) is the Z coordinate of the origin of the axis
+                                system
+                                ioAxisPosition(3) is the X coordinate of the first direction of
+                                the axis system
+                                ioAxisPosition(4) is the Y coordinate of the first direction of
+                                the axis system
+                                ioAxisPosition(5) is the Z coordinate of the first direction of
+                                the axis system
+                                ioAxisPosition(6) is the X coordinate of the second direction
+                                of the axis system
+                                ioAxisPosition(7) is the Y coordinate of the second direction
+                                of the axis system
+                                ioAxisPosition(8) is the Z coordinate of the second direction
+                                of the axis system
+                                ioAxisPosition(9) is the X coordinate of the third direction of
+                                the axis system
+                                ioAxisPosition(10) is the Y coordinate of the third direction
+                                of the axis system
+                                ioAxisPosition(11) is the Z coordinate of the third direction
+                                of the axis system 
+                
+                    Example:
+                
+                           This example retrieves information of the axis system of
+                           theMeasurableAxisSystem measure.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasurableAxisSystem As
+                             MeasurableAxisSystem
+                             Set theMeasurableAxisSystem = theMeasureService.GetMeasurable(theSelection, CAAMeasurableAxisSystem)
+                             Dim theAxisPosition(11)
+                             theMeasurableAxisSystem.GetAxisSystem
+                             theAxisPosition
 
         :return: None
         """
-        # todo: check this method, does it require system service?
-        return self.com_object.GetAxis()
+        vba_function_name = 'get_axis'
+        vba_code = """
+        Public Function get_axis(measurable_axis_system)
+            Dim oAxis (11)
+            measurable_axis_system.GetAxis oAxis
+            get_axis = oAxis
+        End Function
+        """
+
+        result = self.application.system_service.evaluate(
+            vba_code,
+            CATScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
+
+        if isinstance(result, tuple):
+            return result
+        return None
 
     def __repr__(self):
         return f'MeasurableAxisSystem(name="{self.name}")'

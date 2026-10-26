@@ -12,59 +12,57 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimRigidConnection(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimRigidConnection
-                | 
-                | Represents the Rigid Connection object.
-                | 
-                | Example:
-                |     Given a SimMCXProperties object, you can create a SimRigidConnection as
-                |     following:
-                | 
-                |      Dim MyMCXProperties As SimMCXProperties
-                |      ...
-                |      Dim MyRigidConnection As SimRigidConnection
-                |      Set MyRigidConnection = MyMCXProperties.Add("SimRigidConnection")
-                |      
-                | 
-                |     Given a SimMCXProperties object, you can retrieve a SimRigidConnection
-                |     named "Rigid Connection.1" as following:
-                | 
-                |      Dim MyMCXProperties As SimMCXProperties
-                |      ...
-                |      Dim MyRigidConnection As SimRigidConnection
-                |      Set MyRigidConnection = MyMCXProperties.Item("Rigid Connection.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMCXProperties object myMCXProperties, you can create a
-                |     SimRigidConnection as following:
-                | 
-                |      ...
-                |      myRigidConnection = myMCXProperties.Add("SimRigidConnection")
-                |      
-                | 
-                |     Given a SimMCXProperties object myMCXProperties, you can retrieve a
-                |     SimRigidConnection named "Rigid Connection.1" as
-                |     following:
-                | 
-                |      ...
-                |      myRigidConnection = myMCXProperties.Item("Rigid Connection.1")
-                |      
-                | 
-                | See also:
-                |     SimMCXProperties
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimRigidConnection
+                
+                Represents the Rigid Connection object.
+                
+                Example:
+                    Given a SimMCXProperties object, you can create a SimRigidConnection as
+                    following:
+                
+                     Dim MyMCXProperties As SimMCXProperties
+                     ...
+                     Dim MyRigidConnection As SimRigidConnection
+                     Set MyRigidConnection = MyMCXProperties.Add("SimRigidConnection")
+                     
+                
+                    Given a SimMCXProperties object, you can retrieve a SimRigidConnection
+                    named "Rigid Connection.1" as following:
+                
+                     Dim MyMCXProperties As SimMCXProperties
+                     ...
+                     Dim MyRigidConnection As SimRigidConnection
+                     Set MyRigidConnection = MyMCXProperties.Item("Rigid Connection.1")
+                     
+                
+                Example in Python:
+                    Given a SimMCXProperties object myMCXProperties, you can create a
+                    SimRigidConnection as following:
+                
+                     ...
+                     myRigidConnection = myMCXProperties.Add("SimRigidConnection")
+                     
+                
+                    Given a SimMCXProperties object myMCXProperties, you can retrieve a
+                    SimRigidConnection named "Rigid Connection.1" as
+                    following:
+                
+                     ...
+                     myRigidConnection = myMCXProperties.Item("Rigid Connection.1")
+                     
+                
+                See also:
+                    SimMCXProperties
     
     """
 
@@ -76,36 +74,35 @@ class SimRigidConnection(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. Possible values are:
-                | 
-                |         Abstractions
-                |         Amplitudes
-                |         Controls
-                |         Connections
-                |         Damping
-                |         ElementTypeAssignments
-                |         Envelopes
-                |         FieldPlots
-                |         FlowConditions
-                |         HistoryPlots
-                |         InitialConditions
-                |         Interactions
-                |         LinearLoadCases
-                |         Loads
-                |         LoadSets
-                |         OutputRequests
-                |         PredefinedFields
-                |         Properties
-                |         Restraints
-                |         Sensors
-                |         Streams
-                |         ThermalConditions
-                |         NotDefined
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. Possible values are:
+                
+                        Abstractions
+                        Amplitudes
+                        Controls
+                        Connections
+                        Damping
+                        ElementTypeAssignments
+                        Envelopes
+                        FieldPlots
+                        FlowConditions
+                        HistoryPlots
+                        InitialConditions
+                        Interactions
+                        LinearLoadCases
+                        Loads
+                        LoadSets
+                        OutputRequests
+                        PredefinedFields
+                        Properties
+                        Restraints
+                        Sensors
+                        Streams
+                        ThermalConditions
+                        NotDefined
 
         :return: str
         """
@@ -113,4 +110,4 @@ class SimRigidConnection(AnyObject):
         return self.com_object.SpecTreeCategory
 
     def __repr__(self):
-        return f'SimRigidConnection(name="{ self.name }")'
+        return f'SimRigidConnection(name="{self.name}")'

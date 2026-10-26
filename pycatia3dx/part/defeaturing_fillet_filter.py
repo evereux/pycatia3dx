@@ -12,23 +12,21 @@ from pycatia3dx.part.defeaturing_filter_with_range import DefeaturingFilterWithR
 
 
 class DefeaturingFilletFilter(DefeaturingFilterWithRange):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATPartIDLItf.DefeaturingFilter
-                |                        CATPartIDLItf.DefeaturingFilterWithRange
-                |                             DefeaturingFilletFilter
-                | 
-                | Represents the defeaturing fillet filter.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATPartIDLItf.DefeaturingFilter
+                                       CATPartIDLItf.DefeaturingFilterWithRange
+                                            DefeaturingFilletFilter
+                
+                Represents the defeaturing fillet filter.
 
     """
 
@@ -37,4 +35,4 @@ class DefeaturingFilletFilter(DefeaturingFilterWithRange):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'DefeaturingFilletFilter(name="{ self.name }")'
+        return f'DefeaturingFilletFilter(name="{self.name}")'

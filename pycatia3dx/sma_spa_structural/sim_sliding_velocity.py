@@ -14,59 +14,57 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimSlidingVelocity(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimSlidingVelocity
-                | 
-                | Represents the Sliding Velocity object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimSlidingVelocity as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MySlidingVelocity As SimSlidingVelocity
-                |      Set MySlidingVelocity = MyFeatures.Add("SimSlidingVelocity")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimSlidingVelocity named
-                |     "Sliding Velocity.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MySlidingVelocity As SimSlidingVelocity
-                |      Set MySlidingVelocity = MyFeatures.Item("Sliding Velocity.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a SimSlidingVelocity
-                |     as following:
-                | 
-                |      ...
-                |      mySlidingVelocity = myFeatures.Add("SimSlidingVelocity")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a
-                |     SimSlidingVelocity named "Sliding Velocity.1" as
-                |     following:
-                | 
-                |      ...
-                |      mySlidingVelocity = myFeatures.Item("Sliding Velocity.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimSlidingVelocity
+                
+                Represents the Sliding Velocity object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimSlidingVelocity as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MySlidingVelocity As SimSlidingVelocity
+                     Set MySlidingVelocity = MyFeatures.Add("SimSlidingVelocity")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimSlidingVelocity named
+                    "Sliding Velocity.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MySlidingVelocity As SimSlidingVelocity
+                     Set MySlidingVelocity = MyFeatures.Item("Sliding Velocity.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a SimSlidingVelocity
+                    as following:
+                
+                     ...
+                     mySlidingVelocity = myFeatures.Add("SimSlidingVelocity")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a
+                    SimSlidingVelocity named "Sliding Velocity.1" as
+                    following:
+                
+                     ...
+                     mySlidingVelocity = myFeatures.Item("Sliding Velocity.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -78,11 +76,10 @@ class SimSlidingVelocity(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -101,11 +98,10 @@ class SimSlidingVelocity(AnyObject):
     def angular_velocity(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AngularVelocity() As double
-                |     Returns or sets the value of rotational sliding velocity.
+                Property AngularVelocity() As double
+                    Returns or sets the value of rotational sliding velocity.
 
         :return: float
         """
@@ -124,11 +120,10 @@ class SimSlidingVelocity(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the local axis system.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the local axis system.
 
         :return: SimAxisSystem
         """
@@ -139,11 +134,10 @@ class SimSlidingVelocity(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureHistory() As SimFeatureHistory (Read Only)
-                |     Returns the feature history.
+                Property FeatureHistory() As SimFeatureHistory (Read Only)
+                    Returns the feature history.
 
         :return: SimFeatureHistory
         """
@@ -154,11 +148,10 @@ class SimSlidingVelocity(AnyObject):
     def line(self) -> SimAxis:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Line() As SimAxis (Read Only)
-                |     Returns the axis of rotation.
+                Property Line() As SimAxis (Read Only)
+                    Returns the axis of rotation.
 
         :return: SimAxis
         """
@@ -169,12 +162,11 @@ class SimSlidingVelocity(AnyObject):
     def translational_dof(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TranslationalDof() As
-                | SimSlidingVelocityTranslationalDof
-                |     Returns or sets the type of translational DOF.
+                Property TranslationalDof() As
+                SimSlidingVelocityTranslationalDof
+                    Returns or sets the type of translational DOF.
 
         :return: SimSlidingVelocityTranslationalDof
         """
@@ -193,11 +185,10 @@ class SimSlidingVelocity(AnyObject):
     def translational_velocity(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TranslationalVelocity() As double
-                |     Returns or sets the value of translational sliding velocity.
+                Property TranslationalVelocity() As double
+                    Returns or sets the value of translational sliding velocity.
 
         :return: float
         """
@@ -216,13 +207,12 @@ class SimSlidingVelocity(AnyObject):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As SimSlidingVelocityType
-                |     Returns or sets the type of sliding velocity. 
-                | 
-                | Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
+                Property Type() As SimSlidingVelocityType
+                    Returns or sets the type of sliding velocity. 
+                
+                Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
 
         :return: SimSlidingVelocityType
         """
@@ -238,4 +228,4 @@ class SimSlidingVelocity(AnyObject):
         self.com_object.Type = value
 
     def __repr__(self):
-        return f'SimSlidingVelocity(name="{ self.name }")'
+        return f'SimSlidingVelocity(name="{self.name}")'

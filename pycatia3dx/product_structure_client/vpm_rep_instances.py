@@ -17,21 +17,20 @@ from pycatia3dx.types import CATVariant
 class VPMRepInstances(PLMEntities):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     PLMModelerBaseIDLItf.PLMEntities
-                |                         VPMRepInstances
-                | 
-                | A collection of PLM Product Representation Instances.
-                | This collection contains the children of a PLM Product
-                | Reference.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    PLMModelerBaseIDLItf.PLMEntities
+                                        VPMRepInstances
+                
+                A collection of PLM Product Representation Instances.
+                This collection contains the children of a PLM Product
+                Reference.
     
     """
 

@@ -12,52 +12,50 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimDesignImprovementResponseVariable(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimDesignImprovementResponseVariable
-                | 
-                | Represents the Design Improvement ResponseVariable.
-                | Base class for Design Improvement Response Variable.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimDesignImprovementResponseVariable named "Response Variable.1" as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyResponseVariable As
-                |      SimDesignImprovementResponseVariable
-                |      Set MyResponseVariable = MyFeatures.Item("Response Variable.1")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures collection, you can retrieve a
-                |     SimDesignImprovementResponseVariable object as following:
-                | 
-                |      ...
-                |      MyResponseVariable  = MyFeatures.Item("Response Variable.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures collection, you can retrieve a
-                |     SimDesignImprovementResponseVariable object as following:
-                | 
-                |      ...
-                |      MyResponseVariable  = MyFeatures.Item("Response Variable.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimDesignImprovementResponseVariable
+                
+                Represents the Design Improvement ResponseVariable.
+                Base class for Design Improvement Response Variable.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimDesignImprovementResponseVariable named "Response Variable.1" as
+                    following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyResponseVariable As
+                     SimDesignImprovementResponseVariable
+                     Set MyResponseVariable = MyFeatures.Item("Response Variable.1")
+                     
+                
+                    Given a SimDesignImprovementFeatures collection, you can retrieve a
+                    SimDesignImprovementResponseVariable object as following:
+                
+                     ...
+                     MyResponseVariable  = MyFeatures.Item("Response Variable.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures collection, you can retrieve a
+                    SimDesignImprovementResponseVariable object as following:
+                
+                     ...
+                     MyResponseVariable  = MyFeatures.Item("Response Variable.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -66,4 +64,4 @@ class SimDesignImprovementResponseVariable(AnyObject):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'SimDesignImprovementResponseVariable(name="{ self.name }")'
+        return f'SimDesignImprovementResponseVariable(name="{self.name}")'

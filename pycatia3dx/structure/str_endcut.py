@@ -16,22 +16,21 @@ from pycatia3dx.structure.str_detail_feature import StrDetailFeature
 class StrEndcut(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrEndcut
-                | 
-                | Object to manage Endcut of a Profile.
-                | Role: Allows accessing of Endcut's data.
-                | 
-                | See also:
-                |     StrEndcutMngt
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrEndcut
+                
+                Object to manage Endcut of a Profile.
+                Role: Allows accessing of Endcut's data.
+                
+                See also:
+                    StrEndcutMngt
     
     """
 
@@ -43,11 +42,10 @@ class StrEndcut(AnyObject):
     def str_detail_feature(self) -> StrDetailFeature:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrDetailFeature() As StrDetailFeature (Read Only)
-                |     Returns StrDetailFeature object.
+                Property StrDetailFeature() As StrDetailFeature (Read Only)
+                    Returns StrDetailFeature object.
 
         :return: StrDetailFeature
         """
@@ -57,17 +55,16 @@ class StrEndcut(AnyObject):
     def get_candidate_context(self, i_name: str) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCandidateContext(CATBSTR iName) As Reference
-                |     Returns a candidate context for the endcut that is the limit already set on
-                |     the Profile.
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             Name.
+                Func GetCandidateContext(CATBSTR iName) As Reference
+                    Returns a candidate context for the endcut that is the limit already set on
+                    the Profile.
+                
+                    Parameters:
+                
+                        iName
+                            Name.
 
         :param str i_name:
         :return: Reference
@@ -77,24 +74,23 @@ class StrEndcut(AnyObject):
     def get_extremity(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetExtremity() As long
-                |     Returns the extremity on which this Endcut is applied to.
-                |     values:
-                |     1: Start Extremity
-                |     2: End Extremity
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves Extremity of the Endcut.
-                |              
-                | 
-                |              Dim ObjStrEndCut As StrEndCut
-                |              Set ObjStrEndCut = ObjStrEndcutMngt.AddEndCut(1)
-                |              Extr = ObjStrEndcut.GetExtremity
+                Func GetExtremity() As long
+                    Returns the extremity on which this Endcut is applied to.
+                    values:
+                    1: Start Extremity
+                    2: End Extremity
+                
+                    Example:
+                
+                
+                             This example retrieves Extremity of the Endcut.
+                             
+                
+                             Dim ObjStrEndCut As StrEndCut
+                             Set ObjStrEndCut = ObjStrEndcutMngt.AddEndCut(1)
+                             Extr = ObjStrEndcut.GetExtremity
 
         :return: int
         """

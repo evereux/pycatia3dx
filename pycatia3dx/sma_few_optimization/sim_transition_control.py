@@ -12,43 +12,41 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimTransitionControl(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimTransitionControl
-                | 
-                | Represents the Transition Control object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimTransitionControl as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      Dim MyLocalOptimizationArea As SimLocalOptimizationArea
-                |      ...
-                |      Dim MyTransitionControl As SimTransitionControl
-                |      Set MyTransitionControl = MyFeatures.AddSubFeature("SimTransitionControl", MyLocalOptimizationArea)
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimTransitionControl as following:
-                | 
-                |      ...
-                |      MyTransitionControl = MyFeatures.AddSubFeature("SimTransitionControl", MyLocalOptimizationArea)
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimTransitionControl
+                
+                Represents the Transition Control object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimTransitionControl as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     Dim MyLocalOptimizationArea As SimLocalOptimizationArea
+                     ...
+                     Dim MyTransitionControl As SimTransitionControl
+                     Set MyTransitionControl = MyFeatures.AddSubFeature("SimTransitionControl", MyLocalOptimizationArea)
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimTransitionControl as following:
+                
+                     ...
+                     MyTransitionControl = MyFeatures.AddSubFeature("SimTransitionControl", MyLocalOptimizationArea)
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -59,16 +57,15 @@ class SimTransitionControl(AnyObject):
     def get_transition_distance(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTransitionDistance(double oVal)
-                |     Gets the Transition Distance.
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Distance Value. Quantity: LENGTH, units:m
+                Sub GetTransitionDistance(double oVal)
+                    Gets the Transition Distance.
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Distance Value. Quantity: LENGTH, units:m
 
         :param float o_val:
         :return: None
@@ -78,16 +75,15 @@ class SimTransitionControl(AnyObject):
     def set_transition_distance(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTransitionDistance(double iVal)
-                |     Sets the Transition Distance.
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Distance Value. Quantity: LENGTH, units:m 
+                Sub SetTransitionDistance(double iVal)
+                    Sets the Transition Distance.
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Distance Value. Quantity: LENGTH, units:m 
 
 
         :param float i_val:
@@ -96,4 +92,4 @@ class SimTransitionControl(AnyObject):
         return self.com_object.SetTransitionDistance(i_val)
 
     def __repr__(self):
-        return f'SimTransitionControl(name="{ self.name }")'
+        return f'SimTransitionControl(name="{self.name}")'

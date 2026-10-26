@@ -15,34 +15,33 @@ from pycatia3dx.mmr_automation_interfaces.mono_dim_feat_edge import MonoDimFeatE
 class RectilinearMonoDimFeatEdge(MonoDimFeatEdge):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfModelInterfaces.Reference
-                |                         CATMmrAutomationInterfaces.Boundary
-                |                             CATMmrAutomationInterfaces.Edge
-                |                                CATMmrAutomationInterfaces.MonoDimFeatEdge
-                |                                     RectilinearMonoDimFeatEdge
-                | 
-                | 1-D boundary belonging to a feature whose topological result is one
-                | dimensional, the boundary having a rectilinear geometry.
-                | Role: This Boundary object may be, for example, in a part containing a Sketch
-                | which is made up of a line segment and a spline, the line
-                | segment.
-                | You will create a RectilinearMonoDimFeatEdge object using the
-                | Shapes.GetBoundary , HybridShapes.GetBoundary , Sketches.GetBoundary or
-                | Selection.SelectElement2 method. Then, you pass it to the operator (such as
-                | Hole.SetDirection ).
-                | The lifetime of a RectilinearMonoDimFeatEdge object is limited, see
-                | Boundary.
-                | 
-                | Example: see the RectilinearTriDimFeatEdge example
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfModelInterfaces.Reference
+                                        CATMmrAutomationInterfaces.Boundary
+                                            CATMmrAutomationInterfaces.Edge
+                                               CATMmrAutomationInterfaces.MonoDimFeatEdge
+                                                    RectilinearMonoDimFeatEdge
+                
+                1-D boundary belonging to a feature whose topological result is one
+                dimensional, the boundary having a rectilinear geometry.
+                Role: This Boundary object may be, for example, in a part containing a Sketch
+                which is made up of a line segment and a spline, the line
+                segment.
+                You will create a RectilinearMonoDimFeatEdge object using the
+                Shapes.GetBoundary , HybridShapes.GetBoundary , Sketches.GetBoundary or
+                Selection.SelectElement2 method. Then, you pass it to the operator (such as
+                Hole.SetDirection ).
+                The lifetime of a RectilinearMonoDimFeatEdge object is limited, see
+                Boundary.
+                
+                Example: see the RectilinearTriDimFeatEdge example
     
     """
 
@@ -53,20 +52,19 @@ class RectilinearMonoDimFeatEdge(MonoDimFeatEdge):
     def get_direction(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub GetDirection(CATSafeArrayVariant oDirection)
-                |     Returns the direction of the rectilinear edge
-                | 
-                |     Parameters:
-                | 
-                |         oDirection[0]
-                |             The X Coordinate of the direction 
-                |         oDirection[1]
-                |             The Y Coordinate of the direction 
-                |         oDirection[2]
-                |             The Z Coordinate of the direction
+                Sub GetDirection(CATSafeArrayVariant oDirection)
+                    Returns the direction of the rectilinear edge
+                
+                    Parameters:
+                
+                        oDirection[0]
+                            The X Coordinate of the direction 
+                        oDirection[1]
+                            The Y Coordinate of the direction 
+                        oDirection[2]
+                            The Z Coordinate of the direction
 
         :return: tuple
         """
@@ -90,20 +88,19 @@ class RectilinearMonoDimFeatEdge(MonoDimFeatEdge):
     def get_origin(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub GetOrigin(CATSafeArrayVariant oOrigin)
-                |     Returns the origin of the the rectilinear edge.
-                | 
-                |     Parameters:
-                | 
-                |         oOrigin[0]
-                |             The X Coordinate of the rectilinear edge origin 
-                |         oOrigin[1]
-                |             The Y Coordinate of the rectilinear edge origin 
-                |         oOrigin[2]
-                |             The Z Coordinate of the rectilinear edge origin
+                Sub GetOrigin(CATSafeArrayVariant oOrigin)
+                    Returns the origin of the the rectilinear edge.
+                
+                    Parameters:
+                
+                        oOrigin[0]
+                            The X Coordinate of the rectilinear edge origin 
+                        oOrigin[1]
+                            The Y Coordinate of the rectilinear edge origin 
+                        oOrigin[2]
+                            The Z Coordinate of the rectilinear edge origin
 
         :return: tuple
         """

@@ -14,24 +14,22 @@ from pycatia3dx.machining_use.manufacturing_feature_container import Manufacturi
 
 
 class ManufacturingFactories(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingFactories
-                | 
-                | Interface to manage manufacturing factories.
-                | 
-                | Role: DELIMfgManufacturingFactories has methods to manage manufacturing
-                | factories.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingFactories
+                
+                Interface to manage manufacturing factories.
+                
+                Role: DELIMfgManufacturingFactories has methods to manage manufacturing
+                factories.
     
     """
 
@@ -42,19 +40,18 @@ class ManufacturingFactories(AnyObject):
     def get_manufacturing_activity_factories(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetManufacturingActivityFactories() As
-                | CATSafeArrayVariant
-                |     Retrieves the manufacturing activity factories.
-                |     Role: GetManufacturingActivityFactories retrieves all the manufacturing
-                |     activity factory
-                | 
-                |     Parameters:
-                | 
-                |         oActivityFactories
-                |             The manufacturing activity factories.
+                Func GetManufacturingActivityFactories() As
+                CATSafeArrayVariant
+                    Retrieves the manufacturing activity factories.
+                    Role: GetManufacturingActivityFactories retrieves all the manufacturing
+                    activity factory
+                
+                    Parameters:
+                
+                        oActivityFactories
+                            The manufacturing activity factories.
 
         :return: tuple
         """
@@ -63,20 +60,19 @@ class ManufacturingFactories(AnyObject):
     def get_manufacturing_activity_factory(self) -> ManufacturingContainer:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetManufacturingActivityFactory() As
-                | ManufacturingContainer
-                |     Retrieves the current manufacturing activity factory from the
-                |     UI.
-                |     Role: GetManufacturingActivityFactory retrieves the manufacturing activity
-                |     factory
-                | 
-                |     Parameters:
-                | 
-                |         oActivityFactory
-                |             The manufacturing activity factory.
+                Func GetManufacturingActivityFactory() As
+                ManufacturingContainer
+                    Retrieves the current manufacturing activity factory from the
+                    UI.
+                    Role: GetManufacturingActivityFactory retrieves the manufacturing activity
+                    factory
+                
+                    Parameters:
+                
+                        oActivityFactory
+                            The manufacturing activity factory.
 
         :return: ManufacturingContainer
         """
@@ -85,44 +81,43 @@ class ManufacturingFactories(AnyObject):
     def get_manufacturing_activity_factory_from_feature(self, ih_ref_object: AnyObject) -> ManufacturingContainer:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetManufacturingActivityFactoryFromFeature(AnyObject ihRefObject) As
-                | ManufacturingContainer
-                |     Retrieves the manufacturing activity factory from the given
-                |     object.
-                |     Role: GetManufacturingActivityFactory retrieves the manufacturing activity
-                |     factory
-                | 
-                |     Parameters:
-                | 
-                |         ihRefObject
-                |             Object to which belongs the container to retrieve.
-                |             
-                |         oActivityFactory
-                |             The manufacturing activity factory.
+                Func GetManufacturingActivityFactoryFromFeature(AnyObject ihRefObject) As
+                ManufacturingContainer
+                    Retrieves the manufacturing activity factory from the given
+                    object.
+                    Role: GetManufacturingActivityFactory retrieves the manufacturing activity
+                    factory
+                
+                    Parameters:
+                
+                        ihRefObject
+                            Object to which belongs the container to retrieve.
+                            
+                        oActivityFactory
+                            The manufacturing activity factory.
 
         :param AnyObject ih_ref_object:
         :return: ManufacturingContainer
         """
-        return ManufacturingContainer(self.com_object.GetManufacturingActivityFactoryFromFeature(ih_ref_object.com_object))
+        return ManufacturingContainer(
+            self.com_object.GetManufacturingActivityFactoryFromFeature(ih_ref_object.com_object))
 
     def get_manufacturing_feature_factories(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetManufacturingFeatureFactories() As CATSafeArrayVariant
-                |     Retrieves the manufacturing feature factories.
-                |     Role: GetManufacturingFeatureFactories retrieves all the manufacturing
-                |     feature factory
-                | 
-                |     Parameters:
-                | 
-                |         oFeatureFactories
-                |             The manufacturing feature factories.
+                Func GetManufacturingFeatureFactories() As CATSafeArrayVariant
+                    Retrieves the manufacturing feature factories.
+                    Role: GetManufacturingFeatureFactories retrieves all the manufacturing
+                    feature factory
+                
+                    Parameters:
+                
+                        oFeatureFactories
+                            The manufacturing feature factories.
 
         :return: tuple
         """
@@ -131,20 +126,19 @@ class ManufacturingFactories(AnyObject):
     def get_manufacturing_feature_factory(self) -> ManufacturingFeatureContainer:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetManufacturingFeatureFactory() As
-                | ManufacturingFeatureContainer
-                |     Retrieves the manufacturing feature factory from the given
-                |     object.
-                |     Role: GetManufacturingFeatureFactory retrieves the manufacturing feature
-                |     factory
-                | 
-                |     Parameters:
-                | 
-                |         oFeatureFactory
-                |             The manufacturing feature factory.
+                Func GetManufacturingFeatureFactory() As
+                ManufacturingFeatureContainer
+                    Retrieves the manufacturing feature factory from the given
+                    object.
+                    Role: GetManufacturingFeatureFactory retrieves the manufacturing feature
+                    factory
+                
+                    Parameters:
+                
+                        oFeatureFactory
+                            The manufacturing feature factory.
 
         :return: ManufacturingFeatureContainer
         """
@@ -153,47 +147,46 @@ class ManufacturingFactories(AnyObject):
     def get_manufacturing_feature_factory_from_feature(self, ih_ref_object: AnyObject) -> ManufacturingFeatureContainer:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetManufacturingFeatureFactoryFromFeature(AnyObject ihRefObject) As
-                | ManufacturingFeatureContainer
-                |     Retrieves the current manufacturing feature factory from the
-                |     UI.
-                |     Role: GetManufacturingFeatureFactory retrieves the manufacturing feature
-                |     factory
-                | 
-                |     Parameters:
-                | 
-                |         ihRefObject
-                |             Object to which belongs the container to retrieve.
-                |             
-                |         oFeatureFactory
-                |             The manufacturing feature factory.
+                Func GetManufacturingFeatureFactoryFromFeature(AnyObject ihRefObject) As
+                ManufacturingFeatureContainer
+                    Retrieves the current manufacturing feature factory from the
+                    UI.
+                    Role: GetManufacturingFeatureFactory retrieves the manufacturing feature
+                    factory
+                
+                    Parameters:
+                
+                        ihRefObject
+                            Object to which belongs the container to retrieve.
+                            
+                        oFeatureFactory
+                            The manufacturing feature factory.
 
         :param AnyObject ih_ref_object:
         :return: ManufacturingFeatureContainer
         """
-        return ManufacturingFeatureContainer(self.com_object.GetManufacturingFeatureFactoryFromFeature(ih_ref_object.com_object))
+        return ManufacturingFeatureContainer(
+            self.com_object.GetManufacturingFeatureFactoryFromFeature(ih_ref_object.com_object))
 
     def get_manufacturing_resource_factory(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetManufacturingResourceFactory() As AnyObject
-                |     Retrieves the manufacturing resource factory from the given
-                |     object.
-                | 
-                |     Parameters:
-                | 
-                |         oResourceFactory
-                |             The manufacturing resource factory.
+                Func GetManufacturingResourceFactory() As AnyObject
+                    Retrieves the manufacturing resource factory from the given
+                    object.
+                
+                    Parameters:
+                
+                        oResourceFactory
+                            The manufacturing resource factory.
 
         :return: AnyObject
         """
         return AnyObject(self.com_object.GetManufacturingResourceFactory())
 
     def __repr__(self):
-        return f'ManufacturingFactories(name="{ self.name }")'
+        return f'ManufacturingFactories(name="{self.name}")'

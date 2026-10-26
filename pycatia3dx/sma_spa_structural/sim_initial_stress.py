@@ -12,58 +12,56 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimInitialStress(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimInitialStress
-                | 
-                | Represents the Initial Stress object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimInitialStress as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyInitialStress As SimInitialStress
-                |      Set MyInitialStress = MyFeatures.Add("SimInitialStress")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimInitialStress named
-                |     "Initial Stress.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyInitialStress As SimInitialStress
-                |      Set MyInitialStress = MyFeatures.Item("Initial Stress.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a SimInitialStress as
-                |     following:
-                | 
-                |      ...
-                |      myInitialStress = myFeatures.Add("SimInitialStress")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a SimInitialStress
-                |     named "Initial Stress.1" as following:
-                | 
-                |      ...
-                |      myInitialStress = myFeatures.Item("Initial Stress.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimInitialStress
+                
+                Represents the Initial Stress object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimInitialStress as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyInitialStress As SimInitialStress
+                     Set MyInitialStress = MyFeatures.Add("SimInitialStress")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimInitialStress named
+                    "Initial Stress.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyInitialStress As SimInitialStress
+                     Set MyInitialStress = MyFeatures.Item("Initial Stress.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a SimInitialStress as
+                    following:
+                
+                     ...
+                     myInitialStress = myFeatures.Add("SimInitialStress")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a SimInitialStress
+                    named "Initial Stress.1" as following:
+                
+                     ...
+                     myInitialStress = myFeatures.Item("Initial Stress.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -75,11 +73,10 @@ class SimInitialStress(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -98,11 +95,10 @@ class SimInitialStress(AnyObject):
     def rebar_prestress(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RebarPrestress() As double
-                |     Returns or sets the rebar prestress. Quantity: STRESS, units: N_m2
+                Property RebarPrestress() As double
+                    Returns or sets the rebar prestress. Quantity: STRESS, units: N_m2
 
         :return: float
         """
@@ -121,12 +117,11 @@ class SimInitialStress(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. See SimFeatures.GetSpecTreeCategory for usage.
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. See SimFeatures.GetSpecTreeCategory for usage.
 
         :return: str
         """
@@ -137,11 +132,10 @@ class SimInitialStress(AnyObject):
     def stress_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StressType() As SimInitialStressType
-                |     Returns or sets the stress type.
+                Property StressType() As SimInitialStressType
+                    Returns or sets the stress type.
 
         :return: SimInitialStressType
         """
@@ -160,11 +154,10 @@ class SimInitialStress(AnyObject):
     def tensor_field(self) -> SimSymmetricTensorField:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TensorField() As SimSymmetricTensorField (Read Only)
-                |     Returns the tensor field.
+                Property TensorField() As SimSymmetricTensorField (Read Only)
+                    Returns the tensor field.
 
         :return: SimSymmetricTensorField
         """
@@ -175,62 +168,61 @@ class SimInitialStress(AnyObject):
     def uniform_tensor_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UniformTensorFlag() As boolean (Read Only)
-                |     Retrieves the flag that determines if the initial stress is uniform on the
-                |     support.
-                | 
-                |     Parameters:
-                | 
-                |         oIsUniform[out]
-                |             TRUE: the initial stress is uniform.
-                |             FALSE: the initial stress is not uniform. 
-                | 
-                |     Returns:
-                |         S_OK if successful.
+                Property UniformTensorFlag() As boolean (Read Only)
+                    Retrieves the flag that determines if the initial stress is uniform on the
+                    support.
+                
+                    Parameters:
+                
+                        oIsUniform[out]
+                            TRUE: the initial stress is uniform.
+                            FALSE: the initial stress is not uniform. 
+                
+                    Returns:
+                        S_OK if successful.
 
         :return: bool
         """
 
         return self.com_object.UniformTensorFlag
 
-    def get_uniform_tensor_components(self, o_sigma11: float, o_sigma22: float, o_sigma33: float, o_sigma12: float, o_sigma13: float, o_sigma23: float) -> None:
+    def get_uniform_tensor_components(self, o_sigma11: float, o_sigma22: float, o_sigma33: float, o_sigma12: float,
+                                      o_sigma13: float, o_sigma23: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetUniformTensorComponents(double oSigma11,double oSigma22,double
-                | oSigma33,double oSigma12,double oSigma13,double oSigma23)
-                |     Retrieves the uniform tensor stress components.
-                |     This method is only applicable if the uniform tensor flag is
-                |     TRUE.
-                | 
-                |     Parameters:
-                | 
-                |         oSigma11[out]
-                |             The Sigma 11 component of the stress tensor. Quantity: STRESS,
-                |             units: N_m2 
-                |         oSigma22[out]
-                |             The Sigma 22 component of the stress tensor. Quantity: STRESS,
-                |             units: N_m2 
-                |         oSigma33[out]
-                |             The Sigma 33 component of the stress tensor. Quantity: STRESS,
-                |             units: N_m2 
-                |         oSigma12[out]
-                |             The Sigma 12 component of the stress tensor. Quantity: STRESS,
-                |             units: N_m2 
-                |         oSigma13[out]
-                |             The Sigma 13 component of the stress tensor. Quantity: STRESS,
-                |             units: N_m2 
-                |         oSigma23[out]
-                |             The Sigma 23 component of the stress tensor. Quantity: STRESS,
-                |             units: N_m2 
-                | 
-                |     Returns:
-                |         S_OK if successful.
+                Sub GetUniformTensorComponents(double oSigma11,double oSigma22,double
+                oSigma33,double oSigma12,double oSigma13,double oSigma23)
+                    Retrieves the uniform tensor stress components.
+                    This method is only applicable if the uniform tensor flag is
+                    TRUE.
+                
+                    Parameters:
+                
+                        oSigma11[out]
+                            The Sigma 11 component of the stress tensor. Quantity: STRESS,
+                            units: N_m2 
+                        oSigma22[out]
+                            The Sigma 22 component of the stress tensor. Quantity: STRESS,
+                            units: N_m2 
+                        oSigma33[out]
+                            The Sigma 33 component of the stress tensor. Quantity: STRESS,
+                            units: N_m2 
+                        oSigma12[out]
+                            The Sigma 12 component of the stress tensor. Quantity: STRESS,
+                            units: N_m2 
+                        oSigma13[out]
+                            The Sigma 13 component of the stress tensor. Quantity: STRESS,
+                            units: N_m2 
+                        oSigma23[out]
+                            The Sigma 23 component of the stress tensor. Quantity: STRESS,
+                            units: N_m2 
+                
+                    Returns:
+                        S_OK if successful.
 
         :param float o_sigma11:
         :param float o_sigma22:
@@ -240,43 +232,44 @@ class SimInitialStress(AnyObject):
         :param float o_sigma23:
         :return: None
         """
-        return self.com_object.GetUniformTensorComponents(o_sigma11, o_sigma22, o_sigma33, o_sigma12, o_sigma13, o_sigma23)
+        return self.com_object.GetUniformTensorComponents(o_sigma11, o_sigma22, o_sigma33, o_sigma12, o_sigma13,
+                                                          o_sigma23)
 
-    def set_uniform_tensor_components(self, i_sigma11: float, i_sigma22: float, i_sigma33: float, i_sigma12: float, i_sigma13: float, i_sigma23: float) -> None:
+    def set_uniform_tensor_components(self, i_sigma11: float, i_sigma22: float, i_sigma33: float, i_sigma12: float,
+                                      i_sigma13: float, i_sigma23: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetUniformTensorComponents(double iSigma11,double iSigma22,double
-                | iSigma33,double iSigma12,double iSigma13,double iSigma23)
-                |     Sets the uniform tensor stress components.
-                |     This method is only applicable if the uniform tensor flag is
-                |     TRUE.
-                | 
-                |     Parameters:
-                | 
-                |         iSigma11[in]
-                |             The Sigma 11 component of the stress tensor. Quantity: STRESS,
-                |             units: N_m2 
-                |         iSigma22[in]
-                |             The Sigma 22 component of the stress tensor. Quantity: STRESS,
-                |             units: N_m2 
-                |         iSigma33[in]
-                |             The Sigma 33 component of the stress tensor. Quantity: STRESS,
-                |             units: N_m2 
-                |         iSigma12[in]
-                |             The Sigma 12 component of the stress tensor. Quantity: STRESS,
-                |             units: N_m2 
-                |         iSigma13[in]
-                |             The Sigma 13 component of the stress tensor. Quantity: STRESS,
-                |             units: N_m2 
-                |         iSigma23[in]
-                |             The Sigma 23 component of the stress tensor. Quantity: STRESS,
-                |             units: N_m2 
-                | 
-                |     Returns:
-                |         S_OK if successful. 
+                Sub SetUniformTensorComponents(double iSigma11,double iSigma22,double
+                iSigma33,double iSigma12,double iSigma13,double iSigma23)
+                    Sets the uniform tensor stress components.
+                    This method is only applicable if the uniform tensor flag is
+                    TRUE.
+                
+                    Parameters:
+                
+                        iSigma11[in]
+                            The Sigma 11 component of the stress tensor. Quantity: STRESS,
+                            units: N_m2 
+                        iSigma22[in]
+                            The Sigma 22 component of the stress tensor. Quantity: STRESS,
+                            units: N_m2 
+                        iSigma33[in]
+                            The Sigma 33 component of the stress tensor. Quantity: STRESS,
+                            units: N_m2 
+                        iSigma12[in]
+                            The Sigma 12 component of the stress tensor. Quantity: STRESS,
+                            units: N_m2 
+                        iSigma13[in]
+                            The Sigma 13 component of the stress tensor. Quantity: STRESS,
+                            units: N_m2 
+                        iSigma23[in]
+                            The Sigma 23 component of the stress tensor. Quantity: STRESS,
+                            units: N_m2 
+                
+                    Returns:
+                        S_OK if successful. 
 
         :param float i_sigma11:
         :param float i_sigma22:
@@ -286,7 +279,8 @@ class SimInitialStress(AnyObject):
         :param float i_sigma23:
         :return: None
         """
-        return self.com_object.SetUniformTensorComponents(i_sigma11, i_sigma22, i_sigma33, i_sigma12, i_sigma13, i_sigma23)
+        return self.com_object.SetUniformTensorComponents(i_sigma11, i_sigma22, i_sigma33, i_sigma12, i_sigma13,
+                                                          i_sigma23)
 
     def __repr__(self):
-        return f'SimInitialStress(name="{ self.name }")'
+        return f'SimInitialStress(name="{self.name}")'

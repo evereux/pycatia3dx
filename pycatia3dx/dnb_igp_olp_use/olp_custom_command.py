@@ -12,29 +12,27 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class OLPCustomCommand(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     OlpCustomCommand
-                | 
-                | Native Robot Language(NRL) Teach command.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) NRL Teach command.
-                | This interface represents a command added to NRL teach which is activate by a
-                | user to perform some customized action. This interface is used to control what
-                | happens when they click on that command. AnyObject.Name is the label displayed
-                | in the UI for this command. A new command is created with
-                | OlpTeachHelper.AddCustomCommand.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    OlpCustomCommand
+                
+                Native Robot Language(NRL) Teach command.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) NRL Teach command.
+                This interface represents a command added to NRL teach which is activate by a
+                user to perform some customized action. This interface is used to control what
+                happens when they click on that command. AnyObject.Name is the label displayed
+                in the UI for this command. A new command is created with
+                OlpTeachHelper.AddCustomCommand.
     
     """
 
@@ -46,15 +44,14 @@ class OLPCustomCommand(AnyObject):
     def main_command(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MainCommand() As CATBSTR
-                |     The ID of the custom command for the macro.
-                |     If set to "" (empty string) then MacroRunCommand is not called. Any other
-                |     value is for use in MacroRunCommand to identify which command is being
-                |     executed. There is nothing to prevent two commands from having the same value
-                |     for MainCommand or to prevent two commands from having the same AnyObject.Name.
+                Property MainCommand() As CATBSTR
+                    The ID of the custom command for the macro.
+                    If set to "" (empty string) then MacroRunCommand is not called. Any other
+                    value is for use in MacroRunCommand to identify which command is being
+                    executed. There is nothing to prevent two commands from having the same value
+                    for MainCommand or to prevent two commands from having the same AnyObject.Name.
 
         :return: str
         """
@@ -73,16 +70,15 @@ class OLPCustomCommand(AnyObject):
     def post_command(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PostCommand() As DELOlpTeachCommand
-                |     Built-in command that is executed after MacroRunCommand.
-                |     This can be changed during MacroRunCommand. If MacroRunCommand fails (does
-                |     not set OlpTranslatorHelper.CallSucceeded to True), the this command will not
-                |     be executed. delOlpCmdModify cannot be set for the PostCommand. This is because
-                |     delOlpCmdModify will overwrite any changes to the current instruction which
-                |     have been done in the MainCommand.
+                Property PostCommand() As DELOlpTeachCommand
+                    Built-in command that is executed after MacroRunCommand.
+                    This can be changed during MacroRunCommand. If MacroRunCommand fails (does
+                    not set OlpTranslatorHelper.CallSucceeded to True), the this command will not
+                    be executed. delOlpCmdModify cannot be set for the PostCommand. This is because
+                    delOlpCmdModify will overwrite any changes to the current instruction which
+                    have been done in the MainCommand.
 
         :return: DELOlpTeachCommand
         """
@@ -101,12 +97,11 @@ class OLPCustomCommand(AnyObject):
     def pre_command(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PreCommand() As DELOlpTeachCommand
-                |     Built-in command that is executed before MacroRunCommand.
-                |     If this command fails, then MacroRunCommand will not be executed.
+                Property PreCommand() As DELOlpTeachCommand
+                    Built-in command that is executed before MacroRunCommand.
+                    If this command fails, then MacroRunCommand will not be executed.
 
         :return: DELOlpTeachCommand
         """
@@ -122,4 +117,4 @@ class OLPCustomCommand(AnyObject):
         self.com_object.PreCommand = value
 
     def __repr__(self):
-        return f'OLPCustomCommand(name="{ self.name }")'
+        return f'OLPCustomCommand(name="{self.name}")'

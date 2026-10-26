@@ -12,25 +12,23 @@ from pycatia3dx.dnb_igp_olp_use.olp_trigger_action import OLPTriggerAction
 
 
 class OLPActionGunActivate(OLPTriggerAction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DNBIgpOlpUseItf.OlpTriggerAction
-                |                         OlpActionGunActivate
-                | 
-                | A trigger action for setting the activation state of a gun.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DNBIgpOlpUseItf.OlpTriggerAction
+                                        OlpActionGunActivate
+                
+                A trigger action for setting the activation state of a gun.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
     
     """
 
@@ -42,11 +40,10 @@ class OLPActionGunActivate(OLPTriggerAction):
     def gun_state(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property GunState() As DELOlpGunState
-                |     Get/Set the gun state (on or off).
+                Property GunState() As DELOlpGunState
+                    Get/Set the gun state (on or off).
 
         :return: DELOlpGunState
         """
@@ -65,11 +62,10 @@ class OLPActionGunActivate(OLPTriggerAction):
     def guns(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Guns() As CATSafeArrayVariant
-                |     Get/Set a list of OlpGun objects this action refres to.
+                Property Guns() As CATSafeArrayVariant
+                    Get/Set a list of OlpGun objects this action refres to.
 
         :return: tuple
         """
@@ -88,11 +84,10 @@ class OLPActionGunActivate(OLPTriggerAction):
     def profile(self) -> OLPProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Profile() As OlpProfile
-                |     Get/Set profile used for this action. 
+                Property Profile() As OlpProfile
+                    Get/Set profile used for this action. 
 
         :return: OLPProfile
         """
@@ -108,4 +103,4 @@ class OLPActionGunActivate(OLPTriggerAction):
         self.com_object.Profile = value
 
     def __repr__(self):
-        return f'OLPActionGunActivate(name="{ self.name }")'
+        return f'OLPActionGunActivate(name="{self.name}")'

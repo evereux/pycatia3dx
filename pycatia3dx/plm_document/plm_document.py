@@ -14,18 +14,17 @@ from pycatia3dx.system.any_object import AnyObject
 class PLMDocument(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PLMDocument
-                | 
-                | Represents the PLM Document object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PLMDocument
+                
+                Represents the PLM Document object.
     
     """
 
@@ -37,16 +36,15 @@ class PLMDocument(AnyObject):
     def file_names(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FileNames() As CATSafeArrayVariant (Read Only)
-                |     To Get the List of Files attached to the Document object
-                | 
-                |     Parameters:
-                | 
-                |         oFileNames
-                |             list of file names attached to the Document.
+                Property FileNames() As CATSafeArrayVariant (Read Only)
+                    To Get the List of Files attached to the Document object
+                
+                    Parameters:
+                
+                        oFileNames
+                            list of file names attached to the Document.
 
         :return: tuple
         """
@@ -57,16 +55,15 @@ class PLMDocument(AnyObject):
     def parents(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Parents() As CATSafeArrayVariant (Read Only)
-                |     To retrive parents where Document object is attached.
-                | 
-                |     Parameters:
-                | 
-                |         oParents
-                |             Parent IDs where Document Object is attached.
+                Property Parents() As CATSafeArrayVariant (Read Only)
+                    To retrive parents where Document object is attached.
+                
+                    Parameters:
+                
+                        oParents
+                            Parent IDs where Document Object is attached.
 
         :return: tuple
         """
@@ -76,22 +73,21 @@ class PLMDocument(AnyObject):
     def check_in_file(self, i_old_file_name: str, i_new_file_path: str, i_file_comment: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub CheckInFile(CATBSTR iOldFileName,CATBSTR iNewFilePath,CATBSTR
-                | iFileComment)
-                |     To Checkin file to the Document object to the specified new file
-                |     path.
-                | 
-                |     Parameters:
-                | 
-                |         iFileName
-                |             File name to download. 
-                |         iNewFilePath
-                |             File path to download the specified file. 
-                |         iFileComment
-                |             File Comment while adding the specified file.
+                Sub CheckInFile(CATBSTR iOldFileName,CATBSTR iNewFilePath,CATBSTR
+                iFileComment)
+                    To Checkin file to the Document object to the specified new file
+                    path.
+                
+                    Parameters:
+                
+                        iFileName
+                            File name to download. 
+                        iNewFilePath
+                            File path to download the specified file. 
+                        iFileComment
+                            File Comment while adding the specified file.
 
         :param str i_old_file_name:
         :param str i_new_file_path:
@@ -103,19 +99,18 @@ class PLMDocument(AnyObject):
     def check_out_file(self, i_file_name: str, i_check_out_path: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub CheckOutFile(CATBSTR iFileName,CATBSTR iCheckOutPath)
-                |     To Checkout the file attached to the Document object to the specified file
-                |     path.
-                | 
-                |     Parameters:
-                | 
-                |         iFileName
-                |             File name to checkout. 
-                |         iCheckOutPath
-                |             File path to checkout the specified file.
+                Sub CheckOutFile(CATBSTR iFileName,CATBSTR iCheckOutPath)
+                    To Checkout the file attached to the Document object to the specified file
+                    path.
+                
+                    Parameters:
+                
+                        iFileName
+                            File name to checkout. 
+                        iCheckOutPath
+                            File path to checkout the specified file.
 
         :param str i_file_name:
         :param str i_check_out_path:
@@ -126,18 +121,17 @@ class PLMDocument(AnyObject):
     def create_file(self, i_file_path: str, i_file_comment: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub CreateFile(CATBSTR iFilePath,CATBSTR iFileComment)
-                |     Attach new file to the Document object.
-                | 
-                |     Parameters:
-                | 
-                |         iFilePath
-                |             File name along with file path. 
-                |         iFileComment
-                |             File Comment while adding the specified file.
+                Sub CreateFile(CATBSTR iFilePath,CATBSTR iFileComment)
+                    Attach new file to the Document object.
+                
+                    Parameters:
+                
+                        iFilePath
+                            File name along with file path. 
+                        iFileComment
+                            File Comment while adding the specified file.
 
         :param str i_file_path:
         :param str i_file_comment:
@@ -148,16 +142,15 @@ class PLMDocument(AnyObject):
     def delete_file(self, i_file_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DeleteFile(CATBSTR iFileName)
-                |     To Delete specified file attached to the Document object.
-                | 
-                |     Parameters:
-                | 
-                |         iFileName
-                |             Delete the specified file.
+                Sub DeleteFile(CATBSTR iFileName)
+                    To Delete specified file attached to the Document object.
+                
+                    Parameters:
+                
+                        iFileName
+                            Delete the specified file.
 
         :param str i_file_name:
         :return: None
@@ -167,19 +160,18 @@ class PLMDocument(AnyObject):
     def download_file(self, i_file_name: str, i_download_path: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DownloadFile(CATBSTR iFileName,CATBSTR iDownloadPath)
-                |     To Download file attached to the Document object to the specified file
-                |     path.
-                | 
-                |     Parameters:
-                | 
-                |         iFileName
-                |             File name to download. 
-                |         iDownloadPath
-                |             File path to download the specified file.
+                Sub DownloadFile(CATBSTR iFileName,CATBSTR iDownloadPath)
+                    To Download file attached to the Document object to the specified file
+                    path.
+                
+                    Parameters:
+                
+                        iFileName
+                            File name to download. 
+                        iDownloadPath
+                            File path to download the specified file.
 
         :param str i_file_name:
         :param str i_download_path:

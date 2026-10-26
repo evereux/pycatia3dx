@@ -12,28 +12,26 @@ from pycatia3dx.mmr_automation_interfaces.shape import Shape
 
 
 class DressUpShape(Shape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         DressUpShape
-                | 
-                | Represents the shapes built with other shape sub-elements such as faces or
-                | edges.
-                | It is the base object for chamfers, drafts, fillets, scalings, shells, and
-                | thickness objects.
-                | 
-                | See also:
-                |     Chamfer, Draft, Fillet, Scaling, Shell, Thickness
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        DressUpShape
+                
+                Represents the shapes built with other shape sub-elements such as faces or
+                edges.
+                It is the base object for chamfers, drafts, fillets, scalings, shells, and
+                thickness objects.
+                
+                See also:
+                    Chamfer, Draft, Fillet, Scaling, Shell, Thickness
 
     """
 
@@ -42,4 +40,4 @@ class DressUpShape(Shape):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'DressUpShape(name="{ self.name }")'
+        return f'DressUpShape(name="{self.name}")'

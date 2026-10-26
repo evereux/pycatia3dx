@@ -15,21 +15,20 @@ from pycatia3dx.structure.str_stiffener import StrStiffener
 class StrSfdStiffener(StrStiffener):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATStrIDLItf.StructureProfile
-                |                         CATStrIDLItf.StrStiffener
-                |                             StrSfdStiffener
-                | 
-                | Object to manage Structure Functional Modeler Stiffener.
-                | Role: Allows accessing and setting of Stiffener's data.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATStrIDLItf.StructureProfile
+                                        CATStrIDLItf.StrStiffener
+                                            StrSfdStiffener
+                
+                Object to manage Structure Functional Modeler Stiffener.
+                Role: Allows accessing and setting of Stiffener's data.
     
     """
 
@@ -41,26 +40,25 @@ class StrSfdStiffener(StrStiffener):
     def sfd_convert_stiffener(self) -> SfdConvertStiffener:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SfdConvertStiffener() As SfdConvertStiffener (Read
-                | Only)
-                |     Returns the SfdConvertStiffener object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjSfdConvertStiffener the
-                |              SfdConvertStiffener object
-                |              of the SfdStiffener.
-                |              
-                | 
-                |              Dim ObjSfdStiffener As SfdStiffener
-                |              Set ObjSfdStiffener = ObjSfdStiffeners.AddStiffener
-                |              Dim ObjSfdConvertStiffener As SfdConvertStiffener
-                |              Set ObjSfdConvertStiffener = ObjSfdStiffener.SfdConvertStiffener
+                Property SfdConvertStiffener() As SfdConvertStiffener (Read
+                Only)
+                    Returns the SfdConvertStiffener object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjSfdConvertStiffener the
+                             SfdConvertStiffener object
+                             of the SfdStiffener.
+                             
+                
+                             Dim ObjSfdStiffener As SfdStiffener
+                             Set ObjSfdStiffener = ObjSfdStiffeners.AddStiffener
+                             Dim ObjSfdConvertStiffener As SfdConvertStiffener
+                             Set ObjSfdConvertStiffener = ObjSfdStiffener.SfdConvertStiffener
 
         :return: SfdConvertStiffener
         """
@@ -71,25 +69,24 @@ class StrSfdStiffener(StrStiffener):
     def str_material_mngt(self) -> StrMaterialMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrMaterialMngt() As StrMaterialMngt (Read Only)
-                |     Returns the StrMaterialMngt object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjStrMaterialMngt the StrMaterialMngt
-                |              object
-                |              of the SfdStiffener
-                |              
-                | 
-                |              Dim ObjSfdStiffener As SfdStiffener
-                |              Set ObjSfdStiffener = ObjSfdStiffeners.AddStiffener
-                |              Dim ObjStrMaterialMngt As StrMaterialMngt
-                |              Set ObjStrMaterialMngt = ObjSfdStiffener.StrMaterialMngt
+                Property StrMaterialMngt() As StrMaterialMngt (Read Only)
+                    Returns the StrMaterialMngt object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjStrMaterialMngt the StrMaterialMngt
+                             object
+                             of the SfdStiffener
+                             
+                
+                             Dim ObjSfdStiffener As SfdStiffener
+                             Set ObjSfdStiffener = ObjSfdStiffeners.AddStiffener
+                             Dim ObjStrMaterialMngt As StrMaterialMngt
+                             Set ObjStrMaterialMngt = ObjSfdStiffener.StrMaterialMngt
 
         :return: StrMaterialMngt
         """

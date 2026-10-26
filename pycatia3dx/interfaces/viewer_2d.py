@@ -15,20 +15,19 @@ from pycatia3dx.interfaces.viewpoint_2d import ViewPoint2D
 class Viewer2D(Viewer):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Viewer
-                |                         Viewer2D
-                | 
-                | Represents a 2D viewer.
-                | The 2D viewer aggregates a 2D viewpoint to display a 2D scene.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Viewer
+                                        Viewer2D
+                
+                Represents a 2D viewer.
+                The 2D viewer aggregates a 2D viewpoint to display a 2D scene.
     
     """
 
@@ -40,18 +39,17 @@ class Viewer2D(Viewer):
     def viewpoint_2d(self) -> ViewPoint2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Viewpoint2D() As Viewpoint2D
-                |     Returns or sets the 2D viewpoint of a 2D viewer.
-                | 
-                |     Example:
-                |         This example retrieves the Nice2DViewpoint 2D viewpoint from the
-                |         My2DViewer 2D viewer.
-                | 
-                |          Dim Nice2DViewpoint As Viewpoint2D
-                |          Set Nice2DViewpoint = My2DViewer.Viewpoint2D
+                Property Viewpoint2D() As Viewpoint2D
+                    Returns or sets the 2D viewpoint of a 2D viewer.
+                
+                    Example:
+                        This example retrieves the Nice2DViewpoint 2D viewpoint from the
+                        My2DViewer 2D viewer.
+                
+                         Dim Nice2DViewpoint As Viewpoint2D
+                         Set Nice2DViewpoint = My2DViewer.Viewpoint2D
 
         :return: Viewpoint2D
         """

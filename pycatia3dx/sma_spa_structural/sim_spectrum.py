@@ -13,58 +13,56 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimSpectrum(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimSpectrum
-                | 
-                | Represents the Spectrum object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimSpectrum as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MySpectrum As SimSpectrum
-                |      Set MySpectrum = MyFeatures.Add("SimSpectrum")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimSpectrum named
-                |     "Spectrum.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MySpectrum As SimSpectrum
-                |      Set MySpectrum = MyFeatures.Item("Spectrum.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a SimSpectrum as
-                |     following:
-                | 
-                |      ...
-                |      mySpectrum = myFeatures.Add("SimSpectrum")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a SimSpectrum named
-                |     "Spectrum.1" as following:
-                | 
-                |      ...
-                |      mySpectrum = myFeatures.Item("Spectrum.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimSpectrum
+                
+                Represents the Spectrum object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimSpectrum as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MySpectrum As SimSpectrum
+                     Set MySpectrum = MyFeatures.Add("SimSpectrum")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimSpectrum named
+                    "Spectrum.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MySpectrum As SimSpectrum
+                     Set MySpectrum = MyFeatures.Item("Spectrum.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a SimSpectrum as
+                    following:
+                
+                     ...
+                     mySpectrum = myFeatures.Add("SimSpectrum")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a SimSpectrum named
+                    "Spectrum.1" as following:
+                
+                     ...
+                     mySpectrum = myFeatures.Item("Spectrum.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -76,11 +74,10 @@ class SimSpectrum(AnyObject):
     def definition_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DefinitionType() As SimSpectrumDefinitionType
-                |     Returns or sets the definition type.
+                Property DefinitionType() As SimSpectrumDefinitionType
+                    Returns or sets the definition type.
 
         :return: SimSpectrumDefinitionType
         """
@@ -99,11 +96,10 @@ class SimSpectrum(AnyObject):
     def reference_gravity(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ReferenceGravity() As double
-                |     Returns or sets the reference gravity. Quantity: ACCELRTN, Units: m_s2.
+                Property ReferenceGravity() As double
+                    Returns or sets the reference gravity. Quantity: ACCELRTN, Units: m_s2.
 
         :return: float
         """
@@ -122,12 +118,11 @@ class SimSpectrum(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. See SimFeatures.GetSpecTreeCategory for usage.
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. See SimFeatures.GetSpecTreeCategory for usage.
 
         :return: str
         """
@@ -138,11 +133,10 @@ class SimSpectrum(AnyObject):
     def table(self) -> SimTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Table() As SimTable (Read Only)
-                |     Returns the table that determines the spectrum behavior.
+                Property Table() As SimTable (Read Only)
+                    Returns the table that determines the spectrum behavior.
 
         :return: SimTable
         """
@@ -152,21 +146,20 @@ class SimSpectrum(AnyObject):
     def get_table_column(self, i_table_column_name: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTableColumn(SimSpectrumTableColumn iTableColumnName) As
-                | SimTableColumn
-                |     Retrieves a specific column of the table that determines the spectrum
-                |     behavior.
-                | 
-                |     Parameters:
-                | 
-                |         iTableColumnName[in]
-                |             The table column name. 
-                | 
-                |     Returns:
-                |         The table column. 
+                Func GetTableColumn(SimSpectrumTableColumn iTableColumnName) As
+                SimTableColumn
+                    Retrieves a specific column of the table that determines the spectrum
+                    behavior.
+                
+                    Parameters:
+                
+                        iTableColumnName[in]
+                            The table column name. 
+                
+                    Returns:
+                        The table column. 
 
         :param int i_table_column_name:
         :return: SimTableColumn
@@ -174,4 +167,4 @@ class SimSpectrum(AnyObject):
         return SimTableColumn(self.com_object.GetTableColumn(i_table_column_name))
 
     def __repr__(self):
-        return f'SimSpectrum(name="{ self.name }")'
+        return f'SimSpectrum(name="{self.name}")'

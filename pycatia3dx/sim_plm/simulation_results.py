@@ -17,20 +17,19 @@ from pycatia3dx.types.general import CATVariant
 class SimulationResults(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SimulationResults
-                | 
-                | Interface representing SIMULATION Objects collection.
-                | This collection of objects can be associated to specification or result
-                | category.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SimulationResults
+                
+                Interface representing SIMULATION Objects collection.
+                This collection of objects can be associated to specification or result
+                category.
     
     """
 
@@ -41,24 +40,23 @@ class SimulationResults(Collection):
     def item(self, i_index: CATVariant) -> SimulationObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As SimulationObject
-                |     Retrieves the Simulation Object under the Result Category.
-                |     Role: This method retrieves a pointer on the SimulationObject
-                |     .
-                | 
-                |     Parameters:
-                | 
-                |         oSimulationObject
-                | 
-                |     Returns:
-                |         An HRESULT value
-                | 
-                |             S_OK The pointer on the Simulation Objects is correctly
-                |             retrieved
-                |             E_FAIL Otherwise.
+                Func Item(CATVariant iIndex) As SimulationObject
+                    Retrieves the Simulation Object under the Result Category.
+                    Role: This method retrieves a pointer on the SimulationObject
+                    .
+                
+                    Parameters:
+                
+                        oSimulationObject
+                
+                    Returns:
+                        An HRESULT value
+                
+                            S_OK The pointer on the Simulation Objects is correctly
+                            retrieved
+                            E_FAIL Otherwise.
 
         :param CATVariant i_index:
         :return: SimulationObject

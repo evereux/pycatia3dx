@@ -13,21 +13,19 @@ from pycatia3dx.tps.dimension_limit import DimensionLimit
 
 
 class NonSemanticDimension(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     NonSemanticDimension
-                | 
-                | Interface Managing Non Semantic Dimension.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    NonSemanticDimension
+                
+                Interface Managing Non Semantic Dimension.
     
     """
 
@@ -38,16 +36,15 @@ class NonSemanticDimension(AnyObject):
     def dimension_limit(self) -> DimensionLimit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func DimensionLimit() As DimensionLimit
-                |     Gets the Dimension on the DimensionLimit interface.
-                | 
-                |     Parameters:
-                | 
-                |         oDimLim
-                |             The Dimension Limits.
+                Func DimensionLimit() As DimensionLimit
+                    Gets the Dimension on the DimensionLimit interface.
+                
+                    Parameters:
+                
+                        oDimLim
+                            The Dimension Limits.
 
         :return: DimensionLimit
         """
@@ -56,16 +53,15 @@ class NonSemanticDimension(AnyObject):
     def get2d_annot(self) -> DrawingDimension:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Get2dAnnot() As DrawingDimension
-                |     Retrieves Drafting Dimension.
-                | 
-                |     Parameters:
-                | 
-                |         oDim
-                |             The Drafting Dimension.
+                Func Get2dAnnot() As DrawingDimension
+                    Retrieves Drafting Dimension.
+                
+                    Parameters:
+                
+                        oDim
+                            The Drafting Dimension.
 
         :return: DrawingDimension
         """
@@ -74,22 +70,21 @@ class NonSemanticDimension(AnyObject):
     def has_dimension_limit(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func HasDimensionLimit() As boolean
-                |     Checks if the Dimension has a Dimension Limit.
-                | 
-                |     Parameters:
-                | 
-                |         oHasDimLim
-                | 
-                |                 TRUE: Dimension Limit exists
-                |                 FALSE: Dimension Limit does not exist
+                Func HasDimensionLimit() As boolean
+                    Checks if the Dimension has a Dimension Limit.
+                
+                    Parameters:
+                
+                        oHasDimLim
+                
+                                TRUE: Dimension Limit exists
+                                FALSE: Dimension Limit does not exist
 
         :return: bool
         """
         return self.com_object.HasDimensionLimit()
 
     def __repr__(self):
-        return f'NonSemanticDimension(name="{ self.name }")'
+        return f'NonSemanticDimension(name="{self.name}")'

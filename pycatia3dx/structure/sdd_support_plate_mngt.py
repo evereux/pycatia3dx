@@ -16,21 +16,20 @@ from pycatia3dx.structure.sdd_plates import SddPlates
 class SddSupportPlateMngt(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SddSupportPlateMngt
-                | 
-                | Object managing the Plates on which this Stiffener/StiffenerOnFreeEdge is
-                | attached to.
-                | Role: Manages the plates on which this Stiffener/StiffenerOnFreeEdge is
-                | attached to.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SddSupportPlateMngt
+                
+                Object managing the Plates on which this Stiffener/StiffenerOnFreeEdge is
+                attached to.
+                Role: Manages the plates on which this Stiffener/StiffenerOnFreeEdge is
+                attached to.
     
     """
 
@@ -42,22 +41,21 @@ class SddSupportPlateMngt(AnyObject):
     def other_support_plates(self) -> SddPlates:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OtherSupportPlates() As SddPlates
-                |     Returns or Sets the other support Plates on which this is attached
-                |     to.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in OtherSupportPlates.
-                |              
-                | 
-                |              Dim ObjSddSupportPlateMngt As SddSupportPlateMngt
-                |              Set ObjSddSupportPlateMngt = ObjSddStiffener.SddSupportPlateMngt
-                |              ObjSddPlates = ObjSddSupportPlateMngt.OtherSupportPlates
+                Property OtherSupportPlates() As SddPlates
+                    Returns or Sets the other support Plates on which this is attached
+                    to.
+                
+                    Example:
+                
+                
+                             This example retrieves in OtherSupportPlates.
+                             
+                
+                             Dim ObjSddSupportPlateMngt As SddSupportPlateMngt
+                             Set ObjSddSupportPlateMngt = ObjSddStiffener.SddSupportPlateMngt
+                             ObjSddPlates = ObjSddSupportPlateMngt.OtherSupportPlates
 
         :return: SddPlates
         """
@@ -76,13 +74,12 @@ class SddSupportPlateMngt(AnyObject):
     def reference_support_plate(self) -> SddPlate:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ReferenceSupportPlate() As SddPlate (Read Only)
-                |     Returns the Source ReferencePlate on which this is attached to. This plate
-                |     is used for: This plate is set by StrProfileSurfSurf.FirstSurface or
-                |     StrProfileCrv.Reference.
+                Property ReferenceSupportPlate() As SddPlate (Read Only)
+                    Returns the Source ReferencePlate on which this is attached to. This plate
+                    is used for: This plate is set by StrProfileSurfSurf.FirstSurface or
+                    StrProfileCrv.Reference.
 
         :return: SddPlate
         """
@@ -92,17 +89,16 @@ class SddSupportPlateMngt(AnyObject):
     def add_other_support_plate(self, i_sdd_plate: SddPlate) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddOtherSupportPlate(SddPlate iSddPlate)
-                |     Adds a support Plate.
-                |     Role: Allows adding a support Plate.
-                | 
-                |     Parameters:
-                | 
-                |         iSddPlate
-                |             SddPlate.
+                Sub AddOtherSupportPlate(SddPlate iSddPlate)
+                    Adds a support Plate.
+                    Role: Allows adding a support Plate.
+                
+                    Parameters:
+                
+                        iSddPlate
+                            SddPlate.
 
         :param SddPlate i_sdd_plate:
         :return: None
@@ -112,18 +108,17 @@ class SddSupportPlateMngt(AnyObject):
     def promote_to_reference_plate(self, i_other_support_plate: SddPlate) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub PromoteToReferencePlate(SddPlate iOtherSupportPlate)
-                |     Promotes a support Plate to a ReferencePlate and move the previous
-                |     ReferencePlate to the list of the other support Plates.
-                |     Role: Allows changing the ReferencePlate.
-                | 
-                |     Parameters:
-                | 
-                |         iOtherSupportPlate
-                |             Support Plate to be promoted to ReferencePlate.
+                Sub PromoteToReferencePlate(SddPlate iOtherSupportPlate)
+                    Promotes a support Plate to a ReferencePlate and move the previous
+                    ReferencePlate to the list of the other support Plates.
+                    Role: Allows changing the ReferencePlate.
+                
+                    Parameters:
+                
+                        iOtherSupportPlate
+                            Support Plate to be promoted to ReferencePlate.
 
         :param SddPlate i_other_support_plate:
         :return: None
@@ -133,17 +128,16 @@ class SddSupportPlateMngt(AnyObject):
     def remove_other_support_plate(self, i_sdd_plate: SddPlate) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveOtherSupportPlate(SddPlate iSddPlate)
-                |     Removes a support Plate.
-                |     Role: Allows removing a support Plate.
-                | 
-                |     Parameters:
-                | 
-                |         iSddPlate
-                |             Support Plate to remove. 
+                Sub RemoveOtherSupportPlate(SddPlate iSddPlate)
+                    Removes a support Plate.
+                    Role: Allows removing a support Plate.
+                
+                    Parameters:
+                
+                        iSddPlate
+                            Support Plate to remove. 
 
         :param SddPlate i_sdd_plate:
         :return: None

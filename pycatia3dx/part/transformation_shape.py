@@ -12,27 +12,25 @@ from pycatia3dx.mmr_automation_interfaces.shape import Shape
 
 
 class TransformationShape(Shape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         TransformationShape
-                | 
-                | Represents the shapes based on a transformation of another
-                | shape.
-                | It is the base object for mirrors and patterns.
-                | 
-                | See also:
-                |     Mirror, Pattern, RectPattern, CircPattern
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        TransformationShape
+                
+                Represents the shapes based on a transformation of another
+                shape.
+                It is the base object for mirrors and patterns.
+                
+                See also:
+                    Mirror, Pattern, RectPattern, CircPattern
 
     """
 
@@ -41,4 +39,4 @@ class TransformationShape(Shape):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'TransformationShape(name="{ self.name }")'
+        return f'TransformationShape(name="{self.name}")'

@@ -18,21 +18,20 @@ from pycatia3dx.types.general import CATVariant
 class Markers(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     Markers
-                | 
-                | A collection of Markers.
-                | 
-                | The method VALReview.GetFactory ("Markers") on the VALReview retrieves this
-                | collection.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    Markers
+                
+                A collection of Markers.
+                
+                The method VALReview.GetFactory ("Markers") on the VALReview retrieves this
+                collection.
     
     """
 
@@ -43,30 +42,29 @@ class Markers(Collection):
     def add(self, i_text: str) -> Marker:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add(CATBSTR iText) As Marker
-                |     Adds a Marker to the collection.
-                | 
-                |     Parameters:
-                | 
-                |         iText
-                |             The Marker type string 2DTEXT 2DPICTURE 2DHYPERLINK 2DAUDIO 3DTEXT
-                |             3DPICTURE 3DHYPERLINK 3DAUDIO 
-                | 
-                |     Returns:
-                |         The created marker 
-                |     Example:
-                | 
-                |          This example creates a new Marker in the cMarkers
-                |          collection.
-                |          
-                | 
-                |          Dim cMarkers As Markers 
-                |          Set cMarkers = TheVALReview.GetFactory("Markers")
-                |          Dim oNewMarkerPicture As Marker
-                |          Set oNewMarkerPicture = cMarkers.Add("2DPICTURE")
+                Func Add(CATBSTR iText) As Marker
+                    Adds a Marker to the collection.
+                
+                    Parameters:
+                
+                        iText
+                            The Marker type string 2DTEXT 2DPICTURE 2DHYPERLINK 2DAUDIO 3DTEXT
+                            3DPICTURE 3DHYPERLINK 3DAUDIO 
+                
+                    Returns:
+                        The created marker 
+                    Example:
+                
+                         This example creates a new Marker in the cMarkers
+                         collection.
+                         
+                
+                         Dim cMarkers As Markers 
+                         Set cMarkers = TheVALReview.GetFactory("Markers")
+                         Dim oNewMarkerPicture As Marker
+                         Set oNewMarkerPicture = cMarkers.Add("2DPICTURE")
 
         :param str i_text:
         :return: Marker
@@ -76,38 +74,37 @@ class Markers(Collection):
     def add_shape(self, i_coordinates: tuple, i_text: str) -> Marker:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Func AddShape(CATSafeArrayVariant iCoordinates,CATBSTR iText) As
-                | Marker
-                |     Adds a Shape Marker to the collection. The Marker drawing is defined using
-                |     the coordinates of a series of points.
+                Func AddShape(CATSafeArrayVariant iCoordinates,CATBSTR iText) As
+                Marker
+                    Adds a Shape Marker to the collection. The Marker drawing is defined using
+                    the coordinates of a series of points.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iCoordinates
+                        iCoordinates
                 |
-                |     See also:
-                |         Marker.SetPositions method of the CATIAMarker object
-                |     Parameters:
+                    See also:
+                        Marker.SetPositions method of the CATIAMarker object
+                    Parameters:
                 |
-                |         iText
-                |             The Marker type string 2DLINE 2DPEN 2DCIRCLE 2DRECTANGLE 2DARROW
-                |
-                |
-                |     Returns:
-                |         oMarker The created Marker
-                |     Example:
-                |
-                |          This example creates a new Shape Marker in the cMarkers
-                |          collection.
+                        iText
+                            The Marker type string 2DLINE 2DPEN 2DCIRCLE 2DRECTANGLE 2DARROW
                 |
                 |
-                |          Dim cMarkers As Markers
-                |          Set cMarkers = TheVALReview.GetFactory("Markers")
-                |          Dim oNewMarkerCircle As Marker
-                |          Set oNewMarkerCircle = cMarkers.AddShape(iCoordinates, "2DCIRCLE")
+                    Returns:
+                        oMarker The created Marker
+                    Example:
+                |
+                         This example creates a new Shape Marker in the cMarkers
+                         collection.
+                |
+                |
+                         Dim cMarkers As Markers
+                         Set cMarkers = TheVALReview.GetFactory("Markers")
+                         Dim oNewMarkerCircle As Marker
+                         Set oNewMarkerCircle = cMarkers.AddShape(iCoordinates, "2DCIRCLE")
 
         :param tuple i_coordinates:
         :param str i_text:
@@ -134,35 +131,34 @@ class Markers(Collection):
     def item(self, i_index: CATVariant) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As CATBaseDispatch
-                |     Returns a Marker using its index from the Markers
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or the name of the Marker to retrieve from the collection
-                |             of Markers. As a numerics, this index is the rank of the Marker in the
-                |             collection. The index of the first Marker in the collection is 1, and the index
-                |             of the last Marker is Count. As a string, it is the name you assigned to the
-                |             Marker. 
-                | 
-                |     Returns:
-                |         The retrieved Marker 
-                |     Example:
-                | 
-                |          This example retrieves in oMarker1 the third Marker,
-                |          and in oMarker2 the Marker named
-                |          Marker3 from the cMarkers collection. 
-                |          
-                | 
-                |          Dim oMarker1 As Marker
-                |          Set oMarker1 = cMarkers.Item(3)
-                |          Dim oMarker2 As Marker
-                |          Set oMarker2 = cMarkers.Item("Marker3")
+                Func Item(CATVariant iIndex) As CATBaseDispatch
+                    Returns a Marker using its index from the Markers
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index or the name of the Marker to retrieve from the collection
+                            of Markers. As a numerics, this index is the rank of the Marker in the
+                            collection. The index of the first Marker in the collection is 1, and the index
+                            of the last Marker is Count. As a string, it is the name you assigned to the
+                            Marker. 
+                
+                    Returns:
+                        The retrieved Marker 
+                    Example:
+                
+                         This example retrieves in oMarker1 the third Marker,
+                         and in oMarker2 the Marker named
+                         Marker3 from the cMarkers collection. 
+                         
+                
+                         Dim oMarker1 As Marker
+                         Set oMarker1 = cMarkers.Item(3)
+                         Dim oMarker2 As Marker
+                         Set oMarker2 = cMarkers.Item("Marker3")
 
         :param CATVariant i_index:
         :return: AnyObject
@@ -172,30 +168,29 @@ class Markers(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(CATVariant iIndex)
-                |     Removes a Marker from the Markers collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or the name of the Marker to retrieve from the collection
-                |             of Markers. As a numerics, this index is the rank of the Marker in the
-                |             collection. The index of the first Marker in the collection is 1, and the index
-                |             of the last Marker is Count. As a string, it is the name you assigned to the
-                |             Marker. 
-                | 
-                |     Example:
-                | 
-                |          The following example removes the second Marker and the Marker
-                |          named
-                |          Marker2 from the cMarkers collection.
-                |          
-                | 
-                |          cMarkers.Remove(2)
-                |          cMarkers.Remove("Marker2")
+                Sub Remove(CATVariant iIndex)
+                    Removes a Marker from the Markers collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index or the name of the Marker to retrieve from the collection
+                            of Markers. As a numerics, this index is the rank of the Marker in the
+                            collection. The index of the first Marker in the collection is 1, and the index
+                            of the last Marker is Count. As a string, it is the name you assigned to the
+                            Marker. 
+                
+                    Example:
+                
+                         The following example removes the second Marker and the Marker
+                         named
+                         Marker2 from the cMarkers collection.
+                         
+                
+                         cMarkers.Remove(2)
+                         cMarkers.Remove("Marker2")
 
         :param CATVariant i_index:
         :return: None

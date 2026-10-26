@@ -13,66 +13,64 @@ from pycatia3dx.sma_spa_structural.sim_stabilization import SimStabilization
 
 
 class SimCoupledThermalElectroChemicalStressPoreStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SMAMpaFoundationIDLItf.SimStep
-                |                        SimCoupledThermalElectroChemicalStressPoreStep
-                | 
-                | Represents the Coupled Thermal Electro Chemical Stress Pore Step
-                | object.
-                | 
-                | Example:
-                |     Given a SimSteps object, you can create a
-                |     SimCoupledThermalElectroChemicalStressPoreStep as
-                |     following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyCoupledThermalElectroChemicalStressPoreStep As
-                |      SimCoupledThermalElectroChemicalStressPoreStep
-                |      Set MyCoupledThermalElectroChemicalStressPoreStep = MySteps.Add("SimCoupledThermalElectroChemicalStressPoreStep")
-                |      
-                | 
-                |     Given a SimSteps object, you can retrieve a
-                |     SimCoupledThermalElectroChemicalStressPoreStep named "Coupled Thermal Electro
-                |     Chemical Stress Pore Step.1" as following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyCoupledThermalElectroChemicalStressPoreStep As
-                |      SimCoupledThermalElectroChemicalStressPoreStep
-                |      Set MyCoupledThermalElectroChemicalStressPoreStep = MySteps.Item("Coupled Thermal Electro Chemical Stress Pore Step.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimSteps object mySteps, you can create a
-                |     SimCoupledThermalElectroChemicalStressPoreStep as
-                |     following:
-                | 
-                |      ...
-                |      myCoupledThermalElectroChemicalStressPoreStep = mySteps.Add("SimCoupledThermalElectroChemicalStressPoreStep")
-                |      
-                | 
-                |     Given a SimSteps object mySteps, you can retrieve a
-                |     SimCoupledThermalElectroChemicalStressPoreStep named "Coupled Thermal Electro
-                |     Chemical Stress Pore Step.1" as following:
-                | 
-                |      ...
-                |      myCoupledThermalElectroChemicalStressPoreStep = mySteps.Item("Coupled Thermal Electro Chemical Stress Pore Step.1")
-                |      
-                | 
-                | See also:
-                |     SimSteps
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SMAMpaFoundationIDLItf.SimStep
+                                       SimCoupledThermalElectroChemicalStressPoreStep
+                
+                Represents the Coupled Thermal Electro Chemical Stress Pore Step
+                object.
+                
+                Example:
+                    Given a SimSteps object, you can create a
+                    SimCoupledThermalElectroChemicalStressPoreStep as
+                    following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyCoupledThermalElectroChemicalStressPoreStep As
+                     SimCoupledThermalElectroChemicalStressPoreStep
+                     Set MyCoupledThermalElectroChemicalStressPoreStep = MySteps.Add("SimCoupledThermalElectroChemicalStressPoreStep")
+                     
+                
+                    Given a SimSteps object, you can retrieve a
+                    SimCoupledThermalElectroChemicalStressPoreStep named "Coupled Thermal Electro
+                    Chemical Stress Pore Step.1" as following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyCoupledThermalElectroChemicalStressPoreStep As
+                     SimCoupledThermalElectroChemicalStressPoreStep
+                     Set MyCoupledThermalElectroChemicalStressPoreStep = MySteps.Item("Coupled Thermal Electro Chemical Stress Pore Step.1")
+                     
+                
+                Example in Python:
+                    Given a SimSteps object mySteps, you can create a
+                    SimCoupledThermalElectroChemicalStressPoreStep as
+                    following:
+                
+                     ...
+                     myCoupledThermalElectroChemicalStressPoreStep = mySteps.Add("SimCoupledThermalElectroChemicalStressPoreStep")
+                     
+                
+                    Given a SimSteps object mySteps, you can retrieve a
+                    SimCoupledThermalElectroChemicalStressPoreStep named "Coupled Thermal Electro
+                    Chemical Stress Pore Step.1" as following:
+                
+                     ...
+                     myCoupledThermalElectroChemicalStressPoreStep = mySteps.Item("Coupled Thermal Electro Chemical Stress Pore Step.1")
+                     
+                
+                See also:
+                    SimSteps
     
     """
 
@@ -84,11 +82,10 @@ class SimCoupledThermalElectroChemicalStressPoreStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -107,13 +104,12 @@ class SimCoupledThermalElectroChemicalStressPoreStep(SimStep):
     def advection(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Advection() As boolean
-                |     Returns or sets the advection flag ... .
-                |     TRUE: the advection... .
-                |     FALSE: the advection... .
+                Property Advection() As boolean
+                    Returns or sets the advection flag ... .
+                    TRUE: the advection... .
+                    FALSE: the advection... .
 
         :return: bool
         """
@@ -132,13 +128,12 @@ class SimCoupledThermalElectroChemicalStressPoreStep(SimStep):
     def creep_behavior_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CreepBehaviorFlag() As boolean
-                |     Returns or sets the creep behavior flag.
-                |     TRUE: the step uses creep behavior.
-                |     FALSE: the step does not use creep behavior.
+                Property CreepBehaviorFlag() As boolean
+                    Returns or sets the creep behavior flag.
+                    TRUE: the step uses creep behavior.
+                    FALSE: the step does not use creep behavior.
 
         :return: bool
         """
@@ -157,11 +152,10 @@ class SimCoupledThermalElectroChemicalStressPoreStep(SimStep):
     def creep_integration(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CreepIntegration() As SimCoupledCreepIntegration
-                |     Returns or sets the creep integration.
+                Property CreepIntegration() As SimCoupledCreepIntegration
+                    Returns or sets the creep integration.
 
         :return: SimCoupledCreepIntegration
         """
@@ -180,14 +174,13 @@ class SimCoupledThermalElectroChemicalStressPoreStep(SimStep):
     def geometric_non_linearity_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property GeometricNonLinearityFlag() As boolean
-                |     Returns or sets the flag that determines if the step is geometrically non
-                |     linear.
-                |     TRUE: the step is geometrically non linear.
-                |     FALSE: the step is not geometrically non linear.
+                Property GeometricNonLinearityFlag() As boolean
+                    Returns or sets the flag that determines if the step is geometrically non
+                    linear.
+                    TRUE: the step is geometrically non linear.
+                    FALSE: the step is not geometrically non linear.
 
         :return: bool
         """
@@ -206,13 +199,12 @@ class SimCoupledThermalElectroChemicalStressPoreStep(SimStep):
     def initial_time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InitialTimeIncrement() As double
-                |     Returns or sets the initial time for the increments of the Coupled Thermal
-                |     Electro-Chemical step. Only applicable when the incrementation scheme is
-                |     Automatic.
+                Property InitialTimeIncrement() As double
+                    Returns or sets the initial time for the increments of the Coupled Thermal
+                    Electro-Chemical step. Only applicable when the incrementation scheme is
+                    Automatic.
 
         :return: float
         """
@@ -231,11 +223,10 @@ class SimCoupledThermalElectroChemicalStressPoreStep(SimStep):
     def matrix_storage_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MatrixStorageScheme() As SimMatrixStorageScheme
-                |     Returns or sets the matrix storage scheme.
+                Property MatrixStorageScheme() As SimMatrixStorageScheme
+                    Returns or sets the matrix storage scheme.
 
         :return: SimMatrixStorageScheme
         """
@@ -254,12 +245,11 @@ class SimCoupledThermalElectroChemicalStressPoreStep(SimStep):
     def maximum_creep_strain_rate_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumCreepStrainRateIncrement() As double
-                |     Returns or sets the maximum creep strain rate increment. Only applicable
-                |     when the thermal response type is transient.
+                Property MaximumCreepStrainRateIncrement() As double
+                    Returns or sets the maximum creep strain rate increment. Only applicable
+                    when the thermal response type is transient.
 
         :return: float
         """
@@ -278,13 +268,12 @@ class SimCoupledThermalElectroChemicalStressPoreStep(SimStep):
     def maximum_increments(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumIncrements() As long
-                |     Returns or sets the maximum number of increments for the Coupled Thermal
-                |     Electro-Chemical step. Only applicable when the incrementation scheme is
-                |     Automatic.
+                Property MaximumIncrements() As long
+                    Returns or sets the maximum number of increments for the Coupled Thermal
+                    Electro-Chemical step. Only applicable when the incrementation scheme is
+                    Automatic.
 
         :return: int
         """
@@ -303,11 +292,10 @@ class SimCoupledThermalElectroChemicalStressPoreStep(SimStep):
     def maximum_pore_pressure_change(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumPorePressureChange() As double
-                |     Returns or sets the maximum pore pressure change.
+                Property MaximumPorePressureChange() As double
+                    Returns or sets the maximum pore pressure change.
 
         :return: float
         """
@@ -326,11 +314,10 @@ class SimCoupledThermalElectroChemicalStressPoreStep(SimStep):
     def maximum_temperature_change(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumTemperatureChange() As double
-                |     Returns or sets the maximum temperature change.
+                Property MaximumTemperatureChange() As double
+                    Returns or sets the maximum temperature change.
 
         :return: float
         """
@@ -349,13 +336,12 @@ class SimCoupledThermalElectroChemicalStressPoreStep(SimStep):
     def maximum_time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumTimeIncrement() As double
-                |     Returns or sets the maximum time for the increments of the Coupled Thermal
-                |     Electro-Chemical step. Only applicable when the incrementation scheme is
-                |     Automatic.
+                Property MaximumTimeIncrement() As double
+                    Returns or sets the maximum time for the increments of the Coupled Thermal
+                    Electro-Chemical step. Only applicable when the incrementation scheme is
+                    Automatic.
 
         :return: float
         """
@@ -374,13 +360,12 @@ class SimCoupledThermalElectroChemicalStressPoreStep(SimStep):
     def minimum_time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MinimumTimeIncrement() As double
-                |     Returns or sets the minimum time for the increments of the Coupled Thermal
-                |     Electro-Chemical step. Only applicable when the incrementation scheme is
-                |     Automatic.
+                Property MinimumTimeIncrement() As double
+                    Returns or sets the minimum time for the increments of the Coupled Thermal
+                    Electro-Chemical step. Only applicable when the incrementation scheme is
+                    Automatic.
 
         :return: float
         """
@@ -399,14 +384,13 @@ class SimCoupledThermalElectroChemicalStressPoreStep(SimStep):
     def rate_dependence(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RateDependence() As boolean
-                |     Returns or sets the flag for strain rate-dependence and slip
-                |     rate-dependence consideration.
-                |     TRUE: Strain rate and slip rate dependence is applied.
-                |     FALSE: Strain rate and slip rate dependence is not applied.
+                Property RateDependence() As boolean
+                    Returns or sets the flag for strain rate-dependence and slip
+                    rate-dependence consideration.
+                    TRUE: Strain rate and slip rate dependence is applied.
+                    FALSE: Strain rate and slip rate dependence is not applied.
 
         :return: bool
         """
@@ -425,12 +409,11 @@ class SimCoupledThermalElectroChemicalStressPoreStep(SimStep):
     def restart_step_property(self) -> SimAnalysisRestartStepProperty:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RestartStepProperty() As SimAnalysisRestartStepProperty (Read
-                | Only)
-                |     Returns the restart step property for the Coupled Thermal Stress step.
+                Property RestartStepProperty() As SimAnalysisRestartStepProperty (Read
+                Only)
+                    Returns the restart step property for the Coupled Thermal Stress step.
 
         :return: SimAnalysisRestartStepProperty
         """
@@ -441,11 +424,10 @@ class SimCoupledThermalElectroChemicalStressPoreStep(SimStep):
     def stabilization(self) -> SimStabilization:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Stabilization() As SimStabilization (Read Only)
-                |     Returns the stabilization.
+                Property Stabilization() As SimStabilization (Read Only)
+                    Returns the stabilization.
 
         :return: SimStabilization
         """
@@ -456,12 +438,11 @@ class SimCoupledThermalElectroChemicalStressPoreStep(SimStep):
     def step_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StepTime() As double
-                |     Returns or sets the step time for the Coupled Thermal Electro-Chemical
-                |     step.
+                Property StepTime() As double
+                    Returns or sets the step time for the Coupled Thermal Electro-Chemical
+                    step.
 
         :return: float
         """
@@ -480,12 +461,11 @@ class SimCoupledThermalElectroChemicalStressPoreStep(SimStep):
     def thermal_response_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ThermalResponseType() As
-                | SimCoupledThermalResponseType
-                |     Returns or sets the thermal response type.
+                Property ThermalResponseType() As
+                SimCoupledThermalResponseType
+                    Returns or sets the thermal response type.
 
         :return: SimCoupledThermalResponseType
         """
@@ -504,12 +484,11 @@ class SimCoupledThermalElectroChemicalStressPoreStep(SimStep):
     def time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TimeIncrement() As double
-                |     Returns or sets the time increment of the Coupled Thermal Electro-Chemical
-                |     step. Only applicable when the incrementation scheme is Fixed.
+                Property TimeIncrement() As double
+                    Returns or sets the time increment of the Coupled Thermal Electro-Chemical
+                    step. Only applicable when the incrementation scheme is Fixed.
 
         :return: float
         """
@@ -528,12 +507,11 @@ class SimCoupledThermalElectroChemicalStressPoreStep(SimStep):
     def time_incrementation_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TimeIncrementationScheme() As
-                | SimTimeIncrementationScheme
-                |     Returns or sets the time incrementation scheme. 
+                Property TimeIncrementationScheme() As
+                SimTimeIncrementationScheme
+                    Returns or sets the time incrementation scheme. 
 
         :return: SimTimeIncrementationScheme
         """
@@ -549,4 +527,4 @@ class SimCoupledThermalElectroChemicalStressPoreStep(SimStep):
         self.com_object.TimeIncrementationScheme = value
 
     def __repr__(self):
-        return f'SimCoupledThermalElectroChemicalStressPoreStep(name="{ self.name }")'
+        return f'SimCoupledThermalElectroChemicalStressPoreStep(name="{self.name}")'

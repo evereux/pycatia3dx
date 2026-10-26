@@ -14,24 +14,22 @@ from pycatia3dx.sma_mpa_foundation.sim_step import SimStep
 
 
 class SimSpaceTimeField(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimSpaceTimeField
-                | 
-                | Represents the Space Time Field object.
-                | 
-                | See also:
-                |     SimPortRegion
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimSpaceTimeField
+                
+                Represents the Space Time Field object.
+                
+                See also:
+                    SimPortRegion
     
     """
 
@@ -43,14 +41,13 @@ class SimSpaceTimeField(AnyObject):
     def absolute_exterior_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AbsoluteExteriorTolerance() As double
-                |     Returns or sets the absolute exterior tolerance.
-                |     The absolute exterior tolerance is used to classify if a consumer node is
-                |     outside the region of the producer elements. When this value is zero, the
-                |     relative exterior tolerance is used.
+                Property AbsoluteExteriorTolerance() As double
+                    Returns or sets the absolute exterior tolerance.
+                    The absolute exterior tolerance is used to classify if a consumer node is
+                    outside the region of the producer elements. When this value is zero, the
+                    relative exterior tolerance is used.
 
         :return: float
         """
@@ -69,11 +66,10 @@ class SimSpaceTimeField(AnyObject):
     def driving_elset(self) -> SimPortRegion:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DrivingElset() As SimPortRegion
-                |     Returns or sets the driving elset.
+                Property DrivingElset() As SimPortRegion
+                    Returns or sets the driving elset.
 
         :return: SimPortRegion
         """
@@ -92,12 +88,11 @@ class SimSpaceTimeField(AnyObject):
     def increment(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Increment() As long
-                |     Returns or sets the increment.
-                |     The producer step increment that is used for initial conditions.
+                Property Increment() As long
+                    Returns or sets the increment.
+                    The producer step increment that is used for initial conditions.
 
         :return: int
         """
@@ -116,19 +111,18 @@ class SimSpaceTimeField(AnyObject):
     def interpolate_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InterpolateFlag() As boolean
-                |     Returns or sets the interpolate flag.
-                |     The interpolate flag allows the producer and consumer meshes to be
-                |     different. Many simulation features create internal nodes. These are not
-                |     visible to the user and can make the producer simulation mesh differ from the
-                |     consumer simulation mesh, even when the mesh parts are identical. This option
-                |     is not exposed in the user interface. The interpolate flag is mutually
-                |     exclusive to the midside flag.
-                |     TRUE: interpolation is used (meshes can differ).
-                |     FALSE: interpolation is not used (meshes must be identical).
+                Property InterpolateFlag() As boolean
+                    Returns or sets the interpolate flag.
+                    The interpolate flag allows the producer and consumer meshes to be
+                    different. Many simulation features create internal nodes. These are not
+                    visible to the user and can make the producer simulation mesh differ from the
+                    consumer simulation mesh, even when the mesh parts are identical. This option
+                    is not exposed in the user interface. The interpolate flag is mutually
+                    exclusive to the midside flag.
+                    TRUE: interpolation is used (meshes can differ).
+                    FALSE: interpolation is not used (meshes must be identical).
 
         :return: bool
         """
@@ -147,18 +141,17 @@ class SimSpaceTimeField(AnyObject):
     def midside_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MidsideFlag() As boolean
-                |     Returns or sets the midside flag.
-                |     The midside flag specifies that second order elements should interpolate
-                |     the field values of the midside nodes from the corner nodes. This option is not
-                |     exposed in the user interface, and applies only to Abaqus/Standard. The midside
-                |     flag is mutually exclusive to the interpolate flag.
-                |     TRUE: interpolation of midside nodes from corner node field
-                |     values.
-                |     FALSE: mapping of midsides nodes from producer nodes
+                Property MidsideFlag() As boolean
+                    Returns or sets the midside flag.
+                    The midside flag specifies that second order elements should interpolate
+                    the field values of the midside nodes from the corner nodes. This option is not
+                    exposed in the user interface, and applies only to Abaqus/Standard. The midside
+                    flag is mutually exclusive to the interpolate flag.
+                    TRUE: interpolation of midside nodes from corner node field
+                    values.
+                    FALSE: mapping of midsides nodes from producer nodes
 
         :return: bool
         """
@@ -177,14 +170,13 @@ class SimSpaceTimeField(AnyObject):
     def relative_exterior_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RelativeExteriorTolerance() As double
-                |     Returns or sets the relative exterior tolerance.
-                |     The relative exterior tolerance is the fraction of the average consumer
-                |     element size used to classify if a producer node is outside the region of the
-                |     consumer elements.
+                Property RelativeExteriorTolerance() As double
+                    Returns or sets the relative exterior tolerance.
+                    The relative exterior tolerance is the fraction of the average consumer
+                    element size used to classify if a producer node is outside the region of the
+                    consumer elements.
 
         :return: float
         """
@@ -203,12 +195,11 @@ class SimSpaceTimeField(AnyObject):
     def scenario_analysis_case(self) -> SimAnalysisCase:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ScenarioAnalysisCase() As SimAnalysisCase
-                |     Returns or sets the scenario analysis case.
-                |     The producer analysis case that is used for initial conditions.
+                Property ScenarioAnalysisCase() As SimAnalysisCase
+                    Returns or sets the scenario analysis case.
+                    The producer analysis case that is used for initial conditions.
 
         :return: SimAnalysisCase
         """
@@ -227,12 +218,11 @@ class SimSpaceTimeField(AnyObject):
     def scenario_step(self) -> SimStep:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ScenarioStep() As SimStep
-                |     Returns or sets the scenario step.
-                |     The step of producer analysis case that is used for initial conditions.
+                Property ScenarioStep() As SimStep
+                    Returns or sets the scenario step.
+                    The step of producer analysis case that is used for initial conditions.
 
         :return: SimStep
         """
@@ -251,13 +241,12 @@ class SimSpaceTimeField(AnyObject):
     def use_driving_elset_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UseDrivingElsetFlag() As boolean
-                |     Returns or sets the use driving elset flag.
-                |     TRUE: use driving elset.
-                |     FALSE: do not use driving elset.
+                Property UseDrivingElsetFlag() As boolean
+                    Returns or sets the use driving elset flag.
+                    TRUE: use driving elset.
+                    FALSE: do not use driving elset.
 
         :return: bool
         """
@@ -273,4 +262,4 @@ class SimSpaceTimeField(AnyObject):
         self.com_object.UseDrivingElsetFlag = value
 
     def __repr__(self):
-        return f'SimSpaceTimeField(name="{ self.name }")'
+        return f'SimSpaceTimeField(name="{self.name}")'

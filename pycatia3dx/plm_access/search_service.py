@@ -12,28 +12,26 @@ from pycatia3dx.plm_access.database_search import DatabaseSearch
 
 
 class SearchService(Service):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         SearchService
-                | 
-                | This Interface is starting point to automate the search.
-                | 
-                | Example of how to retrieve such an object using
-                | Application.GetSessionService:
-                | 
-                |   Dim aSearchSrv as SearchService
-                |   Set aSearchSrv = CATIA.GetSessionService("Search")
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        SearchService
+                
+                This Interface is starting point to automate the search.
+                
+                Example of how to retrieve such an object using
+                Application.GetSessionService:
+                
+                  Dim aSearchSrv as SearchService
+                  Set aSearchSrv = CATIA.GetSessionService("Search")
     
     """
 
@@ -45,12 +43,11 @@ class SearchService(Service):
     def database_search(self) -> DatabaseSearch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DatabaseSearch() As DatabaseSearch (Read Only)
-                |     Returns a Search object that can prepare search with the database. This
-                |     provides APIs to simulate the "Advanced Search" provided in the UI.
+                Property DatabaseSearch() As DatabaseSearch (Read Only)
+                    Returns a Search object that can prepare search with the database. This
+                    provides APIs to simulate the "Advanced Search" provided in the UI.
 
         :return: DatabaseSearch
         """
@@ -61,11 +58,10 @@ class SearchService(Service):
     def title(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Title(CATBSTR iTitle) (Write Only)
-                |     Sets the title of the Search Browser.
+                Property Title(CATBSTR iTitle) (Write Only)
+                    Sets the title of the Search Browser.
 
         :return: None
         """
@@ -83,15 +79,14 @@ class SearchService(Service):
     def search(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Search()
-                |     Launch the Search and display the results in the Search Browser.
+                Sub Search()
+                    Launch the Search and display the results in the Search Browser.
 
         :return: None
         """
         return self.com_object.Search()
 
     def __repr__(self):
-        return f'SearchService(name="{ self.name }")'
+        return f'SearchService(name="{self.name}")'

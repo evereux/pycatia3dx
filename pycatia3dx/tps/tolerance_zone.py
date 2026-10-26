@@ -12,21 +12,19 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ToleranceZone(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ToleranceZone
-                | 
-                | Interface for accessing tolerance zone informations of a TPS.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ToleranceZone
+                
+                Interface for accessing tolerance zone informations of a TPS.
     
     """
 
@@ -38,11 +36,10 @@ class ToleranceZone(AnyObject):
     def form(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Form() As CATBSTR
-                |     Retrieves tolerance zone form.
+                Property Form() As CATBSTR
+                    Retrieves tolerance zone form.
 
         :return: str
         """
@@ -61,13 +58,12 @@ class ToleranceZone(AnyObject):
     def validated_tolerance_value(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ValidatedToleranceValue() As boolean
-                |     Returns or sets whether the value for the dimension limit is
-                |     validated.
-                |     TRUE if it is validated.
+                Property ValidatedToleranceValue() As boolean
+                    Returns or sets whether the value for the dimension limit is
+                    validated.
+                    TRUE if it is validated.
 
         :return: bool
         """
@@ -86,11 +82,10 @@ class ToleranceZone(AnyObject):
     def value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Value() As double
-                |     Retrieves tolerance zone value (in millimeters). 
+                Property Value() As double
+                    Retrieves tolerance zone value (in millimeters). 
 
         :return: float
         """
@@ -106,4 +101,4 @@ class ToleranceZone(AnyObject):
         self.com_object.Value = value
 
     def __repr__(self):
-        return f'ToleranceZone(name="{ self.name }")'
+        return f'ToleranceZone(name="{self.name}")'

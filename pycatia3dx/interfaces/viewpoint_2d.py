@@ -14,22 +14,21 @@ from pycatia3dx.system.any_object import AnyObject
 class ViewPoint2D(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Viewpoint2D
-                | 
-                | Represents the 2D viewpoint.
-                | The 2D viewpoint is the object that stores data which defines how your objects
-                | are seen to enable their display by a 2D viewer. This data includes namely the
-                | origin of the scene, that is the center of the displayed area, and the zoom
-                | factor.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Viewpoint2D
+                
+                Represents the 2D viewpoint.
+                The 2D viewpoint is the object that stores data which defines how your objects
+                are seen to enable their display by a 2D viewer. This data includes namely the
+                origin of the scene, that is the center of the displayed area, and the zoom
+                factor.
     
     """
 
@@ -41,23 +40,22 @@ class ViewPoint2D(AnyObject):
     def zoom(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Zoom() As double
-                |     Returns or sets the zoom factor associated with the
-                |     viewpoint.
-                | 
-                |     Example:
-                |         This example retrieves in ZoomFactor the zoom factor associated with
-                |         the NiceViewpoint viewpoint, tests if it is less than 1, and if so, sets it to
-                |         one and applies it to the viewpoint.
-                | 
-                |          ZoomFactor = NiceViewpoint.Zoom
-                |          If ZoomFactor < 1 Then
-                |           ZoomFactor = 1
-                |           NiceViewpoint.Zoom(ZoomFactor)
-                |          End If
+                Property Zoom() As double
+                    Returns or sets the zoom factor associated with the
+                    viewpoint.
+                
+                    Example:
+                        This example retrieves in ZoomFactor the zoom factor associated with
+                        the NiceViewpoint viewpoint, tests if it is less than 1, and if so, sets it to
+                        one and applies it to the viewpoint.
+                
+                         ZoomFactor = NiceViewpoint.Zoom
+                         If ZoomFactor < 1 Then
+                          ZoomFactor = 1
+                          NiceViewpoint.Zoom(ZoomFactor)
+                         End If
 
         :return: float
         """
@@ -75,18 +73,17 @@ class ViewPoint2D(AnyObject):
     def get_origin(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Sub GetOrigin(CATSafeArrayVariant oOrigin)
-                |     Gets the coordinates of the origin of the viewpoint.
-                | 
-                |     Example:
-                |         This example Gets the origin of the NiceViewpoint
-                |         viewpoint.
-                | 
-                |          Dim origin(1)
-                |          NiceViewpoint.GetOrigin origin
+                Sub GetOrigin(CATSafeArrayVariant oOrigin)
+                    Gets the coordinates of the origin of the viewpoint.
+                
+                    Example:
+                        This example Gets the origin of the NiceViewpoint
+                        viewpoint.
+                
+                         Dim origin(1)
+                         NiceViewpoint.GetOrigin origin
 
         :return: tuple
         """
@@ -111,21 +108,20 @@ class ViewPoint2D(AnyObject):
     def put_origin(self, o_origin: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub PutOrigin(CATSafeArrayVariant oOrigin)
-                |     Sets the coordinates of the origin of the viewpoint.
+                Sub PutOrigin(CATSafeArrayVariant oOrigin)
+                    Sets the coordinates of the origin of the viewpoint.
                 |
-                |     Example:
-                |         This example sets the origin of the NiceViewpoint viewpoint to the
-                |         point with coordinates (5, 8).
+                    Example:
+                        This example sets the origin of the NiceViewpoint viewpoint to the
+                        point with coordinates (5, 8).
                 |
-                |          NiceViewpoint.PutOrigin Array(5, 8)
+                         NiceViewpoint.PutOrigin Array(5, 8)
                 |
                 |
                 |
-                | Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
+                Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
 
         :param tuple o_origin:
         :return: None

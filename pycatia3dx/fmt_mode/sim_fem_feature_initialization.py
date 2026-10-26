@@ -14,17 +14,16 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 class SimFemFeatureInitialization(CATBaseDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 SimFemFeatureInitialization
-                | 
-                | Interface representing FEM feature initialization services.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                SimFemFeatureInitialization
+                
+                Interface representing FEM feature initialization services.
     
     """
 
@@ -35,12 +34,11 @@ class SimFemFeatureInitialization(CATBaseDispatch):
     def initialize_mesh_part_from_geometry(self, i_mesh_part: SimMeshPart) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub InitializeMeshPartFromGeometry(SimMeshPart iMeshPart)
-                |     Initialize Mesh Size and Sag from the mesh part support geometry. A mesh
-                |     part support must be already defined.
+                Sub InitializeMeshPartFromGeometry(SimMeshPart iMeshPart)
+                    Initialize Mesh Size and Sag from the mesh part support geometry. A mesh
+                    part support must be already defined.
 
         :param SimMeshPart i_mesh_part:
         :return: None

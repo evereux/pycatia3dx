@@ -16,23 +16,22 @@ from pycatia3dx.dnb_igp_olp_use.olp_motion_group import OLPMotionGroup
 class OLPMotionGroups(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     OlpMotionGroups
-                | 
-                | A list of motion groups.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | This object can be retrieved using
-                | OlpTranslatorHelper.MotionGroups
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    OlpMotionGroups
+                
+                A list of motion groups.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                This object can be retrieved using
+                OlpTranslatorHelper.MotionGroups
     
     """
 
@@ -43,21 +42,20 @@ class OLPMotionGroups(Collection):
     def item(self, i_index: int) -> OLPMotionGroup:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(long iIndex) As OlpMotionGroup
-                |     Retrieves a motion group by its index.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the first motion group is 1, and the index of the last
-                |             motion group is Count. If the index is out of bounds, the function fails.
-                |             
-                | 
-                |     Returns:
-                |         The motion group. 
+                Func Item(long iIndex) As OlpMotionGroup
+                    Retrieves a motion group by its index.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the first motion group is 1, and the index of the last
+                            motion group is Count. If the index is out of bounds, the function fails.
+                            
+                
+                    Returns:
+                        The motion group. 
 
         :param int i_index:
         :return: OLPMotionGroup

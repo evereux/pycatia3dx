@@ -12,21 +12,19 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrAdvPanel(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrAdvPanel
-                | 
-                | Object to filter the Structure Advanced Panel.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrAdvPanel
+                
+                Object to filter the Structure Advanced Panel.
     
     """
 
@@ -37,27 +35,26 @@ class StrAdvPanel(AnyObject):
     def set_as_last_limit(self, i_position_of_limit: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAsLastLimit(long iPositionOfLimit)
-                |     Sets a limit to the last position in the list of limits.
-                | 
-                |     Parameters:
-                | 
-                |         iPositionOfLimit
-                |             Index of the limit to promote. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example Sets 3rd limit as the last limit of the Advanced
-                |              Panel.
-                |              
-                | 
-                |              Dim ObjStrAdvPanel As StrAdvPanel
-                |              Set ObjStrAdvPanel = ObjSfdPanel.StrAdvPanel
-                |              ObjStrAdvPanel.SetAsLastLimit 3
+                Sub SetAsLastLimit(long iPositionOfLimit)
+                    Sets a limit to the last position in the list of limits.
+                
+                    Parameters:
+                
+                        iPositionOfLimit
+                            Index of the limit to promote. 
+                
+                    Example:
+                
+                
+                             This example Sets 3rd limit as the last limit of the Advanced
+                             Panel.
+                             
+                
+                             Dim ObjStrAdvPanel As StrAdvPanel
+                             Set ObjStrAdvPanel = ObjSfdPanel.StrAdvPanel
+                             ObjStrAdvPanel.SetAsLastLimit 3
 
         :param int i_position_of_limit:
         :return: None
@@ -65,4 +62,4 @@ class StrAdvPanel(AnyObject):
         return self.com_object.SetAsLastLimit(i_position_of_limit)
 
     def __repr__(self):
-        return f'StrAdvPanel(name="{ self.name }")'
+        return f'StrAdvPanel(name="{self.name}")'

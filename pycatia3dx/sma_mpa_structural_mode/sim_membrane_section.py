@@ -14,59 +14,57 @@ from pycatia3dx.sma_mpa_structural_mode.sim_rebar_layers import SimRebarLayers
 
 
 class SimMembraneSection(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimMembraneSection
-                | 
-                | Represents the Membrane Section object.
-                | 
-                | Example:
-                |     Given a SimProperties object, you can create a SimMembraneSection as
-                |     following:
-                | 
-                |      Dim MyProperties As SimProperties
-                |      ...
-                |      Dim MyMembraneSection As SimMembraneSection
-                |      Set MyMembraneSection = MyProperties.Add("SimMembraneSection")
-                |      
-                | 
-                |     Given a SimProperties object, you can retrieve a SimMembraneSection named
-                |     "Membrane Section.1" as following:
-                | 
-                |      Dim MyProperties As SimProperties
-                |      ...
-                |      Dim MyMembraneSection As SimMembraneSection
-                |      Set MyMembraneSection = MyProperties.Item("Membrane Section.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimProperties object myProperties, you can create a
-                |     SimMembraneSection as following:
-                | 
-                |      ...
-                |      myMembraneSection = myProperties.Add("SimMembraneSection")
-                |      
-                | 
-                |     Given a SimProperties object myProperties, you can retrieve a
-                |     SimMembraneSection named "Membrane Section.1" as
-                |     following:
-                | 
-                |      ...
-                |      myMembraneSection = myProperties.Item("Membrane Section.1")
-                |      
-                | 
-                | See also:
-                |     SimProperties
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimMembraneSection
+                
+                Represents the Membrane Section object.
+                
+                Example:
+                    Given a SimProperties object, you can create a SimMembraneSection as
+                    following:
+                
+                     Dim MyProperties As SimProperties
+                     ...
+                     Dim MyMembraneSection As SimMembraneSection
+                     Set MyMembraneSection = MyProperties.Add("SimMembraneSection")
+                     
+                
+                    Given a SimProperties object, you can retrieve a SimMembraneSection named
+                    "Membrane Section.1" as following:
+                
+                     Dim MyProperties As SimProperties
+                     ...
+                     Dim MyMembraneSection As SimMembraneSection
+                     Set MyMembraneSection = MyProperties.Item("Membrane Section.1")
+                     
+                
+                Example in Python:
+                    Given a SimProperties object myProperties, you can create a
+                    SimMembraneSection as following:
+                
+                     ...
+                     myMembraneSection = myProperties.Add("SimMembraneSection")
+                     
+                
+                    Given a SimProperties object myProperties, you can retrieve a
+                    SimMembraneSection named "Membrane Section.1" as
+                    following:
+                
+                     ...
+                     myMembraneSection = myProperties.Item("Membrane Section.1")
+                     
+                
+                See also:
+                    SimProperties
     
     """
 
@@ -78,11 +76,10 @@ class SimMembraneSection(AnyObject):
     def all_rebar_layers(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AllRebarLayers() As CATSafeArrayVariant (Read Only)
-                |     Returns the Rebar Layers associated with the section.
+                Property AllRebarLayers() As CATSafeArrayVariant (Read Only)
+                    Returns the Rebar Layers associated with the section.
 
         :return: tuple
         """
@@ -93,11 +90,10 @@ class SimMembraneSection(AnyObject):
     def material_behavior(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialBehavior() As CATBaseDispatch
-                |     Returns or sets the material behavior.
+                Property MaterialBehavior() As CATBaseDispatch
+                    Returns or sets the material behavior.
 
         :return: AnyObject
         """
@@ -116,11 +112,10 @@ class SimMembraneSection(AnyObject):
     def material_behavior_by_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialBehaviorByName() As CATBSTR
-                |     Returns or sets the simulation material behavior by name.
+                Property MaterialBehaviorByName() As CATBSTR
+                    Returns or sets the simulation material behavior by name.
 
         :return: str
         """
@@ -139,11 +134,10 @@ class SimMembraneSection(AnyObject):
     def orientation(self) -> SimOrientation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Orientation() As SimOrientation (Read Only)
-                |     Returns the orientation used for the section.
+                Property Orientation() As SimOrientation (Read Only)
+                    Returns the orientation used for the section.
 
         :return: SimOrientation
         """
@@ -154,11 +148,10 @@ class SimMembraneSection(AnyObject):
     def poisson_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PoissonValue() As double
-                |     Poisson's ratio value. Quantity: Real, units: None
+                Property PoissonValue() As double
+                    Poisson's ratio value. Quantity: Real, units: None
 
         :return: float
         """
@@ -177,16 +170,15 @@ class SimMembraneSection(AnyObject):
     def poisson_value_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PoissonValueFlag() As boolean
-                |     Returns or sets the flag that determines if the poisson value for membrane
-                |     section is set.
-                | 
-                |     TRUE: the poisson value for membrane section is set.
-                | 
-                |     FALSE: the poisson value for membrane section is not set.
+                Property PoissonValueFlag() As boolean
+                    Returns or sets the flag that determines if the poisson value for membrane
+                    section is set.
+                
+                    TRUE: the poisson value for membrane section is set.
+                
+                    FALSE: the poisson value for membrane section is not set.
 
         :return: bool
         """
@@ -205,12 +197,11 @@ class SimMembraneSection(AnyObject):
     def rebar_layers_orientation(self) -> SimOrientation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RebarLayersOrientation() As SimOrientation (Read
-                | Only)
-                |     Returns the Orientation of the Rebar Layers associated with the section.
+                Property RebarLayersOrientation() As SimOrientation (Read
+                Only)
+                    Returns the Orientation of the Rebar Layers associated with the section.
 
         :return: SimOrientation
         """
@@ -221,11 +212,10 @@ class SimMembraneSection(AnyObject):
     def rebars(self) -> SimRebarLayers:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Rebars() As SimRebarLayers (Read Only)
-                |     Returns the Rebar Layers associated with the section.
+                Property Rebars() As SimRebarLayers (Read Only)
+                    Returns the Rebar Layers associated with the section.
 
         :return: SimRebarLayers
         """
@@ -236,16 +226,15 @@ class SimMembraneSection(AnyObject):
     def reduced_integration_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ReducedIntegrationFlag() As boolean
-                |     Returns or sets the flag that determines if the ReducedIntegrationFlag is
-                |     set.
-                | 
-                |     TRUE: the ReducedIntegrationFlag is set.
-                | 
-                |     FALSE: the ReducedIntegrationFlag is not set.
+                Property ReducedIntegrationFlag() As boolean
+                    Returns or sets the flag that determines if the ReducedIntegrationFlag is
+                    set.
+                
+                    TRUE: the ReducedIntegrationFlag is set.
+                
+                    FALSE: the ReducedIntegrationFlag is not set.
 
         :return: bool
         """
@@ -264,36 +253,35 @@ class SimMembraneSection(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. Possible values are:
-                | 
-                |         Abstractions
-                |         Amplitudes
-                |         Controls
-                |         Connections
-                |         Damping
-                |         ElementTypeAssignments
-                |         Envelopes
-                |         FieldPlots
-                |         FlowConditions
-                |         HistoryPlots
-                |         InitialConditions
-                |         Interactions
-                |         LinearLoadCases
-                |         Loads
-                |         LoadSets
-                |         OutputRequests
-                |         PredefinedFields
-                |         Properties
-                |         Restraints
-                |         Sensors
-                |         Streams
-                |         ThermalConditions
-                |         NotDefined
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. Possible values are:
+                
+                        Abstractions
+                        Amplitudes
+                        Controls
+                        Connections
+                        Damping
+                        ElementTypeAssignments
+                        Envelopes
+                        FieldPlots
+                        FlowConditions
+                        HistoryPlots
+                        InitialConditions
+                        Interactions
+                        LinearLoadCases
+                        Loads
+                        LoadSets
+                        OutputRequests
+                        PredefinedFields
+                        Properties
+                        Restraints
+                        Sensors
+                        Streams
+                        ThermalConditions
+                        NotDefined
 
         :return: str
         """
@@ -304,11 +292,10 @@ class SimMembraneSection(AnyObject):
     def thickness_field(self) -> SimScalarField:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ThicknessField() As SimScalarField (Read Only)
-                |     Returns the thickness field.
+                Property ThicknessField() As SimScalarField (Read Only)
+                    Returns the thickness field.
 
         :return: SimScalarField
         """
@@ -319,12 +306,11 @@ class SimMembraneSection(AnyObject):
     def uniform_thickness(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UniformThickness() As double
-                |     Returns or sets the uniform thickness value used for the section. Quantity:
-                |     LENGTH, units: m
+                Property UniformThickness() As double
+                    Returns or sets the uniform thickness value used for the section. Quantity:
+                    LENGTH, units: m
 
         :return: float
         """
@@ -343,16 +329,15 @@ class SimMembraneSection(AnyObject):
     def uniform_thickness_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UniformThicknessFlag() As boolean (Read Only)
-                |     Returns or sets the flag that determines if the membrane thickness is
-                |     uniform.
-                | 
-                |     TRUE: the membrane thickness is uniform.
-                | 
-                |     FALSE: the membrane thickness is not uniform.
+                Property UniformThicknessFlag() As boolean (Read Only)
+                    Returns or sets the flag that determines if the membrane thickness is
+                    uniform.
+                
+                    TRUE: the membrane thickness is uniform.
+                
+                    FALSE: the membrane thickness is not uniform.
 
         :return: bool
         """
@@ -362,11 +347,10 @@ class SimMembraneSection(AnyObject):
     def add_rebar_layer(self, i_type: str, o_feature: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddRebarLayer(CATBSTR iType,CATBaseDispatch oFeature)
-                |     Adds a Rebar Layer to the section. 
+                Sub AddRebarLayer(CATBSTR iType,CATBaseDispatch oFeature)
+                    Adds a Rebar Layer to the section. 
 
         :param str i_type:
         :param AnyObject o_feature:
@@ -375,4 +359,4 @@ class SimMembraneSection(AnyObject):
         return self.com_object.AddRebarLayer(i_type, o_feature.com_object)
 
     def __repr__(self):
-        return f'SimMembraneSection(name="{ self.name }")'
+        return f'SimMembraneSection(name="{self.name}")'

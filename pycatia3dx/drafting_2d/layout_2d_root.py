@@ -17,18 +17,17 @@ from pycatia3dx.system.any_object import AnyObject
 class Layout2DRoot(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Layout2DRoot
-                | 
-                | Interface to manage the 2D Layout root.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Layout2DRoot
+                
+                Interface to manage the 2D Layout root.
     
     """
 
@@ -40,21 +39,20 @@ class Layout2DRoot(AnyObject):
     def active_sheet(self) -> Layout2DSheet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ActiveSheet() As Layout2DSheet
-                |     Retrieves or sets the active sheet of the layout.
-                | 
-                |     Example:
-                |         This example retrieves the active sheet currently managed by the layout
-                |         root of an active 3D Shape representation.
-                | 
-                |          Dim myPart As CATIAPart
-                |          Set myPart = CATIA.ActiveEditor.ActiveObject
-                |          Dim MyRoot As Layout2DRoot
-                |          Set MyRoot = MyRoot.GetItem("CATLayout2DRoot)"
-                |          Dim MySheet = MyRoot.GetActiveSheet
+                Property ActiveSheet() As Layout2DSheet
+                    Retrieves or sets the active sheet of the layout.
+                
+                    Example:
+                        This example retrieves the active sheet currently managed by the layout
+                        root of an active 3D Shape representation.
+                
+                         Dim myPart As CATIAPart
+                         Set myPart = CATIA.ActiveEditor.ActiveObject
+                         Dim MyRoot As Layout2DRoot
+                         Set MyRoot = MyRoot.GetItem("CATLayout2DRoot)"
+                         Dim MySheet = MyRoot.GetActiveSheet
 
         :return: Layout2DSheet
         """
@@ -73,26 +71,25 @@ class Layout2DRoot(AnyObject):
     def parameters(self) -> Parameters:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Parameters() As Parameters (Read Only)
-                |     Returns the collection of parameters of the layout.
-                | 
-                |     Example:
-                | 
-                |          This example retrieves in layoutParameters the collection
-                |          of
-                |          parameters currently managed by the layout root of an active 3D Shape
-                |          representation. 
-                |          
-                | 
-                |          Dim myPart As CATIAPart
-                |          Set myPart = CATIA.ActiveEditor.ActiveObject
-                |          Dim MyRoot As Layout2DRoot
-                |          Set MyRoot = MyRoot.GetItem("CATLayout2DRoot)"
-                |          Dim layoutParameters As Parameters
-                |          Set layoutParameters = MyRoot.Parameters
+                Property Parameters() As Parameters (Read Only)
+                    Returns the collection of parameters of the layout.
+                
+                    Example:
+                
+                         This example retrieves in layoutParameters the collection
+                         of
+                         parameters currently managed by the layout root of an active 3D Shape
+                         representation. 
+                         
+                
+                         Dim myPart As CATIAPart
+                         Set myPart = CATIA.ActiveEditor.ActiveObject
+                         Dim MyRoot As Layout2DRoot
+                         Set MyRoot = MyRoot.GetItem("CATLayout2DRoot)"
+                         Dim layoutParameters As Parameters
+                         Set layoutParameters = MyRoot.Parameters
 
         :return: Parameters
         """
@@ -103,27 +100,26 @@ class Layout2DRoot(AnyObject):
     def relations(self) -> Relations:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Relations() As Relations (Read Only)
-                |     Returns the collection of relations of the 3D shape rep
-                |     representation.
-                | 
-                |     Example:
-                | 
-                |          This example retrieves in layoutRelations the collection
-                |          of
-                |          relations currently managed by the layout root of an active 3D Shape
-                |          representation.
-                |          
-                | 
-                |          Dim myPart As CATIAPart
-                |          Set myPart = CATIA.ActiveEditor.ActiveObject
-                |          Dim MyRoot As Layout2DRoot
-                |          Set MyRoot = MyRoot.GetItem("CATLayout2DRoot)"
-                |          Dim layoutRelations As Relations
-                |          Set layoutRelations = MyRoot.Relations
+                Property Relations() As Relations (Read Only)
+                    Returns the collection of relations of the 3D shape rep
+                    representation.
+                
+                    Example:
+                
+                         This example retrieves in layoutRelations the collection
+                         of
+                         relations currently managed by the layout root of an active 3D Shape
+                         representation.
+                         
+                
+                         Dim myPart As CATIAPart
+                         Set myPart = CATIA.ActiveEditor.ActiveObject
+                         Dim MyRoot As Layout2DRoot
+                         Set MyRoot = MyRoot.GetItem("CATLayout2DRoot)"
+                         Dim layoutRelations As Relations
+                         Set layoutRelations = MyRoot.Relations
 
         :return: Relations
         """
@@ -134,23 +130,22 @@ class Layout2DRoot(AnyObject):
     def rendering_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RenderingMode() As CatRenderingMode
-                |     Set/Get the rendering mode of Layout2D. get_RenderingMode method can fail
-                |     if rendering value stored on Layout is not a value defined in CatRenderingMode
-                |     enum.
-                | 
-                |     Example:
-                |         This example sets the rendering mode to catRenderShadingWithEdges for
-                |         the layout root of a part of the active document.
-                | 
-                |          Dim myPart As CATIAPart
-                |          Set myPart = CATIA.ActiveEditor.ActiveObject
-                |          Dim MyRoot As Layout2DRoot
-                |          Set MyRoot = myPart.GetItem("CATLayout2DRoot)"
-                |          MyRoot. RenderingMode  = catRenderShadingWithEdges
+                Property RenderingMode() As CatRenderingMode
+                    Set/Get the rendering mode of Layout2D. get_RenderingMode method can fail
+                    if rendering value stored on Layout is not a value defined in CatRenderingMode
+                    enum.
+                
+                    Example:
+                        This example sets the rendering mode to catRenderShadingWithEdges for
+                        the layout root of a part of the active document.
+                
+                         Dim myPart As CATIAPart
+                         Set myPart = CATIA.ActiveEditor.ActiveObject
+                         Dim MyRoot As Layout2DRoot
+                         Set MyRoot = myPart.GetItem("CATLayout2DRoot)"
+                         MyRoot. RenderingMode  = catRenderShadingWithEdges
 
         :return: int
         """
@@ -169,24 +164,23 @@ class Layout2DRoot(AnyObject):
     def sheets(self) -> Layout2DSheets:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Sheets() As Layout2DSheets (Read Only)
-                |     Returns the collection of Layout2D sheets aggregated by the layout
-                |     root.
-                | 
-                |     Example:
-                |         This example retrieves in SheetCollection the collection of sheets
-                |         currently managed by the layout root of an active 3D Shape
-                |         representation.
-                | 
-                |          Dim myPart As CATIAPart
-                |          Set myPart = CATIA.ActiveEditor.ActiveObject
-                |          Dim MyRoot As Layout2DRoot
-                |          Set MyRoot = MyRoot.GetItem("CATLayout2DRoot)"
-                |          Dim SheetCollection As Layout2DSheets
-                |          Set SheetCollection = MyRoot.Sheets.
+                Property Sheets() As Layout2DSheets (Read Only)
+                    Returns the collection of Layout2D sheets aggregated by the layout
+                    root.
+                
+                    Example:
+                        This example retrieves in SheetCollection the collection of sheets
+                        currently managed by the layout root of an active 3D Shape
+                        representation.
+                
+                         Dim myPart As CATIAPart
+                         Set myPart = CATIA.ActiveEditor.ActiveObject
+                         Dim MyRoot As Layout2DRoot
+                         Set MyRoot = MyRoot.GetItem("CATLayout2DRoot)"
+                         Dim SheetCollection As Layout2DSheets
+                         Set SheetCollection = MyRoot.Sheets.
 
         :return: Layout2DSheets
         """
@@ -197,22 +191,21 @@ class Layout2DRoot(AnyObject):
     def standard(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Standard() As CATBSTR
-                |     Returns or sets the DrawingStandard of the part document.
-                | 
-                |     Example:
-                |         This example sets the drawing standard currently managed by the layout
-                |         root of a part of the active 3D Shape representation, supposed to be a part
-                |         document, to ISO.
-                | 
-                |          Dim myPart As CATIAPart
-                |          Set myPart = CATIA.ActiveEditor.ActiveObject
-                |          Dim MyRoot As Layout2DRoot
-                |          Set MyRoot = myPart.GetItem("CATLayout2DRoot)"
-                |          MyRoot.Standard = ISO
+                Property Standard() As CATBSTR
+                    Returns or sets the DrawingStandard of the part document.
+                
+                    Example:
+                        This example sets the drawing standard currently managed by the layout
+                        root of a part of the active 3D Shape representation, supposed to be a part
+                        document, to ISO.
+                
+                         Dim myPart As CATIAPart
+                         Set myPart = CATIA.ActiveEditor.ActiveObject
+                         Dim MyRoot As Layout2DRoot
+                         Set MyRoot = myPart.GetItem("CATLayout2DRoot)"
+                         MyRoot.Standard = ISO
 
         :return: str
         """
@@ -231,16 +224,15 @@ class Layout2DRoot(AnyObject):
     def visu_in_3d(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property VisuIn3D() As CatVisuIn3DMode
-                |     Set/Get the 3D visualization mode of the layout in the 3D Viewer ie in the
-                |     3D windows and in the background of each view in every 2D
-                |     context.
-                | 
-                |     See also:
-                |         CatVisuIn3DMode
+                Property VisuIn3D() As CatVisuIn3DMode
+                    Set/Get the 3D visualization mode of the layout in the 3D Viewer ie in the
+                    3D windows and in the background of each view in every 2D
+                    context.
+                
+                    See also:
+                        CatVisuIn3DMode
 
         :return: int
         """
@@ -258,27 +250,26 @@ class Layout2DRoot(AnyObject):
     def reorder_sheets(self, i_ordered_sheets: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub reorder_Sheets(CATSafeArrayVariant iOrderedSheets)
-                |     Changes the positions of the sheets in this drawing according to the given
-                |     ordered list. iOrderedSheets is the result of a permutation applied to the list
-                |     of all the sheets of this drawing, with the following constraint: For every
-                |     non-detail sheet, there is not any detail sheet appearing before in
-                |     iOrderedSheets.
+                Sub reorder_Sheets(CATSafeArrayVariant iOrderedSheets)
+                    Changes the positions of the sheets in this drawing according to the given
+                    ordered list. iOrderedSheets is the result of a permutation applied to the list
+                    of all the sheets of this drawing, with the following constraint: For every
+                    non-detail sheet, there is not any detail sheet appearing before in
+                    iOrderedSheets.
                 |
-                |     Example:
-                |         This example inverts the sheet order of a drawing made of exactly two
-                |         regular sheets.
+                    Example:
+                        This example inverts the sheet order of a drawing made of exactly two
+                        regular sheets.
                 |
-                |          Dim myPart As CATIAPart
-                |          Set myPart = CATIA.ActiveEditor.ActiveObject
-                |          Set drwsheets = MyRoot.Sheets
-                |          Set sheet1 = drwsheets.item(1)
-                |          Set sheet2 = drwsheets.item(2)
-                |          newsheetorder = Array(sheet2, sheet1)
-                |          drwsheetsorder.reorder_Sheets(newsheetorder)
+                         Dim myPart As CATIAPart
+                         Set myPart = CATIA.ActiveEditor.ActiveObject
+                         Set drwsheets = MyRoot.Sheets
+                         Set sheet1 = drwsheets.item(1)
+                         Set sheet2 = drwsheets.item(2)
+                         newsheetorder = Array(sheet2, sheet1)
+                         drwsheetsorder.reorder_Sheets(newsheetorder)
 
         :param tuple i_ordered_sheets:
         :return: None

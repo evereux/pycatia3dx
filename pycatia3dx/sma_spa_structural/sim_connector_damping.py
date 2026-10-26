@@ -13,21 +13,19 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimConnectorDamping(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimConnectorDamping
-                | 
-                | Represents the Connector Damping object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimConnectorDamping
+                
+                Represents the Connector Damping object.
     
     """
 
@@ -39,12 +37,11 @@ class SimConnectorDamping(AnyObject):
     def damping(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Damping() As double
-                |     Returns or sets the damping value. Quantity: FORCE_OVER_VELOCITY, units:
-                |     kg_s
+                Property Damping() As double
+                    Returns or sets the damping value. Quantity: FORCE_OVER_VELOCITY, units:
+                    kg_s
 
         :return: float
         """
@@ -63,11 +60,10 @@ class SimConnectorDamping(AnyObject):
     def damping_order(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DampingOrder() As SimConnectorDampingDampingOrder
-                |     Returns or sets the damping order.
+                Property DampingOrder() As SimConnectorDampingDampingOrder
+                    Returns or sets the damping order.
 
         :return: int
         """
@@ -86,11 +82,10 @@ class SimConnectorDamping(AnyObject):
     def direction(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Direction() As SimDof (Read Only)
-                |     Returns the DOF on which the elasticity connector is defined.
+                Property Direction() As SimDof (Read Only)
+                    Returns the DOF on which the elasticity connector is defined.
 
         :return: int
         """
@@ -101,11 +96,10 @@ class SimConnectorDamping(AnyObject):
     def table(self) -> SimTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Table() As SimTable (Read Only)
-                |     Returns the table that determines the damping behavior.
+                Property Table() As SimTable (Read Only)
+                    Returns the table that determines the damping behavior.
 
         :return: SimTable
         """
@@ -115,22 +109,21 @@ class SimConnectorDamping(AnyObject):
     def get_table_column(self, i_table_column_name: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTableColumn(SimConnectorDampingTableColumn iTableColumnName) As
-                | SimTableColumn
-                |     Retrieves a specific column of the table that determines the elasticity
-                |     behavior. This method is only applicable if the Damping Order is
-                |     NonLinear.
-                | 
-                |     Parameters:
-                | 
-                |         iTableColumnName[in]
-                |             The table column name. 
-                | 
-                |     Returns:
-                |         The table column. 
+                Func GetTableColumn(SimConnectorDampingTableColumn iTableColumnName) As
+                SimTableColumn
+                    Retrieves a specific column of the table that determines the elasticity
+                    behavior. This method is only applicable if the Damping Order is
+                    NonLinear.
+                
+                    Parameters:
+                
+                        iTableColumnName[in]
+                            The table column name. 
+                
+                    Returns:
+                        The table column. 
 
         :param int i_table_column_name:
         :return: SimTableColumn
@@ -138,4 +131,4 @@ class SimConnectorDamping(AnyObject):
         return SimTableColumn(self.com_object.GetTableColumn(i_table_column_name))
 
     def __repr__(self):
-        return f'SimConnectorDamping(name="{ self.name }")'
+        return f'SimConnectorDamping(name="{self.name}")'

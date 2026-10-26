@@ -11,50 +11,48 @@ from pycatia3dx.dnb_igp_olp_use.olp_profile import OLPProfile
 
 
 class OLPMotionProfile(OLPProfile):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DNBIgpOlpUseItf.OlpProfile
-                |                         OlpMotionProfile
-                | 
-                | A motion profile used for translating a robot program.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | 
-                | The behavior of this object depends on where it was retrieved from. If the
-                | object was retrieved from an OlpRobotMotion or OlpRobotMotionTarget then this
-                | object is used to configure the speed properties of that motion. The parameters
-                | specified with the iMatch input equal to TRUE will be used to find an existing
-                | profile to reuse for this motion. If no matching profile is found a new one
-                | will be created. If the object was retrieved from
-                | OlpController.MotionProfileList then any modifications to this object will
-                | change an existing or new profile's values directly.
-                | 
-                | There are 2 types of methods on this object. Some methods provide direct access
-                | to the motion profile parameters as available in the dialog. Other methods,
-                | called Template Methods, get and set all the speed/acceleration parameters as a
-                | group. Each template assumes there are fixed values for some of the parameters.
-                | The get template methods generate messages if the parameters which would have
-                | fixed values are not correct. The set template methods set all the fixed values
-                | in addition to the input arguments.
-                | 
-                | You cannot call methods which Get values for the incorrect Basis. For example,
-                | if IsTimeBasis returns FALSE, then GetTime will fail. You should also not call
-                | a template method like GetTCPAngular if TimeLinearAngularBasis returned
-                | delOlpLinearBasis.
-                | 
-                | You cannot call Get methods for profiles retrieved from a new OlpRobotMotion or
-                | OlpRobotMotionTarget until values have been set.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DNBIgpOlpUseItf.OlpProfile
+                                        OlpMotionProfile
+                
+                A motion profile used for translating a robot program.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                
+                The behavior of this object depends on where it was retrieved from. If the
+                object was retrieved from an OlpRobotMotion or OlpRobotMotionTarget then this
+                object is used to configure the speed properties of that motion. The parameters
+                specified with the iMatch input equal to TRUE will be used to find an existing
+                profile to reuse for this motion. If no matching profile is found a new one
+                will be created. If the object was retrieved from
+                OlpController.MotionProfileList then any modifications to this object will
+                change an existing or new profile's values directly.
+                
+                There are 2 types of methods on this object. Some methods provide direct access
+                to the motion profile parameters as available in the dialog. Other methods,
+                called Template Methods, get and set all the speed/acceleration parameters as a
+                group. Each template assumes there are fixed values for some of the parameters.
+                The get template methods generate messages if the parameters which would have
+                fixed values are not correct. The set template methods set all the fixed values
+                in addition to the input arguments.
+                
+                You cannot call methods which Get values for the incorrect Basis. For example,
+                if IsTimeBasis returns FALSE, then GetTime will fail. You should also not call
+                a template method like GetTCPAngular if TimeLinearAngularBasis returned
+                delOlpLinearBasis.
+                
+                You cannot call Get methods for profiles retrieved from a new OlpRobotMotion or
+                OlpRobotMotionTarget until values have been set.
     
     """
 
@@ -65,33 +63,32 @@ class OLPMotionProfile(OLPProfile):
     def get_joint_as_percent(self, o_speed_percent: float, o_accel_percent: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetJointAsPercent(double oSpeedPercent,double
-                | oAccelPercent)
-                |     Template Method: Get the joint speed and acceleration as a
-                |     percentage.
-                |     Joint speed/acceleration is equal to the linear TCP speed/acceleration. The
-                |     following rules are checked for other parameters of the motion
-                |     profile.
-                | 
-                |         Linear Speed and Acceleration are specified as a percentage. (Notice
-                |         message posted if specified in absolute units)
-                |         Linear Acceleration is equal to Linear Deceleration. (Warning message
-                |         posted if different)
-                |         Angular Speed, Angular Acceleration, Angular Deceleration are all 100%
-                |         or device maximum (Warning message posted if
-                |         different)
-                |         Basis is Speed/Acceleration (Error if different). You should check
-                |         IsTimeBasis before calling this method.
-                | 
-                |     Parameters:
-                | 
-                |         oSpeedPercent
-                |             Joint speed as a percentage (1.0 is 100%). 
-                |         oAccelPercent
-                |             Joint acceleration as a percentage (1.0 is 100%).
+                Sub GetJointAsPercent(double oSpeedPercent,double
+                oAccelPercent)
+                    Template Method: Get the joint speed and acceleration as a
+                    percentage.
+                    Joint speed/acceleration is equal to the linear TCP speed/acceleration. The
+                    following rules are checked for other parameters of the motion
+                    profile.
+                
+                        Linear Speed and Acceleration are specified as a percentage. (Notice
+                        message posted if specified in absolute units)
+                        Linear Acceleration is equal to Linear Deceleration. (Warning message
+                        posted if different)
+                        Angular Speed, Angular Acceleration, Angular Deceleration are all 100%
+                        or device maximum (Warning message posted if
+                        different)
+                        Basis is Speed/Acceleration (Error if different). You should check
+                        IsTimeBasis before calling this method.
+                
+                    Parameters:
+                
+                        oSpeedPercent
+                            Joint speed as a percentage (1.0 is 100%). 
+                        oAccelPercent
+                            Joint acceleration as a percentage (1.0 is 100%).
 
         :param float o_speed_percent:
         :param float o_accel_percent:
@@ -99,36 +96,36 @@ class OLPMotionProfile(OLPProfile):
         """
         return self.com_object.GetJointAsPercent(o_speed_percent, o_accel_percent)
 
-    def get_joint_as_percent_with_decel(self, o_speed_percent: float, o_accel_percent: float, o_decel_percent: float) -> None:
+    def get_joint_as_percent_with_decel(self, o_speed_percent: float, o_accel_percent: float,
+                                        o_decel_percent: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetJointAsPercentWithDecel(double oSpeedPercent,double oAccelPercent,double
-                | oDecelPercent)
-                |     Template Method: Get the joint speed, acceleration and deceleration as a
-                |     percentage.
-                |     Joint speed/acceleration is equal to the linear TCP speed/acceleration. The
-                |     following rules are checked for other parameters of the motion
-                |     profile.
-                | 
-                |         Linear Speed and Acceleration are specified as a percentage. (Notice
-                |         message posted if specified in absolute units)
-                |         Angular Speed, Angular Acceleration, Angular Deceleration are all 100%
-                |         or device maximum (Warning message posted if
-                |         different)
-                |         Basis is Speed/Acceleration (Error if different). You should check
-                |         IsTimeBasis before calling this method.
-                | 
-                |     Parameters:
-                | 
-                |         oSpeed
-                |             Joint speed as a percentage (1.0 is 100%). 
-                |         oAccel
-                |             Joint acceleration as a percentage (1.0 is 100%). 
-                |         oDecel
-                |             Joint deceleration as a percentage (1.0 is 100%).
+                Sub GetJointAsPercentWithDecel(double oSpeedPercent,double oAccelPercent,double
+                oDecelPercent)
+                    Template Method: Get the joint speed, acceleration and deceleration as a
+                    percentage.
+                    Joint speed/acceleration is equal to the linear TCP speed/acceleration. The
+                    following rules are checked for other parameters of the motion
+                    profile.
+                
+                        Linear Speed and Acceleration are specified as a percentage. (Notice
+                        message posted if specified in absolute units)
+                        Angular Speed, Angular Acceleration, Angular Deceleration are all 100%
+                        or device maximum (Warning message posted if
+                        different)
+                        Basis is Speed/Acceleration (Error if different). You should check
+                        IsTimeBasis before calling this method.
+                
+                    Parameters:
+                
+                        oSpeed
+                            Joint speed as a percentage (1.0 is 100%). 
+                        oAccel
+                            Joint acceleration as a percentage (1.0 is 100%). 
+                        oDecel
+                            Joint deceleration as a percentage (1.0 is 100%).
 
         :param float o_speed_percent:
         :param float o_accel_percent:
@@ -140,23 +137,22 @@ class OLPMotionProfile(OLPProfile):
     def get_tcp_accel_angular(self, i_units: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTCPAccelAngular(DELOlpMotionProfileUnits iUnits) As
-                | double
-                |     Get TCP angular acceleration.
-                |     This fails if IsTimeBasis returns TRUE.
-                | 
-                |     Parameters:
-                | 
-                |         iUnits
-                |             The units to get the value in. 1.0 is 100% if Percent is specified.
-                |             Value is in rad/s^2 if Absolute is specified. 
-                | 
-                |     Returns:
-                |         The acceleration in the specified units, converted if needed, but no
-                |         messages are reported.
+                Func GetTCPAccelAngular(DELOlpMotionProfileUnits iUnits) As
+                double
+                    Get TCP angular acceleration.
+                    This fails if IsTimeBasis returns TRUE.
+                
+                    Parameters:
+                
+                        iUnits
+                            The units to get the value in. 1.0 is 100% if Percent is specified.
+                            Value is in rad/s^2 if Absolute is specified. 
+                
+                    Returns:
+                        The acceleration in the specified units, converted if needed, but no
+                        messages are reported.
 
         :param int i_units:
         :return: float
@@ -166,23 +162,22 @@ class OLPMotionProfile(OLPProfile):
     def get_tcp_accel_linear(self, i_units: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTCPAccelLinear(DELOlpMotionProfileUnits iUnits) As
-                | double
-                |     Get TCP linear acceleration.
-                |     This fails if IsTimeBasis returns TRUE.
-                | 
-                |     Parameters:
-                | 
-                |         iUnits
-                |             The units to get the value in. 1.0 is 100% if Percent is specified.
-                |             Value is in m/s^2 if Absolute is specified. 
-                | 
-                |     Returns:
-                |         The acceleration in the specified units, converted if needed, but no
-                |         messages are reported.
+                Func GetTCPAccelLinear(DELOlpMotionProfileUnits iUnits) As
+                double
+                    Get TCP linear acceleration.
+                    This fails if IsTimeBasis returns TRUE.
+                
+                    Parameters:
+                
+                        iUnits
+                            The units to get the value in. 1.0 is 100% if Percent is specified.
+                            Value is in m/s^2 if Absolute is specified. 
+                
+                    Returns:
+                        The acceleration in the specified units, converted if needed, but no
+                        messages are reported.
 
         :param int i_units:
         :return: float
@@ -192,32 +187,31 @@ class OLPMotionProfile(OLPProfile):
     def get_tcp_angular(self, o_tcp_speed_abs: float, o_tcp_accel_percent: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTCPAngular(double oTCPSpeedAbs,double oTCPAccelPercent)
-                |     Template Method: Get the TCP angular speed and
-                |     acceleration.
-                |     The following rules are checked for other parameters of the motion
-                |     profile.
-                | 
-                |         Angular Speed is specified in absolute units. (Notice message posted if
-                |         specified as a percentage)
-                |         Angular Acceleration is specified as a percentage. (Notice message
-                |         posted if specified in absolute units)
-                |         Angular Acceleration is equal to Angular Deceleration. (Warning message
-                |         posted if different)
-                |         Linear Speed, Linear Acceleration, Linear Deceleration are all 100% or
-                |         device maximum (Warning message posted if different)
-                |         Basis is Speed/Acceleration (Error if different). You should check
-                |         IsTimeBasis before calling this method.
-                | 
-                |     Parameters:
-                | 
-                |         oTCPSpeedAbs
-                |             Angular TCP speed in absolute units (rad/s). 
-                |         oTCPAccelPercent
-                |             Angular TCP acceleration as a percentage (1.0 is 100%).
+                Sub GetTCPAngular(double oTCPSpeedAbs,double oTCPAccelPercent)
+                    Template Method: Get the TCP angular speed and
+                    acceleration.
+                    The following rules are checked for other parameters of the motion
+                    profile.
+                
+                        Angular Speed is specified in absolute units. (Notice message posted if
+                        specified as a percentage)
+                        Angular Acceleration is specified as a percentage. (Notice message
+                        posted if specified in absolute units)
+                        Angular Acceleration is equal to Angular Deceleration. (Warning message
+                        posted if different)
+                        Linear Speed, Linear Acceleration, Linear Deceleration are all 100% or
+                        device maximum (Warning message posted if different)
+                        Basis is Speed/Acceleration (Error if different). You should check
+                        IsTimeBasis before calling this method.
+                
+                    Parameters:
+                
+                        oTCPSpeedAbs
+                            Angular TCP speed in absolute units (rad/s). 
+                        oTCPAccelPercent
+                            Angular TCP acceleration as a percentage (1.0 is 100%).
 
         :param float o_tcp_speed_abs:
         :param float o_tcp_accel_percent:
@@ -225,37 +219,37 @@ class OLPMotionProfile(OLPProfile):
         """
         return self.com_object.GetTCPAngular(o_tcp_speed_abs, o_tcp_accel_percent)
 
-    def get_tcp_angular_with_decel(self, o_tcp_speed_abs: float, o_tcp_accel_percent: float, o_tcp_decel_percent: float) -> None:
+    def get_tcp_angular_with_decel(self, o_tcp_speed_abs: float, o_tcp_accel_percent: float,
+                                   o_tcp_decel_percent: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTCPAngularWithDecel(double oTCPSpeedAbs,double oTCPAccelPercent,double
-                | oTCPDecelPercent)
-                |     Template Method: Get the TCP angular speed, acceleration and
-                |     deceleration.
-                |     The following rules are checked for other parameters of the motion
-                |     profile.
-                | 
-                |         Angular Speed is specified in absolute units. (Notice message posted if
-                |         specified as a percentage)
-                |         Angular Acceleration is specified as a percentage. (Notice message
-                |         posted if specified in absolute units)
-                |         Linear Speed, Linear Acceleration, Linear Deceleration are all 100% or
-                |         device maximum (Warning message posted if different)
-                |         Basis is Speed/Acceleration (Error if different). You should check
-                |         IsTimeBasis before calling this method.
-                | 
-                |     Parameters:
-                | 
-                |         oTCPSpeedAbs
-                |             Angular TCP speed in absolute units (rad/s). 
-                |         oTCPAccelPercent
-                |             Angular TCP acceleration as a percentage (1.0 is 100%).
-                |             
-                |         oTCPDecelPercent
-                |             Angular TCP deceleration as a percentage (1.0 is 100%).
+                Sub GetTCPAngularWithDecel(double oTCPSpeedAbs,double oTCPAccelPercent,double
+                oTCPDecelPercent)
+                    Template Method: Get the TCP angular speed, acceleration and
+                    deceleration.
+                    The following rules are checked for other parameters of the motion
+                    profile.
+                
+                        Angular Speed is specified in absolute units. (Notice message posted if
+                        specified as a percentage)
+                        Angular Acceleration is specified as a percentage. (Notice message
+                        posted if specified in absolute units)
+                        Linear Speed, Linear Acceleration, Linear Deceleration are all 100% or
+                        device maximum (Warning message posted if different)
+                        Basis is Speed/Acceleration (Error if different). You should check
+                        IsTimeBasis before calling this method.
+                
+                    Parameters:
+                
+                        oTCPSpeedAbs
+                            Angular TCP speed in absolute units (rad/s). 
+                        oTCPAccelPercent
+                            Angular TCP acceleration as a percentage (1.0 is 100%).
+                            
+                        oTCPDecelPercent
+                            Angular TCP deceleration as a percentage (1.0 is 100%).
 
         :param float o_tcp_speed_abs:
         :param float o_tcp_accel_percent:
@@ -267,23 +261,22 @@ class OLPMotionProfile(OLPProfile):
     def get_tcp_decel_angular(self, i_units: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTCPDecelAngular(DELOlpMotionProfileUnits iUnits) As
-                | double
-                |     Get TCP angular deceleration.
-                |     This fails if IsTimeBasis returns TRUE.
-                | 
-                |     Parameters:
-                | 
-                |         iUnits
-                |             The units to get the value in. 1.0 is 100% if Percent is specified.
-                |             Value is in rad/s^2 if Absolute is specified. 
-                | 
-                |     Returns:
-                |         The deceleration in the specified units, converted if needed, but no
-                |         messages are reported.
+                Func GetTCPDecelAngular(DELOlpMotionProfileUnits iUnits) As
+                double
+                    Get TCP angular deceleration.
+                    This fails if IsTimeBasis returns TRUE.
+                
+                    Parameters:
+                
+                        iUnits
+                            The units to get the value in. 1.0 is 100% if Percent is specified.
+                            Value is in rad/s^2 if Absolute is specified. 
+                
+                    Returns:
+                        The deceleration in the specified units, converted if needed, but no
+                        messages are reported.
 
         :param int i_units:
         :return: float
@@ -293,23 +286,22 @@ class OLPMotionProfile(OLPProfile):
     def get_tcp_decel_linear(self, i_units: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTCPDecelLinear(DELOlpMotionProfileUnits iUnits) As
-                | double
-                |     Get TCP linear deceleration.
-                |     This fails if IsTimeBasis returns TRUE.
-                | 
-                |     Parameters:
-                | 
-                |         iUnits
-                |             The units to get the value in. 1.0 is 100% if Percent is specified.
-                |             Value is in m/s^2 if Absolute is specified. 
-                | 
-                |     Returns:
-                |         The deceleration in the specified units, converted if needed, but no
-                |         messages are reported.
+                Func GetTCPDecelLinear(DELOlpMotionProfileUnits iUnits) As
+                double
+                    Get TCP linear deceleration.
+                    This fails if IsTimeBasis returns TRUE.
+                
+                    Parameters:
+                
+                        iUnits
+                            The units to get the value in. 1.0 is 100% if Percent is specified.
+                            Value is in m/s^2 if Absolute is specified. 
+                
+                    Returns:
+                        The deceleration in the specified units, converted if needed, but no
+                        messages are reported.
 
         :param int i_units:
         :return: float
@@ -319,33 +311,32 @@ class OLPMotionProfile(OLPProfile):
     def get_tcp_linear(self, o_tcp_speed_abs: float, o_tcp_accel_percent: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTCPLinear(double oTCPSpeedAbs,double oTCPAccelPercent)
-                |     Template Method: Get the TCP linear speed and
-                |     acceleration.
-                |     The following rules are checked for other parameters of the motion
-                |     profile.
-                | 
-                |         Linear Speed is specified in absolute units. (Notice message posted if
-                |         specified as a percentage)
-                |         Linear Acceleration is specified as a percentage. (Notice message
-                |         posted if specified in absolute units)
-                |         Linear Acceleration is equal to Linear Deceleration. (Warning message
-                |         posted if different)
-                |         Angular Speed, Angular Acceleration, Angular Deceleration are all 100%
-                |         or device maximum (Warning message posted if
-                |         different)
-                |         Basis is Speed/Acceleration (Error if different). You should check
-                |         IsTimeBasis before calling this method.
-                | 
-                |     Parameters:
-                | 
-                |         oTCPSpeedAbs
-                |             Linear TCP speed in absolute units (m/s). 
-                |         oTCPAccelPercent
-                |             Linear TCP acceleration as a percentage (1.0 is 100%).
+                Sub GetTCPLinear(double oTCPSpeedAbs,double oTCPAccelPercent)
+                    Template Method: Get the TCP linear speed and
+                    acceleration.
+                    The following rules are checked for other parameters of the motion
+                    profile.
+                
+                        Linear Speed is specified in absolute units. (Notice message posted if
+                        specified as a percentage)
+                        Linear Acceleration is specified as a percentage. (Notice message
+                        posted if specified in absolute units)
+                        Linear Acceleration is equal to Linear Deceleration. (Warning message
+                        posted if different)
+                        Angular Speed, Angular Acceleration, Angular Deceleration are all 100%
+                        or device maximum (Warning message posted if
+                        different)
+                        Basis is Speed/Acceleration (Error if different). You should check
+                        IsTimeBasis before calling this method.
+                
+                    Parameters:
+                
+                        oTCPSpeedAbs
+                            Linear TCP speed in absolute units (m/s). 
+                        oTCPAccelPercent
+                            Linear TCP acceleration as a percentage (1.0 is 100%).
 
         :param float o_tcp_speed_abs:
         :param float o_tcp_accel_percent:
@@ -356,26 +347,25 @@ class OLPMotionProfile(OLPProfile):
     def get_tcp_linear_no_accel(self, o_tcp_speed_abs: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTCPLinearNoAccel(double oTCPSpeedAbs)
-                |     Template Method: Get the TCP linear speed.
-                |     The following rules are checked for other parameters of the motion
-                |     profile.
-                | 
-                |         Linear Speed is specified in absolute units. (Notice message posted if
-                |         specified as a percentage)
-                |         Linear Acceleration, Linear Deceleration, Angular Speed, Angular
-                |         Acceleration, and Angular Deceleration are all 100% or device maximum (Warning
-                |         message posted if different)
-                |         Basis is Speed/Acceleration (Error if different). You should check
-                |         IsTimeBasis before calling this method.
-                | 
-                |     Parameters:
-                | 
-                |         oTCPSpeedAbs
-                |             Linear TCP speed in absolute units (m/s).
+                Sub GetTCPLinearNoAccel(double oTCPSpeedAbs)
+                    Template Method: Get the TCP linear speed.
+                    The following rules are checked for other parameters of the motion
+                    profile.
+                
+                        Linear Speed is specified in absolute units. (Notice message posted if
+                        specified as a percentage)
+                        Linear Acceleration, Linear Deceleration, Angular Speed, Angular
+                        Acceleration, and Angular Deceleration are all 100% or device maximum (Warning
+                        message posted if different)
+                        Basis is Speed/Acceleration (Error if different). You should check
+                        IsTimeBasis before calling this method.
+                
+                    Parameters:
+                
+                        oTCPSpeedAbs
+                            Linear TCP speed in absolute units (m/s).
 
         :param float o_tcp_speed_abs:
         :return: None
@@ -385,30 +375,29 @@ class OLPMotionProfile(OLPProfile):
     def get_tcp_linear_no_accel_with_units(self, o_tcp_speed: float, o_units: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTCPLinearNoAccelWithUnits(double oTCPSpeed,DELOlpMotionProfileUnits
-                | oUnits)
-                |     Template Method: Get the TCP linear speed and the units it is specified
-                |     in.
-                |     The following rules are checked for other parameters of the motion
-                |     profile.
-                | 
-                |         Linear Acceleration, Linear Deceleration, Angular Speed, Angular
-                |         Acceleration, and Angular Deceleration are all 100% or device maximum (Warning
-                |         message posted if different)
-                |         Basis is Speed/Acceleration (Error if different). You should check
-                |         IsTimeBasis before calling this method.
-                | 
-                |     Parameters:
-                | 
-                |         oTCPSpeed
-                |             Linear TCP speed either as percentage or in absolute units.
-                |             
-                |         oUnits
-                |             Indicates if the speed is in percent (1.0 is 100%) or in absolute
-                |             units (m/s).
+                Sub GetTCPLinearNoAccelWithUnits(double oTCPSpeed,DELOlpMotionProfileUnits
+                oUnits)
+                    Template Method: Get the TCP linear speed and the units it is specified
+                    in.
+                    The following rules are checked for other parameters of the motion
+                    profile.
+                
+                        Linear Acceleration, Linear Deceleration, Angular Speed, Angular
+                        Acceleration, and Angular Deceleration are all 100% or device maximum (Warning
+                        message posted if different)
+                        Basis is Speed/Acceleration (Error if different). You should check
+                        IsTimeBasis before calling this method.
+                
+                    Parameters:
+                
+                        oTCPSpeed
+                            Linear TCP speed either as percentage or in absolute units.
+                            
+                        oUnits
+                            Indicates if the speed is in percent (1.0 is 100%) or in absolute
+                            units (m/s).
 
         :param float o_tcp_speed:
         :param int o_units:
@@ -416,38 +405,38 @@ class OLPMotionProfile(OLPProfile):
         """
         return self.com_object.GetTCPLinearNoAccelWithUnits(o_tcp_speed, o_units)
 
-    def get_tcp_linear_with_decel(self, o_tcp_speed_abs: float, o_tcp_accel_percent: float, o_tcp_decel_percent: float) -> None:
+    def get_tcp_linear_with_decel(self, o_tcp_speed_abs: float, o_tcp_accel_percent: float,
+                                  o_tcp_decel_percent: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTCPLinearWithDecel(double oTCPSpeedAbs,double oTCPAccelPercent,double
-                | oTCPDecelPercent)
-                |     Template Method: Get the TCP linear speed, acceleration and
-                |     deceleration.
-                |     The following rules are checked for other parameters of the motion
-                |     profile.
-                | 
-                |         Linear Speed is specified in absolute units. (Notice message posted if
-                |         specified as a percentage)
-                |         Linear Acceleration is specified as a percentage. (Notice message
-                |         posted if specified in absolute units)
-                |         Angular Speed, Angular Acceleration, Angular Deceleration are all 100%
-                |         or device maximum (Warning message posted if
-                |         different)
-                |         Basis is Speed/Acceleration (Error if different). You should check
-                |         IsTimeBasis before calling this method.
-                | 
-                |     Parameters:
-                | 
-                |         oTCPSpeedAbs
-                |             Linear TCP speed in absolute units (m/s). 
-                |         oTCPAccelPercent
-                |             Linear TCP acceleration as a percentage (1.0 is 100%).
-                |             
-                |         oTCPDecelPercent
-                |             Linear TCP deceleration as a percentage (1.0 is 100%).
+                Sub GetTCPLinearWithDecel(double oTCPSpeedAbs,double oTCPAccelPercent,double
+                oTCPDecelPercent)
+                    Template Method: Get the TCP linear speed, acceleration and
+                    deceleration.
+                    The following rules are checked for other parameters of the motion
+                    profile.
+                
+                        Linear Speed is specified in absolute units. (Notice message posted if
+                        specified as a percentage)
+                        Linear Acceleration is specified as a percentage. (Notice message
+                        posted if specified in absolute units)
+                        Angular Speed, Angular Acceleration, Angular Deceleration are all 100%
+                        or device maximum (Warning message posted if
+                        different)
+                        Basis is Speed/Acceleration (Error if different). You should check
+                        IsTimeBasis before calling this method.
+                
+                    Parameters:
+                
+                        oTCPSpeedAbs
+                            Linear TCP speed in absolute units (m/s). 
+                        oTCPAccelPercent
+                            Linear TCP acceleration as a percentage (1.0 is 100%).
+                            
+                        oTCPDecelPercent
+                            Linear TCP deceleration as a percentage (1.0 is 100%).
 
         :param float o_tcp_speed_abs:
         :param float o_tcp_accel_percent:
@@ -459,36 +448,35 @@ class OLPMotionProfile(OLPProfile):
     def get_tcp_linear_with_units(self, o_tcp_speed: float, o_units: int, o_tcp_accel_percent: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTCPLinearWithUnits(double oTCPSpeed,DELOlpMotionProfileUnits
-                | oUnits,double oTCPAccelPercent)
-                |     Template Method: Get the TCP linear speed and the units it is specified in
-                |     and acceleration as a percentage.
-                |     The following rules are checked for other parameters of the motion
-                |     profile.
-                | 
-                |         Linear Acceleration is specified as a percentage. (Notice message
-                |         posted if specified in absolute units)
-                |         Linear Acceleration is equal to Linear Deceleration. (Warning message
-                |         posted if different)
-                |         Angular Speed, Angular Acceleration, and Angular Deceleration are all
-                |         100% or device maximum (Warning message posted if
-                |         different)
-                |         Basis is Speed/Acceleration (Error if different). You should check
-                |         IsTimeBasis before calling this method.
-                | 
-                |     Parameters:
-                | 
-                |         oTCPSpeed
-                |             Linear TCP speed either as percentage or in absolute units.
-                |             
-                |         oUnits
-                |             Indicates if the speed is in percent (1.0 is 100%) or in absolute
-                |             units (m/s). 
-                |         oTCPAccelPercent
-                |             Linear TCP acceleration as a percentage (1.0 is 100%).
+                Sub GetTCPLinearWithUnits(double oTCPSpeed,DELOlpMotionProfileUnits
+                oUnits,double oTCPAccelPercent)
+                    Template Method: Get the TCP linear speed and the units it is specified in
+                    and acceleration as a percentage.
+                    The following rules are checked for other parameters of the motion
+                    profile.
+                
+                        Linear Acceleration is specified as a percentage. (Notice message
+                        posted if specified in absolute units)
+                        Linear Acceleration is equal to Linear Deceleration. (Warning message
+                        posted if different)
+                        Angular Speed, Angular Acceleration, and Angular Deceleration are all
+                        100% or device maximum (Warning message posted if
+                        different)
+                        Basis is Speed/Acceleration (Error if different). You should check
+                        IsTimeBasis before calling this method.
+                
+                    Parameters:
+                
+                        oTCPSpeed
+                            Linear TCP speed either as percentage or in absolute units.
+                            
+                        oUnits
+                            Indicates if the speed is in percent (1.0 is 100%) or in absolute
+                            units (m/s). 
+                        oTCPAccelPercent
+                            Linear TCP acceleration as a percentage (1.0 is 100%).
 
         :param float o_tcp_speed:
         :param int o_units:
@@ -500,19 +488,18 @@ class OLPMotionProfile(OLPProfile):
     def get_tcp_speed_angular(self, i_units: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTCPSpeedAngular(DELOlpMotionProfileUnits iUnits) As
-                | double
-                |     Get TCP angular speed.
-                |     This fails if IsTimeBasis returns TRUE.
-                | 
-                |     Parameters:
-                | 
-                |         iUnits
-                |             The units to get the value in. 1.0 is 100% if Percent is specified.
-                |             Value is in rad/s if Absolute is specified. 
+                Func GetTCPSpeedAngular(DELOlpMotionProfileUnits iUnits) As
+                double
+                    Get TCP angular speed.
+                    This fails if IsTimeBasis returns TRUE.
+                
+                    Parameters:
+                
+                        iUnits
+                            The units to get the value in. 1.0 is 100% if Percent is specified.
+                            Value is in rad/s if Absolute is specified. 
                 | 
                 |     Returns:
                 |         The speed in the specified units, converted if needed, but no messages
@@ -526,7 +513,6 @@ class OLPMotionProfile(OLPProfile):
     def get_tcp_speed_linear(self, i_units: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTCPSpeedLinear(DELOlpMotionProfileUnits iUnits) As
@@ -549,10 +535,11 @@ class OLPMotionProfile(OLPProfile):
         """
         return self.com_object.GetTCPSpeedLinear(i_units)
 
-    def get_tcp_speed_with_decel_with_accel_units(self, o_tcp_lin_speed_abs: float, o_tcp_ang_speed_abs: float, o_tcp_lin_accel: float, o_tcp_lin_decel: float, o_accel_decel_units: int) -> None:
+    def get_tcp_speed_with_decel_with_accel_units(self, o_tcp_lin_speed_abs: float, o_tcp_ang_speed_abs: float,
+                                                  o_tcp_lin_accel: float, o_tcp_lin_decel: float,
+                                                  o_accel_decel_units: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTCPSpeedWithDecelWithAccelUnits(double oTCPLinSpeedAbs,double
@@ -598,12 +585,15 @@ class OLPMotionProfile(OLPProfile):
         :param int o_accel_decel_units:
         :return: None
         """
-        return self.com_object.GetTCPSpeedWithDecelWithAccelUnits(o_tcp_lin_speed_abs, o_tcp_ang_speed_abs, o_tcp_lin_accel, o_tcp_lin_decel, o_accel_decel_units)
+        return self.com_object.GetTCPSpeedWithDecelWithAccelUnits(o_tcp_lin_speed_abs, o_tcp_ang_speed_abs,
+                                                                  o_tcp_lin_accel, o_tcp_lin_decel, o_accel_decel_units)
 
-    def get_tcp_speed_with_decel_with_speed_units(self, o_tcp_lin_speed: float, o_lin_speed_units: int, o_tcp_ang_speed: float, o_ang_speed_units: int, o_tcp_lin_accel_percent: float, o_tcp_lin_decel_percent: float) -> None:
+    def get_tcp_speed_with_decel_with_speed_units(self, o_tcp_lin_speed: float, o_lin_speed_units: int,
+                                                  o_tcp_ang_speed: float, o_ang_speed_units: int,
+                                                  o_tcp_lin_accel_percent: float,
+                                                  o_tcp_lin_decel_percent: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTCPSpeedWithDecelWithSpeedUnits(double
@@ -652,12 +642,13 @@ class OLPMotionProfile(OLPProfile):
         :param float o_tcp_lin_decel_percent:
         :return: None
         """
-        return self.com_object.GetTCPSpeedWithDecelWithSpeedUnits(o_tcp_lin_speed, o_lin_speed_units, o_tcp_ang_speed, o_ang_speed_units, o_tcp_lin_accel_percent, o_tcp_lin_decel_percent)
+        return self.com_object.GetTCPSpeedWithDecelWithSpeedUnits(o_tcp_lin_speed, o_lin_speed_units, o_tcp_ang_speed,
+                                                                  o_ang_speed_units, o_tcp_lin_accel_percent,
+                                                                  o_tcp_lin_decel_percent)
 
     def get_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTime() As double
@@ -674,7 +665,6 @@ class OLPMotionProfile(OLPProfile):
     def set_joint_as_percent(self, i_speed_percent: float, i_accel_percent: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetJointAsPercent(double iSpeedPercent,double iAccelPercent,boolean
@@ -707,10 +697,10 @@ class OLPMotionProfile(OLPProfile):
         """
         return self.com_object.SetJointAsPercent(i_speed_percent, i_accel_percent, i_match)
 
-    def set_joint_as_percent_with_decel(self, i_speed_percent: float, i_accel_percent: float, i_decel_percent: float, i_match: bool) -> None:
+    def set_joint_as_percent_with_decel(self, i_speed_percent: float, i_accel_percent: float, i_decel_percent: float,
+                                        i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetJointAsPercentWithDecel(double iSpeedPercent,double iAccelPercent,double
@@ -747,7 +737,6 @@ class OLPMotionProfile(OLPProfile):
     def set_tcp_accel_angular(self, i_units: int, i_accel: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPAccelAngular(DELOlpMotionProfileUnits iUnits,double iAccel,boolean
@@ -777,7 +766,6 @@ class OLPMotionProfile(OLPProfile):
     def set_tcp_accel_linear(self, i_units: int, i_accel: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPAccelLinear(DELOlpMotionProfileUnits iUnits,double iAccel,boolean
@@ -806,7 +794,6 @@ class OLPMotionProfile(OLPProfile):
     def set_tcp_angular(self, i_tcp_speed_abs: float, i_tcp_accel_percent: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPAngular(double iTCPSpeedAbs,double iTCPAccelPercent,boolean
@@ -840,10 +827,10 @@ class OLPMotionProfile(OLPProfile):
         """
         return self.com_object.SetTCPAngular(i_tcp_speed_abs, i_tcp_accel_percent, i_match)
 
-    def set_tcp_angular_with_decel(self, i_tcp_speed_abs: float, i_tcp_accel_percent: float, i_tcp_decel_percent: float, i_match: bool) -> None:
+    def set_tcp_angular_with_decel(self, i_tcp_speed_abs: float, i_tcp_accel_percent: float, i_tcp_decel_percent: float,
+                                   i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPAngularWithDecel(double iTCPSpeedAbs,double iTCPAccelPercent,double
@@ -877,12 +864,12 @@ class OLPMotionProfile(OLPProfile):
         :param bool i_match:
         :return: None
         """
-        return self.com_object.SetTCPAngularWithDecel(i_tcp_speed_abs, i_tcp_accel_percent, i_tcp_decel_percent, i_match)
+        return self.com_object.SetTCPAngularWithDecel(i_tcp_speed_abs, i_tcp_accel_percent, i_tcp_decel_percent,
+                                                      i_match)
 
     def set_tcp_decel_angular(self, i_units: int, i_decel: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPDecelAngular(DELOlpMotionProfileUnits iUnits,double iDecel,boolean
@@ -911,7 +898,6 @@ class OLPMotionProfile(OLPProfile):
     def set_tcp_decel_linear(self, i_units: int, i_decel: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPDecelLinear(DELOlpMotionProfileUnits iUnits,double iDecel,boolean
@@ -940,7 +926,6 @@ class OLPMotionProfile(OLPProfile):
     def set_tcp_linear(self, i_tcp_speed_abs: float, i_tcp_accel_percent: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPLinear(double iTCPSpeedAbs,double iTCPAccelPercent,boolean
@@ -977,7 +962,6 @@ class OLPMotionProfile(OLPProfile):
     def set_tcp_linear_no_accel(self, i_tcp_speed_abs: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPLinearNoAccel(double iTCPSpeedAbs,boolean iMatch)
@@ -1007,7 +991,6 @@ class OLPMotionProfile(OLPProfile):
     def set_tcp_linear_no_accel_with_units(self, i_tcp_speed: float, i_units: int, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPLinearNoAccelWithUnits(double iTCPSpeed,DELOlpMotionProfileUnits
@@ -1041,10 +1024,10 @@ class OLPMotionProfile(OLPProfile):
         """
         return self.com_object.SetTCPLinearNoAccelWithUnits(i_tcp_speed, i_units, i_match)
 
-    def set_tcp_linear_with_decel(self, i_tcp_speed_abs: float, i_tcp_accel_percent: float, i_tcp_decel_percent: float, i_match: bool) -> None:
+    def set_tcp_linear_with_decel(self, i_tcp_speed_abs: float, i_tcp_accel_percent: float, i_tcp_decel_percent: float,
+                                  i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPLinearWithDecel(double iTCPSpeedAbs,double iTCPAccelPercent,double
@@ -1080,10 +1063,10 @@ class OLPMotionProfile(OLPProfile):
         """
         return self.com_object.SetTCPLinearWithDecel(i_tcp_speed_abs, i_tcp_accel_percent, i_tcp_decel_percent, i_match)
 
-    def set_tcp_linear_with_units(self, i_tcp_speed: float, i_units: int, i_tcp_accel_percent: float, i_match: bool) -> None:
+    def set_tcp_linear_with_units(self, i_tcp_speed: float, i_units: int, i_tcp_accel_percent: float,
+                                  i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPLinearWithUnits(double iTCPSpeed,DELOlpMotionProfileUnits
@@ -1125,7 +1108,6 @@ class OLPMotionProfile(OLPProfile):
     def set_tcp_speed_angular(self, i_units: int, i_speed: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPSpeedAngular(DELOlpMotionProfileUnits iUnits,double iSpeed,boolean
@@ -1154,7 +1136,6 @@ class OLPMotionProfile(OLPProfile):
     def set_tcp_speed_linear(self, i_units: int, i_speed: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPSpeedLinear(DELOlpMotionProfileUnits iUnits,double iSpeed,boolean
@@ -1180,10 +1161,11 @@ class OLPMotionProfile(OLPProfile):
         """
         return self.com_object.SetTCPSpeedLinear(i_units, i_speed, i_match)
 
-    def set_tcp_speed_with_decel_with_accel_units(self, i_tcp_lin_speed_abs: float, i_tcp_ang_speed_abs: float, i_tcp_lin_accel: float, i_tcp_lin_decel: float, i_accel_decel_units: int, i_match: bool) -> None:
+    def set_tcp_speed_with_decel_with_accel_units(self, i_tcp_lin_speed_abs: float, i_tcp_ang_speed_abs: float,
+                                                  i_tcp_lin_accel: float, i_tcp_lin_decel: float,
+                                                  i_accel_decel_units: int, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPSpeedWithDecelWithAccelUnits(double iTCPLinSpeedAbs,double
@@ -1224,12 +1206,16 @@ class OLPMotionProfile(OLPProfile):
         :param bool i_match:
         :return: None
         """
-        return self.com_object.SetTCPSpeedWithDecelWithAccelUnits(i_tcp_lin_speed_abs, i_tcp_ang_speed_abs, i_tcp_lin_accel, i_tcp_lin_decel, i_accel_decel_units, i_match)
+        return self.com_object.SetTCPSpeedWithDecelWithAccelUnits(i_tcp_lin_speed_abs, i_tcp_ang_speed_abs,
+                                                                  i_tcp_lin_accel, i_tcp_lin_decel, i_accel_decel_units,
+                                                                  i_match)
 
-    def set_tcp_speed_with_decel_with_speed_units(self, i_tcp_lin_speed: float, i_lin_speed_units: int, i_tcp_ang_speed: float, i_ang_speed_units: int, i_tcp_lin_accel_percent: float, i_tcp_lin_decel_percent: float, i_match: bool) -> None:
+    def set_tcp_speed_with_decel_with_speed_units(self, i_tcp_lin_speed: float, i_lin_speed_units: int,
+                                                  i_tcp_ang_speed: float, i_ang_speed_units: int,
+                                                  i_tcp_lin_accel_percent: float, i_tcp_lin_decel_percent: float,
+                                                  i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPSpeedWithDecelWithSpeedUnits(double
@@ -1278,12 +1264,13 @@ class OLPMotionProfile(OLPProfile):
         :param bool i_match:
         :return: None
         """
-        return self.com_object.SetTCPSpeedWithDecelWithSpeedUnits(i_tcp_lin_speed, i_lin_speed_units, i_tcp_ang_speed, i_ang_speed_units, i_tcp_lin_accel_percent, i_tcp_lin_decel_percent, i_match)
+        return self.com_object.SetTCPSpeedWithDecelWithSpeedUnits(i_tcp_lin_speed, i_lin_speed_units, i_tcp_ang_speed,
+                                                                  i_ang_speed_units, i_tcp_lin_accel_percent,
+                                                                  i_tcp_lin_decel_percent, i_match)
 
     def set_time(self, i_time: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTime(double iTime,boolean iMatch)
@@ -1305,4 +1292,4 @@ class OLPMotionProfile(OLPProfile):
         return self.com_object.SetTime(i_time, i_match)
 
     def __repr__(self):
-        return f'OLPMotionProfile(name="{ self.name }")'
+        return f'OLPMotionProfile(name="{self.name}")'

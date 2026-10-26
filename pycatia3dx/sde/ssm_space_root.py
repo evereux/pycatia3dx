@@ -15,21 +15,19 @@ from pycatia3dx.sde.ssm_space_systems import SsmSpaceSystems
 
 
 class SsmSpaceRoot(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SsmSpaceRoot
-                | 
-                | Role: This interface is specific to Space root
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SsmSpaceRoot
+                
+                Role: This interface is specific to Space root
     
     """
 
@@ -41,17 +39,16 @@ class SsmSpaceRoot(AnyObject):
     def space_concept_roots(self) -> SsmSpaceConceptRoots:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpaceConceptRoots() As SsmSpaceConceptRoots (Read
-                | Only)
-                |     Gets space concept Roots present in it
-                | 
-                |     Parameters:
-                | 
-                |         olSpaceConceptRoots
-                |             List of Space concept Roots.
+                Property SpaceConceptRoots() As SsmSpaceConceptRoots (Read
+                Only)
+                    Gets space concept Roots present in it
+                
+                    Parameters:
+                
+                        olSpaceConceptRoots
+                            List of Space concept Roots.
 
         :return: SsmSpaceConceptRoots
         """
@@ -62,19 +59,18 @@ class SsmSpaceRoot(AnyObject):
     def space_folder(self) -> SsmSpaceFolder:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpaceFolder() As SsmSpaceFolder (Read Only)
-                |     Get Child SpaceFolder
-                | 
-                |     Parameters:
-                | 
-                |         oSpaceFolder
-                |             output SpaceFolder 
-                | 
-                |     Returns:
-                |         Error code of function.
+                Property SpaceFolder() As SsmSpaceFolder (Read Only)
+                    Get Child SpaceFolder
+                
+                    Parameters:
+                
+                        oSpaceFolder
+                            output SpaceFolder 
+                
+                    Returns:
+                        Error code of function.
 
         :return: SsmSpaceFolder
         """
@@ -85,16 +81,15 @@ class SsmSpaceRoot(AnyObject):
     def space_systems(self) -> SsmSpaceSystems:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpaceSystems() As SsmSpaceSystems (Read Only)
-                |     Gets space systems present in it
-                | 
-                |     Parameters:
-                | 
-                |         olSpaceSystems
-                |             List of Space systems. 
+                Property SpaceSystems() As SsmSpaceSystems (Read Only)
+                    Gets space systems present in it
+                
+                    Parameters:
+                
+                        olSpaceSystems
+                            List of Space systems. 
 
         :return: SsmSpaceSystems
         """
@@ -102,4 +97,4 @@ class SsmSpaceRoot(AnyObject):
         return SsmSpaceSystems(self.com_object.SpaceSystems)
 
     def __repr__(self):
-        return f'SsmSpaceRoot(name="{ self.name }")'
+        return f'SsmSpaceRoot(name="{self.name}")'

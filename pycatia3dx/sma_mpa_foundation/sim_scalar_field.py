@@ -13,21 +13,19 @@ from pycatia3dx.sma_mpa_foundation.sim_space_time_field import SimSpaceTimeField
 
 
 class SimScalarField(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimScalarField
-                | 
-                | Represents the Scalar Field object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimScalarField
+                
+                Represents the Scalar Field object.
     
     """
 
@@ -39,11 +37,10 @@ class SimScalarField(AnyObject):
     def mapped_field_data(self) -> SimMappedFieldData:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MappedFieldData() As SimMappedFieldData (Read Only)
-                |     Returns the mapped field data.
+                Property MappedFieldData() As SimMappedFieldData (Read Only)
+                    Returns the mapped field data.
 
         :return: SimMappedFieldData
         """
@@ -54,11 +51,10 @@ class SimScalarField(AnyObject):
     def space_time_field_data(self) -> SimSpaceTimeField:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpaceTimeFieldData() As SimSpaceTimeField (Read Only)
-                |     Returns the space time field data.
+                Property SpaceTimeFieldData() As SimSpaceTimeField (Read Only)
+                    Returns the space time field data.
 
         :return: SimSpaceTimeField
         """
@@ -69,11 +65,10 @@ class SimScalarField(AnyObject):
     def uniform_magnitude(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UniformMagnitude() As double
-                |     Returns or sets the magnitude. Quantity: PRESSURE, units: N_m2
+                Property UniformMagnitude() As double
+                    Returns or sets the magnitude. Quantity: PRESSURE, units: N_m2
 
         :return: float
         """
@@ -92,11 +87,10 @@ class SimScalarField(AnyObject):
     def variation_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property VariationType() As SimScalarFieldVariationType
-                |     Returns or sets the variation type. 
+                Property VariationType() As SimScalarFieldVariationType
+                    Returns or sets the variation type. 
 
         :return: int
         """
@@ -112,4 +106,4 @@ class SimScalarField(AnyObject):
         self.com_object.VariationType = value
 
     def __repr__(self):
-        return f'SimScalarField(name="{ self.name }")'
+        return f'SimScalarField(name="{self.name}")'

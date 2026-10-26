@@ -16,19 +16,18 @@ from pycatia3dx.structure.str_material_mngt import StrMaterialMngt
 class SddProductPlate(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SddProductPlate
-                | 
-                | Object for representing Structure Detail Design Product Plate.
-                | Role: To manage SDD Plate at product level.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SddProductPlate
+                
+                Object for representing Structure Detail Design Product Plate.
+                Role: To manage SDD Plate at product level.
     
     """
 
@@ -40,17 +39,16 @@ class SddProductPlate(AnyObject):
     def sdd_plate(self) -> SddPlate:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SddPlate() As SddPlate (Read Only)
-                |     Returns the Plate geometric function into this SDD product
-                |     Plate.
-                | 
-                |     Parameters:
-                | 
-                |         oMember
-                |             Plate function.
+                Property SddPlate() As SddPlate (Read Only)
+                    Returns the Plate geometric function into this SDD product
+                    Plate.
+                
+                    Parameters:
+                
+                        oMember
+                            Plate function.
 
         :return: SddPlate
         """
@@ -61,25 +59,24 @@ class SddProductPlate(AnyObject):
     def str_material_mngt(self) -> StrMaterialMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrMaterialMngt() As StrMaterialMngt (Read Only)
-                |     Returns the StrMaterialMngt object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjStrMaterialMngt the StrMaterialMngt
-                |              object
-                |              of the SddProductPlate
-                |              
-                | 
-                |              Dim ObjSddProductPlate As SddProductPlate
-                |              Set ObjSddProductPlate = ObjSddFactory.AddProductPlate(IsAdvPlate)
-                |              Dim ObjStrMaterialMngt As StrMaterialMngt 
-                |              Set ObjStrMaterialMngt = ObjSddProductPlate.StrMaterialMngt
+                Property StrMaterialMngt() As StrMaterialMngt (Read Only)
+                    Returns the StrMaterialMngt object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjStrMaterialMngt the StrMaterialMngt
+                             object
+                             of the SddProductPlate
+                             
+                
+                             Dim ObjSddProductPlate As SddProductPlate
+                             Set ObjSddProductPlate = ObjSddFactory.AddProductPlate(IsAdvPlate)
+                             Dim ObjStrMaterialMngt As StrMaterialMngt 
+                             Set ObjStrMaterialMngt = ObjSddProductPlate.StrMaterialMngt
 
         :return: StrMaterialMngt
         """
@@ -89,11 +86,10 @@ class SddProductPlate(AnyObject):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Update()
-                |     Updates the plate 
+                Sub Update()
+                    Updates the plate 
 
         :return: None
         """

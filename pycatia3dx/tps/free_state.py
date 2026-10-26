@@ -12,21 +12,19 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class FreeState(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     FreeState
-                | 
-                | Interface for accessing Free State modifier on a TPS.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    FreeState
+                
+                Interface for accessing Free State modifier on a TPS.
     
     """
 
@@ -38,11 +36,10 @@ class FreeState(AnyObject):
     def modifier(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Modifier() As CATBSTR
-                |     Retrieves Free State modifier. 
+                Property Modifier() As CATBSTR
+                    Retrieves Free State modifier. 
 
         :return: str
         """
@@ -58,4 +55,4 @@ class FreeState(AnyObject):
         self.com_object.Modifier = value
 
     def __repr__(self):
-        return f'FreeState(name="{ self.name }")'
+        return f'FreeState(name="{self.name}")'

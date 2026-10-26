@@ -14,22 +14,21 @@ from pycatia3dx.sketcher.point_2d import Point2D
 class Spline2D(Curve2D):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATSketcherIDLItf.GeometricElement
-                |                         CATSketcherIDLItf.Geometry2D
-                |                             CATSketcherIDLItf.Curve2D
-                |                                 Spline2D
-                | 
-                | Class defining a spline in 2D Space.
-                | A 2D spline is defined by its constituting control points.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATSketcherIDLItf.GeometricElement
+                                        CATSketcherIDLItf.Geometry2D
+                                            CATSketcherIDLItf.Curve2D
+                                                Spline2D
+                
+                Class defining a spline in 2D Space.
+                A 2D spline is defined by its constituting control points.
     
     """
 
@@ -40,26 +39,25 @@ class Spline2D(Curve2D):
     def get_control_points(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetControlPoints(CATSafeArrayVariant oCtrlPoints)
-                |     Returns the control points making up the spline.
+                Sub GetControlPoints(CATSafeArrayVariant oCtrlPoints)
+                    Returns the control points making up the spline.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oCtrlPoints
-                |             The control points of the spline
+                        oCtrlPoints
+                            The control points of the spline
                 |
-                |     Example:
+                    Example:
                 |
-                |          The following example fetches the list of control points defining
-                |          the
+                         The following example fetches the list of control points defining
+                         the
                 |
-                |          splinemySpline:
+                         splinemySpline:
                 |
                 |
-                |          mySpline.GetControlPoints ControlPoints
+                         mySpline.GetControlPoints ControlPoints
 
         :return: tuple
         """
@@ -84,14 +82,13 @@ class Spline2D(Curve2D):
     def get_number_of_control_points(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func GetNumberOfControlPoints() As double
-                |     Returns the number of Control Points of the Spline.
-                | 
-                |     Returns:
-                |         oNumber The number of control points
+                Func GetNumberOfControlPoints() As double
+                    Returns the number of Control Points of the Spline.
+                
+                    Returns:
+                        oNumber The number of control points
 
         :return: float
         """
@@ -100,36 +97,35 @@ class Spline2D(Curve2D):
     def insert_control_point_after(self, i_ctrl_point: Point2D, i_position: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub InsertControlPointAfter(Point2D iCtrlPoint,long iPosition)
-                |     Inserts control points in the spline. If a 2D point is given (and not a
-                |     control
-                |     point), a new control point is created and aggregated in the
-                |     spline.
-                | 
-                |     Parameters:
-                | 
-                |         iCtrlPoint
-                |             The new point to be inserted. (@see CATIAPoint2D and
-                |             CATIAControlPoint2D
-                |             for more information). 
-                |         iPosition
-                |             The position at which to insert the point.
-                |             To insert a new control point as the first element, set iPosition
-                |             to 0. 
-                | 
-                |     Example:
-                | 
-                |          The following example inserts a control point myCtrlPoint as the
-                |          second
-                | 
-                |          element of the splinemySpline:
-                |          
-                | 
-                |          call mySpline.InsertControlPointAfter (myCtrlPoint,
-                |          1)
+                Sub InsertControlPointAfter(Point2D iCtrlPoint,long iPosition)
+                    Inserts control points in the spline. If a 2D point is given (and not a
+                    control
+                    point), a new control point is created and aggregated in the
+                    spline.
+                
+                    Parameters:
+                
+                        iCtrlPoint
+                            The new point to be inserted. (@see CATIAPoint2D and
+                            CATIAControlPoint2D
+                            for more information). 
+                        iPosition
+                            The position at which to insert the point.
+                            To insert a new control point as the first element, set iPosition
+                            to 0. 
+                
+                    Example:
+                
+                         The following example inserts a control point myCtrlPoint as the
+                         second
+                
+                         element of the splinemySpline:
+                         
+                
+                         call mySpline.InsertControlPointAfter (myCtrlPoint,
+                         1)
 
         :param Point2D i_ctrl_point:
         :param int i_position:

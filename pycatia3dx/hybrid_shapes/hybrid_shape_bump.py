@@ -15,22 +15,20 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeBump(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeBump
-                | 
-                | The Bump feature : an Bump is made up of a body to process and some Bump parameters.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeBump
+                
+                The Bump feature : an Bump is made up of a body to process and some Bump parameters.
     
     """
 
@@ -42,11 +40,10 @@ class HybridShapeBump(HybridShape):
     def body_to_bump(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property BodyToBump() As Reference
-                |     Returns or sets the element to Bump.
+                Property BodyToBump() As Reference
+                    Returns or sets the element to Bump.
 
         :return: Reference
         """
@@ -65,11 +62,10 @@ class HybridShapeBump(HybridShape):
     def center_tension(self) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property CenterTension() As RealParam
-                |     Returns or sets the tension center parameter.
+                Property CenterTension() As RealParam
+                    Returns or sets the tension center parameter.
 
         :return: RealParam
         """
@@ -88,16 +84,15 @@ class HybridShapeBump(HybridShape):
     def continuity_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ContinuityType() As long
-                |     Returns or sets the continuity type ..
-                |     Legal values: the continuity type is either
-                | 
-                |      PointContinuity      =0
-                |      TangentContinuity    =1 
-                |      CurvatureContinuity  =2
+                Property ContinuityType() As long
+                    Returns or sets the continuity type ..
+                    Legal values: the continuity type is either
+                
+                     PointContinuity      =0
+                     TangentContinuity    =1 
+                     CurvatureContinuity  =2
 
         :return: int
         """
@@ -116,11 +111,10 @@ class HybridShapeBump(HybridShape):
     def deformation_center(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property DeformationCenter() As Reference
-                |     Returns or sets the Deformation Center.
+                Property DeformationCenter() As Reference
+                    Returns or sets the Deformation Center.
 
         :return: Reference
         """
@@ -139,11 +133,10 @@ class HybridShapeBump(HybridShape):
     def deformation_dir(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property DeformationDir() As Reference
-                |     Returns or sets the Deformation Direction.
+                Property DeformationDir() As Reference
+                    Returns or sets the Deformation Direction.
 
         :return: Reference
         """
@@ -162,15 +155,14 @@ class HybridShapeBump(HybridShape):
     def deformation_dist(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property DeformationDist() As Length
-                |     Returns the translate distance (CATIA Parameter).
-                |     Note: Distance value is set or retrieve trough a Literaql
-                |     parameter
-                |     Parameters are value are given in the Part Unit
-                |     Example : if Part Unit for dimensions is mm: for 1 mmm, oDefDist.Value will return 1.000
+                Property DeformationDist() As Length
+                    Returns the translate distance (CATIA Parameter).
+                    Note: Distance value is set or retrieve trough a Literaql
+                    parameter
+                    Parameters are value are given in the Part Unit
+                    Example : if Part Unit for dimensions is mm: for 1 mmm, oDefDist.Value will return 1.000
 
         :return: Length
         """
@@ -189,13 +181,12 @@ class HybridShapeBump(HybridShape):
     def deformation_dist_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property DeformationDistValue() As double
-                |     Returns or sets the Deformation distance (double) .
-                |     Note: Distance value is expressed in MKS = Meters
-                |     Example to set up 1mm , use .001
+                Property DeformationDistValue() As double
+                    Returns or sets the Deformation distance (double) .
+                    Note: Distance value is expressed in MKS = Meters
+                    Example to set up 1mm , use .001
 
         :return: float
         """
@@ -214,11 +205,10 @@ class HybridShapeBump(HybridShape):
     def limit_curve(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property LimitCurve() As Reference
-                |     Returns or sets the limit curve.
+                Property LimitCurve() As Reference
+                    Returns or sets the limit curve.
 
         :return: Reference
         """
@@ -237,11 +227,10 @@ class HybridShapeBump(HybridShape):
     def projection_dir(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ProjectionDir() As Reference
-                |     Returns or sets the limit curve.
+                Property ProjectionDir() As Reference
+                    Returns or sets the limit curve.
 
         :return: Reference
         """
@@ -257,4 +246,4 @@ class HybridShapeBump(HybridShape):
         self.com_object.ProjectionDir = value
 
     def __repr__(self):
-        return f'HybridShapeBump(name="{ self.name }")'
+        return f'HybridShapeBump(name="{self.name}")'

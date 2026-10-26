@@ -14,18 +14,17 @@ from pycatia3dx.types.general import CATVariant
 class SimGroup(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimGroup
-                | 
-                | Represents a simulation group.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimGroup
+                
+                Represents a simulation group.
     
     """
 
@@ -37,13 +36,12 @@ class SimGroup(AnyObject):
     def entity_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property EntityType() As SimMeshEntityType
-                |     Sets or retrieves the simulation entities type captured by the
-                |     group.
-                |     The group entity must be initialized before any update of feature.
+                Property EntityType() As SimMeshEntityType
+                    Sets or retrieves the simulation entities type captured by the
+                    group.
+                    The group entity must be initialized before any update of feature.
 
         :return: int
         """
@@ -62,11 +60,10 @@ class SimGroup(AnyObject):
     def group_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property GroupType() As CATBSTR (Read Only)
-                |     Retrieves the type of group. SimGroups
+                Property GroupType() As CATBSTR (Read Only)
+                    Retrieves the type of group. SimGroups
 
         :return: str
         """
@@ -77,11 +74,10 @@ class SimGroup(AnyObject):
     def number_of_entities(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfEntities() As short (Read Only)
-                |     Retrieves the number of entities that have been captured by the group.
+                Property NumberOfEntities() As short (Read Only)
+                    Retrieves the number of entities that have been captured by the group.
 
         :return: int
         """
@@ -91,18 +87,17 @@ class SimGroup(AnyObject):
     def add_boundary(self, i_boundary: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddBoundary(AnyObject iBoundary)
-                |     Creates a new boundary and add it into the boundary description of the
-                |     simulation group.
-                |     Only available for simulation group by boundary.
-                | 
-                |     Parameters:
-                | 
-                |         iBoundary:
-                |             The object that represents the boundary geometry to add.
+                Sub AddBoundary(AnyObject iBoundary)
+                    Creates a new boundary and add it into the boundary description of the
+                    simulation group.
+                    Only available for simulation group by boundary.
+                
+                    Parameters:
+                
+                        iBoundary:
+                            The object that represents the boundary geometry to add.
 
         :param AnyObject i_boundary:
         :return: None
@@ -112,19 +107,18 @@ class SimGroup(AnyObject):
     def get_attribute_value(self, i_attribute: str, o_value: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetAttributeValue(CATBSTR iAttribute,CATVariant oValue)
-                |     Retrieves the value corresponding to the given attribute.
-                | 
-                |     Parameters:
-                | 
-                |         iAttribute:
-                |             The name of attribute. 
-                | 
-                |     Returns:
-                |         The value of the attribute.
+                Sub GetAttributeValue(CATBSTR iAttribute,CATVariant oValue)
+                    Retrieves the value corresponding to the given attribute.
+                
+                    Parameters:
+                
+                        iAttribute:
+                            The name of attribute. 
+                
+                    Returns:
+                        The value of the attribute.
 
         :param str i_attribute:
         :param CATVariant o_value:
@@ -135,17 +129,16 @@ class SimGroup(AnyObject):
     def get_numbering_labels(self, i_type: int) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetNumberingLabels(SimMeshEntityType iType) As
-                | CATSafeArrayVariant
-                |     Retrieves all the numbering labels of current object
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             Type of mesh entity: simMeshNodeEntity or simMeshElementEntity.
+                Func GetNumberingLabels(SimMeshEntityType iType) As
+                CATSafeArrayVariant
+                    Retrieves all the numbering labels of current object
+                
+                    Parameters:
+                
+                        iType
+                            Type of mesh entity: simMeshNodeEntity or simMeshElementEntity.
 
         :param int i_type:
         :return: tuple
@@ -155,18 +148,17 @@ class SimGroup(AnyObject):
     def remove_boundary(self, i_boundary: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveBoundary(AnyObject iBoundary)
-                |     Removes a boundary to the boundary description of the simulation
-                |     group.
-                |     Only available for simulation group by boundary.
-                | 
-                |     Parameters:
-                | 
-                |         iBoundary:
-                |             The object that represents the boundary geometry to remove.
+                Sub RemoveBoundary(AnyObject iBoundary)
+                    Removes a boundary to the boundary description of the simulation
+                    group.
+                    Only available for simulation group by boundary.
+                
+                    Parameters:
+                
+                        iBoundary:
+                            The object that represents the boundary geometry to remove.
 
         :param AnyObject i_boundary:
         :return: None
@@ -176,11 +168,10 @@ class SimGroup(AnyObject):
     def remove_numbering(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveNumbering()
-                |     Removes numbering specification.
+                Sub RemoveNumbering()
+                    Removes numbering specification.
 
         :return: None
         """
@@ -189,19 +180,18 @@ class SimGroup(AnyObject):
     def set_attribute_value(self, i_attribute_name: str, i_value: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAttributeValue(CATBSTR iAttributeName,CATVariant
-                | iValue)
-                |     Sets the value corresponding to the given attribute.
-                | 
-                |     Parameters:
-                | 
-                |         iAttribute:
-                |             The name of attribute. 
-                |         iValue:
-                |             The value of the attribute.
+                Sub SetAttributeValue(CATBSTR iAttributeName,CATVariant
+                iValue)
+                    Sets the value corresponding to the given attribute.
+                
+                    Parameters:
+                
+                        iAttribute:
+                            The name of attribute. 
+                        iValue:
+                            The value of the attribute.
 
         :param str i_attribute_name:
         :param CATVariant i_value:
@@ -212,19 +202,18 @@ class SimGroup(AnyObject):
     def set_group_type(self, i_group_type: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetGroupType(CATBSTR iGroupType)
-                | 
-                |     Deprecated:
-                |         R427 : Use EntityType property instead. Sets the type of the simulation group.
-                |         This method must initialize the group content type before any update of
-                |         feature. 
-                |     Parameters:
-                | 
-                |         iGroupType:
-                |             The type of the group.
+                Sub SetGroupType(CATBSTR iGroupType)
+                
+                    Deprecated:
+                        R427 : Use EntityType property instead. Sets the type of the simulation group.
+                        This method must initialize the group content type before any update of
+                        feature. 
+                    Parameters:
+                
+                        iGroupType:
+                            The type of the group.
 
         :param str i_group_type:
         :return: None

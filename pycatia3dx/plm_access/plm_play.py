@@ -14,18 +14,17 @@ from pycatia3dx.system.any_object import AnyObject
 class PLMPlay(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PLMPlay
-                | 
-                | Allows to manage the execution of a playable object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PLMPlay
+                
+                Allows to manage the execution of a playable object.
     
     """
 
@@ -36,11 +35,10 @@ class PLMPlay(AnyObject):
     def play(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Play()
-                |     Plays the animation
+                Sub Play()
+                    Plays the animation
 
         :return: None
         """
@@ -49,11 +47,10 @@ class PLMPlay(AnyObject):
     def stop(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Stop()
-                |     Stops the animation
+                Sub Stop()
+                    Stops the animation
 
         :return: None
         """

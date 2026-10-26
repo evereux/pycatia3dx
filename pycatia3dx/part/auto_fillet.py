@@ -15,24 +15,22 @@ from pycatia3dx.part.dress_up_shape import DressUpShape
 
 
 class AutoFillet(DressUpShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.DressUpShape
-                |                             AutoFillet
-                | 
-                | Represents the AutoFillet shape.
-                | A AutoFillet fillets all the edges of Solid
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.DressUpShape
+                                            AutoFillet
+                
+                Represents the AutoFillet shape.
+                A AutoFillet fillets all the edges of Solid
     
     """
 
@@ -44,17 +42,16 @@ class AutoFillet(DressUpShape):
     def curvature_radius(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CurvatureRadius() As Length (Read Only)
-                |     Returns the Curvature radius.
-                | 
-                |     Example:
-                |         The following example returns in Curvature radius the Curvature radius
-                |         of the AutoFillet Autofillet:
-                | 
-                |          Set Curvatureradius = Autofillet.Radius
+                Property CurvatureRadius() As Length (Read Only)
+                    Returns the Curvature radius.
+                
+                    Example:
+                        The following example returns in Curvature radius the Curvature radius
+                        of the AutoFillet Autofillet:
+                
+                         Set Curvatureradius = Autofillet.Radius
 
         :return: Length
         """
@@ -65,19 +62,18 @@ class AutoFillet(DressUpShape):
     def faces_to_fillet(self) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FacesToFillet() As References (Read Only)
-                |     Returns or sets the faces to fillet.
-                | 
-                |     Example:
-                |         The following example returns in facestofillet the faces required for
-                |         autofillet autoFillet, and then sets it to
-                |         NewFacestofillet:
-                | 
-                |          Set Facestofillet = autoFillet.Facestofillet
-                |          autofillet.Facestofillet = NewFacestofillet
+                Property FacesToFillet() As References (Read Only)
+                    Returns or sets the faces to fillet.
+                
+                    Example:
+                        The following example returns in facestofillet the faces required for
+                        autofillet autoFillet, and then sets it to
+                        NewFacestofillet:
+                
+                         Set Facestofillet = autoFillet.Facestofillet
+                         autofillet.Facestofillet = NewFacestofillet
 
         :return: References
         """
@@ -88,10 +84,9 @@ class AutoFillet(DressUpShape):
     def faces_to_fillets(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FacesToFillets(Reference iFace) (Write Only)
+                Property FacesToFillets(Reference iFace) (Write Only)
 
         :return: None
         """
@@ -110,17 +105,16 @@ class AutoFillet(DressUpShape):
     def fillet_radius(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FilletRadius() As Length (Read Only)
-                |     Returns the Fillet radius.
-                | 
-                |     Example:
-                |         The following example returns in fillet radius the fillet radius of the
-                |         AutoFillet Autofillet:
-                | 
-                |          Set Filletradius = Autofillet.Radius
+                Property FilletRadius() As Length (Read Only)
+                    Returns the Fillet radius.
+                
+                    Example:
+                        The following example returns in fillet radius the fillet radius of the
+                        AutoFillet Autofillet:
+                
+                         Set Filletradius = Autofillet.Radius
 
         :return: Length
         """
@@ -131,10 +125,9 @@ class AutoFillet(DressUpShape):
     def functional_face(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FunctionalFace(Reference iFace) (Write Only)
+                Property FunctionalFace(Reference iFace) (Write Only)
 
         :return: None
         """
@@ -153,19 +146,18 @@ class AutoFillet(DressUpShape):
     def functional_faces(self) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FunctionalFaces() As References (Read Only)
-                |     Returns or sets the functional face.
-                | 
-                |     Example:
-                |         The following example returns in functionalface the functional face of
-                |         the autofillet autoFillet, and then sets it to
-                |         NewfunctionalFace:
-                | 
-                |          Set functionalFace = autoFillet.FunctionalFace
-                |          autofillet.FunctionalFace = NewfunctionalFace
+                Property FunctionalFaces() As References (Read Only)
+                    Returns or sets the functional face.
+                
+                    Example:
+                        The following example returns in functionalface the functional face of
+                        the autofillet autoFillet, and then sets it to
+                        NewfunctionalFace:
+                
+                         Set functionalFace = autoFillet.FunctionalFace
+                         autofillet.FunctionalFace = NewfunctionalFace
 
         :return: References
         """
@@ -176,19 +168,18 @@ class AutoFillet(DressUpShape):
     def parting_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PartingElement() As Reference
-                |     Returns or sets the parting element.
-                | 
-                |     Example:
-                |         The following example returns in partingelement the parting element of
-                |         the autofillet autoFillet, and then sets it to Newparting
-                |         element:
-                | 
-                |          Set Parting element = autoFillet.PartingElement
-                |          autofillet.PartingElement = NewPartingElement
+                Property PartingElement() As Reference
+                    Returns or sets the parting element.
+                
+                    Example:
+                        The following example returns in partingelement the parting element of
+                        the autofillet autoFillet, and then sets it to Newparting
+                        element:
+                
+                         Set Parting element = autoFillet.PartingElement
+                         autofillet.PartingElement = NewPartingElement
 
         :return: Reference
         """
@@ -207,17 +198,16 @@ class AutoFillet(DressUpShape):
     def round_radius(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RoundRadius() As Length (Read Only)
-                |     Returns the Round radius.
-                | 
-                |     Example:
-                |         The following example returns in round radius the round radius of the
-                |         AutoFillet Autofillet:
-                | 
-                |          Set roundradius = Autofillet.Radius
+                Property RoundRadius() As Length (Read Only)
+                    Returns the Round radius.
+                
+                    Example:
+                        The following example returns in round radius the round radius of the
+                        AutoFillet Autofillet:
+                
+                         Set roundradius = Autofillet.Radius
 
         :return: Length
         """
@@ -228,19 +218,18 @@ class AutoFillet(DressUpShape):
     def round_radius_activation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RoundRadiusActivation() As boolean
-                |     Returns the AutoFillet RoundRadiusActivation flag (for AutoFillet
-                |     only).
-                |     It returns 1 if RoundRadius is activated, 0 if not.
-                | 
-                |     Returns:
-                |         oRoundRadActivation The RoundRadActivation flag as an
-                |         int
-                | 
-                |         Example:
+                Property RoundRadiusActivation() As boolean
+                    Returns the AutoFillet RoundRadiusActivation flag (for AutoFillet
+                    only).
+                    It returns 1 if RoundRadius is activated, 0 if not.
+                
+                    Returns:
+                        oRoundRadActivation The RoundRadActivation flag as an
+                        int
+                
+                        Example:
 
         :return: bool
         """
@@ -259,10 +248,9 @@ class AutoFillet(DressUpShape):
     def slivers_and_crack(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SliversAndCrack(Reference iSlivers) (Write Only)
+                Property SliversAndCrack(Reference iSlivers) (Write Only)
 
         :return: None
         """
@@ -281,18 +269,17 @@ class AutoFillet(DressUpShape):
     def slivers_and_cracks(self) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SliversAndCracks() As References (Read Only)
-                |     Returns or sets the slivers face.
-                | 
-                |     Example:
-                |         The following example returns in slivers the sliver face of the
-                |         autofillet autoFillet, and then sets it to Newsliver:
-                | 
-                |          Set sliversFace = autoFillet.SliversFace
-                |          autofillet.SliversFace = NewsliversFace
+                Property SliversAndCracks() As References (Read Only)
+                    Returns or sets the slivers face.
+                
+                    Example:
+                        The following example returns in slivers the sliver face of the
+                        autofillet autoFillet, and then sets it to Newsliver:
+                
+                         Set sliversFace = autoFillet.SliversFace
+                         autofillet.SliversFace = NewsliversFace
 
         :return: References
         """
@@ -303,19 +290,18 @@ class AutoFillet(DressUpShape):
     def support_surface(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SupportSurface() As Reference
-                |     Returns or sets the support surface.
-                | 
-                |     Example:
-                |         The following example returns in SupportSurface the support surface
-                |         required for autofillet autoFillet, and then sets it to
-                |         NewSupportSurface:
-                | 
-                |          Set SupportSurface = autoFillet.SupportSurface
-                |          autofillet.SupportSurface = NewSupportSurface
+                Property SupportSurface() As Reference
+                    Returns or sets the support surface.
+                
+                    Example:
+                        The following example returns in SupportSurface the support surface
+                        required for autofillet autoFillet, and then sets it to
+                        NewSupportSurface:
+                
+                         Set SupportSurface = autoFillet.SupportSurface
+                         autofillet.SupportSurface = NewSupportSurface
 
         :return: Reference
         """
@@ -331,4 +317,4 @@ class AutoFillet(DressUpShape):
         self.com_object.SupportSurface = value
 
     def __repr__(self):
-        return f'AutoFillet(name="{ self.name }")'
+        return f'AutoFillet(name="{self.name}")'

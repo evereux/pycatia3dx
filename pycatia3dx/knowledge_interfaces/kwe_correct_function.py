@@ -14,18 +14,17 @@ from pycatia3dx.system.any_object import AnyObject
 class KweCorrectFunction(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     KWECorrectFunction
-                | 
-                | Represents the Knowledge correct function.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    KWECorrectFunction
+                
+                Represents the Knowledge correct function.
     
     """
 
@@ -36,14 +35,13 @@ class KweCorrectFunction(AnyObject):
     def check(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func Check() As CATBaseDispatch
-                |     Retrieves the check associated to this correct function.
-                | 
-                |     Returns:
-                |         oAssociatedCheck ExpertCheck associated to this correct function.
+                Func Check() As CATBaseDispatch
+                    Retrieves the check associated to this correct function.
+                
+                    Returns:
+                        oAssociatedCheck ExpertCheck associated to this correct function.
 
         :return: AnyObject
         """
@@ -52,14 +50,13 @@ class KweCorrectFunction(AnyObject):
     def get_number_of_list_failed_elements(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func GetNumberOfListFailedElements() As long
-                |     Retrieves the number of roots of facts of the rule base.
-                | 
-                |     Returns:
-                |         oArraySize Number of roots of facts.
+                Func GetNumberOfListFailedElements() As long
+                    Retrieves the number of roots of facts of the rule base.
+                
+                    Returns:
+                        oArraySize Number of roots of facts.
 
         :return: int
         """
@@ -68,17 +65,16 @@ class KweCorrectFunction(AnyObject):
     def list_failed_elements(self, o_list_elements_of_tuple_failed: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub ListFailedElements(CATSafeArrayVariant
-                | oListElementsOfTupleFailed)
-                |     Returns the list of elements of current tuple failed.
+                Sub ListFailedElements(CATSafeArrayVariant
+                oListElementsOfTupleFailed)
+                    Returns the list of elements of current tuple failed.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oListElementsOfTupleFailed
-                |             array of tuple elements.
+                        oListElementsOfTupleFailed
+                            array of tuple elements.
 
         :param tuple o_list_elements_of_tuple_failed:
         :return: None

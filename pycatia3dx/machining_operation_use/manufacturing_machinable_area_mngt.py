@@ -12,23 +12,21 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingMachinableAreaMngt(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingMachinableAreaMngt
-                | 
-                | Interface dedicated to machinable area feature managment.
-                | Role: This interface delivers services on machinable area
-                | features
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingMachinableAreaMngt
+                
+                Interface dedicated to machinable area feature managment.
+                Role: This interface delivers services on machinable area
+                features
     
     """
 
@@ -39,20 +37,19 @@ class ManufacturingMachinableAreaMngt(AnyObject):
     def get_all_datas(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAllDatas() As CATSafeArrayVariant
-                |     Gets all the data in the Manufacturing Machinable Feature.
-                | 
-                |     Parameters:
-                | 
-                |         oDatas
-                |             The list of data
+                Func GetAllDatas() As CATSafeArrayVariant
+                    Gets all the data in the Manufacturing Machinable Feature.
+                
+                    Parameters:
+                
+                        oDatas
+                            The list of data
 
         :return: tuple
         """
         return self.com_object.GetAllDatas()
 
     def __repr__(self):
-        return f'ManufacturingMachinableAreaMngt(name="{ self.name }")'
+        return f'ManufacturingMachinableAreaMngt(name="{self.name}")'

@@ -13,60 +13,58 @@ from pycatia3dx.sma_mpa_base.sim_axis_system import SimAxisSystem
 
 
 class SimDisplacementConstraint(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimDisplacementConstraint
-                | 
-                | Represents the displacement constraint object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimDisplacementConstraint as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyDisplacementConstraint As SimDisplacementConstraint
-                |      Set MyDisplacementConstraint = MyFeatures.Add("SimDisplacementConstraint")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimDisplacementConstraint named "Displacement Constraint.1" as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyDisplacementConstraint As SimDisplacementConstraint
-                |      Set MyDisplacementConstraint = MyFeatures.Item("Displacement Constraint.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimDisplacementConstraint as following:
-                | 
-                |      ...
-                |      MyDisplacementConstraint = MyFeatures.Add("SimDisplacementConstraint")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimDisplacementConstraint named "Displacement Constraint.1" as
-                |     following:
-                | 
-                |      ...
-                |      MyDisplacementConstraint = MyFeatures.Item("Displacement Constraint.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimDisplacementConstraint
+                
+                Represents the displacement constraint object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimDisplacementConstraint as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyDisplacementConstraint As SimDisplacementConstraint
+                     Set MyDisplacementConstraint = MyFeatures.Add("SimDisplacementConstraint")
+                     
+                
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimDisplacementConstraint named "Displacement Constraint.1" as
+                    following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyDisplacementConstraint As SimDisplacementConstraint
+                     Set MyDisplacementConstraint = MyFeatures.Item("Displacement Constraint.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimDisplacementConstraint as following:
+                
+                     ...
+                     MyDisplacementConstraint = MyFeatures.Add("SimDisplacementConstraint")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimDisplacementConstraint named "Displacement Constraint.1" as
+                    following:
+                
+                     ...
+                     MyDisplacementConstraint = MyFeatures.Item("Displacement Constraint.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -78,11 +76,10 @@ class SimDisplacementConstraint(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the axis system used for the displacement constraint.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the axis system used for the displacement constraint.
 
         :return: SimAxisSystem
         """
@@ -93,11 +90,10 @@ class SimDisplacementConstraint(AnyObject):
     def load_case(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LoadCase() As CATBaseDispatch (Read Only)
-                |     Returns the Linear Loadcase.
+                Property LoadCase() As CATBaseDispatch (Read Only)
+                    Returns the Linear Loadcase.
 
         :return: AnyObject
         """
@@ -108,11 +104,10 @@ class SimDisplacementConstraint(AnyObject):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As SimDisplacementConstraintType
-                |     Returns or sets the type of displacement constraint.
+                Property Type() As SimDisplacementConstraintType
+                    Returns or sets the type of displacement constraint.
 
         :return: SimDisplacementConstraintType
         """
@@ -130,16 +125,15 @@ class SimDisplacementConstraint(AnyObject):
     def get_maximum_displacement(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetMaximumDisplacement(double oVal)
-                |     Gets the Maximum Displacement.
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Constraint value. Quantity: Displacement, units: m
+                Sub GetMaximumDisplacement(double oVal)
+                    Gets the Maximum Displacement.
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Constraint value. Quantity: Displacement, units: m
 
         :param float o_val:
         :return: None
@@ -149,16 +143,15 @@ class SimDisplacementConstraint(AnyObject):
     def get_maximum_total_displacement(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetMaximumTotalDisplacement(double oVal)
-                |     Gets the Maximum Total Displacement.
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Constraint value. Quantity: Displacement, units: m
+                Sub GetMaximumTotalDisplacement(double oVal)
+                    Gets the Maximum Total Displacement.
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Constraint value. Quantity: Displacement, units: m
 
         :param float o_val:
         :return: None
@@ -168,16 +161,15 @@ class SimDisplacementConstraint(AnyObject):
     def get_minimum_displacement(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetMinimumDisplacement(double oVal)
-                |     Gets the Minimum Displacement.
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Constraint value. Quantity: Displacement, units: m
+                Sub GetMinimumDisplacement(double oVal)
+                    Gets the Minimum Displacement.
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Constraint value. Quantity: Displacement, units: m
 
         :param float o_val:
         :return: None
@@ -187,16 +179,15 @@ class SimDisplacementConstraint(AnyObject):
     def set_maximum_displacement(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMaximumDisplacement(double iVal)
-                |     Sets the Maximum Displacement.
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Constraint value. Quantity: Displacement, units: m
+                Sub SetMaximumDisplacement(double iVal)
+                    Sets the Maximum Displacement.
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Constraint value. Quantity: Displacement, units: m
 
         :param float i_val:
         :return: None
@@ -206,16 +197,15 @@ class SimDisplacementConstraint(AnyObject):
     def set_maximum_total_displacement(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMaximumTotalDisplacement(double iVal)
-                |     Sets the Maximum Total Displacement.
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Constraint value. Quantity: Displacement, units: m
+                Sub SetMaximumTotalDisplacement(double iVal)
+                    Sets the Maximum Total Displacement.
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Constraint value. Quantity: Displacement, units: m
 
         :param float i_val:
         :return: None
@@ -225,16 +215,15 @@ class SimDisplacementConstraint(AnyObject):
     def set_minimum_displacement(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMinimumDisplacement(double iVal)
-                |     Sets the Minimum Displacement.
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Constraint value. Quantity: Displacement, units: m
+                Sub SetMinimumDisplacement(double iVal)
+                    Sets the Minimum Displacement.
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Constraint value. Quantity: Displacement, units: m
 
         :param float i_val:
         :return: None
@@ -242,4 +231,4 @@ class SimDisplacementConstraint(AnyObject):
         return self.com_object.SetMinimumDisplacement(i_val)
 
     def __repr__(self):
-        return f'SimDisplacementConstraint(name="{ self.name }")'
+        return f'SimDisplacementConstraint(name="{self.name}")'

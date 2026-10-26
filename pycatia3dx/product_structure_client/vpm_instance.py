@@ -15,21 +15,20 @@ from pycatia3dx.product_structure_client.vpm_reference import VPMReference
 class VPMInstance(PLMEntity):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PLMModelerBaseIDLItf.PLMEntity
-                |                         VPMInstance
-                | 
-                | Represents the PLM Product Instance.
-                | A PLM Product Instance is an instance of a PLM Product Reference, and the child
-                | of another one that you retrieve by AnyObject.get_Parent .
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PLMModelerBaseIDLItf.PLMEntity
+                                        VPMInstance
+                
+                Represents the PLM Product Instance.
+                A PLM Product Instance is an instance of a PLM Product Reference, and the child
+                of another one that you retrieve by AnyObject.get_Parent .
     
     """
 
@@ -41,23 +40,22 @@ class VPMInstance(PLMEntity):
     def position(self) -> Position:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Position() As Position (Read Only)
-                |     Returns the PLM Product Instance position.
-                | 
-                |     Example:
-                | 
-                |             This example shows you how to get the PLM Product instance
-                |             position.
-                |            
-                | 
-                |          
-                |             Dim  oProdInstance        As VPMInstance
-                |            .....
-                |             Dim  oProdInstPosition  As Position
-                |            Set oProdInstPosition = oProdInstance.Position
+                Property Position() As Position (Read Only)
+                    Returns the PLM Product Instance position.
+                
+                    Example:
+                
+                            This example shows you how to get the PLM Product instance
+                            position.
+                           
+                
+                         
+                            Dim  oProdInstance        As VPMInstance
+                           .....
+                            Dim  oProdInstPosition  As Position
+                           Set oProdInstPosition = oProdInstance.Position
 
         :return: Position
         """
@@ -68,31 +66,30 @@ class VPMInstance(PLMEntity):
     def reference_instance_of(self) -> VPMReference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ReferenceInstanceOf() As VPMReference (Read Only)
-                |     Returns the instantiated PLM Product Reference.
-                |     Role: This method returns the PLM Product Reference used to instantiate the
-                |     current PLM Product Instance.
-                | 
-                |     Example:
-                | 
-                |             This first example shows you how to get the PLM Product Reference
-                |             used to instantiate the current instance.
+                Property ReferenceInstanceOf() As VPMReference (Read Only)
+                    Returns the instantiated PLM Product Reference.
+                    Role: This method returns the PLM Product Reference used to instantiate the
+                    current PLM Product Instance.
+                
+                    Example:
+                
+                            This first example shows you how to get the PLM Product Reference
+                            used to instantiate the current instance.
                 |
-                |            Dim  oProdInstance        As VPMInstance
-                |            ...
-                |            Dim  oProdRefAsReference  As VPMReference
-                |            Set  oProdRefAsReference = oProdInstance.ReferenceInstanceOf
+                           Dim  oProdInstance        As VPMInstance
+                           ...
+                           Dim  oProdRefAsReference  As VPMReference
+                           Set  oProdRefAsReference = oProdInstance.ReferenceInstanceOf
                 |
-                |             This second example shows you how to get the PLM Product Reference
-                |             owning the current instance.
+                            This second example shows you how to get the PLM Product Reference
+                            owning the current instance.
                 |
-                |            Dim  oProdInstance        As VPMInstance
-                |            .....
-                |            Dim  oProdRefAsParent     As VPMReference
-                |            Set oProdRefAsParent = oProdInstance.Parent
+                           Dim  oProdInstance        As VPMInstance
+                           .....
+                           Dim  oProdRefAsParent     As VPMReference
+                           Set oProdRefAsParent = oProdInstance.Parent
 
         :return: VPMReference
         """

@@ -11,25 +11,23 @@ from pycatia3dx.del_robot_simulation.rsc_instruction import RscInstruction
 
 
 class RscReturn(RscInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DELRobotSimulationIDLItf.RscInstruction
-                |                         RscReturn
-                | 
-                | Interface representing a Resource Return Instruction.
-                | 
-                | Role: This interface represents a RscReturn Instruction in a Resource
-                | Task
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DELRobotSimulationIDLItf.RscInstruction
+                                        RscReturn
+                
+                Interface representing a Resource Return Instruction.
+                
+                Role: This interface represents a RscReturn Instruction in a Resource
+                Task
 
     """
 
@@ -38,4 +36,4 @@ class RscReturn(RscInstruction):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'RscReturn(name="{ self.name }")'
+        return f'RscReturn(name="{self.name}")'

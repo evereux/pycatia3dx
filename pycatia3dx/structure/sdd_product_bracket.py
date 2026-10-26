@@ -16,20 +16,19 @@ from pycatia3dx.structure.str_material_mngt import StrMaterialMngt
 class SddProductBracket(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SddProductBracket
-                | 
-                | Object for representing Structure Detail Design Product
-                | Bracket.
-                | Role: To manage the SDD bracket at product level.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SddProductBracket
+                
+                Object for representing Structure Detail Design Product
+                Bracket.
+                Role: To manage the SDD bracket at product level.
     
     """
 
@@ -41,23 +40,22 @@ class SddProductBracket(AnyObject):
     def sdd_contour_based(self) -> SddContourBased:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SddContourBased() As SddContourBased (Read Only)
-                |     Returns the SddContourBased object.
-                | 
-                |     Example:
-                | 
-                |              
-                |              This example retrieves in ObjSddContourBased the SddContourBased
-                |              object
-                |              of the SddProductBracket.
-                |              
-                | 
-                |               
-                |              Dim ObjSddContourBased As SddContourBased
-                |              Set ObjSddContourBased = oObjProdBracket.SddContourBased
+                Property SddContourBased() As SddContourBased (Read Only)
+                    Returns the SddContourBased object.
+                
+                    Example:
+                
+                             
+                             This example retrieves in ObjSddContourBased the SddContourBased
+                             object
+                             of the SddProductBracket.
+                             
+                
+                              
+                             Dim ObjSddContourBased As SddContourBased
+                             Set ObjSddContourBased = oObjProdBracket.SddContourBased
 
         :return: SddContourBased
         """
@@ -68,22 +66,21 @@ class SddProductBracket(AnyObject):
     def str_material_mngt(self) -> StrMaterialMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrMaterialMngt() As StrMaterialMngt (Read Only)
-                |     Returns the StrMaterialMngt object.
-                | 
-                |     Example:
-                | 
-                |              
-                |              This example retrieves in ObjStrMaterialMngt the StrMaterialMngt
-                |              object
-                |              of the SddProductBracket.
-                |              
-                | 
-                |              Dim ObjStrMaterialMngt As StrMaterialMngt 
-                |              Set ObjStrMaterialMngt = ObjSddProductBracket.StrMaterialMngt
+                Property StrMaterialMngt() As StrMaterialMngt (Read Only)
+                    Returns the StrMaterialMngt object.
+                
+                    Example:
+                
+                             
+                             This example retrieves in ObjStrMaterialMngt the StrMaterialMngt
+                             object
+                             of the SddProductBracket.
+                             
+                
+                             Dim ObjStrMaterialMngt As StrMaterialMngt 
+                             Set ObjStrMaterialMngt = ObjSddProductBracket.StrMaterialMngt
 
         :return: StrMaterialMngt
         """
@@ -93,11 +90,10 @@ class SddProductBracket(AnyObject):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Update()
-                |     Updates the product bracket
+                Sub Update()
+                    Updates the product bracket
 
         :return: None
         """

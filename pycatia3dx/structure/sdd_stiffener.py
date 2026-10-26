@@ -14,32 +14,31 @@ from pycatia3dx.structure.str_stiffener import StrStiffener
 class SddStiffener(StrStiffener):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATStrIDLItf.StructureProfile
-                |                         CATStrIDLItf.StrStiffener
-                |                             SddStiffener
-                | 
-                | Object to manage SDD Stiffener.
-                | Role: Allows accessing and setting of Stiffener's data.
-                | 
-                | See also:
-                |     SddStiffenerMngt
-                | Example:
-                | 
-                | 
-                |          This example retrieves in SddStiffener.
-                |          
-                | 
-                |          Dim ObjSddStiffener As SddStiffener 
-                |          Set ObjSddStiffener = ObjSddProductStiffener.SddStiffener
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATStrIDLItf.StructureProfile
+                                        CATStrIDLItf.StrStiffener
+                                            SddStiffener
+                
+                Object to manage SDD Stiffener.
+                Role: Allows accessing and setting of Stiffener's data.
+                
+                See also:
+                    SddStiffenerMngt
+                Example:
+                
+                
+                         This example retrieves in SddStiffener.
+                         
+                
+                         Dim ObjSddStiffener As SddStiffener 
+                         Set ObjSddStiffener = ObjSddProductStiffener.SddStiffener
     
     """
 
@@ -51,12 +50,11 @@ class SddStiffener(StrStiffener):
     def sdd_support_plate_mngt(self) -> SddSupportPlateMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SddSupportPlateMngt() As SddSupportPlateMngt (Read
-                | Only)
-                |     Returns the SddSupportPlateMngt object. 
+                Property SddSupportPlateMngt() As SddSupportPlateMngt (Read
+                Only)
+                    Returns the SddSupportPlateMngt object. 
 
         :return: SddSupportPlateMngt
         """

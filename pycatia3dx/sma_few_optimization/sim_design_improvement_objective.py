@@ -12,44 +12,42 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimDesignImprovementObjective(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimDesignImprovementObjective
-                | 
-                | Represents the Design Improvement Objective.
-                | Base class for Design Improvement Objective.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimDesignImprovementObjective named "Objective.1" as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyObjective As SimDesignImprovementObjective
-                |      Set MyObjective = MyFeatures.Item("Objective.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures collection, you can retrieve a
-                |     SimDesignImprovementObjective object as following:
-                | 
-                |      ...
-                |      MyObjective  = MyFeatures.Item("Objective.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimDesignImprovementObjective
+                
+                Represents the Design Improvement Objective.
+                Base class for Design Improvement Objective.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimDesignImprovementObjective named "Objective.1" as
+                    following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyObjective As SimDesignImprovementObjective
+                     Set MyObjective = MyFeatures.Item("Objective.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures collection, you can retrieve a
+                    SimDesignImprovementObjective object as following:
+                
+                     ...
+                     MyObjective  = MyFeatures.Item("Objective.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -58,4 +56,4 @@ class SimDesignImprovementObjective(AnyObject):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'SimDesignImprovementObjective(name="{ self.name }")'
+        return f'SimDesignImprovementObjective(name="{self.name}")'

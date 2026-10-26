@@ -16,20 +16,19 @@ from pycatia3dx.structure.str_material_mngt import StrMaterialMngt
 class SddProductStiffener(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SddProductStiffener
-                | 
-                | Object for representing Structure Detail Design Product
-                | Stiffener.
-                | Role: To manage SDD Stiffener at product level.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SddProductStiffener
+                
+                Object for representing Structure Detail Design Product
+                Stiffener.
+                Role: To manage SDD Stiffener at product level.
     
     """
 
@@ -41,11 +40,10 @@ class SddProductStiffener(AnyObject):
     def sdd_stiffener(self) -> SddStiffener:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SddStiffener() As SddStiffener (Read Only)
-                |     Returns the Stiffener geometric function into this SDD product Stiffener.
+                Property SddStiffener() As SddStiffener (Read Only)
+                    Returns the Stiffener geometric function into this SDD product Stiffener.
 
         :return: SddStiffener
         """
@@ -56,25 +54,24 @@ class SddProductStiffener(AnyObject):
     def str_material_mngt(self) -> StrMaterialMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrMaterialMngt() As StrMaterialMngt (Read Only)
-                |     Returns the StrMaterialMngt object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjStrMaterialMngt the StrMaterialMngt
-                |              object
-                |              of the SddProductStiffener
-                |              
-                | 
-                |              Dim ObjSddProductStiffener As SddProductStiffener
-                |              Set ObjSddProductStiffener = ObjSddStiffenerMngt.AddStiffener
-                |              Dim ObjStrMaterialMngt As StrMaterialMngt 
-                |              Set ObjStrMaterialMngt = ObjSddProductStiffener.StrMaterialMngt
+                Property StrMaterialMngt() As StrMaterialMngt (Read Only)
+                    Returns the StrMaterialMngt object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjStrMaterialMngt the StrMaterialMngt
+                             object
+                             of the SddProductStiffener
+                             
+                
+                             Dim ObjSddProductStiffener As SddProductStiffener
+                             Set ObjSddProductStiffener = ObjSddStiffenerMngt.AddStiffener
+                             Dim ObjStrMaterialMngt As StrMaterialMngt 
+                             Set ObjStrMaterialMngt = ObjSddProductStiffener.StrMaterialMngt
 
         :return: StrMaterialMngt
         """
@@ -84,11 +81,10 @@ class SddProductStiffener(AnyObject):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Update()
-                |     Updates the plate 
+                Sub Update()
+                    Updates the plate 
 
         :return: None
         """

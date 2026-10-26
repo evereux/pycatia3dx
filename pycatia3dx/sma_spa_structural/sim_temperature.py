@@ -13,58 +13,56 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimTemperature(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimTemperature
-                | 
-                | Represents the Temperature object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimTemperature as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyTemperature As SimTemperature
-                |      Set MyTemperature = MyFeatures.Add("SimTemperature")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimTemperature named
-                |     "Temperature.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyTemperature As SimTemperature
-                |      Set MyTemperature = MyFeatures.Item("Temperature.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a SimTemperature as
-                |     following:
-                | 
-                |      ...
-                |      myTemperature = myFeatures.Add("SimTemperature")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a SimTemperature
-                |     named "Temperature.1" as following:
-                | 
-                |      ...
-                |      myTemperature = myFeatures.Item("Temperature.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimTemperature
+                
+                Represents the Temperature object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimTemperature as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyTemperature As SimTemperature
+                     Set MyTemperature = MyFeatures.Add("SimTemperature")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimTemperature named
+                    "Temperature.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyTemperature As SimTemperature
+                     Set MyTemperature = MyFeatures.Item("Temperature.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a SimTemperature as
+                    following:
+                
+                     ...
+                     myTemperature = myFeatures.Add("SimTemperature")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a SimTemperature
+                    named "Temperature.1" as following:
+                
+                     ...
+                     myTemperature = myFeatures.Item("Temperature.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -76,11 +74,10 @@ class SimTemperature(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -99,11 +96,10 @@ class SimTemperature(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureHistory() As SimFeatureHistory (Read Only)
-                |     Returns the feature history.
+                Property FeatureHistory() As SimFeatureHistory (Read Only)
+                    Returns the feature history.
 
         :return: SimFeatureHistory
         """
@@ -114,11 +110,10 @@ class SimTemperature(AnyObject):
     def scalar_field(self) -> SimScalarField:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ScalarField() As SimScalarField (Read Only)
-                |     Returns the scalar field.
+                Property ScalarField() As SimScalarField (Read Only)
+                    Returns the scalar field.
 
         :return: SimScalarField
         """
@@ -129,12 +124,11 @@ class SimTemperature(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. See SimFeatures.GetSpecTreeCategory for usage.
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. See SimFeatures.GetSpecTreeCategory for usage.
 
         :return: str
         """
@@ -145,11 +139,10 @@ class SimTemperature(AnyObject):
     def uniform_magnitude(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UniformMagnitude() As double
-                |     Temperature value. Quantity: TEMPRTRE, units: Kdeg
+                Property UniformMagnitude() As double
+                    Temperature value. Quantity: TEMPRTRE, units: Kdeg
 
         :return: float
         """
@@ -168,14 +161,13 @@ class SimTemperature(AnyObject):
     def uniform_magnitude_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UniformMagnitudeFlag() As boolean (Read Only)
-                |     Returns or sets the flag that determines if the magnitude is
-                |     uniform.
-                |     TRUE: the magnitude is uniform.
-                |     FALSE: the magnitude is not uniform. 
+                Property UniformMagnitudeFlag() As boolean (Read Only)
+                    Returns or sets the flag that determines if the magnitude is
+                    uniform.
+                    TRUE: the magnitude is uniform.
+                    FALSE: the magnitude is not uniform. 
 
         :return: bool
         """
@@ -183,4 +175,4 @@ class SimTemperature(AnyObject):
         return self.com_object.UniformMagnitudeFlag
 
     def __repr__(self):
-        return f'SimTemperature(name="{ self.name }")'
+        return f'SimTemperature(name="{self.name}")'

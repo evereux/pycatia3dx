@@ -14,24 +14,22 @@ from pycatia3dx.sim_plm.simulation_specifications import SimulationSpecification
 
 
 class SimulationReference(PLMEntity):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PLMModelerBaseIDLItf.PLMEntity
-                |                         SimulationReference
-                | 
-                | Interface representing SIMULATION Object Reference.
-                | This interface enables to retrieve Simulation Entities collection
-                | .
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PLMModelerBaseIDLItf.PLMEntity
+                                        SimulationReference
+                
+                Interface representing SIMULATION Object Reference.
+                This interface enables to retrieve Simulation Entities collection
+                .
     
     """
 
@@ -43,24 +41,23 @@ class SimulationReference(PLMEntity):
     def model(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Model() As AnyObject (Read Only)
-                |     Retrieves Simulated Model.
-                |     Role: This method retrieves a pointer on the simulated Model. It is a
-                |     specialized type of Reference PLMEntity.
-                | 
-                |     Parameters:
-                | 
-                |         oPLMModel
-                | 
-                |     Returns:
-                |         An HRESULT value
-                | 
-                |             S_OK The pointer on the Model is correctly
-                |             retrieved
-                |             E_FAIL Otherwise.
+                Property Model() As AnyObject (Read Only)
+                    Retrieves Simulated Model.
+                    Role: This method retrieves a pointer on the simulated Model. It is a
+                    specialized type of Reference PLMEntity.
+                
+                    Parameters:
+                
+                        oPLMModel
+                
+                    Returns:
+                        An HRESULT value
+                
+                            S_OK The pointer on the Model is correctly
+                            retrieved
+                            E_FAIL Otherwise.
 
         :return: AnyObject
         """
@@ -71,24 +68,23 @@ class SimulationReference(PLMEntity):
     def results(self) -> SimulationResults:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Results() As SimulationResults (Read Only)
-                |     Retrieves Collection defines as Results.
-                |     Role: This method retrieves a pointer on the Results collection of
-                |     objects.
-                | 
-                |     Parameters:
-                | 
-                |         Results
-                | 
-                |     Returns:
-                |         An HRESULT value
-                | 
-                |             S_OK The pointer on the Simulation Objects is correctly
-                |             retrieved
-                |             E_FAIL Otherwise.
+                Property Results() As SimulationResults (Read Only)
+                    Retrieves Collection defines as Results.
+                    Role: This method retrieves a pointer on the Results collection of
+                    objects.
+                
+                    Parameters:
+                
+                        Results
+                
+                    Returns:
+                        An HRESULT value
+                
+                            S_OK The pointer on the Simulation Objects is correctly
+                            retrieved
+                            E_FAIL Otherwise.
 
         :return: SimulationResults
         """
@@ -99,25 +95,24 @@ class SimulationReference(PLMEntity):
     def specifications(self) -> SimulationSpecifications:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Specifications() As SimulationSpecifications (Read
-                | Only)
-                |     Retrieves Collection defines as Specifications.
-                |     Role: This method retrieves a pointer on the Specifications collection of
-                |     objects.
-                | 
-                |     Parameters:
-                | 
-                |         oSpecifications
-                | 
-                |     Returns:
-                |         An HRESULT value
-                | 
-                |             S_OK The pointer on the Simulation Objects is correctly
-                |             retrieved
-                |             E_FAIL Otherwise.
+                Property Specifications() As SimulationSpecifications (Read
+                Only)
+                    Retrieves Collection defines as Specifications.
+                    Role: This method retrieves a pointer on the Specifications collection of
+                    objects.
+                
+                    Parameters:
+                
+                        oSpecifications
+                
+                    Returns:
+                        An HRESULT value
+                
+                            S_OK The pointer on the Simulation Objects is correctly
+                            retrieved
+                            E_FAIL Otherwise.
 
         :return: SimulationSpecifications
         """
@@ -125,4 +120,4 @@ class SimulationReference(PLMEntity):
         return SimulationSpecifications(self.com_object.Specifications)
 
     def __repr__(self):
-        return f'SimulationReference(name="{ self.name }")'
+        return f'SimulationReference(name="{self.name}")'

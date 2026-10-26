@@ -13,25 +13,23 @@ from pycatia3dx.dnb_igp_olp_use.olp_procedure import OLPProcedure
 
 
 class OLPWaypointOperation(OLPInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DNBIgpOlpUseItf.OlpInstruction
-                |                         OlpWaypointOperation
-                | 
-                | An instruction that contains the path of waypoint motions.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DNBIgpOlpUseItf.OlpInstruction
+                                        OlpWaypointOperation
+                
+                An instruction that contains the path of waypoint motions.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
     
     """
 
@@ -43,12 +41,11 @@ class OLPWaypointOperation(OLPInstruction):
     def instructions(self) -> OLPInstructions:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Instructions() As OlpInstructions (Read Only)
-                |     The list of instructions in the waypoint operation. All instructions must
-                |     be waypoint motions.
+                Property Instructions() As OlpInstructions (Read Only)
+                    The list of instructions in the waypoint operation. All instructions must
+                    be waypoint motions.
 
         :return: OLPInstructions
         """
@@ -59,13 +56,12 @@ class OLPWaypointOperation(OLPInstruction):
     def waypoint_task(self) -> OLPProcedure:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property WaypointTask() As OlpProcedure
-                |     The waypoint task used for this waypoint operation. The same waypoint task
-                |     must be used for all waypoint operations. This must be set during upload. It
-                |     may not be available during download in the case of a template task being used.
+                Property WaypointTask() As OlpProcedure
+                    The waypoint task used for this waypoint operation. The same waypoint task
+                    must be used for all waypoint operations. This must be set during upload. It
+                    may not be available during download in the case of a template task being used.
 
         :return: OLPProcedure
         """
@@ -81,4 +77,4 @@ class OLPWaypointOperation(OLPInstruction):
         self.com_object.WaypointTask = value
 
     def __repr__(self):
-        return f'OLPWaypointOperation(name="{ self.name }")'
+        return f'OLPWaypointOperation(name="{self.name}")'

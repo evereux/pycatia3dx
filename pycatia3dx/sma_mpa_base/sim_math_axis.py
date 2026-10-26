@@ -14,87 +14,85 @@ from pycatia3dx.sma_mpa_base.sim_math_vector import SimMathVector
 
 
 class SimMathAxis(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimMathAxis
-                | 
-                | Represents the Math Axis object.
-                | The SimMathAxis object is composed of normalized direction vectors and an
-                | origin position. These form a valid axis with no zero length or co-linear
-                | vectors.
-                | 
-                | Given a feature MyAxisSytem with an attribute AxisSystem of type SimMathAxis,
-                | you can retrieve SimMathAxis object as following:
-                | Example:
-                | 
-                |      Dim MyAxisSystem As SimAxisSystem
-                |      ...
-                |      Dim MyAxis As SimMathAxis
-                |      Set MyAxis = MyAxisSystem.AxisSystem
-                |      
-                | 
-                | Example in Python:
-                | 
-                |      ...
-                |      myAxis = myAxisSystem.AxisSystem
-                |      
-                | 
-                | You can return values by chaining properties. Given a feature MyAxisSytem with
-                | an attribute AxisSystem of type SimMathAxis, you can chain properties as
-                | following:
-                | Example:
-                | 
-                |      Dim MyAxisSystem As SimAxisSystem
-                |      ...
-                |      MyX = MyAxisSystem.AxisSystem.FirstDirection.X
-                |      
-                | 
-                | Example in Python:
-                | 
-                |      ...
-                |      MyX = MyAxisSystem.AxisSystem.FirstDirection.X
-                |      
-                | 
-                | You must use assignment to set values, and cannot set values by chaining
-                | properties. Given a feature MyAxisSytem with an attribute AxisSystem of type
-                | SimMathAxis, you can set values as following:
-                | Example:
-                | 
-                |      Dim MyAxisSystem As SimAxisSystem
-                |      ...
-                |      Dim MyAxis As SimMathAxis
-                |      Set MyAxis = MyAxisSystem.AxisSystem
-                |      Dim MyDirection As SimMathVector
-                |      Set MyDirection = MyAxis.FirstDirection
-                |      MyDirection.X = 0.5
-                |      ...
-                |      MyAxis.FirstDirection = MyDirection
-                |      MyAxisSystem.AxisSystem = MyAxis
-                |      
-                | 
-                | Example in Python:
-                | 
-                |      ...
-                |      MyAxis = MyAxisSystem.AxisSystem
-                |      MyDirection = MyAxis.FirstDirection
-                |      MyDirection.X = 0.5
-                |      ...
-                |      MyAxis.FirstDirection = MyDirection
-                |      MyAxisSystem.AxisSystem = MyAxis
-                |      
-                | 
-                | See also:
-                |     SimAxisSystem, SimMathVector, SimMathPoint
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimMathAxis
+                
+                Represents the Math Axis object.
+                The SimMathAxis object is composed of normalized direction vectors and an
+                origin position. These form a valid axis with no zero length or co-linear
+                vectors.
+                
+                Given a feature MyAxisSytem with an attribute AxisSystem of type SimMathAxis,
+                you can retrieve SimMathAxis object as following:
+                Example:
+                
+                     Dim MyAxisSystem As SimAxisSystem
+                     ...
+                     Dim MyAxis As SimMathAxis
+                     Set MyAxis = MyAxisSystem.AxisSystem
+                     
+                
+                Example in Python:
+                
+                     ...
+                     myAxis = myAxisSystem.AxisSystem
+                     
+                
+                You can return values by chaining properties. Given a feature MyAxisSytem with
+                an attribute AxisSystem of type SimMathAxis, you can chain properties as
+                following:
+                Example:
+                
+                     Dim MyAxisSystem As SimAxisSystem
+                     ...
+                     MyX = MyAxisSystem.AxisSystem.FirstDirection.X
+                     
+                
+                Example in Python:
+                
+                     ...
+                     MyX = MyAxisSystem.AxisSystem.FirstDirection.X
+                     
+                
+                You must use assignment to set values, and cannot set values by chaining
+                properties. Given a feature MyAxisSytem with an attribute AxisSystem of type
+                SimMathAxis, you can set values as following:
+                Example:
+                
+                     Dim MyAxisSystem As SimAxisSystem
+                     ...
+                     Dim MyAxis As SimMathAxis
+                     Set MyAxis = MyAxisSystem.AxisSystem
+                     Dim MyDirection As SimMathVector
+                     Set MyDirection = MyAxis.FirstDirection
+                     MyDirection.X = 0.5
+                     ...
+                     MyAxis.FirstDirection = MyDirection
+                     MyAxisSystem.AxisSystem = MyAxis
+                     
+                
+                Example in Python:
+                
+                     ...
+                     MyAxis = MyAxisSystem.AxisSystem
+                     MyDirection = MyAxis.FirstDirection
+                     MyDirection.X = 0.5
+                     ...
+                     MyAxis.FirstDirection = MyDirection
+                     MyAxisSystem.AxisSystem = MyAxis
+                     
+                
+                See also:
+                    SimAxisSystem, SimMathVector, SimMathPoint
     
     """
 
@@ -106,11 +104,10 @@ class SimMathAxis(AnyObject):
     def first_direction(self) -> SimMathVector:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FirstDirection() As SimMathVector
-                |     Returns or sets the first direction of the axis system.
+                Property FirstDirection() As SimMathVector
+                    Returns or sets the first direction of the axis system.
 
         :return: SimMathVector
         """
@@ -129,11 +126,10 @@ class SimMathAxis(AnyObject):
     def origin(self) -> SimMathPoint:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Origin() As SimMathPoint
-                |     Returns or sets the origin of the axis system.
+                Property Origin() As SimMathPoint
+                    Returns or sets the origin of the axis system.
 
         :return: SimMathPoint
         """
@@ -152,11 +148,10 @@ class SimMathAxis(AnyObject):
     def second_direction(self) -> SimMathVector:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SecondDirection() As SimMathVector
-                |     Returns or sets the second direction of the axis system.
+                Property SecondDirection() As SimMathVector
+                    Returns or sets the second direction of the axis system.
 
         :return: SimMathVector
         """
@@ -175,11 +170,10 @@ class SimMathAxis(AnyObject):
     def third_direction(self) -> SimMathVector:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ThirdDirection() As SimMathVector
-                |     Returns or Sets the third direction of the axis system. 
+                Property ThirdDirection() As SimMathVector
+                    Returns or Sets the third direction of the axis system. 
 
         :return: SimMathVector
         """
@@ -195,4 +189,4 @@ class SimMathAxis(AnyObject):
         self.com_object.ThirdDirection = value
 
     def __repr__(self):
-        return f'SimMathAxis(name="{ self.name }")'
+        return f'SimMathAxis(name="{self.name}")'

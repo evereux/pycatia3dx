@@ -15,17 +15,16 @@ from pycatia3dx.system_ts.i_unknown import IUnknown
 class IDispatch(IUnknown):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     IDispatch
-                | 
-                | Base interface for all Automation interfaces.
-                | Role: All Automation interfaces derive from IDispatch which replaces for UNIX
-                | the native Microsoft(R) IDispatch interface. This interface supplies basic
-                | methods to be Microsoft(R) Automation compliant.
+                SystemTS.IUnknown
+                    IDispatch
+                
+                Base interface for all Automation interfaces.
+                Role: All Automation interfaces derive from IDispatch which replaces for UNIX
+                the native Microsoft(R) IDispatch interface. This interface supplies basic
+                methods to be Microsoft(R) Automation compliant.
     
     """
 

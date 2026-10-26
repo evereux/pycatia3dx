@@ -12,58 +12,56 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimLineFastener(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimLineFastener
-                | 
-                | Represents the Line Fastener object.
-                | 
-                | Example:
-                |     Given a SimMCXProperties object, you can create a SimLineFastener as
-                |     following:
-                | 
-                |      Dim MyMCXProperties As SimMCXProperties
-                |      ...
-                |      Dim MyLineFastener As SimLineFastener
-                |      Set MyLineFastener = MyMCXProperties.Add("SimLineFastener")
-                |      
-                | 
-                |     Given a SimMCXProperties object, you can retrieve a SimLineFastener named
-                |     "Line Fastener.1" as following:
-                | 
-                |      Dim MyMCXProperties As SimMCXProperties
-                |      ...
-                |      Dim MyLineFastener As SimLineFastener
-                |      Set MyLineFastener = MyMCXProperties.Item("Line Fastener.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMCXProperties object myMCXProperties, you can create a
-                |     SimLineFastener as following:
-                | 
-                |      ...
-                |      myLineFastener = myMCXProperties.Add("SimLineFastener")
-                |      
-                | 
-                |     Given a SimMCXProperties object myMCXProperties, you can retrieve a
-                |     SimLineFastener named "Line Fastener.1" as following:
-                | 
-                |      ...
-                |      myLineFastener = myMCXProperties.Item("Line Fastener.1")
-                |      
-                | 
-                | See also:
-                |     SimMCXProperties
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimLineFastener
+                
+                Represents the Line Fastener object.
+                
+                Example:
+                    Given a SimMCXProperties object, you can create a SimLineFastener as
+                    following:
+                
+                     Dim MyMCXProperties As SimMCXProperties
+                     ...
+                     Dim MyLineFastener As SimLineFastener
+                     Set MyLineFastener = MyMCXProperties.Add("SimLineFastener")
+                     
+                
+                    Given a SimMCXProperties object, you can retrieve a SimLineFastener named
+                    "Line Fastener.1" as following:
+                
+                     Dim MyMCXProperties As SimMCXProperties
+                     ...
+                     Dim MyLineFastener As SimLineFastener
+                     Set MyLineFastener = MyMCXProperties.Item("Line Fastener.1")
+                     
+                
+                Example in Python:
+                    Given a SimMCXProperties object myMCXProperties, you can create a
+                    SimLineFastener as following:
+                
+                     ...
+                     myLineFastener = myMCXProperties.Add("SimLineFastener")
+                     
+                
+                    Given a SimMCXProperties object myMCXProperties, you can retrieve a
+                    SimLineFastener named "Line Fastener.1" as following:
+                
+                     ...
+                     myLineFastener = myMCXProperties.Item("Line Fastener.1")
+                     
+                
+                See also:
+                    SimMCXProperties
     
     """
 
@@ -75,11 +73,10 @@ class SimLineFastener(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the axis system used for point coordinates.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the axis system used for point coordinates.
 
         :return: SimAxisSystem
         """
@@ -90,11 +87,10 @@ class SimLineFastener(AnyObject):
     def construct_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ConstructType() As SimLineFastenerConstructType
-                |     Returns or sets the construct type.
+                Property ConstructType() As SimLineFastenerConstructType
+                    Returns or sets the construct type.
 
         :return: int
         """
@@ -113,11 +109,10 @@ class SimLineFastener(AnyObject):
     def coupling_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CouplingType() As SimCouplingCouplingType
-                |     Returns or sets the coupling type.
+                Property CouplingType() As SimCouplingCouplingType
+                    Returns or sets the coupling type.
 
         :return: int
         """
@@ -136,12 +131,11 @@ class SimLineFastener(AnyObject):
     def fastener_placement_method(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FastenerPlacementMethod() As
-                | SimLineFastenerPlacementFastenerPlacementMethod
-                |     Returns or sets the fastener placement method.
+                Property FastenerPlacementMethod() As
+                SimLineFastenerPlacementFastenerPlacementMethod
+                    Returns or sets the fastener placement method.
 
         :return: int
         """
@@ -160,12 +154,11 @@ class SimLineFastener(AnyObject):
     def height(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Height() As double
-                |     This parameter is used to fill the gap between connecting faces. Quantity:
-                |     LENGTH, units: m.
+                Property Height() As double
+                    This parameter is used to fill the gap between connecting faces. Quantity:
+                    LENGTH, units: m.
 
         :return: float
         """
@@ -184,12 +177,11 @@ class SimLineFastener(AnyObject):
     def maximum_angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumAngle() As double
-                |     Maximum angle between the fastener and the face normal of the connected
-                |     face. Quantity: ANGLE, units: Degrees.
+                Property MaximumAngle() As double
+                    Maximum angle between the fastener and the face normal of the connected
+                    face. Quantity: ANGLE, units: Degrees.
 
         :return: float
         """
@@ -208,13 +200,12 @@ class SimLineFastener(AnyObject):
     def maximum_projection_distance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumProjectionDistance() As double
-                |     Distance between the fastener placement points\\lines and the farthest
-                |     connected face. The faces at distance more than this limit will not be
-                |     considered for the fastener. Quantity: LENGTH, units: m.
+                Property MaximumProjectionDistance() As double
+                    Distance between the fastener placement points\\lines and the farthest
+                    connected face. The faces at distance more than this limit will not be
+                    considered for the fastener. Quantity: LENGTH, units: m.
 
         :return: float
         """
@@ -233,12 +224,11 @@ class SimLineFastener(AnyObject):
     def mesh_compatibility(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MeshCompatibility() As
-                | SimLineFastenerMeshCompatibility
-                |     Returns or sets the mesh compatibility type.
+                Property MeshCompatibility() As
+                SimLineFastenerMeshCompatibility
+                    Returns or sets the mesh compatibility type.
 
         :return: int
         """
@@ -257,11 +247,10 @@ class SimLineFastener(AnyObject):
     def number_of_point_coordinates(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfPointCoordinates() As long
-                |     Returns or sets the number of points through coordinates.
+                Property NumberOfPointCoordinates() As long
+                    Returns or sets the number of points through coordinates.
 
         :return: int
         """
@@ -280,11 +269,10 @@ class SimLineFastener(AnyObject):
     def points_coordinates(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PointsCoordinates() As CATSafeArrayVariant
-                |     Returns or sets a list of points coordinate (x1, y1, z1, x2, y2, z2, ...).
+                Property PointsCoordinates() As CATSafeArrayVariant
+                    Returns or sets a list of points coordinate (x1, y1, z1, x2, y2, z2, ...).
 
         :return: tuple
         """
@@ -303,12 +291,11 @@ class SimLineFastener(AnyObject):
     def spacing(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Spacing() As double
-                |     This parameter specifies the distance between connector mesh elements along
-                |     placement. Quantity: LENGTH, units: m.
+                Property Spacing() As double
+                    This parameter specifies the distance between connector mesh elements along
+                    placement. Quantity: LENGTH, units: m.
 
         :return: float
         """
@@ -327,36 +314,35 @@ class SimLineFastener(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. Possible values are:
-                | 
-                |         Abstractions
-                |         Amplitudes
-                |         Controls
-                |         Connections
-                |         Damping
-                |         ElementTypeAssignments
-                |         Envelopes
-                |         FieldPlots
-                |         FlowConditions
-                |         HistoryPlots
-                |         InitialConditions
-                |         Interactions
-                |         LinearLoadCases
-                |         Loads
-                |         LoadSets
-                |         OutputRequests
-                |         PredefinedFields
-                |         Properties
-                |         Restraints
-                |         Sensors
-                |         Streams
-                |         ThermalConditions
-                |         NotDefined
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. Possible values are:
+                
+                        Abstractions
+                        Amplitudes
+                        Controls
+                        Connections
+                        Damping
+                        ElementTypeAssignments
+                        Envelopes
+                        FieldPlots
+                        FlowConditions
+                        HistoryPlots
+                        InitialConditions
+                        Interactions
+                        LinearLoadCases
+                        Loads
+                        LoadSets
+                        OutputRequests
+                        PredefinedFields
+                        Properties
+                        Restraints
+                        Sensors
+                        Streams
+                        ThermalConditions
+                        NotDefined
 
         :return: str
         """
@@ -367,13 +353,12 @@ class SimLineFastener(AnyObject):
     def width(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Width() As double
-                |     Thickness of the single shell element for Shell construct. Quantity:
-                |     LENGTH, units: m. The diagonal size of the single hexahedral element for
-                |     SolidHex construct. Quantity: LENGTH, units: m. 
+                Property Width() As double
+                    Thickness of the single shell element for Shell construct. Quantity:
+                    LENGTH, units: m. The diagonal size of the single hexahedral element for
+                    SolidHex construct. Quantity: LENGTH, units: m. 
 
         :return: float
         """
@@ -389,4 +374,4 @@ class SimLineFastener(AnyObject):
         self.com_object.Width = value
 
     def __repr__(self):
-        return f'SimLineFastener(name="{ self.name }")'
+        return f'SimLineFastener(name="{self.name}")'

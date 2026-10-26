@@ -14,20 +14,19 @@ from pycatia3dx.plm_modeller_base.plm_entities import PLMEntities
 class PLMAppContext(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         PLMAppContext
-                | 
-                | Interface representing abstract service to manage Editors.
-                | This object can only be accessed through inherited objects.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        PLMAppContext
+                
+                Interface representing abstract service to manage Editors.
+                This object can only be accessed through inherited objects.
     
     """
 
@@ -39,11 +38,10 @@ class PLMAppContext(Service):
     def edited_content(self) -> PLMEntities:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property EditedContent() As PLMEntities (Read Only)
-                |     Returns Root entities of active Editor.
+                Property EditedContent() As PLMEntities (Read Only)
+                    Returns Root entities of active Editor.
 
         :return: PLMEntities
         """

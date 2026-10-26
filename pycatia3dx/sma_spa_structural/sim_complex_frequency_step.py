@@ -11,59 +11,57 @@ from pycatia3dx.sma_mpa_foundation.sim_step import SimStep
 
 
 class SimComplexFrequencyStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SMAMpaFoundationIDLItf.SimStep
-                |                         SimComplexFrequencyStep
-                | 
-                | Represents the Complex Frequency Step object.
-                | 
-                | Example:
-                |     Given a SimSteps object, you can create a SimComplexFrequencyStep as
-                |     following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyComplexFrequencyStep As SimComplexFrequencyStep
-                |      Set MyComplexFrequencyStep = MySteps.Add("SimComplexFrequencyStep")
-                |      
-                | 
-                |     Given a SimSteps object, you can retrieve a SimComplexFrequencyStep named
-                |     "Complex Frequency Step.1" as following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyComplexFrequencyStep As SimComplexFrequencyStep
-                |      Set MyComplexFrequencyStep = MySteps.Item("Complex Frequency Step.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimSteps object mySteps, you can create a SimComplexFrequencyStep
-                |     as following:
-                | 
-                |      ...
-                |      myComplexFrequencyStep = mySteps.Add("SimComplexFrequencyStep")
-                |      
-                | 
-                |     Given a SimSteps object mySteps, you can retrieve a SimComplexFrequencyStep
-                |     named "Complex Frequency Step.1" as following:
-                | 
-                |      ...
-                |      myComplexFrequencyStep = mySteps.Item("Complex Frequency Step.1")
-                |      
-                | 
-                | See also:
-                |     SimSteps
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SMAMpaFoundationIDLItf.SimStep
+                                        SimComplexFrequencyStep
+                
+                Represents the Complex Frequency Step object.
+                
+                Example:
+                    Given a SimSteps object, you can create a SimComplexFrequencyStep as
+                    following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyComplexFrequencyStep As SimComplexFrequencyStep
+                     Set MyComplexFrequencyStep = MySteps.Add("SimComplexFrequencyStep")
+                     
+                
+                    Given a SimSteps object, you can retrieve a SimComplexFrequencyStep named
+                    "Complex Frequency Step.1" as following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyComplexFrequencyStep As SimComplexFrequencyStep
+                     Set MyComplexFrequencyStep = MySteps.Item("Complex Frequency Step.1")
+                     
+                
+                Example in Python:
+                    Given a SimSteps object mySteps, you can create a SimComplexFrequencyStep
+                    as following:
+                
+                     ...
+                     myComplexFrequencyStep = mySteps.Add("SimComplexFrequencyStep")
+                     
+                
+                    Given a SimSteps object mySteps, you can retrieve a SimComplexFrequencyStep
+                    named "Complex Frequency Step.1" as following:
+                
+                     ...
+                     myComplexFrequencyStep = mySteps.Item("Complex Frequency Step.1")
+                     
+                
+                See also:
+                    SimSteps
     
     """
 
@@ -75,11 +73,10 @@ class SimComplexFrequencyStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -98,11 +95,10 @@ class SimComplexFrequencyStep(SimStep):
     def cutoff_frequency(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CutoffFrequency() As double
-                |     Returns or sets the cut off frequency. Quantity: HERTZ, units: Hz.
+                Property CutoffFrequency() As double
+                    Returns or sets the cut off frequency. Quantity: HERTZ, units: Hz.
 
         :return: float
         """
@@ -121,14 +117,13 @@ class SimComplexFrequencyStep(SimStep):
     def cutoff_frequency_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CutoffFrequencyFlag() As boolean
-                |     Returns or sets the flag that determines if the cut off frequency is
-                |     specified.
-                |     TRUE : the cut off frequency is specified.
-                |     FALSE : the cut off frequency is not specified.
+                Property CutoffFrequencyFlag() As boolean
+                    Returns or sets the flag that determines if the cut off frequency is
+                    specified.
+                    TRUE : the cut off frequency is specified.
+                    FALSE : the cut off frequency is not specified.
 
         :return: bool
         """
@@ -147,14 +142,13 @@ class SimComplexFrequencyStep(SimStep):
     def friction_damping_authorization_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FrictionDampingAuthorizationFlag() As boolean
-                |     Returns or sets the flag that determines if the friction-induced damping
-                |     option is used.
-                |     TRUE : the friction-induced damping option is used.
-                |     FALSE : the friction-induced damping option is not used.
+                Property FrictionDampingAuthorizationFlag() As boolean
+                    Returns or sets the flag that determines if the friction-induced damping
+                    option is used.
+                    TRUE : the friction-induced damping option is used.
+                    FALSE : the friction-induced damping option is not used.
 
         :return: bool
         """
@@ -173,11 +167,10 @@ class SimComplexFrequencyStep(SimStep):
     def matrix_storage_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MatrixStorageScheme() As SimMatrixStorageScheme
-                |     Returns or sets the type of the matrix storage for the static step.
+                Property MatrixStorageScheme() As SimMatrixStorageScheme
+                    Returns or sets the type of the matrix storage for the static step.
 
         :return: int
         """
@@ -196,11 +189,10 @@ class SimComplexFrequencyStep(SimStep):
     def maximum_frequency(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumFrequency() As double
-                |     Returns or sets the maximum frequency. Quantity: FREQUENCY, units: Hz.
+                Property MaximumFrequency() As double
+                    Returns or sets the maximum frequency. Quantity: FREQUENCY, units: Hz.
 
         :return: float
         """
@@ -219,14 +211,13 @@ class SimComplexFrequencyStep(SimStep):
     def maximum_frequency_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumFrequencyFlag() As boolean
-                |     Returns or sets the flag that determines if the maximum frequency is
-                |     specified.
-                |     TRUE : the maximum frequency is specified.
-                |     FALSE : the maximum frequency is not specified.
+                Property MaximumFrequencyFlag() As boolean
+                    Returns or sets the flag that determines if the maximum frequency is
+                    specified.
+                    TRUE : the maximum frequency is specified.
+                    FALSE : the maximum frequency is not specified.
 
         :return: bool
         """
@@ -245,11 +236,10 @@ class SimComplexFrequencyStep(SimStep):
     def minimum_frequency(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MinimumFrequency() As double
-                |     Returns or sets the minimum frequency. Quantity: FREQUENCY, units: Hz.
+                Property MinimumFrequency() As double
+                    Returns or sets the minimum frequency. Quantity: FREQUENCY, units: Hz.
 
         :return: float
         """
@@ -268,14 +258,13 @@ class SimComplexFrequencyStep(SimStep):
     def minimum_frequency_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MinimumFrequencyFlag() As boolean
-                |     Returns or sets the flag that determines if the minimum frequency is
-                |     specified.
-                |     TRUE : the minimum frequency is specified.
-                |     FALSE : the minimum frequency is not specified.
+                Property MinimumFrequencyFlag() As boolean
+                    Returns or sets the flag that determines if the minimum frequency is
+                    specified.
+                    TRUE : the minimum frequency is specified.
+                    FALSE : the minimum frequency is not specified.
 
         :return: bool
         """
@@ -294,11 +283,10 @@ class SimComplexFrequencyStep(SimStep):
     def number_of_modes(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfModes() As long
-                |     Returns or sets the number of modes.
+                Property NumberOfModes() As long
+                    Returns or sets the number of modes.
 
         :return: int
         """
@@ -317,11 +305,10 @@ class SimComplexFrequencyStep(SimStep):
     def property_evaluation(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PropertyEvaluation() As double
-                |     Returns or sets the property evaluation. Quantity: HERTZ, units: Hz.
+                Property PropertyEvaluation() As double
+                    Returns or sets the property evaluation. Quantity: HERTZ, units: Hz.
 
         :return: float
         """
@@ -340,14 +327,13 @@ class SimComplexFrequencyStep(SimStep):
     def property_evaluation_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PropertyEvaluationFlag() As boolean
-                |     Returns or sets the flag that determines if the property evaluation is
-                |     specified.
-                |     TRUE : the property evaluation is specified.
-                |     FALSE : the property evaluation is not specified.
+                Property PropertyEvaluationFlag() As boolean
+                    Returns or sets the flag that determines if the property evaluation is
+                    specified.
+                    TRUE : the property evaluation is specified.
+                    FALSE : the property evaluation is not specified.
 
         :return: bool
         """
@@ -366,11 +352,10 @@ class SimComplexFrequencyStep(SimStep):
     def shift_point(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ShiftPoint() As double
-                |     Returns or sets the shift point. Quantity: HERTZSQUARE, units: Hz2.
+                Property ShiftPoint() As double
+                    Returns or sets the shift point. Quantity: HERTZSQUARE, units: Hz2.
 
         :return: float
         """
@@ -389,14 +374,13 @@ class SimComplexFrequencyStep(SimStep):
     def shift_point_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ShiftPointFlag() As boolean
-                |     Returns or sets the flag that determines if the shift point is
-                |     specified.
-                |     TRUE : the shift point is specified.
-                |     FALSE : the shift point is not specified.
+                Property ShiftPointFlag() As boolean
+                    Returns or sets the flag that determines if the shift point is
+                    specified.
+                    TRUE : the shift point is specified.
+                    FALSE : the shift point is not specified.
 
         :return: bool
         """
@@ -415,16 +399,15 @@ class SimComplexFrequencyStep(SimStep):
     def specified_modes_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecifiedModesFlag() As boolean
-                |     Returns or sets the flag that determines if the number of eigenvalues to be
-                |     calculated is specified.
-                |     TRUE : the number of eigenvalues to be calculated is specified.
-                |     FALSE : all the eigenvalues from the minimum frequency of interest up to the maximum frequency of interest will be calculated. 
-                | 
-                | Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
+                Property SpecifiedModesFlag() As boolean
+                    Returns or sets the flag that determines if the number of eigenvalues to be
+                    calculated is specified.
+                    TRUE : the number of eigenvalues to be calculated is specified.
+                    FALSE : all the eigenvalues from the minimum frequency of interest up to the maximum frequency of interest will be calculated. 
+                
+                Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
 
         :return: bool
         """
@@ -440,4 +423,4 @@ class SimComplexFrequencyStep(SimStep):
         self.com_object.SpecifiedModesFlag = value
 
     def __repr__(self):
-        return f'SimComplexFrequencyStep(name="{ self.name }")'
+        return f'SimComplexFrequencyStep(name="{self.name}")'

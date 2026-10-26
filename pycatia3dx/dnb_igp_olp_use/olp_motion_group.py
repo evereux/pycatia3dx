@@ -13,26 +13,24 @@ from pycatia3dx.dnb_igp_olp_use.olp_controller import OLPController
 
 
 class OLPMotionGroup(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     OlpMotionGroup
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    OlpMotionGroup
                 |
-                | A motion group.
+                A motion group.
                 |
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | A motion group is a list of devices that have a single Cartesian or joint
-                | target in a robot motion.
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                A motion group is a list of devices that have a single Cartesian or joint
+                target in a robot motion.
 
     """
 
@@ -44,11 +42,10 @@ class OLPMotionGroup(AnyObject):
     def has_robot(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HasRobot() As boolean (Read Only)
-                |     Indicates if this motion group contains a robot.
+                Property HasRobot() As boolean (Read Only)
+                    Indicates if this motion group contains a robot.
 
         :return: bool
         """
@@ -59,14 +56,13 @@ class OLPMotionGroup(AnyObject):
     def index(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Index() As long (Read Only)
-                |     Get the motion group index.
-                |     In some robot languages an index is used to identify the motion group. If
-                |     the Index property is not set (IndexIsSet returns FALSE), then getting the
-                |     Index will fail.
+                Property Index() As long (Read Only)
+                    Get the motion group index.
+                    In some robot languages an index is used to identify the motion group. If
+                    the Index property is not set (IndexIsSet returns FALSE), then getting the
+                    Index will fail.
 
         :return: int
         """
@@ -77,12 +73,11 @@ class OLPMotionGroup(AnyObject):
     def index_set(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IndexSet() As boolean (Read Only)
-                |     Get whether an index is set for the motion group.
-                |     If not set, then getting the Index property will fail.
+                Property IndexSet() As boolean (Read Only)
+                    Get whether an index is set for the motion group.
+                    If not set, then getting the Index property will fail.
 
         :return: bool
         """
@@ -93,12 +88,11 @@ class OLPMotionGroup(AnyObject):
     def primary_device(self) -> OLPController:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PrimaryDevice() As OlpController (Read Only)
-                |     The main devices in the motion group.
-                |     If there is a robot in the motion group, this is the robot.
+                Property PrimaryDevice() As OlpController (Read Only)
+                    The main devices in the motion group.
+                    If there is a robot in the motion group, this is the robot.
 
         :return: OLPController
         """
@@ -108,20 +102,19 @@ class OLPMotionGroup(AnyObject):
     def get_devices(self, i_type: int) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetDevices(DELOlpDeviceType iType) As CATSafeArrayVariant
-                |     Retrieve devices from the motion group.
+                Func GetDevices(DELOlpDeviceType iType) As CATSafeArrayVariant
+                    Retrieve devices from the motion group.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iType
-                |             This filters the list of devices returned.
+                        iType
+                            This filters the list of devices returned.
                 |
-                |     Returns:
-                |         The list of devices. Each object in this array implements
-                |         OlpController.
+                    Returns:
+                        The list of devices. Each object in this array implements
+                        OlpController.
 
         :param int i_type:
         :return: tuple
@@ -129,4 +122,4 @@ class OLPMotionGroup(AnyObject):
         return self.com_object.GetDevices(i_type)
 
     def __repr__(self):
-        return f'OLPMotionGroup(name="{ self.name }")'
+        return f'OLPMotionGroup(name="{self.name}")'

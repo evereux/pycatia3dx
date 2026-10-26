@@ -12,44 +12,42 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimMathVector(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimMathVector
-                | 
-                | Represents the Math Vector object.
-                | 
-                | Example:
-                |     Given a SimMathAxis object with an attribute FirstDirection of type
-                |     SimMathVector, you can retrieve SimMathVector object as
-                |     following:
-                | 
-                |      Dim MyMathAxis As SimMathAxis
-                |      ...
-                |      Dim MyMathVector As SimMathVector
-                |      Set MyMathVector = MyMathAxis.FirstDirection
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMathAxis object with an attribute FirstDirection of type
-                |     SimMathVector, you can retrieve SimMathVector object as
-                |     following:
-                | 
-                |      ...
-                |      myMathVector = myMathAxis.FirstDirection
-                |      
-                | 
-                | See also:
-                |     SimMathAxis
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimMathVector
+                
+                Represents the Math Vector object.
+                
+                Example:
+                    Given a SimMathAxis object with an attribute FirstDirection of type
+                    SimMathVector, you can retrieve SimMathVector object as
+                    following:
+                
+                     Dim MyMathAxis As SimMathAxis
+                     ...
+                     Dim MyMathVector As SimMathVector
+                     Set MyMathVector = MyMathAxis.FirstDirection
+                     
+                
+                Example in Python:
+                    Given a SimMathAxis object with an attribute FirstDirection of type
+                    SimMathVector, you can retrieve SimMathVector object as
+                    following:
+                
+                     ...
+                     myMathVector = myMathAxis.FirstDirection
+                     
+                
+                See also:
+                    SimMathAxis
     
     """
 
@@ -61,11 +59,10 @@ class SimMathVector(AnyObject):
     def x(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property X() As double
-                |     Returns or sets the X value of the vector.
+                Property X() As double
+                    Returns or sets the X value of the vector.
 
         :return: float
         """
@@ -84,11 +81,10 @@ class SimMathVector(AnyObject):
     def y(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Y() As double
-                |     Returns or sets the Y value of the vector.
+                Property Y() As double
+                    Returns or sets the Y value of the vector.
 
         :return: float
         """
@@ -107,11 +103,10 @@ class SimMathVector(AnyObject):
     def z(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Z() As double
-                |     Returns or sets the Z value of the vector. 
+                Property Z() As double
+                    Returns or sets the Z value of the vector. 
 
         :return: float
         """
@@ -127,4 +122,4 @@ class SimMathVector(AnyObject):
         self.com_object.Z = value
 
     def __repr__(self):
-        return f'SimMathVector(name="{ self.name }")'
+        return f'SimMathVector(name="{self.name}")'

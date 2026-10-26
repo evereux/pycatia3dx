@@ -15,17 +15,16 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 class SimLinkAccess(CATBaseDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 SimLinkAccess
-                | 
-                | Represents the service to manage the feature links.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                SimLinkAccess
+                
+                Represents the service to manage the feature links.
     
     """
 
@@ -36,20 +35,19 @@ class SimLinkAccess(CATBaseDispatch):
     def add_link(self, i_name: str, i_link: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddLink(CATBSTR iName,AnyObject iLink)
-                |     Adds a link.
-                | 
-                |     Parameters:
-                | 
-                |         iName:
-                |             Name of the attribute will receive the built connector.
-                |             
-                |         iLink:
-                |             The link object that represent the link to store.
-                |             PLMProductService.ComposeLink
+                Sub AddLink(CATBSTR iName,AnyObject iLink)
+                    Adds a link.
+                
+                    Parameters:
+                
+                        iName:
+                            Name of the attribute will receive the built connector.
+                            
+                        iLink:
+                            The link object that represent the link to store.
+                            PLMProductService.ComposeLink
 
         :param str i_name:
         :param AnyObject i_link:
@@ -60,25 +58,24 @@ class SimLinkAccess(CATBaseDispatch):
     def add_link_with_context(self, i_attr_name: str, i_link: AnyObject, i_context: VPMOccurrence) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddLinkWithContext(CATBSTR iAttrName,AnyObject iLink,VPMOccurrence
-                | iContext)
-                |     Adds a link.
-                | 
-                |     Parameters:
-                | 
-                |         iName:
-                |             Name of the attribute will receive the built connector.
-                |             
-                |         iLink:
-                |             The link object that represent the link to store. 
-                |         iContext:
-                |             The context that will be concatenated with the support when the
-                |             created mesh part and the support are not in the same product
-                |             .
-                |             PLMProductService.ComposeLink
+                Sub AddLinkWithContext(CATBSTR iAttrName,AnyObject iLink,VPMOccurrence
+                iContext)
+                    Adds a link.
+                
+                    Parameters:
+                
+                        iName:
+                            Name of the attribute will receive the built connector.
+                            
+                        iLink:
+                            The link object that represent the link to store. 
+                        iContext:
+                            The context that will be concatenated with the support when the
+                            created mesh part and the support are not in the same product
+                            .
+                            PLMProductService.ComposeLink
 
         :param str i_attr_name:
         :param AnyObject i_link:
@@ -90,19 +87,18 @@ class SimLinkAccess(CATBaseDispatch):
     def get_all_links(self, i_name: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAllLinks(CATBSTR iName) As CATSafeArrayVariant
-                |     Gets all links.
-                | 
-                |     Parameters:
-                | 
-                |         iName:
-                |             Name of the attribute containing the links. 
-                | 
-                |     Returns:
-                |         The links
+                Func GetAllLinks(CATBSTR iName) As CATSafeArrayVariant
+                    Gets all links.
+                
+                    Parameters:
+                
+                        iName:
+                            Name of the attribute containing the links. 
+                
+                    Returns:
+                        The links
 
         :param str i_name:
         :return: tuple
@@ -112,19 +108,18 @@ class SimLinkAccess(CATBaseDispatch):
     def get_nb_links(self, i_name: str) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetNbLinks(CATBSTR iName) As long
-                |     Gets the number of links.
-                | 
-                |     Parameters:
-                | 
-                |         iName:
-                |             Name of the attribute containing the links. 
-                | 
-                |     Returns:
-                |         The number of links.
+                Func GetNbLinks(CATBSTR iName) As long
+                    Gets the number of links.
+                
+                    Parameters:
+                
+                        iName:
+                            Name of the attribute containing the links. 
+                
+                    Returns:
+                        The number of links.
 
         :param str i_name:
         :return: int
@@ -134,16 +129,15 @@ class SimLinkAccess(CATBaseDispatch):
     def remove_all_links(self, i_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveAllLinks(CATBSTR iName)
-                |     Removes all links.
-                | 
-                |     Parameters:
-                | 
-                |         iName:
-                |             Name of the attribute containing the links.
+                Sub RemoveAllLinks(CATBSTR iName)
+                    Removes all links.
+                
+                    Parameters:
+                
+                        iName:
+                            Name of the attribute containing the links.
 
         :param str i_name:
         :return: None
@@ -153,19 +147,18 @@ class SimLinkAccess(CATBaseDispatch):
     def remove_link(self, i_name: str, i_link: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveLink(CATBSTR iName,AnyObject iLink)
-                |     Removes a link.
-                | 
-                |     Parameters:
-                | 
-                |         iName:
-                |             Name of the attribute containing the links. 
-                |         iLink:
-                |             The link object that represent the link to remove.
-                |             PLMProductService.ComposeLink
+                Sub RemoveLink(CATBSTR iName,AnyObject iLink)
+                    Removes a link.
+                
+                    Parameters:
+                
+                        iName:
+                            Name of the attribute containing the links. 
+                        iLink:
+                            The link object that represent the link to remove.
+                            PLMProductService.ComposeLink
 
         :param str i_name:
         :param AnyObject i_link:

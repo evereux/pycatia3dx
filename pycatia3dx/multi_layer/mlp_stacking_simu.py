@@ -14,36 +14,35 @@ from pycatia3dx.system.any_object import AnyObject
 class MLPStackingSimu(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     MLPStackingSimu
-                | 
-                | CATIAMLPStackingSimu Role:Represents CATIAMLPStackingSimu that allow to query
-                | on the stacking.
-                | 
-                | Example:
-                |     This example illustrates how to call CATIAMLPStackingSimu interfaces .
-                |     
-                | 
-                |     'FIND THE STACKING
-                |         Set Stacking = myPart.FindObjectByName("Stacking")
-                |         Dim StackingSimu As MLPStackingSimu
-                |         Set StackingSimu = Stacking.GetItem("CATMLPVBStackingSimu")
-                |       
-                |     'CREATE MLP SERVICES
-                |         Dim StackingSimuService As MLPSimuLayerServices
-                |         Set StackingSimuService = Stacking.GetItem("CATMLPVBStackingSimu")
-                |         
-                |     'RETRIEVE THE LIST OF LAYERS
-                |         Dim listOfLayers As MLPSimuLayers
-                |         Set listOfLayers = StackingSimu.Layers
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    MLPStackingSimu
+                
+                CATIAMLPStackingSimu Role:Represents CATIAMLPStackingSimu that allow to query
+                on the stacking.
+                
+                Example:
+                    This example illustrates how to call CATIAMLPStackingSimu interfaces .
+                    
+                
+                    'FIND THE STACKING
+                        Set Stacking = myPart.FindObjectByName("Stacking")
+                        Dim StackingSimu As MLPStackingSimu
+                        Set StackingSimu = Stacking.GetItem("CATMLPVBStackingSimu")
+                      
+                    'CREATE MLP SERVICES
+                        Dim StackingSimuService As MLPSimuLayerServices
+                        Set StackingSimuService = Stacking.GetItem("CATMLPVBStackingSimu")
+                        
+                    'RETRIEVE THE LIST OF LAYERS
+                        Dim listOfLayers As MLPSimuLayers
+                        Set listOfLayers = StackingSimu.Layers
     
     """
 
@@ -55,16 +54,15 @@ class MLPStackingSimu(AnyObject):
     def layers(self) -> MLPSimuLayers:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Layers() As MLPSimuLayers (Read Only)
-                |     Returns the list of layers under the stacking.
-                | 
-                |     Parameters:
-                | 
-                |         oListOfLayers
-                |             List Of layers under the Stacking
+                Property Layers() As MLPSimuLayers (Read Only)
+                    Returns the list of layers under the stacking.
+                
+                    Parameters:
+                
+                        oListOfLayers
+                            List Of layers under the Stacking
 
         :return: MLPSimuLayers
         """
@@ -75,12 +73,11 @@ class MLPStackingSimu(AnyObject):
     def optimized_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OptimizedMode() As boolean
-                |     Returns or set the stacking performance mode (need to be true for
-                |     simulation).
+                Property OptimizedMode() As boolean
+                    Returns or set the stacking performance mode (need to be true for
+                    simulation).
 
         :return: bool
         """

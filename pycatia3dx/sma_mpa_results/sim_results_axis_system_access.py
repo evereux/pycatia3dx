@@ -13,40 +13,38 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 
 
 class SimResultsAxisSystemAccess(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimResultsAxisSystemAccess
-                | 
-                | Represents the class for setting the axis system as transfrom type for various
-                | features.
-                | Role:After creating the field plot or sensor, one can retrieve this
-                | object.
-                | Then set the axis object in the put_Axis method.
-                | Example:
-                | 
-                |  Given a sensor object, you can get this object as given below.
-                |  
-                | 
-                |  Dim oAxisSystemAccess As SimResultsAxisSystemAccess
-                |  Set oAxisSystemAccess = LocalSensor.GetItem("SimResultsAxisSystemAccess")
-                |  Dim oUserCsysSet As SimResultsSet
-                |  Set oUserCsysSet = ResultsAnalysisCase.GetSet("UserCsysSet")
-                |  Dim oUserCsys As CATBaseDispatch
-                |  Set oUserCsys = oUserCsysSet.Item(1)
-                |  oAxisSystemAccess.Axis = oUserCsys
-                |  
-                |  Similarly user can retrieve the model axis from the product and set it to the
-                |  plot/sensors.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimResultsAxisSystemAccess
+                
+                Represents the class for setting the axis system as transfrom type for various
+                features.
+                Role:After creating the field plot or sensor, one can retrieve this
+                object.
+                Then set the axis object in the put_Axis method.
+                Example:
+                
+                 Given a sensor object, you can get this object as given below.
+                 
+                
+                 Dim oAxisSystemAccess As SimResultsAxisSystemAccess
+                 Set oAxisSystemAccess = LocalSensor.GetItem("SimResultsAxisSystemAccess")
+                 Dim oUserCsysSet As SimResultsSet
+                 Set oUserCsysSet = ResultsAnalysisCase.GetSet("UserCsysSet")
+                 Dim oUserCsys As CATBaseDispatch
+                 Set oUserCsys = oUserCsysSet.Item(1)
+                 oAxisSystemAccess.Axis = oUserCsys
+                 
+                 Similarly user can retrieve the model axis from the product and set it to the
+                 plot/sensors.
     
     """
 
@@ -58,11 +56,10 @@ class SimResultsAxisSystemAccess(AnyObject):
     def axis(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Axis(CATBaseDispatch ispAxis) (Write Only)
-                |     Sets the axis in the specified feature.
+                Property Axis(CATBaseDispatch ispAxis) (Write Only)
+                    Sets the axis in the specified feature.
 
         :return: None
         """
@@ -78,4 +75,4 @@ class SimResultsAxisSystemAccess(AnyObject):
         self.com_object.Axis = value.com_object
 
     def __repr__(self):
-        return f'SimResultsAxisSystemAccess(name="{ self.name }")'
+        return f'SimResultsAxisSystemAccess(name="{self.name}")'

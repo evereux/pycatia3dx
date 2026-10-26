@@ -14,21 +14,20 @@ from pycatia3dx.interfaces.service import Service
 class DrawingGenService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         DrawingGenService
-                | 
-                | Interface representing the service to retrieve the generative view
-                | properties.
-                | Application.GetSessionService("CATDrawingGenService")
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        DrawingGenService
+                
+                Interface representing the service to retrieve the generative view
+                properties.
+                Application.GetSessionService("CATDrawingGenService")
     
     """
 
@@ -40,15 +39,14 @@ class DrawingGenService(Service):
     def drawing_gen_view_prop(self) -> DrawingGenViewProperties:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DrawingGenViewProp() As DrawingGenViewProperties (Read
-                | Only)
-                |     Returns a generative view properties.
-                |     Role: The generative view properties contains the whole of parameters
-                |     managing the generative view representation. The values are extracted from the
-                |     drawing settings.
+                Property DrawingGenViewProp() As DrawingGenViewProperties (Read
+                Only)
+                    Returns a generative view properties.
+                    Role: The generative view properties contains the whole of parameters
+                    managing the generative view representation. The values are extracted from the
+                    drawing settings.
 
         :return: DrawingGenViewProperties
         """
@@ -58,23 +56,22 @@ class DrawingGenService(Service):
     def check_view_link_integrity(self, i_info_on_view_links: tuple) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Func CheckViewLinkIntegrity(CATSafeArrayVariant iInfoOnViewLinks) As
-                | boolean
-                |     Checks the integrity of elements to be pointed by a generative
-                |     view
-                |     Role: This service tests the integrity of the information contained in the
-                |     list iInfoOnViewLinks: Checks if the elements will be pointed by the generative
-                |     view are referenced by the same product structure. Checks if the order of the
-                |     elements is respected when a link to a PartBody must be
-                |     created.
+                Func CheckViewLinkIntegrity(CATSafeArrayVariant iInfoOnViewLinks) As
+                boolean
+                    Checks the integrity of elements to be pointed by a generative
+                    view
+                    Role: This service tests the integrity of the information contained in the
+                    list iInfoOnViewLinks: Checks if the elements will be pointed by the generative
+                    view are referenced by the same product structure. Checks if the order of the
+                    elements is respected when a link to a PartBody must be
+                    created.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iInfoOnViewLinks
-                |             The List of links to check.
+                        iInfoOnViewLinks
+                            The List of links to check.
 
         :param tuple i_info_on_view_links:
         :return: bool

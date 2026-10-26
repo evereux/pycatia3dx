@@ -16,20 +16,19 @@ from pycatia3dx.system.collection import Collection
 class Folders(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     Folders
-                | 
-                | The folders object belongs to a folder.
-                | It lists all the folders contained in the folder. It allows to retrieve Folder
-                | objects.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    Folders
+                
+                The folders object belongs to a folder.
+                It lists all the folders contained in the folder. It allows to retrieve Folder
+                objects.
     
     """
 
@@ -40,33 +39,32 @@ class Folders(Collection):
     def item(self, i_number: int) -> Folder:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Func Item(long iNumber) As Folder
-                |     Returns a folder using its index or its name from the folder
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or the name of the folder to retrieve from the collection
-                |             of folders. As a numerics, this index is the rank of the folder in the
-                |             collection. The index of the first folder in the collection is 1, and the index
-                |             of the last folder is Count. As a string, it is the name you assigned to the
-                |             folder using the AnyObject.Name property. 
-                | 
-                |     Returns:
-                |         The retrieved folder 
-                |     Example:
-                |         This example retrieves in ThisFolder the third folder, and it
-                |         ThatFolder the folder named MyFolder. in the TestFolders folder
-                |         collection.
-                | 
-                |          Dim ThisFolder As Folder
-                |          Set ThisFolder = TestFolders.Item(3)
-                |          Dim ThatFolder As Folder
-                |          Set ThatFolder = TestFolders.Item("MyFolder")
+                Func Item(long iNumber) As Folder
+                    Returns a folder using its index or its name from the folder
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index or the name of the folder to retrieve from the collection
+                            of folders. As a numerics, this index is the rank of the folder in the
+                            collection. The index of the first folder in the collection is 1, and the index
+                            of the last folder is Count. As a string, it is the name you assigned to the
+                            folder using the AnyObject.Name property. 
+                
+                    Returns:
+                        The retrieved folder 
+                    Example:
+                        This example retrieves in ThisFolder the third folder, and it
+                        ThatFolder the folder named MyFolder. in the TestFolders folder
+                        collection.
+                
+                         Dim ThisFolder As Folder
+                         Set ThisFolder = TestFolders.Item(3)
+                         Dim ThatFolder As Folder
+                         Set ThatFolder = TestFolders.Item("MyFolder")
 
         :param int i_number:
         :return: Folder

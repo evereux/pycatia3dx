@@ -17,38 +17,36 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeSpiral(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeSpiral
-                | 
-                | Represents the hybrid shape Spiral feature object.
-                | Role: Allows to access data of the Spiral feature. This data
-                | includes:
-                | 
-                |     type
-                |     support
-                |     centre point
-                |     axis
-                |     starting radius
-                |     orientation
-                |     ending angle
-                |     ending radius
-                |     revolution
-                |     pitch
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeSpiral
+                
+                Represents the hybrid shape Spiral feature object.
+                Role: Allows to access data of the Spiral feature. This data
+                includes:
+                
+                    type
+                    support
+                    centre point
+                    axis
+                    starting radius
+                    orientation
+                    ending angle
+                    ending radius
+                    revolution
+                    pitch
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -60,11 +58,10 @@ class HybridShapeSpiral(HybridShape):
     def axis(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Axis() As HybridShapeDirection
-                |     Reads / Changes the Spiral axis (Reference direction).
+                Property Axis() As HybridShapeDirection
+                    Reads / Changes the Spiral axis (Reference direction).
 
         :return: HybridShapeDirection
         """
@@ -83,11 +80,10 @@ class HybridShapeSpiral(HybridShape):
     def center_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property CenterPoint() As Reference
-                |     Reads / Changes the center point of the Spiral.
+                Property CenterPoint() As Reference
+                    Reads / Changes the center point of the Spiral.
 
         :return: Reference
         """
@@ -106,13 +102,12 @@ class HybridShapeSpiral(HybridShape):
     def clockwise_revolution(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ClockwiseRevolution() As boolean
-                |     Reads / Modifies the sense of revolutions .
-                |     FALSE means that revolutions are counter-clockwise.
-                |     TRUE means that revolutions are clockwise.
+                Property ClockwiseRevolution() As boolean
+                    Reads / Modifies the sense of revolutions .
+                    FALSE means that revolutions are counter-clockwise.
+                    TRUE means that revolutions are clockwise.
 
         :return: bool
         """
@@ -131,11 +126,10 @@ class HybridShapeSpiral(HybridShape):
     def ending_angle(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property EndingAngle() As Angle
-                |     Reads / Changes the Ending Angle of the Spiral.
+                Property EndingAngle() As Angle
+                    Reads / Changes the Ending Angle of the Spiral.
 
         :return: Angle
         """
@@ -154,11 +148,10 @@ class HybridShapeSpiral(HybridShape):
     def ending_radius(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property EndingRadius() As Length
-                |     Reads / Changes the ending radius of the Spiral.
+                Property EndingRadius() As Length
+                    Reads / Changes the ending radius of the Spiral.
 
         :return: Length
         """
@@ -177,14 +170,13 @@ class HybridShapeSpiral(HybridShape):
     def invert_axis(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property InvertAxis() As boolean
-                |     Reads / Modifies the orientation .
-                |     FALSE means that there is no invertion (natural
-                |     orientation).
-                |     TRUE to invert this orientation.
+                Property InvertAxis() As boolean
+                    Reads / Modifies the orientation .
+                    FALSE means that there is no invertion (natural
+                    orientation).
+                    TRUE to invert this orientation.
 
         :return: bool
         """
@@ -203,11 +195,10 @@ class HybridShapeSpiral(HybridShape):
     def pitch(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Pitch() As Length
-                |     Reads / Changes the pitch of the Spiral.
+                Property Pitch() As Length
+                    Reads / Changes the pitch of the Spiral.
 
         :return: Length
         """
@@ -226,11 +217,10 @@ class HybridShapeSpiral(HybridShape):
     def revol_number(self) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property RevolNumber() As RealParam
-                |     Reads / Changes the revolution number of the Spiral.
+                Property RevolNumber() As RealParam
+                    Reads / Changes the revolution number of the Spiral.
 
         :return: RealParam
         """
@@ -249,11 +239,10 @@ class HybridShapeSpiral(HybridShape):
     def starting_radius(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property StartingRadius() As Length
-                |     Reads / Changes the starting radius of the Spiral.
+                Property StartingRadius() As Length
+                    Reads / Changes the starting radius of the Spiral.
 
         :return: Length
         """
@@ -272,11 +261,10 @@ class HybridShapeSpiral(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Support() As Reference
-                |     Reads / Changes the spiral plane support.
+                Property Support() As Reference
+                    Reads / Changes the spiral plane support.
 
         :return: Reference
         """
@@ -295,11 +283,10 @@ class HybridShapeSpiral(HybridShape):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Type() As long
-                |     Reads / Changes the spiral type.
+                Property Type() As long
+                    Reads / Changes the spiral type.
 
         :return: int
         """
@@ -317,12 +304,11 @@ class HybridShapeSpiral(HybridShape):
     def set_angle_pitch_param(self, i_end_angle: float, i_revol_number: float, i_pitch: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetAnglePitchParam(double iEndAngle,double iRevolNumber,double
-                | iPitch)
-                |     Sets Angle pitch parameter.
+                Sub SetAnglePitchParam(double iEndAngle,double iRevolNumber,double
+                iPitch)
+                    Sets Angle pitch parameter.
 
         :param float i_end_angle:
         :param float i_revol_number:
@@ -334,12 +320,11 @@ class HybridShapeSpiral(HybridShape):
     def set_angle_radius_param(self, i_end_angle: float, i_revol_number: float, i_end_radius: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetAngleRadiusParam(double iEndAngle,double iRevolNumber,double
-                | iEndRadius)
-                |     Sets Angle radius parameters.
+                Sub SetAngleRadiusParam(double iEndAngle,double iRevolNumber,double
+                iEndRadius)
+                    Sets Angle radius parameters.
 
         :param float i_end_angle:
         :param float i_revol_number:
@@ -351,11 +336,10 @@ class HybridShapeSpiral(HybridShape):
     def set_radius_pitch_param(self, i_end_radius: float, i_pitch: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetRadiusPitchParam(double iEndRadius,double iPitch)
-                |     Sets Radius pitch parameter.
+                Sub SetRadiusPitchParam(double iEndRadius,double iPitch)
+                    Sets Radius pitch parameter.
 
         :param float i_end_radius:
         :param float i_pitch:
@@ -364,4 +348,4 @@ class HybridShapeSpiral(HybridShape):
         return self.com_object.SetRadiusPitchParam(i_end_radius, i_pitch)
 
     def __repr__(self):
-        return f'HybridShapeSpiral(name="{ self.name }")'
+        return f'HybridShapeSpiral(name="{self.name}")'

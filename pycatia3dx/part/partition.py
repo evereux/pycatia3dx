@@ -13,25 +13,23 @@ from pycatia3dx.part.surface_based_shape import SurfaceBasedShape
 
 
 class Partition(SurfaceBasedShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.SurfaceBasedShape
-                |                             Partition
-                | 
-                | Represents the partition operation.
-                | It create a partitioned body using a cutting element, such as a surface, a face
-                | or a plane.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.SurfaceBasedShape
+                                            Partition
+                
+                Represents the partition operation.
+                It create a partitioned body using a cutting element, such as a surface, a face
+                or a plane.
     
     """
 
@@ -43,12 +41,11 @@ class Partition(SurfaceBasedShape):
     def auto_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AutoMode() As boolean
-                |     Returns or sets the Automatic Partition Mode.
-                |     True if the automatic mode is active
+                Property AutoMode() As boolean
+                    Returns or sets the Automatic Partition Mode.
+                    True if the automatic mode is active
 
         :return: bool
         """
@@ -67,19 +64,18 @@ class Partition(SurfaceBasedShape):
     def limit_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LimitType() As CatPartitionLimitType
-                |     Returns or sets the Limit Type . The limiting type is the mode of cutting element extrapolation The limitation type of partition : None, Infinite, Up to next
-                | 
-                |     Example:
-                |         The following example returns in limitType the limit type of the
-                |         partition myPartition, and then sets it to
-                |         CatPartitionLimit_None:
-                | 
-                |          Set limitType = myPartition.LimitType
-                |          myPartition.LimitType = CatPartitionLimit_None
+                Property LimitType() As CatPartitionLimitType
+                    Returns or sets the Limit Type . The limiting type is the mode of cutting element extrapolation The limitation type of partition : None, Infinite, Up to next
+                
+                    Example:
+                        The following example returns in limitType the limit type of the
+                        partition myPartition, and then sets it to
+                        CatPartitionLimit_None:
+                
+                         Set limitType = myPartition.LimitType
+                         myPartition.LimitType = CatPartitionLimit_None
 
         :return: CatPartitionLimitType
         """
@@ -98,11 +94,10 @@ class Partition(SurfaceBasedShape):
     def volume(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Volume() As Reference
-                |     Returns or sets the volume to partition. 
+                Property Volume() As Reference
+                    Returns or sets the volume to partition. 
 
         :return: Reference
         """
@@ -118,4 +113,4 @@ class Partition(SurfaceBasedShape):
         self.com_object.Volume = value
 
     def __repr__(self):
-        return f'Partition(name="{ self.name }")'
+        return f'Partition(name="{self.name}")'

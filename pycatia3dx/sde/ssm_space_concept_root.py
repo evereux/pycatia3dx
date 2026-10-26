@@ -13,21 +13,19 @@ from pycatia3dx.sde.ssm_space_concept_nodes import SsmSpaceConceptNodes
 
 
 class SsmSpaceConceptRoot(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SsmSpaceConceptRoot
-                | 
-                | Role: This interface is specific to Space concept root
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SsmSpaceConceptRoot
+                
+                Role: This interface is specific to Space concept root
     
     """
 
@@ -39,17 +37,16 @@ class SsmSpaceConceptRoot(AnyObject):
     def space_concept_nodes(self) -> SsmSpaceConceptNodes:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpaceConceptNodes() As SsmSpaceConceptNodes (Read
-                | Only)
-                |     Gets space concept nodes present in it
-                | 
-                |     Parameters:
-                | 
-                |         olSpaceConceptNode
-                |             List of Space concept nodes. 
+                Property SpaceConceptNodes() As SsmSpaceConceptNodes (Read
+                Only)
+                    Gets space concept nodes present in it
+                
+                    Parameters:
+                
+                        olSpaceConceptNode
+                            List of Space concept nodes. 
 
         :return: SsmSpaceConceptNodes
         """
@@ -57,4 +54,4 @@ class SsmSpaceConceptRoot(AnyObject):
         return SsmSpaceConceptNodes(self.com_object.SpaceConceptNodes)
 
     def __repr__(self):
-        return f'SsmSpaceConceptRoot(name="{ self.name }")'
+        return f'SsmSpaceConceptRoot(name="{self.name}")'

@@ -15,17 +15,16 @@ from pycatia3dx.system.any_object import AnyObject
 class PCBService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         PCBService
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        PCBService
 
     
     """
@@ -37,24 +36,23 @@ class PCBService(Service):
     def create_board(self, i_root: AnyObject) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateBoard(CATBaseDispatch iRoot) As CATBaseDispatch
-                |     Creates a Board.
-                | 
-                |     Parameters:
-                | 
-                |         iRoot
-                |             Root product of the Part to extend 
-                |         oBoard
-                |             The board created 
-                | 
-                |     Returns:
-                | 
-                |             The result of the method:
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Func CreateBoard(CATBaseDispatch iRoot) As CATBaseDispatch
+                    Creates a Board.
+                
+                    Parameters:
+                
+                        iRoot
+                            Root product of the Part to extend 
+                        oBoard
+                            The board created 
+                
+                    Returns:
+                
+                            The result of the method:
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :param AnyObject i_root:
         :return: AnyObject
@@ -65,34 +63,33 @@ class PCBService(Service):
                          i_elec_type: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateComponent(CATBaseDispatch iRoot,Part iPart,CATBSTR
-                | iElecPackageNumber,CATBSTR iElecPartNumber,CATBSTR iElecType) As
-                | CATBaseDispatch
-                |     Creates a Component.
-                | 
-                |     Parameters:
-                | 
-                |         iRoot
-                |             Root product of the Part to extend 
-                |         iElecPackageNumber
-                |             The package number used to valuate the component attribute
-                |             
-                |         iElecPartNumber
-                |             The part number used to valuate the part number of the component
-                |             
-                |         iElecType
-                |             The Type of the component to create : ELECTRICAL or MECHANICAL 
-                |         oComponent
-                |             The Component created 
-                | 
-                |     Returns:
-                | 
-                |             The result of the method:
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Func CreateComponent(CATBaseDispatch iRoot,Part iPart,CATBSTR
+                iElecPackageNumber,CATBSTR iElecPartNumber,CATBSTR iElecType) As
+                CATBaseDispatch
+                    Creates a Component.
+                
+                    Parameters:
+                
+                        iRoot
+                            Root product of the Part to extend 
+                        iElecPackageNumber
+                            The package number used to valuate the component attribute
+                            
+                        iElecPartNumber
+                            The part number used to valuate the part number of the component
+                            
+                        iElecType
+                            The Type of the component to create : ELECTRICAL or MECHANICAL 
+                        oComponent
+                            The Component created 
+                
+                    Returns:
+                
+                            The result of the method:
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :param AnyObject i_root:
         :param Part i_part:
@@ -107,24 +104,23 @@ class PCBService(Service):
     def create_panel(self, i_root: AnyObject) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreatePanel(CATBaseDispatch iRoot) As CATBaseDispatch
-                |     Creates a panel.
-                | 
-                |     Parameters:
-                | 
-                |         iRoot
-                |             Root product of the Part to extend 
-                |         oPanel
-                |             The panel created 
-                | 
-                |     Returns:
-                | 
-                |             The result of the method:
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Func CreatePanel(CATBaseDispatch iRoot) As CATBaseDispatch
+                    Creates a panel.
+                
+                    Parameters:
+                
+                        iRoot
+                            Root product of the Part to extend 
+                        oPanel
+                            The panel created 
+                
+                    Returns:
+                
+                            The result of the method:
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :param AnyObject i_root:
         :return: AnyObject
@@ -134,21 +130,20 @@ class PCBService(Service):
     def get_pcb_object(self, i_part: Part) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetPCBObject(Part iPart) As CATBaseDispatch
-                |     Gets the Board or Component from the CATIAPart.
-                | 
-                |     Parameters:
-                | 
-                |         iPart
-                |             The Mechanical Part 
-                |         oPCBObject
-                |             The corresponding PCB objet (PCBBoard or PCBComponent). The result
-                |             of the method:
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Func GetPCBObject(Part iPart) As CATBaseDispatch
+                    Gets the Board or Component from the CATIAPart.
+                
+                    Parameters:
+                
+                        iPart
+                            The Mechanical Part 
+                        oPCBObject
+                            The corresponding PCB objet (PCBBoard or PCBComponent). The result
+                            of the method:
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :param Part i_part:
         :return: AnyObject
@@ -158,24 +153,23 @@ class PCBService(Service):
     def get_parent_product(self, i_part: Part) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetParentProduct(Part iPart) As CATBaseDispatch
-                |     Gets the product aggregating the Part.
-                | 
-                |     Parameters:
-                | 
-                |         iPart
-                |             The Mechanical Part 
-                |         oRoot
-                |             The product aggregating the Part 
-                | 
-                |     Returns:
-                | 
-                |             The result of the method:
-                |             S_OK if succeeded
-                |             E_FAIL if failed 
+                Func GetParentProduct(Part iPart) As CATBaseDispatch
+                    Gets the product aggregating the Part.
+                
+                    Parameters:
+                
+                        iPart
+                            The Mechanical Part 
+                        oRoot
+                            The product aggregating the Part 
+                
+                    Returns:
+                
+                            The result of the method:
+                            S_OK if succeeded
+                            E_FAIL if failed 
 
         :param Part i_part:
         :return: AnyObject

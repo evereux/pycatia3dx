@@ -13,25 +13,23 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapePlaneOffsetPt(Plane):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.Plane
-                |                             HybridShapePlaneOffsetPt
-                | 
-                | Offset plane with point reference.
-                | Role: Allows to access data of the plane feature parallel to another plane and
-                | passing through a Point.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.Plane
+                                            HybridShapePlaneOffsetPt
+                
+                Offset plane with point reference.
+                Role: Allows to access data of the plane feature parallel to another plane and
+                passing through a Point.
     
     """
 
@@ -43,24 +41,23 @@ class HybridShapePlaneOffsetPt(Plane):
     def plane(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Plane() As Reference
-                |     Role: Get the reference plane.
-                | 
-                |     Parameters:
-                | 
-                |         oPlane
-                |             reference Plane. 
-                | 
-                |     See also:
-                |         Reference
-                |     Returns:
-                |         HRESULT S_OK if Ok E_FAIL else return error code for C++
-                |         Implementations 
-                |     See also:
-                |         HybridShapeFactory
+                Property Plane() As Reference
+                    Role: Get the reference plane.
+                
+                    Parameters:
+                
+                        oPlane
+                            reference Plane. 
+                
+                    See also:
+                        Reference
+                    Returns:
+                        HRESULT S_OK if Ok E_FAIL else return error code for C++
+                        Implementations 
+                    See also:
+                        HybridShapeFactory
 
         :return: Reference
         """
@@ -79,24 +76,23 @@ class HybridShapePlaneOffsetPt(Plane):
     def point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Point() As Reference
-                |     Role: Get the reference point.
-                | 
-                |     Parameters:
-                | 
-                |         oPoint
-                |             reference point. 
-                | 
-                |     See also:
-                |         Reference
-                |     Returns:
-                |         HRESULT S_OK if Ok E_FAIL else return error code for C++
-                |         Implementations 
-                |     See also:
-                |         HybridShapeFactory
+                Property Point() As Reference
+                    Role: Get the reference point.
+                
+                    Parameters:
+                
+                        oPoint
+                            reference point. 
+                
+                    See also:
+                        Reference
+                    Returns:
+                        HRESULT S_OK if Ok E_FAIL else return error code for C++
+                        Implementations 
+                    See also:
+                        HybridShapeFactory
 
         :return: Reference
         """
@@ -112,4 +108,4 @@ class HybridShapePlaneOffsetPt(Plane):
         self.com_object.Point = value
 
     def __repr__(self):
-        return f'HybridShapePlaneOffsetPt(name="{ self.name }")'
+        return f'HybridShapePlaneOffsetPt(name="{self.name}")'

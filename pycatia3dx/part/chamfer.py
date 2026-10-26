@@ -16,26 +16,24 @@ from pycatia3dx.part.dress_up_shape import DressUpShape
 
 
 class Chamfer(DressUpShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.DressUpShape
-                |                             Chamfer
-                | 
-                | Represents the chamfer shape.
-                | A chamfer is made up of a list of geometrical elements to process, such as
-                | faces, and is defined using a couple of parameters, such as two lengthes, or a
-                | length and an angle.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.DressUpShape
+                                            Chamfer
+                
+                Represents the chamfer shape.
+                A chamfer is made up of a list of geometrical elements to process, such as
+                faces, and is defined using a couple of parameters, such as two lengthes, or a
+                length and an angle.
     
     """
 
@@ -47,19 +45,18 @@ class Chamfer(DressUpShape):
     def angle(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Angle() As Angle (Read Only)
-                |     Returns the chamfer angle. This is valid only if the chamfer is defined
-                |     using a length and an angle, that is if the chamfer definition mode
-                |     CatChamferMode is set to catLengthAngleChamfer.
-                | 
-                |     Example:
-                |         The following example returns in angle the angle of the firstChamfer
-                |         chamfer:
-                | 
-                |          Set angle = firstChamfer.Angle
+                Property Angle() As Angle (Read Only)
+                    Returns the chamfer angle. This is valid only if the chamfer is defined
+                    using a length and an angle, that is if the chamfer definition mode
+                    CatChamferMode is set to catLengthAngleChamfer.
+                
+                    Example:
+                        The following example returns in angle the angle of the firstChamfer
+                        chamfer:
+                
+                         Set angle = firstChamfer.Angle
 
         :return: Angle
         """
@@ -70,18 +67,17 @@ class Chamfer(DressUpShape):
     def elements_to_chamfer(self) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ElementsToChamfer() As References (Read Only)
-                |     Returns the collection of geometrical elements to be
-                |     chamfered.
-                | 
-                |     Example:
-                |         The following example returns in list the list of elements of the
-                |         firstChamfer chamfer:
-                | 
-                |          Set list = firstChamfer.ElementsToChamfer
+                Property ElementsToChamfer() As References (Read Only)
+                    Returns the collection of geometrical elements to be
+                    chamfered.
+                
+                    Example:
+                        The following example returns in list the list of elements of the
+                        firstChamfer chamfer:
+                
+                         Set list = firstChamfer.ElementsToChamfer
 
         :return: References
         """
@@ -92,19 +88,18 @@ class Chamfer(DressUpShape):
     def length1(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Length1() As Length (Read Only)
-                |     Returns the chamfer first length. This is the first length if the chamfer
-                |     is defined by two lengthes, or the chamfer if the chamfer is defined by a
-                |     length and an angle.
-                | 
-                |     Example:
-                |         The following example returns in length1 the first length of the
-                |         firstChamfer chamfer:
-                | 
-                |          Set length1 = firstChamfer.Length1
+                Property Length1() As Length (Read Only)
+                    Returns the chamfer first length. This is the first length if the chamfer
+                    is defined by two lengthes, or the chamfer if the chamfer is defined by a
+                    length and an angle.
+                
+                    Example:
+                        The following example returns in length1 the first length of the
+                        firstChamfer chamfer:
+                
+                         Set length1 = firstChamfer.Length1
 
         :return: Length
         """
@@ -115,19 +110,18 @@ class Chamfer(DressUpShape):
     def length2(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Length2() As Length (Read Only)
-                |     Returns the chamfer second length. This is valid only if the chamfer is
-                |     defined using two lengthes, that is if the chamfer definition mode
-                |     CatChamferMode is set to catTwoLengthChamfer.
-                | 
-                |     Example:
-                |         The following example returns in length2 the second length of the
-                |         firstChamfer chamfer:
-                | 
-                |          Set length2 = firstChamfer.Length2
+                Property Length2() As Length (Read Only)
+                    Returns the chamfer second length. This is valid only if the chamfer is
+                    defined using two lengthes, that is if the chamfer definition mode
+                    CatChamferMode is set to catTwoLengthChamfer.
+                
+                    Example:
+                        The following example returns in length2 the second length of the
+                        firstChamfer chamfer:
+                
+                         Set length2 = firstChamfer.Length2
 
         :return: Length
         """
@@ -138,21 +132,20 @@ class Chamfer(DressUpShape):
     def mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Mode() As CatChamferMode
-                |     Returns or sets the chamfer definition mode. The chamfer definition mode
-                |     enables the chamfer to be defined using either two lengthes or a length and an
-                |     angle.
-                | 
-                |     Example:
-                |         The following example returns in mode how the parameters of the
-                |         firstChamfer chamfer are defined, and then sets it to
-                |         catTwoLengthChamfer:
-                | 
-                |          Set mode = firstChamfer.Mode
-                |          firstChamfer.Mode = catTwoLengthChamfer
+                Property Mode() As CatChamferMode
+                    Returns or sets the chamfer definition mode. The chamfer definition mode
+                    enables the chamfer to be defined using either two lengthes or a length and an
+                    angle.
+                
+                    Example:
+                        The following example returns in mode how the parameters of the
+                        firstChamfer chamfer are defined, and then sets it to
+                        catTwoLengthChamfer:
+                
+                         Set mode = firstChamfer.Mode
+                         firstChamfer.Mode = catTwoLengthChamfer
 
         :return: CatChamferMode
         """
@@ -171,19 +164,18 @@ class Chamfer(DressUpShape):
     def orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Orientation() As CatChamferOrientation
-                |     Returns or sets the chamfer orientation.
-                | 
-                |     Example:
-                |         The following example returns in orient the orientation mode of the
-                |         firstChamfer chamfer, and then sets it to
-                |         catReverseChamfer:
-                | 
-                |          Set orient = firstChamfer.Orientation
-                |          firstChamfer.Orientation = catReverseChamfer
+                Property Orientation() As CatChamferOrientation
+                    Returns or sets the chamfer orientation.
+                
+                    Example:
+                        The following example returns in orient the orientation mode of the
+                        firstChamfer chamfer, and then sets it to
+                        catReverseChamfer:
+                
+                         Set orient = firstChamfer.Orientation
+                         firstChamfer.Orientation = catReverseChamfer
 
         :return: CatChamferOrientation
         """
@@ -202,20 +194,19 @@ class Chamfer(DressUpShape):
     def propagation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Propagation() As CatChamferPropagation
-                |     Returns or sets the propagation mode of the geometrical elements to be
-                |     chamfered.
-                | 
-                |     Example:
-                |         The following example returns in prop the propagation mode of the
-                |         firstChamfer chamfer, and then sets it to
-                |         catMinimalChamfer:
-                | 
-                |          Set prop = firstChamfer.Propagation
-                |          firstChamfer.Propagation = catMinimalChamfer
+                Property Propagation() As CatChamferPropagation
+                    Returns or sets the propagation mode of the geometrical elements to be
+                    chamfered.
+                
+                    Example:
+                        The following example returns in prop the propagation mode of the
+                        firstChamfer chamfer, and then sets it to
+                        catMinimalChamfer:
+                
+                         Set prop = firstChamfer.Propagation
+                         firstChamfer.Propagation = catMinimalChamfer
 
         :return: CatChamferPropagation
         """
@@ -233,24 +224,23 @@ class Chamfer(DressUpShape):
     def add_element_to_chamfer(self, i_element_to_chamfer: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddElementToChamfer(Reference iElementToChamfer)
-                |     Adds a new geometrical element to be chamfered.
-                | 
-                |     Parameters:
-                | 
-                |         iElementToChamfer
-                |             The new element to be chamfered
-                |             The following Boundary object is supported: TriDimFeatEdge.
-                |             
-                | 
-                |     Example:
-                |         The following example adds the new element element to be chamfered for
-                |         the firstChamfer chamfer:
-                | 
-                |          firstChamfer.AddElementToChamfer(element)
+                Sub AddElementToChamfer(Reference iElementToChamfer)
+                    Adds a new geometrical element to be chamfered.
+                
+                    Parameters:
+                
+                        iElementToChamfer
+                            The new element to be chamfered
+                            The following Boundary object is supported: TriDimFeatEdge.
+                            
+                
+                    Example:
+                        The following example adds the new element element to be chamfered for
+                        the firstChamfer chamfer:
+                
+                         firstChamfer.AddElementToChamfer(element)
 
         :param Reference i_element_to_chamfer:
         :return: None
@@ -260,25 +250,24 @@ class Chamfer(DressUpShape):
     def withdraw_element_to_chamfer(self, i_element_to_withdraw: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub WithdrawElementToChamfer(Reference iElementToWithdraw)
-                |     Withdraws a geometrical element from those to be
-                |     chamfered.
-                | 
-                |     Parameters:
-                | 
-                |         iElementToWithdraw
-                |             The existing element to withdraw
-                |             The following Boundary object is supported: TriDimFeatEdge.
-                |             
-                | 
-                |     Example:
-                |         The following example withdraws an existing element element to be
-                |         chamfered from the firstChamfer chamfer:
-                | 
-                |          firstChamfer.WithdrawElementToChamfer(element)
+                Sub WithdrawElementToChamfer(Reference iElementToWithdraw)
+                    Withdraws a geometrical element from those to be
+                    chamfered.
+                
+                    Parameters:
+                
+                        iElementToWithdraw
+                            The existing element to withdraw
+                            The following Boundary object is supported: TriDimFeatEdge.
+                            
+                
+                    Example:
+                        The following example withdraws an existing element element to be
+                        chamfered from the firstChamfer chamfer:
+                
+                         firstChamfer.WithdrawElementToChamfer(element)
 
         :param Reference i_element_to_withdraw:
         :return: None
@@ -286,4 +275,4 @@ class Chamfer(DressUpShape):
         return self.com_object.WithdrawElementToChamfer(i_element_to_withdraw.com_object)
 
     def __repr__(self):
-        return f'Chamfer(name="{ self.name }")'
+        return f'Chamfer(name="{self.name}")'

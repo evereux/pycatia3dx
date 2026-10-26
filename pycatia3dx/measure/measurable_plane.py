@@ -7,28 +7,28 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia3dx import CATScriptLanguage
 from pycatia3dx.measure.measurable_surface import MeasurableSurface
 
 
 class MeasurablePlane(MeasurableSurface):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATOpnsMeasureIDLItf.MeasurableInContext
-                |                         CATOpnsMeasureIDLItf.MeasurableSurface
-                |                             MeasurablePlane
-                | 
-                | Interface representing the measurement on a plane.
-                | Get the area, the center of gravity and the perimeter by inheritance. Get the
-                | plane informations.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATOpnsMeasureIDLItf.MeasurableInContext
+                                        CATOpnsMeasureIDLItf.MeasurableSurface
+                                            MeasurablePlane
+                
+                Interface representing the measurement on a plane.
+                Get the area, the center of gravity and the perimeter by inheritance. Get the
+                plane informations.
     
     """
 
@@ -36,68 +36,69 @@ class MeasurablePlane(MeasurableSurface):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def get_plane(self) -> tuple:
+    def get_plane(self) -> tuple | None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetPlane(CATSafeArrayVariant ioPlane)
-                |     Retrieves informations of the plane.
+                Sub GetPlane(CATSafeArrayVariant ioPlane)
+                    Retrieves informations of the plane.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         ioPlane
-                |             The informations of the plane with respect to the product
-                |             coordinate system:
+                        ioPlane
+                            The informations of the plane with respect to the product
+                            coordinate system:
                 |
-                |                 ioPlane(0) is the X coordinate of the origin
-                |                 ioPlane(1) is the Y coordinate of the origin
-                |                 ioPlane(2) is the Z coordinate of the origin
-                |                 ioPlane(3) is the X coordinate of the first direction of the
-                |                 plane
-                |                 ioPlane(4) is the Y coordinate of the first direction of the
-                |                 plane
-                |                 ioPlane(5) is the Z coordinate of the first direction of the
-                |                 plane
-                |                 ioPlane(6) is the X coordinate of the second direction of the
-                |                 plane
-                |                 ioPlane(7) is the Y coordinate of the second direction of the
-                |                 plane
-                |                 ioPlane(8) is the Z coordinate of the second direction of the
-                |                 plane
+                                ioPlane(0) is the X coordinate of the origin
+                                ioPlane(1) is the Y coordinate of the origin
+                                ioPlane(2) is the Z coordinate of the origin
+                                ioPlane(3) is the X coordinate of the first direction of the
+                                plane
+                                ioPlane(4) is the Y coordinate of the first direction of the
+                                plane
+                                ioPlane(5) is the Z coordinate of the first direction of the
+                                plane
+                                ioPlane(6) is the X coordinate of the second direction of the
+                                plane
+                                ioPlane(7) is the Y coordinate of the second direction of the
+                                plane
+                                ioPlane(8) is the Z coordinate of the second direction of the
+                                plane
                 |
-                |     Example:
+                    Example:
                 |
-                |            This example retrieves informations of the plane of
-                |            theMeasurablePlane measure.
+                           This example retrieves informations of the plane of
+                           theMeasurablePlane measure.
                 |
                 |
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasurablePlane As MeasurablePlane
-                |              Set theMeasurablePlane = theMeasureService.GetMeasurable(theSelection, CAAMeasurablePlane)
-                |              Dim thePlane(8)
-                |              theMeasurablePlane.GetPlane thePlane
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasurablePlane As MeasurablePlane
+                             Set theMeasurablePlane = theMeasureService.GetMeasurable(theSelection, CAAMeasurablePlane)
+                             Dim thePlane(8)
+                             theMeasurablePlane.GetPlane thePlane
 
         :return: tuple
         """
-        return self.com_object.GetPlane()
-        # todo: check this method, does it require system service?
-        # Autogenerated comment:
-        # some methods require a system service call as the methods expects a vb array object
-        # passed to it and there is no way to do this directly with python. In those cases the following code
-        # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # vba_function_name = 'get_plane'
-        # vba_code = """
-        # Public Function get_plane(measurable_plane)
-        #     Dim ioPlane (2)
-        #     measurable_plane.GetPlane ioPlane
-        #     get_plane = ioPlane
-        # End Function
-        # """
+        vba_function_name = 'get_plane'
+        vba_code = """
+        Public Function get_plane(measurable_plane)
+            Dim ioPlane(8)
+            measurable_plane.GetPlane ioPlane
+            get_plane = ioPlane
+        End Function
+        """
 
-        # system_service = SystemService(self.application.SystemService)
-        # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        result = self.application.system_service.evaluate(
+            vba_code,
+            CATScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
+
+        if isinstance(result, tuple):
+            return result
+        return None
 
     def __repr__(self):
         return f'MeasurablePlane(name="{self.name}")'

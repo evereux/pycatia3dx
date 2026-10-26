@@ -13,29 +13,28 @@ from pycatia3dx.structure.structure_member import StructureMember
 class SddMember(StructureMember):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATStrIDLItf.StructureProfile
-                |                         CATStrIDLItf.StructureMember
-                |                             SddMember
-                | 
-                | Object to manage Structure detail Modeler Member.
-                | Role: Allows accessing and setting of SDD Member's data.
-                | 
-                | Example:
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATStrIDLItf.StructureProfile
+                                        CATStrIDLItf.StructureMember
+                                            SddMember
+                
+                Object to manage Structure detail Modeler Member.
+                Role: Allows accessing and setting of SDD Member's data.
+                
+                Example:
                 |
-                |          This example retrieves in SddMember.
-                |          
-                | 
-                |          Dim ObjSddMember As SddMember 
-                |          Set ObjSddMember = ObjSddProductMember.SddMember
+                         This example retrieves in SddMember.
+                         
+                
+                         Dim ObjSddMember As SddMember 
+                         Set ObjSddMember = ObjSddProductMember.SddMember
 
     """
 

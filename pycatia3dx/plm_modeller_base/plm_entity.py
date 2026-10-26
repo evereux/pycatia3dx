@@ -15,18 +15,17 @@ from pycatia3dx.types.general import CATVariant
 class PLMEntity(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PLMEntity
-                | 
-                | Represents a PLM Entity.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PLMEntity
+                
+                Represents a PLM Entity.
     
     """
 
@@ -37,24 +36,23 @@ class PLMEntity(AnyObject):
     def get_attribute_value(self, i_attr_name: str) -> CATVariant:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAttributeValue(CATBSTR iAttrName) As CATVariant
-                |     Returns the PLM Attribute value.
-                |     Role: this method returns the PLM attribute value from its
-                |     name.
-                |     From an authoring editor, all public attributes values can be retrieved.
-                |     From the Search result window, only attributes available in "Edit Properties"
-                |     window can be retrieved.
-                | 
-                |     Parameters:
-                | 
-                |         iAttrName
-                |             Attribute name. 
-                | 
-                |     Returns:
-                |         Attribute value.
+                Func GetAttributeValue(CATBSTR iAttrName) As CATVariant
+                    Returns the PLM Attribute value.
+                    Role: this method returns the PLM attribute value from its
+                    name.
+                    From an authoring editor, all public attributes values can be retrieved.
+                    From the Search result window, only attributes available in "Edit Properties"
+                    window can be retrieved.
+                
+                    Parameters:
+                
+                        iAttrName
+                            Attribute name. 
+                
+                    Returns:
+                        Attribute value.
 
         :param str i_attr_name:
         :return: CATVariant
@@ -64,18 +62,17 @@ class PLMEntity(AnyObject):
     def get_custom_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCustomType() As CATBSTR
-                |     Returns the PLM Entity type.
-                |     Role: this method returns the internal PLM object type. This type
-                |     corresponds to the PLM class that instantiates the PLM entity. Most of the
-                |     time, it a modeler customized class. You can use the returned type to query a
-                |     PLM Product.
-                | 
-                |     Returns:
-                |         PLM Entity type.
+                Func GetCustomType() As CATBSTR
+                    Returns the PLM Entity type.
+                    Role: this method returns the internal PLM object type. This type
+                    corresponds to the PLM class that instantiates the PLM entity. Most of the
+                    time, it a modeler customized class. You can use the returned type to query a
+                    PLM Product.
+                
+                    Returns:
+                        PLM Entity type.
 
         :return: str
         """
@@ -84,26 +81,25 @@ class PLMEntity(AnyObject):
     def set_attribute_value(self, i_attr_name: str, i_attr_value: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAttributeValue(CATBSTR iAttrName,CATVariant iAttrValue)
-                |     Sets the PLM Attribute value.
-                |     Role: this method valuates a PLM attribute with the given value. In an
-                |     Authoring Editor, all public (R/W) attributes values can be modifed whereas it
-                |     is not possible in the Search window.
-                | 
-                |     Parameters:
-                | 
-                |         iAttrName
-                |             Attribute name. 
-                |         iAttrValue
-                |             Attribute value.
-                |             If the type of the attribute is a Date, value must be provided as
-                |             mm/dd/yyyy format.
-                |             If the type of the attribute is a list, values must 
-                |             be provided as a string with semi colon separators 
-                |             (ex : "value1;value2;").
+                Sub SetAttributeValue(CATBSTR iAttrName,CATVariant iAttrValue)
+                    Sets the PLM Attribute value.
+                    Role: this method valuates a PLM attribute with the given value. In an
+                    Authoring Editor, all public (R/W) attributes values can be modifed whereas it
+                    is not possible in the Search window.
+                
+                    Parameters:
+                
+                        iAttrName
+                            Attribute name. 
+                        iAttrValue
+                            Attribute value.
+                            If the type of the attribute is a Date, value must be provided as
+                            mm/dd/yyyy format.
+                            If the type of the attribute is a list, values must 
+                            be provided as a string with semi colon separators 
+                            (ex : "value1;value2;").
 
         :param str i_attr_name:
         :param CATVariant i_attr_value:

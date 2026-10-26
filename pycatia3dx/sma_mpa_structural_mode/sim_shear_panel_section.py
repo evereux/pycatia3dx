@@ -12,59 +12,57 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimShearPanelSection(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimShearPanelSection
-                | 
-                | Represents the Shear Panel Section object.
-                | 
-                | Example:
-                |     Given a SimProperties object, you can create a SimShearPanelSection as
-                |     following:
-                | 
-                |      Dim MyProperties As SimProperties
-                |      ...
-                |      Dim MyShearPanelSection As SimShearPanelSection
-                |      Set MyShearPanelSection = MyProperties.Add("SimShearPanelSection")
-                |      
-                | 
-                |     Given a SimProperties object, you can retrieve a SimShearPanelSection named
-                |     "Shear Panel Section.1" as following:
-                | 
-                |      Dim MyProperties As SimProperties
-                |      ...
-                |      Dim MyShearPanelSection As SimShearPanelSection
-                |      Set MyShearPanelSection = MyProperties.Item("Shear Panel Section.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimProperties object myProperties, you can create a
-                |     SimShearPanelSection as following:
-                | 
-                |      ...
-                |      myShearPanelSection = myProperties.Add("SimShearPanelSection")
-                |      
-                | 
-                |     Given a SimProperties object myProperties, you can retrieve a
-                |     SimShearPanelSection named "Shear Panel Section.1" as
-                |     following:
-                | 
-                |      ...
-                |      myShearPanelSection = myProperties.Item("Shear Panel Section.1")
-                |      
-                | 
-                | See also:
-                |     SimProperties
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimShearPanelSection
+                
+                Represents the Shear Panel Section object.
+                
+                Example:
+                    Given a SimProperties object, you can create a SimShearPanelSection as
+                    following:
+                
+                     Dim MyProperties As SimProperties
+                     ...
+                     Dim MyShearPanelSection As SimShearPanelSection
+                     Set MyShearPanelSection = MyProperties.Add("SimShearPanelSection")
+                     
+                
+                    Given a SimProperties object, you can retrieve a SimShearPanelSection named
+                    "Shear Panel Section.1" as following:
+                
+                     Dim MyProperties As SimProperties
+                     ...
+                     Dim MyShearPanelSection As SimShearPanelSection
+                     Set MyShearPanelSection = MyProperties.Item("Shear Panel Section.1")
+                     
+                
+                Example in Python:
+                    Given a SimProperties object myProperties, you can create a
+                    SimShearPanelSection as following:
+                
+                     ...
+                     myShearPanelSection = myProperties.Add("SimShearPanelSection")
+                     
+                
+                    Given a SimProperties object myProperties, you can retrieve a
+                    SimShearPanelSection named "Shear Panel Section.1" as
+                    following:
+                
+                     ...
+                     myShearPanelSection = myProperties.Item("Shear Panel Section.1")
+                     
+                
+                See also:
+                    SimProperties
     
     """
 
@@ -76,11 +74,10 @@ class SimShearPanelSection(AnyObject):
     def material_behavior(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialBehavior() As CATBaseDispatch
-                |     Returns or sets the material behavior.
+                Property MaterialBehavior() As CATBaseDispatch
+                    Returns or sets the material behavior.
 
         :return: AnyObject
         """
@@ -99,11 +96,10 @@ class SimShearPanelSection(AnyObject):
     def material_behavior_by_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialBehaviorByName() As CATBSTR
-                |     Returns or sets the simulation material behavior by name.
+                Property MaterialBehaviorByName() As CATBSTR
+                    Returns or sets the simulation material behavior by name.
 
         :return: str
         """
@@ -122,36 +118,35 @@ class SimShearPanelSection(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. Possible values are:
-                | 
-                |         Abstractions
-                |         Amplitudes
-                |         Controls
-                |         Connections
-                |         Damping
-                |         ElementTypeAssignments
-                |         Envelopes
-                |         FieldPlots
-                |         FlowConditions
-                |         HistoryPlots
-                |         InitialConditions
-                |         Interactions
-                |         LinearLoadCases
-                |         Loads
-                |         LoadSets
-                |         OutputRequests
-                |         PredefinedFields
-                |         Properties
-                |         Restraints
-                |         Sensors
-                |         Streams
-                |         ThermalConditions
-                |         NotDefined
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. Possible values are:
+                
+                        Abstractions
+                        Amplitudes
+                        Controls
+                        Connections
+                        Damping
+                        ElementTypeAssignments
+                        Envelopes
+                        FieldPlots
+                        FlowConditions
+                        HistoryPlots
+                        InitialConditions
+                        Interactions
+                        LinearLoadCases
+                        Loads
+                        LoadSets
+                        OutputRequests
+                        PredefinedFields
+                        Properties
+                        Restraints
+                        Sensors
+                        Streams
+                        ThermalConditions
+                        NotDefined
 
         :return: str
         """
@@ -162,11 +157,10 @@ class SimShearPanelSection(AnyObject):
     def thickness_field(self) -> SimScalarField:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ThicknessField() As SimScalarField (Read Only)
-                |     Returns the thickness field.
+                Property ThicknessField() As SimScalarField (Read Only)
+                    Returns the thickness field.
 
         :return: SimScalarField
         """
@@ -177,12 +171,11 @@ class SimShearPanelSection(AnyObject):
     def uniform_thickness(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UniformThickness() As double
-                |     Returns or sets the uniform thickness value used for the section. Quantity:
-                |     LENGTH, units: m
+                Property UniformThickness() As double
+                    Returns or sets the uniform thickness value used for the section. Quantity:
+                    LENGTH, units: m
 
         :return: float
         """
@@ -201,16 +194,15 @@ class SimShearPanelSection(AnyObject):
     def uniform_thickness_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UniformThicknessFlag() As boolean (Read Only)
-                |     Returns or sets the flag that determines if the Shear Panel thickness is
-                |     uniform.
-                | 
-                |     TRUE: the Shear Panel thickness is uniform.
-                | 
-                |     FALSE: the Shear Panel thickness is not uniform. 
+                Property UniformThicknessFlag() As boolean (Read Only)
+                    Returns or sets the flag that determines if the Shear Panel thickness is
+                    uniform.
+                
+                    TRUE: the Shear Panel thickness is uniform.
+                
+                    FALSE: the Shear Panel thickness is not uniform. 
 
         :return: bool
         """
@@ -218,4 +210,4 @@ class SimShearPanelSection(AnyObject):
         return self.com_object.UniformThicknessFlag
 
     def __repr__(self):
-        return f'SimShearPanelSection(name="{ self.name }")'
+        return f'SimShearPanelSection(name="{self.name}")'

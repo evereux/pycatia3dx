@@ -13,19 +13,17 @@ from pycatia3dx.tps.tps_parallel_on_screen import TPSParallelOnScreen
 
 
 class NonSemanticGDT(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     NonSemanticGDT
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    NonSemanticGDT
 
     
     """
@@ -37,11 +35,10 @@ class NonSemanticGDT(AnyObject):
     def get2d_annot(self) -> DrawingGDT:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Get2dAnnot() As DrawingGDT
-                |     Retrieves Drafting GDT.
+                Func Get2dAnnot() As DrawingGDT
+                    Retrieves Drafting GDT.
 
         :return: DrawingGDT
         """
@@ -50,15 +47,14 @@ class NonSemanticGDT(AnyObject):
     def tps_parallel_on_screen(self) -> TPSParallelOnScreen:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func TPSParallelOnScreen() As TPSParallelOnScreen
-                |     Gets the annotation on TPSParallelOnScreen interface. 
+                Func TPSParallelOnScreen() As TPSParallelOnScreen
+                    Gets the annotation on TPSParallelOnScreen interface. 
 
         :return: TPSParallelOnScreen
         """
         return TPSParallelOnScreen(self.com_object.TPSParallelOnScreen())
 
     def __repr__(self):
-        return f'NonSemanticGdt(name="{ self.name }")'
+        return f'NonSemanticGdt(name="{self.name}")'

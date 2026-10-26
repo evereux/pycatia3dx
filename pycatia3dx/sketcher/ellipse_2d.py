@@ -14,21 +14,20 @@ from pycatia3dx.sketcher.point_2d import Point2D
 class Ellipse2D(Curve2D):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATSketcherIDLItf.GeometricElement
-                |                         CATSketcherIDLItf.Geometry2D
-                |                             CATSketcherIDLItf.Curve2D
-                |                                 Ellipse2D
-                | 
-                | Class defining an ellipse in 2D Space.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATSketcherIDLItf.GeometricElement
+                                        CATSketcherIDLItf.Geometry2D
+                                            CATSketcherIDLItf.Curve2D
+                                                Ellipse2D
+                
+                Class defining an ellipse in 2D Space.
     
     """
 
@@ -40,22 +39,21 @@ class Ellipse2D(Curve2D):
     def center_point(self) -> Point2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property CenterPoint() As Point2D
-                |     Returns or Sets the center point of the ellipse.
-                | 
-                |     Example:
-                | 
-                |            The following example sets the center point of the
-                |            ellispe.
-                |          
-                | 
-                |           Dim myPoint2D As Point2D
-                |           Set myPoint2D = ...
-                |           Dim myEllipse2D As Curve2D
-                |           myEllipse2D.CenterPoint = myPoint2D
+                Property CenterPoint() As Point2D
+                    Returns or Sets the center point of the ellipse.
+                
+                    Example:
+                
+                           The following example sets the center point of the
+                           ellispe.
+                         
+                
+                          Dim myPoint2D As Point2D
+                          Set myPoint2D = ...
+                          Dim myEllipse2D As Curve2D
+                          myEllipse2D.CenterPoint = myPoint2D
 
         :return: Point2D
         """
@@ -74,21 +72,20 @@ class Ellipse2D(Curve2D):
     def major_radius(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property MajorRadius() As double (Read Only)
-                |     Returns the radius of the ellipse major axis.
-                | 
-                |     Example:
-                | 
-                |            The following example returns the radius of the ellispe major
-                |            axis.
-                |          
-                | 
-                |           Dim myRadius As double
-                |           Dim myEllipse2D As Curve2D
-                |           myRadius = myEllipse2D.MajorRadius
+                Property MajorRadius() As double (Read Only)
+                    Returns the radius of the ellipse major axis.
+                
+                    Example:
+                
+                           The following example returns the radius of the ellispe major
+                           axis.
+                         
+                
+                          Dim myRadius As double
+                          Dim myEllipse2D As Curve2D
+                          myRadius = myEllipse2D.MajorRadius
 
         :return: float
         """
@@ -99,21 +96,20 @@ class Ellipse2D(Curve2D):
     def minor_radius(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property MinorRadius() As double (Read Only)
-                |     Returns the radius of the ellipse minor axis.
-                | 
-                |     Example:
-                | 
-                |            The following example returns the radius of the ellispe minor
-                |            axis.
-                |          
-                | 
-                |           Dim myRadius As double
-                |           Dim myEllipse2D As Curve2D
-                |           myRadius = myEllipse2D.MinorRadius
+                Property MinorRadius() As double (Read Only)
+                    Returns the radius of the ellipse minor axis.
+                
+                    Example:
+                
+                           The following example returns the radius of the ellispe minor
+                           axis.
+                         
+                
+                          Dim myRadius As double
+                          Dim myEllipse2D As Curve2D
+                          myRadius = myEllipse2D.MinorRadius
 
         :return: float
         """
@@ -123,19 +119,18 @@ class Ellipse2D(Curve2D):
     def get_center(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetCenter(CATSafeArrayVariant oCenter)
-                |     Returns the center of the ellipse in 2D space.
+                Sub GetCenter(CATSafeArrayVariant oCenter)
+                    Returns the center of the ellipse in 2D space.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oCenter[0]
-                |             The X Coordinate of the center point of the ellipse
+                        oCenter[0]
+                            The X Coordinate of the center point of the ellipse
                 |
-                |         oCenter[1]
-                |             The Y Coordinate of the center point of the ellipse
+                        oCenter[1]
+                            The Y Coordinate of the center point of the ellipse
 
         :return: tuple
         """
@@ -160,19 +155,18 @@ class Ellipse2D(Curve2D):
     def get_major_axis(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetMajorAxis(CATSafeArrayVariant oMajorAxis)
-                |     Returns the unit vector of the major axis of the ellipse in 2D
-                |     space.
+                Sub GetMajorAxis(CATSafeArrayVariant oMajorAxis)
+                    Returns the unit vector of the major axis of the ellipse in 2D
+                    space.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oMajorAxis[0]
-                |             The length of the major axis
-                |         oMajorAxis[1]
-                |             The length of the major axis
+                        oMajorAxis[0]
+                            The length of the major axis
+                        oMajorAxis[1]
+                            The length of the major axis
 
         :return: tuple
         """
@@ -197,19 +191,18 @@ class Ellipse2D(Curve2D):
     def get_minor_axis(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetMinorAxis(CATSafeArrayVariant oMajorAxis)
-                |     Returns the unit vector of the minor axis of the ellipse in 2D
-                |     space.
+                Sub GetMinorAxis(CATSafeArrayVariant oMajorAxis)
+                    Returns the unit vector of the minor axis of the ellipse in 2D
+                    space.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oMinorAxis[0]
-                |             The length of the major axis
-                |         oMinorAxis[1]
-                |             The length of the major axis
+                        oMinorAxis[0]
+                            The length of the major axis
+                        oMinorAxis[1]
+                            The length of the major axis
 
         :return: tuple
         """
@@ -235,27 +228,26 @@ class Ellipse2D(Curve2D):
                  i_minor_radius: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub SetData(double iCenterX,double iCenterY,double iMajorX,double
-                | iMajorY,double iMajorRadius,double iMinorRadius)
-                |     Modifies the caracteristics of the ellipse.
-                | 
-                |     Parameters:
-                | 
-                |         iCenterX
-                |             The X Coordinate of the ellipse center 
-                |         iCenterY
-                |             The Y Coordinate of the ellipse center 
-                |         iMajorX
-                |             The X coordinate of the Major axis direction 
-                |         iMajorY
-                |             The Y coordinate of the Major axis direction 
-                |         iMajorRadius
-                |             The length of the major axis 
-                |         iMinorRadius
-                |             The length of the minor axis
+                Sub SetData(double iCenterX,double iCenterY,double iMajorX,double
+                iMajorY,double iMajorRadius,double iMinorRadius)
+                    Modifies the caracteristics of the ellipse.
+                
+                    Parameters:
+                
+                        iCenterX
+                            The X Coordinate of the ellipse center 
+                        iCenterY
+                            The Y Coordinate of the ellipse center 
+                        iMajorX
+                            The X coordinate of the Major axis direction 
+                        iMajorY
+                            The Y coordinate of the Major axis direction 
+                        iMajorRadius
+                            The length of the major axis 
+                        iMinorRadius
+                            The length of the minor axis
 
         :param float i_center_x:
         :param float i_center_y:

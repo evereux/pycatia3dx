@@ -12,26 +12,24 @@ from pycatia3dx.mmr_automation_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeVolumeExplicit(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeVolumeExplicit
-                | 
-                | Represents the hybrid shape Volume explicit feature object.
-                | Role: Declare hybrid shape Volume explicit feature object.
-                | 
-                | See also:
-                |     HybridShapeFactory.AddNewVolumeDatum
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeVolumeExplicit
+                
+                Represents the hybrid shape Volume explicit feature object.
+                Role: Declare hybrid shape Volume explicit feature object.
+                
+                See also:
+                    HybridShapeFactory.AddNewVolumeDatum
     
     """
 
@@ -40,4 +38,4 @@ class HybridShapeVolumeExplicit(HybridShape):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'HybridShapeVolumeExplicit(name="{ self.name }")'
+        return f'HybridShapeVolumeExplicit(name="{self.name}")'

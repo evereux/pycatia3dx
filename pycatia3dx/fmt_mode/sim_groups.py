@@ -18,21 +18,20 @@ from pycatia3dx.types.general import CATVariant
 class SimGroups(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SimGroups
-                | 
-                | Represents the collection of Simulation Groups.
-                | 
-                | See also:
-                |     SimGroup
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SimGroups
+                
+                Represents the collection of Simulation Groups.
+                
+                See also:
+                    SimGroup
     
     """
 
@@ -43,19 +42,18 @@ class SimGroups(Collection):
     def add(self, i_type: str) -> SimGroup:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add(CATBSTR iType) As CATBaseDispatch
-                |     Creates a new group and adds it to the collection.
-                | 
-                |     Parameters:
-                | 
-                |         iType:
-                |             The type of group to create. 
-                | 
-                |     Returns:
-                |         The created group
+                Func Add(CATBSTR iType) As CATBaseDispatch
+                    Creates a new group and adds it to the collection.
+                
+                    Parameters:
+                
+                        iType:
+                            The type of group to create. 
+                
+                    Returns:
+                        The created group
 
         :param str i_type:
         :return: SimGroup
@@ -65,26 +63,25 @@ class SimGroups(Collection):
     def item(self, i_index: CATVariant) -> SimGroup:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As SimGroup
-                |     Returns a group using its index or its name from the
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex:
-                |             The index or the name of the simulation group to retrieve from the
-                |             collection.
-                |             As a numeric, this index is the rank of the simulation group in the
-                |             collection. The index of the first simulation group in the collection is 1, and
-                |             the index of the last simulation group is Count.
-                |             As a string, it is the name you assigned to the property using the
-                |             Name object property. 
-                | 
-                |     Returns:
-                |         The retrieved group.
+                Func Item(CATVariant iIndex) As SimGroup
+                    Returns a group using its index or its name from the
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex:
+                            The index or the name of the simulation group to retrieve from the
+                            collection.
+                            As a numeric, this index is the rank of the simulation group in the
+                            collection. The index of the first simulation group in the collection is 1, and
+                            the index of the last simulation group is Count.
+                            As a string, it is the name you assigned to the property using the
+                            Name object property. 
+                
+                    Returns:
+                        The retrieved group.
 
         :param CATVariant i_index:
         :return: SimGroup
@@ -94,23 +91,22 @@ class SimGroups(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(CATVariant iIndex)
-                |     Removes a group using its index or its name from the
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex:
-                |             The index or the name of the simulation group to retrieve from the
-                |             collection of groups.
-                |             As a numeric, this index is the rank of the simulation group in the
-                |             collection. The index of the first simulation group in the collection is 1, and
-                |             the index of the last simulation group is Count.
-                |             As a string, it is the name you assigned to the group using the
-                |             Name object property.
+                Sub Remove(CATVariant iIndex)
+                    Removes a group using its index or its name from the
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex:
+                            The index or the name of the simulation group to retrieve from the
+                            collection of groups.
+                            As a numeric, this index is the rank of the simulation group in the
+                            collection. The index of the first simulation group in the collection is 1, and
+                            the index of the last simulation group is Count.
+                            As a string, it is the name you assigned to the group using the
+                            Name object property.
 
         :param CATVariant i_index:
         :return: None

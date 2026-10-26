@@ -13,21 +13,20 @@ from pycatia3dx.sketcher.curve_2d import Curve2D
 class Hyperbola2D(Curve2D):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATSketcherIDLItf.GeometricElement
-                |                         CATSketcherIDLItf.Geometry2D
-                |                             CATSketcherIDLItf.Curve2D
-                |                                 Hyperbola2D
-                | 
-                | Class defining an hyperbola in 2D Space.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATSketcherIDLItf.GeometricElement
+                                        CATSketcherIDLItf.Geometry2D
+                                            CATSketcherIDLItf.Curve2D
+                                                Hyperbola2D
+                
+                Class defining an hyperbola in 2D Space.
     
     """
 
@@ -39,16 +38,15 @@ class Hyperbola2D(Curve2D):
     def imaginary_radius(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property ImaginaryRadius() As double (Read Only)
-                |     Returns the minor radius of the hyperbola in 2D space.
-                | 
-                |     Parameters:
-                | 
-                |         oMinorRadius
-                |             The minor radius of the hyperbola
+                Property ImaginaryRadius() As double (Read Only)
+                    Returns the minor radius of the hyperbola in 2D space.
+                
+                    Parameters:
+                
+                        oMinorRadius
+                            The minor radius of the hyperbola
 
         :return: float
         """
@@ -59,16 +57,15 @@ class Hyperbola2D(Curve2D):
     def radius(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Radius() As double (Read Only)
-                |     Returns the major radius of the hyperbola in 2D space.
-                | 
-                |     Parameters:
-                | 
-                |         oMajorRadius
-                |             The major radius of the hyperbola
+                Property Radius() As double (Read Only)
+                    Returns the major radius of the hyperbola in 2D space.
+                
+                    Parameters:
+                
+                        oMajorRadius
+                            The major radius of the hyperbola
 
         :return: float
         """
@@ -78,21 +75,20 @@ class Hyperbola2D(Curve2D):
     def get_axis(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub GetAxis(CATSafeArrayVariant oAxis)
-                |     Returns the axis vector direction of the hyperbola in 2D
-                |     space.
-                | 
-                |     Parameters:
-                | 
-                |         oAxis
-                | 
-                |               oAxis[0]: The X coordinate of the axis vector
-                |               direction
-                |               oAxis[1]: The Y coordinate of the axis vector
-                |               direction
+                Sub GetAxis(CATSafeArrayVariant oAxis)
+                    Returns the axis vector direction of the hyperbola in 2D
+                    space.
+                
+                    Parameters:
+                
+                        oAxis
+                
+                              oAxis[0]: The X coordinate of the axis vector
+                              direction
+                              oAxis[1]: The Y coordinate of the axis vector
+                              direction
 
         :return: tuple
         """
@@ -117,20 +113,19 @@ class Hyperbola2D(Curve2D):
     def get_center(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetCenter(CATSafeArrayVariant oCenter)
-                |     Returns the center point of the hyperbola in 2D space.
+                Sub GetCenter(CATSafeArrayVariant oCenter)
+                    Returns the center point of the hyperbola in 2D space.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oCenter
+                        oCenter
                 |
-                |               oCenter[0]: The X Coordinate of the center point of the
-                |               hyperbola
-                |               oCenter[1]: The Y Coordinate of the center point of the
-                |               hyperbola
+                              oCenter[0]: The X Coordinate of the center point of the
+                              hyperbola
+                              oCenter[1]: The Y Coordinate of the center point of the
+                              hyperbola
 
         :return: tuple
         """
@@ -156,27 +151,26 @@ class Hyperbola2D(Curve2D):
                  i_minor_radius: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub SetData(double iCenterX,double iCenterY,double iAxisX,double iAxisY,double
-                | iMajorRadius,double iMinorRadius)
-                |     Modifies the caracteristics of the hyperbola.
-                | 
-                |     Parameters:
-                | 
-                |         iCenterX
-                |             The X Coordinate of the hyperbola center 
-                |         iCenterY
-                |             The Y Coordinate of the hyperbola center 
-                |         iAxisX
-                |             The X coordinate of the axis vector direction 
-                |         iAxisY
-                |             The Y coordinate of the axis vector direction 
-                |         iMajorRadius
-                |             The length of the major radius 
-                |         iMinorRadius
-                |             The length of the minor radius
+                Sub SetData(double iCenterX,double iCenterY,double iAxisX,double iAxisY,double
+                iMajorRadius,double iMinorRadius)
+                    Modifies the caracteristics of the hyperbola.
+                
+                    Parameters:
+                
+                        iCenterX
+                            The X Coordinate of the hyperbola center 
+                        iCenterY
+                            The Y Coordinate of the hyperbola center 
+                        iAxisX
+                            The X coordinate of the axis vector direction 
+                        iAxisY
+                            The Y coordinate of the axis vector direction 
+                        iMajorRadius
+                            The length of the major radius 
+                        iMinorRadius
+                            The length of the minor radius
 
         :param float i_center_x:
         :param float i_center_y:

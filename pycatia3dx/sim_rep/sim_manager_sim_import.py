@@ -14,17 +14,16 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 class SimManagerSimImport(CATBaseDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 SimManagerSIMImport
-                | 
-                | Represents the service to import data into a SIM manager.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                SimManagerSIMImport
+                
+                Represents the service to import data into a SIM manager.
     
     """
 
@@ -36,11 +35,10 @@ class SimManagerSimImport(CATBaseDispatch):
     def args(self) -> SimImportExportArgs:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Args() As SimImportExportArgs (Read Only)
-                |     Gets the current arguments of the import operation.
+                Property Args() As SimImportExportArgs (Read Only)
+                    Gets the current arguments of the import operation.
 
         :return: SimImportExportArgs
         """
@@ -50,17 +48,16 @@ class SimManagerSimImport(CATBaseDispatch):
     def import_(self, i_importer_id: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Import(CATBSTR iImporterId)
-                |     Imports data into this SIM manager thanks to a given SIM importer
-                |     (identified by its id) using the current import arguments.
-                | 
-                |     Parameters:
-                | 
-                |         iImporterId:
-                |             The importer id.
+                Sub Import(CATBSTR iImporterId)
+                    Imports data into this SIM manager thanks to a given SIM importer
+                    (identified by its id) using the current import arguments.
+                
+                    Parameters:
+                
+                        iImporterId:
+                            The importer id.
 
         :param str i_importer_id:
         :return: None

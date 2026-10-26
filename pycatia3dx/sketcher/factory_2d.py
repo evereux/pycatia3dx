@@ -25,18 +25,17 @@ from pycatia3dx.system.any_object import AnyObject
 class Factory2D(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Factory2D
-                | 
-                | Interface to the factory for 2D objects.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Factory2D
+                
+                Interface to the factory for 2D objects.
     
     """
 
@@ -44,37 +43,42 @@ class Factory2D(AnyObject):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def create_circle(self, i_center_x: float, i_center_y: float, i_radius: float, i_start_param: float,
-                      i_end_param: float) -> Circle2D:
+    def create_circle(
+            self,
+            i_center_x: float,
+            i_center_y: float,
+            i_radius: float,
+            i_start_param: float,
+            i_end_param: float
+    ) -> Circle2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func CreateCircle(double iCenterX,double iCenterY,double iRadius,double
-                | iStartParam,double iEndParam) As Circle2D
-                |     Creates and returns a 2D circle arc.
-                | 
-                |     Parameters:
-                | 
-                |         iCenterX
-                |             The X coordinate of the circle center 
-                |         iCenterY
-                |             The Y coordinate of the circle center 
-                |         iRadius
-                |             The radius of the circle 
-                |         iStartParam
-                |             The beginning parameter of the circle.
-                |             This parameter is an angle value between 0 included and 2PI
-                |             excluded. Parameter values are computed from the axis horizontal direction in
-                |             the trigonometrical direction. 
-                |         iEndParam
-                |             The end parameter of the circle.
-                |             This parameter may take any value between iStartParam excluded and
-                |             4PI included. 
-                | 
-                |     Returns:
-                |         The created circle
+                Func CreateCircle(double iCenterX,double iCenterY,double iRadius,double
+                iStartParam,double iEndParam) As Circle2D
+                    Creates and returns a 2D circle arc.
+                
+                    Parameters:
+                
+                        iCenterX
+                            The X coordinate of the circle center 
+                        iCenterY
+                            The Y coordinate of the circle center 
+                        iRadius
+                            The radius of the circle 
+                        iStartParam
+                            The beginning parameter of the circle.
+                            This parameter is an angle value between 0 included and 2PI
+                            excluded. Parameter values are computed from the axis horizontal direction in
+                            the trigonometrical direction. 
+                        iEndParam
+                            The end parameter of the circle.
+                            This parameter may take any value between iStartParam excluded and
+                            4PI included. 
+                
+                    Returns:
+                        The created circle
 
         :param float i_center_x:
         :param float i_center_y:
@@ -88,24 +92,23 @@ class Factory2D(AnyObject):
     def create_closed_circle(self, i_center_x: float, i_center_y: float, i_radius: float) -> Circle2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func CreateClosedCircle(double iCenterX,double iCenterY,double iRadius) As
-                | Circle2D
-                |     Creates and returns a closed 2D circle.
-                | 
-                |     Parameters:
-                | 
-                |         iCenterX
-                |             The X coordinate of the circle center 
-                |         iCenterY
-                |             The Y coordinate of the circle center 
-                |         iRadius
-                |             The radius of the circle 
-                | 
-                |     Returns:
-                |         The created circle
+                Func CreateClosedCircle(double iCenterX,double iCenterY,double iRadius) As
+                Circle2D
+                    Creates and returns a closed 2D circle.
+                
+                    Parameters:
+                
+                        iCenterX
+                            The X coordinate of the circle center 
+                        iCenterY
+                            The Y coordinate of the circle center 
+                        iRadius
+                            The radius of the circle 
+                
+                    Returns:
+                        The created circle
 
         :param float i_center_x:
         :param float i_center_y:
@@ -114,34 +117,40 @@ class Factory2D(AnyObject):
         """
         return Circle2D(self.com_object.CreateClosedCircle(i_center_x, i_center_y, i_radius))
 
-    def create_closed_ellipse(self, i_center_x: float, i_center_y: float, i_major_x: float, i_major_y: float,
-                              i_major_radius: float, i_minor_radius: float) -> Ellipse2D:
+    def create_closed_ellipse(
+            self,
+            i_center_x: float,
+            i_center_y: float,
+            i_major_x: float,
+            i_major_y: float,
+            i_major_radius: float,
+            i_minor_radius: float
+    ) -> Ellipse2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func CreateClosedEllipse(double iCenterX,double iCenterY,double iMajorX,double
-                | iMajorY,double iMajorRadius,double iMinorRadius) As Ellipse2D
-                |     Creates and returns a closed 2D ellipse.
-                | 
-                |     Parameters:
-                | 
-                |         iCenterX
-                |             The X coordinate of the ellipse center 
-                |         iCenterY
-                |             The Y coordinate of the ellipse center 
-                |         iMajorX
-                |             The X component of the major axis direction 
-                |         iMajorY
-                |             The Y component of the Major axis direction 
-                |         iMajorRadius
-                |             The length of the major axis 
-                |         iMinorRadius
-                |             The length of the minor axis 
-                | 
-                |     Returns:
-                |         The created ellipse
+                Func CreateClosedEllipse(double iCenterX,double iCenterY,double iMajorX,double
+                iMajorY,double iMajorRadius,double iMinorRadius) As Ellipse2D
+                    Creates and returns a closed 2D ellipse.
+                
+                    Parameters:
+                
+                        iCenterX
+                            The X coordinate of the ellipse center 
+                        iCenterY
+                            The Y coordinate of the ellipse center 
+                        iMajorX
+                            The X component of the major axis direction 
+                        iMajorY
+                            The Y component of the Major axis direction 
+                        iMajorRadius
+                            The length of the major axis 
+                        iMinorRadius
+                            The length of the minor axis 
+                
+                    Returns:
+                        The created ellipse
 
         :param float i_center_x:
         :param float i_center_y:
@@ -152,27 +161,33 @@ class Factory2D(AnyObject):
         :return: Ellipse2D
         """
         return Ellipse2D(
-            self.com_object.CreateClosedEllipse(i_center_x, i_center_y, i_major_x, i_major_y, i_major_radius,
-                                                i_minor_radius))
+            self.com_object.CreateClosedEllipse(
+                i_center_x,
+                i_center_y,
+                i_major_x,
+                i_major_y,
+                i_major_radius,
+                i_minor_radius
+            )
+        )
 
     def create_control_point(self, i_x: float, i_y: float) -> ControlPoint2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func CreateControlPoint(double iX,double iY) As ControlPoint2D
-                |     Creates and returns a 2D spline control point.
-                | 
-                |     Parameters:
-                | 
-                |         iX
-                |             The X coordinate of point to create 
-                |         iY
-                |             The Y coordinate of point to create 
-                | 
-                |     Returns:
-                |         The created control point
+                Func CreateControlPoint(double iX,double iY) As ControlPoint2D
+                    Creates and returns a 2D spline control point.
+                
+                    Parameters:
+                
+                        iX
+                            The X coordinate of point to create 
+                        iY
+                            The Y coordinate of point to create 
+                
+                    Returns:
+                        The created control point
 
         :param float i_x:
         :param float i_y:
@@ -180,45 +195,52 @@ class Factory2D(AnyObject):
         """
         return ControlPoint2D(self.com_object.CreateControlPoint(i_x, i_y))
 
-    def create_ellipse(self, i_center_x: float, i_center_y: float, i_major_x: float, i_major_y: float,
-                       i_major_radius: float, i_minor_radius: float, i_start_param: float,
-                       i_end_param: float) -> Ellipse2D:
+    def create_ellipse(
+            self,
+            i_center_x: float,
+            i_center_y: float,
+            i_major_x: float,
+            i_major_y: float,
+            i_major_radius: float,
+            i_minor_radius: float,
+            i_start_param: float,
+            i_end_param: float
+    ) -> Ellipse2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func CreateEllipse(double iCenterX,double iCenterY,double iMajorX,double
-                | iMajorY,double iMajorRadius,double iMinorRadius,double iStartParam,double
-                | iEndParam) As Ellipse2D
-                |     Creates and returns a 2D ellipse arc.
-                | 
-                |     Parameters:
-                | 
-                |         iCenterX
-                |             The X coordinate of the ellipse center 
-                |         iCenterY
-                |             The Y coordinate of the ellipse center 
-                |         iMajorX
-                |             The X component of the major axis direction 
-                |         iMajorY
-                |             The Y component of the major axis direction 
-                |         iMajorRadius
-                |             The length of the major axis 
-                |         iMinorRadius
-                |             The length of the minor axis 
-                |         iStartParam
-                |             The beginning parameter of the ellipse.
-                |             This parameter is an angle value between 0 included and 2PI
-                |             excluded. Parameter values are computed from the major axis direction in the
-                |             trigonometrical direction. 
-                |         iEndParam
-                |             The end parameter of the ellipse.
-                |             This parameter may take any value between iStartParam excluded and
-                |             4PI included. 
-                | 
-                |     Returns:
-                |         The created ellipse
+                Func CreateEllipse(double iCenterX,double iCenterY,double iMajorX,double
+                iMajorY,double iMajorRadius,double iMinorRadius,double iStartParam,double
+                iEndParam) As Ellipse2D
+                    Creates and returns a 2D ellipse arc.
+                
+                    Parameters:
+                
+                        iCenterX
+                            The X coordinate of the ellipse center 
+                        iCenterY
+                            The Y coordinate of the ellipse center 
+                        iMajorX
+                            The X component of the major axis direction 
+                        iMajorY
+                            The Y component of the major axis direction 
+                        iMajorRadius
+                            The length of the major axis 
+                        iMinorRadius
+                            The length of the minor axis 
+                        iStartParam
+                            The beginning parameter of the ellipse.
+                            This parameter is an angle value between 0 included and 2PI
+                            excluded. Parameter values are computed from the major axis direction in the
+                            trigonometrical direction. 
+                        iEndParam
+                            The end parameter of the ellipse.
+                            This parameter may take any value between iStartParam excluded and
+                            4PI included. 
+                
+                    Returns:
+                        The created ellipse
 
         :param float i_center_x:
         :param float i_center_y:
@@ -231,37 +253,52 @@ class Factory2D(AnyObject):
         :return: Ellipse2D
         """
         return Ellipse2D(
-            self.com_object.CreateEllipse(i_center_x, i_center_y, i_major_x, i_major_y, i_major_radius, i_minor_radius,
-                                          i_start_param, i_end_param))
+            self.com_object.CreateEllipse(
+                i_center_x,
+                i_center_y,
+                i_major_x,
+                i_major_y,
+                i_major_radius,
+                i_minor_radius,
+                i_start_param,
+                i_end_param
+            )
+        )
 
-    def create_hyperbola(self, i_center_x: float, i_center_y: float, i_axis_x: float, i_axis_y: float,
-                         i_major_radius: float, i_minor_radius: float) -> Hyperbola2D:
+    def create_hyperbola(
+            self,
+            i_center_x: float,
+            i_center_y: float,
+            i_axis_x: float,
+            i_axis_y: float,
+            i_major_radius: float,
+            i_minor_radius: float
+    ) -> Hyperbola2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func CreateHyperbola(double iCenterX,double iCenterY,double iAxisX,double
-                | iAxisY,double iMajorRadius,double iMinorRadius) As Hyperbola2D
-                |     Creates and returns a hyperbola.
-                | 
-                |     Parameters:
-                | 
-                |         iCenterX
-                |             The X coordinate of the hyperbola center 
-                |         iCenterY
-                |             The Y coordinate of the hyperbola center 
-                |         iAxisX
-                |             The X coordinate of the major axis direction 
-                |         iAxisY
-                |             The Y coordinate of the major axis direction 
-                |         iMajorRadius
-                |             The length of the major axis 
-                |         iMinorRadius
-                |             The length of the minor axis 
-                | 
-                |     Returns:
-                |         oHyperbola The created Hyperbola
+                Func CreateHyperbola(double iCenterX,double iCenterY,double iAxisX,double
+                iAxisY,double iMajorRadius,double iMinorRadius) As Hyperbola2D
+                    Creates and returns a hyperbola.
+                
+                    Parameters:
+                
+                        iCenterX
+                            The X coordinate of the hyperbola center 
+                        iCenterY
+                            The Y coordinate of the hyperbola center 
+                        iAxisX
+                            The X coordinate of the major axis direction 
+                        iAxisY
+                            The Y coordinate of the major axis direction 
+                        iMajorRadius
+                            The length of the major axis 
+                        iMinorRadius
+                            The length of the minor axis 
+                
+                    Returns:
+                        oHyperbola The created Hyperbola
 
         :param float i_center_x:
         :param float i_center_y:
@@ -272,25 +309,32 @@ class Factory2D(AnyObject):
         :return: Hyperbola2D
         """
         return Hyperbola2D(
-            self.com_object.CreateHyperbola(i_center_x, i_center_y, i_axis_x, i_axis_y, i_major_radius, i_minor_radius))
+            self.com_object.CreateHyperbola(
+                i_center_x,
+                i_center_y,
+                i_axis_x,
+                i_axis_y,
+                i_major_radius,
+                i_minor_radius
+            )
+        )
 
     def create_intersection(self, i_geometry: Reference) -> Geometry2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func CreateIntersection(Reference iGeometry) As Geometry2D
-                |     Creates and returns the intersection of an object with the
-                |     sketch.
-                | 
-                |     Parameters:
-                | 
-                |         iGeometry
-                |             The object to intersect with the sketch 
-                | 
-                |     Returns:
-                |         The created geometric element
+                Func CreateIntersection(Reference iGeometry) As Geometry2D
+                    Creates and returns the intersection of an object with the
+                    sketch.
+                
+                    Parameters:
+                
+                        iGeometry
+                            The object to intersect with the sketch 
+                
+                    Returns:
+                        The created geometric element
 
         :param Reference i_geometry:
         :return: Geometry2D
@@ -300,21 +344,20 @@ class Factory2D(AnyObject):
     def create_intersections(self, i_geometry: Reference) -> GeometricElements:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func CreateIntersections(Reference iGeometry) As
-                | GeometricElements
-                |     Creates and returns the possible intersections of an object with the
-                |     sketch.
-                | 
-                |     Parameters:
-                | 
-                |         iGeometry
-                |             The object to intersect with the sketch 
-                | 
-                |     Returns:
-                |         The created geometric element
+                Func CreateIntersections(Reference iGeometry) As
+                GeometricElements
+                    Creates and returns the possible intersections of an object with the
+                    sketch.
+                
+                    Parameters:
+                
+                        iGeometry
+                            The object to intersect with the sketch 
+                
+                    Returns:
+                        The created geometric element
 
         :param Reference i_geometry:
         :return: GeometricElements
@@ -324,26 +367,25 @@ class Factory2D(AnyObject):
     def create_line(self, i_x1: float, i_y1: float, i_x2: float, i_y2: float) -> Line2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func CreateLine(double iX1,double iY1,double iX2,double iY2) As
-                | Line2D
-                |     Creates and returns a 2D line.
-                | 
-                |     Parameters:
-                | 
-                |         iX1
-                |             The X coordinate of line first extremity 
-                |         iY1
-                |             The Y coordinate of line first extremity 
-                |         iX2
-                |             The X coordinate of line second extremity 
-                |         iY2
-                |             The Y coordinate of line second extremity 
-                | 
-                |     Returns:
-                |         The created line
+                Func CreateLine(double iX1,double iY1,double iX2,double iY2) As
+                Line2D
+                    Creates and returns a 2D line.
+                
+                    Parameters:
+                
+                        iX1
+                            The X coordinate of line first extremity 
+                        iY1
+                            The Y coordinate of line first extremity 
+                        iX2
+                            The X coordinate of line second extremity 
+                        iY2
+                            The Y coordinate of line second extremity 
+                
+                    Returns:
+                        The created line
 
         :param float i_x1:
         :param float i_y1:
@@ -356,26 +398,25 @@ class Factory2D(AnyObject):
     def create_line_from_vector(self, i_x1: float, i_y1: float, i_ux: float, i_uy: float) -> Line2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func CreateLineFromVector(double iX1,double iY1,double iUX,double iUY) As
-                | Line2D
-                |     Creates and returns a 2D line from vectors.
-                | 
-                |     Parameters:
-                | 
-                |         iX1
-                |             The X coordinate of the line origin 
-                |         iY1
-                |             The Y coordinate of the line origin 
-                |         iUX
-                |             The X component of the line vector 
-                |         iUY
-                |             The Y component of the line vector 
-                | 
-                |     Returns:
-                |         The created line
+                Func CreateLineFromVector(double iX1,double iY1,double iUX,double iUY) As
+                Line2D
+                    Creates and returns a 2D line from vectors.
+                
+                    Parameters:
+                
+                        iX1
+                            The X coordinate of the line origin 
+                        iY1
+                            The Y coordinate of the line origin 
+                        iUX
+                            The X component of the line vector 
+                        iUY
+                            The Y component of the line vector 
+                
+                    Returns:
+                        The created line
 
         :param float i_x1:
         :param float i_y1:
@@ -385,32 +426,37 @@ class Factory2D(AnyObject):
         """
         return Line2D(self.com_object.CreateLineFromVector(i_x1, i_y1, i_ux, i_uy))
 
-    def create_parabola(self, i_center_x: float, i_center_y: float, i_axis_x: float, i_axis_y: float,
-                        i_focal_distance: float) -> Parabola2D:
+    def create_parabola(
+            self,
+            i_center_x: float,
+            i_center_y: float,
+            i_axis_x: float,
+            i_axis_y: float,
+            i_focal_distance: float
+    ) -> Parabola2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func CreateParabola(double iCenterX,double iCenterY,double iAxisX,double
-                | iAxisY,double iFocalDistance) As Parabola2D
-                |     Creates and returns a parabola.
-                | 
-                |     Parameters:
-                | 
-                |         iCenterX
-                |             The X coordinate of the parabola center 
-                |         iCenterY
-                |             The Y coordinate of the parabola center 
-                |         iAxisX
-                |             The X coordinate of the major axis direction 
-                |         iAxisY
-                |             The Y coordinate of the major axis direction 
-                |         iFocalDistance
-                |             The parabola focal distance 
-                | 
-                |     Returns:
-                |         oParabola The created parabola
+                Func CreateParabola(double iCenterX,double iCenterY,double iAxisX,double
+                iAxisY,double iFocalDistance) As Parabola2D
+                    Creates and returns a parabola.
+                
+                    Parameters:
+                
+                        iCenterX
+                            The X coordinate of the parabola center 
+                        iCenterY
+                            The Y coordinate of the parabola center 
+                        iAxisX
+                            The X coordinate of the major axis direction 
+                        iAxisY
+                            The Y coordinate of the major axis direction 
+                        iFocalDistance
+                            The parabola focal distance 
+                
+                    Returns:
+                        oParabola The created parabola
 
         :param float i_center_x:
         :param float i_center_y:
@@ -419,26 +465,33 @@ class Factory2D(AnyObject):
         :param float i_focal_distance:
         :return: Parabola2D
         """
-        return Parabola2D(self.com_object.CreateParabola(i_center_x, i_center_y, i_axis_x, i_axis_y, i_focal_distance))
+        return Parabola2D(
+            self.com_object.CreateParabola(
+                i_center_x,
+                i_center_y,
+                i_axis_x,
+                i_axis_y,
+                i_focal_distance
+            )
+        )
 
     def create_point(self, i_x: float, i_y: float) -> Point2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func CreatePoint(double iX,double iY) As Point2D
-                |     Creates and returns a 2D point.
-                | 
-                |     Parameters:
-                | 
-                |         iX
-                |             The X coordinate of point to create 
-                |         iY
-                |             The Y coordinate of point to create 
-                | 
-                |     Returns:
-                |         The created point
+                Func CreatePoint(double iX,double iY) As Point2D
+                    Creates and returns a 2D point.
+                
+                    Parameters:
+                
+                        iX
+                            The X coordinate of point to create 
+                        iY
+                            The Y coordinate of point to create 
+                
+                    Returns:
+                        The created point
 
         :param float i_x:
         :param float i_y:
@@ -449,20 +502,19 @@ class Factory2D(AnyObject):
     def create_projection(self, i_geometry: Reference) -> Geometry2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func CreateProjection(Reference iGeometry) As Geometry2D
-                |     Creates and returns the projection of an object on the
-                |     sketch.
-                | 
-                |     Parameters:
-                | 
-                |         iGeometry
-                |             The object to project on the sketch 
-                | 
-                |     Returns:
-                |         The created geometric element
+                Func CreateProjection(Reference iGeometry) As Geometry2D
+                    Creates and returns the projection of an object on the
+                    sketch.
+                
+                    Parameters:
+                
+                        iGeometry
+                            The object to project on the sketch 
+                
+                    Returns:
+                        The created geometric element
 
         :param Reference i_geometry:
         :return: Geometry2D
@@ -472,21 +524,20 @@ class Factory2D(AnyObject):
     def create_projections(self, i_geometry: Reference) -> GeometricElements:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func CreateProjections(Reference iGeometry) As
-                | GeometricElements
-                |     Creates and returns the possible projections of an object on the
-                |     sketch.
-                | 
-                |     Parameters:
-                | 
-                |         iGeometry
-                |             The object to project on the sketch 
-                | 
-                |     Returns:
-                |         The created geometric element
+                Func CreateProjections(Reference iGeometry) As
+                GeometricElements
+                    Creates and returns the possible projections of an object on the
+                    sketch.
+                
+                    Parameters:
+                
+                        iGeometry
+                            The object to project on the sketch 
+                
+                    Returns:
+                        The created geometric element
 
         :param Reference i_geometry:
         :return: GeometricElements
@@ -496,28 +547,27 @@ class Factory2D(AnyObject):
     def create_spline(self, i_poles: tuple) -> Spline2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Func CreateSpline(CATSafeArrayVariant iPoles) As Spline2D
-                |     Creates and returns a 2D b-spline.
+                Func CreateSpline(CATSafeArrayVariant iPoles) As Spline2D
+                    Creates and returns a 2D b-spline.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iPoles
-                |             An array of CATIAControlPoint2D forming the poles of the b-spline.
-                |
-                |
-                |     Returns:
-                |         The created B-Spline
+                        iPoles
+                            An array of CATIAControlPoint2D forming the poles of the b-spline.
                 |
                 |
-                | Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
+                    Returns:
+                        The created B-Spline
+                |
+                |
+                Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
 
         :param tuple i_poles:
         :return: Spline2D
         """
-        return Spline2D(self.com_object.CreateSpline(i_poles))
+        return Spline2D(self.com_object.CreateSpline(tuple(p2d.com_object for p2d in i_poles)))
         # todo: check this method, does it require system service?
         # Autogenerated comment:
         # some methods require a system service call as the methods expects a vb array object

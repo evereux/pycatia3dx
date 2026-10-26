@@ -13,58 +13,56 @@ from pycatia3dx.sma_mpa_structural_mode.sim_orientation import SimOrientation
 
 
 class SimGasketProperty(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimGasketProperty
-                | 
-                | Represents the Gasket Property object.
-                | 
-                | Example:
-                |     Given a SimProperties object, you can create a SimGasketProperty as
-                |     following:
-                | 
-                |      Dim MyProperties As SimProperties
-                |      ...
-                |      Dim MyGasketProperty As SimGasketProperty
-                |      Set MyGasketProperty = MyProperties.Add("SimGasketProperty")
-                |      
-                | 
-                |     Given a SimProperties object, you can retrieve a SimGasketProperty named
-                |     "Gasket Property.1" as following:
-                | 
-                |      Dim MyProperties As SimProperties
-                |      ...
-                |      Dim MyGasketProperty As SimGasketProperty
-                |      Set MyGasketProperty = MyProperties.Item("Gasket Property.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimProperties object myProperties, you can create a
-                |     SimGasketProperty as following:
-                | 
-                |      ...
-                |      myGasketProperty = myProperties.Add("SimGasketProperty")
-                |      
-                | 
-                |     Given a SimProperties object myProperties, you can retrieve a
-                |     SimGasketProperty named "Gasket Property.1" as following:
-                | 
-                |      ...
-                |      myGasketProperty = myProperties.Item("Gasket Property.1")
-                |      
-                | 
-                | See also:
-                |     SimProperties
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimGasketProperty
+                
+                Represents the Gasket Property object.
+                
+                Example:
+                    Given a SimProperties object, you can create a SimGasketProperty as
+                    following:
+                
+                     Dim MyProperties As SimProperties
+                     ...
+                     Dim MyGasketProperty As SimGasketProperty
+                     Set MyGasketProperty = MyProperties.Add("SimGasketProperty")
+                     
+                
+                    Given a SimProperties object, you can retrieve a SimGasketProperty named
+                    "Gasket Property.1" as following:
+                
+                     Dim MyProperties As SimProperties
+                     ...
+                     Dim MyGasketProperty As SimGasketProperty
+                     Set MyGasketProperty = MyProperties.Item("Gasket Property.1")
+                     
+                
+                Example in Python:
+                    Given a SimProperties object myProperties, you can create a
+                    SimGasketProperty as following:
+                
+                     ...
+                     myGasketProperty = myProperties.Add("SimGasketProperty")
+                     
+                
+                    Given a SimProperties object myProperties, you can retrieve a
+                    SimGasketProperty named "Gasket Property.1" as following:
+                
+                     ...
+                     myGasketProperty = myProperties.Item("Gasket Property.1")
+                     
+                
+                See also:
+                    SimProperties
     
     """
 
@@ -76,11 +74,10 @@ class SimGasketProperty(AnyObject):
     def cross_sectional_area(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CrossSectionalArea() As double
-                |     Cross sectional area value. Quantity: AREA, units: m2
+                Property CrossSectionalArea() As double
+                    Cross sectional area value. Quantity: AREA, units: m2
 
         :return: float
         """
@@ -99,11 +96,10 @@ class SimGasketProperty(AnyObject):
     def initial_gap(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InitialGap() As double
-                |     Initial gap value. Quantity: LENGTH, units: m
+                Property InitialGap() As double
+                    Initial gap value. Quantity: LENGTH, units: m
 
         :return: float
         """
@@ -122,16 +118,15 @@ class SimGasketProperty(AnyObject):
     def initial_thickness_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InitialThicknessFlag() As boolean
-                |     Returns or sets the flag that determines if the inital thickness is
-                |     used.
-                | 
-                |     TRUE: the inital thickness is used.
-                | 
-                |     FALSE: the inital thickness is not used.
+                Property InitialThicknessFlag() As boolean
+                    Returns or sets the flag that determines if the inital thickness is
+                    used.
+                
+                    TRUE: the inital thickness is used.
+                
+                    FALSE: the inital thickness is not used.
 
         :return: bool
         """
@@ -150,11 +145,10 @@ class SimGasketProperty(AnyObject):
     def initial_thickness_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InitialThicknessValue() As double
-                |     Initial thickness value. Quantity: LENGTH, units: m
+                Property InitialThicknessValue() As double
+                    Initial thickness value. Quantity: LENGTH, units: m
 
         :return: float
         """
@@ -173,11 +167,10 @@ class SimGasketProperty(AnyObject):
     def initial_void(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InitialVoid() As double
-                |     Initial void value. Quantity: LENGTH, units: m
+                Property InitialVoid() As double
+                    Initial void value. Quantity: LENGTH, units: m
 
         :return: float
         """
@@ -196,11 +189,10 @@ class SimGasketProperty(AnyObject):
     def material_behavior(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialBehavior() As CATBaseDispatch
-                |     Returns or sets the material behavior.
+                Property MaterialBehavior() As CATBaseDispatch
+                    Returns or sets the material behavior.
 
         :return: AnyObject
         """
@@ -219,11 +211,10 @@ class SimGasketProperty(AnyObject):
     def material_behavior_by_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialBehaviorByName() As CATBSTR
-                |     Returns or sets the simulation material behavior by name.
+                Property MaterialBehaviorByName() As CATBSTR
+                    Returns or sets the simulation material behavior by name.
 
         :return: str
         """
@@ -242,11 +233,10 @@ class SimGasketProperty(AnyObject):
     def orientation(self) -> SimOrientation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Orientation() As SimOrientation (Read Only)
-                |     Returns the orientation used for the section.
+                Property Orientation() As SimOrientation (Read Only)
+                    Returns the orientation used for the section.
 
         :return: SimOrientation
         """
@@ -257,36 +247,35 @@ class SimGasketProperty(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. Possible values are:
-                | 
-                |         Abstractions
-                |         Amplitudes
-                |         Controls
-                |         Connections
-                |         Damping
-                |         ElementTypeAssignments
-                |         Envelopes
-                |         FieldPlots
-                |         FlowConditions
-                |         HistoryPlots
-                |         InitialConditions
-                |         Interactions
-                |         LinearLoadCases
-                |         Loads
-                |         LoadSets
-                |         OutputRequests
-                |         PredefinedFields
-                |         Properties
-                |         Restraints
-                |         Sensors
-                |         Streams
-                |         ThermalConditions
-                |         NotDefined
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. Possible values are:
+                
+                        Abstractions
+                        Amplitudes
+                        Controls
+                        Connections
+                        Damping
+                        ElementTypeAssignments
+                        Envelopes
+                        FieldPlots
+                        FlowConditions
+                        HistoryPlots
+                        InitialConditions
+                        Interactions
+                        LinearLoadCases
+                        Loads
+                        LoadSets
+                        OutputRequests
+                        PredefinedFields
+                        Properties
+                        Restraints
+                        Sensors
+                        Streams
+                        ThermalConditions
+                        NotDefined
 
         :return: str
         """
@@ -297,16 +286,15 @@ class SimGasketProperty(AnyObject):
     def stabilization_stiffness_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StabilizationStiffnessFlag() As boolean
-                |     Returns or sets the flag that determines if the stabilization stiffness is
-                |     used.
-                | 
-                |     TRUE: the stabilization stiffness is used.
-                | 
-                |     FALSE: the stabilization stiffness is not used.
+                Property StabilizationStiffnessFlag() As boolean
+                    Returns or sets the flag that determines if the stabilization stiffness is
+                    used.
+                
+                    TRUE: the stabilization stiffness is used.
+                
+                    FALSE: the stabilization stiffness is not used.
 
         :return: bool
         """
@@ -325,11 +313,10 @@ class SimGasketProperty(AnyObject):
     def stabilization_stiffness_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StabilizationStiffnessValue() As double
-                |     Stabilization stiffness value. Quantity: PRESSURE, units: N_m2
+                Property StabilizationStiffnessValue() As double
+                    Stabilization stiffness value. Quantity: PRESSURE, units: N_m2
 
         :return: float
         """
@@ -348,16 +335,15 @@ class SimGasketProperty(AnyObject):
     def thickness_only_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ThicknessOnlyFlag() As boolean
-                |     Returns or sets the flag that determines if the thickness only option is
-                |     used.
-                | 
-                |     TRUE: the thickness only option is used.
-                | 
-                |     FALSE: the thickness only option is not used. 
+                Property ThicknessOnlyFlag() As boolean
+                    Returns or sets the flag that determines if the thickness only option is
+                    used.
+                
+                    TRUE: the thickness only option is used.
+                
+                    FALSE: the thickness only option is not used. 
 
         :return: bool
         """
@@ -373,4 +359,4 @@ class SimGasketProperty(AnyObject):
         self.com_object.ThicknessOnlyFlag = value
 
     def __repr__(self):
-        return f'SimGasketProperty(name="{ self.name }")'
+        return f'SimGasketProperty(name="{self.name}")'

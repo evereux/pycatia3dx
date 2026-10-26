@@ -16,19 +16,18 @@ from pycatia3dx.structure.structure_profile import StructureProfile
 class SrmProxyProfile(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SrmProxyProfile
-                | 
-                | Object to manage the Proxy Profile.
-                | Planning breaks are treated similar like limits.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SrmProxyProfile
+                
+                Object to manage the Proxy Profile.
+                Planning breaks are treated similar like limits.
     
     """
 
@@ -39,24 +38,23 @@ class SrmProxyProfile(AnyObject):
     def get_location(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetLocation() As long
-                |     Returns the proxy profile location. Return Values
-                |     1 : IN.
-                |     2 : OUT.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the location of
-                |              SrmProxyProfile.
-                |              
-                | 
-                |               Dim ObjSrmProxyProfile As SrmProxyProfile
-                |               Set ObjSrmProxyProfile = ObjSrmProxyProfiles.Item(1)
-                |               Location = ObjSrmProxyProfile.GetLocation
+                Func GetLocation() As long
+                    Returns the proxy profile location. Return Values
+                    1 : IN.
+                    2 : OUT.
+                
+                    Example:
+                
+                
+                             This example retrieves the location of
+                             SrmProxyProfile.
+                             
+                
+                              Dim ObjSrmProxyProfile As SrmProxyProfile
+                              Set ObjSrmProxyProfile = ObjSrmProxyProfiles.Item(1)
+                              Location = ObjSrmProxyProfile.GetLocation
 
         :return: int
         """
@@ -65,19 +63,18 @@ class SrmProxyProfile(AnyObject):
     def get_planning_breaks(self, o_start_pb: SrmPlanningBreak, o_end_pb: SrmPlanningBreak) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetPlanningBreaks(SrmPlanningBreak oStartPB,SrmPlanningBreak
-                | oEndPB)
-                |     Returns the planning breaks under the Proxy Profile.
-                | 
-                |     Parameters:
-                | 
-                |         oStartPB
-                |             output Start Planning Break. 
-                |         oEndPB
-                |             output End Planning Break.
+                Sub GetPlanningBreaks(SrmPlanningBreak oStartPB,SrmPlanningBreak
+                oEndPB)
+                    Returns the planning breaks under the Proxy Profile.
+                
+                    Parameters:
+                
+                        oStartPB
+                            output Start Planning Break. 
+                        oEndPB
+                            output End Planning Break.
 
         :param SrmPlanningBreak o_start_pb:
         :param SrmPlanningBreak o_end_pb:
@@ -88,11 +85,10 @@ class SrmProxyProfile(AnyObject):
     def get_profile(self) -> StructureProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetProfile() As StructureProfile
-                |     Returns the Profile pointed by the proxy. 
+                Func GetProfile() As StructureProfile
+                    Returns the Profile pointed by the proxy. 
 
         :return: StructureProfile
         """

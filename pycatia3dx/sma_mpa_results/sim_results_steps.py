@@ -17,31 +17,30 @@ from pycatia3dx.types.general import CATVariant
 class SimResultsSteps(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SimResultsSteps
-                | 
-                | Represents the collection of results analysis cases and can be used to retrieve
-                | each results case.
-                | Example:
-                | 
-                |  Given a ResultsAnalysisCase object, you can create a Results Steps object as
-                |  following.
-                |  
-                | 
-                |  Dim oResultsSteps As SimResultsSteps
-                |  Set oResultsSteps = oResultsAnalysisCase.ResultsSteps
-                |  
-                | 
-                | See also:
-                |     SimResultsManager
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SimResultsSteps
+                
+                Represents the collection of results analysis cases and can be used to retrieve
+                each results case.
+                Example:
+                
+                 Given a ResultsAnalysisCase object, you can create a Results Steps object as
+                 following.
+                 
+                
+                 Dim oResultsSteps As SimResultsSteps
+                 Set oResultsSteps = oResultsAnalysisCase.ResultsSteps
+                 
+                
+                See also:
+                    SimResultsManager
     
     """
 
@@ -52,20 +51,19 @@ class SimResultsSteps(Collection):
     def item(self, index: CATVariant) -> SimResultsStep:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant index) As SimResultsStep
-                |     Returns the ResultsStep.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of ResultsStep to access. The index starts from 1.
-                |             
-                | 
-                |     Returns:
-                |         Returns the ResultsStep. 
+                Func Item(CATVariant index) As SimResultsStep
+                    Returns the ResultsStep.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of ResultsStep to access. The index starts from 1.
+                            
+                
+                    Returns:
+                        Returns the ResultsStep. 
 
         :param CATVariant index:
         :return: SimResultsStep

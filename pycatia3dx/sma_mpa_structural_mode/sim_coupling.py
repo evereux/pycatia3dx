@@ -13,58 +13,56 @@ from pycatia3dx.sma_mpa_structural_mode.sim_connector_section import SimConnecto
 
 
 class SimCoupling(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimCoupling
-                | 
-                | Represents the Coupling object.
-                | 
-                | Example:
-                |     Given a SimMCXProperties object, you can create a SimCoupling as
-                |     following:
-                | 
-                |      Dim MyMCXProperties As SimMCXProperties
-                |      ...
-                |      Dim MyCoupling As SimCoupling
-                |      Set MyCoupling = MyMCXProperties.Add("SimCoupling")
-                |      
-                | 
-                |     Given a SimMCXProperties object, you can retrieve a SimCoupling named
-                |     "Coupling.1" as following:
-                | 
-                |      Dim MyMCXProperties As SimMCXProperties
-                |      ...
-                |      Dim MyCoupling As SimCoupling
-                |      Set MyCoupling = MyMCXProperties.Item("Coupling.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMCXProperties object myMCXProperties, you can create a
-                |     SimCoupling as following:
-                | 
-                |      ...
-                |      myCoupling = myMCXProperties.Add("SimCoupling")
-                |      
-                | 
-                |     Given a SimMCXProperties object myMCXProperties, you can retrieve a
-                |     SimCoupling named "Coupling.1" as following:
-                | 
-                |      ...
-                |      myCoupling = myMCXProperties.Item("Coupling.1")
-                |      
-                | 
-                | See also:
-                |     SimMCXProperties
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimCoupling
+                
+                Represents the Coupling object.
+                
+                Example:
+                    Given a SimMCXProperties object, you can create a SimCoupling as
+                    following:
+                
+                     Dim MyMCXProperties As SimMCXProperties
+                     ...
+                     Dim MyCoupling As SimCoupling
+                     Set MyCoupling = MyMCXProperties.Add("SimCoupling")
+                     
+                
+                    Given a SimMCXProperties object, you can retrieve a SimCoupling named
+                    "Coupling.1" as following:
+                
+                     Dim MyMCXProperties As SimMCXProperties
+                     ...
+                     Dim MyCoupling As SimCoupling
+                     Set MyCoupling = MyMCXProperties.Item("Coupling.1")
+                     
+                
+                Example in Python:
+                    Given a SimMCXProperties object myMCXProperties, you can create a
+                    SimCoupling as following:
+                
+                     ...
+                     myCoupling = myMCXProperties.Add("SimCoupling")
+                     
+                
+                    Given a SimMCXProperties object myMCXProperties, you can retrieve a
+                    SimCoupling named "Coupling.1" as following:
+                
+                     ...
+                     myCoupling = myMCXProperties.Item("Coupling.1")
+                     
+                
+                See also:
+                    SimMCXProperties
     
     """
 
@@ -76,12 +74,11 @@ class SimCoupling(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the axis system. This is applicable to coupling to point construct
-                |     type.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the axis system. This is applicable to coupling to point construct
+                    type.
 
         :return: SimAxisSystem
         """
@@ -92,11 +89,10 @@ class SimCoupling(AnyObject):
     def connector_section(self) -> SimConnectorSection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ConnectorSection() As SimConnectorSection (Read Only)
-                |     Returns the connector section.
+                Property ConnectorSection() As SimConnectorSection (Read Only)
+                    Returns the connector section.
 
         :return: SimConnectorSection
         """
@@ -107,11 +103,10 @@ class SimCoupling(AnyObject):
     def first_support_coupling_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FirstSupportCouplingType() As SimCouplingCouplingType
-                |     Returns or sets the type of first support coupling.
+                Property FirstSupportCouplingType() As SimCouplingCouplingType
+                    Returns or sets the type of first support coupling.
 
         :return: int
         """
@@ -130,16 +125,15 @@ class SimCoupling(AnyObject):
     def rotation1(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Rotation1() As boolean
-                |     Returns or sets the flag that determines if rotation1 dof is constrainted
-                |     to define the coupling behavior.
-                |     TRUE: a rotation1 dof is constrainted to define the coupling
-                |     behavior.
-                | 
-                |     FALSE: a rotation1 dof is not constrainted to define the coupling behavior.
+                Property Rotation1() As boolean
+                    Returns or sets the flag that determines if rotation1 dof is constrainted
+                    to define the coupling behavior.
+                    TRUE: a rotation1 dof is constrainted to define the coupling
+                    behavior.
+                
+                    FALSE: a rotation1 dof is not constrainted to define the coupling behavior.
 
         :return: bool
         """
@@ -158,16 +152,15 @@ class SimCoupling(AnyObject):
     def rotation2(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Rotation2() As boolean
-                |     Returns or sets the flag that determines if rotation2 dof is constrainted
-                |     to define the coupling behavior.
-                |     TRUE: a rotation2 dof is constrainted to define the coupling
-                |     behavior.
-                | 
-                |     FALSE: a rotation2 dof is not constrainted to define the coupling behavior.
+                Property Rotation2() As boolean
+                    Returns or sets the flag that determines if rotation2 dof is constrainted
+                    to define the coupling behavior.
+                    TRUE: a rotation2 dof is constrainted to define the coupling
+                    behavior.
+                
+                    FALSE: a rotation2 dof is not constrainted to define the coupling behavior.
 
         :return: bool
         """
@@ -186,16 +179,15 @@ class SimCoupling(AnyObject):
     def rotation3(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Rotation3() As boolean
-                |     Returns or sets the flag that determines if rotation1 dof is constrainted
-                |     to define the coupling behavior.
-                |     TRUE: a rotation3 dof is constrainted to define the coupling
-                |     behavior.
-                | 
-                |     FALSE: a rotation3 dof is not constrainted to define the coupling behavior.
+                Property Rotation3() As boolean
+                    Returns or sets the flag that determines if rotation1 dof is constrainted
+                    to define the coupling behavior.
+                    TRUE: a rotation3 dof is constrainted to define the coupling
+                    behavior.
+                
+                    FALSE: a rotation3 dof is not constrainted to define the coupling behavior.
 
         :return: bool
         """
@@ -214,12 +206,11 @@ class SimCoupling(AnyObject):
     def second_support_coupling_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SecondSupportCouplingType() As
-                | SimCouplingCouplingType
-                |     Returns or sets the type of second support coupling.
+                Property SecondSupportCouplingType() As
+                SimCouplingCouplingType
+                    Returns or sets the type of second support coupling.
 
         :return: int
         """
@@ -238,36 +229,35 @@ class SimCoupling(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. Possible values are:
-                | 
-                |         Abstractions
-                |         Amplitudes
-                |         Controls
-                |         Connections
-                |         Damping
-                |         ElementTypeAssignments
-                |         Envelopes
-                |         FieldPlots
-                |         FlowConditions
-                |         HistoryPlots
-                |         InitialConditions
-                |         Interactions
-                |         LinearLoadCases
-                |         Loads
-                |         LoadSets
-                |         OutputRequests
-                |         PredefinedFields
-                |         Properties
-                |         Restraints
-                |         Sensors
-                |         Streams
-                |         ThermalConditions
-                |         NotDefined
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. Possible values are:
+                
+                        Abstractions
+                        Amplitudes
+                        Controls
+                        Connections
+                        Damping
+                        ElementTypeAssignments
+                        Envelopes
+                        FieldPlots
+                        FlowConditions
+                        HistoryPlots
+                        InitialConditions
+                        Interactions
+                        LinearLoadCases
+                        Loads
+                        LoadSets
+                        OutputRequests
+                        PredefinedFields
+                        Properties
+                        Restraints
+                        Sensors
+                        Streams
+                        ThermalConditions
+                        NotDefined
 
         :return: str
         """
@@ -278,11 +268,10 @@ class SimCoupling(AnyObject):
     def spring_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpringType() As SimSpringType
-                |     Returns or sets the type of the SMAMpaSpringType.
+                Property SpringType() As SimSpringType
+                    Returns or sets the type of the SMAMpaSpringType.
 
         :return: SimSpringType
         """
@@ -301,17 +290,16 @@ class SimCoupling(AnyObject):
     def translation1(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Translation1() As boolean
-                |     Returns or sets the flag that determines if translation1 dof is
-                |     constrained to define the coupling behavior.
-                |     TRUE: a translation1 dof is constrained to define the coupling
-                |     behavior.
-                | 
-                |     FALSE: a translation1 dof is not constrained to define the coupling
-                |     behavior.
+                Property Translation1() As boolean
+                    Returns or sets the flag that determines if translation1 dof is
+                    constrained to define the coupling behavior.
+                    TRUE: a translation1 dof is constrained to define the coupling
+                    behavior.
+                
+                    FALSE: a translation1 dof is not constrained to define the coupling
+                    behavior.
 
         :return: bool
         """
@@ -330,17 +318,16 @@ class SimCoupling(AnyObject):
     def translation2(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Translation2() As boolean
-                |     Returns or sets the flag that determines if translation2 dof is
-                |     constrained to define the coupling behavior.
-                |     TRUE: a translation2 dof is constrained to define the coupling
-                |     behavior.
-                | 
-                |     FALSE: a translation2 dof is not constrained to define the coupling
-                |     behavior.
+                Property Translation2() As boolean
+                    Returns or sets the flag that determines if translation2 dof is
+                    constrained to define the coupling behavior.
+                    TRUE: a translation2 dof is constrained to define the coupling
+                    behavior.
+                
+                    FALSE: a translation2 dof is not constrained to define the coupling
+                    behavior.
 
         :return: bool
         """
@@ -359,17 +346,16 @@ class SimCoupling(AnyObject):
     def translation3(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Translation3() As boolean
-                |     Returns or sets the flag that determines if translation3 dof is
-                |     constrained to define the coupling behavior.
-                |     TRUE: a translation3 dof is constrained to define the coupling
-                |     behavior.
-                | 
-                |     FALSE: a translation3 dof is not constrained to define the coupling
-                |     behavior.
+                Property Translation3() As boolean
+                    Returns or sets the flag that determines if translation3 dof is
+                    constrained to define the coupling behavior.
+                    TRUE: a translation3 dof is constrained to define the coupling
+                    behavior.
+                
+                    FALSE: a translation3 dof is not constrained to define the coupling
+                    behavior.
 
         :return: bool
         """
@@ -388,15 +374,14 @@ class SimCoupling(AnyObject):
     def use_spring_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UseSpringFlag() As boolean
-                |     Returns or sets the flag that determines if a spring is used to define the
-                |     coupling behavior.
-                |     TRUE: a spring is used to define the coupling behavior.
-                | 
-                |     FALSE: do not use spring to define the coupling behavior. 
+                Property UseSpringFlag() As boolean
+                    Returns or sets the flag that determines if a spring is used to define the
+                    coupling behavior.
+                    TRUE: a spring is used to define the coupling behavior.
+                
+                    FALSE: do not use spring to define the coupling behavior. 
 
         :return: bool
         """
@@ -412,4 +397,4 @@ class SimCoupling(AnyObject):
         self.com_object.UseSpringFlag = value
 
     def __repr__(self):
-        return f'SimCoupling(name="{ self.name }")'
+        return f'SimCoupling(name="{self.name}")'

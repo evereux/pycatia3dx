@@ -12,21 +12,19 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class MaterialCondition(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     MaterialCondition
-                | 
-                | Interface for accessing Material Condition modifier on a TPS.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    MaterialCondition
+                
+                Interface for accessing Material Condition modifier on a TPS.
     
     """
 
@@ -38,11 +36,10 @@ class MaterialCondition(AnyObject):
     def modifier(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Modifier() As CATBSTR (Read Only)
-                |     Retrieves Material Condition modifier. 
+                Property Modifier() As CATBSTR (Read Only)
+                    Retrieves Material Condition modifier. 
 
         :return: str
         """
@@ -50,4 +47,4 @@ class MaterialCondition(AnyObject):
         return self.com_object.Modifier
 
     def __repr__(self):
-        return f'MaterialCondition(name="{ self.name }")'
+        return f'MaterialCondition(name="{self.name}")'

@@ -12,21 +12,19 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingInstructionSetAction(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingInstructionSetAction
-                | 
-                | Interface for drilling riveting instruction set actions.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingInstructionSetAction
+                
+                Interface for drilling riveting instruction set actions.
     
     """
 
@@ -38,11 +36,10 @@ class ManufacturingInstructionSetAction(AnyObject):
     def activation_condition(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ActivationCondition() As CATBSTR
-                |     Returns or sets parameter name which drives the activation of the action.
+                Property ActivationCondition() As CATBSTR
+                    Returns or sets parameter name which drives the activation of the action.
 
         :return: str
         """
@@ -60,15 +57,14 @@ class ManufacturingInstructionSetAction(AnyObject):
     def get_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetType() As CATBSTR
-                |     Gets the type of action.
+                Func GetType() As CATBSTR
+                    Gets the type of action.
 
         :return: str
         """
         return self.com_object.GetType()
 
     def __repr__(self):
-        return f'ManufacturingInstructionSetAction(name="{ self.name }")'
+        return f'ManufacturingInstructionSetAction(name="{self.name}")'

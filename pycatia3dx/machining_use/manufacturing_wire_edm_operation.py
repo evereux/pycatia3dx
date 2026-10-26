@@ -13,23 +13,21 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingWireEdmOperation(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingWireEDMOperation
-                | 
-                | Interface representing Wire EDM manufacturing operation.
-                | Role: This interface offers services to manage Wire EDM manufacturing
-                | operation.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingWireEDMOperation
+                
+                Interface representing Wire EDM manufacturing operation.
+                Role: This interface offers services to manage Wire EDM manufacturing
+                operation.
     
     """
 
@@ -40,25 +38,24 @@ class ManufacturingWireEdmOperation(AnyObject):
     def get_offset_parameter(self, i_parameter_name: str, pass_index: int) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetOffsetParameter(CATBSTR iParameterName,long PassIndex) As
-                | Parameter
-                |     Returns the Offset associated with the operation set on
-                |     iParameterName.
-                | 
-                |     Parameters:
-                | 
-                |         iParameterName
-                |             Name of the Parameter from which Offset parameter has to be
-                |             retrieved. 
-                |         PassIndex
-                |             index of the Pass from which Offset parameter has to be retrieved.
-                |             Only for Finishing and Seperation Pass. 
-                | 
-                |     Returns:
-                |         oOffsetParm Retrieved Offset parameter.
+                Func GetOffsetParameter(CATBSTR iParameterName,long PassIndex) As
+                Parameter
+                    Returns the Offset associated with the operation set on
+                    iParameterName.
+                
+                    Parameters:
+                
+                        iParameterName
+                            Name of the Parameter from which Offset parameter has to be
+                            retrieved. 
+                        PassIndex
+                            index of the Pass from which Offset parameter has to be retrieved.
+                            Only for Finishing and Seperation Pass. 
+                
+                    Returns:
+                        oOffsetParm Retrieved Offset parameter.
 
         :param str i_parameter_name:
         :param int pass_index:
@@ -69,25 +66,24 @@ class ManufacturingWireEdmOperation(AnyObject):
     def get_techno_set_parameter(self, i_parameter_name: str, pass_index: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTechnoSetParameter(CATBSTR iParameterName,long PassIndex) As
-                | AnyObject
-                |     Returns the Techno Set associated with the operation set on
-                |     iParameterName.
-                | 
-                |     Parameters:
-                | 
-                |         iParameterName
-                |             Name of the Parameter from which Techno Set has to be retrieved.
-                |             
-                |         PassIndex
-                |             index of the Pass from which Techno Set has to be retrieved. Only
-                |             for Finishing and Seperation Pass. 
-                | 
-                |     Returns:
-                |         oTechnoSetParm Retrieved Techno Set.
+                Func GetTechnoSetParameter(CATBSTR iParameterName,long PassIndex) As
+                AnyObject
+                    Returns the Techno Set associated with the operation set on
+                    iParameterName.
+                
+                    Parameters:
+                
+                        iParameterName
+                            Name of the Parameter from which Techno Set has to be retrieved.
+                            
+                        PassIndex
+                            index of the Pass from which Techno Set has to be retrieved. Only
+                            for Finishing and Seperation Pass. 
+                
+                    Returns:
+                        oTechnoSetParm Retrieved Techno Set.
 
         :param str i_parameter_name:
         :param int pass_index:
@@ -98,15 +94,14 @@ class ManufacturingWireEdmOperation(AnyObject):
     def get_wire_edm_features(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetWireEDMFeatures() As CATSafeArrayVariant
-                |     Returns the WEDM features associated with the operation.
-                | 
-                |     Returns:
-                |         oListWEDMFeatures Retrieved list of Wire EDM Features set on the
-                |         Operation.
+                Func GetWireEDMFeatures() As CATSafeArrayVariant
+                    Returns the WEDM features associated with the operation.
+                
+                    Returns:
+                        oListWEDMFeatures Retrieved list of Wire EDM Features set on the
+                        Operation.
 
         :return: tuple
         """
@@ -115,27 +110,26 @@ class ManufacturingWireEdmOperation(AnyObject):
     def set_techno_set_parameter(self, i_parameter_name: str, pass_index: int, i_techno_set: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTechnoSetParameter(CATBSTR iParameterName,long PassIndex,AnyObject
-                | iTechnoSet)
-                |     Sets the Techno Set on operation associated with the
-                |     iParameterName.
-                | 
-                |     Parameters:
-                | 
-                |         iParameterName
-                |             Name of the Parameter on which iTechnoSet has to be set.
-                |             
-                |         PassIndex
-                |             index of the Pass on which iTechnoSet has to be set. Only for
-                |             Finishing and Seperation Pass. 
-                |         iTechnoSet
-                |             Techno Set to be set. 
-                | 
-                |     Returns:
-                |         Status of the method.
+                Sub SetTechnoSetParameter(CATBSTR iParameterName,long PassIndex,AnyObject
+                iTechnoSet)
+                    Sets the Techno Set on operation associated with the
+                    iParameterName.
+                
+                    Parameters:
+                
+                        iParameterName
+                            Name of the Parameter on which iTechnoSet has to be set.
+                            
+                        PassIndex
+                            index of the Pass on which iTechnoSet has to be set. Only for
+                            Finishing and Seperation Pass. 
+                        iTechnoSet
+                            Techno Set to be set. 
+                
+                    Returns:
+                        Status of the method.
 
         :param str i_parameter_name:
         :param int pass_index:
@@ -145,4 +139,4 @@ class ManufacturingWireEdmOperation(AnyObject):
         return self.com_object.SetTechnoSetParameter(i_parameter_name, pass_index, i_techno_set.com_object)
 
     def __repr__(self):
-        return f'ManufacturingWireEdmOperation(name="{ self.name }")'
+        return f'ManufacturingWireEdmOperation(name="{self.name}")'

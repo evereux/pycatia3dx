@@ -14,21 +14,20 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 class DrawingTextProperties(CATBaseDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 DrawingTextProperties
-                | 
-                | Represents the properties of a drawing text in a drawing view.
-                | 
-                | This interface is obtained from CATIADrawingText or CATIADrawingWelding
-                | interface. Update method must be called after text properties modification to
-                | refresh the visualization.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                DrawingTextProperties
+                
+                Represents the properties of a drawing text in a drawing view.
+                
+                This interface is obtained from CATIADrawingText or CATIADrawingWelding
+                interface. Update method must be called after text properties modification to
+                refresh the visualization.
     
     """
 
@@ -40,17 +39,16 @@ class DrawingTextProperties(CATBaseDispatch):
     def anchor_point(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AnchorPoint() As CatTextAnchorPosition
-                |     Returns or sets the anchor point of the drawing text.
-                | 
-                |     Example:
-                |         This example sets the AnchorPoint of the MyText drawing text to the
-                |         right
-                | 
-                |          MyText.AnchorPoint = catRight
+                Property AnchorPoint() As CatTextAnchorPosition
+                    Returns or sets the anchor point of the drawing text.
+                
+                    Example:
+                        This example sets the AnchorPoint of the MyText drawing text to the
+                        right
+                
+                         MyText.AnchorPoint = catRight
 
         :return: int
         """
@@ -69,17 +67,16 @@ class DrawingTextProperties(CATBaseDispatch):
     def blanking(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Blanking() As CatBlankingMode
-                |     Returns or sets the blanking mode of the drawing text.
-                | 
-                |     Example:
-                |         This example sets the blanking mode type of MyText drawing text to
-                |         active on geom
-                | 
-                |          MyText.Blanking = catBlankingOnGeom
+                Property Blanking() As CatBlankingMode
+                    Returns or sets the blanking mode of the drawing text.
+                
+                    Example:
+                        This example sets the blanking mode type of MyText drawing text to
+                        active on geom
+                
+                         MyText.Blanking = catBlankingOnGeom
 
         :return: int
         """
@@ -98,18 +95,17 @@ class DrawingTextProperties(CATBaseDispatch):
     def bold(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Bold() As long
-                |     Returns or sets the drawing text font bold property.
-                |     True if the drawing text is bold formatted.
-                | 
-                |     Example:
-                |         This example get the parameter bold on MyText drawing
-                |         text.
-                | 
-                |          oVal = MyText.Bold
+                Property Bold() As long
+                    Returns or sets the drawing text font bold property.
+                    True if the drawing text is bold formatted.
+                
+                    Example:
+                        This example get the parameter bold on MyText drawing
+                        text.
+                
+                         oVal = MyText.Bold
 
         :return: int
         """
@@ -128,19 +124,18 @@ class DrawingTextProperties(CATBaseDispatch):
     def color(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Color() As long
-                |     Returns or sets the color of the drawing text.
-                | 
-                |     Example:
-                |         This example sets the Color type of the MyText drawing text to
-                |         red
-                | 
-                |          redCol  =-16776961 'Encoded RGBA color within long integer (R=255 G=0 
-                |          B=0   A=255)
-                |          MyText.Color = redCol
+                Property Color() As long
+                    Returns or sets the color of the drawing text.
+                
+                    Example:
+                        This example sets the Color type of the MyText drawing text to
+                        red
+                
+                         redCol  =-16776961 'Encoded RGBA color within long integer (R=255 G=0 
+                         B=0   A=255)
+                         MyText.Color = redCol
 
         :return: int
         """
@@ -159,17 +154,16 @@ class DrawingTextProperties(CATBaseDispatch):
     def font_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FontName() As CATBSTR
-                |     Returns or sets the font name of the drawing text.
-                | 
-                |     Example:
-                |         This example sets the MyText drawing text font as Courrier 10
-                |         BT.
-                | 
-                |          MyText.SetFontName("Courrier 10 BT")
+                Property FontName() As CATBSTR
+                    Returns or sets the font name of the drawing text.
+                
+                    Example:
+                        This example sets the MyText drawing text font as Courrier 10
+                        BT.
+                
+                         MyText.SetFontName("Courrier 10 BT")
 
         :return: str
         """
@@ -188,18 +182,17 @@ class DrawingTextProperties(CATBaseDispatch):
     def font_size(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FontSize() As double
-                |     Returns or sets the font size of the drawing text.
-                | 
-                |     Example:
-                |         This example sets the MyText drawing text font size to
-                |         3.5.
-                | 
-                |          iFontSize = 3.5
-                |          MyText.SetFontSize 0, 0, iFontSize
+                Property FontSize() As double
+                    Returns or sets the font size of the drawing text.
+                
+                    Example:
+                        This example sets the MyText drawing text font size to
+                        3.5.
+                
+                         iFontSize = 3.5
+                         MyText.SetFontSize 0, 0, iFontSize
 
         :return: float
         """
@@ -218,17 +211,16 @@ class DrawingTextProperties(CATBaseDispatch):
     def frame_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FrameType() As CatTextFrameType
-                |     Returns or sets the frame type of the drawing text.
-                | 
-                |     Example:
-                |         This example sets the frame type of the MyText drawing text to an
-                |         ellipse
-                | 
-                |          MyText.FrameType = catEllipse
+                Property FrameType() As CatTextFrameType
+                    Returns or sets the frame type of the drawing text.
+                
+                    Example:
+                        This example sets the frame type of the MyText drawing text to an
+                        ellipse
+                
+                         MyText.FrameType = catEllipse
 
         :return: int
         """
@@ -247,18 +239,17 @@ class DrawingTextProperties(CATBaseDispatch):
     def italic(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Italic() As long
-                |     Returns or sets the drawing text font italic property.
-                |     True if the drawing text is formatted as italic.
-                | 
-                |     Example:
-                |         This example set the parameter Italic on MyText drawing
-                |         text.
-                | 
-                |          MyText.Italic = 1
+                Property Italic() As long
+                    Returns or sets the drawing text font italic property.
+                    True if the drawing text is formatted as italic.
+                
+                    Example:
+                        This example set the parameter Italic on MyText drawing
+                        text.
+                
+                         MyText.Italic = 1
 
         :return: int
         """
@@ -277,19 +268,18 @@ class DrawingTextProperties(CATBaseDispatch):
     def justification(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Justification() As CatJustification
-                |     Returns or sets the drawing text font justification
-                |     property.
-                |     True if the drawing text font is justified.
-                | 
-                |     Example:
-                |         This example sets the Justification type of the MyText drawing text to
-                |         the right
-                | 
-                |          MyText.Justification = catRight
+                Property Justification() As CatJustification
+                    Returns or sets the drawing text font justification
+                    property.
+                    True if the drawing text font is justified.
+                
+                    Example:
+                        This example sets the Justification type of the MyText drawing text to
+                        the right
+                
+                         MyText.Justification = catRight
 
         :return: int
         """
@@ -308,18 +298,17 @@ class DrawingTextProperties(CATBaseDispatch):
     def kerning(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Kerning() As long
-                |     Font kerning property.
-                |     True if the drawing text font is formatted as kerning
-                | 
-                |     Example:
-                |         This example set the parameter kerning on MyText drawing
-                |         text.
-                | 
-                |          MyText.Kerning = 1
+                Property Kerning() As long
+                    Font kerning property.
+                    True if the drawing text font is formatted as kerning
+                
+                    Example:
+                        This example set the parameter kerning on MyText drawing
+                        text.
+                
+                         MyText.Kerning = 1
 
         :return: int
         """
@@ -338,17 +327,16 @@ class DrawingTextProperties(CATBaseDispatch):
     def mirror(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Mirror() As CatTextFlipMode
-                |     Returns or sets the mirroring of the drawing text.
-                | 
-                |     Example:
-                |         This example sets the Mirror type of the MyText drawing text to no
-                |         flip
-                | 
-                |          MyText.Mirror = catTextNoFlip
+                Property Mirror() As CatTextFlipMode
+                    Returns or sets the mirroring of the drawing text.
+                
+                    Example:
+                        This example sets the Mirror type of the MyText drawing text to no
+                        flip
+                
+                         MyText.Mirror = catTextNoFlip
 
         :return: int
         """
@@ -367,18 +355,17 @@ class DrawingTextProperties(CATBaseDispatch):
     def overline(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Overline() As long
-                |     Returns or sets the drawing text font overline property.
-                |     True if the drawing text is overlined.
-                | 
-                |     Example:
-                |         This example get the parameter Overline on MyText drawing
-                |         text.
-                | 
-                |          oval = MyText.Overline()
+                Property Overline() As long
+                    Returns or sets the drawing text font overline property.
+                    True if the drawing text is overlined.
+                
+                    Example:
+                        This example get the parameter Overline on MyText drawing
+                        text.
+                
+                         oval = MyText.Overline()
 
         :return: int
         """
@@ -397,19 +384,18 @@ class DrawingTextProperties(CATBaseDispatch):
     def strike_thru(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrikeThru() As long
-                |     Returns or sets the drawing text font strikethrough
-                |     property.
-                |     True if the drawing text font is striked through.
-                | 
-                |     Example:
-                |         This example set the parameter StrikeThru on MyText drawing
-                |         text.
-                | 
-                |          MyText.StrikeThru = 1
+                Property StrikeThru() As long
+                    Returns or sets the drawing text font strikethrough
+                    property.
+                    True if the drawing text font is striked through.
+                
+                    Example:
+                        This example set the parameter StrikeThru on MyText drawing
+                        text.
+                
+                         MyText.StrikeThru = 1
 
         :return: int
         """
@@ -428,18 +414,17 @@ class DrawingTextProperties(CATBaseDispatch):
     def subscript(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Subscript() As long
-                |     Returns or sets the drawing text font subscript property.
-                |     True if the drawing text font is formatted as subscript.
-                | 
-                |     Example:
-                |         This example set the parameter Subscript on MyText drawing
-                |         text.
-                | 
-                |          MyText.Subscript = 1
+                Property Subscript() As long
+                    Returns or sets the drawing text font subscript property.
+                    True if the drawing text font is formatted as subscript.
+                
+                    Example:
+                        This example set the parameter Subscript on MyText drawing
+                        text.
+                
+                         MyText.Subscript = 1
 
         :return: int
         """
@@ -458,19 +443,18 @@ class DrawingTextProperties(CATBaseDispatch):
     def superscript(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Superscript() As long
-                |     Returns or sets the drawing text font superscript
-                |     property.
-                |     True if the drawing text font is formatted as superscript.
-                | 
-                |     Example:
-                |         This example set the parameter Superscript on MyText drawing
-                |         text.
-                | 
-                |          MyText.Superscript = 1
+                Property Superscript() As long
+                    Returns or sets the drawing text font superscript
+                    property.
+                    True if the drawing text font is formatted as superscript.
+                
+                    Example:
+                        This example set the parameter Superscript on MyText drawing
+                        text.
+                
+                         MyText.Superscript = 1
 
         :return: int
         """
@@ -489,18 +473,17 @@ class DrawingTextProperties(CATBaseDispatch):
     def underline(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Underline() As long
-                |     Returns or sets the drawing text font underline property.
-                |     True if the drawing text is underlined.
-                | 
-                |     Example:
-                |         This example get the parameter bold on MyText drawing
-                |         text.
-                | 
-                |          oval = MyText.Underline
+                Property Underline() As long
+                    Returns or sets the drawing text font underline property.
+                    True if the drawing text is underlined.
+                
+                    Example:
+                        This example get the parameter bold on MyText drawing
+                        text.
+                
+                         oval = MyText.Underline
 
         :return: int
         """
@@ -518,32 +501,31 @@ class DrawingTextProperties(CATBaseDispatch):
     def activate_frame(self, i_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ActivateFrame(CatTextFrameType iType)
-                |     Activates the text frame of the drawing text.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The text frame type 
-                | 
-                |     Example:
-                |         This example add a rectangle frame to MyText drawing
-                |         text.
-                | 
-                |          CatTextFrameType itype = catRectangle
-                |          MyText.ActivateFrame itype
-                |          
-                | 
-                | Example:
-                | 
-                |      This example remove the frame to MyText drawing text.
-                |      
-                | 
-                |      CatTextFrameType itype = catNone
-                |      MyText.ActivateFrame itype
+                Sub ActivateFrame(CatTextFrameType iType)
+                    Activates the text frame of the drawing text.
+                
+                    Parameters:
+                
+                        iType
+                            The text frame type 
+                
+                    Example:
+                        This example add a rectangle frame to MyText drawing
+                        text.
+                
+                         CatTextFrameType itype = catRectangle
+                         MyText.ActivateFrame itype
+                         
+                
+                Example:
+                
+                     This example remove the frame to MyText drawing text.
+                     
+                
+                     CatTextFrameType itype = catNone
+                     MyText.ActivateFrame itype
 
         :param CatTextFrameType i_type:
         :return: None
@@ -553,15 +535,14 @@ class DrawingTextProperties(CATBaseDispatch):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Update()
-                |     Update the properties of the drawing text. 
-                | Example:
-                |     This example update the properties to MyText drawing text.
-                | 
-                |      MyText.Update
+                Sub Update()
+                    Update the properties of the drawing text. 
+                Example:
+                    This example update the properties to MyText drawing text.
+                
+                     MyText.Update
 
         :return: None
         """

@@ -14,35 +14,33 @@ from pycatia3dx.mode.reference import Reference
 
 
 class Scaling2(Shape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         Scaling2
-                | 
-                | Represents the Scaling2 feature object.
-                | This solid feature is created from an underlying HybridShapeScaling aggregated
-                | by the Scaling. Role: To access the data of the feature object. This data
-                | includes:
-                | 
-                |     The element to be transformed using the Scaling2
-                |     The reference element for the Scaling2 which is a point or a
-                |     plane
-                |     The ratio and its value
-                | 
-                | Use the CATIAShapeFactory to create Part object.
-                | 
-                | See also:
-                |     ShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        Scaling2
+                
+                Represents the Scaling2 feature object.
+                This solid feature is created from an underlying HybridShapeScaling aggregated
+                by the Scaling. Role: To access the data of the feature object. This data
+                includes:
+                
+                    The element to be transformed using the Scaling2
+                    The reference element for the Scaling2 which is a point or a
+                    plane
+                    The ratio and its value
+                
+                Use the CATIAShapeFactory to create Part object.
+                
+                See also:
+                    ShapeFactory
     
     """
 
@@ -54,21 +52,20 @@ class Scaling2(Shape):
     def center(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Center() As Reference
-                |     Returns or sets the reference element.This element can be a point or a
-                |     plane.
-                |     To set the property, you can use one of the following Boundary objects:
-                |     PlanarFace or Vertex.
-                | 
-                |     Example:
-                |         This example retrieves in RefElem the reference element for the
-                |         Scaling2 hybrid shape feature.
-                | 
-                |          Dim RefElem As Reference
-                |          Set RefElem = Scaling2.Center
+                Property Center() As Reference
+                    Returns or sets the reference element.This element can be a point or a
+                    plane.
+                    To set the property, you can use one of the following Boundary objects:
+                    PlanarFace or Vertex.
+                
+                    Example:
+                        This example retrieves in RefElem the reference element for the
+                        Scaling2 hybrid shape feature.
+                
+                         Dim RefElem As Reference
+                         Set RefElem = Scaling2.Center
 
         :return: Reference
         """
@@ -87,11 +84,10 @@ class Scaling2(Shape):
     def ratio(self) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Ratio() As RealParam (Read Only)
-                |     Returns the scaling ratio.
+                Property Ratio() As RealParam (Read Only)
+                    Returns the scaling ratio.
 
         :return: RealParam
         """
@@ -102,18 +98,17 @@ class Scaling2(Shape):
     def ratio_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RatioValue() As double
-                |     Returns or sets the scaling ratio value.
-                | 
-                |     Example:
-                |         This example retrieves in Value the ratio value for the Scaling hybrid
-                |         shape feature.
-                | 
-                |          Dim Value As double
-                |          Set Value = Scaling2.RatioValue
+                Property RatioValue() As double
+                    Returns or sets the scaling ratio value.
+                
+                    Example:
+                        This example retrieves in Value the ratio value for the Scaling hybrid
+                        shape feature.
+                
+                         Dim Value As double
+                         Set Value = Scaling2.RatioValue
 
         :return: float
         """
@@ -129,4 +124,4 @@ class Scaling2(Shape):
         self.com_object.RatioValue = value
 
     def __repr__(self):
-        return f'Scaling2(name="{ self.name }")'
+        return f'Scaling2(name="{self.name}")'

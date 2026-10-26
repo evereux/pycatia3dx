@@ -13,21 +13,19 @@ from pycatia3dx.sma_mpa_structural_mode.sim_connector_behavior import SimConnect
 
 
 class SimConnectorSection(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimConnectorSection
-                | 
-                | Represents the Connector Section object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimConnectorSection
+                
+                Represents the Connector Section object.
     
     """
 
@@ -39,11 +37,10 @@ class SimConnectorSection(AnyObject):
     def active_do_fs(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ActiveDOFs() As CATSafeArrayVariant (Read Only)
-                |     Returns the list of active DOFs. The list can contains the following values: 1 : the first translation DOF is active, 2 : the second translation DOF is active, 3 : the third translation DOF is active, 4 : the first rotation DOF is active, 5 : the second rotation DOF is active, 6 : the third rotation DOF is active.
+                Property ActiveDOFs() As CATSafeArrayVariant (Read Only)
+                    Returns the list of active DOFs. The list can contains the following values: 1 : the first translation DOF is active, 2 : the second translation DOF is active, 3 : the third translation DOF is active, 4 : the first rotation DOF is active, 5 : the second rotation DOF is active, 6 : the third rotation DOF is active.
 
         :return: tuple
         """
@@ -54,12 +51,11 @@ class SimConnectorSection(AnyObject):
     def assembled_connector_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AssembledConnectorType() As
-                | SimConnectorSectionAssembledConnectorType
-                |     Returns or sets the type of the Assembled connector.
+                Property AssembledConnectorType() As
+                SimConnectorSectionAssembledConnectorType
+                    Returns or sets the type of the Assembled connector.
 
         :return: int
         """
@@ -78,12 +74,11 @@ class SimConnectorSection(AnyObject):
     def connector_behavior(self) -> SimConnectorBehavior:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ConnectorBehavior() As SimConnectorBehavior (Read
-                | Only)
-                |     Returns the connector behavior.
+                Property ConnectorBehavior() As SimConnectorBehavior (Read
+                Only)
+                    Returns the connector behavior.
 
         :return: SimConnectorBehavior
         """
@@ -94,11 +89,10 @@ class SimConnectorSection(AnyObject):
     def first_axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FirstAxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the first axis system.
+                Property FirstAxisSystem() As SimAxisSystem (Read Only)
+                    Returns the first axis system.
 
         :return: SimAxisSystem
         """
@@ -109,12 +103,11 @@ class SimConnectorSection(AnyObject):
     def rotational_connector_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RotationalConnectorType() As
-                | SimConnectorSectionRotationalConnectorType
-                |     Returns or sets the type of the Rotational connector.
+                Property RotationalConnectorType() As
+                SimConnectorSectionRotationalConnectorType
+                    Returns or sets the type of the Rotational connector.
 
         :return: int
         """
@@ -133,11 +126,10 @@ class SimConnectorSection(AnyObject):
     def second_axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SecondAxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the second axis system.
+                Property SecondAxisSystem() As SimAxisSystem (Read Only)
+                    Returns the second axis system.
 
         :return: SimAxisSystem
         """
@@ -148,12 +140,11 @@ class SimConnectorSection(AnyObject):
     def translational_connector_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TranslationalConnectorType() As
-                | SimConnectorSectionTranslationalConnectorType
-                |     Returns or sets the type of the Translational connector. 
+                Property TranslationalConnectorType() As
+                SimConnectorSectionTranslationalConnectorType
+                    Returns or sets the type of the Translational connector. 
 
         :return: int
         """
@@ -169,4 +160,4 @@ class SimConnectorSection(AnyObject):
         self.com_object.TranslationalConnectorType = value
 
     def __repr__(self):
-        return f'SimConnectorSection(name="{ self.name }")'
+        return f'SimConnectorSection(name="{self.name}")'

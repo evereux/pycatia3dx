@@ -15,34 +15,33 @@ from pycatia3dx.system.any_object import AnyObject
 class SimResultsAnimationOptions(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimResultsAnimationOptions
-                | 
-                | Represents the animation options class.
-                | There can be multiple options for each case. For e.g. user can set Time
-                | history, scale factor and scan single frame options. The last set type will be
-                | the current one. Role:The animation options can be set using this
-                | class.
-                | Example:
-                | 
-                |  Given a  SimResultsAnalysisCase object, you can get the
-                |  SimResultsAnimationOptions as shown below.
-                |  
-                | 
-                |  Dim oResAnimOptions As SimResultsAnimationOptions
-                |  Set oResAnimOptions = oResultAnalysisCase.GetItem("SimResultsAnimationOptions")
-                |  Dim eType As SimAnimationTypes 
-                |  oResAnimOptions.SetType eType
-                |  oResAnimOptions.SetNumberOfFrames 10
-                |  oResAnimOptions.Update
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimResultsAnimationOptions
+                
+                Represents the animation options class.
+                There can be multiple options for each case. For e.g. user can set Time
+                history, scale factor and scan single frame options. The last set type will be
+                the current one. Role:The animation options can be set using this
+                class.
+                Example:
+                
+                 Given a  SimResultsAnalysisCase object, you can get the
+                 SimResultsAnimationOptions as shown below.
+                 
+                
+                 Dim oResAnimOptions As SimResultsAnimationOptions
+                 Set oResAnimOptions = oResultAnalysisCase.GetItem("SimResultsAnimationOptions")
+                 Dim eType As SimAnimationTypes 
+                 oResAnimOptions.SetType eType
+                 oResAnimOptions.SetNumberOfFrames 10
+                 oResAnimOptions.Update
     
     """
 
@@ -53,18 +52,17 @@ class SimResultsAnimationOptions(AnyObject):
     def get_available_animation_types(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetAvailableAnimationTypes(CATSafeArrayVariant ocsTypes)
-                |     Gets the list of available animation types for the current
-                |     sequence.
+                Sub GetAvailableAnimationTypes(CATSafeArrayVariant ocsTypes)
+                    Gets the list of available animation types for the current
+                    sequence.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         ocsTypes
-                |             The available list of animation types as list of strings. It would
-                |             be having same string as the enum names in SimAnimationTypes.
+                        ocsTypes
+                            The available list of animation types as list of strings. It would
+                            be having same string as the enum names in SimAnimationTypes.
 
         :return: tuple
         """
@@ -89,17 +87,16 @@ class SimResultsAnimationOptions(AnyObject):
     def set_current_step_only(self, ib_flag: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCurrentStepOnly(boolean ibFlag)
-                |     Specifies whether only the current step is to be considered. It is not
-                |     applicable for Time history and Loop over modes.
-                | 
-                |     Parameters:
-                | 
-                |         ibFlag
-                |             Set true to use the current step only for animation.
+                Sub SetCurrentStepOnly(boolean ibFlag)
+                    Specifies whether only the current step is to be considered. It is not
+                    applicable for Time history and Loop over modes.
+                
+                    Parameters:
+                
+                        ibFlag
+                            Set true to use the current step only for animation.
 
         :param bool ib_flag:
         :return: None
@@ -109,18 +106,17 @@ class SimResultsAnimationOptions(AnyObject):
     def set_frame_selector(self, isp_frame_selector: SimFramesSelection) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetFrameSelector(SimFramesSelection ispFrameSelector)
-                |     Set the frame selector to the animation. It is must be used only for Time
-                |     history and Loop over mode type.
-                | 
-                |     Parameters:
-                | 
-                |         ispFrameSelector
-                |             The FramesSelector can be created using
-                |             SimResultsAnalysisCase::CreateFrameSelector().
+                Sub SetFrameSelector(SimFramesSelection ispFrameSelector)
+                    Set the frame selector to the animation. It is must be used only for Time
+                    history and Loop over mode type.
+                
+                    Parameters:
+                
+                        ispFrameSelector
+                            The FramesSelector can be created using
+                            SimResultsAnalysisCase::CreateFrameSelector().
 
         :param SimFramesSelection isp_frame_selector:
         :return: None
@@ -130,17 +126,16 @@ class SimResultsAnimationOptions(AnyObject):
     def set_number_of_frames(self, inb_value: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetNumberOfFrames(long inbValue)
-                |     Specifies number of scaled frames to be considered. It is not applicable
-                |     for Time history and Loop over modes.
-                | 
-                |     Parameters:
-                | 
-                |         inbValue
-                |             The number of frames for animation.
+                Sub SetNumberOfFrames(long inbValue)
+                    Specifies number of scaled frames to be considered. It is not applicable
+                    for Time history and Loop over modes.
+                
+                    Parameters:
+                
+                        inbValue
+                            The number of frames for animation.
 
         :param int inb_value:
         :return: None
@@ -150,23 +145,22 @@ class SimResultsAnimationOptions(AnyObject):
     def set_sampling_rate(self, ie_sampling_type: int, ie_filter_type: int, id_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetSamplingRate(SimSamplingRateTypes ieSamplingType,SimSamplingFilterTypes
-                | ieFilterType,double idValue)
-                |     Sets the sampling rate. It is must be used only for Time history and Loop
-                |     over mode type.
-                | 
-                |     Parameters:
-                | 
-                |         ieSamplingType
-                |             The SimSamplingRateTypes options. 
-                |         ieFilterType
-                |             It is valid for SimRegularTimeInterval and SimRegularFrameInterval
-                |             sampling types. 
-                |         idValue
-                |             The value of intervals or frames.
+                Sub SetSamplingRate(SimSamplingRateTypes ieSamplingType,SimSamplingFilterTypes
+                ieFilterType,double idValue)
+                    Sets the sampling rate. It is must be used only for Time history and Loop
+                    over mode type.
+                
+                    Parameters:
+                
+                        ieSamplingType
+                            The SimSamplingRateTypes options. 
+                        ieFilterType
+                            It is valid for SimRegularTimeInterval and SimRegularFrameInterval
+                            sampling types. 
+                        idValue
+                            The value of intervals or frames.
 
         :param int ie_sampling_type:
         :param int ie_filter_type:
@@ -178,21 +172,20 @@ class SimResultsAnimationOptions(AnyObject):
     def set_target_speed(self, ie_target_speed_type: int, id_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTargetSpeed(SimTargetSpeedTypes ieTargetSpeedType,double
-                | idValue)
-                |     Sets the target speed.
-                | 
-                |     Parameters:
-                | 
-                |         ieTargetSpeedType
-                |             The SimTargetSpeedTypes options. 
-                |         idValue
-                |             The value of frames increment (in fps) or duration (in seconds) in
-                |             which the animation will be completed. It is not applicable for
-                |             SimTargetSpeedMax type.
+                Sub SetTargetSpeed(SimTargetSpeedTypes ieTargetSpeedType,double
+                idValue)
+                    Sets the target speed.
+                
+                    Parameters:
+                
+                        ieTargetSpeedType
+                            The SimTargetSpeedTypes options. 
+                        idValue
+                            The value of frames increment (in fps) or duration (in seconds) in
+                            which the animation will be completed. It is not applicable for
+                            SimTargetSpeedMax type.
 
         :param int ie_target_speed_type:
         :param float id_value:
@@ -203,19 +196,18 @@ class SimResultsAnimationOptions(AnyObject):
     def set_type(self, ie_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetType(SimAnimationTypes ieType)
-                |     Sets the animation types. It is mandatory to set this option. It should be
-                |     set first before setting any other properties.
-                | 
-                |     Parameters:
-                | 
-                |         ieType
-                |             The animation type to be set. 
-                |         idValue
-                |             It is fps for frames per second and second for total time.
+                Sub SetType(SimAnimationTypes ieType)
+                    Sets the animation types. It is mandatory to set this option. It should be
+                    set first before setting any other properties.
+                
+                    Parameters:
+                
+                        ieType
+                            The animation type to be set. 
+                        idValue
+                            It is fps for frames per second and second for total time.
 
         :param int ie_type:
         :return: None
@@ -225,17 +217,16 @@ class SimResultsAnimationOptions(AnyObject):
     def set_use_step_frame_index_label(self, ib_flag: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetUseStepFrameIndexLabel(boolean ibFlag)
-                |     Specifies whether to use the step/frame index labels or
-                |     not.
-                | 
-                |     Parameters:
-                | 
-                |         ibFlag
-                |             Set true to show the step/frame index labels.
+                Sub SetUseStepFrameIndexLabel(boolean ibFlag)
+                    Specifies whether to use the step/frame index labels or
+                    not.
+                
+                    Parameters:
+                
+                        ibFlag
+                            Set true to show the step/frame index labels.
 
         :param bool ib_flag:
         :return: None
@@ -245,12 +236,11 @@ class SimResultsAnimationOptions(AnyObject):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Update()
-                |     Update parameter for the animation of the plots. It is mandatory to call
-                |     this method at the end after all the parameters are set. 
+                Sub Update()
+                    Update parameter for the animation of the plots. It is mandatory to call
+                    this method at the end after all the parameters are set. 
 
         :return: None
         """

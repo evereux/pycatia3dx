@@ -11,25 +11,23 @@ from pycatia3dx.del_robot_simulation.rsc_instruction import RscInstruction
 
 
 class RscLoop(RscInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DELRobotSimulationIDLItf.RscInstruction
-                |                         RscLoop
-                | 
-                | Interface representing a Resource Loop Instruction.
-                | 
-                | Role: This interface represents a RscLoop Instruction in a Resource
-                | Task
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DELRobotSimulationIDLItf.RscInstruction
+                                        RscLoop
+                
+                Interface representing a Resource Loop Instruction.
+                
+                Role: This interface represents a RscLoop Instruction in a Resource
+                Task
     
     """
 
@@ -41,40 +39,39 @@ class RscLoop(RscInstruction):
     def condition(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Condition() As CATBSTR
-                |     Get/Set loop condition.
-                | 
-                |     Returns:
-                |         oCondition The loop condition 
-                |     Parameters:
-                | 
-                |         iCondition
-                |             The loop condition 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            Set ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim iIndex
-                |            iIndex=-1
-                |            Dim iCondition As String
-                |            Dim  iLoopType As DELRscLoopType
-                |            ......
-                |            iLoopType = DELRscLoopType_WhileDo
-                |            Dim oLoop As RscLoop
-                |            Set  oLoop=ResourceSequence.CreateRscLoop(iIndex,iCondition,iLoopType
-                |            Dim Condition
-                |            Condition = oLoop.Condition
-                |            ......
-                |            oLoop.Condition = Condition
+                Property Condition() As CATBSTR
+                    Get/Set loop condition.
+                
+                    Returns:
+                        oCondition The loop condition 
+                    Parameters:
+                
+                        iCondition
+                            The loop condition 
+                
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           Set ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim iIndex
+                           iIndex=-1
+                           Dim iCondition As String
+                           Dim  iLoopType As DELRscLoopType
+                           ......
+                           iLoopType = DELRscLoopType_WhileDo
+                           Dim oLoop As RscLoop
+                           Set  oLoop=ResourceSequence.CreateRscLoop(iIndex,iCondition,iLoopType
+                           Dim Condition
+                           Condition = oLoop.Condition
+                           ......
+                           oLoop.Condition = Condition
 
         :return: str
         """
@@ -93,43 +90,42 @@ class RscLoop(RscInstruction):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As DELRscLoopType
-                |     Get/Set loop type.
-                | 
-                |     Returns:
-                |         oType The loop type 
-                |     Parameters:
-                | 
-                |         iType
-                |             The loop type 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            Set ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim iIndex
-                |            iIndex=-1
-                |            Dim iCondition As String
-                |            Dim  iLoopType As DELRscLoopType
-                |            ......
-                |            iLoopType = DELRscLoopType_WhileDo
-                |            Dim oLoop As RscLoop
-                |            Set  oLoop=ResourceSequence.CreateRscLoop(iIndex,iCondition,iLoopType
-                |            Dim LoopType As DELRscLoopType
-                |            LoopType = oLoop.Type
-                |            ......
-                |            oLoop.Type = LoopType
+                Property Type() As DELRscLoopType
+                    Get/Set loop type.
+                
+                    Returns:
+                        oType The loop type 
+                    Parameters:
+                
+                        iType
+                            The loop type 
+                
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           Set ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim iIndex
+                           iIndex=-1
+                           Dim iCondition As String
+                           Dim  iLoopType As DELRscLoopType
+                           ......
+                           iLoopType = DELRscLoopType_WhileDo
+                           Dim oLoop As RscLoop
+                           Set  oLoop=ResourceSequence.CreateRscLoop(iIndex,iCondition,iLoopType
+                           Dim LoopType As DELRscLoopType
+                           LoopType = oLoop.Type
+                           ......
+                           oLoop.Type = LoopType
                 |
-                |     See also:
-                |         DELRscLoopType
+                    See also:
+                        DELRscLoopType
 
         :return: DELRscLoopType
         """
@@ -145,4 +141,4 @@ class RscLoop(RscInstruction):
         self.com_object.Type = value
 
     def __repr__(self):
-        return f'RscLoop(name="{ self.name }")'
+        return f'RscLoop(name="{self.name}")'

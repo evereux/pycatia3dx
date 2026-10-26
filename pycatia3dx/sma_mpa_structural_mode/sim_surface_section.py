@@ -14,21 +14,19 @@ from pycatia3dx.sma_mpa_structural_mode.sim_rebar_layers import SimRebarLayers
 
 
 class SimSurfaceSection(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimSurfaceSection
-                | 
-                | Represents the Surface Section object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimSurfaceSection
+                
+                Represents the Surface Section object.
     
     """
 
@@ -40,11 +38,10 @@ class SimSurfaceSection(AnyObject):
     def all_rebar_layers(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AllRebarLayers() As CATSafeArrayVariant (Read Only)
-                |     Returns the Rebar Layers associated with the section.
+                Property AllRebarLayers() As CATSafeArrayVariant (Read Only)
+                    Returns the Rebar Layers associated with the section.
 
         :return: tuple
         """
@@ -55,11 +52,10 @@ class SimSurfaceSection(AnyObject):
     def density(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Density() As double
-                |     Mass density per unit area value. Quantity: SURFACICMASS, units: m_2
+                Property Density() As double
+                    Mass density per unit area value. Quantity: SURFACICMASS, units: m_2
 
         :return: float
         """
@@ -78,12 +74,11 @@ class SimSurfaceSection(AnyObject):
     def rebar_layers_orientation(self) -> SimOrientation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RebarLayersOrientation() As SimOrientation (Read
-                | Only)
-                |     Returns the Orientation of the Rebar Layers associated with the section.
+                Property RebarLayersOrientation() As SimOrientation (Read
+                Only)
+                    Returns the Orientation of the Rebar Layers associated with the section.
 
         :return: SimOrientation
         """
@@ -94,11 +89,10 @@ class SimSurfaceSection(AnyObject):
     def rebars(self) -> SimRebarLayers:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Rebars() As SimRebarLayers (Read Only)
-                |     Returns the Rebar Layers associated with the section.
+                Property Rebars() As SimRebarLayers (Read Only)
+                    Returns the Rebar Layers associated with the section.
 
         :return: SimRebarLayers
         """
@@ -108,11 +102,10 @@ class SimSurfaceSection(AnyObject):
     def add_rebar_layer(self, i_type: str, o_feature: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddRebarLayer(CATBSTR iType,CATBaseDispatch oFeature)
-                |     Adds a Rebar Layer to the section. 
+                Sub AddRebarLayer(CATBSTR iType,CATBaseDispatch oFeature)
+                    Adds a Rebar Layer to the section. 
 
         :param str i_type:
         :param AnyObject o_feature:
@@ -121,4 +114,4 @@ class SimSurfaceSection(AnyObject):
         return self.com_object.AddRebarLayer(i_type, o_feature.com_object)
 
     def __repr__(self):
-        return f'SimSurfaceSection(name="{ self.name }")'
+        return f'SimSurfaceSection(name="{self.name}")'

@@ -12,21 +12,19 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingMacroMotions(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingMacroMotions
-                | 
-                | Interface to manage the macros of an operation.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingMacroMotions
+                
+                Interface to manage the macros of an operation.
     
     """
 
@@ -38,11 +36,10 @@ class ManufacturingMacroMotions(AnyObject):
     def active(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Active() As long
-                |     Returns or sets whether the macro is active.
+                Property Active() As long
+                    Returns or sets whether the macro is active.
 
         :return: int
         """
@@ -60,72 +57,71 @@ class ManufacturingMacroMotions(AnyObject):
     def get_macro_motion(self, i_position: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMacroMotion(long iPosition) As AnyObject
-                |     Gets the motion corresponding to the macro.
-                | 
-                |     Parameters:
-                | 
-                |         iPosition
-                |             The type of the macro we want. Must be equal to 1 or
-                |             2.
-                | 
-                |             Macro Type
-                | iPosition = 1
-                | iPosition = 2
-                |            -----------------------------------------------------------------
-                |             MfgApproachMacro
-                | Approach
-                | Global approach
-                |             (in some axial operations only, like thread
-                |             milling)
-                |             MfgRetractMacro
-                | Retract
-                | Global retract
-                |             (in some axial operations only, like thread
-                |             milling)
-                |             MfgLinkingMacro
-                | Retract
+                Func GetMacroMotion(long iPosition) As AnyObject
+                    Gets the motion corresponding to the macro.
+                
+                    Parameters:
+                
+                        iPosition
+                            The type of the macro we want. Must be equal to 1 or
+                            2.
+                
+                            Macro Type
+                iPosition = 1
+                iPosition = 2
+                           -----------------------------------------------------------------
+                            MfgApproachMacro
+                Approach
+                Global approach
+                            (in some axial operations only, like thread
+                            milling)
+                            MfgRetractMacro
+                Retract
+                Global retract
+                            (in some axial operations only, like thread
+                            milling)
+                            MfgLinkingMacro
+                Retract
                 |
-                |             Approach
-                |             MfgClearanceMacro
-                | Clearance
+                            Approach
+                            MfgClearanceMacro
+                Clearance
                 |
-                |             NOTHING
-                |             MfgReturnOneLevelMacro
-                | Retract
+                            NOTHING
+                            MfgReturnOneLevelMacro
+                Retract
                 |
-                |             Approach
-                |             MfgReturnTwoLevelMacro
-                | Retract
+                            Approach
+                            MfgReturnTwoLevelMacro
+                Retract
                 |
-                |             Approach
-                |             MfgReturnFinishPathMacro
-                | Retract
+                            Approach
+                            MfgReturnFinishPathMacro
+                Retract
                 |
-                |             Approach
-                |             MfgBetweenPassesMacro
-                | Between paths
-                | Between paths
-                |             link
-                |             MfgAutomaticRoughingMacro
-                | Automatic
+                            Approach
+                            MfgBetweenPassesMacro
+                Between paths
+                Between paths
+                            link
+                            MfgAutomaticRoughingMacro
+                Automatic
                 |
-                |             NOTHING
-                |             MfgPreRoughingMacro
-                | Pre motions
+                            NOTHING
+                            MfgPreRoughingMacro
+                Pre motions
                 |
-                |             NOTHING
-                |             MfgPostRoughingMacro
-                | Post motions
+                            NOTHING
+                            MfgPostRoughingMacro
+                Post motions
                 |
-                |             NOTHING
-                |              
-                | 
-                |     Returns:
-                |         The corresponding motion.
+                            NOTHING
+                             
+                
+                    Returns:
+                        The corresponding motion.
 
         :param int i_position:
         :return: AnyObject
@@ -133,4 +129,4 @@ class ManufacturingMacroMotions(AnyObject):
         return AnyObject(self.com_object.GetMacroMotion(i_position))
 
     def __repr__(self):
-        return f'ManufacturingMacroMotions(name="{ self.name }")'
+        return f'ManufacturingMacroMotions(name="{self.name}")'

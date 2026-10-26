@@ -14,21 +14,19 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SsmDelimitedMoldedSurface(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SsmDelimitedMoldedSurface
-                | 
-                | Role: This interface is specific to molded surfaces
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SsmDelimitedMoldedSurface
+                
+                Role: This interface is specific to molded surfaces
     
     """
 
@@ -40,19 +38,18 @@ class SsmDelimitedMoldedSurface(AnyObject):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Support() As Reference (Read Only)
-                |     Get the support of this SsmMoldedSurface.
-                | 
-                |     Parameters:
-                | 
-                |         oSupport
-                |             Support of this Panel 
-                | 
-                |     Returns:
-                |         S_OK
+                Property Support() As Reference (Read Only)
+                    Get the support of this SsmMoldedSurface.
+                
+                    Parameters:
+                
+                        oSupport
+                            Support of this Panel 
+                
+                    Returns:
+                        S_OK
 
         :return: Reference
         """
@@ -63,19 +60,18 @@ class SsmDelimitedMoldedSurface(AnyObject):
     def support_offset(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SupportOffset() As Parameter (Read Only)
-                |     Get the support offset of this SsmMoldedSurface.
-                | 
-                |     Parameters:
-                | 
-                |         oOffset
-                |             Parameter of support offset 
-                | 
-                |     Returns:
-                |         S_OK
+                Property SupportOffset() As Parameter (Read Only)
+                    Get the support offset of this SsmMoldedSurface.
+                
+                    Parameters:
+                
+                        oOffset
+                            Parameter of support offset 
+                
+                    Returns:
+                        S_OK
 
         :return: Parameter
         """
@@ -86,19 +82,18 @@ class SsmDelimitedMoldedSurface(AnyObject):
     def support_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SupportOrientation() As long (Read Only)
-                |     Get the support orientation of this SsmMoldedSurface.
-                | 
-                |     Parameters:
-                | 
-                |         oOrient
-                |             Support orientation of this Panel 
-                | 
-                |     Returns:
-                |         S_OK 
+                Property SupportOrientation() As long (Read Only)
+                    Get the support orientation of this SsmMoldedSurface.
+                
+                    Parameters:
+                
+                        oOrient
+                            Support orientation of this Panel 
+                
+                    Returns:
+                        S_OK 
 
         :return: int
         """
@@ -106,4 +101,4 @@ class SsmDelimitedMoldedSurface(AnyObject):
         return self.com_object.SupportOrientation
 
     def __repr__(self):
-        return f'SsmDelimitedMoldedSurface(name="{ self.name }")'
+        return f'SsmDelimitedMoldedSurface(name="{self.name}")'

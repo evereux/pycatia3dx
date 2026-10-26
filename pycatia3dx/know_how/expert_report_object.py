@@ -14,22 +14,21 @@ from pycatia3dx.system.any_object import AnyObject
 class ExpertReportObject(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ExpertReportObject
-                | 
-                | Represents the ExpertReportObject object.
-                | 
-                | See also:
-                |     ExpertReportObjects.Item, ExpertReportObjects.SucceedItem,
-                |     ExpertReportObjects.FailItem
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ExpertReportObject
+                
+                Represents the ExpertReportObject object.
+                
+                See also:
+                    ExpertReportObjects.Item, ExpertReportObjects.SucceedItem,
+                    ExpertReportObjects.FailItem
     
     """
 
@@ -41,14 +40,13 @@ class ExpertReportObject(AnyObject):
     def validity(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Validity() As boolean (Read Only)
-                |     Returns the validity of a check for a given tuple. The result depends on
-                |     the result of the check for a given tuple :
-                | 
-                |     "True" or "False" for the tuple.
+                Property Validity() As boolean (Read Only)
+                    Returns the validity of a check for a given tuple. The result depends on
+                    the result of the check for a given tuple :
+                
+                    "True" or "False" for the tuple.
 
         :return: bool
         """
@@ -58,50 +56,49 @@ class ExpertReportObject(AnyObject):
     def get_tuple(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub getTuple(CATSafeArrayVariant oSafeArray)
-                |     Returns a tuple (a collection of objects) concerned by this report
-                |     object.
+                Sub getTuple(CATSafeArrayVariant oSafeArray)
+                    Returns a tuple (a collection of objects) concerned by this report
+                    object.
                 |
-                |     Example:
+                    Example:
                 |
-                |          Dim RuleBase1 As ExpertRuleBaseRuntime
-                |          Set RuleBase1 = ...
+                         Dim RuleBase1 As ExpertRuleBaseRuntime
+                         Set RuleBase1 = ...
                 |
-                |          Dim ListComponents As ExpertRuleBaseComponentRuntimes
-                |          Set ListComponents = RuleBase1.RuleSet.ExpertRuleBaseComponentRuntimes
+                         Dim ListComponents As ExpertRuleBaseComponentRuntimes
+                         Set ListComponents = RuleBase1.RuleSet.ExpertRuleBaseComponentRuntimes
                 |
-                |          ' Let's get a check ..
-                |          Dim AComponent As ExpertRuleBaseComponentRuntime
-                |          Set AComponent = ListComponents.Item("CheckOnHoles")
+                         ' Let's get a check ..
+                         Dim AComponent As ExpertRuleBaseComponentRuntime
+                         Set AComponent = ListComponents.Item("CheckOnHoles")
                 |
-                |          ' .. and let's see what makes it true
-                |          Dim NupletsList As ExpertReportObjects
-                |          Set NupletsList = AComponent.Succeeds
+                         ' .. and let's see what makes it true
+                         Dim NupletsList As ExpertReportObjects
+                         Set NupletsList = AComponent.Succeeds
                 |
-                |          Dim ANuplet As ExpertReportObject
-                |          Dim anArray () as Object
-                |          Dim anElementArray as Object
+                         Dim ANuplet As ExpertReportObject
+                         Dim anArray () as Object
+                         Dim anElementArray as Object
                 |
-                |          For i = 1 to AComponent.Succeeds.CountSucceed
-                |            Set ANuplet = AComponent.Succeeds.SucceedItem(i)
-                |            NupletSize = ANuplet.getTupleSize()
-                |            ReDim anArray (NupletSize)
-                |            ANuplet.getTuple(anArray)
-                |            For j = LBound(anArray) to UBound(anArray)
-                |              Set anElementArray = anArray(j) ' a hole
+                         For i = 1 to AComponent.Succeeds.CountSucceed
+                           Set ANuplet = AComponent.Succeeds.SucceedItem(i)
+                           NupletSize = ANuplet.getTupleSize()
+                           ReDim anArray (NupletSize)
+                           ANuplet.getTuple(anArray)
+                           For j = LBound(anArray) to UBound(anArray)
+                             Set anElementArray = anArray(j) ' a hole
                 |
-                |              ' .. some action on the element of the array
-                |            Next
-                |          Next
+                             ' .. some action on the element of the array
+                           Next
+                         Next
                 |
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oSafeArray
-                |             The collection of objects.
+                        oSafeArray
+                            The collection of objects.
 
         :return: tuple
         """
@@ -126,15 +123,14 @@ class ExpertReportObject(AnyObject):
     def get_tuple_size(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func getTupleSize() As long
-                |     Returns the size of the tuple concerned by this report
-                |     object.
-                | 
-                |     Returns:
-                |         Size of the tuple
+                Func getTupleSize() As long
+                    Returns the size of the tuple concerned by this report
+                    object.
+                
+                    Returns:
+                        Size of the tuple
 
         :return: int
         """

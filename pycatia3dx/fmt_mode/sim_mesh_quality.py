@@ -13,17 +13,16 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 class SimMeshQuality(CATBaseDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 SimMeshQuality
-                | 
-                | Interface representing mesh quality.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                SimMeshQuality
+                
+                Interface representing mesh quality.
     
     """
 
@@ -34,12 +33,11 @@ class SimMeshQuality(CATBaseDispatch):
     def create_csv_file(self, i_path: str, i_overwrite: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub CreateCSVFile(CATBSTR iPath,boolean iOverwrite)
-                |     Creates a CSV (comma-separated value) report file containing all the
-                |     quality data.
+                Sub CreateCSVFile(CATBSTR iPath,boolean iOverwrite)
+                    Creates a CSV (comma-separated value) report file containing all the
+                    quality data.
 
         :param str i_path:
         :param bool i_overwrite:

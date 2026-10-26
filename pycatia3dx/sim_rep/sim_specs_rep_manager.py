@@ -16,18 +16,17 @@ from pycatia3dx.system.any_object import AnyObject
 class SimSpecsRepManager(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimSpecsRepManager
-                | 
-                | Interface representing Specifications Rep Manager.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimSpecsRepManager
+                
+                Interface representing Specifications Rep Manager.
     
     """
 
@@ -39,11 +38,10 @@ class SimSpecsRepManager(AnyObject):
     def excitations(self) -> SimExcitations:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Excitations() As SimExcitations (Read Only)
-                |     Retrieves the collection of all Excitations. SimExcitations
+                Property Excitations() As SimExcitations (Read Only)
+                    Retrieves the collection of all Excitations. SimExcitations
 
         :return: SimExcitations
         """
@@ -54,11 +52,10 @@ class SimSpecsRepManager(AnyObject):
     def probes(self) -> SimProbes:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Probes() As SimProbes (Read Only)
-                |     Retrieves the collection of all Excitations. SimProbes
+                Property Probes() As SimProbes (Read Only)
+                    Retrieves the collection of all Excitations. SimProbes
 
         :return: SimProbes
         """
@@ -69,11 +66,10 @@ class SimSpecsRepManager(AnyObject):
     def scenario_specs(self) -> SimScenarioSpecs:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ScenarioSpecs() As SimScenarioSpecs (Read Only)
-                |     Retrieves the collection of all scenario specifications. SimScenarioSpecs
+                Property ScenarioSpecs() As SimScenarioSpecs (Read Only)
+                    Retrieves the collection of all scenario specifications. SimScenarioSpecs
 
         :return: SimScenarioSpecs
         """

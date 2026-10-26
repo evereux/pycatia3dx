@@ -12,27 +12,25 @@ from pycatia3dx.hybrid_shapes.line import Line
 
 
 class HybridShapeLineExplicit(Line):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.Line
-                |                             HybridShapeLineExplicit
-                | 
-                | Represents the hybrid shape line explicit feature object.
-                | Role: Declare hybrid shape line explicit feature object.
-                | 
-                | See also:
-                |     HybridShapeFactory.AddNewLineDatum
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.Line
+                                            HybridShapeLineExplicit
+                
+                Represents the hybrid shape line explicit feature object.
+                Role: Declare hybrid shape line explicit feature object.
+                
+                See also:
+                    HybridShapeFactory.AddNewLineDatum
     
     """
 
@@ -41,4 +39,4 @@ class HybridShapeLineExplicit(Line):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'HybridShapeLineExplicit(name="{ self.name }")'
+        return f'HybridShapeLineExplicit(name="{self.name}")'

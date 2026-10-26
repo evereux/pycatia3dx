@@ -12,21 +12,19 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimVectorField(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimVectorField
-                | 
-                | Represents the Vector Field object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimVectorField
+                
+                Represents the Vector Field object.
     
     """
 
@@ -38,11 +36,10 @@ class SimVectorField(AnyObject):
     def variation_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property VariationType() As SimVectorFieldVariationType
-                |     Returns or sets the variation type.
+                Property VariationType() As SimVectorFieldVariationType
+                    Returns or sets the variation type.
 
         :return: int
         """
@@ -60,23 +57,22 @@ class SimVectorField(AnyObject):
     def get_vector_components(self, o_x_comp: float, o_y_comp: float, o_z_comp: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetVectorComponents(double oXComp,double oYComp,double
-                | oZComp)
-                |     Retrieves the vector components.
-                |     Only applicable when the variation type is set to
-                |     SimVectorFieldUniform.
-                | 
-                |     Parameters:
-                | 
-                |         oXComp[out]
-                |             X component of the vector. 
-                |         oYComp[out]
-                |             Y component of the vector. 
-                |         oZComp[out]
-                |             Z component of the vector.
+                Sub GetVectorComponents(double oXComp,double oYComp,double
+                oZComp)
+                    Retrieves the vector components.
+                    Only applicable when the variation type is set to
+                    SimVectorFieldUniform.
+                
+                    Parameters:
+                
+                        oXComp[out]
+                            X component of the vector. 
+                        oYComp[out]
+                            Y component of the vector. 
+                        oZComp[out]
+                            Z component of the vector.
 
         :param float o_x_comp:
         :param float o_y_comp:
@@ -88,23 +84,22 @@ class SimVectorField(AnyObject):
     def set_vector_components(self, i_x_comp: float, i_y_comp: float, i_z_comp: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetVectorComponents(double iXComp,double iYComp,double
-                | iZComp)
-                |     Sets the vector components.
-                |     Only applicable when the variation type is set to
-                |     SimVectorFieldUniform.
-                | 
-                |     Parameters:
-                | 
-                |         iXComp[in]
-                |             X component of the vector. 
-                |         iYComp[in]
-                |             Y component of the vector. 
-                |         iZComp[in]
-                |             Z component of the vector. 
+                Sub SetVectorComponents(double iXComp,double iYComp,double
+                iZComp)
+                    Sets the vector components.
+                    Only applicable when the variation type is set to
+                    SimVectorFieldUniform.
+                
+                    Parameters:
+                
+                        iXComp[in]
+                            X component of the vector. 
+                        iYComp[in]
+                            Y component of the vector. 
+                        iZComp[in]
+                            Z component of the vector. 
 
         :param float i_x_comp:
         :param float i_y_comp:
@@ -114,4 +109,4 @@ class SimVectorField(AnyObject):
         return self.com_object.SetVectorComponents(i_x_comp, i_y_comp, i_z_comp)
 
     def __repr__(self):
-        return f'SimVectorField(name="{ self.name }")'
+        return f'SimVectorField(name="{self.name}")'

@@ -13,21 +13,20 @@ from pycatia3dx.plm_modeller_base.plm_entities import PLMEntities
 class VPMInstances(PLMEntities):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     PLMModelerBaseIDLItf.PLMEntities
-                |                         VPMInstances
-                | 
-                | A collection of PLM Product Instances.
-                | This collection contains the children of a PLM Product
-                | Reference.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    PLMModelerBaseIDLItf.PLMEntities
+                                        VPMInstances
+                
+                A collection of PLM Product Instances.
+                This collection contains the children of a PLM Product
+                Reference.
     
     """
 

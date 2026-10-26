@@ -13,33 +13,31 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeIntersection(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeIntersection
-                | 
-                | Represents the hybrid shape intersection feature object.
-                | Role: To access the data of the hybrid shape intersection object. This data
-                | includes:
-                | 
-                |     The first element to intersect
-                |     The second element to intersect
-                | 
-                | Use the CATIAHybridShapeFactory to create HybridShapeFeature
-                | object.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeIntersection
+                
+                Represents the hybrid shape intersection feature object.
+                Role: To access the data of the hybrid shape intersection object. This data
+                includes:
+                
+                    The first element to intersect
+                    The second element to intersect
+                
+                Use the CATIAHybridShapeFactory to create HybridShapeFeature
+                object.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -51,20 +49,19 @@ class HybridShapeIntersection(HybridShape):
     def element1(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Element1() As Reference
-                |     Returns or sets the first element to intersect.
-                |     Sub-element(s) supported (see Boundary object): Face, TriDimFeatEdge or
-                |     BiDimFeatEdge.
-                | 
-                |     Example:
-                |         This example retrieves in FirstElem the first element to intersect for
-                |         the Intersection hybrid shape feature.
-                | 
-                |          Dim FirstElem As Reference
-                |          Set FirstElem = Intersection.Element1
+                Property Element1() As Reference
+                    Returns or sets the first element to intersect.
+                    Sub-element(s) supported (see Boundary object): Face, TriDimFeatEdge or
+                    BiDimFeatEdge.
+                
+                    Example:
+                        This example retrieves in FirstElem the first element to intersect for
+                        the Intersection hybrid shape feature.
+                
+                         Dim FirstElem As Reference
+                         Set FirstElem = Intersection.Element1
 
         :return: Reference
         """
@@ -83,20 +80,19 @@ class HybridShapeIntersection(HybridShape):
     def element2(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Element2() As Reference
-                |     Returns or sets the second element to intersect.
-                |     Sub-element(s) supported (see Boundary object): Face, TriDimFeatEdge or
-                |     BiDimFeatEdge.
-                | 
-                |     Example:
-                |         This example retrieves in SecondElem the second element to intersect
-                |         for the Intersection hybrid shape feature.
-                | 
-                |          Dim SecondElem As Reference
-                |          Set SecondElem = Intersection.Element2
+                Property Element2() As Reference
+                    Returns or sets the second element to intersect.
+                    Sub-element(s) supported (see Boundary object): Face, TriDimFeatEdge or
+                    BiDimFeatEdge.
+                
+                    Example:
+                        This example retrieves in SecondElem the second element to intersect
+                        for the Intersection hybrid shape feature.
+                
+                         Dim SecondElem As Reference
+                         Set SecondElem = Intersection.Element2
 
         :return: Reference
         """
@@ -115,28 +111,27 @@ class HybridShapeIntersection(HybridShape):
     def extend_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ExtendMode() As long
-                |     Returns or sets the ExtendMode flag for intersect.
-                | 
-                |     Example:
-                |         This example retrieves in ExtendMode the ExtendMode to intersect for
-                |         the Intersection hybrid shape feature.
-                | 
-                |          Dim ExtendMode As Reference
-                |          Set ExtendMode = Intersection.ExtendMode
-                |          ExtendMode is 0 when both "Extend Linear Supposr for intersection" are
-                |          unchecked
-                |          ExtendMode is 1 when "Extend Linear Supposr for intersection" for
-                |          First Element is checked and for Second Element is
-                |          unchecked
-                |          ExtendMode is 2 when "Extend Linear Supposr for intersection" for
-                |          First Element is unchecked and for Second Element is
-                |          checked
-                |          ExtendMode is 3 when both "Extend Linear Supposr for intersection" are
-                |          checked
+                Property ExtendMode() As long
+                    Returns or sets the ExtendMode flag for intersect.
+                
+                    Example:
+                        This example retrieves in ExtendMode the ExtendMode to intersect for
+                        the Intersection hybrid shape feature.
+                
+                         Dim ExtendMode As Reference
+                         Set ExtendMode = Intersection.ExtendMode
+                         ExtendMode is 0 when both "Extend Linear Supposr for intersection" are
+                         unchecked
+                         ExtendMode is 1 when "Extend Linear Supposr for intersection" for
+                         First Element is checked and for Second Element is
+                         unchecked
+                         ExtendMode is 2 when "Extend Linear Supposr for intersection" for
+                         First Element is unchecked and for Second Element is
+                         checked
+                         ExtendMode is 3 when both "Extend Linear Supposr for intersection" are
+                         checked
 
         :return: int
         """
@@ -155,18 +150,17 @@ class HybridShapeIntersection(HybridShape):
     def extrapolate_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ExtrapolateMode() As boolean
-                |     Returns or sets the ExtrapolateMode flag for intersect.
-                | 
-                |     Example:
-                |         This example retrieves in ExtrapolateMode the ExtrapolateMode to
-                |         intersect for the Intersection hybrid shape feature.
-                | 
-                |          Dim ExtrapolateMode As Reference
-                |          Set ExtrapolateMode = Intersection.ExtrapolateMode
+                Property ExtrapolateMode() As boolean
+                    Returns or sets the ExtrapolateMode flag for intersect.
+                
+                    Example:
+                        This example retrieves in ExtrapolateMode the ExtrapolateMode to
+                        intersect for the Intersection hybrid shape feature.
+                
+                         Dim ExtrapolateMode As Reference
+                         Set ExtrapolateMode = Intersection.ExtrapolateMode
 
         :return: bool
         """
@@ -185,18 +179,17 @@ class HybridShapeIntersection(HybridShape):
     def intersect_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property IntersectMode() As boolean
-                |     Returns or sets the IntersectMode flag for intersect.
-                | 
-                |     Example:
-                |         This example retrieves in IntersectMode the IntersectMode to intersect
-                |         for the Intersection hybrid shape feature.
-                | 
-                |          Dim IntersectMode As Reference
-                |          Set IntersectMode = Intersection.IntersectMode
+                Property IntersectMode() As boolean
+                    Returns or sets the IntersectMode flag for intersect.
+                
+                    Example:
+                        This example retrieves in IntersectMode the IntersectMode to intersect
+                        for the Intersection hybrid shape feature.
+                
+                         Dim IntersectMode As Reference
+                         Set IntersectMode = Intersection.IntersectMode
 
         :return: bool
         """
@@ -215,18 +208,17 @@ class HybridShapeIntersection(HybridShape):
     def point_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property PointType() As long
-                |     Returns or sets the PointType flag for intersect.
-                | 
-                |     Example:
-                |         This example retrieves in PointType the PointType to intersect for the
-                |         Intersection hybrid shape feature.
-                | 
-                |          Dim PointType As Reference
-                |          Set PointType = Intersection.PointType
+                Property PointType() As long
+                    Returns or sets the PointType flag for intersect.
+                
+                    Example:
+                        This example retrieves in PointType the PointType to intersect for the
+                        Intersection hybrid shape feature.
+                
+                         Dim PointType As Reference
+                         Set PointType = Intersection.PointType
 
         :return: int
         """
@@ -245,18 +237,17 @@ class HybridShapeIntersection(HybridShape):
     def solid_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SolidMode() As boolean
-                |     Returns or sets the SolidMode flag for intersect.
-                | 
-                |     Example:
-                |         This example retrieves in SolidMode the SolidMode to intersect for the
-                |         Intersection hybrid shape feature.
-                | 
-                |          Dim SolidMode As Reference
-                |          Set SolidMode = Intersection.SolidMode
+                Property SolidMode() As boolean
+                    Returns or sets the SolidMode flag for intersect.
+                
+                    Example:
+                        This example retrieves in SolidMode the SolidMode to intersect for the
+                        Intersection hybrid shape feature.
+                
+                         Dim SolidMode As Reference
+                         Set SolidMode = Intersection.SolidMode
 
         :return: bool
         """
@@ -272,4 +263,4 @@ class HybridShapeIntersection(HybridShape):
         self.com_object.SolidMode = value
 
     def __repr__(self):
-        return f'HybridShapeIntersection(name="{ self.name }")'
+        return f'HybridShapeIntersection(name="{self.name}")'

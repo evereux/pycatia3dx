@@ -14,63 +14,61 @@ from pycatia3dx.sma_mpa_base.sim_table_column import SimTableColumn
 
 
 class SimTensileFailure(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimTensileFailure
-                | 
-                | Represents the Tensile Failure object.
-                | 
-                | Example:
-                |     Given a SimMaterialOption object of parent material option, you can create
-                |     a SimTensileFailure suboption as following:
-                | 
-                |      Dim MyParentOption As SimMaterialOption
-                |      ...
-                |      Dim MyTensileFailure As SimTensileFailure
-                |      Set MyTensileFailure = MyParentOption.CreateSubOption("SimTensileFailure")
-                |      
-                | 
-                |     Given a SimMaterialOption object of parent material option, you can
-                |     retrieve a SimTensileFailure suboption at index i as
-                |     following:
-                | 
-                |      Dim MyParentOption As SimMaterialOption
-                |      ...
-                |      Dim SubOptions
-                |      SubOptions = MyParentOption.GetSubOptions()
-                |      Dim MyTensileFailure As SimTensileFailure
-                |      Set MyTensileFailure = SubOptions(i)
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMaterialOption object MyParentOption of parent material option,
-                |     you can create a SimTensileFailure suboption as following:
-                | 
-                |      ...
-                |      MyTensileFailure = MyParentOption.CreateSubOption("SimTensileFailure")
-                |      
-                | 
-                |     Given a SimMaterialOption object MyParentOption of parent material option,
-                |     you can retrieve a SimTensileFailure suboption at index i as
-                |     following:
-                | 
-                |      ...
-                |      SubOptions = MyParentOption.GetSubOptions()
-                |      MyTensileFailure = SubOptions[i]
-                |      
-                | 
-                | See also:
-                |     SimMaterialOption
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimTensileFailure
+                
+                Represents the Tensile Failure object.
+                
+                Example:
+                    Given a SimMaterialOption object of parent material option, you can create
+                    a SimTensileFailure suboption as following:
+                
+                     Dim MyParentOption As SimMaterialOption
+                     ...
+                     Dim MyTensileFailure As SimTensileFailure
+                     Set MyTensileFailure = MyParentOption.CreateSubOption("SimTensileFailure")
+                     
+                
+                    Given a SimMaterialOption object of parent material option, you can
+                    retrieve a SimTensileFailure suboption at index i as
+                    following:
+                
+                     Dim MyParentOption As SimMaterialOption
+                     ...
+                     Dim SubOptions
+                     SubOptions = MyParentOption.GetSubOptions()
+                     Dim MyTensileFailure As SimTensileFailure
+                     Set MyTensileFailure = SubOptions(i)
+                     
+                
+                Example in Python:
+                    Given a SimMaterialOption object MyParentOption of parent material option,
+                    you can create a SimTensileFailure suboption as following:
+                
+                     ...
+                     MyTensileFailure = MyParentOption.CreateSubOption("SimTensileFailure")
+                     
+                
+                    Given a SimMaterialOption object MyParentOption of parent material option,
+                    you can retrieve a SimTensileFailure suboption at index i as
+                    following:
+                
+                     ...
+                     SubOptions = MyParentOption.GetSubOptions()
+                     MyTensileFailure = SubOptions[i]
+                     
+                
+                See also:
+                    SimMaterialOption
     
     """
 
@@ -82,19 +80,18 @@ class SimTensileFailure(AnyObject):
     def deviatoric_stress_status(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DeviatoricStressStatus() As SimTensileFailureCriteria
-                |     Retrieves or sets failure criteria for deviatoric stress.
-                | 
-                |     Parameters:
-                | 
-                |         oStatus[out]
-                |             The failure criteria. 
-                | 
-                |     Returns:
-                |         S_OK if successful.
+                Property DeviatoricStressStatus() As SimTensileFailureCriteria
+                    Retrieves or sets failure criteria for deviatoric stress.
+                
+                    Parameters:
+                
+                        oStatus[out]
+                            The failure criteria. 
+                
+                    Returns:
+                        S_OK if successful.
 
         :return: int
         """
@@ -113,16 +110,15 @@ class SimTensileFailure(AnyObject):
     def element_removal_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ElementRemovalFlag() As boolean
-                |     Retrieves or sets the element removal flag.
-                |     TRUE : Allow element removal when the failure criterion is met.
-                |     FALSE : Allow Brittle/Ductile type failure for the deviatoric and hydrostatic parts of stresses.
-                | 
-                |     Returns:
-                |         S_OK if successful.
+                Property ElementRemovalFlag() As boolean
+                    Retrieves or sets the element removal flag.
+                    TRUE : Allow element removal when the failure criterion is met.
+                    FALSE : Allow Brittle/Ductile type failure for the deviatoric and hydrostatic parts of stresses.
+                
+                    Returns:
+                        S_OK if successful.
 
         :return: bool
         """
@@ -141,19 +137,18 @@ class SimTensileFailure(AnyObject):
     def hydro_stress_status(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HydroStressStatus() As SimTensileFailureCriteria
-                |     Retrieves or sets failure criteria for hydrostatic stress.
-                | 
-                |     Parameters:
-                | 
-                |         oStatus[out]
-                |             The failure criteria. 
-                | 
-                |     Returns:
-                |         S_OK if successful.
+                Property HydroStressStatus() As SimTensileFailureCriteria
+                    Retrieves or sets failure criteria for hydrostatic stress.
+                
+                    Parameters:
+                
+                        oStatus[out]
+                            The failure criteria. 
+                
+                    Returns:
+                        S_OK if successful.
 
         :return: int
         """
@@ -172,11 +167,10 @@ class SimTensileFailure(AnyObject):
     def material_table(self) -> SimMaterialTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialTable() As SimMaterialTable (Read Only)
-                |     Returns the Tensile Failure material table data.
+                Property MaterialTable() As SimMaterialTable (Read Only)
+                    Returns the Tensile Failure material table data.
 
         :return: SimMaterialTable
         """
@@ -186,22 +180,21 @@ class SimTensileFailure(AnyObject):
     def get_material_table_column(self, i_material_table_column: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMaterialTableColumn(SimTensileFailureMaterialTableColumn
-                | iMaterialTableColumn) As SimTableColumn
-                |     Retrieves the column object for the specified table
-                |     column.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterialTableColumn[in]
-                |             The specified table column. 
-                | 
-                |     Returns:
-                |         The table column object. This value will be NULL_var in case the
-                |         specified column is not found in the table. 
+                Func GetMaterialTableColumn(SimTensileFailureMaterialTableColumn
+                iMaterialTableColumn) As SimTableColumn
+                    Retrieves the column object for the specified table
+                    column.
+                
+                    Parameters:
+                
+                        iMaterialTableColumn[in]
+                            The specified table column. 
+                
+                    Returns:
+                        The table column object. This value will be NULL_var in case the
+                        specified column is not found in the table. 
 
         :param int i_material_table_column:
         :return: SimTableColumn
@@ -209,4 +202,4 @@ class SimTensileFailure(AnyObject):
         return SimTableColumn(self.com_object.GetMaterialTableColumn(i_material_table_column))
 
     def __repr__(self):
-        return f'SimTensileFailure(name="{ self.name }")'
+        return f'SimTensileFailure(name="{self.name}")'

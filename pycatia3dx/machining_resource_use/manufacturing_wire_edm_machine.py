@@ -12,22 +12,20 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingWireEdmMachine(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingWireEDMMachine
-                | 
-                | Interface representing Wire EDM Machine.
-                | Role: This interface retrieves data from Wire EDM Machine.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingWireEDMMachine
+                
+                Interface representing Wire EDM Machine.
+                Role: This interface retrieves data from Wire EDM Machine.
     
     """
 
@@ -38,27 +36,26 @@ class ManufacturingWireEdmMachine(AnyObject):
     def get_techno_set_list(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTechnoSetList() As CATSafeArrayVariant
-                |     Retrieves the TechnoSets defined on the Machine.
-                | 
-                |     Parameters:
-                | 
-                |         oListTechnoSets
-                |             Techno Sets defined on the Machine. 
-                | 
-                |     Returns:
-                |         Return code.
-                |         Legal values:
-                | 
-                |             S_OK: the List is defined
-                |             E_FAIL: otherwise
+                Func GetTechnoSetList() As CATSafeArrayVariant
+                    Retrieves the TechnoSets defined on the Machine.
+                
+                    Parameters:
+                
+                        oListTechnoSets
+                            Techno Sets defined on the Machine. 
+                
+                    Returns:
+                        Return code.
+                        Legal values:
+                
+                            S_OK: the List is defined
+                            E_FAIL: otherwise
 
         :return: tuple
         """
         return self.com_object.GetTechnoSetList()
 
     def __repr__(self):
-        return f'ManufacturingWireEdmMachine(name="{ self.name }")'
+        return f'ManufacturingWireEdmMachine(name="{self.name}")'

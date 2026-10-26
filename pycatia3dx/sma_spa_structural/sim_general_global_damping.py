@@ -12,37 +12,35 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimGeneralGlobalDamping(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimGeneralGlobalDamping
-                | 
-                | Represents the General Global Damping object.
-                | 
-                | Example:
-                |     This example demonstrates how to retrieve the SimGeneralGlobalDamping
-                |     object from a SimDirectHarmonicResponseStep. The same pattern applies to all
-                |     supported steps.
-                | 
-                |      Dim MyDirectHarmonicResponseStep As
-                |      SimDirectHarmonicResponseStep
-                |      ...
-                |      Dim MyGeneralGlobalDamping As SimGeneralGlobalDamping
-                |      Set MyGeneralGlobalDamping = MyDirectHarmonicResponseStep.GlobalDamping
-                |      
-                | 
-                | Example in Python:
-                | 
-                |      myGeneralGlobalDamping = myDirectHarmonicResponseStep.GlobalDamping
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimGeneralGlobalDamping
+                
+                Represents the General Global Damping object.
+                
+                Example:
+                    This example demonstrates how to retrieve the SimGeneralGlobalDamping
+                    object from a SimDirectHarmonicResponseStep. The same pattern applies to all
+                    supported steps.
+                
+                     Dim MyDirectHarmonicResponseStep As
+                     SimDirectHarmonicResponseStep
+                     ...
+                     Dim MyGeneralGlobalDamping As SimGeneralGlobalDamping
+                     Set MyGeneralGlobalDamping = MyDirectHarmonicResponseStep.GlobalDamping
+                     
+                
+                Example in Python:
+                
+                     myGeneralGlobalDamping = myDirectHarmonicResponseStep.GlobalDamping
     
     """
 
@@ -54,12 +52,11 @@ class SimGeneralGlobalDamping(AnyObject):
     def mass_proportional_damping(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MassProportionalDamping() As double
-                |     Returns or sets the global mass proportional damping value. Quantity:
-                |     DAMPINGCOEFFICIENT, units: _s
+                Property MassProportionalDamping() As double
+                    Returns or sets the global mass proportional damping value. Quantity:
+                    DAMPINGCOEFFICIENT, units: _s
 
         :return: float
         """
@@ -78,11 +75,10 @@ class SimGeneralGlobalDamping(AnyObject):
     def modes_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ModesType() As SimGeneralGlobalDampingModesType
-                |     Returns or sets the modes type.
+                Property ModesType() As SimGeneralGlobalDampingModesType
+                    Returns or sets the modes type.
 
         :return: SimGeneralGlobalDampingModesType
         """
@@ -101,12 +97,11 @@ class SimGeneralGlobalDamping(AnyObject):
     def stiffness_proportional_damping(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StiffnessProportionalDamping() As double
-                |     Returns or sets the global stiffness proportional damping value. Quantity:
-                |     TIME, units: s
+                Property StiffnessProportionalDamping() As double
+                    Returns or sets the global stiffness proportional damping value. Quantity:
+                    TIME, units: s
 
         :return: float
         """
@@ -125,12 +120,11 @@ class SimGeneralGlobalDamping(AnyObject):
     def structural_damping(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StructuralDamping() As double
-                |     Returns or sets the global structural damping value. Quantity:
-                |     DIMENSIONLESS, units: None 
+                Property StructuralDamping() As double
+                    Returns or sets the global structural damping value. Quantity:
+                    DIMENSIONLESS, units: None 
 
         :return: float
         """
@@ -146,4 +140,4 @@ class SimGeneralGlobalDamping(AnyObject):
         self.com_object.StructuralDamping = value
 
     def __repr__(self):
-        return f'SimGeneralGlobalDamping(name="{ self.name }")'
+        return f'SimGeneralGlobalDamping(name="{self.name}")'

@@ -13,24 +13,22 @@ from pycatia3dx.types.general import CATVariant
 
 
 class TPSHyperLinksManager(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     TPSHyperLinksManager
-                | 
-                | Interface for the Technological Product Specification (TPS)
-                | objects.
-                | Leaf entity in the Design Pattern Composite. TPS modeler enables definition of
-                | specification related to surfaces.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    TPSHyperLinksManager
+                
+                Interface for the Technological Product Specification (TPS)
+                objects.
+                Leaf entity in the Design Pattern Composite. TPS modeler enables definition of
+                specification related to surfaces.
     
     """
 
@@ -41,16 +39,15 @@ class TPSHyperLinksManager(AnyObject):
     def get_nbr_url2(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetNbrURL2() As long
-                |     Gets the number of URL.
-                | 
-                |     Parameters:
-                | 
-                |         oNumberOfURL
-                |             returns param oNumberOfURL.
+                Func GetNbrURL2() As long
+                    Gets the number of URL.
+                
+                    Parameters:
+                
+                        oNumberOfURL
+                            returns param oNumberOfURL.
 
         :return: int
         """
@@ -59,18 +56,17 @@ class TPSHyperLinksManager(AnyObject):
     def url(self, i_index: CATVariant) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func URL(CATVariant iIndex) As CATBSTR
-                |     Retrieves URL.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             Index of URL. 
-                |         oUrl
-                |             URL 
+                Func URL(CATVariant iIndex) As CATBSTR
+                    Retrieves URL.
+                
+                    Parameters:
+                
+                        iIndex
+                            Index of URL. 
+                        oUrl
+                            URL 
 
         :param CATVariant i_index:
         :return: str
@@ -78,4 +74,4 @@ class TPSHyperLinksManager(AnyObject):
         return self.com_object.URL(i_index)
 
     def __repr__(self):
-        return f'TpsHyperLinksManager(name="{ self.name }")'
+        return f'TpsHyperLinksManager(name="{self.name}")'

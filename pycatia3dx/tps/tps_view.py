@@ -20,16 +20,15 @@ if TYPE_CHECKING:
 class TPSView(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     TPSView
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    TPSView
 
     
     """
@@ -42,16 +41,15 @@ class TPSView(AnyObject):
     def annotation_plane(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AnnotationPlane() As CATSafeArrayVariant (Read Only)
-                |     Gets annotation plane of the view.
-                | 
-                |     Parameters:
-                | 
-                |         oMathPlane
-                |             Mathematical plane definition of the View.
+                Property AnnotationPlane() As CATSafeArrayVariant (Read Only)
+                    Gets annotation plane of the view.
+                
+                    Parameters:
+                
+                        oMathPlane
+                            Mathematical plane definition of the View.
 
         :return: tuple
         """
@@ -62,17 +60,16 @@ class TPSView(AnyObject):
     def annotation_sketch(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AnnotationSketch(AnyObject Layout2DLView)
-                |     Sets / Gets the annotation Sketch associated under the current
-                |     View.
-                | 
-                |     Parameters:
-                | 
-                |         Layout2DLView
-                |             2D Layout View used by current View as annotation sketch.
+                Property AnnotationSketch(AnyObject Layout2DLView)
+                    Sets / Gets the annotation Sketch associated under the current
+                    View.
+                
+                    Parameters:
+                
+                        Layout2DLView
+                            2D Layout View used by current View as annotation sketch.
 
         :return: AnyObject
         """
@@ -91,16 +88,15 @@ class TPSView(AnyObject):
     def annotations(self) -> 'Annotations':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Annotations() As Annotations (Read Only)
-                |     Retrieves the TPS components of the View.
-                | 
-                |     Parameters:
-                | 
-                |         oAnnots
-                |             Collection of returned component.
+                Property Annotations() As Annotations (Read Only)
+                    Retrieves the TPS components of the View.
+                
+                    Parameters:
+                
+                        oAnnots
+                            Collection of returned component.
 
         :return: Annotations
         """
@@ -111,16 +107,15 @@ class TPSView(AnyObject):
     def display_ratio(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DisplayRatio(double RatioValue)
-                |     Sets / Gets the ratio of current View.
-                | 
-                |     Parameters:
-                | 
-                |         RatioValue
-                |             Ratio applied to the View.
+                Property DisplayRatio(double RatioValue)
+                    Sets / Gets the ratio of current View.
+                
+                    Parameters:
+                
+                        RatioValue
+                            Ratio applied to the View.
 
         :return: float
         """
@@ -139,21 +134,20 @@ class TPSView(AnyObject):
     def view_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ViewType() As long (Read Only)
-                |     Gets view type.
-                | 
-                |     Parameters:
-                | 
-                |         oViewType
-                |             The view type
-                |             Legal values:
-                | 
-                |                 1: Front View
-                |                 2: Section View
-                |                 3: Cut View
+                Property ViewType() As long (Read Only)
+                    Gets view type.
+                
+                    Parameters:
+                
+                        oViewType
+                            The view type
+                            Legal values:
+                
+                                1: Front View
+                                2: Section View
+                                3: Cut View
 
         :return: int
         """
@@ -163,16 +157,15 @@ class TPSView(AnyObject):
     def add_view_text(self) -> Text:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func AddViewText() As Text
-                |     Creates a ViewText associated to the CATIAView.
-                | 
-                |     Parameters:
-                | 
-                |         oViewText
-                |             The new created Viewtext.
+                Func AddViewText() As Text
+                    Creates a ViewText associated to the CATIAView.
+                
+                    Parameters:
+                
+                        oViewText
+                            The new created Viewtext.
 
         :return: Text
         """
@@ -181,16 +174,15 @@ class TPSView(AnyObject):
     def get_view_text(self) -> Text:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetViewText() As Text
-                |     Gets the viewtext on the View interface.
-                | 
-                |     Parameters:
-                | 
-                |         oViewText
-                |             The viewtext of the CATIAView.
+                Func GetViewText() As Text
+                    Gets the viewtext on the View interface.
+                
+                    Parameters:
+                
+                        oViewText
+                            The viewtext of the CATIAView.
 
         :return: Text
         """
@@ -199,11 +191,10 @@ class TPSView(AnyObject):
     def has_view_text(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func HasViewText() As boolean
-                |     Checks if there is a viewtext in the view.
+                Func HasViewText() As boolean
+                    Checks if there is a viewtext in the view.
 
         :return: bool
         """
@@ -212,11 +203,10 @@ class TPSView(AnyObject):
     def hyper_link_manager(self) -> TPSHyperLinksManager:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func HyperLinkManager() As TPSHyperLinksManager
-                |     Gets the annotation on HyperLinks manager interface. 
+                Func HyperLinkManager() As TPSHyperLinksManager
+                    Gets the annotation on HyperLinks manager interface. 
 
         :return: TPSHyperLinksManager
         """

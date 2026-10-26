@@ -13,34 +13,32 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeBoundary(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeBoundary
-                | 
-                | Represents the hybrid shape boundary feature object.
-                | Role: To access the data of the hybrid shape boundary feature object. This data
-                | includes:
-                | 
-                |     The boundary propagation
-                |     The initial element used for the boundary propagation
-                |     The boundary support
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapeBoundary
-                | object.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeBoundary
+                
+                Represents the hybrid shape boundary feature object.
+                Role: To access the data of the hybrid shape boundary feature object. This data
+                includes:
+                
+                    The boundary propagation
+                    The initial element used for the boundary propagation
+                    The boundary support
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapeBoundary
+                object.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -52,11 +50,10 @@ class HybridShapeBoundary(HybridShape):
     def from_(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property From() As Reference
-                |     Removes or sets the ending limit(i.e Limit2) of the boundary
+                Property From() As Reference
+                    Removes or sets the ending limit(i.e Limit2) of the boundary
 
         :return: Reference
         """
@@ -75,11 +72,10 @@ class HybridShapeBoundary(HybridShape):
     def from_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property FromOrientation() As long
-                |     Gets or sets the Ending Limit Orientation (i.e same or inverse)
+                Property FromOrientation() As long
+                    Gets or sets the Ending Limit Orientation (i.e same or inverse)
 
         :return: int
         """
@@ -98,21 +94,20 @@ class HybridShapeBoundary(HybridShape):
     def initial_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property InitialElement() As Reference
-                |     Returns or sets the element used to initialize the boundary
-                |     propagation.
-                |     Sub-element(s) supported (see Boundary object):
-                |     BiDimFeatEdge.
-                | 
-                |     Example:
-                |         This example retrieves in InitElem the initial element of the
-                |         ShpBoundary hybrid shape boundary feature.
-                | 
-                |          Dim InitElem As Reference
-                |          InitElem = ShpBoundary.InitialElement
+                Property InitialElement() As Reference
+                    Returns or sets the element used to initialize the boundary
+                    propagation.
+                    Sub-element(s) supported (see Boundary object):
+                    BiDimFeatEdge.
+                
+                    Example:
+                        This example retrieves in InitElem the initial element of the
+                        ShpBoundary hybrid shape boundary feature.
+                
+                         Dim InitElem As Reference
+                         InitElem = ShpBoundary.InitialElement
 
         :return: Reference
         """
@@ -131,18 +126,17 @@ class HybridShapeBoundary(HybridShape):
     def propagation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Propagation() As long
-                |     Returns or sets the boundary propagation.
-                |     Legal values: xxxxxxxxxx
-                | 
-                |     Example:
-                |         This example retrieves in Prop the boundary propagation of the
-                |         ShpBoundary hybrid shape boundary feature.
-                | 
-                |          Prop = ShpBoundary.Propagation
+                Property Propagation() As long
+                    Returns or sets the boundary propagation.
+                    Legal values: xxxxxxxxxx
+                
+                    Example:
+                        This example retrieves in Prop the boundary propagation of the
+                        ShpBoundary hybrid shape boundary feature.
+                
+                         Prop = ShpBoundary.Propagation
 
         :return: int
         """
@@ -161,20 +155,19 @@ class HybridShapeBoundary(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Support() As Reference
-                |     Returns or sets the support surface around which the boundary is
-                |     computed.
-                |     Sub-element(s) supported (see Boundary object): Face.
-                | 
-                |     Example:
-                |         This example retrieves in SupSurf the initial element of the
-                |         ShpBoundary hybrid shape boundary feature.
-                | 
-                |          Dim SupSurf As Reference
-                |          SupSurf = ShpBoundary.Support
+                Property Support() As Reference
+                    Returns or sets the support surface around which the boundary is
+                    computed.
+                    Sub-element(s) supported (see Boundary object): Face.
+                
+                    Example:
+                        This example retrieves in SupSurf the initial element of the
+                        ShpBoundary hybrid shape boundary feature.
+                
+                         Dim SupSurf As Reference
+                         SupSurf = ShpBoundary.Support
 
         :return: Reference
         """
@@ -193,11 +186,10 @@ class HybridShapeBoundary(HybridShape):
     def to(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property To() As Reference
-                |     Removes or sets the starting limit(i.e Limit1) of the boundary
+                Property To() As Reference
+                    Removes or sets the starting limit(i.e Limit1) of the boundary
 
         :return: Reference
         """
@@ -216,11 +208,10 @@ class HybridShapeBoundary(HybridShape):
     def to_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ToOrientation() As long
-                |     Gets or sets the Starting Limit Orientation (i.e same or inverse)
+                Property ToOrientation() As long
+                    Gets or sets the Starting Limit Orientation (i.e same or inverse)
 
         :return: int
         """
@@ -236,4 +227,4 @@ class HybridShapeBoundary(HybridShape):
         self.com_object.ToOrientation = value
 
     def __repr__(self):
-        return f'HybridShapeBoundary(name="{ self.name }")'
+        return f'HybridShapeBoundary(name="{self.name}")'

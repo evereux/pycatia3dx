@@ -13,25 +13,23 @@ from pycatia3dx.del_robot_simulation.rsc_instruction import RscInstruction
 
 
 class RscRunInternalTask(RscInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DELRobotSimulationIDLItf.RscInstruction
-                |                         RscRunInternalTask
-                | 
-                | Interface representing a Resource RunInternalTask Instruction.
-                | 
-                | Role: This interface represents a RscRunInternalTask Instruction in a Resource
-                | Task
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DELRobotSimulationIDLItf.RscInstruction
+                                        RscRunInternalTask
+                
+                Interface representing a Resource RunInternalTask Instruction.
+                
+                Role: This interface represents a RscRunInternalTask Instruction in a Resource
+                Task
     
     """
 
@@ -43,42 +41,41 @@ class RscRunInternalTask(RscInstruction):
     def task(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Task() As AnyObject
-                |     Assigns/Retrieves the Internal Task to run
-                | 
-                |     Parameters:
-                | 
-                |         iRscRunInternalTask
-                |             The Run Task to be assigned 
-                | 
-                |     Returns:
-                |         oRscRunInternalTask The associated Run Task 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            Set ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim iTask
-                |            .........
-                |            Dim iIndex
-                |            iIndex=-1
-                |            Dim oCreatedRscRunInternalTask
-                |            Set oCreatedRscRunInternalTask=ResourceSequence.CreateRscRunInternalTask(iTask,iIndex)
+                Property Task() As AnyObject
+                    Assigns/Retrieves the Internal Task to run
+                
+                    Parameters:
+                
+                        iRscRunInternalTask
+                            The Run Task to be assigned 
+                
+                    Returns:
+                        oRscRunInternalTask The associated Run Task 
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           Set ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim iTask
+                           .........
+                           Dim iIndex
+                           iIndex=-1
+                           Dim oCreatedRscRunInternalTask
+                           Set oCreatedRscRunInternalTask=ResourceSequence.CreateRscRunInternalTask(iTask,iIndex)
                 |
-                |            Dim ResourceRunInternalTask As RscRunInternalTask
-                |            Set ResourceRunInternalTask = oCreatedRscRunInternalTask
-                |            ......
-                |            Dim RscInternalTask
-                |            RscInternalTask=ResourceRunInternalTask.Task
-                |            ......
-                |            ResourceRunInternalTask.Task = RscInternalTask
+                           Dim ResourceRunInternalTask As RscRunInternalTask
+                           Set ResourceRunInternalTask = oCreatedRscRunInternalTask
+                           ......
+                           Dim RscInternalTask
+                           RscInternalTask=ResourceRunInternalTask.Task
+                           ......
+                           ResourceRunInternalTask.Task = RscInternalTask
 
         :return: AnyObject
         """
@@ -94,4 +91,4 @@ class RscRunInternalTask(RscInstruction):
         self.com_object.Task = value
 
     def __repr__(self):
-        return f'RscRunInternalTask(name="{ self.name }")'
+        return f'RscRunInternalTask(name="{self.name}")'

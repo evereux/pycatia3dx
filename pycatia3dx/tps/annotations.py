@@ -17,18 +17,17 @@ from pycatia3dx.types.general import CATVariant
 class Annotations(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     Annotations
-                | 
-                | Interface for collection of TPS objects CATIAAnnotation.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    Annotations
+                
+                Interface for collection of TPS objects CATIAAnnotation.
     
     """
 
@@ -39,11 +38,10 @@ class Annotations(Collection):
     def add(self, i_annot: Annotation) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Add(Annotation iAnnot)
-                |     Add an Annotation.
+                Sub Add(Annotation iAnnot)
+                    Add an Annotation.
 
         :param Annotation i_annot:
         :return: None
@@ -53,12 +51,11 @@ class Annotations(Collection):
     def item(self, i_index: CATVariant) -> Annotation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As AnyObject
-                |     Retrieves an Annotation managing by CATIAAnnotation. Deprecated method:
-                |     Item method is replaced by Item2 has.
+                Func Item(CATVariant iIndex) As AnyObject
+                    Retrieves an Annotation managing by CATIAAnnotation. Deprecated method:
+                    Item method is replaced by Item2 has.
 
         :param CATVariant i_index:
         :return: Annotation
@@ -68,11 +65,10 @@ class Annotations(Collection):
     def item2(self, i_index: CATVariant) -> Annotation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item2(CATVariant iIndex) As AnyObject
-                |     Retrieve an Annotation using interface CATIAAnnotation2 
+                Func Item2(CATVariant iIndex) As AnyObject
+                    Retrieve an Annotation using interface CATIAAnnotation2 
 
         :param CATVariant i_index:
         :return: Annotation

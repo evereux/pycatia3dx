@@ -14,24 +14,23 @@ from pycatia3dx.dnb_igp_olp_use.olp_transform import OLPTransform
 class OLPSphere(OLPShape):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DNBIgpOlpUseItf.OlpShape
-                |                         OlpSphere
-                | 
-                | A 3D sphere.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | This object is used with OlpCartesianSafetyZone and
-                | OlpToolVolume
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DNBIgpOlpUseItf.OlpShape
+                                        OlpSphere
+                
+                A 3D sphere.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                This object is used with OlpCartesianSafetyZone and
+                OlpToolVolume
     
     """
 
@@ -43,11 +42,10 @@ class OLPSphere(OLPShape):
     def radius(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Radius() As double
-                |     Get/Set the radius in meters.
+                Property Radius() As double
+                    Get/Set the radius in meters.
 
         :return: float
         """
@@ -65,22 +63,21 @@ class OLPSphere(OLPShape):
     def get_center(self) -> OLPTransform:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCenter(DELOlpPositionRef iOrigin) As OlpTransform
-                |     Get the center of the sphere.
-                | 
-                |     Parameters:
-                | 
-                |         iOrigin
-                |             The origin of the coordinate system being used by the translator.
-                |             For tool volumes, this should be delOlpMount, for Cartesian Safety Zones it
-                |             should be one of delOlpWorld, delOlpStation, or delOlpRailOrigin
-                |             
-                | 
-                |     Returns:
-                |         The location.
+                Func GetCenter(DELOlpPositionRef iOrigin) As OlpTransform
+                    Get the center of the sphere.
+                
+                    Parameters:
+                
+                        iOrigin
+                            The origin of the coordinate system being used by the translator.
+                            For tool volumes, this should be delOlpMount, for Cartesian Safety Zones it
+                            should be one of delOlpWorld, delOlpStation, or delOlpRailOrigin
+                            
+                
+                    Returns:
+                        The location.
 
         :return: OLPTransform
         """
@@ -89,22 +86,21 @@ class OLPSphere(OLPShape):
     def set_center(self, i_origin: int, i_location: OLPTransform) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCenter(DELOlpPositionRef iOrigin,OlpTransform
-                | iLocation)
-                |     Set the center of the sphere.
-                | 
-                |     Parameters:
-                | 
-                |         iOrigin
-                |             The origin of the coordinate system being used by the translator.
-                |             For tool volumes, this should be delOlpMount, for Cartesian Safety Zones it
-                |             should be one of delOlpWorld, delOlpStation, or delOlpRailOrigin
-                |             
-                |         iLocation
-                |             The location. 
+                Sub SetCenter(DELOlpPositionRef iOrigin,OlpTransform
+                iLocation)
+                    Set the center of the sphere.
+                
+                    Parameters:
+                
+                        iOrigin
+                            The origin of the coordinate system being used by the translator.
+                            For tool volumes, this should be delOlpMount, for Cartesian Safety Zones it
+                            should be one of delOlpWorld, delOlpStation, or delOlpRailOrigin
+                            
+                        iLocation
+                            The location. 
 
         :param int i_origin:
         :param OLPTransform i_location:

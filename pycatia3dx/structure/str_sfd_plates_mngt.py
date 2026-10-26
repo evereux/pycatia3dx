@@ -16,20 +16,19 @@ from pycatia3dx.structure.str_sfd_plates import StrSfdPlates
 class StrSfdPlatesMngt(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrSfdPlatesMngt
-                | 
-                | Object to manage the Plates and the seams(cutting element) on SFD
-                | Panel.
-                | Role: To define seams for SFD Panel.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrSfdPlatesMngt
+                
+                Object to manage the Plates and the seams(cutting element) on SFD
+                Panel.
+                Role: To define seams for SFD Panel.
     
     """
 
@@ -41,29 +40,28 @@ class StrSfdPlatesMngt(AnyObject):
     def cutting_elements(self) -> StrReferences:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CuttingElements() As StrReferences
-                |     Returns or sets the cutting element(seams) on the Panel.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example sets CuttingElements for the SfdPanel to create split
-                |              plates.
-                |              
-                | 
-                |               Dim ObjSfdPlatesMngt As SfdPlatesMngt
-                |               Set ObjSfdPlatesMngt = iObjSfdPanel.SfdPlatesMngt
-                |               Dim ListOfCuttingRefs As StrReferences
-                |               'Retrieve object of CuttingElement List
-                |               Set ListOfCuttingRefs = ObjSfdPlatesMngt.CuttingElements
-                |               'Add the references of cutting elements in the
-                |               list
-                |               ListOfCuttingRefs.Add ReferenceOfCuttingElem
-                |               'set the cutting element list
-                |               ObjSfdPlatesMngt.CuttingElements = ListOfCuttingRefs
+                Property CuttingElements() As StrReferences
+                    Returns or sets the cutting element(seams) on the Panel.
+                
+                    Example:
+                
+                
+                             This example sets CuttingElements for the SfdPanel to create split
+                             plates.
+                             
+                
+                              Dim ObjSfdPlatesMngt As SfdPlatesMngt
+                              Set ObjSfdPlatesMngt = iObjSfdPanel.SfdPlatesMngt
+                              Dim ListOfCuttingRefs As StrReferences
+                              'Retrieve object of CuttingElement List
+                              Set ListOfCuttingRefs = ObjSfdPlatesMngt.CuttingElements
+                              'Add the references of cutting elements in the
+                              list
+                              ListOfCuttingRefs.Add ReferenceOfCuttingElem
+                              'set the cutting element list
+                              ObjSfdPlatesMngt.CuttingElements = ListOfCuttingRefs
 
         :return: StrReferences
         """
@@ -81,21 +79,20 @@ class StrSfdPlatesMngt(AnyObject):
     def get_plates(self) -> StrSfdPlates:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetPlates() As StrSfdPlates
-                |     Returns the Plates of this Panel..
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves list of plates under this super
-                |              plate.
-                |              
-                | 
-                |               Dim ObjSfdPlateList As SfdPlates
-                |               Set ObjSfdPlateList = ObjSfdPlatesMngt.GetPlates
+                Func GetPlates() As StrSfdPlates
+                    Returns the Plates of this Panel..
+                
+                    Example:
+                
+                
+                             This example retrieves list of plates under this super
+                             plate.
+                             
+                
+                              Dim ObjSfdPlateList As SfdPlates
+                              Set ObjSfdPlateList = ObjSfdPlatesMngt.GetPlates
 
         :return: StrSfdPlates
         """
@@ -104,14 +101,13 @@ class StrSfdPlatesMngt(AnyObject):
     def run(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Run()
-                |     Generates the plates under a Panel.
-                |     Role: This function applies to a Panel only. The Run() method is used to
-                |     generate the plates under a panel. The Run method will add or remove plates
-                |     depending on the cutting elements set in the Panel. 
+                Sub Run()
+                    Generates the plates under a Panel.
+                    Role: This function applies to a Panel only. The Run() method is used to
+                    generate the plates under a panel. The Run method will add or remove plates
+                    depending on the cutting elements set in the Panel. 
 
         :return: None
         """

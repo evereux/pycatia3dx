@@ -13,22 +13,20 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeNear(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeNear
-                | 
-                | The Near feature : an Near is made up of a face to process and one Near parameter.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeNear
+                
+                The Near feature : an Near is made up of a face to process and one Near parameter.
     
     """
 
@@ -40,25 +38,24 @@ class HybridShapeNear(HybridShape):
     def multiple_solution(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property MultipleSolution() As Reference
-                |     Role: To get_MultipleSolution on the object.
-                | 
-                |     Parameters:
-                | 
-                |         oMultipleSolution
-                |             multiple element return value for CATScript applications, with
-                |             (IDLRETVAL) function type 
-                | 
-                |     See also:
-                |         Reference
-                |     Returns:
-                |         HRESULT S_OK if Ok E_FAIL else return error code for C++
-                |         Implementations 
-                |     See also:
-                |         HybridShapeFactory
+                Property MultipleSolution() As Reference
+                    Role: To get_MultipleSolution on the object.
+                
+                    Parameters:
+                
+                        oMultipleSolution
+                            multiple element return value for CATScript applications, with
+                            (IDLRETVAL) function type 
+                
+                    See also:
+                        Reference
+                    Returns:
+                        HRESULT S_OK if Ok E_FAIL else return error code for C++
+                        Implementations 
+                    See also:
+                        HybridShapeFactory
 
         :return: Reference
         """
@@ -77,25 +74,24 @@ class HybridShapeNear(HybridShape):
     def reference_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ReferenceElement() As Reference
-                |     Role: To get_ReferenceElement on the object.
-                | 
-                |     Parameters:
-                | 
-                |         oRefElem
-                |             reference element return value for CATScript applications, with
-                |             (IDLRETVAL) function type 
-                | 
-                |     See also:
-                |         Reference
-                |     Returns:
-                |         HRESULT S_OK if Ok E_FAIL else return error code for C++
-                |         Implementations 
-                |     See also:
-                |         HybridShapeFactory
+                Property ReferenceElement() As Reference
+                    Role: To get_ReferenceElement on the object.
+                
+                    Parameters:
+                
+                        oRefElem
+                            reference element return value for CATScript applications, with
+                            (IDLRETVAL) function type 
+                
+                    See also:
+                        Reference
+                    Returns:
+                        HRESULT S_OK if Ok E_FAIL else return error code for C++
+                        Implementations 
+                    See also:
+                        HybridShapeFactory
 
         :return: Reference
         """
@@ -111,4 +107,4 @@ class HybridShapeNear(HybridShape):
         self.com_object.ReferenceElement = value
 
     def __repr__(self):
-        return f'HybridShapeNear(name="{ self.name }")'
+        return f'HybridShapeNear(name="{self.name}")'

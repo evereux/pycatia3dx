@@ -12,19 +12,17 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class CoordDim(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CoordDim
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CoordDim
 
     
     """
@@ -36,15 +34,14 @@ class CoordDim(AnyObject):
     def get_2d_annot(self) -> DrawingCoordDim:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Get2dAnnot() As DrawingCoordDim
-                |     Retrieves Drafting Coordinate dimension. 
+                Func Get2dAnnot() As DrawingCoordDim
+                    Retrieves Drafting Coordinate dimension. 
 
         :return: DrawingCoordDim
         """
         return DrawingCoordDim(self.com_object.Get2dAnnot())
 
     def __repr__(self):
-        return f'CoordDim(name="{ self.name }")'
+        return f'CoordDim(name="{self.name}")'

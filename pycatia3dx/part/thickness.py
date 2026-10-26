@@ -15,25 +15,23 @@ from pycatia3dx.part.dress_up_shape import DressUpShape
 
 
 class Thickness(DressUpShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.DressUpShape
-                |                             Thickness
-                | 
-                | Represents the thickness shape.
-                | The thickness shape is made up of a collection of faces to process and an
-                | offset parameter.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.DressUpShape
+                                            Thickness
+                
+                Represents the thickness shape.
+                The thickness shape is made up of a collection of faces to process and an
+                offset parameter.
     
     """
 
@@ -45,17 +43,16 @@ class Thickness(DressUpShape):
     def faces_to_thicken(self) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FacesToThicken() As References (Read Only)
-                |     Returns the collection of faces to be thickened.
-                | 
-                |     Example:
-                |         The following example returns in list the list of faces of the
-                |         thickness firstThickness:
-                | 
-                |          Set list = firstThickness.FacesToThicken
+                Property FacesToThicken() As References (Read Only)
+                    Returns the collection of faces to be thickened.
+                
+                    Example:
+                        The following example returns in list the list of faces of the
+                        thickness firstThickness:
+                
+                         Set list = firstThickness.FacesToThicken
 
         :return: References
         """
@@ -66,17 +63,16 @@ class Thickness(DressUpShape):
     def offset(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Offset() As Length (Read Only)
-                |     Returns the thickness offset.
-                | 
-                |     Example:
-                |         The following example returns in offset the offset of the thickness
-                |         firstThickness:
-                | 
-                |          Set offset = firstThickness.Offset
+                Property Offset() As Length (Read Only)
+                    Returns the thickness offset.
+                
+                    Example:
+                        The following example returns in offset the offset of the thickness
+                        firstThickness:
+                
+                         Set offset = firstThickness.Offset
 
         :return: Length
         """
@@ -86,23 +82,22 @@ class Thickness(DressUpShape):
     def add_face_to_thicken(self, i_face_to_thicken: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddFaceToThicken(Reference iFaceToThicken)
-                |     Adds a new face to be thickened.
-                | 
-                |     Parameters:
-                | 
-                |         iFaceToThicken
-                |             The new face to process
-                |             The following Boundary object is supported: Face. 
-                | 
-                |     Example:
-                |         The following example adds the new face face to thicken for the
-                |         thickness firstThickness:
-                | 
-                |          call firstThickness.AddFaceToThicken(face)
+                Sub AddFaceToThicken(Reference iFaceToThicken)
+                    Adds a new face to be thickened.
+                
+                    Parameters:
+                
+                        iFaceToThicken
+                            The new face to process
+                            The following Boundary object is supported: Face. 
+                
+                    Example:
+                        The following example adds the new face face to thicken for the
+                        thickness firstThickness:
+                
+                         call firstThickness.AddFaceToThicken(face)
 
         :param Reference i_face_to_thicken:
         :return: None
@@ -112,25 +107,24 @@ class Thickness(DressUpShape):
     def add_face_with_different_thickness(self, i_face_to_thicken: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddFaceWithDifferentThickness(Reference iFaceToThicken)
-                |     Adds a new face to thicken with a different offset value.
-                | 
-                |     Parameters:
-                | 
-                |         iFaceToThicken
-                |             The new face to process
-                |             The following Boundary object is supported: Face. 
-                | 
-                |     Example:
-                |         The following example adds the new face face to thicken with a
-                |         different offset value for the thickness
-                |         firstThickness:
-                | 
-                |          call
-                |          firstThickness.AddFaceWithDifferentThickness(face)
+                Sub AddFaceWithDifferentThickness(Reference iFaceToThicken)
+                    Adds a new face to thicken with a different offset value.
+                
+                    Parameters:
+                
+                        iFaceToThicken
+                            The new face to process
+                            The following Boundary object is supported: Face. 
+                
+                    Example:
+                        The following example adds the new face face to thicken with a
+                        different offset value for the thickness
+                        firstThickness:
+                
+                         call
+                         firstThickness.AddFaceWithDifferentThickness(face)
 
         :param Reference i_face_to_thicken:
         :return: None
@@ -140,23 +134,22 @@ class Thickness(DressUpShape):
     def remove_face_with_different_thickness(self, i_face_to_remove: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveFaceWithDifferentThickness(Reference iFaceToRemove)
-                |     Removes an existing thickened face.
-                | 
-                |     Parameters:
-                | 
-                |         iFaceToRemove
-                |             The face to remove
-                |             The following Boundary object is supported: Face. 
-                | 
-                |     Example:
-                |         The following example removes the existing face thickened face from the
-                |         thickness firstThickness:
-                | 
-                |          call
+                Sub RemoveFaceWithDifferentThickness(Reference iFaceToRemove)
+                    Removes an existing thickened face.
+                
+                    Parameters:
+                
+                        iFaceToRemove
+                            The face to remove
+                            The following Boundary object is supported: Face. 
+                
+                    Example:
+                        The following example removes the existing face thickened face from the
+                        thickness firstThickness:
+                
+                         call
 firstThickness.RemoveFaceWithDifferentThickness(face)(face)
 
         :param Reference i_face_to_remove:
@@ -167,11 +160,10 @@ firstThickness.RemoveFaceWithDifferentThickness(face)(face)
     def set_volume_support(self, i_volume_support: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetVolumeSupport(Reference iVolumeSupport)
-                |     Set support of Thickness feature.
+                Sub SetVolumeSupport(Reference iVolumeSupport)
+                    Set support of Thickness feature.
 
         :param Reference i_volume_support:
         :return: None
@@ -181,23 +173,22 @@ firstThickness.RemoveFaceWithDifferentThickness(face)(face)
     def withdraw_face_to_thicken(self, i_face_to_withdraw: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub WithdrawFaceToThicken(Reference iFaceToWithdraw)
-                |     Withdraws an existing thickened face.
-                | 
-                |     Parameters:
-                | 
-                |         iFaceToWithdraw
-                |             The face to withdraw
-                |             The following Boundary object is supported: Face. 
-                | 
-                |     Example:
-                |         The following example withdraws the existing face thickened face from
-                |         the thickness firstThickness:
-                | 
-                |          call firstThickness.WithdrawFaceToThicken(face)
+                Sub WithdrawFaceToThicken(Reference iFaceToWithdraw)
+                    Withdraws an existing thickened face.
+                
+                    Parameters:
+                
+                        iFaceToWithdraw
+                            The face to withdraw
+                            The following Boundary object is supported: Face. 
+                
+                    Example:
+                        The following example withdraws the existing face thickened face from
+                        the thickness firstThickness:
+                
+                         call firstThickness.WithdrawFaceToThicken(face)
 
         :param Reference i_face_to_withdraw:
         :return: None
@@ -205,4 +196,4 @@ firstThickness.RemoveFaceWithDifferentThickness(face)(face)
         return self.com_object.WithdrawFaceToThicken(i_face_to_withdraw.com_object)
 
     def __repr__(self):
-        return f'Thickness(name="{ self.name }")'
+        return f'Thickness(name="{self.name}")'

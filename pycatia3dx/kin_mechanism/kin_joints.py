@@ -17,18 +17,17 @@ from pycatia3dx.types.general import CATVariant
 class KinJoints(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     KinJoints
-                | 
-                | The collection of Joints.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    KinJoints
+                
+                The collection of Joints.
     
     """
 
@@ -39,21 +38,20 @@ class KinJoints(Collection):
     def exclude(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Exclude(CATVariant iIndex)
-                |     Dereferences a Joint using its index or its name from the Joint
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or the name of the Joint to retrieve from the collection
-                |             of Joint. As a numeric, this index is the rank of the Joint in the collection.
-                |             The index of the first Joint in the collection is 1, and the index of the last
-                |             Joint is Count. As a string, it is the name you assigned to the Joint using the
-                |             AnyObject.Name property.
+                Sub Exclude(CATVariant iIndex)
+                    Dereferences a Joint using its index or its name from the Joint
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index or the name of the Joint to retrieve from the collection
+                            of Joint. As a numeric, this index is the rank of the Joint in the collection.
+                            The index of the first Joint in the collection is 1, and the index of the last
+                            Joint is Count. As a string, it is the name you assigned to the Joint using the
+                            AnyObject.Name property.
 
         :param CATVariant i_index:
         :return: None
@@ -63,17 +61,16 @@ class KinJoints(Collection):
     def include(self, i_joint: EngConnection) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Include(EngConnection iJoint)
-                |     References a Joint in the mechanism and adds it to the Joint collection.
-                |     The Joint will have to exist in the assembly's collection.
-                | 
-                |     Parameters:
-                | 
-                |         iJoint
-                |             The joint we want to refer.
+                Sub Include(EngConnection iJoint)
+                    References a Joint in the mechanism and adds it to the Joint collection.
+                    The Joint will have to exist in the assembly's collection.
+                
+                    Parameters:
+                
+                        iJoint
+                            The joint we want to refer.
 
         :param EngConnection i_joint:
         :return: None
@@ -83,27 +80,26 @@ class KinJoints(Collection):
     def item(self, i_index: CATVariant) -> EngConnection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As EngConnection
-                |     Returns a Joint using its index or its name from the Joint
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or the name of the Joint to retrieve from the collection
-                |             of Joints. As a numeric, this index is the rank of the Joint in the collection.
-                |             The index of the first Joint in the collection is 1, and the index of the last
-                |             Joint is Count. As a string, it is the name you assigned to the Joint using the
-                |             AnyObject.Name property. 
-                | 
-                |     Returns:
-                |         The retrieved iJoint. 
-                | 
-                | 
-                | Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
+                Func Item(CATVariant iIndex) As EngConnection
+                    Returns a Joint using its index or its name from the Joint
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index or the name of the Joint to retrieve from the collection
+                            of Joints. As a numeric, this index is the rank of the Joint in the collection.
+                            The index of the first Joint in the collection is 1, and the index of the last
+                            Joint is Count. As a string, it is the name you assigned to the Joint using the
+                            AnyObject.Name property. 
+                
+                    Returns:
+                        The retrieved iJoint. 
+                
+                
+                Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
 
         :param CATVariant i_index:
         :return: EngConnection

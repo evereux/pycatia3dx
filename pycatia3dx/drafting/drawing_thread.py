@@ -14,18 +14,17 @@ from pycatia3dx.system.any_object import AnyObject
 class DrawingThread(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DrawingThread
-                | 
-                | Represents a drawing thread in a drawing view.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DrawingThread
+                
+                Represents a drawing thread in a drawing view.
     
     """
 
@@ -37,20 +36,19 @@ class DrawingThread(AnyObject):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As CatThreadType
-                |     Returns or sets a CatThreadType (threaded or taped) on a thread. Be
-                |     careful, this method is only available on threads which are linked to 2D circle
-                |     geometry 
-                | 
-                | Example:
-                |     The following example sets the type Taped in MyThread
-                | 
-                |       If MyThread.IsLinkedTo()=cat2DCircle Then
-                |          MyThread.Type = catTaped
-                |        End If
+                Property Type() As CatThreadType
+                    Returns or sets a CatThreadType (threaded or taped) on a thread. Be
+                    careful, this method is only available on threads which are linked to 2D circle
+                    geometry 
+                
+                Example:
+                    The following example sets the type Taped in MyThread
+                
+                      If MyThread.IsLinkedTo()=cat2DCircle Then
+                         MyThread.Type = catTaped
+                       End If
 
         :return: int
         """
@@ -68,21 +66,20 @@ class DrawingThread(AnyObject):
     def is_linked_to(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsLinkedTo() As CatThreadLinkedTo
-                |     Specifies which kind of objects the thread is linked to.
-                | 
-                |     Returns:
-                |         oLinkedType The type of thread link 
-                | 
-                | Example:
-                |     The following example retrieves the CatThreadLinkedTo in MyThread This view
-                |     belongs to the drawing view collection of the drawing
-                |     sheet
-                | 
-                |      ThreadLinkType = MyThread.IsLinkedTo
+                Func IsLinkedTo() As CatThreadLinkedTo
+                    Specifies which kind of objects the thread is linked to.
+                
+                    Returns:
+                        oLinkedType The type of thread link 
+                
+                Example:
+                    The following example retrieves the CatThreadLinkedTo in MyThread This view
+                    belongs to the drawing view collection of the drawing
+                    sheet
+                
+                     ThreadLinkType = MyThread.IsLinkedTo
 
         :return: int
         """

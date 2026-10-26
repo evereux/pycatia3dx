@@ -16,18 +16,17 @@ from pycatia3dx.structure.sdd_product_stiffener_on_free_edge import SddProductSt
 class SddStiffenerMngt(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SddStiffenerMngt
-                | 
-                | Object to manage the SDD Stiffeners.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SddStiffenerMngt
+                
+                Object to manage the SDD Stiffeners.
     
     """
 
@@ -38,27 +37,26 @@ class SddStiffenerMngt(AnyObject):
     def add_stiffener(self) -> SddProductStiffener:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func AddStiffener() As SddProductStiffener
-                |     Returns a Stiffener created with all the data structure. For setting
-                |     further attributes please refer to StrCategoryMngt, StrMaterialMngt,
-                |     StrSectionMngt, StrOpenings, StrProfileLimitMngt objects. Role: Create a
-                |     Stiffener with all the data structure.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example creates a SddProductStiffener
-                |              
-                | 
-                |              Dim ObjSddStiffenerMngt As SddStiffenerMngt
-                |              SFDProdSel.Add ObjVPMRootOccurrence
-                |              Set ObjSddStiffenerMngt = ObjSelection.FindObject("CATIASddStiffenerMngt")
-                |              Dim ObjSddProductStiffener As SddProductStiffener
-                |              Set ObjSddProductStiffener = ObjSddStiffenerMngt.AddStiffener
+                Func AddStiffener() As SddProductStiffener
+                    Returns a Stiffener created with all the data structure. For setting
+                    further attributes please refer to StrCategoryMngt, StrMaterialMngt,
+                    StrSectionMngt, StrOpenings, StrProfileLimitMngt objects. Role: Create a
+                    Stiffener with all the data structure.
+                
+                    Example:
+                
+                         
+                             
+                             This example creates a SddProductStiffener
+                             
+                
+                             Dim ObjSddStiffenerMngt As SddStiffenerMngt
+                             SFDProdSel.Add ObjVPMRootOccurrence
+                             Set ObjSddStiffenerMngt = ObjSelection.FindObject("CATIASddStiffenerMngt")
+                             Dim ObjSddProductStiffener As SddProductStiffener
+                             Set ObjSddProductStiffener = ObjSddStiffenerMngt.AddStiffener
 
         :return: SddProductStiffener
         """
@@ -67,29 +65,28 @@ class SddStiffenerMngt(AnyObject):
     def add_stiffener_on_free_edge(self) -> SddProductStiffenerOnFreeEdge:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func AddStiffenerOnFreeEdge() As SddProductStiffenerOnFreeEdge
-                |     Returns a Stiffener On Free Edge created with all the data structure. For
-                |     setting further attributes please refer to StrCategoryMngt, StrMaterialMngt,
-                |     StrSectionMngt, StrOpenings, StrProfileLimitMngt objects. Role: Create a
-                |     Stiffener with all the data structure.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example creates a
-                |              SddProductStiffenerOnFreeEdge
-                |              
-                | 
-                |              Dim ObjSddStiffenerMngt As SddStiffenerMngt
-                |              SFDProdSel.Add ObjVPMRootOccurrence
-                |              Set ObjSddStiffenerMngt = ObjSelection.FindObject("CATIASddStiffenerMngt")
-                |              Dim ObjSddProductStiffenerOnFreeEdge As
-                |              SddProductStiffenerOnFreeEdge
-                |              Set ObjSddProductStiffenerOnFreeEdge = ObjSddStiffenerMngt.AddStiffenerOnFreeEdge
+                Func AddStiffenerOnFreeEdge() As SddProductStiffenerOnFreeEdge
+                    Returns a Stiffener On Free Edge created with all the data structure. For
+                    setting further attributes please refer to StrCategoryMngt, StrMaterialMngt,
+                    StrSectionMngt, StrOpenings, StrProfileLimitMngt objects. Role: Create a
+                    Stiffener with all the data structure.
+                
+                    Example:
+                
+                         
+                             
+                             This example creates a
+                             SddProductStiffenerOnFreeEdge
+                             
+                
+                             Dim ObjSddStiffenerMngt As SddStiffenerMngt
+                             SFDProdSel.Add ObjVPMRootOccurrence
+                             Set ObjSddStiffenerMngt = ObjSelection.FindObject("CATIASddStiffenerMngt")
+                             Dim ObjSddProductStiffenerOnFreeEdge As
+                             SddProductStiffenerOnFreeEdge
+                             Set ObjSddProductStiffenerOnFreeEdge = ObjSddStiffenerMngt.AddStiffenerOnFreeEdge
 
         :return: SddProductStiffenerOnFreeEdge
         """

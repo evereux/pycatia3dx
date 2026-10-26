@@ -12,21 +12,19 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SsmDesignSpace(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SsmDesignSpace
-                | 
-                | Role: This interface is specific to Space design reference
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SsmDesignSpace
+                
+                Role: This interface is specific to Space design reference
     
     """
 
@@ -38,14 +36,13 @@ class SsmDesignSpace(AnyObject):
     def floor_area(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FloorArea() As double (Read Only)
-                |     Get Floor Area Attribute
-                | 
-                |     Returns:
-                |         Floor area (in MKS). 
+                Property FloorArea() As double (Read Only)
+                    Get Floor Area Attribute
+                
+                    Returns:
+                        Floor area (in MKS). 
 
         :return: float
         """
@@ -53,4 +50,4 @@ class SsmDesignSpace(AnyObject):
         return self.com_object.FloorArea
 
     def __repr__(self):
-        return f'SsmDesignSpace(name="{ self.name }")'
+        return f'SsmDesignSpace(name="{self.name}")'

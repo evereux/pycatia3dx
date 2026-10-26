@@ -14,35 +14,33 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeMidSurface(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeMidSurface
-                | 
-                | Represents the hybrid shape MidSurface feature object.
-                | Role: To access the data of the hybrid shape MidSurface feature
-                | object.
-                | This data includes:
-                | 
-                |     Support Body
-                |     Creation Mode
-                |     Threshold Thickness
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapeMidSurface
-                | object.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeMidSurface
+                
+                Represents the hybrid shape MidSurface feature object.
+                Role: To access the data of the hybrid shape MidSurface feature
+                object.
+                This data includes:
+                
+                    Support Body
+                    Creation Mode
+                    Threshold Thickness
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapeMidSurface
+                object.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -54,11 +52,10 @@ class HybridShapeMidSurface(HybridShape):
     def auto_thickness_threshold(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property AutoThicknessThreshold() As long
-                |     Returns or sets AutoThicknessThreshold. Automatic Thickmess Threshold Check Button ON :1, OFF : 0 (Only Automatic Creation Mode Available for Automation)
+                Property AutoThicknessThreshold() As long
+                    Returns or sets AutoThicknessThreshold. Automatic Thickmess Threshold Check Button ON :1, OFF : 0 (Only Automatic Creation Mode Available for Automation)
 
         :return: int
         """
@@ -77,11 +74,10 @@ class HybridShapeMidSurface(HybridShape):
     def creation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property CreationMode() As long
-                |     Returns or sets CreationMode. Face Pairs : 0, Faces To Offset : 1, Automatic : 2 (Only Automatic Creation Mode Available for Automation)
+                Property CreationMode() As long
+                    Returns or sets CreationMode. Face Pairs : 0, Faces To Offset : 1, Automatic : 2 (Only Automatic Creation Mode Available for Automation)
 
         :return: int
         """
@@ -100,11 +96,10 @@ class HybridShapeMidSurface(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Support() As Reference
-                |     Returns or sets Support Body. Reference.
+                Property Support() As Reference
+                    Returns or sets Support Body. Reference.
 
         :return: Reference
         """
@@ -123,11 +118,10 @@ class HybridShapeMidSurface(HybridShape):
     def threshold(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Threshold() As Length
-                |     Returns or sets Threshold Thickness. Length.
+                Property Threshold() As Length
+                    Returns or sets Threshold Thickness. Length.
 
         :return: Length
         """
@@ -143,4 +137,4 @@ class HybridShapeMidSurface(HybridShape):
         self.com_object.Threshold = value
 
     def __repr__(self):
-        return f'HybridShapeMidSurface(name="{ self.name }")'
+        return f'HybridShapeMidSurface(name="{self.name}")'

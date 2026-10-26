@@ -14,19 +14,18 @@ from pycatia3dx.plm_modeller_base.plm_entity import PLMEntity
 class MaterialDomain(PLMEntity):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PLMModelerBaseIDLItf.PLMEntity
-                |                         MaterialDomain
-                | 
-                | Represents a Material applicative Domain.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PLMModelerBaseIDLItf.PLMEntity
+                                        MaterialDomain
+                
+                Represents a Material applicative Domain.
     
     """
 
@@ -38,28 +37,27 @@ class MaterialDomain(PLMEntity):
     def material_domain_content(self) -> MaterialDomainContent:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialDomainContent() As MaterialDomainContent (Read
-                | Only)
-                |     Allow to get material domain content.
-                | 
-                |     Parameters:
-                | 
-                |         oMatDomContent
-                |             The retrieved material domain content. 
-                | 
-                |     Example:
-                | 
-                |          This example shows you how to get all material's
-                |          domains.
-                |            
-                | 
-                |            Dim Domain As MaterialDomain
-                |            Dim oMaterialDomainContent As MaterialDomainContent
-                |            ...
-                |            Set oMaterialDomainContent = Domain.MaterialDomainContent
+                Property MaterialDomainContent() As MaterialDomainContent (Read
+                Only)
+                    Allow to get material domain content.
+                
+                    Parameters:
+                
+                        oMatDomContent
+                            The retrieved material domain content. 
+                
+                    Example:
+                
+                         This example shows you how to get all material's
+                         domains.
+                           
+                
+                           Dim Domain As MaterialDomain
+                           Dim oMaterialDomainContent As MaterialDomainContent
+                           ...
+                           Set oMaterialDomainContent = Domain.MaterialDomainContent
 
         :return: MaterialDomainContent
         """

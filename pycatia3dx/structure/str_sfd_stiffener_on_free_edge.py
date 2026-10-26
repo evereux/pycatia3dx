@@ -18,22 +18,21 @@ from pycatia3dx.structure.structure_profile import StructureProfile
 class StrSfdStiffenerOnFreeEdge(StructureProfile):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATStrIDLItf.StructureProfile
-                |                         StrSfdStiffenerOnFreeEdge
-                | 
-                | Object to manage Structure Functional Modeler
-                | StiffenerOnFreeEdge.
-                | Role: Allows accessing and setting of SFE(StiffenerOnFreeEdge)'s
-                | data.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATStrIDLItf.StructureProfile
+                                        StrSfdStiffenerOnFreeEdge
+                
+                Object to manage Structure Functional Modeler
+                StiffenerOnFreeEdge.
+                Role: Allows accessing and setting of SFE(StiffenerOnFreeEdge)'s
+                data.
     
     """
 
@@ -45,11 +44,10 @@ class StrSfdStiffenerOnFreeEdge(StructureProfile):
     def str_break(self) -> StrBreak:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrBreak() As StrBreak (Read Only)
-                |     Returns the StrBreak object.
+                Property StrBreak() As StrBreak (Read Only)
+                    Returns the StrBreak object.
 
         :return: StrBreak
         """
@@ -60,23 +58,22 @@ class StrSfdStiffenerOnFreeEdge(StructureProfile):
     def str_category_mngt(self) -> StrCategoryMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrCategoryMngt() As StrCategoryMngt (Read Only)
-                |     Returns the StrCategoryMngt object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjStrCategoryMngt the StrCategoryMngt
-                |              object
-                |              of the SfdStiffenerOnFreeEdge
-                |              
-                | 
-                |              Dim ObjStrCategoryMngt As StrCategoryMngt
-                |              Set ObjStrCategoryMngt = SfdStiffenerOnFreeEdge.StrCategoryMngt
+                Property StrCategoryMngt() As StrCategoryMngt (Read Only)
+                    Returns the StrCategoryMngt object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjStrCategoryMngt the StrCategoryMngt
+                             object
+                             of the SfdStiffenerOnFreeEdge
+                             
+                
+                             Dim ObjStrCategoryMngt As StrCategoryMngt
+                             Set ObjStrCategoryMngt = SfdStiffenerOnFreeEdge.StrCategoryMngt
 
         :return: StrCategoryMngt
         """
@@ -87,11 +84,10 @@ class StrSfdStiffenerOnFreeEdge(StructureProfile):
     def str_material_mngt(self) -> StrMaterialMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrMaterialMngt() As StrMaterialMngt (Read Only)
-                |     Returns the StrMaterialMngt object.
+                Property StrMaterialMngt() As StrMaterialMngt (Read Only)
+                    Returns the StrMaterialMngt object.
 
         :return: StrMaterialMngt
         """
@@ -102,27 +98,26 @@ class StrSfdStiffenerOnFreeEdge(StructureProfile):
     def str_profile_on_limits(self) -> StrProfileOnLimits:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrProfileOnLimits() As StrProfileOnLimits (Read
-                | Only)
-                |     Returns StrProfileOnLimits object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjStrProfileOnLimits the
-                |              StrProfileOnLimits object
-                |              of the SfdStiffenerOnFreeEdge
-                |              
-                | 
-                |              Dim ObjSfdStiffenerOnFreeEdge As
-                |              SfdStiffenerOnFreeEdge
-                |              Set ObjSfdStiffenerOnFreeEdge = ObjSfdStiffeners.AddStiffenerOnFreeEdge
-                |              Dim ObjStrProfileOnLimits As StrProfileOnLimits
-                |              Set ObjStrProfileOnLimits = ObjSfdStiffenerOnFreeEdge.StrProfileOnLimits
+                Property StrProfileOnLimits() As StrProfileOnLimits (Read
+                Only)
+                    Returns StrProfileOnLimits object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjStrProfileOnLimits the
+                             StrProfileOnLimits object
+                             of the SfdStiffenerOnFreeEdge
+                             
+                
+                             Dim ObjSfdStiffenerOnFreeEdge As
+                             SfdStiffenerOnFreeEdge
+                             Set ObjSfdStiffenerOnFreeEdge = ObjSfdStiffeners.AddStiffenerOnFreeEdge
+                             Dim ObjStrProfileOnLimits As StrProfileOnLimits
+                             Set ObjStrProfileOnLimits = ObjSfdStiffenerOnFreeEdge.StrProfileOnLimits
 
         :return: StrProfileOnLimits
         """
@@ -133,24 +128,23 @@ class StrSfdStiffenerOnFreeEdge(StructureProfile):
     def str_profile_on_opening(self) -> StrProfileOnOpening:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrProfileOnOpening() As StrProfileOnOpening (Read
-                | Only)
-                |     Returns StrProfileOnOpening object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjStrProfileOnOpening the
-                |              StrProfileOnOpening object
-                |              of the SfdStiffenerOnFreeEdge
-                |              
-                | 
-                |              Dim ObjStrProfileOnOpening As StrProfileOnOpening
-                |              Set ObjStrProfileOnOpening = SfdStiffenerOnFreeEdge.StrProfileOnOpening
+                Property StrProfileOnOpening() As StrProfileOnOpening (Read
+                Only)
+                    Returns StrProfileOnOpening object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjStrProfileOnOpening the
+                             StrProfileOnOpening object
+                             of the SfdStiffenerOnFreeEdge
+                             
+                
+                             Dim ObjStrProfileOnOpening As StrProfileOnOpening
+                             Set ObjStrProfileOnOpening = SfdStiffenerOnFreeEdge.StrProfileOnOpening
 
         :return: StrProfileOnOpening
         """

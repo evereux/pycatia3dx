@@ -13,33 +13,31 @@ from pycatia3dx.mmr_automation_interfaces.edge import Edge
 
 
 class MonoDimFeatEdge(Edge):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfModelInterfaces.Reference
-                |                         CATMmrAutomationInterfaces.Boundary
-                |                             CATMmrAutomationInterfaces.Edge
-                |                                 MonoDimFeatEdge
-                | 
-                | 1-D boundary belonging to a feature whose topological result is one
-                | dimensional.
-                | Role: This Boundary object may be, for example, in a part containing a Sketch
-                | which is made up of a circle arc and a spline, the circle arc.
-                | You will create a MonoDimFeatEdge object using the Shapes.GetBoundary ,
-                | HybridShapes.GetBoundary , Sketches.GetBoundary or Selection.SelectElement2
-                | method. Then, you pass it to the operator (such as
-                | HybridShapeFactory.AddNewPointTangent ).
-                | The lifetime of a MonoDimFeatEdge object is limited, see
-                | Boundary.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfModelInterfaces.Reference
+                                        CATMmrAutomationInterfaces.Boundary
+                                            CATMmrAutomationInterfaces.Edge
+                                                MonoDimFeatEdge
+                
+                1-D boundary belonging to a feature whose topological result is one
+                dimensional.
+                Role: This Boundary object may be, for example, in a part containing a Sketch
+                which is made up of a circle arc and a spline, the circle arc.
+                You will create a MonoDimFeatEdge object using the Shapes.GetBoundary ,
+                HybridShapes.GetBoundary , Sketches.GetBoundary or Selection.SelectElement2
+                method. Then, you pass it to the operator (such as
+                HybridShapeFactory.AddNewPointTangent ).
+                The lifetime of a MonoDimFeatEdge object is limited, see
+                Boundary.
     
     """
 
@@ -48,4 +46,4 @@ class MonoDimFeatEdge(Edge):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'MonoDimFeatEdge(name="{ self.name }")'
+        return f'MonoDimFeatEdge(name="{self.name}")'

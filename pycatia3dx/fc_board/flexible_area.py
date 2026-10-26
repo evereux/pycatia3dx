@@ -14,18 +14,17 @@ from pycatia3dx.system.any_object import AnyObject
 class FlexibleArea(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     FlexibleArea
-                | 
-                | Object representing a flexible constraint area.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    FlexibleArea
+                
+                Object representing a flexible constraint area.
     
     """
 
@@ -37,26 +36,25 @@ class FlexibleArea(AnyObject):
     def area_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AreaType() As CATBSTR
-                |     Returns or sets the type of a flexible constraint area. The available
-                |     values are:
-                | 
-                |         OTHER_OUTLINE
-                |         ROUTE_OUTLINE
-                |         PLACE_OUTLINE
-                |         ROUTE_KEEPOUT
-                |         PLACE_KEEPOUT
-                |         PLACE_REGION
-                |         VIA_KEEPOUT
-                | 
-                |     Returns:
-                |         The result of the method:
-                | 
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Property AreaType() As CATBSTR
+                    Returns or sets the type of a flexible constraint area. The available
+                    values are:
+                
+                        OTHER_OUTLINE
+                        ROUTE_OUTLINE
+                        PLACE_OUTLINE
+                        ROUTE_KEEPOUT
+                        PLACE_KEEPOUT
+                        PLACE_REGION
+                        VIA_KEEPOUT
+                
+                    Returns:
+                        The result of the method:
+                
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :return: str
         """
@@ -75,21 +73,20 @@ class FlexibleArea(AnyObject):
     def heightmax(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Heightmax() As double
-                |     Returns or sets the maximum height of the flexible constraint area. This
-                |     property is valid for the following constraints areas:
-                | 
-                |         OTHER_OUTLINE
-                |         PLACE_REGION
-                | 
-                |     Returns:
-                |         The result of the method:
-                | 
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Property Heightmax() As double
+                    Returns or sets the maximum height of the flexible constraint area. This
+                    property is valid for the following constraints areas:
+                
+                        OTHER_OUTLINE
+                        PLACE_REGION
+                
+                    Returns:
+                        The result of the method:
+                
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :return: float
         """
@@ -108,20 +105,19 @@ class FlexibleArea(AnyObject):
     def heightmin(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Heightmin() As double
-                |     Returns or sets the minimum height of the flexible constraint area. This
-                |     property is valid for the following constraints areas:
-                | 
-                |         PLACE_KEEPOUT
-                | 
-                |     Returns:
-                |         The result of the method:
-                | 
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Property Heightmin() As double
+                    Returns or sets the minimum height of the flexible constraint area. This
+                    property is valid for the following constraints areas:
+                
+                        PLACE_KEEPOUT
+                
+                    Returns:
+                        The result of the method:
+                
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :return: float
         """
@@ -140,21 +136,20 @@ class FlexibleArea(AnyObject):
     def identifier(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Identifier() As CATBSTR
-                |     Returns or sets the identifier of the flexible constraint area. This
-                |     property is valid for the following constraints areas:
-                | 
-                |         OTHER_OUTLINE
-                |         PLACE_REGION
-                | 
-                |     Returns:
-                |         The result of the method:
-                | 
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Property Identifier() As CATBSTR
+                    Returns or sets the identifier of the flexible constraint area. This
+                    property is valid for the following constraints areas:
+                
+                        OTHER_OUTLINE
+                        PLACE_REGION
+                
+                    Returns:
+                        The result of the method:
+                
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :return: str
         """
@@ -173,34 +168,33 @@ class FlexibleArea(AnyObject):
     def layer(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LAYER() As CATBSTR
-                |     Returns or sets the layer of the flexible constraint area. The available
-                |     values are:
-                | 
-                |         STANDART
-                |         BOTH
-                |         INNER
-                |         ALL
-                | 
-                |     It depends on the type of the constraints area according to the IDF format.
-                |     This property is valid for the following constraints
-                |     areas:
-                | 
-                |         OTHER_OUTLINE
-                |         ROUTING_OUTLINE
-                |         PLACE_OUTLINE
-                |         ROUTE_KEEPOUT
-                |         PLACE_KEEPOUT
-                |         PLACE_REGION
-                | 
-                |     Returns:
-                |         The result of the method:
-                | 
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Property LAYER() As CATBSTR
+                    Returns or sets the layer of the flexible constraint area. The available
+                    values are:
+                
+                        STANDART
+                        BOTH
+                        INNER
+                        ALL
+                
+                    It depends on the type of the constraints area according to the IDF format.
+                    This property is valid for the following constraints
+                    areas:
+                
+                        OTHER_OUTLINE
+                        ROUTING_OUTLINE
+                        PLACE_OUTLINE
+                        ROUTE_KEEPOUT
+                        PLACE_KEEPOUT
+                        PLACE_REGION
+                
+                    Returns:
+                        The result of the method:
+                
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :return: str
         """
@@ -219,22 +213,21 @@ class FlexibleArea(AnyObject):
     def owner(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OWNER() As CATBSTR
-                |     Returns or sets the owner of the flexible constraint area. The available
-                |     values are:
-                | 
-                |         MCAD
-                |         ECAD
-                |         UNOWNED
-                | 
-                |     Returns:
-                |         The result of the method:
-                | 
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Property OWNER() As CATBSTR
+                    Returns or sets the owner of the flexible constraint area. The available
+                    values are:
+                
+                        MCAD
+                        ECAD
+                        UNOWNED
+                
+                    Returns:
+                        The result of the method:
+                
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :return: str
         """
@@ -252,23 +245,22 @@ class FlexibleArea(AnyObject):
     def get_board(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetBoard() As CATBaseDispatch
-                |     Returns the Flexible Board on which the flexible constraint area
-                |     lies.
-                | 
-                |     Parameters:
-                | 
-                |         The
-                |             board reference 
-                | 
-                |     Returns:
-                |         The result of the method:
-                | 
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Func GetBoard() As CATBaseDispatch
+                    Returns the Flexible Board on which the flexible constraint area
+                    lies.
+                
+                    Parameters:
+                
+                        The
+                            board reference 
+                
+                    Returns:
+                        The result of the method:
+                
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :return: AnyObject
         """
@@ -277,24 +269,23 @@ class FlexibleArea(AnyObject):
     def get_profile(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetProfile() As CATBaseDispatch
-                |     Returns the profile of the flexible constraint area. The profile can be a
-                |     Face of the flexible board or a sketch.
-                | 
-                |     Parameters:
-                | 
-                |         oProfileorFace
-                |             The profile of the face input of the constraint area
-                |             
-                | 
-                |     Returns:
-                |         The result of the method:
-                | 
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Func GetProfile() As CATBaseDispatch
+                    Returns the profile of the flexible constraint area. The profile can be a
+                    Face of the flexible board or a sketch.
+                
+                    Parameters:
+                
+                        oProfileorFace
+                            The profile of the face input of the constraint area
+                            
+                
+                    Returns:
+                        The result of the method:
+                
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :return: AnyObject
         """
@@ -303,28 +294,27 @@ class FlexibleArea(AnyObject):
     def set_profile(self, i_profileor_face: AnyObject, o_creation_view: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetProfile(CATBaseDispatch iProfileorFace,CATBSTR
-                | oCreationView)
-                |     Sets the profile of the flexible constraint area. The profile can be a Face
-                |     of the flexible board or a sketch.
-                | 
-                |     Parameters:
-                | 
-                |         iProfileorFace
-                |             The profile of the face input of the constraint area
-                |             
-                |         oCreationView
-                |             The view of the creation. The available values are MfDefault3DView
-                |             or MfUnfoldedView 
-                | 
-                |     Returns:
-                |         The result of the method:
-                | 
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Sub SetProfile(CATBaseDispatch iProfileorFace,CATBSTR
+                oCreationView)
+                    Sets the profile of the flexible constraint area. The profile can be a Face
+                    of the flexible board or a sketch.
+                
+                    Parameters:
+                
+                        iProfileorFace
+                            The profile of the face input of the constraint area
+                            
+                        oCreationView
+                            The view of the creation. The available values are MfDefault3DView
+                            or MfUnfoldedView 
+                
+                    Returns:
+                        The result of the method:
+                
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :param AnyObject i_profileor_face:
         :param str o_creation_view:

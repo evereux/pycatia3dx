@@ -15,23 +15,22 @@ from pycatia3dx.system.any_object import AnyObject
 class InertiaService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         InertiaService
-                | 
-                | Object representing the service to retrieve an inertia
-                | element.
-                | 
-                | See also:
-                |     Editor.GetService
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        InertiaService
+                
+                Object representing the service to retrieve an inertia
+                element.
+                
+                See also:
+                    Editor.GetService
     
     """
 
@@ -42,20 +41,19 @@ class InertiaService(Service):
     def get_inertia_element(self, i_selected_item: AnyObject) -> Inertia:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetInertiaElement(AnyObject iSelectedItem) As Inertia
-                |     Retrieves the Inertia object.
-                | 
-                |     Example:
-                | 
-                |            This example retrieves an Inertia object.
-                |            
-                | 
-                |              Set theInertiaService = CATIA.ActiveEditor.GetService("InertiaService")
-                |              Dim theInertia As Inertia
-                |              Set theInertia = theInertiaService.GetInertiaElement(theSelection)
+                Func GetInertiaElement(AnyObject iSelectedItem) As Inertia
+                    Retrieves the Inertia object.
+                
+                    Example:
+                
+                           This example retrieves an Inertia object.
+                           
+                
+                             Set theInertiaService = CATIA.ActiveEditor.GetService("InertiaService")
+                             Dim theInertia As Inertia
+                             Set theInertia = theInertiaService.GetInertiaElement(theSelection)
 
         :param AnyObject i_selected_item:
         :return: Inertia

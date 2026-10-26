@@ -13,22 +13,20 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SsmSpaceInput(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SsmSpaceInput
-                | 
-                | Role: This interface is specific to External
-                | volume/BoundingBox
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SsmSpaceInput
+                
+                Role: This interface is specific to External
+                volume/BoundingBox
     
     """
 
@@ -40,19 +38,18 @@ class SsmSpaceInput(AnyObject):
     def space_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpaceElement() As Reference (Read Only)
-                |     Get SpaceElement
-                | 
-                |     Parameters:
-                | 
-                |         oSpaceElement
-                |             [out] SpaceElement 
-                | 
-                |     Returns:
-                |         Error code of function. 
+                Property SpaceElement() As Reference (Read Only)
+                    Get SpaceElement
+                
+                    Parameters:
+                
+                        oSpaceElement
+                            [out] SpaceElement 
+                
+                    Returns:
+                        Error code of function. 
 
         :return: Reference
         """
@@ -60,4 +57,4 @@ class SsmSpaceInput(AnyObject):
         return Reference(self.com_object.SpaceElement)
 
     def __repr__(self):
-        return f'SsmSpaceInput(name="{ self.name }")'
+        return f'SsmSpaceInput(name="{self.name}")'

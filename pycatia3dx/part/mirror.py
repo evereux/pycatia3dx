@@ -14,25 +14,23 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class Mirror(TransformationShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.TransformationShape
-                |                             Mirror
-                | 
-                | Represents the mirror shape.
-                | It duplicates a shape with respect to a planar mirroring element, such as a
-                | planar face or a plane.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.TransformationShape
+                                            Mirror
+                
+                Represents the mirror shape.
+                It duplicates a shape with respect to a planar mirroring element, such as a
+                planar face or a plane.
     
     """
 
@@ -44,15 +42,14 @@ class Mirror(TransformationShape):
     def design_intent(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DesignIntent() As double
-                |     Returns or sets the Design Intent attribute of the mirror feature. Set is
-                |     called when the value of Keep Specifications check button is changed or based
-                |     on the type of object to mirror Parm oDsgInt - Returns the value in the model
-                |     Parm iDsgInt - Input value of the Design Intent to be set. Legal Values - 0 if
-                |     mirror of currnt solid or as result - 1 if Mirror of list or with Keep Spec.
+                Property DesignIntent() As double
+                    Returns or sets the Design Intent attribute of the mirror feature. Set is
+                    called when the value of Keep Specifications check button is changed or based
+                    on the type of object to mirror Parm oDsgInt - Returns the value in the model
+                    Parm iDsgInt - Input value of the Design Intent to be set. Legal Values - 0 if
+                    mirror of currnt solid or as result - 1 if Mirror of list or with Keep Spec.
 
         :return: float
         """
@@ -71,11 +68,10 @@ class Mirror(TransformationShape):
     def mirroring_object(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MirroringObject() As AnyObject (Read Only)
-                |     Returns the mirroring Object.
+                Property MirroringObject() As AnyObject (Read Only)
+                    Returns the mirroring Object.
 
         :return: AnyObject
         """
@@ -86,23 +82,22 @@ class Mirror(TransformationShape):
     def mirroring_plane(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MirroringPlane() As Reference
-                |     Returns or sets the mirroring reference plane. It can be a plane, or a
-                |     plane face.
-                |     To set the property, you can use the following Boundary object:
-                |     PlanarFace.
-                | 
-                |     Example:
-                |         The following example returns in ref the mirroring reference plane of
-                |         the mirroring firstMirroring, and then sets it to the created
-                |         MyRef:
-                | 
-                |          Set ref = firstMirroring.MirroringPlane
-                |          Set MyRef = part.CreateReferenceFromGeometry (plane)
-                |          firstMirroring.MirroringPlane = MyRef
+                Property MirroringPlane() As Reference
+                    Returns or sets the mirroring reference plane. It can be a plane, or a
+                    plane face.
+                    To set the property, you can use the following Boundary object:
+                    PlanarFace.
+                
+                    Example:
+                        The following example returns in ref the mirroring reference plane of
+                        the mirroring firstMirroring, and then sets it to the created
+                        MyRef:
+                
+                         Set ref = firstMirroring.MirroringPlane
+                         Set MyRef = part.CreateReferenceFromGeometry (plane)
+                         firstMirroring.MirroringPlane = MyRef
 
         :return: Reference
         """
@@ -118,4 +113,4 @@ class Mirror(TransformationShape):
         self.com_object.MirroringPlane = value
 
     def __repr__(self):
-        return f'Mirror(name="{ self.name }")'
+        return f'Mirror(name="{self.name}")'

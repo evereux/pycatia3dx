@@ -12,24 +12,22 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class CtmContourFromPoints(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CtmContourFromPoints
-                | 
-                | Interface representing a Contour created from Points.
-                | 
-                | Role: This interface is used to get and set the parameters of a contour created
-                | from a Tag group.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CtmContourFromPoints
+                
+                Interface representing a Contour created from Points.
+                
+                Role: This interface is used to get and set the parameters of a contour created
+                from a Tag group.
     
     """
 
@@ -41,19 +39,18 @@ class CtmContourFromPoints(AnyObject):
     def tag_group(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TagGroup() As AnyObject
-                |     Get the tag group that provided the initial tags.
-                | 
-                |     Parameters:
-                | 
-                |         ospTagGroup
-                |             The tag group. 
-                | 
-                |     Returns:
-                |         The tag group 
+                Property TagGroup() As AnyObject
+                    Get the tag group that provided the initial tags.
+                
+                    Parameters:
+                
+                        ospTagGroup
+                            The tag group. 
+                
+                    Returns:
+                        The tag group 
 
         :return: AnyObject
         """
@@ -69,4 +66,4 @@ class CtmContourFromPoints(AnyObject):
         self.com_object.TagGroup = value
 
     def __repr__(self):
-        return f'CtmContourFromPoints(name="{ self.name }")'
+        return f'CtmContourFromPoints(name="{self.name}")'

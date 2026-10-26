@@ -19,18 +19,17 @@ if TYPE_CHECKING:
 class SsmSpaceConceptNode(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SsmSpaceConceptNode
-                | 
-                | Role: This interface is specific to Space concept Node
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SsmSpaceConceptNode
+                
+                Role: This interface is specific to Space concept Node
     
     """
 
@@ -42,19 +41,18 @@ class SsmSpaceConceptNode(AnyObject):
     def space(self) -> SsmSpace:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Space() As SsmSpace (Read Only)
-                |     Get Child SpaceReference
-                | 
-                |     Parameters:
-                | 
-                |         oSpace
-                |             output Space 
-                | 
-                |     Returns:
-                |         Error code of function.
+                Property Space() As SsmSpace (Read Only)
+                    Get Child SpaceReference
+                
+                    Parameters:
+                
+                        oSpace
+                            output Space 
+                
+                    Returns:
+                        Error code of function.
 
         :return: SsmSpace
         """
@@ -65,21 +63,20 @@ class SsmSpaceConceptNode(AnyObject):
     def space_concept_nodes(self) -> 'SsmSpaceConceptNodes':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpaceConceptNodes() As SsmSpaceConceptNodes (Read
-                | Only)
-                |     Get SpaceConcepts
-                | 
-                |     Parameters:
-                | 
-                |         output
-                |             list of SpaceConceptNode as a list of CATBaseUnknown
-                |             
-                | 
-                |     Returns:
-                |         Error code of function. 
+                Property SpaceConceptNodes() As SsmSpaceConceptNodes (Read
+                Only)
+                    Get SpaceConcepts
+                
+                    Parameters:
+                
+                        output
+                            list of SpaceConceptNode as a list of CATBaseUnknown
+                            
+                
+                    Returns:
+                        Error code of function. 
 
         :return: SsmSpaceConceptNodes
         """

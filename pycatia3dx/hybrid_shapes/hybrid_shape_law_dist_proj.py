@@ -15,24 +15,23 @@ from pycatia3dx.mode.reference import Reference
 class HybridShapeLawDistProj(HybridShape):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeLawDistProj
-                | 
-                | Interface to law feature.
-                | Role: Allows you to access data of a law feature created by using a reference
-                | line and a definition curve.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeLawDistProj
+                
+                Interface to law feature.
+                Role: Allows you to access data of a law feature created by using a reference
+                line and a definition curve.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -44,11 +43,10 @@ class HybridShapeLawDistProj(HybridShape):
     def applied_unit_symbol(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property AppliedUnitSymbol(CATBSTR iSymbol) (Write Only)
-                |     Returns or sets the applied unit symbol for heterogeneous law.
+                Property AppliedUnitSymbol(CATBSTR iSymbol) (Write Only)
+                    Returns or sets the applied unit symbol for heterogeneous law.
 
         :return: bool
         """
@@ -67,13 +65,12 @@ class HybridShapeLawDistProj(HybridShape):
     def definition(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Definition() As Reference
-                |     Returns or sets the definition curve of the law.
-                |     Sub-element(s) supported (see Boundary object): see TriDimFeatEdge or
-                |     BiDimFeatEdge.
+                Property Definition() As Reference
+                    Returns or sets the definition curve of the law.
+                    Sub-element(s) supported (see Boundary object): see TriDimFeatEdge or
+                    BiDimFeatEdge.
 
         :return: Reference
         """
@@ -92,11 +89,10 @@ class HybridShapeLawDistProj(HybridShape):
     def measure_unit_symbol(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property MeasureUnitSymbol(CATBSTR iSymbol) (Write Only)
-                |     Returns or sets the measure unit symbol for heterogeneous law.
+                Property MeasureUnitSymbol(CATBSTR iSymbol) (Write Only)
+                    Returns or sets the measure unit symbol for heterogeneous law.
 
         :return: bool
         """
@@ -115,18 +111,17 @@ class HybridShapeLawDistProj(HybridShape):
     def parameter_on_definition(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ParameterOnDefinition() As boolean
-                |     Queries whether evolution parameter is on reference curve (default) or on definition curve,or sets evolution parameter on reference curve or on definition curve. Possible values of ParameterOnDefinition = TRUE : Parameter on definition curve. = FALSE : Parameter on reference curve. 
-                | 
-                | Example:
-                |     This example retrieves in ParOnDef the ParameterOnDefinition status of the
-                |     hybridShapeLawDist hybrid shape law feature.
-                | 
-                |      Dim ParOnDef As boolean
-                |      ParOnDef = hybridShapeLawDist.ParameterOnDefinition
+                Property ParameterOnDefinition() As boolean
+                    Queries whether evolution parameter is on reference curve (default) or on definition curve,or sets evolution parameter on reference curve or on definition curve. Possible values of ParameterOnDefinition = TRUE : Parameter on definition curve. = FALSE : Parameter on reference curve. 
+                
+                Example:
+                    This example retrieves in ParOnDef the ParameterOnDefinition status of the
+                    hybridShapeLawDist hybrid shape law feature.
+                
+                     Dim ParOnDef As boolean
+                     ParOnDef = hybridShapeLawDist.ParameterOnDefinition
 
         :return: bool
         """
@@ -145,11 +140,10 @@ class HybridShapeLawDistProj(HybridShape):
     def positive_direction_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property PositiveDirectionOrientation() As long
-                |     Returns or sets the positive value direction.
+                Property PositiveDirectionOrientation() As long
+                    Returns or sets the positive value direction.
 
         :return: int
         """
@@ -168,13 +162,12 @@ class HybridShapeLawDistProj(HybridShape):
     def reference(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Reference() As Reference
-                |     Returns or sets the reference line of the law.
-                |     Sub-element(s) supported (see Boundary object): see
-                |     RectilinearTriDimFeatEdge or RectilinearBiDimFeatEdge.
+                Property Reference() As Reference
+                    Returns or sets the reference line of the law.
+                    Sub-element(s) supported (see Boundary object): see
+                    RectilinearTriDimFeatEdge or RectilinearBiDimFeatEdge.
 
         :return: Reference
         """
@@ -193,11 +186,10 @@ class HybridShapeLawDistProj(HybridShape):
     def scaling(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Scaling() As double
-                |     Returns or sets the scaling ratio of the law.
+                Property Scaling() As double
+                    Returns or sets the scaling ratio of the law.
 
         :return: float
         """
@@ -215,23 +207,22 @@ class HybridShapeLawDistProj(HybridShape):
     def get_applied_unit_symbol(self, o_symbol: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetAppliedUnitSymbol(CATBSTR oSymbol)
-                |     Returns the applied unit symbol.
-                | 
-                |     Parameters:
-                | 
-                |         oSymbol
-                |             The symbol of applied unit 
-                | 
-                |     Example:
-                |         This example retrieves in oSymbol the applied unit symbol of the
-                |         hybridShapeLawDist hybrid shape law feature.
-                | 
-                |          Dim oSymbol
-                |          hybridShapeLawDist.GetAppliedUnitSymboloSymbol
+                Sub GetAppliedUnitSymbol(CATBSTR oSymbol)
+                    Returns the applied unit symbol.
+                
+                    Parameters:
+                
+                        oSymbol
+                            The symbol of applied unit 
+                
+                    Example:
+                        This example retrieves in oSymbol the applied unit symbol of the
+                        hybridShapeLawDist hybrid shape law feature.
+                
+                         Dim oSymbol
+                         hybridShapeLawDist.GetAppliedUnitSymboloSymbol
 
         :param str o_symbol:
         :return: None
@@ -241,23 +232,22 @@ class HybridShapeLawDistProj(HybridShape):
     def get_measure_unit_symbol(self, o_symbol: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetMeasureUnitSymbol(CATBSTR oSymbol)
-                |     Returns the measure unit symbol.
-                | 
-                |     Parameters:
-                | 
-                |         oSymbol
-                |             The symbol of measure unit 
-                | 
-                |     Example:
-                |         This example retrieves in oSymbol the measure unit symbol of the
-                |         hybridShapeLawDist hybrid shape law feature.
-                | 
-                |          Dim oSymbol
-                |          hybridShapeLawDist.GetMeasureUnitSymboloSymbol
+                Sub GetMeasureUnitSymbol(CATBSTR oSymbol)
+                    Returns the measure unit symbol.
+                
+                    Parameters:
+                
+                        oSymbol
+                            The symbol of measure unit 
+                
+                    Example:
+                        This example retrieves in oSymbol the measure unit symbol of the
+                        hybridShapeLawDist hybrid shape law feature.
+                
+                         Dim oSymbol
+                         hybridShapeLawDist.GetMeasureUnitSymboloSymbol
 
         :param str o_symbol:
         :return: None
@@ -267,16 +257,15 @@ class HybridShapeLawDistProj(HybridShape):
     def get_plane_normal(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetPlaneNormal(CATSafeArrayVariant oNormal)
-                |     Retrieves the support plane normal.
-                | 
-                |     Parameters:
-                | 
-                |         oNormal
-                |             The support plane normal
+                Sub GetPlaneNormal(CATSafeArrayVariant oNormal)
+                    Retrieves the support plane normal.
+                
+                    Parameters:
+                
+                        oNormal
+                            The support plane normal
 
         :return: tuple
         """
@@ -301,16 +290,15 @@ class HybridShapeLawDistProj(HybridShape):
     def is_heterogeneous_law(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func IsHeterogeneousLaw() As boolean
-                |     Queries whether Heterogeneous Law mode is active or not.
-                | 
-                |     Parameters:
-                | 
-                |         oHeterogeneousLaw
-                |             heterogeneous law mode = TRUE : Heterogeneous Law mode is active. = FALSE : Heterogeneous Law mode is inactive.
+                Func IsHeterogeneousLaw() As boolean
+                    Queries whether Heterogeneous Law mode is active or not.
+                
+                    Parameters:
+                
+                        oHeterogeneousLaw
+                            heterogeneous law mode = TRUE : Heterogeneous Law mode is active. = FALSE : Heterogeneous Law mode is inactive.
 
         :return: bool
         """
@@ -319,16 +307,15 @@ class HybridShapeLawDistProj(HybridShape):
     def put_plane_normal(self, i_normal: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub PutPlaneNormal(CATSafeArrayVariant iNormal)
-                |     Sets the support plane normal.
-                | 
-                |     Parameters:
-                | 
-                |         iNormal
-                |             The support plane normal
+                Sub PutPlaneNormal(CATSafeArrayVariant iNormal)
+                    Sets the support plane normal.
+                
+                    Parameters:
+                
+                        iNormal
+                            The support plane normal
 
         :param tuple i_normal:
         :return: None

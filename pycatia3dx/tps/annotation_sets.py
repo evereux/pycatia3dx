@@ -17,18 +17,17 @@ from pycatia3dx.types.general import CATVariant
 class AnnotationSets(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     AnnotationSets
-                | 
-                | Interface for collection of Annotations' Set
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    AnnotationSets
+                
+                Interface for collection of Annotations' Set
     
     """
 
@@ -39,11 +38,10 @@ class AnnotationSets(Collection):
     def item(self, i_index: CATVariant) -> AnnotationSet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As AnyObject
-                |     Retrieve a set.
+                Func Item(CATVariant iIndex) As AnyObject
+                    Retrieve a set.
 
         :param CATVariant i_index:
         :return: AnnotationSet
@@ -53,14 +51,13 @@ class AnnotationSets(Collection):
     def load_annotation_sets_list(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub LoadAnnotationSetsList()
-                |     Loads the Annotation Sets list. This method is very useful when a cgr
-                |     document containing Annotation Set is inserted in the product, because the
-                |     Annotation Set is not automatically loaded If the Annotation Set is already
-                |     loaded nothing happens. 
+                Sub LoadAnnotationSetsList()
+                    Loads the Annotation Sets list. This method is very useful when a cgr
+                    document containing Annotation Set is inserted in the product, because the
+                    Annotation Set is not automatically loaded If the Annotation Set is already
+                    loaded nothing happens. 
 
         :return: None
         """

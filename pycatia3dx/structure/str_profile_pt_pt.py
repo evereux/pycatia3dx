@@ -13,22 +13,20 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrProfilePtPt(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrProfilePtPt
-                | 
-                | Object to manage member created with 2 points Role: To manage member created
-                | with 2 points.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrProfilePtPt
+                
+                Object to manage member created with 2 points Role: To manage member created
+                with 2 points.
     
     """
 
@@ -40,19 +38,18 @@ class StrProfilePtPt(AnyObject):
     def end_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property EndPoint() As Reference
-                |     Returns or Sets the Profile's End point.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example gets the end point of the Profile  
-                |              
-                | 
-                |              Set RefEtartPoint = ObjStrProfilePtPt.EndPoint
+                Property EndPoint() As Reference
+                    Returns or Sets the Profile's End point.
+                
+                    Example:
+                
+                
+                             This example gets the end point of the Profile  
+                             
+                
+                             Set RefEtartPoint = ObjStrProfilePtPt.EndPoint
 
         :return: Reference
         """
@@ -71,21 +68,20 @@ class StrProfilePtPt(AnyObject):
     def start_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StartPoint() As Reference
-                |     Returns or Sets the Profile's Start point.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example sets the start point of the Profile 
-                |              
-                | 
-                |              Dim ObjStrProfilePtPt As StrProfilePtPt
-                |              Set ObjStrProfilePtPt = ObjSfdMember.StrProfilePtPt
-                |              ObjStrProfilePtPt.StartPoint = RefStartPoint
+                Property StartPoint() As Reference
+                    Returns or Sets the Profile's Start point.
+                
+                    Example:
+                
+                
+                             This example sets the start point of the Profile 
+                             
+                
+                             Dim ObjStrProfilePtPt As StrProfilePtPt
+                             Set ObjStrProfilePtPt = ObjSfdMember.StrProfilePtPt
+                             ObjStrProfilePtPt.StartPoint = RefStartPoint
 
         :return: Reference
         """
@@ -101,4 +97,4 @@ class StrProfilePtPt(AnyObject):
         self.com_object.StartPoint = value
 
     def __repr__(self):
-        return f'StrProfilePtPt(name="{ self.name }")'
+        return f'StrProfilePtPt(name="{self.name}")'

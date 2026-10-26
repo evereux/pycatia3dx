@@ -15,17 +15,16 @@ from pycatia3dx.system.any_object import AnyObject
 class FCBService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         FCBService
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        FCBService
 
     
     """
@@ -37,28 +36,27 @@ class FCBService(Service):
     def create_flexible_board(self, i_part: Part, i_create_axissystem: bool) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateFlexibleBoard(Part iPart,boolean iCreateAxissystem) As
-                | CATBaseDispatch
-                |     Creates a Flexible Board.
-                | 
-                |     Parameters:
-                | 
-                |         iPart
-                |             Mechanical Part that will become a flexible board.
-                |             
-                |         iCreateAxissystem
-                |             if true, the axis system is automatically created 
-                |         oFlexibleBoard
-                |             The Flexible board created 
-                | 
-                |     Returns:
-                | 
-                |             The result of the method:
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Func CreateFlexibleBoard(Part iPart,boolean iCreateAxissystem) As
+                CATBaseDispatch
+                    Creates a Flexible Board.
+                
+                    Parameters:
+                
+                        iPart
+                            Mechanical Part that will become a flexible board.
+                            
+                        iCreateAxissystem
+                            if true, the axis system is automatically created 
+                        oFlexibleBoard
+                            The Flexible board created 
+                
+                    Returns:
+                
+                            The result of the method:
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :param Part i_part:
         :param bool i_create_axissystem:
@@ -69,25 +67,24 @@ class FCBService(Service):
     def get_flexible_board(self, i_part: Part) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetFlexibleBoard(Part iPart) As CATBaseDispatch
-                |     Gets the flexible board from the CATIAPart
-                | 
-                |     Parameters:
-                | 
-                |         iPart
-                |             Mechanical Part that will become a flexible board.
-                |             
-                |         oFlexibleBoard
-                |             The Flexible board 
-                | 
-                |     Returns:
-                | 
-                |             The result of the method:
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Func GetFlexibleBoard(Part iPart) As CATBaseDispatch
+                    Gets the flexible board from the CATIAPart
+                
+                    Parameters:
+                
+                        iPart
+                            Mechanical Part that will become a flexible board.
+                            
+                        oFlexibleBoard
+                            The Flexible board 
+                
+                    Returns:
+                
+                            The result of the method:
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :param Part i_part:
         :return: AnyObject

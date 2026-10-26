@@ -21,20 +21,19 @@ if TYPE_CHECKING:
 class Section(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Section
-                | 
-                | Interface representing a section.
-                | set or get the position of section plane, set or get the clipping mode and
-                | export it as 3DShape & PLMDrawing
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Section
+                
+                Interface representing a section.
+                set or get the position of section plane, set or get the clipping mode and
+                export it as 3DShape & PLMDrawing
     
     """
 
@@ -46,33 +45,32 @@ class Section(AnyObject):
     def behavior(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Behavior() As CatSectionBehavior
-                |     Returns or sets the general behavior of the section: Freeze, Automatic
-                |     update, manual update
-                | 
-                |     The behavior value are defined in CatSectionBehavior.
-                | 
-                |     Example:
-                | 
-                |             The first example retrieves the behavior of NewSection
-                |             Section.
-                |             
-                | 
-                |             Dim SectionBehavior As CatSectionBehavior
-                |             Behavior = NewSection.Behavior
-                |             
-                | 
-                | 
-                |             
-                | 
-                |                 The second example sets the behavior of NewSection
-                |                 Section.
-                |                 
-                | 
-                |                 NewSection.Behavior = catSectionBehaviorAutomatic
+                Property Behavior() As CatSectionBehavior
+                    Returns or sets the general behavior of the section: Freeze, Automatic
+                    update, manual update
+                
+                    The behavior value are defined in CatSectionBehavior.
+                
+                    Example:
+                
+                            The first example retrieves the behavior of NewSection
+                            Section.
+                            
+                
+                            Dim SectionBehavior As CatSectionBehavior
+                            Behavior = NewSection.Behavior
+                            
+                
+                
+                            
+                
+                                The second example sets the behavior of NewSection
+                                Section.
+                                
+                
+                                NewSection.Behavior = catSectionBehaviorAutomatic
 
         :return: CatSectionBehavior
         """
@@ -91,32 +89,31 @@ class Section(AnyObject):
     def height(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Height(double iHeight)
-                |     Returns or sets the height of the section.
-                | 
-                |     The height value must be greater than 0.
-                | 
-                |     Example:
-                | 
-                |             The first example retrieves the height of NewSection
-                |             Section.
-                |             
-                | 
-                |             Dim SectionHeight As double
-                |             SectionHeight = NewSection.Height
-                |             
-                | 
-                | 
-                |             
-                | 
-                |                 The second example sets the height value of NewSection
-                |                 Section.
-                |                 
-                | 
-                |                 NewSection.Height = 100.
+                Property Height(double iHeight)
+                    Returns or sets the height of the section.
+                
+                    The height value must be greater than 0.
+                
+                    Example:
+                
+                            The first example retrieves the height of NewSection
+                            Section.
+                            
+                
+                            Dim SectionHeight As double
+                            SectionHeight = NewSection.Height
+                            
+                
+                
+                            
+                
+                                The second example sets the height value of NewSection
+                                Section.
+                                
+                
+                                NewSection.Height = 100.
 
         :return: float
         """
@@ -135,20 +132,19 @@ class Section(AnyObject):
     def markers(self) -> Markers:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Markers() As Markers (Read Only)
-                |     Returns the Markers collection of the section.
-                | 
-                |     Example:
-                | 
-                |             This example retrieves the Markers collection of TheSection  
-                |             Section.
-                |             
-                | 
-                |             Dim TheMarkersList As Markers
-                |             Set TheMarkersList = TheSection.Markers
+                Property Markers() As Markers (Read Only)
+                    Returns the Markers collection of the section.
+                
+                    Example:
+                
+                            This example retrieves the Markers collection of TheSection  
+                            Section.
+                            
+                
+                            Dim TheMarkersList As Markers
+                            Set TheMarkersList = TheSection.Markers
 
         :return: Markers
         """
@@ -159,20 +155,19 @@ class Section(AnyObject):
     def measures(self) -> Measures:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Measures() As Measures (Read Only)
-                |     Returns the Measures collection of the section.
-                | 
-                |     Example:
-                | 
-                |             This example retrieves the Measures collection of TheSection  
-                |             Section.
-                |             
-                | 
-                |             Dim TheMeasureList As Measures
-                |             Set TheMeasureList = TheSection.Measures
+                Property Measures() As Measures (Read Only)
+                    Returns the Measures collection of the section.
+                
+                    Example:
+                
+                            This example retrieves the Measures collection of TheSection  
+                            Section.
+                            
+                
+                            Dim TheMeasureList As Measures
+                            Set TheMeasureList = TheSection.Measures
 
         :return: Measures
         """
@@ -183,13 +178,12 @@ class Section(AnyObject):
     def scene_render(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SceneRender(long iMode)
-                |     Returns or sets the Scene Render Mode of the section.
-                |     Role: Returns or sets the mode of scene render (1 for clipping, 0
-                |     otherwise).
+                Property SceneRender(long iMode)
+                    Returns or sets the Scene Render Mode of the section.
+                    Role: Returns or sets the mode of scene render (1 for clipping, 0
+                    otherwise).
 
         :return: int
         """
@@ -208,28 +202,27 @@ class Section(AnyObject):
     def thickness(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Thickness(double iThickness)
-                |     Returns or sets the Thickness of the section for type slice &
-                |     box.
-                | 
-                |     The Thickness value must be greater than 0.
-                | 
-                |     Example:
-                | 
-                |             The first example retrieves the Thickness of NewSection
-                |             Section.
-                |             
-                | 
-                |             Dim SectionWidth As double
-                |             SectionThickness = NewSection.Thickness
+                Property Thickness(double iThickness)
+                    Returns or sets the Thickness of the section for type slice &
+                    box.
+                
+                    The Thickness value must be greater than 0.
+                
+                    Example:
+                
+                            The first example retrieves the Thickness of NewSection
+                            Section.
+                            
+                
+                            Dim SectionWidth As double
+                            SectionThickness = NewSection.Thickness
                 |
-                |                 The second example sets the width value of NewSection
-                |                 Section.
+                                The second example sets the width value of NewSection
+                                Section.
                 |
-                |                 NewSection.Thickness = 100.
+                                NewSection.Thickness = 100.
 
         :return: float
         """
@@ -248,26 +241,25 @@ class Section(AnyObject):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type(CatSectionType iType)
-                |     Returns or sets the type of the section.
-                | 
-                |     The type value are defined in CatSectionType.
-                | 
-                |     Example:
-                | 
-                |             The first example retrieves the type of NewSection
-                |             Section.
+                Property Type(CatSectionType iType)
+                    Returns or sets the type of the section.
+                
+                    The type value are defined in CatSectionType.
+                
+                    Example:
+                
+                            The first example retrieves the type of NewSection
+                            Section.
                 |
-                |             Dim SectionType As CatSectionType
-                |             SectionType = NewSection.Type
+                            Dim SectionType As CatSectionType
+                            SectionType = NewSection.Type
                 |
-                |                 The second example sets the type of NewSection
-                |                 Section.
+                                The second example sets the type of NewSection
+                                Section.
                 |
-                |                 NewSection.Type = catSectionTypeSlice
+                                NewSection.Type = catSectionTypeSlice
 
         :return: int
         """
@@ -286,26 +278,25 @@ class Section(AnyObject):
     def width(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Width(double iWidth)
-                |     Returns or sets the width of the section.
-                | 
-                |     The width value must be greater than 0.
-                | 
-                |     Example:
-                | 
-                |             The first example retrieves the width of NewSection
-                |             Section.
-                |             
-                |             Dim SectionWidth As double
-                |             SectionWidth = NewSection.Width
+                Property Width(double iWidth)
+                    Returns or sets the width of the section.
+                
+                    The width value must be greater than 0.
+                
+                    Example:
+                
+                            The first example retrieves the width of NewSection
+                            Section.
+                            
+                            Dim SectionWidth As double
+                            SectionWidth = NewSection.Width
                 |
-                |                 The second example sets the width value of NewSection
-                |                 Section.
+                                The second example sets the width value of NewSection
+                                Section.
                 |
-                |                 NewSection.Width = 100.
+                                NewSection.Width = 100.
 
         :return: float
         """
@@ -323,26 +314,25 @@ class Section(AnyObject):
     def export(self, io_part: Part) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Export(Part ioPart)
-                |     Exports the sections curves of the section in a 3DShape representation this
-                |     method assumes that you have created the Part in which you want to do the
-                |     export
-                | 
-                |     Returns:
-                |         The 3DShape Representation 
-                |     Example:
-                | 
-                |             
-                | 
-                |              Dim  MyOpenEditor  As  Editor 
-                |              Set myNewService = CATIA.GetSessionService("PLMNewService")
-                |              myNewService.PLMCreate "3DShape", myOpenEditor
-                |              Dim myPart As Part
-                |              Set myPart = CATIA.ActiveEditor.ActiveObject
-                |              mySection.Export myPart
+                Sub Export(Part ioPart)
+                    Exports the sections curves of the section in a 3DShape representation this
+                    method assumes that you have created the Part in which you want to do the
+                    export
+                
+                    Returns:
+                        The 3DShape Representation 
+                    Example:
+                
+                            
+                
+                             Dim  MyOpenEditor  As  Editor 
+                             Set myNewService = CATIA.GetSessionService("PLMNewService")
+                             myNewService.PLMCreate "3DShape", myOpenEditor
+                             Dim myPart As Part
+                             Set myPart = CATIA.ActiveEditor.ActiveObject
+                             mySection.Export myPart
 
         :param Part io_part:
         :return: None
@@ -352,25 +342,24 @@ class Section(AnyObject):
     def export_as_drawing(self, io_my_editor: Editor) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ExportAsDrawing(Editor ioMyEditor)
-                |     Exports the section curves in a new 2D Drawing Representation. This method
-                |     assumes that you have created the drawing in which you want to do the
-                |     export.
-                | 
-                |     Returns:
-                |         The Editor corresponding to drawing Representation with section curves
-                |         exported under it. 
-                |     Example:
-                | 
-                |             
-                | 
-                |              Dim  MyOpenEditor As Editor 
-                |              Set myNewService = CATIA.GetSessionService("PLMNewService")
-                |              myNewService.PLMCreate "Drawing", myOpenEditor
-                |              mySection.ExportAsDrawing MyOpenEditor
+                Sub ExportAsDrawing(Editor ioMyEditor)
+                    Exports the section curves in a new 2D Drawing Representation. This method
+                    assumes that you have created the drawing in which you want to do the
+                    export.
+                
+                    Returns:
+                        The Editor corresponding to drawing Representation with section curves
+                        exported under it. 
+                    Example:
+                
+                            
+                
+                             Dim  MyOpenEditor As Editor 
+                             Set myNewService = CATIA.GetSessionService("PLMNewService")
+                             myNewService.PLMCreate "Drawing", myOpenEditor
+                             mySection.ExportAsDrawing MyOpenEditor
 
         :param Editor io_my_editor:
         :return: None
@@ -380,22 +369,21 @@ class Section(AnyObject):
     def export_to(self, i_format: str, i_save_path: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ExportTo(CATBSTR iFormat,CATBSTR iSavePath)
-                |     Exports the section into dxf/dwg formats. It takes inputs as type to which
-                |     you want to export as "dxf" or "dwg" and path where you want to save exported
-                |     file(without extension).
-                | 
-                |     Example:
-                | 
-                |             
-                | 
-                |              mySection.ExportTo "dxf", "c:\\ExportDxf" (For export as
-                |              dxf)
-                |              mySection.ExportTo "dwg", "c:\\ExportDwg" (For export as
-                |              dwg)
+                Sub ExportTo(CATBSTR iFormat,CATBSTR iSavePath)
+                    Exports the section into dxf/dwg formats. It takes inputs as type to which
+                    you want to export as "dxf" or "dwg" and path where you want to save exported
+                    file(without extension).
+                
+                    Example:
+                
+                            
+                
+                             mySection.ExportTo "dxf", "c:\\ExportDxf" (For export as
+                             dxf)
+                             mySection.ExportTo "dwg", "c:\\ExportDwg" (For export as
+                             dwg)
 
         :param str i_format:
         :param str i_save_path:
@@ -406,31 +394,30 @@ class Section(AnyObject):
     def export_to_existing(self, io_part: Part) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ExportToExisting(Part ioPart)
-                |     Export the result of the section in an existing
-                |     Product/Part.
-                |     The input part should be created by user as a new part under existing
-                |     product or user can supply an existing part from assembly.
-                |     For exporting to existing Product representation, user should create a new
-                |     3D Shape Representation under product & supply it as input
-                |     here.
-                |     Else user can supply an exising 3D Shape Representation from assembly
-                |     directly. Here it is assumed that this 3D Shape Representation is in design
-                |     mode.
-                |     Also note that in either cases, this input part should be
-                |     editable.
-                | 
-                |     Parameters:
-                | 
-                |         ioPart
-                |             The part in which the geometry of section will be
-                |             exported.
-                | 
-                |     Returns:
-                |         S_OK if export is successful else E_FAIL.
+                Sub ExportToExisting(Part ioPart)
+                    Export the result of the section in an existing
+                    Product/Part.
+                    The input part should be created by user as a new part under existing
+                    product or user can supply an existing part from assembly.
+                    For exporting to existing Product representation, user should create a new
+                    3D Shape Representation under product & supply it as input
+                    here.
+                    Else user can supply an exising 3D Shape Representation from assembly
+                    directly. Here it is assumed that this 3D Shape Representation is in design
+                    mode.
+                    Also note that in either cases, this input part should be
+                    editable.
+                
+                    Parameters:
+                
+                        ioPart
+                            The part in which the geometry of section will be
+                            exported.
+                
+                    Returns:
+                        S_OK if export is successful else E_FAIL.
 
         :param Part io_part:
         :return: None
@@ -440,51 +427,50 @@ class Section(AnyObject):
     def get_position(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetPosition(CATSafeArrayVariant iComponents)
-                |     Get the current position of the section.
+                Sub GetPosition(CATSafeArrayVariant iComponents)
+                    Get the current position of the section.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iComponents
-                |             The position of the section with respect to the absolute coordinate
-                |             system
+                        iComponents
+                            The position of the section with respect to the absolute coordinate
+                            system
                 |
-                |                 iComponents( 0) is the X component of the
-                |                 X-axis
-                |                 iComponents( 1) is the Y component of the
-                |                 X-axis
-                |                 iComponents( 2) is the Z component of the
-                |                 X-axis
-                |                 iComponents( 3) is the X component of the
-                |                 Y-axis
-                |                 iComponents( 4) is the Y component of the
-                |                 Y-axis
-                |                 iComponents( 5) is the Z component of the
-                |                 Y-axis
-                |                 iComponents( 6) is the X component of the
-                |                 Z-axis
-                |                 iComponents( 7) is the Y component of the
-                |                 Z-axis
-                |                 iComponents( 8) is the Z component of the
-                |                 Z-axis
-                |                 iComponents( 9) is the X component of the
-                |                 origin
-                |                 iComponents(10) is the Y component of the
-                |                 origin
-                |                 iComponents(11) is the Z component of the origin
-                |
-                |
-                |     Example:
-                |
-                |             This example gets the position of NewSection
-                |             Section.
+                                iComponents( 0) is the X component of the
+                                X-axis
+                                iComponents( 1) is the Y component of the
+                                X-axis
+                                iComponents( 2) is the Z component of the
+                                X-axis
+                                iComponents( 3) is the X component of the
+                                Y-axis
+                                iComponents( 4) is the Y component of the
+                                Y-axis
+                                iComponents( 5) is the Z component of the
+                                Y-axis
+                                iComponents( 6) is the X component of the
+                                Z-axis
+                                iComponents( 7) is the Y component of the
+                                Z-axis
+                                iComponents( 8) is the Z component of the
+                                Z-axis
+                                iComponents( 9) is the X component of the
+                                origin
+                                iComponents(10) is the Y component of the
+                                origin
+                                iComponents(11) is the Z component of the origin
                 |
                 |
-                |             Dim MatrixPos (11) As Double
-                |             NewSection.GetPosition MatrixPos
+                    Example:
+                |
+                            This example gets the position of NewSection
+                            Section.
+                |
+                |
+                            Dim MatrixPos (11) As Double
+                            NewSection.GetPosition MatrixPos
 
         :return: tuple
         """
@@ -509,23 +495,22 @@ class Section(AnyObject):
     def is_empty(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsEmpty() As long
-                |     Indicates whether the section is empty.
-                | 
-                |     The indicator value is 0 if the section is empty or 1 if the section
-                |     comprise at least one segment.
-                | 
-                |     Example:
-                | 
-                |             This example retrieves the information on NewSection
-                |             Section.
-                |             
-                | 
-                |             Dim Indicator
-                |             Indicator = NewSection.IsEmpty
+                Func IsEmpty() As long
+                    Indicates whether the section is empty.
+                
+                    The indicator value is 0 if the section is empty or 1 if the section
+                    comprise at least one segment.
+                
+                    Example:
+                
+                            This example retrieves the information on NewSection
+                            Section.
+                            
+                
+                            Dim Indicator
+                            Indicator = NewSection.IsEmpty
 
         :return: int
         """
@@ -534,63 +519,62 @@ class Section(AnyObject):
     def set_position(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetPosition(CATSafeArrayVariant iComponents)
-                |     Set the position of the section.
+                Sub SetPosition(CATSafeArrayVariant iComponents)
+                    Set the position of the section.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iComponents
-                |             The position of the section with respect to the absolute coordinate
-                |             system
+                        iComponents
+                            The position of the section with respect to the absolute coordinate
+                            system
                 |
-                |                 iComponents( 0) is the X component of the
-                |                 X-axis
-                |                 iComponents( 1) is the Y component of the
-                |                 X-axis
-                |                 iComponents( 2) is the Z component of the
-                |                 X-axis
-                |                 iComponents( 3) is the X component of the
-                |                 Y-axis
-                |                 iComponents( 4) is the Y component of the
-                |                 Y-axis
-                |                 iComponents( 5) is the Z component of the
-                |                 Y-axis
-                |                 iComponents( 6) is the X component of the
-                |                 Z-axis
-                |                 iComponents( 7) is the Y component of the
-                |                 Z-axis
-                |                 iComponents( 8) is the Z component of the
-                |                 Z-axis
-                |                 iComponents( 9) is the X component of the
-                |                 origin
-                |                 iComponents(10) is the Y component of the
-                |                 origin
-                |                 iComponents(11) is the Z component of the origin
-                |
-                |
-                |     Example:
-                |
-                |             This example sets the position of NewSection
-                |             Section.
+                                iComponents( 0) is the X component of the
+                                X-axis
+                                iComponents( 1) is the Y component of the
+                                X-axis
+                                iComponents( 2) is the Z component of the
+                                X-axis
+                                iComponents( 3) is the X component of the
+                                Y-axis
+                                iComponents( 4) is the Y component of the
+                                Y-axis
+                                iComponents( 5) is the Z component of the
+                                Y-axis
+                                iComponents( 6) is the X component of the
+                                Z-axis
+                                iComponents( 7) is the Y component of the
+                                Z-axis
+                                iComponents( 8) is the Z component of the
+                                Z-axis
+                                iComponents( 9) is the X component of the
+                                origin
+                                iComponents(10) is the Y component of the
+                                origin
+                                iComponents(11) is the Z component of the origin
                 |
                 |
-                |             Dim MatrixPos (11) As Double
-                |             MatrixPos( 0) = 1.0
-                |             MatrixPos( 1) = 0.0
-                |             MatrixPos( 2) = 0.0
-                |             MatrixPos( 3) = 0.0
-                |             MatrixPos( 4) = 1.0
-                |             MatrixPos( 5) = 0.0
-                |             MatrixPos( 6) = 0.0
-                |             MatrixPos( 7) = 0.0
-                |             MatrixPos( 8) = 1.0
-                |             MatrixPos( 9) = 1000.0
-                |             MatrixPos(10) = 0.0
-                |             MatrixPos(11) = 0.0
-                |             NewSection.SetPosition MatrixPos
+                    Example:
+                |
+                            This example sets the position of NewSection
+                            Section.
+                |
+                |
+                            Dim MatrixPos (11) As Double
+                            MatrixPos( 0) = 1.0
+                            MatrixPos( 1) = 0.0
+                            MatrixPos( 2) = 0.0
+                            MatrixPos( 3) = 0.0
+                            MatrixPos( 4) = 1.0
+                            MatrixPos( 5) = 0.0
+                            MatrixPos( 6) = 0.0
+                            MatrixPos( 7) = 0.0
+                            MatrixPos( 8) = 1.0
+                            MatrixPos( 9) = 1000.0
+                            MatrixPos(10) = 0.0
+                            MatrixPos(11) = 0.0
+                            NewSection.SetPosition MatrixPos
 
         :return: tuple
         """

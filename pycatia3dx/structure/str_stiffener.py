@@ -17,20 +17,19 @@ from pycatia3dx.structure.structure_profile import StructureProfile
 class StrStiffener(StructureProfile):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATStrIDLItf.StructureProfile
-                |                         StrStiffener
-                | 
-                | Object to manage Structure Functional Modeler Stiffener.
-                | Role: Allows accessing and setting of Stiffener's data.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATStrIDLItf.StructureProfile
+                                        StrStiffener
+                
+                Object to manage Structure Functional Modeler Stiffener.
+                Role: Allows accessing and setting of Stiffener's data.
     
     """
 
@@ -42,20 +41,19 @@ class StrStiffener(StructureProfile):
     def str_break(self) -> StrBreak:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrBreak() As StrBreak (Read Only)
-                |     Returns StrBreak object
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves StrBreak object of the
-                |              Stiffener.
-                |              
-                | 
-                |              Set ObjStrBreak = ObjStrStiffener.StrBreak
+                Property StrBreak() As StrBreak (Read Only)
+                    Returns StrBreak object
+                
+                    Example:
+                
+                
+                             This example retrieves StrBreak object of the
+                             Stiffener.
+                             
+                
+                             Set ObjStrBreak = ObjStrStiffener.StrBreak
 
         :return: StrBreak
         """
@@ -66,20 +64,19 @@ class StrStiffener(StructureProfile):
     def str_category_mngt(self) -> StrCategoryMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrCategoryMngt() As StrCategoryMngt (Read Only)
-                |     Returns StrCategoryMngt object
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves StrCategoryMngt object of the
-                |              Stiffener.
-                |              
-                | 
-                |              Set ObjStrCategoryMngt = ObjStrStiffener.StrCategoryMngt
+                Property StrCategoryMngt() As StrCategoryMngt (Read Only)
+                    Returns StrCategoryMngt object
+                
+                    Example:
+                
+                
+                             This example retrieves StrCategoryMngt object of the
+                             Stiffener.
+                             
+                
+                             Set ObjStrCategoryMngt = ObjStrStiffener.StrCategoryMngt
 
         :return: StrCategoryMngt
         """
@@ -90,20 +87,19 @@ class StrStiffener(StructureProfile):
     def str_profile_crv(self) -> StrProfileCrv:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrProfileCrv() As StrProfileCrv (Read Only)
-                |     Returns StrProfileCrv object
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves StrProfileCrv object of the
-                |              Stiffener.
-                |              
-                | 
-                |              Set ObjStrProfileCrv = ObjStrStiffener.StrProfileCrv
+                Property StrProfileCrv() As StrProfileCrv (Read Only)
+                    Returns StrProfileCrv object
+                
+                    Example:
+                
+                
+                             This example retrieves StrProfileCrv object of the
+                             Stiffener.
+                             
+                
+                             Set ObjStrProfileCrv = ObjStrStiffener.StrProfileCrv
 
         :return: StrProfileCrv
         """
@@ -114,21 +110,20 @@ class StrStiffener(StructureProfile):
     def str_profile_surf_surf(self) -> StrProfileSurfSurf:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrProfileSurfSurf() As StrProfileSurfSurf (Read
-                | Only)
-                |     Returns StrProfileSurfSurf object
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves StrProfileSurfSurf object of the
-                |              Stiffener.
-                |              
-                | 
-                |              Set ObjProfileSurfSurf = ObjStrStiffener.StrProfileSurfSurf
+                Property StrProfileSurfSurf() As StrProfileSurfSurf (Read
+                Only)
+                    Returns StrProfileSurfSurf object
+                
+                    Example:
+                
+                
+                             This example retrieves StrProfileSurfSurf object of the
+                             Stiffener.
+                             
+                
+                             Set ObjProfileSurfSurf = ObjStrStiffener.StrProfileSurfSurf
 
         :return: StrProfileSurfSurf
         """

@@ -12,26 +12,24 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SfdConvertStiffener(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SfdConvertStiffener
-                | 
-                | Object to manage the Structure Functional Modeler ConvertStiffener
-                | object.
-                | Interface representing Sfd ConvertStiffener. 'SldStiffener' late type
-                | implements CATIASfdConvertStiffener. Role: Allows accessing and setting of
-                | ConvertStiffener's data. There are 2 types of mode available (Plate/Plate and
-                | Plate/FlatBar). PLATE/PLATE 1 PLATE/FLATBAR 2
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SfdConvertStiffener
+                
+                Object to manage the Structure Functional Modeler ConvertStiffener
+                object.
+                Interface representing Sfd ConvertStiffener. 'SldStiffener' late type
+                implements CATIASfdConvertStiffener. Role: Allows accessing and setting of
+                ConvertStiffener's data. There are 2 types of mode available (Plate/Plate and
+                Plate/FlatBar). PLATE/PLATE 1 PLATE/FLATBAR 2
     
     """
 
@@ -43,19 +41,18 @@ class SfdConvertStiffener(AnyObject):
     def mode(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Mode(long iMode) (Write Only)
-                |     Sets Mode.
-                | 
-                |     Parameters:
-                | 
-                |         iMode
-                |             The type of Stiffener Conversion you want to
-                |             retreive:
-                |             - 1 : PLATE/PLATE
-                |             - 2 : PLATE/FLATBAR
+                Property Mode(long iMode) (Write Only)
+                    Sets Mode.
+                
+                    Parameters:
+                
+                        iMode
+                            The type of Stiffener Conversion you want to
+                            retreive:
+                            - 1 : PLATE/PLATE
+                            - 2 : PLATE/FLATBAR
 
         :return: None
         """
@@ -73,18 +70,17 @@ class SfdConvertStiffener(AnyObject):
     def category(self, i_category_1: str, i_category_2: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Category(CATBSTR iCategory_1,CATBSTR iCategory_2)
-                |     Sets Category.
-                | 
-                |     Parameters:
-                | 
-                |         iCategory_1
-                |             iCategory_1 - Panel 
-                |         iCategory_2
-                |             iCategory_2 - Panel
+                Sub Category(CATBSTR iCategory_1,CATBSTR iCategory_2)
+                    Sets Category.
+                
+                    Parameters:
+                
+                        iCategory_1
+                            iCategory_1 - Panel 
+                        iCategory_2
+                            iCategory_2 - Panel
 
         :param str i_category_1:
         :param str i_category_2:
@@ -95,12 +91,11 @@ class SfdConvertStiffener(AnyObject):
     def convert_stiffener(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ConvertStiffener()
-                |     Once all the above inputs are set ConvertStiffener command will be
-                |     executed.
+                Sub ConvertStiffener()
+                    Once all the above inputs are set ConvertStiffener command will be
+                    executed.
 
         :return: None
         """
@@ -109,18 +104,17 @@ class SfdConvertStiffener(AnyObject):
     def flange_state(self, i_flange_state: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub FlangeState(boolean iFlangeState)
-                |     Sets Flange State.
-                | 
-                |     Parameters:
-                | 
-                |         iFlangeState
-                |             Want to convert flange or not:
-                |             - TRUE : Convert
-                |             - FALSE : Don't Convert
+                Sub FlangeState(boolean iFlangeState)
+                    Sets Flange State.
+                
+                    Parameters:
+                
+                        iFlangeState
+                            Want to convert flange or not:
+                            - TRUE : Convert
+                            - FALSE : Don't Convert
 
         :param bool i_flange_state:
         :return: None
@@ -130,16 +124,15 @@ class SfdConvertStiffener(AnyObject):
     def flat_bar_section_name(self, i_flat_bar_section_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub FlatBarSectionName(CATBSTR iFlatBarSectionName)
-                |     Sets FlatBar Section Name.
-                | 
-                |     Parameters:
-                | 
-                |         iFlatBarSectionName
-                |             iFlatBarSectionName - WT18x179.5
+                Sub FlatBarSectionName(CATBSTR iFlatBarSectionName)
+                    Sets FlatBar Section Name.
+                
+                    Parameters:
+                
+                        iFlatBarSectionName
+                            iFlatBarSectionName - WT18x179.5
 
         :param str i_flat_bar_section_name:
         :return: None
@@ -149,18 +142,17 @@ class SfdConvertStiffener(AnyObject):
     def material(self, i_material_1: str, i_material_2: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Material(CATBSTR iMaterial_1,CATBSTR iMaterial_2)
-                |     Sets Material.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterial_1
-                |             iMaterial_1 - Steel A42 
-                |         iMaterial_2
-                |             iMaterial_2 - Steel A42
+                Sub Material(CATBSTR iMaterial_1,CATBSTR iMaterial_2)
+                    Sets Material.
+                
+                    Parameters:
+                
+                        iMaterial_1
+                            iMaterial_1 - Steel A42 
+                        iMaterial_2
+                            iMaterial_2 - Steel A42
 
         :param str i_material_1:
         :param str i_material_2:
@@ -171,18 +163,17 @@ class SfdConvertStiffener(AnyObject):
     def panel_names(self, i_name_1: str, i_name_2: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub PanelNames(CATBSTR iName_1,CATBSTR iName_2)
-                |     Sets Panel Names.
-                | 
-                |     Parameters:
-                | 
-                |         iName_1
-                |             iName_1 - Panel 
-                |         iName_2
-                |             iName_2 - Flange
+                Sub PanelNames(CATBSTR iName_1,CATBSTR iName_2)
+                    Sets Panel Names.
+                
+                    Parameters:
+                
+                        iName_1
+                            iName_1 - Panel 
+                        iName_2
+                            iName_2 - Flange
 
         :param str i_name_1:
         :param str i_name_2:
@@ -193,18 +184,17 @@ class SfdConvertStiffener(AnyObject):
     def remove_stiffener(self, i_remove_stiffener_state: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveStiffener(boolean iRemoveStiffenerState)
-                |     Sets Stiffener State.
-                | 
-                |     Parameters:
-                | 
-                |         iRemoveStiffenerState
-                |             Want to keep Stiffener after conversion:
-                |             - TRUE : Remove Stiffener
-                |             - FALSE : Keep Stiffener 
+                Sub RemoveStiffener(boolean iRemoveStiffenerState)
+                    Sets Stiffener State.
+                
+                    Parameters:
+                
+                        iRemoveStiffenerState
+                            Want to keep Stiffener after conversion:
+                            - TRUE : Remove Stiffener
+                            - FALSE : Keep Stiffener 
 
         :param bool i_remove_stiffener_state:
         :return: None
@@ -212,4 +202,4 @@ class SfdConvertStiffener(AnyObject):
         return self.com_object.RemoveStiffener(i_remove_stiffener_state)
 
     def __repr__(self):
-        return f'SfdConvertStiffener(name="{ self.name }")'
+        return f'SfdConvertStiffener(name="{self.name}")'

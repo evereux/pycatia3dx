@@ -11,22 +11,20 @@ from pycatia3dx.plm_modeller_base.plm_entity import PLMEntity
 
 
 class VALCheck(PLMEntity):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PLMModelerBaseIDLItf.PLMEntity
-                |                         VALCheck
-                | 
-                | Allows management of Check entity
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PLMModelerBaseIDLItf.PLMEntity
+                                        VALCheck
+                
+                Allows management of Check entity
     
     """
 
@@ -35,4 +33,4 @@ class VALCheck(PLMEntity):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'ValCheck(name="{ self.name }")'
+        return f'ValCheck(name="{self.name}")'

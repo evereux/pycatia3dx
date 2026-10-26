@@ -23,18 +23,17 @@ from pycatia3dx.structure.str_slots import StrSlots
 class StructureProfile(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StructureProfile
-                | 
-                | Object to manage Structure Functional Modeler Profile.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StructureProfile
+                
+                Object to manage Structure Functional Modeler Profile.
     
     """
 
@@ -46,21 +45,20 @@ class StructureProfile(AnyObject):
     def profile_sub_elements(self) -> StrProfileSubElementMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ProfileSubElements() As StrProfileSubElementMngt (Read
-                | Only)
-                |     Returns the StrProfileSubElementMngt object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves StrProfileSubElementMngt object of this
-                |              Profile.
-                |              
-                | 
-                |              Set oObjSddProfileSubElementMngt = iObjSddStiffener.ProfileSubElements
+                Property ProfileSubElements() As StrProfileSubElementMngt (Read
+                Only)
+                    Returns the StrProfileSubElementMngt object.
+                
+                    Example:
+                
+                
+                             This example retrieves StrProfileSubElementMngt object of this
+                             Profile.
+                             
+                
+                             Set oObjSddProfileSubElementMngt = iObjSddStiffener.ProfileSubElements
 
         :return: StrProfileSubElementMngt
         """
@@ -71,26 +69,25 @@ class StructureProfile(AnyObject):
     def profile_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ProfileType() As CATStrProfileMode
-                |     Returns or sets the Profile's type.
-                |     Legal values :
-                |     - catStrProfileModePtLength : profile defined by a point and a length.
-                |     - catStrProfileModePtLimit : profile defined by a point and a limit.
-                |     - catStrProfileModePts : straight profile between two points.
-                |     - catStrProfileModeCrv : profile on a curve and optionally a reference surface. a spec point type or a point on curve.
-                |     - catStrProfileModeSurf2Crvs : profile by the intersection of a surface and two curves.
-                |     - catStrProfileModeSurfSurf : profile define by the intersection of two surfaces. (default)
-                |     - catStrProfileModeOnOpening : profile on the edges of a Panel Opening.
-                |     - catStrProfileModeOnLimits : profile on the edges of Panel limits.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example sets the profile's type 
-                |              ObjSfdStiffener.ProfileType = catStrProfileModePtLength
+                Property ProfileType() As CATStrProfileMode
+                    Returns or sets the Profile's type.
+                    Legal values :
+                    - catStrProfileModePtLength : profile defined by a point and a length.
+                    - catStrProfileModePtLimit : profile defined by a point and a limit.
+                    - catStrProfileModePts : straight profile between two points.
+                    - catStrProfileModeCrv : profile on a curve and optionally a reference surface. a spec point type or a point on curve.
+                    - catStrProfileModeSurf2Crvs : profile by the intersection of a surface and two curves.
+                    - catStrProfileModeSurfSurf : profile define by the intersection of two surfaces. (default)
+                    - catStrProfileModeOnOpening : profile on the edges of a Panel Opening.
+                    - catStrProfileModeOnLimits : profile on the edges of Panel limits.
+                
+                    Example:
+                
+                
+                             This example sets the profile's type 
+                             ObjSfdStiffener.ProfileType = catStrProfileModePtLength
 
         :return: CATStrProfileMode
         """
@@ -109,20 +106,19 @@ class StructureProfile(AnyObject):
     def str_endcut_mngt(self) -> StrEndcutMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrEndcutMngt() As StrEndcutMngt (Read Only)
-                |     Returns the StrEndcutMngt object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves StrEndcutMngt object of the
-                |              StrProfile.
-                |              
-                | 
-                |              Set ObjStrEndcutMngt = ObjStrProfile.StrEndcutMngt
+                Property StrEndcutMngt() As StrEndcutMngt (Read Only)
+                    Returns the StrEndcutMngt object.
+                
+                    Example:
+                
+                
+                             This example retrieves StrEndcutMngt object of the
+                             StrProfile.
+                             
+                
+                             Set ObjStrEndcutMngt = ObjStrProfile.StrEndcutMngt
 
         :return: StrEndcutMngt
         """
@@ -133,23 +129,22 @@ class StructureProfile(AnyObject):
     def str_openings_mgr(self) -> StrOpeningsMgr:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrOpeningsMgr() As StrOpeningsMgr (Read Only)
-                |     Returns the StrOpeningsMgr object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjStrOpeningsMgr the StrOpeningsMgr
-                |              object
-                |              of the SfdStiffener.
-                |              
-                | 
-                |             Dim ObjStrOpeningsMgr As StrOpeningsMgr
-                |              Set ObjStrOpeningsMgr = iObjSfdStiffener.StrOpeningsMgr
+                Property StrOpeningsMgr() As StrOpeningsMgr (Read Only)
+                    Returns the StrOpeningsMgr object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjStrOpeningsMgr the StrOpeningsMgr
+                             object
+                             of the SfdStiffener.
+                             
+                
+                            Dim ObjStrOpeningsMgr As StrOpeningsMgr
+                             Set ObjStrOpeningsMgr = iObjSfdStiffener.StrOpeningsMgr
 
         :return: StrOpeningsMgr
         """
@@ -160,21 +155,20 @@ class StructureProfile(AnyObject):
     def str_profile_limit_mngt(self) -> StrProfileLimitMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrProfileLimitMngt() As StrProfileLimitMngt (Read
-                | Only)
-                |     Returns the StrProfileLimitMngt object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves StrProfileLimitMngt object of the
-                |              StrProfile.
-                |              
-                | 
-                |              Set ObjStrProfileLimitMngt = ObjSfdStiffener.StrProfileLimitMngt
+                Property StrProfileLimitMngt() As StrProfileLimitMngt (Read
+                Only)
+                    Returns the StrProfileLimitMngt object.
+                
+                    Example:
+                
+                
+                             This example retrieves StrProfileLimitMngt object of the
+                             StrProfile.
+                             
+                
+                             Set ObjStrProfileLimitMngt = ObjSfdStiffener.StrProfileLimitMngt
 
         :return: StrProfileLimitMngt
         """
@@ -185,20 +179,19 @@ class StructureProfile(AnyObject):
     def str_section_mngt(self) -> StrSectionMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrSectionMngt() As StrSectionMngt (Read Only)
-                |     Returns the StrSectionMngt object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves StrSectionMngt object of the
-                |              StrProfile.
-                |              
-                | 
-                |              Set ObjStrSectionMngt = ObjSfdStiffener.StrSectionMngt
+                Property StrSectionMngt() As StrSectionMngt (Read Only)
+                    Returns the StrSectionMngt object.
+                
+                    Example:
+                
+                
+                             This example retrieves StrSectionMngt object of the
+                             StrProfile.
+                             
+                
+                             Set ObjStrSectionMngt = ObjSfdStiffener.StrSectionMngt
 
         :return: StrSectionMngt
         """
@@ -209,20 +202,19 @@ class StructureProfile(AnyObject):
     def str_slots(self) -> StrSlots:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrSlots() As StrSlots (Read Only)
-                |     Returns the Slots that are inside this object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the StrSlots object.
-                |              
-                | 
-                |               Dim ListOfSlots As StrSlots
-                |               Set ListOfSlots = ObjSfdStiffener.StrSlots
+                Property StrSlots() As StrSlots (Read Only)
+                    Returns the Slots that are inside this object.
+                
+                    Example:
+                
+                
+                             This example retrieves the StrSlots object.
+                             
+                
+                              Dim ListOfSlots As StrSlots
+                              Set ListOfSlots = ObjSfdStiffener.StrSlots
 
         :return: StrSlots
         """
@@ -232,20 +224,19 @@ class StructureProfile(AnyObject):
     def get_canonic_support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCanonicSupport() As Reference
-                |     Returns the canonic Trace of this Profile.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves canonic support of this
-                |              profile.
-                |              
-                | 
-                |               Set RefCanonicSupp = ObjStrProfile.GetCanonicSupport
+                Func GetCanonicSupport() As Reference
+                    Returns the canonic Trace of this Profile.
+                
+                    Example:
+                
+                
+                             This example retrieves canonic support of this
+                             profile.
+                             
+                
+                              Set RefCanonicSupp = ObjStrProfile.GetCanonicSupport
 
         :return: Reference
         """
@@ -254,20 +245,19 @@ class StructureProfile(AnyObject):
     def get_delimited_support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetDelimitedSupport() As Reference
-                |     Returns the delimited Trace of this Profile.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves delimited support of this
-                |              profile.
-                |              
-                | 
-                |               Set RefDelimitedSupp = ObjStrProfile.GetDelimitedSupport
+                Func GetDelimitedSupport() As Reference
+                    Returns the delimited Trace of this Profile.
+                
+                    Example:
+                
+                
+                             This example retrieves delimited support of this
+                             profile.
+                             
+                
+                              Set RefDelimitedSupp = ObjStrProfile.GetDelimitedSupport
 
         :return: Reference
         """
@@ -276,33 +266,32 @@ class StructureProfile(AnyObject):
     def get_openings(self, i_type: int) -> StrOpenings:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetOpenings(long iType) As StrOpenings
-                |     Returns the list of Openings that are inside this object.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The type of Opening you want to retrieve:
-                |             - 0: All
-                |             - 1: Openings piercing the Plates inside the
-                |             OpeningPlateSet
-                |             - 2: Openings piercing the Plates and interrupting the Profiles
-                |             inside the OpeningPlateProfileSet
-                |             - 3: Openings piercing the Profile inside the OpeningProfileSet
-                |             
-                | 
-                |     Example:
-                | 
-                |          
-                | 
-                |              This example retrieves all type of Openings
-                |              
-                | 
-                |              Dim ObjStrOpenings As StrOpenings
-                |              Set ObjStrOpenings = ObjSfdStiffener.GetOpenings(0)
+                Func GetOpenings(long iType) As StrOpenings
+                    Returns the list of Openings that are inside this object.
+                
+                    Parameters:
+                
+                        iType
+                            The type of Opening you want to retrieve:
+                            - 0: All
+                            - 1: Openings piercing the Plates inside the
+                            OpeningPlateSet
+                            - 2: Openings piercing the Plates and interrupting the Profiles
+                            inside the OpeningPlateProfileSet
+                            - 3: Openings piercing the Profile inside the OpeningProfileSet
+                            
+                
+                    Example:
+                
+                         
+                
+                             This example retrieves all type of Openings
+                             
+                
+                             Dim ObjStrOpenings As StrOpenings
+                             Set ObjStrOpenings = ObjSfdStiffener.GetOpenings(0)
 
         :param int i_type:
         :return: StrOpenings
@@ -312,31 +301,30 @@ class StructureProfile(AnyObject):
     def get_openings_on_profile(self, i_type: int) -> StrOpeningsOnProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetOpeningsOnProfile(long iType) As StrOpeningsOnProfile
-                |     Returns openings on this Profile.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The type of Opening you want to retreive:
-                |             - 0: All
-                |             - 1: Openings piercing the Plates inside the
-                |             OpeningPlateSet
-                |             - 2: Openings piercing the Plates and interrupting the Profiles
-                |             inside the OpeningPlateProfileSet
-                |             - 3: Openings piercing the Profile inside the OpeningProfileSet
-                |             
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves openings on this profile.
-                |              
-                | 
-                |               Set ObjStrOpeningsOnProfile = iObjSfdStiffener.GetOpeningsOnProfile
+                Func GetOpeningsOnProfile(long iType) As StrOpeningsOnProfile
+                    Returns openings on this Profile.
+                
+                    Parameters:
+                
+                        iType
+                            The type of Opening you want to retreive:
+                            - 0: All
+                            - 1: Openings piercing the Plates inside the
+                            OpeningPlateSet
+                            - 2: Openings piercing the Plates and interrupting the Profiles
+                            inside the OpeningPlateProfileSet
+                            - 3: Openings piercing the Profile inside the OpeningProfileSet
+                            
+                
+                    Example:
+                
+                
+                             This example retrieves openings on this profile.
+                             
+                
+                              Set ObjStrOpeningsOnProfile = iObjSfdStiffener.GetOpeningsOnProfile
 
         :param int i_type:
         :return: StrOpeningsOnProfile

@@ -14,59 +14,57 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimPrescribedTemperature(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimPrescribedTemperature
-                | 
-                | Represents the Prescribed Temperature object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimPrescribedTemperature as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyPrescribedTemperature As SimPrescribedTemperature
-                |      Set MyPrescribedTemperature = MyFeatures.Add("SimPrescribedTemperature")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimPrescribedTemperature
-                |     named "Prescribed Temperature.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyPrescribedTemperature As SimPrescribedTemperature
-                |      Set MyPrescribedTemperature = MyFeatures.Item("Prescribed Temperature.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a
-                |     SimPrescribedTemperature as following:
-                | 
-                |      ...
-                |      myPrescribedTemperature = myFeatures.Add("SimPrescribedTemperature")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a
-                |     SimPrescribedTemperature named "Prescribed Temperature.1" as
-                |     following:
-                | 
-                |      ...
-                |      myPrescribedTemperature = myFeatures.Item("Prescribed Temperature.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimPrescribedTemperature
+                
+                Represents the Prescribed Temperature object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimPrescribedTemperature as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyPrescribedTemperature As SimPrescribedTemperature
+                     Set MyPrescribedTemperature = MyFeatures.Add("SimPrescribedTemperature")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimPrescribedTemperature
+                    named "Prescribed Temperature.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyPrescribedTemperature As SimPrescribedTemperature
+                     Set MyPrescribedTemperature = MyFeatures.Item("Prescribed Temperature.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a
+                    SimPrescribedTemperature as following:
+                
+                     ...
+                     myPrescribedTemperature = myFeatures.Add("SimPrescribedTemperature")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a
+                    SimPrescribedTemperature named "Prescribed Temperature.1" as
+                    following:
+                
+                     ...
+                     myPrescribedTemperature = myFeatures.Item("Prescribed Temperature.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -78,14 +76,13 @@ class SimPrescribedTemperature(AnyObject):
     def absolute_exterior_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AbsoluteExteriorTolerance() As double
-                |     Returns or sets the Absolute Exterior Tolerance. This is the value that
-                |     nodes of the structural model can be outside the region of the elements of the
-                |     thermal model. If this value is zero, the value for the relative exterior
-                |     tolerance is used.
+                Property AbsoluteExteriorTolerance() As double
+                    Returns or sets the Absolute Exterior Tolerance. This is the value that
+                    nodes of the structural model can be outside the region of the elements of the
+                    thermal model. If this value is zero, the value for the relative exterior
+                    tolerance is used.
 
         :return: float
         """
@@ -104,11 +101,10 @@ class SimPrescribedTemperature(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -127,11 +123,10 @@ class SimPrescribedTemperature(AnyObject):
     def analysis_case(self) -> SimThermalAnalysisCase:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AnalysisCase() As SimThermalAnalysisCase
-                |     Returns or sets the Thermal Analysis Case.
+                Property AnalysisCase() As SimThermalAnalysisCase
+                    Returns or sets the Thermal Analysis Case.
 
         :return: SimThermalAnalysisCase
         """
@@ -150,11 +145,10 @@ class SimPrescribedTemperature(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureHistory() As SimFeatureHistory (Read Only)
-                |     Returns the feature history.
+                Property FeatureHistory() As SimFeatureHistory (Read Only)
+                    Returns the feature history.
 
         :return: SimFeatureHistory
         """
@@ -165,30 +159,29 @@ class SimPrescribedTemperature(AnyObject):
     def from_step_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FromStepFlag() As boolean
-                |     Returns or sets the flag for an initial temperature from a
-                |     SimThermalAnalysisCase and SimStep. This example demonstrates how to use the
-                |     SimPrescribedTemperature object with a temperature field.
-                | 
-                |      Dim MyPrescribedTemperature As SimPrescribedTemperature
-                |      Dim MyThermalAnalysisCase As SimThermalAnalysisCase
-                |      Dim MySteadyStateHeatTransferStep As
-                |      SimSteadyStateHeatTransferStep
-                |      Dim MyStructuralFeatureStateExtension As
-                |      SimFeatureStateExtension
-                |      ...
-                |      Dim MyExtension As SimPrescribedTemperatureExtension
-                |      MyPrescribedTemperature.FromStepFlag = True
-                |      MyPrescribedTemperature.AnalysisCase = MyThermalAnalysisCase
-                |      MyPrescribedTemperature.AbsoluteExteriorTolerance = 0.0
-                |      MyPrescribedTemperature.RelativeExteriorTolerance = 0.1
-                |      MyStructuralFeatureStateExtension.BeginningStep = MySteadyStateHeatTransferStep
-                |      MyStructuralFeatureStateExtension.BeginningIncrement = 1
-                |      MyStructuralFeatureStateExtension.EndingStep = MySteadyStateHeatTransferStep
-                |      MyStructuralFeatureStateExtension.EndingIncrement = 202399
+                Property FromStepFlag() As boolean
+                    Returns or sets the flag for an initial temperature from a
+                    SimThermalAnalysisCase and SimStep. This example demonstrates how to use the
+                    SimPrescribedTemperature object with a temperature field.
+                
+                     Dim MyPrescribedTemperature As SimPrescribedTemperature
+                     Dim MyThermalAnalysisCase As SimThermalAnalysisCase
+                     Dim MySteadyStateHeatTransferStep As
+                     SimSteadyStateHeatTransferStep
+                     Dim MyStructuralFeatureStateExtension As
+                     SimFeatureStateExtension
+                     ...
+                     Dim MyExtension As SimPrescribedTemperatureExtension
+                     MyPrescribedTemperature.FromStepFlag = True
+                     MyPrescribedTemperature.AnalysisCase = MyThermalAnalysisCase
+                     MyPrescribedTemperature.AbsoluteExteriorTolerance = 0.0
+                     MyPrescribedTemperature.RelativeExteriorTolerance = 0.1
+                     MyStructuralFeatureStateExtension.BeginningStep = MySteadyStateHeatTransferStep
+                     MyStructuralFeatureStateExtension.BeginningIncrement = 1
+                     MyStructuralFeatureStateExtension.EndingStep = MySteadyStateHeatTransferStep
+                     MyStructuralFeatureStateExtension.EndingIncrement = 202399
 
         :return: bool
         """
@@ -207,13 +200,12 @@ class SimPrescribedTemperature(AnyObject):
     def relative_exterior_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RelativeExteriorTolerance() As double
-                |     Returns or sets the Relative Exterior Tolerance. This is the fraction of
-                |     the average element size that nodes of the structural model can be outside the
-                |     region of the elements of the thermal model.
+                Property RelativeExteriorTolerance() As double
+                    Returns or sets the Relative Exterior Tolerance. This is the fraction of
+                    the average element size that nodes of the structural model can be outside the
+                    region of the elements of the thermal model.
 
         :return: float
         """
@@ -232,11 +224,10 @@ class SimPrescribedTemperature(AnyObject):
     def scalar_field(self) -> SimScalarField:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ScalarField() As SimScalarField (Read Only)
-                |     Returns the scalar field.
+                Property ScalarField() As SimScalarField (Read Only)
+                    Returns the scalar field.
 
         :return: SimScalarField
         """
@@ -247,12 +238,11 @@ class SimPrescribedTemperature(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. See SimFeatures.GetSpecTreeCategory for usage.
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. See SimFeatures.GetSpecTreeCategory for usage.
 
         :return: str
         """
@@ -263,11 +253,10 @@ class SimPrescribedTemperature(AnyObject):
     def uniform_magnitude(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UniformMagnitude() As double
-                |     Temperature value. Quantity: TEMPRTRE, units: Kdeg
+                Property UniformMagnitude() As double
+                    Temperature value. Quantity: TEMPRTRE, units: Kdeg
 
         :return: float
         """
@@ -286,14 +275,13 @@ class SimPrescribedTemperature(AnyObject):
     def uniform_magnitude_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UniformMagnitudeFlag() As boolean (Read Only)
-                |     Returns or sets the flag that determines if the magnitude is
-                |     uniform.
-                |     TRUE: the magnitude is uniform.
-                |     FALSE: the magnitude is not uniform. 
+                Property UniformMagnitudeFlag() As boolean (Read Only)
+                    Returns or sets the flag that determines if the magnitude is
+                    uniform.
+                    TRUE: the magnitude is uniform.
+                    FALSE: the magnitude is not uniform. 
 
         :return: bool
         """
@@ -301,4 +289,4 @@ class SimPrescribedTemperature(AnyObject):
         return self.com_object.UniformMagnitudeFlag
 
     def __repr__(self):
-        return f'SimPrescribedTemperature(name="{ self.name }")'
+        return f'SimPrescribedTemperature(name="{self.name}")'

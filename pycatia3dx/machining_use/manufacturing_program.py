@@ -13,26 +13,24 @@ from pycatia3dx.machining_use.manufacturing_activity import ManufacturingActivit
 
 
 class ManufacturingProgram(ManufacturingActivity):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     MachiningUseItf.ManufacturingActivity
-                |                         ManufacturingProgram
-                | 
-                | Interface dedicated to Program Object.
-                | Role: This interface offers services to initialize the current compatible tool
-                | in Program for Activity object. It also allows to add and remove Manufacturing
-                | Operations.
-                | It is implemented on ManufacturingProgram object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    MachiningUseItf.ManufacturingActivity
+                                        ManufacturingProgram
+                
+                Interface dedicated to Program Object.
+                Role: This interface offers services to initialize the current compatible tool
+                in Program for Activity object. It also allows to add and remove Manufacturing
+                Operations.
+                It is implemented on ManufacturingProgram object.
     
     """
 
@@ -43,27 +41,26 @@ class ManufacturingProgram(ManufacturingActivity):
     def append_operation(self, i_type: str, i_auto_sequence: bool) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func AppendOperation(CATBSTR iType,boolean iAutoSequence) As
-                | AnyObject
-                | 
-                |     Deprecated:
-                |         R424 Use AppendOperation without iAutoSequence Inserts a new
-                |         Manufacturing Operation at the begining of the program.
-                |         
-                |     Parameters:
-                | 
-                |         iType
-                |             The type of Manufacturing Operation to create
-                |             ("Drilling","Pocketing","ToolChange", ...) 
-                |         iAutoSequence
-                |             To determine if thez created Operation is sequenced in the program
-                |             or not. if AutoSequence is TRUE, the new operation will be sequenced in the
-                |             Program, otherwise it will not. 
-                |         oActivity
-                |             The created Manufacturing Operation.
+                Func AppendOperation(CATBSTR iType,boolean iAutoSequence) As
+                AnyObject
+                
+                    Deprecated:
+                        R424 Use AppendOperation without iAutoSequence Inserts a new
+                        Manufacturing Operation at the begining of the program.
+                        
+                    Parameters:
+                
+                        iType
+                            The type of Manufacturing Operation to create
+                            ("Drilling","Pocketing","ToolChange", ...) 
+                        iAutoSequence
+                            To determine if thez created Operation is sequenced in the program
+                            or not. if AutoSequence is TRUE, the new operation will be sequenced in the
+                            Program, otherwise it will not. 
+                        oActivity
+                            The created Manufacturing Operation.
 
         :param str i_type:
         :param bool i_auto_sequence:
@@ -74,20 +71,19 @@ class ManufacturingProgram(ManufacturingActivity):
     def append_operation2(self, i_type: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func AppendOperation2(CATBSTR iType) As AnyObject
-                |     Inserts a new Manufacturing Operation at the begining of the
-                |     program.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The type of Manufacturing Operation to create
-                |             ("Drilling","Pocketing","ToolChange", ...) 
-                |         oActivity
-                |             The created Manufacturing Operation.
+                Func AppendOperation2(CATBSTR iType) As AnyObject
+                    Inserts a new Manufacturing Operation at the begining of the
+                    program.
+                
+                    Parameters:
+                
+                        iType
+                            The type of Manufacturing Operation to create
+                            ("Drilling","Pocketing","ToolChange", ...) 
+                        oActivity
+                            The created Manufacturing Operation.
 
         :param str i_type:
         :return: AnyObject
@@ -97,16 +93,15 @@ class ManufacturingProgram(ManufacturingActivity):
     def get_operations(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetOperations() As CATSafeArrayVariant
-                |     Retrieves Operations of Program
-                | 
-                |     Parameters:
-                | 
-                |         oListOperations
-                |             List of Operations
+                Func GetOperations() As CATSafeArrayVariant
+                    Retrieves Operations of Program
+                
+                    Parameters:
+                
+                        oListOperations
+                            List of Operations
 
         :return: tuple
         """
@@ -115,16 +110,15 @@ class ManufacturingProgram(ManufacturingActivity):
     def get_output_nc_rep(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetOutputNCRep() As AnyObject
-                |     Retrieve NC Representation
-                | 
-                |     Parameters:
-                | 
-                |         ospNCRep
-                |             [out] NC Representation (@see DELIMfgNCRep)
+                Func GetOutputNCRep() As AnyObject
+                    Retrieve NC Representation
+                
+                    Parameters:
+                
+                        ospNCRep
+                            [out] NC Representation (@see DELIMfgNCRep)
 
         :return: AnyObject
         """
@@ -133,23 +127,22 @@ class ManufacturingProgram(ManufacturingActivity):
     def move_operation(self, i_reference_operation: AnyObject, i_operation_to_move: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub MoveOperation(AnyObject iReferenceOperation,AnyObject
-                | iOperationToMove)
-                |     Moves an existing Manufacturing Operation before a reference Operation. The
-                |     operation to be moved must belong to the program, but not the reference
-                |     operation. In this last case, the operation to move also changes its owner
-                |     program.
-                | 
-                |     Parameters:
-                | 
-                |         iReferenceActivity
-                |             The reference Manufacturing Operation before which the operation is
-                |             moved. 
-                |         iActivityToMove
-                |             The Manufacturing Operation to move.
+                Sub MoveOperation(AnyObject iReferenceOperation,AnyObject
+                iOperationToMove)
+                    Moves an existing Manufacturing Operation before a reference Operation. The
+                    operation to be moved must belong to the program, but not the reference
+                    operation. In this last case, the operation to move also changes its owner
+                    program.
+                
+                    Parameters:
+                
+                        iReferenceActivity
+                            The reference Manufacturing Operation before which the operation is
+                            moved. 
+                        iActivityToMove
+                            The Manufacturing Operation to move.
 
         :param AnyObject i_reference_operation:
         :param AnyObject i_operation_to_move:
@@ -160,16 +153,15 @@ class ManufacturingProgram(ManufacturingActivity):
     def set_current_authorized_tool(self, i_activity: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCurrentAuthorizedTool(AnyObject iActivity)
-                |     Writes the current authorized tool.
-                | 
-                |     Parameters:
-                | 
-                |         iActivity
-                |             The Activity
+                Sub SetCurrentAuthorizedTool(AnyObject iActivity)
+                    Writes the current authorized tool.
+                
+                    Parameters:
+                
+                        iActivity
+                            The Activity
 
         :param AnyObject i_activity:
         :return: None
@@ -177,4 +169,4 @@ class ManufacturingProgram(ManufacturingActivity):
         return self.com_object.SetCurrentAuthorizedTool(i_activity.com_object)
 
     def __repr__(self):
-        return f'ManufacturingProgram(name="{ self.name }")'
+        return f'ManufacturingProgram(name="{self.name}")'

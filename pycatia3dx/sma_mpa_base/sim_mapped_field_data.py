@@ -15,21 +15,19 @@ from pycatia3dx.sma_mpa_base.sim_table_column import SimTableColumn
 
 
 class SimMappedFieldData(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimMappedFieldData
-                | 
-                | Represents the Mapped Field Data object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimMappedFieldData
+                
+                Represents the Mapped Field Data object.
     
     """
 
@@ -41,11 +39,10 @@ class SimMappedFieldData(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the axis system.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the axis system.
 
         :return: SimAxisSystem
         """
@@ -56,13 +53,12 @@ class SimMappedFieldData(AnyObject):
     def boundary_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property BoundaryTolerance() As double
-                |     Returns or sets the boundary tolerance. If tolerance type is set to
-                |     Relative: Quantity: Real, units: none If tolerance type is set to Absolute:
-                |     Quantity: LENGTH, units: m
+                Property BoundaryTolerance() As double
+                    Returns or sets the boundary tolerance. If tolerance type is set to
+                    Relative: Quantity: Real, units: none If tolerance type is set to Absolute:
+                    Quantity: LENGTH, units: m
 
         :return: float
         """
@@ -81,11 +77,10 @@ class SimMappedFieldData(AnyObject):
     def data_source_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DataSourceType() As SimMappedFieldDataDataSourceType
-                |     Returns or sets the data source type.
+                Property DataSourceType() As SimMappedFieldDataDataSourceType
+                    Returns or sets the data source type.
 
         :return: int
         """
@@ -104,13 +99,12 @@ class SimMappedFieldData(AnyObject):
     def negative_normal_distance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NegativeNormalDistance() As double
-                |     Returns or sets the negative normal distance. If tolerance type is set to
-                |     Relative: Quantity: Real, units: none If tolerance type is set to Absolute:
-                |     Quantity: LENGTH, units: m
+                Property NegativeNormalDistance() As double
+                    Returns or sets the negative normal distance. If tolerance type is set to
+                    Relative: Quantity: Real, units: none If tolerance type is set to Absolute:
+                    Quantity: LENGTH, units: m
 
         :return: float
         """
@@ -129,13 +123,12 @@ class SimMappedFieldData(AnyObject):
     def neighborhood_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NeighborhoodTolerance() As double
-                |     Returns or sets the neighborhood tolerance. If tolerance type is set to
-                |     Relative: Quantity: Real, units: none If tolerance type is set to Absolute:
-                |     Quantity: LENGTH, units: m
+                Property NeighborhoodTolerance() As double
+                    Returns or sets the neighborhood tolerance. If tolerance type is set to
+                    Relative: Quantity: Real, units: none If tolerance type is set to Absolute:
+                    Quantity: LENGTH, units: m
 
         :return: float
         """
@@ -154,13 +147,12 @@ class SimMappedFieldData(AnyObject):
     def positive_normal_distance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PositiveNormalDistance() As double
-                |     Returns or sets the positive normal distance. If tolerance type is set to
-                |     Relative: Quantity: Real, units: none If tolerance type is set to Absolute:
-                |     Quantity: LENGTH, units: m
+                Property PositiveNormalDistance() As double
+                    Returns or sets the positive normal distance. If tolerance type is set to
+                    Relative: Quantity: Real, units: none If tolerance type is set to Absolute:
+                    Quantity: LENGTH, units: m
 
         :return: float
         """
@@ -179,11 +171,10 @@ class SimMappedFieldData(AnyObject):
     def table(self) -> SimTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Table() As SimTable (Read Only)
-                |     Returns the field data table.
+                Property Table() As SimTable (Read Only)
+                    Returns the field data table.
 
         :return: SimTable
         """
@@ -194,11 +185,10 @@ class SimMappedFieldData(AnyObject):
     def tolerance_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ToleranceType() As SimMappedFieldDataToleranceType
-                |     Returns or sets the tolerance type.
+                Property ToleranceType() As SimMappedFieldDataToleranceType
+                    Returns or sets the tolerance type.
 
         :return: int
         """
@@ -217,11 +207,10 @@ class SimMappedFieldData(AnyObject):
     def unmapped_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UnmappedValue() As double
-                |     Returns or sets the field value outside the mapped region.
+                Property UnmappedValue() As double
+                    Returns or sets the field value outside the mapped region.
 
         :return: float
         """
@@ -240,11 +229,10 @@ class SimMappedFieldData(AnyObject):
     def vpm_document(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property VPMDocument() As CATBaseDispatch
-                |     Returns or sets the VPM document.
+                Property VPMDocument() As CATBaseDispatch
+                    Returns or sets the VPM document.
 
         :return: AnyObject
         """
@@ -262,21 +250,20 @@ class SimMappedFieldData(AnyObject):
     def get_table_column(self, i_table_column_name: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTableColumn(SimMappedFieldDataTableColumn iTableColumnName) As
-                | SimTableColumn
-                |     Retrieves a specific column of the field data table. Only applicable when
-                |     the Data Source Type is set to Table.
-                | 
-                |     Parameters:
-                | 
-                |         iTableColumnName[in]
-                |             The table column name. 
-                | 
-                |     Returns:
-                |         The table column. 
+                Func GetTableColumn(SimMappedFieldDataTableColumn iTableColumnName) As
+                SimTableColumn
+                    Retrieves a specific column of the field data table. Only applicable when
+                    the Data Source Type is set to Table.
+                
+                    Parameters:
+                
+                        iTableColumnName[in]
+                            The table column name. 
+                
+                    Returns:
+                        The table column. 
 
         :param int i_table_column_name:
         :return: SimTableColumn
@@ -284,4 +271,4 @@ class SimMappedFieldData(AnyObject):
         return SimTableColumn(self.com_object.GetTableColumn(i_table_column_name))
 
     def __repr__(self):
-        return f'SimMappedFieldData(name="{ self.name }")'
+        return f'SimMappedFieldData(name="{self.name}")'

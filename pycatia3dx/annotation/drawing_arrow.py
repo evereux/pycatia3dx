@@ -14,18 +14,17 @@ from pycatia3dx.system.any_object import AnyObject
 class DrawingArrow(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DrawingArrow
-                | 
-                | Represents a drawing arrow in a drawing view.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DrawingArrow
+                
+                Represents a drawing arrow in a drawing view.
     
     """
 
@@ -37,17 +36,16 @@ class DrawingArrow(AnyObject):
     def head_symbol(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HeadSymbol() As CatSymbolType
-                |     Returns or sets symbol type of head side.
-                | 
-                |     Example:
-                |         This example retrieves the symbol type of head side on MyArrow drawing
-                |         arrow.
-                | 
-                |          oSymbol = MyArrow.HeadSymbol
+                Property HeadSymbol() As CatSymbolType
+                    Returns or sets symbol type of head side.
+                
+                    Example:
+                        This example retrieves the symbol type of head side on MyArrow drawing
+                        arrow.
+                
+                         oSymbol = MyArrow.HeadSymbol
 
         :return: int
         """
@@ -66,17 +64,16 @@ class DrawingArrow(AnyObject):
     def head_target(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HeadTarget() As CATBaseDispatch
-                |     Returns or sets target element of head side.
-                | 
-                |     Example:
-                |         This example retrieves the target element of head side on MyArrow
-                |         drawing arrow.
-                | 
-                |          oTarget = MyArrow.HeadTarget
+                Property HeadTarget() As CATBaseDispatch
+                    Returns or sets target element of head side.
+                
+                    Example:
+                        This example retrieves the target element of head side on MyArrow
+                        drawing arrow.
+                
+                         oTarget = MyArrow.HeadTarget
 
         :return: AnyObject
         """
@@ -95,17 +92,16 @@ class DrawingArrow(AnyObject):
     def nb_interruption(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NbInterruption() As long (Read Only)
-                |     Returns the number of interruptions of arrow path.
-                | 
-                |     Example:
-                |         This example retrieves the number of interruptions on MyArrow drawing
-                |         arrow.
-                | 
-                |          oNbInterruption = MyArrow.NbInterruption
+                Property NbInterruption() As long (Read Only)
+                    Returns the number of interruptions of arrow path.
+                
+                    Example:
+                        This example retrieves the number of interruptions on MyArrow drawing
+                        arrow.
+                
+                         oNbInterruption = MyArrow.NbInterruption
 
         :return: int
         """
@@ -116,17 +112,16 @@ class DrawingArrow(AnyObject):
     def nb_point(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NbPoint() As long (Read Only)
-                |     Returns the number of points of arrow path.
-                | 
-                |     Example:
-                |         This example retrieves the number of points on MyArrow drawing
-                |         arrow.
-                | 
-                |          oNbPoint = MyArrow.NbPoint
+                Property NbPoint() As long (Read Only)
+                    Returns the number of points of arrow path.
+                
+                    Example:
+                        This example retrieves the number of points on MyArrow drawing
+                        arrow.
+                
+                         oNbPoint = MyArrow.NbPoint
 
         :return: int
         """
@@ -137,17 +132,16 @@ class DrawingArrow(AnyObject):
     def scale_on_extremities(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ScaleOnExtremities() As boolean
-                |     Returns or sets the scale on extremities mode.
-                | 
-                |     Example:
-                |         This example retrieves the target element of head side on MyArrow
-                |         drawing arrow.
-                | 
-                |          oScaleOnExtremities = MyArrow.ScaleOnExtremities
+                Property ScaleOnExtremities() As boolean
+                    Returns or sets the scale on extremities mode.
+                
+                    Example:
+                        This example retrieves the target element of head side on MyArrow
+                        drawing arrow.
+                
+                         oScaleOnExtremities = MyArrow.ScaleOnExtremities
 
         :return: bool
         """
@@ -166,17 +160,16 @@ class DrawingArrow(AnyObject):
     def tail_symbol(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TailSymbol() As CatSymbolType
-                |     Returns or sets symbol type of tail side.
-                | 
-                |     Example:
-                |         This example retrieves the symbol type of tail side on MyArrow drawing
-                |         arrow.
-                | 
-                |          oSymbol = MyArrow.TailSymbol
+                Property TailSymbol() As CatSymbolType
+                    Returns or sets symbol type of tail side.
+                
+                    Example:
+                        This example retrieves the symbol type of tail side on MyArrow drawing
+                        arrow.
+                
+                         oSymbol = MyArrow.TailSymbol
 
         :return: int
         """
@@ -195,17 +188,16 @@ class DrawingArrow(AnyObject):
     def tail_target(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TailTarget() As CATBaseDispatch
-                |     Returns or sets target element of tail side.
-                | 
-                |     Example:
-                |         This example retrieves the target element of tail side on MyArrow
-                |         drawing arrow.
-                | 
-                |          oTarget = MyArrow.TailTarget
+                Property TailTarget() As CATBaseDispatch
+                    Returns or sets target element of tail side.
+                
+                    Example:
+                        This example retrieves the target element of tail side on MyArrow
+                        drawing arrow.
+                
+                         oTarget = MyArrow.TailTarget
 
         :return: AnyObject
         """
@@ -224,32 +216,31 @@ class DrawingArrow(AnyObject):
                          i_second_point_y: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddInterruption(double iFirstPointX,double iFirstPointY,double
-                | iSecondPointX,double iSecondPointY)
-                |     Add an interruption to an arrow.
-                | 
-                |     Parameters:
-                | 
-                |         iFirstPointX
-                |             X coordinates of first point. 
-                |         iFirstPointY
-                |             Y coordinates of first point. 
-                |         iSecondPointX
-                |             X coordinates of second point. 
-                |         iSecondPointY
-                |             Y coordinates of second point. 
-                |         Example:
-                |             This example adds an interruption to MyArrow.
-                | 
-                |              iFirstPointX = 10.
-                |              iFirstPointY = 20.
-                |              iSecondPointX = 20.
-                |              iSecondPointY = 20.
-                |              MyArrow.AddInterruption iFirstPointX, iFirstPointY, iSecondPointX,
-                |              iSecondPointY
+                Sub AddInterruption(double iFirstPointX,double iFirstPointY,double
+                iSecondPointX,double iSecondPointY)
+                    Add an interruption to an arrow.
+                
+                    Parameters:
+                
+                        iFirstPointX
+                            X coordinates of first point. 
+                        iFirstPointY
+                            Y coordinates of first point. 
+                        iSecondPointX
+                            X coordinates of second point. 
+                        iSecondPointY
+                            Y coordinates of second point. 
+                        Example:
+                            This example adds an interruption to MyArrow.
+                
+                             iFirstPointX = 10.
+                             iFirstPointY = 20.
+                             iSecondPointX = 20.
+                             iSecondPointY = 20.
+                             MyArrow.AddInterruption iFirstPointX, iFirstPointY, iSecondPointX,
+                             iSecondPointY
 
         :param float i_first_point_x:
         :param float i_first_point_y:
@@ -262,28 +253,27 @@ class DrawingArrow(AnyObject):
     def add_point(self, i_num: int, i_x: float, i_y: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddPoint(long iNum,double iX,double iY)
-                |     Add a point to an arrow.
-                | 
-                |     Parameters:
-                | 
-                |         iNum
-                |             Point number. Point will be inserted at iNum+1 position.
-                |             
-                |         iX
-                |             X coordinates of point to add. 
-                |         iY
-                |             Y coordinates of point to add. 
-                |         Example:
-                |             This example adds a point to MyArrow.
-                | 
-                |              iNum = 1
-                |              iX = 10.
-                |              iY = 20.
-                |              MyArrow.AddPoint iNum, iX, iY
+                Sub AddPoint(long iNum,double iX,double iY)
+                    Add a point to an arrow.
+                
+                    Parameters:
+                
+                        iNum
+                            Point number. Point will be inserted at iNum+1 position.
+                            
+                        iX
+                            X coordinates of point to add. 
+                        iY
+                            Y coordinates of point to add. 
+                        Example:
+                            This example adds a point to MyArrow.
+                
+                             iNum = 1
+                             iX = 10.
+                             iY = 20.
+                             MyArrow.AddPoint iNum, iX, iY
 
         :param int i_num:
         :param float i_x:
@@ -295,25 +285,24 @@ class DrawingArrow(AnyObject):
     def get_interruptions(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetInterruptions(CATSafeArrayVariant oInterruptions) As
-                | long
-                |     Get arrow path.
-                | 
-                |     Parameters:
-                | 
-                |         oInterruptions
-                |             List of interruptions coordinates (X1,Y1,X2,Y2,.....Xn,Yn).
-                |             
-                | 
-                |     Returns:
-                |         oNbInterruptions Number of interruptions. 
-                |     Example:
-                |         This example gets interruptions of MyArrow path.
-                | 
-                |          oNbInterruptions = MyArrow.GetInterruptions(oInterruptions)
+                Func GetInterruptions(CATSafeArrayVariant oInterruptions) As
+                long
+                    Get arrow path.
+                
+                    Parameters:
+                
+                        oInterruptions
+                            List of interruptions coordinates (X1,Y1,X2,Y2,.....Xn,Yn).
+                            
+                
+                    Returns:
+                        oNbInterruptions Number of interruptions. 
+                    Example:
+                        This example gets interruptions of MyArrow path.
+                
+                         oNbInterruptions = MyArrow.GetInterruptions(oInterruptions)
 
         :return: tuple
         """
@@ -338,25 +327,24 @@ class DrawingArrow(AnyObject):
     def get_point(self, i_num: int, o_x: float, o_y: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetPoint(long iNum,double oX,double oY)
-                |     Get arrow point coordinates.
-                | 
-                |     Parameters:
-                | 
-                |         iNum
-                |             Point number. 
-                |         oX
-                |             X coordinates of point. 
-                |         oY
-                |             Y coordinates of point. 
-                |         Example:
-                |             This example gets a point to MyArrow.
-                | 
-                |              iNum = 1
-                |              MyArrow.GetPoint(iNum, oX, oY)
+                Sub GetPoint(long iNum,double oX,double oY)
+                    Get arrow point coordinates.
+                
+                    Parameters:
+                
+                        iNum
+                            Point number. 
+                        oX
+                            X coordinates of point. 
+                        oY
+                            Y coordinates of point. 
+                        Example:
+                            This example gets a point to MyArrow.
+                
+                             iNum = 1
+                             MyArrow.GetPoint(iNum, oX, oY)
 
         :param int i_num:
         :param float o_x:
@@ -368,24 +356,23 @@ class DrawingArrow(AnyObject):
     def get_points(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetPoints(CATSafeArrayVariant oPoints) As long
-                |     Get arrow path.
-                | 
-                |     Parameters:
-                | 
-                |         oPoints
-                |             List of points coordinates (X1,Y1,X2,Y2,.....Xn,Yn).
-                |             
-                | 
-                |     Returns:
-                |         oNbPoints Number of points. 
-                |     Example:
-                |         This example gets points of MyArrow path.
-                | 
-                |          oNbPoints = MyArrow.GetPoints(oPoints)
+                Func GetPoints(CATSafeArrayVariant oPoints) As long
+                    Get arrow path.
+                
+                    Parameters:
+                
+                        oPoints
+                            List of points coordinates (X1,Y1,X2,Y2,.....Xn,Yn).
+                            
+                
+                    Returns:
+                        oNbPoints Number of points. 
+                    Example:
+                        This example gets points of MyArrow path.
+                
+                         oNbPoints = MyArrow.GetPoints(oPoints)
 
         :return: tuple
         """
@@ -410,27 +397,26 @@ class DrawingArrow(AnyObject):
     def modify_point(self, i_num: int, i_x: float, i_y: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ModifyPoint(long iNum,double iX,double iY)
-                |     Modify a point of an Arrow.
-                | 
-                |     Parameters:
-                | 
-                |         iNum
-                |             Point number to modify. 
-                |         iX
-                |             X coordinates of new point. 
-                |         iY
-                |             Y coordinates of new point. 
-                |         Example:
-                |             This example modifys a point to MyArrow.
-                | 
-                |              iNum = 1
-                |              iX = -10.
-                |              iY = -20.
-                |              MyArrow.ModifyPoint iNum, iX, iY
+                Sub ModifyPoint(long iNum,double iX,double iY)
+                    Modify a point of an Arrow.
+                
+                    Parameters:
+                
+                        iNum
+                            Point number to modify. 
+                        iX
+                            X coordinates of new point. 
+                        iY
+                            Y coordinates of new point. 
+                        Example:
+                            This example modifys a point to MyArrow.
+                
+                             iNum = 1
+                             iX = -10.
+                             iY = -20.
+                             MyArrow.ModifyPoint iNum, iX, iY
 
         :param int i_num:
         :param float i_x:
@@ -442,23 +428,22 @@ class DrawingArrow(AnyObject):
     def remove_interruption(self, i_num: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveInterruption(long iNum)
-                |     Remove an interruption to an arrow.
-                | 
-                |     Parameters:
-                | 
-                |         iNum
-                |             Interruption number to delete. 
-                |             - If iNum equals to 0, all interruptions will be removed.
-                |             
-                |         Example:
-                |             This example removes an interruption from MyArrow.
-                | 
-                |              iNum = 2
-                |              MyArrow.RemoveInterruption iNum
+                Sub RemoveInterruption(long iNum)
+                    Remove an interruption to an arrow.
+                
+                    Parameters:
+                
+                        iNum
+                            Interruption number to delete. 
+                            - If iNum equals to 0, all interruptions will be removed.
+                            
+                        Example:
+                            This example removes an interruption from MyArrow.
+                
+                             iNum = 2
+                             MyArrow.RemoveInterruption iNum
 
         :param int i_num:
         :return: None
@@ -468,21 +453,20 @@ class DrawingArrow(AnyObject):
     def remove_point(self, i_num: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemovePoint(long iNum)
-                |     Remove a point from an arrow.
-                | 
-                |     Parameters:
-                | 
-                |         iNum
-                |             Point number to delete. 
-                |         Example:
-                |             This example removes a point from MyArrow.
-                | 
-                |              iNum = 2
-                |              MyArrow.RemovePoint iNum
+                Sub RemovePoint(long iNum)
+                    Remove a point from an arrow.
+                
+                    Parameters:
+                
+                        iNum
+                            Point number to delete. 
+                        Example:
+                            This example removes a point from MyArrow.
+                
+                             iNum = 2
+                             MyArrow.RemovePoint iNum
 
         :param int i_num:
         :return: None

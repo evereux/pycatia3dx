@@ -17,18 +17,17 @@ from pycatia3dx.types.general import CATVariant
 class SrmProxyProfiles(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SrmProxyProfiles
-                | 
-                | Object for SrmProxyProfiles
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SrmProxyProfiles
+                
+                Object for SrmProxyProfiles
     
     """
 
@@ -39,28 +38,27 @@ class SrmProxyProfiles(Collection):
     def item(self, i_index: CATVariant) -> SrmProxyProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As SrmProxyProfile
-                |     Retrieves a SrmProxyProfile
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of SrmProxyProfile 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves  the first item from the list of
-                |              SrmProxyProfiles.
-                |              
-                | 
-                |               Dim ObjSrmProxyProfiles As SrmProxyProfiles
-                |               ObjSrmProxyProfiles = ObjSrmProxyPanel.GetProfileProxies(1)
-                |               Dim ObjSrmProxyProfile As SrmProxyProfile
-                |               Set ObjSrmProxyProfile = ObjSrmProxyProfiles.Item(1)
+                Func Item(CATVariant iIndex) As SrmProxyProfile
+                    Retrieves a SrmProxyProfile
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of SrmProxyProfile 
+                
+                    Example:
+                
+                
+                             This example retrieves  the first item from the list of
+                             SrmProxyProfiles.
+                             
+                
+                              Dim ObjSrmProxyProfiles As SrmProxyProfiles
+                              ObjSrmProxyProfiles = ObjSrmProxyPanel.GetProfileProxies(1)
+                              Dim ObjSrmProxyProfile As SrmProxyProfile
+                              Set ObjSrmProxyProfile = ObjSrmProxyProfiles.Item(1)
 
         :param CATVariant i_index:
         :return: SrmProxyProfile

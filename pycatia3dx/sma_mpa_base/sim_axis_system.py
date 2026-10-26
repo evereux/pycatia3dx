@@ -13,21 +13,19 @@ from pycatia3dx.sma_mpa_base.sim_math_axis import SimMathAxis
 
 
 class SimAxisSystem(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimAxisSystem
-                | 
-                | Represents the Axis System object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimAxisSystem
+                
+                Represents the Axis System object.
     
     """
 
@@ -39,11 +37,10 @@ class SimAxisSystem(AnyObject):
     def axis_system(self) -> SimMathAxis:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimMathAxis
-                |     Returns or sets the axis system.
+                Property AxisSystem() As SimMathAxis
+                    Returns or sets the axis system.
 
         :return: SimMathAxis
         """
@@ -62,11 +59,10 @@ class SimAxisSystem(AnyObject):
     def coordinate_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CoordinateType() As SimAxisSystemCoordinateType
-                |     Returns or sets the type of axis being used.
+                Property CoordinateType() As SimAxisSystemCoordinateType
+                    Returns or sets the type of axis being used.
 
         :return: int
         """
@@ -85,11 +81,10 @@ class SimAxisSystem(AnyObject):
     def definition_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DefinitionMode() As SimAxisSystemDefinitionMode
-                |     Returns or sets the axis definition mode.
+                Property DefinitionMode() As SimAxisSystemDefinitionMode
+                    Returns or sets the axis definition mode.
 
         :return: int
         """
@@ -108,12 +103,11 @@ class SimAxisSystem(AnyObject):
     def local_axis_system(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LocalAxisSystem(AnyObject iAxis) (Write Only)
-                |     Sets the axis system. This method will fail in case the axis system
-                |     definition mode is not SimAxisSystemLocal. 
+                Property LocalAxisSystem(AnyObject iAxis) (Write Only)
+                    Sets the axis system. This method will fail in case the axis system
+                    definition mode is not SimAxisSystemLocal. 
 
         :return: bool
         """
@@ -129,4 +123,4 @@ class SimAxisSystem(AnyObject):
         self.com_object.LocalAxisSystem = value
 
     def __repr__(self):
-        return f'SimAxisSystem(name="{ self.name }")'
+        return f'SimAxisSystem(name="{self.name}")'

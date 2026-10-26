@@ -14,23 +14,22 @@ from pycatia3dx.system.any_object import AnyObject
 class DPCOperation(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DPCOperation
-                | 
-                | Represents a user operation.
-                | Role: A User Operation is a set of tasks performed on a technological object.
-                | It can be V6 command, CAA command, VBA command, external application or
-                | operation defined into the DPC product. An operation contains a set of
-                | variables: the inputs entered by the user and the outputs produced by the
-                | operation.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DPCOperation
+                
+                Represents a user operation.
+                Role: A User Operation is a set of tasks performed on a technological object.
+                It can be V6 command, CAA command, VBA command, external application or
+                operation defined into the DPC product. An operation contains a set of
+                variables: the inputs entered by the user and the outputs produced by the
+                operation.
     
     """
 

@@ -14,34 +14,33 @@ from pycatia3dx.system.any_object import AnyObject
 class SimResultsStep(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimResultsStep
-                | 
-                | Represents the results step and can be used to access the data in the
-                | case.
-                | Example:
-                | 
-                |  Given a SimResultsAnalysisCase object, you can create a results step object as
-                |  following. 
-                |  The index starts from 1.
-                |  
-                | 
-                |  Dim oResultsSteps As SimResultsSteps
-                |  Set oResultsSteps = oResultsAnalysisCase.ResultsSteps
-                |  Dim oResultsStep As SimResultsStep
-                |  Set oResultsStep = oResultsSteps.Item(1)
-                |  
-                | 
-                | See also:
-                |     SimResultsAnalysisCase
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimResultsStep
+                
+                Represents the results step and can be used to access the data in the
+                case.
+                Example:
+                
+                 Given a SimResultsAnalysisCase object, you can create a results step object as
+                 following. 
+                 The index starts from 1.
+                 
+                
+                 Dim oResultsSteps As SimResultsSteps
+                 Set oResultsSteps = oResultsAnalysisCase.ResultsSteps
+                 Dim oResultsStep As SimResultsStep
+                 Set oResultsStep = oResultsSteps.Item(1)
+                 
+                
+                See also:
+                    SimResultsAnalysisCase
     
     """
 
@@ -52,24 +51,23 @@ class SimResultsStep(AnyObject):
     def get_available_fields(self, inb_frame_index: float, ie_source: int, ocs_variables: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetAvailableFields(double inbFrameIndex,SimResultsSource
-                | ieSource,CATSafeArrayVariant ocsVariables)
-                |     Returns the list of variables names for field, history in the
-                |     step.
-                | 
-                |     Parameters:
-                | 
-                |         inbFrameIndex
-                |             Specify the frame index for which the variables are to be retrieved. If inbFrameIndex = -1, all the frames will be considered. 
-                |         ieSource
-                |             Specify the results type depending on which the variables will be
-                |             returned. For e.g. History, Field etc. Refer the SMAIAMpaResultsSource enum
-                |             class for all the available options. 
-                |         ocsVariables
-                |             List variable names. For e.g. "U", "AT","ALLAE" etc.
+                Sub GetAvailableFields(double inbFrameIndex,SimResultsSource
+                ieSource,CATSafeArrayVariant ocsVariables)
+                    Returns the list of variables names for field, history in the
+                    step.
+                
+                    Parameters:
+                
+                        inbFrameIndex
+                            Specify the frame index for which the variables are to be retrieved. If inbFrameIndex = -1, all the frames will be considered. 
+                        ieSource
+                            Specify the results type depending on which the variables will be
+                            returned. For e.g. History, Field etc. Refer the SMAIAMpaResultsSource enum
+                            class for all the available options. 
+                        ocsVariables
+                            List variable names. For e.g. "U", "AT","ALLAE" etc.
 
         :param float inb_frame_index:
         :param int ie_source:
@@ -81,20 +79,19 @@ class SimResultsStep(AnyObject):
     def get_frames_data(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetFramesData(CATSafeArrayVariant olfFrameValues,long
-                | oeResultsStepDomain)
-                |     Retrieves the frames data.
+                Sub GetFramesData(CATSafeArrayVariant olfFrameValues,long
+                oeResultsStepDomain)
+                    Retrieves the frames data.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         olfFrameValues
-                |             The values for each frame in this step
-                |         oeResultsStepDomain
-                |             Enum for what these values represent i.e. TIME, FREQUENCY, MODAL,
-                |             etc.
+                        olfFrameValues
+                            The values for each frame in this step
+                        oeResultsStepDomain
+                            Enum for what these values represent i.e. TIME, FREQUENCY, MODAL,
+                            etc.
 
         :return: tuple
         """
@@ -120,31 +117,30 @@ class SimResultsStep(AnyObject):
                                             o_nb_subregions_in_regions: tuple, ocs_subregions: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetHistoryRegionsAndSubRegions(CATBSTR icsVariable,CATSafeArrayVariant
-                | ocsRegionNames,CATSafeArrayVariant oNbSubregionsInRegions,CATSafeArrayVariant
-                | ocsSubregions)
-                |     Retrieves the list of region and subregion information for the given
-                |     history variable. For whole model, the size of region and sub-region names will
-                |     be zero. This infroamtion can be used while creating history plots the support
-                |     information.
-                | 
-                |     Parameters:
-                | 
-                |         icsVariable
-                |             Name of the variable for which the region information is needed.
-                |             
-                |         ocsRegionNames
-                |             List of region names. 
-                |         oNbSubregionsInRegions
-                |             Number of sub-regions in a region. If there is no sub-region, the
-                |             value will be zero. For e.g. the specified variable has 2 regions, where the
-                |             first region has 4 sub-regions, 2nd region does not have any sub-region, then
-                |             the array values will be [4,0]. 
-                |         ocsSubregions
-                |             List of sub-region names.
+                Sub GetHistoryRegionsAndSubRegions(CATBSTR icsVariable,CATSafeArrayVariant
+                ocsRegionNames,CATSafeArrayVariant oNbSubregionsInRegions,CATSafeArrayVariant
+                ocsSubregions)
+                    Retrieves the list of region and subregion information for the given
+                    history variable. For whole model, the size of region and sub-region names will
+                    be zero. This infroamtion can be used while creating history plots the support
+                    information.
+                
+                    Parameters:
+                
+                        icsVariable
+                            Name of the variable for which the region information is needed.
+                            
+                        ocsRegionNames
+                            List of region names. 
+                        oNbSubregionsInRegions
+                            Number of sub-regions in a region. If there is no sub-region, the
+                            value will be zero. For e.g. the specified variable has 2 regions, where the
+                            first region has 4 sub-regions, 2nd region does not have any sub-region, then
+                            the array values will be [4,0]. 
+                        ocsSubregions
+                            List of sub-region names.
 
         :param str ics_variable:
         :param tuple ocs_region_names:
@@ -158,21 +154,20 @@ class SimResultsStep(AnyObject):
     def get_identifier(self, ocs_step_id: str, ocs_step_name: str, ocs_step_description: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetIdentifier(CATBSTR ocsStepID,CATBSTR ocsStepName,CATBSTR
-                | ocsStepDescription)
-                |     Retrieves the step identifier.
-                | 
-                |     Parameters:
-                | 
-                |         ocsStepID
-                |             The persistent ID for this results step 
-                |         ocsStepName
-                |             The step name. 
-                |         ocsStepDescription
-                |             The step description.
+                Sub GetIdentifier(CATBSTR ocsStepID,CATBSTR ocsStepName,CATBSTR
+                ocsStepDescription)
+                    Retrieves the step identifier.
+                
+                    Parameters:
+                
+                        ocsStepID
+                            The persistent ID for this results step 
+                        ocsStepName
+                            The step name. 
+                        ocsStepDescription
+                            The step description.
 
         :param str ocs_step_id:
         :param str ocs_step_name:
@@ -184,17 +179,16 @@ class SimResultsStep(AnyObject):
     def get_load_cases(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetLoadCases(CATSafeArrayVariant olnLoadCaseIndicies)
-                |     Retrieves the load case indices.
+                Sub GetLoadCases(CATSafeArrayVariant olnLoadCaseIndicies)
+                    Retrieves the load case indices.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         olnLoadCaseIndicies
-                |             The load case indices are mapped according to the global load cases
-                |             that are retrieved through SMAIAMpaResultsManager::GetLoadCaseIdentifier.
+                        olnLoadCaseIndicies
+                            The load case indices are mapped according to the global load cases
+                            that are retrieved through SMAIAMpaResultsManager::GetLoadCaseIdentifier.
 
         :param tuple oln_load_case_indicies:
         :return: None

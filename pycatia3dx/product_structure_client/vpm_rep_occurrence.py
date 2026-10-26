@@ -14,18 +14,17 @@ from pycatia3dx.system.any_object import AnyObject
 class VPMRepOccurrence(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     VPMRepOccurrence
-                | 
-                | Interface representing a VPM Product Rep Occurrence.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    VPMRepOccurrence
+                
+                Interface representing a VPM Product Rep Occurrence.
     
     """
 
@@ -37,24 +36,23 @@ class VPMRepOccurrence(AnyObject):
     def related_rep_instance(self) -> VPMRepInstance:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RelatedRepInstance() As VPMRepInstance (Read Only)
-                |     Returns the VPM Rep Instance
-                |     Role : This method retrieves the corresponding VPM Product Rep Instance of the VPM Rep Occurrence
-                | 
-                |     Example:
-                | 
-                |           This example show you how to retrieve the VPM Product Rep Instance of
-                |           the
-                |           current VPM Rep Occurrence :
-                |           
-                | 
-                |              Dim repOccurrence As VPMRepOccurrence
-                |              ...
-                |              Dim repInstance As VPMRepInstance
-                |              Set repInstance = repOccurrence.RelatedRepInstance
+                Property RelatedRepInstance() As VPMRepInstance (Read Only)
+                    Returns the VPM Rep Instance
+                    Role : This method retrieves the corresponding VPM Product Rep Instance of the VPM Rep Occurrence
+                
+                    Example:
+                
+                          This example show you how to retrieve the VPM Product Rep Instance of
+                          the
+                          current VPM Rep Occurrence :
+                          
+                
+                             Dim repOccurrence As VPMRepOccurrence
+                             ...
+                             Dim repInstance As VPMRepInstance
+                             Set repInstance = repOccurrence.RelatedRepInstance
 
         :return: VPMRepInstance
         """

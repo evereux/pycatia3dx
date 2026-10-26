@@ -14,30 +14,28 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeConnect(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeConnect
-                | 
-                | Represents the hybrid shape connect curve object.
-                | Role: To access the data of the hybrid shape connect curve object. This data
-                | includes:
-                | 
-                |     The face to process
-                |     The connection parameter.
-                | 
-                | Use the HybridShapeFactory to create a HybridShapeConnect
-                | object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeConnect
+                
+                Represents the hybrid shape connect curve object.
+                Role: To access the data of the hybrid shape connect curve object. This data
+                includes:
+                
+                    The face to process
+                    The connection parameter.
+                
+                Use the HybridShapeFactory to create a HybridShapeConnect
+                object.
     
     """
 
@@ -49,12 +47,11 @@ class HybridShapeConnect(HybridShape):
     def base_curve(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property BaseCurve() As Reference
-                |     Returns or sets the base curve.
-                |     Do not use this property
+                Property BaseCurve() As Reference
+                    Returns or sets the base curve.
+                    Do not use this property
 
         :return: Reference
         """
@@ -73,23 +70,22 @@ class HybridShapeConnect(HybridShape):
     def connect_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ConnectType() As long
-                |     Returns or sets whether the connect curve is or should be created as
-                |     a"Normal Connect" or with a "Base Curve".
-                |     Legal values: 0 for the normal solution and 1 for base curve
-                |     solution.
-                | 
-                |     Example:
-                | 
-                |          This example sets the mode to create the connect
-                |          curve
-                |          hybConnectCurve with a base curve.
-                |          
-                | 
-                |          hybConnectCurve.Base Curve = 1
+                Property ConnectType() As long
+                    Returns or sets whether the connect curve is or should be created as
+                    a"Normal Connect" or with a "Base Curve".
+                    Legal values: 0 for the normal solution and 1 for base curve
+                    solution.
+                
+                    Example:
+                
+                         This example sets the mode to create the connect
+                         curve
+                         hybConnectCurve with a base curve.
+                         
+                
+                         hybConnectCurve.Base Curve = 1
 
         :return: int
         """
@@ -108,11 +104,10 @@ class HybridShapeConnect(HybridShape):
     def first_continuity(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property FirstContinuity() As long
-                |     Gets or Sets the continuity on first curve. FirstContinuity = 0 : Point continuity = 1 : Tangency continuity = 2 : Curvature continuity
+                Property FirstContinuity() As long
+                    Gets or Sets the continuity on first curve. FirstContinuity = 0 : Point continuity = 1 : Tangency continuity = 2 : Curvature continuity
 
         :return: int
         """
@@ -131,11 +126,10 @@ class HybridShapeConnect(HybridShape):
     def first_curve(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property FirstCurve() As Reference
-                |     Gets or Sets the first reference curve. new first reference curve
+                Property FirstCurve() As Reference
+                    Gets or Sets the first reference curve. new first reference curve
 
         :return: Reference
         """
@@ -154,11 +148,10 @@ class HybridShapeConnect(HybridShape):
     def first_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property FirstOrientation() As long
-                |     Gets or Sets the orientation of first curve FirstOrientation = 1 : SameOrientation. = -1 : InvertOrientation. = 2 : KoOrientation
+                Property FirstOrientation() As long
+                    Gets or Sets the orientation of first curve FirstOrientation = 1 : SameOrientation. = -1 : InvertOrientation. = 2 : KoOrientation
 
         :return: int
         """
@@ -177,11 +170,10 @@ class HybridShapeConnect(HybridShape):
     def first_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property FirstPoint() As Reference
-                |     Gets or Sets the first reference point. new first reference point
+                Property FirstPoint() As Reference
+                    Gets or Sets the first reference point. new first reference point
 
         :return: Reference
         """
@@ -200,22 +192,21 @@ class HybridShapeConnect(HybridShape):
     def first_tension(self) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property FirstTension() As RealParam (Read Only)
-                |     Returns the tension on the first curve making up the connect
-                |     curve.
-                | 
-                |     Example:
-                | 
-                |          This example retrieves the tension of the first curve that makes
-                |          up
-                |          the connect curve hybConnect.
-                |          
-                | 
-                |          Dim firstCurveTension As CATIARealParam
-                |          firstCurveTension = hybConnect.FirstTension
+                Property FirstTension() As RealParam (Read Only)
+                    Returns the tension on the first curve making up the connect
+                    curve.
+                
+                    Example:
+                
+                         This example retrieves the tension of the first curve that makes
+                         up
+                         the connect curve hybConnect.
+                         
+                
+                         Dim firstCurveTension As CATIARealParam
+                         firstCurveTension = hybConnect.FirstTension
 
         :return: RealParam
         """
@@ -226,11 +217,10 @@ class HybridShapeConnect(HybridShape):
     def second_continuity(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SecondContinuity() As long
-                |     Gets or Sets the continuity on second curve. SecondContinuity = 0 : Point continuity = 1 : Tangency continuity = 2 : Curvature continuity
+                Property SecondContinuity() As long
+                    Gets or Sets the continuity on second curve. SecondContinuity = 0 : Point continuity = 1 : Tangency continuity = 2 : Curvature continuity
 
         :return: int
         """
@@ -249,11 +239,10 @@ class HybridShapeConnect(HybridShape):
     def second_curve(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SecondCurve() As Reference
-                |     Gets or Sets the second reference curve. new second reference curve
+                Property SecondCurve() As Reference
+                    Gets or Sets the second reference curve. new second reference curve
 
         :return: Reference
         """
@@ -272,11 +261,10 @@ class HybridShapeConnect(HybridShape):
     def second_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SecondOrientation() As long
-                |     Gets or Sets the orientation of second curve SecondOrientation = 1 : SameOrientation. = -1 : InvertOrientation. = 2 : KoOrientation
+                Property SecondOrientation() As long
+                    Gets or Sets the orientation of second curve SecondOrientation = 1 : SameOrientation. = -1 : InvertOrientation. = 2 : KoOrientation
 
         :return: int
         """
@@ -295,11 +283,10 @@ class HybridShapeConnect(HybridShape):
     def second_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SecondPoint() As Reference
-                |     Gets or Sets the second reference point. new second reference point
+                Property SecondPoint() As Reference
+                    Gets or Sets the second reference point. new second reference point
 
         :return: Reference
         """
@@ -318,22 +305,21 @@ class HybridShapeConnect(HybridShape):
     def second_tension(self) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SecondTension() As RealParam (Read Only)
-                |     Returns the tension on the second curve making up the connect
-                |     curve.
-                | 
-                |     Example:
-                | 
-                |          This example retrieves the tension of the second curve that makes
-                |          up
-                |          the connect curve hybConnect.
-                |          
-                | 
-                |          Dim secondCurveTension As CATIARealParam
-                |          secondCurveTension = hybConnect.SecondTension
+                Property SecondTension() As RealParam (Read Only)
+                    Returns the tension on the second curve making up the connect
+                    curve.
+                
+                    Example:
+                
+                         This example retrieves the tension of the second curve that makes
+                         up
+                         the connect curve hybConnect.
+                         
+                
+                         Dim secondCurveTension As CATIARealParam
+                         secondCurveTension = hybConnect.SecondTension
 
         :return: RealParam
         """
@@ -344,11 +330,10 @@ class HybridShapeConnect(HybridShape):
     def trim(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Trim() As boolean
-                |     Gets or Sets the trim mode. Trim = FALSE : Connected curves are not trimmed. = TRUE : Connected curves are trimmed.
+                Property Trim() As boolean
+                    Gets or Sets the trim mode. Trim = FALSE : Connected curves are not trimmed. = TRUE : Connected curves are trimmed.
 
         :return: bool
         """
@@ -364,4 +349,4 @@ class HybridShapeConnect(HybridShape):
         self.hybrid_shape_connect.Trim = value
 
     def __repr__(self):
-        return f'HybridShapeConnect(name="{ self.name }")'
+        return f'HybridShapeConnect(name="{self.name}")'

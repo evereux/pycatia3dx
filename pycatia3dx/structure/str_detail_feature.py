@@ -15,23 +15,22 @@ from pycatia3dx.system.any_object import AnyObject
 class StrDetailFeature(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrDetailFeature
-                | 
-                | Object to manage the Endcut / Slot.
-                | There are two ways to initialize the attributes of a detailing feature: -
-                | Automatic way: use InitByName() to automatically set the type and parameters
-                | from the PRMTable - Manual way: use Type, FeatureName and SetParameters() to
-                | explicitly set the values.
-                | Role: To Manage Endcut / Slot.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrDetailFeature
+                
+                Object to manage the Endcut / Slot.
+                There are two ways to initialize the attributes of a detailing feature: -
+                Automatic way: use InitByName() to automatically set the type and parameters
+                from the PRMTable - Manual way: use Type, FeatureName and SetParameters() to
+                explicitly set the values.
+                Role: To Manage Endcut / Slot.
     
     """
 
@@ -43,19 +42,18 @@ class StrDetailFeature(AnyObject):
     def feature_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureName() As CATBSTR
-                |     Returns or Sets the name of this endcut/slot.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example sets FeatureName of the Slot/Endcut.
-                |              
-                | 
-                |              ObjStrDetailFeature.FeatureName = "RECT_UNI_WT"
+                Property FeatureName() As CATBSTR
+                    Returns or Sets the name of this endcut/slot.
+                
+                    Example:
+                
+                
+                             This example sets FeatureName of the Slot/Endcut.
+                             
+                
+                             ObjStrDetailFeature.FeatureName = "RECT_UNI_WT"
 
         :return: str
         """
@@ -74,25 +72,24 @@ class StrDetailFeature(AnyObject):
     def type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As CATBSTR
-                |     Returns or Sets the type of this endcut / slot. - Build In =>
-                |     EndcutName(ShortPoint/LongPoint/Weld/Miter/MetalToMetal) - Generic =>
-                |     EndcutType(Weld/Trim/Snip/...) EndcutName(Generic) - Slot =>
-                |     SlotName(Slot_Buld1/...)
-                |     SlotType(Rect/Boot/Gate/Bulb/Flar/...)
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves Type of the Slot/Endcut.
-                |              
-                | 
-                |              Dim ObjStrDetailFeature As StrDetailFeature
-                |              Set ObjStrDetailFeature = ObjStrSlot.StrDetailFeature
-                |              Type = ObjStrDetailFeature.Type
+                Property Type() As CATBSTR
+                    Returns or Sets the type of this endcut / slot. - Build In =>
+                    EndcutName(ShortPoint/LongPoint/Weld/Miter/MetalToMetal) - Generic =>
+                    EndcutType(Weld/Trim/Snip/...) EndcutName(Generic) - Slot =>
+                    SlotName(Slot_Buld1/...)
+                    SlotType(Rect/Boot/Gate/Bulb/Flar/...)
+                
+                    Example:
+                
+                
+                             This example retrieves Type of the Slot/Endcut.
+                             
+                
+                             Dim ObjStrDetailFeature As StrDetailFeature
+                             Set ObjStrDetailFeature = ObjStrSlot.StrDetailFeature
+                             Type = ObjStrDetailFeature.Type
 
         :return: str
         """
@@ -110,25 +107,24 @@ class StrDetailFeature(AnyObject):
     def get_coordinates(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetCoordinates(CATSafeArrayVariant oCoordinate)
-                |     Retrieves the location where the connection is
-                | 
-                |     Parameters:
-                | 
-                |         oCoordinate
-                |             Coordinate. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves location of connection.
-                |              
-                | 
-                |               Dim ConnCoord(3) As Variant
-                |               ObjStrDetailFeature.GetCoordinates ConnCoord
+                Sub GetCoordinates(CATSafeArrayVariant oCoordinate)
+                    Retrieves the location where the connection is
+                
+                    Parameters:
+                
+                        oCoordinate
+                            Coordinate. 
+                
+                    Example:
+                
+                
+                             This example retrieves location of connection.
+                             
+                
+                              Dim ConnCoord(3) As Variant
+                              ObjStrDetailFeature.GetCoordinates ConnCoord
 
         :return: tuple
         """
@@ -153,21 +149,20 @@ class StrDetailFeature(AnyObject):
     def get_parameters(self) -> StrParameters:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetParameters() As StrParameters
-                |     Returns the list of parameters of this endcut / slot.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves list of parameters set on Slot/Endcut while
-                |              creation.
-                |              
-                | 
-                |               Dim SlotParameters As StrParameters
-                |               Set SlotParameters = ObjStrDetailFeature.GetParameters
+                Func GetParameters() As StrParameters
+                    Returns the list of parameters of this endcut / slot.
+                
+                    Example:
+                
+                
+                             This example retrieves list of parameters set on Slot/Endcut while
+                             creation.
+                             
+                
+                              Dim SlotParameters As StrParameters
+                              Set SlotParameters = ObjStrDetailFeature.GetParameters
 
         :return: StrParameters
         """
@@ -176,18 +171,17 @@ class StrDetailFeature(AnyObject):
     def init_by_name(self, i_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub InitByName(CATBSTR iName)
-                |     This method is for automatic initialization of Slot / Endcut parameters The
-                |     name of the Slot / Endcut will be used to find the type and list of parameters
-                |     in the PRMTable.
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             Name.
+                Sub InitByName(CATBSTR iName)
+                    This method is for automatic initialization of Slot / Endcut parameters The
+                    name of the Slot / Endcut will be used to find the type and list of parameters
+                    in the PRMTable.
+                
+                    Parameters:
+                
+                        iName
+                            Name.
 
         :param str i_name:
         :return: None
@@ -197,55 +191,54 @@ class StrDetailFeature(AnyObject):
     def set_parameters(self, i_paramters: Parameters, i_param_role_list: tuple) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetParameters(Parameters iParamters,CATSafeArrayVariant
-                | iParamRoleList)
-                |     Sets the list of parameters of this endcut / slot. Those parameters are
-                |     copied and aggregated by this endcut / slot.
-                | 
-                |     Parameters:
-                | 
-                |         iParamters
-                |             List of parameters. 
-                |         iParamRoleList
-                |             List of names of parameters. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example sets parameters of the Slot.
-                |              
-                | 
-                |               'This will retrieve part parameters
-                |               Set ObjPartParameters = ObjPart.Parameters
-                |               'Aggregate parameters list under iObjSfdPanel 
-                |               Dim HB As AnyObject
-                |               Set HB = iObjSfdPanel
-                |               Set HBParameters = ObjPartParameters.SubList(HB, True)
-                |               'Create parameters  
-                |               Dim DBB As Dimension
-                |               Set DBB = HBParameters.CreateDimension("DBB", "LENGTH", "300")
-                |               Dim DR As Dimension
-                |               Set DR = HBParameters.CreateDimension("DR", "LENGTH", "200")
-                |               Dim DL As Dimension
-                |               Set DL = HBParameters.CreateDimension("DL", "LENGTH", "200")
-                |               Dim DTT As Dimension
-                |               Set DTT = HBParameters.CreateDimension("DTT", "LENGTH", "50")
-                |               'Create an array which will contain the role of each
-                |               parameter
-                |               Dim ParamRoles(3) As Variant
-                |               ParamRoles(1) = "DBB"
-                |               ParamRoles(2) = "DR"
-                |               ParamRoles(3) = "DL"
-                |               ParamRoles(0) = "DTT"
-                |               'Get reference of element which will be impacted by this
-                |               Slot/EndCut
-                |               Set RefSfdPanel = ObjPart.CreateReferenceFromObject(iObjSfdPanel)
-                |               'Set parameters
-                |               ObjStrDetailFeature.SetParameters HBParameters,
-                |               ParamRoles
+                Sub SetParameters(Parameters iParamters,CATSafeArrayVariant
+                iParamRoleList)
+                    Sets the list of parameters of this endcut / slot. Those parameters are
+                    copied and aggregated by this endcut / slot.
+                
+                    Parameters:
+                
+                        iParamters
+                            List of parameters. 
+                        iParamRoleList
+                            List of names of parameters. 
+                
+                    Example:
+                
+                
+                             This example sets parameters of the Slot.
+                             
+                
+                              'This will retrieve part parameters
+                              Set ObjPartParameters = ObjPart.Parameters
+                              'Aggregate parameters list under iObjSfdPanel 
+                              Dim HB As AnyObject
+                              Set HB = iObjSfdPanel
+                              Set HBParameters = ObjPartParameters.SubList(HB, True)
+                              'Create parameters  
+                              Dim DBB As Dimension
+                              Set DBB = HBParameters.CreateDimension("DBB", "LENGTH", "300")
+                              Dim DR As Dimension
+                              Set DR = HBParameters.CreateDimension("DR", "LENGTH", "200")
+                              Dim DL As Dimension
+                              Set DL = HBParameters.CreateDimension("DL", "LENGTH", "200")
+                              Dim DTT As Dimension
+                              Set DTT = HBParameters.CreateDimension("DTT", "LENGTH", "50")
+                              'Create an array which will contain the role of each
+                              parameter
+                              Dim ParamRoles(3) As Variant
+                              ParamRoles(1) = "DBB"
+                              ParamRoles(2) = "DR"
+                              ParamRoles(3) = "DL"
+                              ParamRoles(0) = "DTT"
+                              'Get reference of element which will be impacted by this
+                              Slot/EndCut
+                              Set RefSfdPanel = ObjPart.CreateReferenceFromObject(iObjSfdPanel)
+                              'Set parameters
+                              ObjStrDetailFeature.SetParameters HBParameters,
+                              ParamRoles
 
         :param Parameters i_paramters:
         :param tuple i_param_role_list:
@@ -256,11 +249,10 @@ class StrDetailFeature(AnyObject):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Update()
-                |     Update the connection coordinate and visulization for endcut / slot.
+                Sub Update()
+                    Update the connection coordinate and visulization for endcut / slot.
 
         :return: None
         """

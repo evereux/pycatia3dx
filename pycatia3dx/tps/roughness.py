@@ -13,22 +13,20 @@ from pycatia3dx.tps.tps_parallel_on_screen import TPSParallelOnScreen
 
 
 class Roughness(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Roughness
-                | 
-                | Interface to manage Roughness TPS.
-                | TPS for Technological Product Specifications.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Roughness
+                
+                Interface to manage Roughness TPS.
+                TPS for Technological Product Specifications.
     
     """
 
@@ -40,11 +38,10 @@ class Roughness(AnyObject):
     def applicability(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Applicability() As short
-                |     Retrieves or sets roughness applicability.
+                Property Applicability() As short
+                    Retrieves or sets roughness applicability.
 
         :return: int
         """
@@ -63,11 +60,10 @@ class Roughness(AnyObject):
     def obtention(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Obtention() As short
-                |     Retrieves or sets roughness obtention mode.
+                Property Obtention() As short
+                    Retrieves or sets roughness obtention mode.
 
         :return: int
         """
@@ -85,31 +81,30 @@ class Roughness(AnyObject):
     def field(self, i_index: int) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Field(short iIndex) As CATBSTR
-                |     Retrieves roughness field.
-                | 
-                |                                           Field 4
-                |                           Field 1     ------------------
-                |                                      /         (Field 9)
-                |                           Field 2   /
-                |                                    / (Field 8)  Field 5
-                |                               \\   /
-                |                     Field 3    \\ /    Field 7   Field 6
-                |      
-                |       Pour le champs 7 les lettres autorisees sont :
-                |       M, C, R, P, X, = ,L (symbole perpendicularite de la DSES)
-                |      
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             Field index, from 1 to 9 from V5R13 (Fields 8 and 9 added). from 1
-                |             to 7 before V5R13 
-                |         oField
-                |             The contain of the iIndex field.
+                Func Field(short iIndex) As CATBSTR
+                    Retrieves roughness field.
+                
+                                                          Field 4
+                                          Field 1     ------------------
+                                                     /         (Field 9)
+                                          Field 2   /
+                                                   / (Field 8)  Field 5
+                                              \\   /
+                                    Field 3    \\ /    Field 7   Field 6
+                     
+                      Pour le champs 7 les lettres autorisees sont :
+                      M, C, R, P, X, = ,L (symbole perpendicularite de la DSES)
+                     
+                
+                    Parameters:
+                
+                        iIndex
+                            Field index, from 1 to 9 from V5R13 (Fields 8 and 9 added). from 1
+                            to 7 before V5R13 
+                        oField
+                            The contain of the iIndex field.
 
         :param int i_index:
         :return: str
@@ -119,31 +114,30 @@ class Roughness(AnyObject):
     def set_field(self, i_index: int, i_field: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetField(short iIndex,CATBSTR iField)
-                |     Set roughness field.
-                | 
-                |                                           Field 4
-                |                           Field 1     ------------------
-                |                                      /         (Field 9)
-                |                           Field 2   /
-                |                                    / (Field 8)  Field 5
-                |                               \\   /
-                |                     Field 3    \\ /    Field 7   Field 6
-                |      
-                |       Pour le champs 7 les lettres autorisees sont :
-                |       M, C, R, P, X, = ,L (symbole perpendicularite de la DSES)
-                |      
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             Field index, from 1 to 9 from V5R13 (Fields 8 and 9 added). from 1
-                |             to 7 before V5R13 
-                |         iField
-                |             The contain of the iIndex field.
+                Sub SetField(short iIndex,CATBSTR iField)
+                    Set roughness field.
+                
+                                                          Field 4
+                                          Field 1     ------------------
+                                                     /         (Field 9)
+                                          Field 2   /
+                                                   / (Field 8)  Field 5
+                                              \\   /
+                                    Field 3    \\ /    Field 7   Field 6
+                     
+                      Pour le champs 7 les lettres autorisees sont :
+                      M, C, R, P, X, = ,L (symbole perpendicularite de la DSES)
+                     
+                
+                    Parameters:
+                
+                        iIndex
+                            Field index, from 1 to 9 from V5R13 (Fields 8 and 9 added). from 1
+                            to 7 before V5R13 
+                        iField
+                            The contain of the iIndex field.
 
         :param int i_index:
         :param str i_field:
@@ -154,15 +148,14 @@ class Roughness(AnyObject):
     def tps_parallel_on_screen(self) -> TPSParallelOnScreen:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func TPSParallelOnScreen() As TPSParallelOnScreen
-                |     Gets the annotation on TPSParallelOnScreen interface. 
+                Func TPSParallelOnScreen() As TPSParallelOnScreen
+                    Gets the annotation on TPSParallelOnScreen interface. 
 
         :return: TPSParallelOnScreen
         """
         return TPSParallelOnScreen(self.com_object.TPSParallelOnScreen())
 
     def __repr__(self):
-        return f'Roughness(name="{ self.name }")'
+        return f'Roughness(name="{self.name}")'

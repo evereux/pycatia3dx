@@ -12,59 +12,57 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimSurfaceFluidCavity(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimSurfaceFluidCavity
-                | 
-                | Represents the Surface Fluid Cavity object.
-                | 
-                | Example:
-                |     Given a SimAbstractions object, you can create a SimSurfaceFluidCavity as
-                |     following:
-                | 
-                |      Dim MyAbstractions As SimAbstractions
-                |      ...
-                |      Dim MySurfaceFluidCavity As SimSurfaceFluidCavity
-                |      Set MySurfaceFluidCavity = MyAbstractions.Add("SimSurfaceFluidCavity")
-                |      
-                | 
-                |     Given a SimAbstractions object, you can retrieve a SimSurfaceFluidCavity
-                |     named "Surface Fluid Cavity.1" as following:
-                | 
-                |      Dim MyAbstractions As SimAbstractions
-                |      ...
-                |      Dim MySurfaceFluidCavity As SimSurfaceFluidCavity
-                |      Set MySurfaceFluidCavity = MyAbstractions.Item("Surface Fluid Cavity.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimAbstractions object myAbstractions, you can create a
-                |     SimSurfaceFluidCavity as following:
-                | 
-                |      ...
-                |      mySurfaceFluidCavity = myAbstractions.Add("SimSurfaceFluidCavity")
-                |      
-                | 
-                |     Given a SimAbstractions object myAbstractions, you can retrieve a
-                |     SimSurfaceFluidCavity named "Surface Fluid Cavity.1" as
-                |     following:
-                | 
-                |      ...
-                |      mySurfaceFluidCavity = myAbstractions.Item("Surface Fluid Cavity.1")
-                |      
-                | 
-                | See also:
-                |     SimAbstractions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimSurfaceFluidCavity
+                
+                Represents the Surface Fluid Cavity object.
+                
+                Example:
+                    Given a SimAbstractions object, you can create a SimSurfaceFluidCavity as
+                    following:
+                
+                     Dim MyAbstractions As SimAbstractions
+                     ...
+                     Dim MySurfaceFluidCavity As SimSurfaceFluidCavity
+                     Set MySurfaceFluidCavity = MyAbstractions.Add("SimSurfaceFluidCavity")
+                     
+                
+                    Given a SimAbstractions object, you can retrieve a SimSurfaceFluidCavity
+                    named "Surface Fluid Cavity.1" as following:
+                
+                     Dim MyAbstractions As SimAbstractions
+                     ...
+                     Dim MySurfaceFluidCavity As SimSurfaceFluidCavity
+                     Set MySurfaceFluidCavity = MyAbstractions.Item("Surface Fluid Cavity.1")
+                     
+                
+                Example in Python:
+                    Given a SimAbstractions object myAbstractions, you can create a
+                    SimSurfaceFluidCavity as following:
+                
+                     ...
+                     mySurfaceFluidCavity = myAbstractions.Add("SimSurfaceFluidCavity")
+                     
+                
+                    Given a SimAbstractions object myAbstractions, you can retrieve a
+                    SimSurfaceFluidCavity named "Surface Fluid Cavity.1" as
+                    following:
+                
+                     ...
+                     mySurfaceFluidCavity = myAbstractions.Item("Surface Fluid Cavity.1")
+                     
+                
+                See also:
+                    SimAbstractions
     
     """
 
@@ -76,11 +74,10 @@ class SimSurfaceFluidCavity(AnyObject):
     def ambient_pressure(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AmbientPressure() As double
-                |     Returns or sets the ambient pressure. Quantity: Pressure, units: N_m2.
+                Property AmbientPressure() As double
+                    Returns or sets the ambient pressure. Quantity: Pressure, units: N_m2.
 
         :return: float
         """
@@ -99,11 +96,10 @@ class SimSurfaceFluidCavity(AnyObject):
     def ambient_pressure_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AmbientPressureFlag() As boolean
-                |     TRUE if the ambient pressure is specified and FALSE if it is not.
+                Property AmbientPressureFlag() As boolean
+                    TRUE if the ambient pressure is specified and FALSE if it is not.
 
         :return: bool
         """
@@ -122,11 +118,10 @@ class SimSurfaceFluidCavity(AnyObject):
     def cavity_ref_point(self) -> SimPoint:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CavityRefPoint() As SimPoint (Read Only)
-                |     Returns the point object for the reference point.
+                Property CavityRefPoint() As SimPoint (Read Only)
+                    Returns the point object for the reference point.
 
         :return: SimPoint
         """
@@ -137,11 +132,10 @@ class SimSurfaceFluidCavity(AnyObject):
     def check_normals_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CheckNormalsFlag() As boolean
-                |     TRUE if the checking surface normals and FALSE if not.
+                Property CheckNormalsFlag() As boolean
+                    TRUE if the checking surface normals and FALSE if not.
 
         :return: bool
         """
@@ -160,11 +154,10 @@ class SimSurfaceFluidCavity(AnyObject):
     def material_behavior(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialBehavior() As CATBaseDispatch
-                |     Returns or sets the material behavior.
+                Property MaterialBehavior() As CATBaseDispatch
+                    Returns or sets the material behavior.
 
         :return: AnyObject
         """
@@ -183,11 +176,10 @@ class SimSurfaceFluidCavity(AnyObject):
     def material_behavior_by_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialBehaviorByName() As CATBSTR
-                |     Returns or sets the simulation material behavior by name.
+                Property MaterialBehaviorByName() As CATBSTR
+                    Returns or sets the simulation material behavior by name.
 
         :return: str
         """
@@ -206,36 +198,35 @@ class SimSurfaceFluidCavity(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. Possible values are:
-                | 
-                |         Abstractions
-                |         Amplitudes
-                |         Controls
-                |         Connections
-                |         Damping
-                |         ElementTypeAssignments
-                |         Envelopes
-                |         FieldPlots
-                |         FlowConditions
-                |         HistoryPlots
-                |         InitialConditions
-                |         Interactions
-                |         LinearLoadCases
-                |         Loads
-                |         LoadSets
-                |         OutputRequests
-                |         PredefinedFields
-                |         Properties
-                |         Restraints
-                |         Sensors
-                |         Streams
-                |         ThermalConditions
-                |         NotDefined
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. Possible values are:
+                
+                        Abstractions
+                        Amplitudes
+                        Controls
+                        Connections
+                        Damping
+                        ElementTypeAssignments
+                        Envelopes
+                        FieldPlots
+                        FlowConditions
+                        HistoryPlots
+                        InitialConditions
+                        Interactions
+                        LinearLoadCases
+                        Loads
+                        LoadSets
+                        OutputRequests
+                        PredefinedFields
+                        Properties
+                        Restraints
+                        Sensors
+                        Streams
+                        ThermalConditions
+                        NotDefined
 
         :return: str
         """
@@ -243,4 +234,4 @@ class SimSurfaceFluidCavity(AnyObject):
         return self.com_object.SpecTreeCategory
 
     def __repr__(self):
-        return f'SimSurfaceFluidCavity(name="{ self.name }")'
+        return f'SimSurfaceFluidCavity(name="{self.name}")'

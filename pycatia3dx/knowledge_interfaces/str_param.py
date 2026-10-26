@@ -14,22 +14,21 @@ from pycatia3dx.knowledge_interfaces.parameter import Parameter
 class StrParam(Parameter):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     KnowledgeIDLItf.Parameter
-                |                         StrParam
-                | 
-                | Represents the string parameter.
-                | 
-                | See also:
-                |     ParametersFactory.CreateString
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    KnowledgeIDLItf.Parameter
+                                        StrParam
+                
+                Represents the string parameter.
+                
+                See also:
+                    ParametersFactory.CreateString
     
     """
 
@@ -41,19 +40,18 @@ class StrParam(Parameter):
     def value(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Value() As CATBSTR
-                |     Returns or sets the string parameter value.
-                | 
-                |     Example:
-                |         This example returns in myValue the value of the string parameter
-                |         material:
-                | 
-                |          
-                | 
-                |          myValue = material.Value
+                Property Value() As CATBSTR
+                    Returns or sets the string parameter value.
+                
+                    Example:
+                        This example returns in myValue the value of the string parameter
+                        material:
+                
+                         
+                
+                         myValue = material.Value
 
         :return: str
         """
@@ -71,27 +69,26 @@ class StrParam(Parameter):
     def get_enumerate_values(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetEnumerateValues(CATSafeArrayVariant oSafeArray)
-                |     Returns an array containing the different values that the real param can
-                |     take in the case of multiple values.
+                Sub GetEnumerateValues(CATSafeArrayVariant oSafeArray)
+                    Returns an array containing the different values that the real param can
+                    take in the case of multiple values.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oSafeArray
-                |             The array
+                        oSafeArray
+                            The array
                 |
-                |             Example:
+                            Example:
                 |
-                |                  Dim enumValues () as Variant
-                |                  ReDim enumValues (aStrParameter.GetEnumerateValuesSize() -
-                |                  1)
-                |                  aStrParameter.GetEnumerateValues(enumValues)
-                |                  For i = LBound(enumValues) to UBound(enumValues)
-                |                    ...
-                |                  Next
+                                 Dim enumValues () as Variant
+                                 ReDim enumValues (aStrParameter.GetEnumerateValuesSize() -
+                                 1)
+                                 aStrParameter.GetEnumerateValues(enumValues)
+                                 For i = LBound(enumValues) to UBound(enumValues)
+                                   ...
+                                 Next
 
         :return: tuple
         """
@@ -116,14 +113,13 @@ class StrParam(Parameter):
     def get_enumerate_values_size(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func GetEnumerateValuesSize() As long
-                |     Returns the number of enumerate values.
-                | 
-                |     Returns:
-                |         the number of enumerate values.
+                Func GetEnumerateValuesSize() As long
+                    Returns the number of enumerate values.
+                
+                    Returns:
+                        the number of enumerate values.
 
         :return: int
         """
@@ -132,17 +128,16 @@ class StrParam(Parameter):
     def set_enumerate_values(self, i_safe_array: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetEnumerateValues(CATSafeArrayVariant iSafeArray)
-                |     Sets an array containing the different values that the StrParam object can
-                |     take in the case of multiple values.
+                Sub SetEnumerateValues(CATSafeArrayVariant iSafeArray)
+                    Sets an array containing the different values that the StrParam object can
+                    take in the case of multiple values.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iSafeArray
-                |             The array of enumerated values.
+                        iSafeArray
+                            The array of enumerated values.
 
         :param tuple i_safe_array:
         :return: None
@@ -168,11 +163,10 @@ class StrParam(Parameter):
     def suppress_enumerate_values(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub SuppressEnumerateValues()
-                |     Resets the status of the object to a single value object.
+                Sub SuppressEnumerateValues()
+                    Resets the status of the object to a single value object.
 
         :return: None
         """

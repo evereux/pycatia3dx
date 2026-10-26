@@ -15,26 +15,24 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeLineAngle(Line):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.Line
-                |                             HybridShapeLineAngle
-                | 
-                | Line defined from a reference curve, a plane or a surface, a point and an
-                | angle.
-                | Role: Allows to access data of the line feature created with an angle to a
-                | curve.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.Line
+                                            HybridShapeLineAngle
+                
+                Line defined from a reference curve, a plane or a surface, a point and an
+                angle.
+                Role: Allows to access data of the line feature created with an angle to a
+                curve.
     
     """
 
@@ -46,16 +44,15 @@ class HybridShapeLineAngle(Line):
     def angle(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Angle() As Angle (Read Only)
-                |     Role: Get the angle to the reference curve of the line.
-                | 
-                |     Parameters:
-                | 
-                |         oAngle
-                |             angle
+                Property Angle() As Angle (Read Only)
+                    Role: Get the angle to the reference curve of the line.
+                
+                    Parameters:
+                
+                        oAngle
+                            angle
 
         :return: Angle
         """
@@ -66,16 +63,15 @@ class HybridShapeLineAngle(Line):
     def begin_offset(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property BeginOffset() As Length (Read Only)
-                |     Role: Get the start length of the line.
-                | 
-                |     Parameters:
-                | 
-                |         oStart
-                |             start length
+                Property BeginOffset() As Length (Read Only)
+                    Role: Get the start length of the line.
+                
+                    Parameters:
+                
+                        oStart
+                            start length
 
         :return: Length
         """
@@ -86,16 +82,15 @@ class HybridShapeLineAngle(Line):
     def curve(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Curve() As Reference
-                |     Role: Get the reference curve.
-                | 
-                |     Parameters:
-                | 
-                |         oCurve
-                |             reference curve.
+                Property Curve() As Reference
+                    Role: Get the reference curve.
+                
+                    Parameters:
+                
+                        oCurve
+                            reference curve.
 
         :return: Reference
         """
@@ -114,16 +109,15 @@ class HybridShapeLineAngle(Line):
     def end_offset(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property EndOffset() As Length (Read Only)
-                |     Role: Get the end length of the line.
-                | 
-                |     Parameters:
-                | 
-                |         oEnd
-                |             end length
+                Property EndOffset() As Length (Read Only)
+                    Role: Get the end length of the line.
+                
+                    Parameters:
+                
+                        oEnd
+                            end length
 
         :return: Length
         """
@@ -134,18 +128,17 @@ class HybridShapeLineAngle(Line):
     def geodesic(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Geodesic() As boolean
-                |     Role: Get geodesic mode. If geodesic, the line lies on the support surface,
-                |     otherwise the surface is only used to compute the line
-                |     direction.
-                | 
-                |     Parameters:
-                | 
-                |         oGeod
-                |             Geodesic boolean
+                Property Geodesic() As boolean
+                    Role: Get geodesic mode. If geodesic, the line lies on the support surface,
+                    otherwise the surface is only used to compute the line
+                    direction.
+                
+                    Parameters:
+                
+                        oGeod
+                            Geodesic boolean
 
         :return: bool
         """
@@ -164,18 +157,17 @@ class HybridShapeLineAngle(Line):
     def orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Orientation() As long
-                |     Role: Get the line orientation. Orientation allows to reverse the line
-                |     direction from the reference point. For a line of L length, it is the same as
-                |     creating this line with -L length.
-                | 
-                |     Parameters:
-                | 
-                |         oOrientation
-                |             orientation : can be 1 or -1
+                Property Orientation() As long
+                    Role: Get the line orientation. Orientation allows to reverse the line
+                    direction from the reference point. For a line of L length, it is the same as
+                    creating this line with -L length.
+                
+                    Parameters:
+                
+                        oOrientation
+                            orientation : can be 1 or -1
 
         :return: int
         """
@@ -194,16 +186,15 @@ class HybridShapeLineAngle(Line):
     def point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Point() As Reference
-                |     Role: Get the starting point of the line.
-                | 
-                |     Parameters:
-                | 
-                |         oPoint
-                |             starting point.
+                Property Point() As Reference
+                    Role: Get the starting point of the line.
+                
+                    Parameters:
+                
+                        oPoint
+                            starting point.
 
         :return: Reference
         """
@@ -222,16 +213,15 @@ class HybridShapeLineAngle(Line):
     def surface(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Surface() As Reference
-                |     Role: Get the support surface.
-                | 
-                |     Parameters:
-                | 
-                |         oSurface
-                |             support surface.
+                Property Surface() As Reference
+                    Role: Get the support surface.
+                
+                    Parameters:
+                
+                        oSurface
+                            support surface.
 
         :return: Reference
         """
@@ -249,16 +239,15 @@ class HybridShapeLineAngle(Line):
     def get_length_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetLengthType() As long
-                |     Gets the length type Default is 0.
-                | 
-                |     Parameters:
-                | 
-                |         oType
-                |             The length type = 0 : length - the line is limited by its extremities = 1 : infinite - the line is infinite = 2 : infinite start point - the line is infinite on the side of the start point = 3 : infinite end point - the line is infinite on the side of the end point
+                Func GetLengthType() As long
+                    Gets the length type Default is 0.
+                
+                    Parameters:
+                
+                        oType
+                            The length type = 0 : length - the line is limited by its extremities = 1 : infinite - the line is infinite = 2 : infinite start point - the line is infinite on the side of the start point = 3 : infinite end point - the line is infinite on the side of the end point
 
         :return: int
         """
@@ -267,17 +256,16 @@ class HybridShapeLineAngle(Line):
     def get_symmetrical_extension(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetSymmetricalExtension() As boolean
-                |     Gets whether the symmetrical extension of the line is
-                |     active.
-                | 
-                |     Parameters:
-                | 
-                |         oSym
-                |             Symetry flag
+                Func GetSymmetricalExtension() As boolean
+                    Gets whether the symmetrical extension of the line is
+                    active.
+                
+                    Parameters:
+                
+                        oSym
+                            Symetry flag
 
         :return: bool
         """
@@ -286,16 +274,15 @@ class HybridShapeLineAngle(Line):
     def set_length_type(self, i_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetLengthType(long iType)
-                |     Sets the length type Default is 0.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The length type = 0 : length - the line is limited by its extremities = 1 : infinite - the line is infinite = 2 : infinite start point - the line is infinite on the side of the start point = 3 : infinite end point - the line is infinite on the side of the end point
+                Sub SetLengthType(long iType)
+                    Sets the length type Default is 0.
+                
+                    Parameters:
+                
+                        iType
+                            The length type = 0 : length - the line is limited by its extremities = 1 : infinite - the line is infinite = 2 : infinite start point - the line is infinite on the side of the start point = 3 : infinite end point - the line is infinite on the side of the end point
 
         :param int i_type:
         :return: None
@@ -305,16 +292,15 @@ class HybridShapeLineAngle(Line):
     def set_symmetrical_extension(self, i_sym: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetSymmetricalExtension(boolean iSym)
-                |     Sets the symmetrical extension of the line (start = -end).
-                | 
-                |     Parameters:
-                | 
-                |         iSym
-                |             Symetry flag
+                Sub SetSymmetricalExtension(boolean iSym)
+                    Sets the symmetrical extension of the line (start = -end).
+                
+                    Parameters:
+                
+                        iSym
+                            Symetry flag
 
         :param bool i_sym:
         :return: None
@@ -322,4 +308,4 @@ class HybridShapeLineAngle(Line):
         return self.com_object.SetSymmetricalExtension(i_sym)
 
     def __repr__(self):
-        return f'HybridShapeLineAngle(name="{ self.name }")'
+        return f'HybridShapeLineAngle(name="{self.name}")'

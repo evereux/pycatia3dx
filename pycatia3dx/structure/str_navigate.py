@@ -13,22 +13,20 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrNavigate(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrNavigate
-                | 
-                | Object to navigate sfd/sdd objects.
-                | Role: Allows navigating sfd/sdd objects.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrNavigate
+                
+                Object to navigate sfd/sdd objects.
+                Role: Allows navigating sfd/sdd objects.
     
     """
 
@@ -39,19 +37,18 @@ class StrNavigate(AnyObject):
     def get_children(self) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetChildren() As References
-                |     Returns the list of all children of this object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the penetrating profile.
-                |              
-                | 
-                |              Set PenetratingProfile = ObjStrNavigate.GetPenetratingProfile
+                Func GetChildren() As References
+                    Returns the list of all children of this object.
+                
+                    Example:
+                
+                
+                             This example retrieves the penetrating profile.
+                             
+                
+                             Set PenetratingProfile = ObjStrNavigate.GetPenetratingProfile
 
         :return: References
         """
@@ -60,28 +57,27 @@ class StrNavigate(AnyObject):
     def get_parents(self) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetParents() As References
-                |     Returns list of all parents of this object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example sets the penetrating profile.
-                |              
-                | 
-                |              ObjStrNavigate As StrNavigate
-                |              Set ObjStrNavigate = ObjStrNavigates.Add
-                |              Dim penetratingElem As Reference
-                |              Set penetratingElem = ObjPart.CreateReferenceFromObject(ObjSfdStiffener)
-                |              ObjStrNavigate.SetPenetratingProfile
-                |              penetratingElem
+                Func GetParents() As References
+                    Returns list of all parents of this object.
+                
+                    Example:
+                
+                
+                             This example sets the penetrating profile.
+                             
+                
+                             ObjStrNavigate As StrNavigate
+                             Set ObjStrNavigate = ObjStrNavigates.Add
+                             Dim penetratingElem As Reference
+                             Set penetratingElem = ObjPart.CreateReferenceFromObject(ObjSfdStiffener)
+                             ObjStrNavigate.SetPenetratingProfile
+                             penetratingElem
 
         :return: References
         """
         return References(self.com_object.GetParents())
 
     def __repr__(self):
-        return f'StrNavigate(name="{ self.name }")'
+        return f'StrNavigate(name="{self.name}")'

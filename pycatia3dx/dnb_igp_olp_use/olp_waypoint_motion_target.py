@@ -11,27 +11,25 @@ from pycatia3dx.dnb_igp_olp_use.olp_robot_motion_target import OLPRobotMotionTar
 
 
 class OLPWaypointMotionTarget(OLPRobotMotionTarget):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DNBIgpOlpUseItf.OlpRobotMotionTarget
-                |                         OlpWaypointMotionTarget
-                | 
-                | Interface representing a Waypoint Motion within a Waypoint
-                | Operation.
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | Role: Components that implement DELMIAOlpWaypointMotionTarget are
-                | DELMIAOlpRobotMotionTargets that have a waypoint ID set
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DNBIgpOlpUseItf.OlpRobotMotionTarget
+                                        OlpWaypointMotionTarget
+                
+                Interface representing a Waypoint Motion within a Waypoint
+                Operation.
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                Role: Components that implement DELMIAOlpWaypointMotionTarget are
+                DELMIAOlpRobotMotionTargets that have a waypoint ID set
     
     """
 
@@ -43,15 +41,14 @@ class OLPWaypointMotionTarget(OLPRobotMotionTarget):
     def waypoint_escape_motion_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property WaypointEscapeMotionType() As CATBSTR
-                |     Get/Set the waypoint escape motion type.
-                |     The motion type constrains the direction of motion during a waypoint move.
-                |     Valid values are X, Y, Z, XY, XZ, YZ, XYZ, Orient, X_Orient, Y_Orient,
-                |     XY_Orient, Z_Orient, XZ_Orient, YZ_Orient, XYZ_Orient. Applies both to the
-                |     waypoint motion and the drill/rivet action. 
+                Property WaypointEscapeMotionType() As CATBSTR
+                    Get/Set the waypoint escape motion type.
+                    The motion type constrains the direction of motion during a waypoint move.
+                    Valid values are X, Y, Z, XY, XZ, YZ, XYZ, Orient, X_Orient, Y_Orient,
+                    XY_Orient, Z_Orient, XZ_Orient, YZ_Orient, XYZ_Orient. Applies both to the
+                    waypoint motion and the drill/rivet action. 
 
         :return: str
         """
@@ -67,4 +64,4 @@ class OLPWaypointMotionTarget(OLPRobotMotionTarget):
         self.com_object.WaypointEscapeMotionType = value
 
     def __repr__(self):
-        return f'OLPWaypointMotionTarget(name="{ self.name }")'
+        return f'OLPWaypointMotionTarget(name="{self.name}")'

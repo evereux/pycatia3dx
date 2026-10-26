@@ -15,20 +15,18 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 
 
 class SimPointFastenerPlacement(CATBaseDispatch):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 SimPointFastenerPlacement
-                | 
-                | Represents the Point Fastener Placement object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                SimPointFastenerPlacement
+                
+                Represents the Point Fastener Placement object.
     
     """
 
@@ -40,10 +38,9 @@ class SimPointFastenerPlacement(CATBaseDispatch):
     def application(self) -> Application:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Application() As Application (Read Only)
+                Property Application() As Application (Read Only)
 
         :return: Application
         """
@@ -54,11 +51,10 @@ class SimPointFastenerPlacement(CATBaseDispatch):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the axis system used for point coordinates.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the axis system used for point coordinates.
 
         :return: SimAxisSystem
         """
@@ -69,11 +65,10 @@ class SimPointFastenerPlacement(CATBaseDispatch):
     def clearance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Clearance() As double
-                |     Returns or sets the clearance. Quantity: LENGTH, units: m.
+                Property Clearance() As double
+                    Returns or sets the clearance. Quantity: LENGTH, units: m.
 
         :return: float
         """
@@ -92,12 +87,11 @@ class SimPointFastenerPlacement(CATBaseDispatch):
     def distribution_option_on_lines(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DistributionOptionOnLines() As
-                | SimPointFastenerPlacementDistributionOptionOnLine
-                |     Returns or sets the distribution option.
+                Property DistributionOptionOnLines() As
+                SimPointFastenerPlacementDistributionOptionOnLine
+                    Returns or sets the distribution option.
 
         :return: int
         """
@@ -116,12 +110,11 @@ class SimPointFastenerPlacement(CATBaseDispatch):
     def fastener_placement_method(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FastenerPlacementMethod() As
-                | SimPointFastenerPlacementFastenerPlacementMethod
-                |     Returns or sets the fastener placement method.
+                Property FastenerPlacementMethod() As
+                SimPointFastenerPlacementFastenerPlacementMethod
+                    Returns or sets the fastener placement method.
 
         :return: int
         """
@@ -140,10 +133,9 @@ class SimPointFastenerPlacement(CATBaseDispatch):
     def name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Name() As CATBSTR
+                Property Name() As CATBSTR
 
         :return: str
         """
@@ -162,11 +154,10 @@ class SimPointFastenerPlacement(CATBaseDispatch):
     def number_of_fasteners_along_lines(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfFastenersAlongLines() As long
-                |     Returns or sets the number of fasteners.
+                Property NumberOfFastenersAlongLines() As long
+                    Returns or sets the number of fasteners.
 
         :return: int
         """
@@ -185,11 +176,10 @@ class SimPointFastenerPlacement(CATBaseDispatch):
     def number_of_point_coordinates(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfPointCoordinates() As long
-                |     Returns or sets the number of points through coordinates.
+                Property NumberOfPointCoordinates() As long
+                    Returns or sets the number of points through coordinates.
 
         :return: int
         """
@@ -208,10 +198,9 @@ class SimPointFastenerPlacement(CATBaseDispatch):
     def parent(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Parent() As CATBaseDispatch (Read Only)
+                Property Parent() As CATBaseDispatch (Read Only)
 
         :return: AnyObject
         """
@@ -222,12 +211,11 @@ class SimPointFastenerPlacement(CATBaseDispatch):
     def point_spacing_along_lines(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PointSpacingAlongLines() As double
-                |     Returns or sets the spacing between points on line. Quantity: LENGTH,
-                |     units: m.
+                Property PointSpacingAlongLines() As double
+                    Returns or sets the spacing between points on line. Quantity: LENGTH,
+                    units: m.
 
         :return: float
         """
@@ -246,11 +234,10 @@ class SimPointFastenerPlacement(CATBaseDispatch):
     def points_coordinates(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PointsCoordinates() As CATSafeArrayVariant
-                |     Returns or sets a list of points coordinate (x1, y1, z1, x2, y2, z2, ...).
+                Property PointsCoordinates() As CATSafeArrayVariant
+                    Returns or sets a list of points coordinate (x1, y1, z1, x2, y2, z2, ...).
 
         :return: tuple
         """
@@ -268,10 +255,9 @@ class SimPointFastenerPlacement(CATBaseDispatch):
     def get_item(self, id_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetItem(CATBSTR IDName) As CATBaseDispatch
+                Func GetItem(CATBSTR IDName) As CATBaseDispatch
 
         :param str id_name:
         :return: AnyObject
@@ -279,4 +265,4 @@ class SimPointFastenerPlacement(CATBaseDispatch):
         return self.com_object.GetItem(id_name)
 
     def __repr__(self):
-        return f'SimPointFastenerPlacement(name="{ self.name }")'
+        return f'SimPointFastenerPlacement(name="{self.name}")'

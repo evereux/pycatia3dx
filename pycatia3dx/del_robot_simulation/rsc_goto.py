@@ -11,25 +11,23 @@ from pycatia3dx.del_robot_simulation.rsc_instruction import RscInstruction
 
 
 class RscGoto(RscInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DELRobotSimulationIDLItf.RscInstruction
-                |                         RscGoto
-                | 
-                | Interface representing a Resource Goto Instruction.
-                | 
-                | Role: This interface represents a RscGoto Instruction in a Resource
-                | Task
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DELRobotSimulationIDLItf.RscInstruction
+                                        RscGoto
+                
+                Interface representing a Resource Goto Instruction.
+                
+                Role: This interface represents a RscGoto Instruction in a Resource
+                Task
     
     """
 
@@ -41,38 +39,37 @@ class RscGoto(RscInstruction):
     def target(self) -> RscInstruction:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Target() As RscInstruction
-                |     Get/Set the target instruction.
-                | 
-                |     Returns:
-                |         oTarget The accessible labeled instruction. 
-                |     Parameters:
-                | 
-                |         iTarget
-                |             The accessible labeled instruction. 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            Set ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim iIndex
-                |            iIndex=-1
-                |            Dim iLabel As String
-                |            ......
-                |            Dim oGoto As RscGoto
-                |            Set oGoto = ResourceSequence.CreateRscGoto(iIndex, iLabel)
-                |            Dim Target as RscInstruction
-                |            Set Target = oGoto.Target
-                |            ......
-                |            oGoto.Target = Target
+                Property Target() As RscInstruction
+                    Get/Set the target instruction.
+                
+                    Returns:
+                        oTarget The accessible labeled instruction. 
+                    Parameters:
+                
+                        iTarget
+                            The accessible labeled instruction. 
+                
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           Set ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim iIndex
+                           iIndex=-1
+                           Dim iLabel As String
+                           ......
+                           Dim oGoto As RscGoto
+                           Set oGoto = ResourceSequence.CreateRscGoto(iIndex, iLabel)
+                           Dim Target as RscInstruction
+                           Set Target = oGoto.Target
+                           ......
+                           oGoto.Target = Target
 
         :return: RscInstruction
         """
@@ -91,31 +88,30 @@ class RscGoto(RscInstruction):
     def visible_targets(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property VisibleTargets() As CATSafeArrayVariant (Read Only)
-                |     List of visible instructions.
-                | 
-                |     Returns:
-                |         oVisibleTargets The list of visible instructions. 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            Set ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim iIndex
-                |            iIndex=-1
-                |            Dim iLabel As String
-                |            ......
-                |            Dim oGoto As RscGoto
-                |            Set oGoto = ResourceSequence.CreateRscGoto(iIndex, iLabel)
-                |            Dim VisibleTargets
-                |            VisibleTargets = oGoto.VisibleTargets
+                Property VisibleTargets() As CATSafeArrayVariant (Read Only)
+                    List of visible instructions.
+                
+                    Returns:
+                        oVisibleTargets The list of visible instructions. 
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           Set ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim iIndex
+                           iIndex=-1
+                           Dim iLabel As String
+                           ......
+                           Dim oGoto As RscGoto
+                           Set oGoto = ResourceSequence.CreateRscGoto(iIndex, iLabel)
+                           Dim VisibleTargets
+                           VisibleTargets = oGoto.VisibleTargets
 
         :return: tuple
         """
@@ -125,38 +121,37 @@ class RscGoto(RscInstruction):
     def is_visible_target(self, i_instr: RscInstruction) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsVisibleTarget(RscInstruction iInstr) As boolean
-                |     Check if a labeled instruction is visible or not.
-                | 
-                |     Parameters:
-                | 
-                |         iInstr
-                |             The labeled instruction to be checked. 
-                | 
-                |     Returns:
-                |         oIsVisible TRUE : is labeled & visible. FALSE : is not labeled or not visible. 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            Set ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim iIndex
-                |            iIndex=-1
-                |            Dim iLabel As String
-                |            ......
-                |            Dim oGoto As RscGoto
-                |            Set oGoto = ResourceSequence.CreateRscGoto(iIndex, iLabel)
-                |            Dim  oInstr as RscInstruction
-                |            ........
-                |            Dim oIsVisible As Boolean
-                |            oIsVisible = oGoto.IsVisibleTarget(oInstr)
+                Func IsVisibleTarget(RscInstruction iInstr) As boolean
+                    Check if a labeled instruction is visible or not.
+                
+                    Parameters:
+                
+                        iInstr
+                            The labeled instruction to be checked. 
+                
+                    Returns:
+                        oIsVisible TRUE : is labeled & visible. FALSE : is not labeled or not visible. 
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           Set ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim iIndex
+                           iIndex=-1
+                           Dim iLabel As String
+                           ......
+                           Dim oGoto As RscGoto
+                           Set oGoto = ResourceSequence.CreateRscGoto(iIndex, iLabel)
+                           Dim  oInstr as RscInstruction
+                           ........
+                           Dim oIsVisible As Boolean
+                           oIsVisible = oGoto.IsVisibleTarget(oInstr)
 
         :param RscInstruction i_instr:
         :return: bool
@@ -164,4 +159,4 @@ class RscGoto(RscInstruction):
         return self.com_object.IsVisibleTarget(i_instr.com_object)
 
     def __repr__(self):
-        return f'RscGoto(name="{ self.name }")'
+        return f'RscGoto(name="{self.name}")'

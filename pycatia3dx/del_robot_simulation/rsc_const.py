@@ -11,25 +11,23 @@ from pycatia3dx.del_robot_simulation.rsc_data_entity import RscDataEntity
 
 
 class RscConst(RscDataEntity):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DELRobotSimulationIDLItf.RscDataEntity
-                |                         RscConst
-                | 
-                | Interface representing a Constant.
-                | 
-                | Role: This interface represents a RscConst entity in a Resource
-                | Task
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DELRobotSimulationIDLItf.RscDataEntity
+                                        RscConst
+                
+                Interface representing a Constant.
+                
+                Role: This interface represents a RscConst entity in a Resource
+                Task
     
     """
 
@@ -41,37 +39,36 @@ class RscConst(RscDataEntity):
     def value(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Value() As CATBSTR
-                |     Get/Set the Value of the RscConst.
-                | 
-                |     Returns:
-                |         oValue The const value. 
-                |     Parameters:
-                | 
-                |         iVal
-                |             The const value. 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim iName As String
-                |            iName = "MyConst"
-                |            Dim iVal As String 
-                |            iVal = "MyVal"
-                |            Dim oConst As RscConst
-                |            Dim iType As DELRscDataEntityType
-                |            iType = DELRscDataEntityType_Integer
-                |            Set oConst = oResourceTask.CreateRscConst(iName, iType, iVal)
-                |            Dim Val 
-                |            Val=oConst.Value
-                |            ......
-                |            oConst.Value=Val
+                Property Value() As CATBSTR
+                    Get/Set the Value of the RscConst.
+                
+                    Returns:
+                        oValue The const value. 
+                    Parameters:
+                
+                        iVal
+                            The const value. 
+                
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim iName As String
+                           iName = "MyConst"
+                           Dim iVal As String 
+                           iVal = "MyVal"
+                           Dim oConst As RscConst
+                           Dim iType As DELRscDataEntityType
+                           iType = DELRscDataEntityType_Integer
+                           Set oConst = oResourceTask.CreateRscConst(iName, iType, iVal)
+                           Dim Val 
+                           Val=oConst.Value
+                           ......
+                           oConst.Value=Val
 
         :return: str
         """
@@ -87,4 +84,4 @@ class RscConst(RscDataEntity):
         self.com_object.Value = value
 
     def __repr__(self):
-        return f'RscConst(name="{ self.name }")'
+        return f'RscConst(name="{self.name}")'

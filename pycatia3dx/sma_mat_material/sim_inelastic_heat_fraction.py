@@ -12,60 +12,58 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimInelasticHeatFraction(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimInelasticHeatFraction
-                | 
-                | Represents the Inelastic Heat Fraction object.
-                | 
-                | Example:
-                |     Given a SimMaterialOptions object, you can create a
-                |     SimInelasticHeatFraction as following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyInelasticHeatFraction As SimInelasticHeatFraction
-                |      Set MyInelasticHeatFraction = MyMaterialOptions.Add("SimInelasticHeatFraction")
-                |      
-                | 
-                |     Given a SimMaterialOptions object, you can retrieve a
-                |     SimInelasticHeatFraction named "Inelastic Heat Fraction.1" as
-                |     following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyInelasticHeatFraction As SimInelasticHeatFraction
-                |      Set MyInelasticHeatFraction = MyMaterialOptions.Item("Inelastic Heat Fraction.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMaterialOptions object myMaterialOptions, you can create a
-                |     SimInelasticHeatFraction as following:
-                | 
-                |      ...
-                |      myInelasticHeatFraction = myMaterialOptions.Add("SimInelasticHeatFraction")
-                |      
-                | 
-                |     Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
-                |     SimInelasticHeatFraction named "Inelastic Heat Fraction.1" as
-                |     following:
-                | 
-                |      ...
-                |      myInelasticHeatFraction = myMaterialOptions.Item("Inelastic Heat Fraction.1")
-                |      
-                | 
-                | See also:
-                |     SimMaterialOptions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimInelasticHeatFraction
+                
+                Represents the Inelastic Heat Fraction object.
+                
+                Example:
+                    Given a SimMaterialOptions object, you can create a
+                    SimInelasticHeatFraction as following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyInelasticHeatFraction As SimInelasticHeatFraction
+                     Set MyInelasticHeatFraction = MyMaterialOptions.Add("SimInelasticHeatFraction")
+                     
+                
+                    Given a SimMaterialOptions object, you can retrieve a
+                    SimInelasticHeatFraction named "Inelastic Heat Fraction.1" as
+                    following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyInelasticHeatFraction As SimInelasticHeatFraction
+                     Set MyInelasticHeatFraction = MyMaterialOptions.Item("Inelastic Heat Fraction.1")
+                     
+                
+                Example in Python:
+                    Given a SimMaterialOptions object myMaterialOptions, you can create a
+                    SimInelasticHeatFraction as following:
+                
+                     ...
+                     myInelasticHeatFraction = myMaterialOptions.Add("SimInelasticHeatFraction")
+                     
+                
+                    Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
+                    SimInelasticHeatFraction named "Inelastic Heat Fraction.1" as
+                    following:
+                
+                     ...
+                     myInelasticHeatFraction = myMaterialOptions.Item("Inelastic Heat Fraction.1")
+                     
+                
+                See also:
+                    SimMaterialOptions
     
     """
 
@@ -77,11 +75,10 @@ class SimInelasticHeatFraction(AnyObject):
     def inelastic_heat_fraction(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InelasticHeatFraction() As double
-                |     Inelastic Heat Fraction. Quantity : Real, Units : None 
+                Property InelasticHeatFraction() As double
+                    Inelastic Heat Fraction. Quantity : Real, Units : None 
 
         :return: float
         """
@@ -97,4 +94,4 @@ class SimInelasticHeatFraction(AnyObject):
         self.com_object.InelasticHeatFraction = value
 
     def __repr__(self):
-        return f'SimInelasticHeatFraction(name="{ self.name }")'
+        return f'SimInelasticHeatFraction(name="{self.name}")'

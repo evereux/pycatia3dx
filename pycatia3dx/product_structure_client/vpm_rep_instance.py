@@ -14,22 +14,21 @@ from pycatia3dx.product_structure_client.vpm_rep_reference import VPMRepReferenc
 class VPMRepInstance(PLMEntity):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PLMModelerBaseIDLItf.PLMEntity
-                |                         VPMRepInstance
-                | 
-                | Represents a PLM Product Representation Instance.
-                | A PLM Product Representation Instance is an instance of a PLM Product
-                | Representation Reference, and the child of a PLM Product Reference that you
-                | retrieve by AnyObject.get_Parent .
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PLMModelerBaseIDLItf.PLMEntity
+                                        VPMRepInstance
+                
+                Represents a PLM Product Representation Instance.
+                A PLM Product Representation Instance is an instance of a PLM Product
+                Representation Reference, and the child of a PLM Product Reference that you
+                retrieve by AnyObject.get_Parent .
     
     """
 
@@ -41,34 +40,33 @@ class VPMRepInstance(PLMEntity):
     def reference_instance_of(self) -> VPMRepReference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ReferenceInstanceOf() As VPMRepReference (Read Only)
-                |     Returns the instantiated PLM Product Representation
-                |     Reference.
-                |     Role: This method returns the PLM Product Representation Reference used to
-                |     instantiate the current PLM Product Representation
-                |     Instance.
-                | 
-                |     Example:
-                | 
-                |            This example shows you how to get the PLM Product Representation
-                |            Reference used to  
-                |           instantiate the current PLM Product Representation
-                |           Instance.
+                Property ReferenceInstanceOf() As VPMRepReference (Read Only)
+                    Returns the instantiated PLM Product Representation
+                    Reference.
+                    Role: This method returns the PLM Product Representation Reference used to
+                    instantiate the current PLM Product Representation
+                    Instance.
+                
+                    Example:
+                
+                           This example shows you how to get the PLM Product Representation
+                           Reference used to  
+                          instantiate the current PLM Product Representation
+                          Instance.
                 |
-                |            Dim  oProdRepRef  As VPMRepReference
-                |            Dim  oProdRepInst As VPMRepInstance
-                |            Set  oProdRepRef = oProdRepInst.ReferenceInstanceOf
+                           Dim  oProdRepRef  As VPMRepReference
+                           Dim  oProdRepInst As VPMRepInstance
+                           Set  oProdRepRef = oProdRepInst.ReferenceInstanceOf
                 |
-                |            This second example shows you how to get the PLM Product Reference
-                |            owning the current instance.
+                           This second example shows you how to get the PLM Product Reference
+                           owning the current instance.
                 |
-                |            Dim  oProdRepInst        As VPMRepInstance
-                |            .....
-                |            Dim  oProdRefAsParent     As VPMReference
-                |            Set oProdRefAsParent = oProdRepInst.Parent
+                           Dim  oProdRepInst        As VPMRepInstance
+                           .....
+                           Dim  oProdRefAsParent     As VPMReference
+                           Set oProdRefAsParent = oProdRepInst.Parent
 
         :return: VPMRepReference
         """

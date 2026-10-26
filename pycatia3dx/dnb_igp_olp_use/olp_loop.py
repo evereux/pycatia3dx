@@ -13,25 +13,23 @@ from pycatia3dx.dnb_igp_olp_use.olp_instructions import OLPInstructions
 
 
 class OLPLoop(OLPInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DNBIgpOlpUseItf.OlpInstruction
-                |                         OlpLoop
-                | 
-                | A do while OR while do instruction.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DNBIgpOlpUseItf.OlpInstruction
+                                        OlpLoop
+                
+                A do while OR while do instruction.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
     
     """
 
@@ -43,17 +41,16 @@ class OLPLoop(OLPInstruction):
     def condition(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Condition() As OlpAstBranch
-                |     The expression that if true causes looping to continue.
-                |     When set, the OlpAstBranch.Value of the AST tree is used for the
-                |     expression. When retrieved, the DELMIA expression is parsed and is returned in
-                |     the format expected by OlpExpressionFixerDownload. You can find more
-                |     information on the OLP Expression AST format in the documentation under
-                |     Automation | Robotics | Robotics Offline Programming | Offline Programming
-                |     Expression Translation.
+                Property Condition() As OlpAstBranch
+                    The expression that if true causes looping to continue.
+                    When set, the OlpAstBranch.Value of the AST tree is used for the
+                    expression. When retrieved, the DELMIA expression is parsed and is returned in
+                    the format expected by OlpExpressionFixerDownload. You can find more
+                    information on the OLP Expression AST format in the documentation under
+                    Automation | Robotics | Robotics Offline Programming | Offline Programming
+                    Expression Translation.
 
         :return: OLPAstBranch
         """
@@ -72,11 +69,10 @@ class OLPLoop(OLPInstruction):
     def instructions(self) -> OLPInstructions:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Instructions() As OlpInstructions (Read Only)
-                |     The list of instructions in the loop.
+                Property Instructions() As OlpInstructions (Read Only)
+                    The list of instructions in the loop.
 
         :return: OLPInstructions
         """
@@ -87,16 +83,15 @@ class OLPLoop(OLPInstruction):
     def is_while_do(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IsWhileDo() As boolean
-                |     Indicates whether this loop is a "do-while" or a
-                |     "while-do".
-                |     If True this is a "while()do{...}" loop. In this type of a loop, the loop
-                |     instructions are not executed the 1st time if the condition is false. If False,
-                |     this is a "do{...}while()" loop. In that case, the loop is always executed at
-                |     least 1 time, even if the condition is false. 
+                Property IsWhileDo() As boolean
+                    Indicates whether this loop is a "do-while" or a
+                    "while-do".
+                    If True this is a "while()do{...}" loop. In this type of a loop, the loop
+                    instructions are not executed the 1st time if the condition is false. If False,
+                    this is a "do{...}while()" loop. In that case, the loop is always executed at
+                    least 1 time, even if the condition is false. 
 
         :return: bool
         """
@@ -112,4 +107,4 @@ class OLPLoop(OLPInstruction):
         self.com_object.IsWhileDo = value
 
     def __repr__(self):
-        return f'OLPLoop(name="{ self.name }")'
+        return f'OLPLoop(name="{self.name}")'

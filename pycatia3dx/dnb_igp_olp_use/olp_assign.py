@@ -13,25 +13,23 @@ from pycatia3dx.dnb_igp_olp_use.olp_variable import OLPVariable
 
 
 class OLPAssign(OLPInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DNBIgpOlpUseItf.OlpInstruction
-                |                         OlpAssign
-                | 
-                | An instruction used to assigning a value to a variable or IO.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DNBIgpOlpUseItf.OlpInstruction
+                                        OlpAssign
+                
+                An instruction used to assigning a value to a variable or IO.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
     
     """
 
@@ -43,13 +41,12 @@ class OLPAssign(OLPInstruction):
     def destination(self) -> OLPVariable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Destination() As OlpVariable
-                |     The variable which is being assigned.
-                |     You can retrieve an existing variable using OlpInstruction.FindVariable or
-                |     create a new one using OlpVariables.
+                Property Destination() As OlpVariable
+                    The variable which is being assigned.
+                    You can retrieve an existing variable using OlpInstruction.FindVariable or
+                    create a new one using OlpVariables.
 
         :return: OLPVariable
         """
@@ -68,11 +65,10 @@ class OLPAssign(OLPInstruction):
     def destination_express(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DestinationExpress() As OlpAstBranch
-                |     The variable which is being assigned as an expression.
+                Property DestinationExpress() As OlpAstBranch
+                    The variable which is being assigned as an expression.
 
         :return: OLPAstBranch
         """
@@ -91,17 +87,16 @@ class OLPAssign(OLPInstruction):
     def source(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Source() As OlpAstBranch
-                |     The expression that evaluates to the value being assigned.
-                |     When set, the OlpAstBranch.Value of the AST tree is used for the
-                |     expression. When retrieved, the DELMIA expression is parsed and is returned in
-                |     the format expected by OlpExpressionFixerDownload. You can find more
-                |     information on the OLP Expression AST format in the documentation under
-                |     Automation | Robotics | Robotics Offline Programming | Offline Programming
-                |     Expression Translation. 
+                Property Source() As OlpAstBranch
+                    The expression that evaluates to the value being assigned.
+                    When set, the OlpAstBranch.Value of the AST tree is used for the
+                    expression. When retrieved, the DELMIA expression is parsed and is returned in
+                    the format expected by OlpExpressionFixerDownload. You can find more
+                    information on the OLP Expression AST format in the documentation under
+                    Automation | Robotics | Robotics Offline Programming | Offline Programming
+                    Expression Translation. 
 
         :return: OLPAstBranch
         """
@@ -117,4 +112,4 @@ class OLPAssign(OLPInstruction):
         self.com_object.Source = value
 
     def __repr__(self):
-        return f'OLPAssign(name="{ self.name }")'
+        return f'OLPAssign(name="{self.name}")'

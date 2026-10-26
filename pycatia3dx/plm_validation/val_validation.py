@@ -15,22 +15,20 @@ from pycatia3dx.plm_validation.val_reviews import VALReviews
 
 
 class VALValidation(PLMEntity):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PLMModelerBaseIDLItf.PLMEntity
-                |                         VALValidation
-                | 
-                | Allows management of Validation entity
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PLMModelerBaseIDLItf.PLMEntity
+                                        VALValidation
+                
+                Allows management of Validation entity
     
     """
 
@@ -42,11 +40,10 @@ class VALValidation(PLMEntity):
     def checks(self) -> VALChecks:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Checks() As VALChecks (Read Only)
-                |     Returns the Checks collection.
+                Property Checks() As VALChecks (Read Only)
+                    Returns the Checks collection.
 
         :return: VALChecks
         """
@@ -57,11 +54,10 @@ class VALValidation(PLMEntity):
     def concerns(self) -> VALConcerns:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Concerns() As VALConcerns (Read Only)
-                |     Returns the Concerns collection.
+                Property Concerns() As VALConcerns (Read Only)
+                    Returns the Concerns collection.
 
         :return: VALConcerns
         """
@@ -72,11 +68,10 @@ class VALValidation(PLMEntity):
     def contexts(self) -> VALContexts:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Contexts() As VALContexts (Read Only)
-                |     Returns the Contexts collection.
+                Property Contexts() As VALContexts (Read Only)
+                    Returns the Contexts collection.
 
         :return: VALContexts
         """
@@ -87,11 +82,10 @@ class VALValidation(PLMEntity):
     def reviews(self) -> VALReviews:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Reviews() As VALReviews (Read Only)
-                |     Returns the Reviews collection.
+                Property Reviews() As VALReviews (Read Only)
+                    Returns the Reviews collection.
 
         :return: VALReviews
         """
@@ -102,11 +96,10 @@ class VALValidation(PLMEntity):
     def type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As CATBSTR (Read Only)
-                |     Returns the type of the Validation ("Product", "Simulation" or "Image").
+                Property Type() As CATBSTR (Read Only)
+                    Returns the type of the Validation ("Product", "Simulation" or "Image").
 
         :return: str
         """
@@ -114,4 +107,4 @@ class VALValidation(PLMEntity):
         return self.com_object.Type
 
     def __repr__(self):
-        return f'ValValidation(name="{ self.name }")'
+        return f'ValValidation(name="{self.name}")'

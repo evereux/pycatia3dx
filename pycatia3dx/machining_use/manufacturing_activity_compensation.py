@@ -12,21 +12,19 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingActivityCompensation(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingActivityCompensation
-                | 
-                | Interface to manage compensation.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingActivityCompensation
+                
+                Interface to manage compensation.
     
     """
 
@@ -37,20 +35,19 @@ class ManufacturingActivityCompensation(AnyObject):
     def get_value_long(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetValueLong() As long
-                |     Retrieves the value of corrector number.
-                | 
-                |     Parameters:
-                | 
-                |         oCorrectorNumber
-                |             The corrector number
+                Func GetValueLong() As long
+                    Retrieves the value of corrector number.
+                
+                    Parameters:
+                
+                        oCorrectorNumber
+                            The corrector number
 
         :return: int
         """
         return self.com_object.GetValueLong()
 
     def __repr__(self):
-        return f'ManufacturingActivityCompensation(name="{ self.name }")'
+        return f'ManufacturingActivityCompensation(name="{self.name}")'

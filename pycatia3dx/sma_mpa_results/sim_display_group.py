@@ -12,38 +12,36 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimDisplayGroup(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimDisplayGroup
-                | 
-                | Represents the display group.
-                | Role:The already created disaply groups can be retrieved and set to the plots,
-                | sensor etc.
-                | Example:
-                | 
-                |  Given a SimResultsAnalysisCase object, you can retrieve the existing display
-                |  group objects as following.
-                |  
-                | 
-                |  Dim oResultsSet As SimResultsSet
-                |  Set oResultsSet = oResultsAnalysisCase.GetSet("DisplayGroupSet")
-                | 
-                |  Dim oDisplayGroup As SimDisplayGroup
-                |  Set oDisplayGroup = oResultsSet.Item(1)
-                |  
-                | 
-                | See also:
-                |     SimResultsAnalysisCase
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimDisplayGroup
+                
+                Represents the display group.
+                Role:The already created disaply groups can be retrieved and set to the plots,
+                sensor etc.
+                Example:
+                
+                 Given a SimResultsAnalysisCase object, you can retrieve the existing display
+                 group objects as following.
+                 
+                
+                 Dim oResultsSet As SimResultsSet
+                 Set oResultsSet = oResultsAnalysisCase.GetSet("DisplayGroupSet")
+                
+                 Dim oDisplayGroup As SimDisplayGroup
+                 Set oDisplayGroup = oResultsSet.Item(1)
+                 
+                
+                See also:
+                    SimResultsAnalysisCase
 
     """
 
@@ -52,4 +50,4 @@ class SimDisplayGroup(AnyObject):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'SimDisplayGroup(name="{ self.name }")'
+        return f'SimDisplayGroup(name="{self.name}")'

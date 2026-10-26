@@ -15,29 +15,27 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeFilletBiTangent(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeFilletBiTangent
-                | 
-                | Fillet Bi-Tangent feature.
-                | Role: Manipulation of Fillet Bi-Tangent feature Allows to access data of the
-                | Fillet Bi-Tangent feature created by using two support surfaces, their
-                | orientation, a radius, and options (supports trimming and fillet extremities
-                | type)
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeFilletBiTangent
+                
+                Fillet Bi-Tangent feature.
+                Role: Manipulation of Fillet Bi-Tangent feature Allows to access data of the
+                Fillet Bi-Tangent feature created by using two support surfaces, their
+                orientation, a radius, and options (supports trimming and fillet extremities
+                type)
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -49,11 +47,10 @@ class HybridShapeFilletBiTangent(HybridShape):
     def conical_section_parameter(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ConicalSectionParameter() As double
-                |     Returns or Sets parameter for conical section.
+                Property ConicalSectionParameter() As double
+                    Returns or Sets parameter for conical section.
 
         :return: float
         """
@@ -72,11 +69,10 @@ class HybridShapeFilletBiTangent(HybridShape):
     def first_elem(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property FirstElem() As Reference
-                |     Returns or Sets the first support surface feature.
+                Property FirstElem() As Reference
+                    Returns or Sets the first support surface feature.
 
         :return: Reference
         """
@@ -95,19 +91,18 @@ class HybridShapeFilletBiTangent(HybridShape):
     def first_law_relimiter(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property FirstLawRelimiter() As Reference
-                |     Gets or sets Law first relimiter for variable shape fillet with law
-                |     management.
-                |     Relimiters must be point on spine.
-                |     The input law will be mapped between first and second relimiters. This
-                |     example retrieves in HybLaw the first law relimiter for the Fillet hybrid shape
-                |     feature.
-                | 
-                |      Dim HybLaw As Reference
-                |      HybLaw = Fillet.FirstLawRelimiter
+                Property FirstLawRelimiter() As Reference
+                    Gets or sets Law first relimiter for variable shape fillet with law
+                    management.
+                    Relimiters must be point on spine.
+                    The input law will be mapped between first and second relimiters. This
+                    example retrieves in HybLaw the first law relimiter for the Fillet hybrid shape
+                    feature.
+                
+                     Dim HybLaw As Reference
+                     HybLaw = Fillet.FirstLawRelimiter
 
         :return: Reference
         """
@@ -126,13 +121,12 @@ class HybridShapeFilletBiTangent(HybridShape):
     def first_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property FirstOrientation() As long
-                |     Returns or Setsthe first orientation used to specify fillet center
-                |     position.
-                |     Orientation is same or inverse than the normal to the first surface support
+                Property FirstOrientation() As long
+                    Returns or Setsthe first orientation used to specify fillet center
+                    position.
+                    Orientation is same or inverse than the normal to the first surface support
 
         :return: int
         """
@@ -151,11 +145,10 @@ class HybridShapeFilletBiTangent(HybridShape):
     def hold_curve(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property HoldCurve() As Reference
-                |     Returns or Sets the Hold Curve feature.
+                Property HoldCurve() As Reference
+                    Returns or Sets the Hold Curve feature.
 
         :return: Reference
         """
@@ -174,21 +167,20 @@ class HybridShapeFilletBiTangent(HybridShape):
     def integrated_law(self) -> HybridShapeIntegratedLaw:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property IntegratedLaw() As HybridShapeIntegratedLaw
-                |     Gets or sets Integrated Law to manage Variable Shape Fillet with
-                |     law.
-                | 
-                |     Parameters:
-                | 
-                |         oILaw
-                |             Integrated law This example retrieves in HybridIntegratedLaw the
-                |             IntegratedLaw for the Fillet hybrid shape feature.
-                | 
-                |              Dim HybridIntegratedLaw
-                |              Set HybridIntegratedLaw = Fillet.IntegratedLaw
+                Property IntegratedLaw() As HybridShapeIntegratedLaw
+                    Gets or sets Integrated Law to manage Variable Shape Fillet with
+                    law.
+                
+                    Parameters:
+                
+                        oILaw
+                            Integrated law This example retrieves in HybridIntegratedLaw the
+                            IntegratedLaw for the Fillet hybrid shape feature.
+                
+                             Dim HybridIntegratedLaw
+                             Set HybridIntegratedLaw = Fillet.IntegratedLaw
 
         :return: HybridShapeIntegratedLaw
         """
@@ -207,11 +199,10 @@ class HybridShapeFilletBiTangent(HybridShape):
     def radius(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Radius() As Length (Read Only)
-                |     Returns fillet radius in a CATIALength.
+                Property Radius() As Length (Read Only)
+                    Returns fillet radius in a CATIALength.
 
         :return: Length
         """
@@ -222,14 +213,13 @@ class HybridShapeFilletBiTangent(HybridShape):
     def radius_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property RadiusType() As long
-                |     Returns or Sets fillet radius type.
-                |     Fillet radius type :
-                |     - CATGSMRadiusDefault (0)
-                |     - CATGSMRadiusChordLength(1)
+                Property RadiusType() As long
+                    Returns or Sets fillet radius type.
+                    Fillet radius type :
+                    - CATGSMRadiusDefault (0)
+                    - CATGSMRadiusChordLength(1)
 
         :return: int
         """
@@ -248,11 +238,10 @@ class HybridShapeFilletBiTangent(HybridShape):
     def radius_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property RadiusValue() As double
-                |     Returns or Sets fillet radius value.
+                Property RadiusValue() As double
+                    Returns or Sets fillet radius value.
 
         :return: float
         """
@@ -271,17 +260,16 @@ class HybridShapeFilletBiTangent(HybridShape):
     def ribbon_relimitation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property RibbonRelimitationMode() As long
-                |     Returns or Sets fillet ribbon relimitation mode (or fillet extremities
-                |     mode).
-                |     Fillet extremities mode :
-                |     - CATGSMSmooth (0)
-                |     - CATGSMStraight(1)
-                |     - CATGSMMaximum (2)
-                |     - CATGSMMinimum (3)
+                Property RibbonRelimitationMode() As long
+                    Returns or Sets fillet ribbon relimitation mode (or fillet extremities
+                    mode).
+                    Fillet extremities mode :
+                    - CATGSMSmooth (0)
+                    - CATGSMStraight(1)
+                    - CATGSMMaximum (2)
+                    - CATGSMMinimum (3)
 
         :return: int
         """
@@ -300,11 +288,10 @@ class HybridShapeFilletBiTangent(HybridShape):
     def second_elem(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SecondElem() As Reference
-                |     Returns or sets the Second support surface feature.
+                Property SecondElem() As Reference
+                    Returns or sets the Second support surface feature.
 
         :return: Reference
         """
@@ -323,19 +310,18 @@ class HybridShapeFilletBiTangent(HybridShape):
     def second_law_relimiter(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SecondLawRelimiter() As Reference
-                |     Gets or sets Law second relimiter for variable shape fillet with law
-                |     management.
-                |     Relimiters must be point on spine.
-                |     The input law will be mapped between first and second relimiters. This
-                |     example retrieves in HybLaw the second law relimiter for the Fillet hybrid
-                |     shape feature.
-                | 
-                |      Dim HybLaw As Reference
-                |      HybLaw = Fillet.SecondLawRelimiter
+                Property SecondLawRelimiter() As Reference
+                    Gets or sets Law second relimiter for variable shape fillet with law
+                    management.
+                    Relimiters must be point on spine.
+                    The input law will be mapped between first and second relimiters. This
+                    example retrieves in HybLaw the second law relimiter for the Fillet hybrid
+                    shape feature.
+                
+                     Dim HybLaw As Reference
+                     HybLaw = Fillet.SecondLawRelimiter
 
         :return: Reference
         """
@@ -354,14 +340,13 @@ class HybridShapeFilletBiTangent(HybridShape):
     def second_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SecondOrientation() As long
-                |     Returns or Sets the Second orientation used to specify fillet center
-                |     position.
-                |     Orientation is same or inverse than the normal to the Second surface
-                |     support
+                Property SecondOrientation() As long
+                    Returns or Sets the Second orientation used to specify fillet center
+                    position.
+                    Orientation is same or inverse than the normal to the Second surface
+                    support
 
         :return: int
         """
@@ -380,14 +365,13 @@ class HybridShapeFilletBiTangent(HybridShape):
     def section_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SectionType() As long
-                |     Returns or Sets fillet section type.
-                |     Fillet radius type :
-                |     - CATGSMCircularSection(0)
-                |     - CATGSMConicalSection (1)
+                Property SectionType() As long
+                    Returns or Sets fillet section type.
+                    Fillet radius type :
+                    - CATGSMCircularSection(0)
+                    - CATGSMConicalSection (1)
 
         :return: int
         """
@@ -406,11 +390,10 @@ class HybridShapeFilletBiTangent(HybridShape):
     def spine(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Spine() As Reference
-                |     Returns or Sets the spine feature.
+                Property Spine() As Reference
+                    Returns or Sets the spine feature.
 
         :return: Reference
         """
@@ -429,11 +412,10 @@ class HybridShapeFilletBiTangent(HybridShape):
     def supports_trim_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SupportsTrimMode() As long
-                |     Returns or Sets whether support surfaces are trimmed or not. Possible values of SupportsTrimMode = 0 : No trim of fillet supports. = 1 : Trim of both fillet supports. = 2 : Trim of fillet support 1. = 3 : Trim of fillet support 2.
+                Property SupportsTrimMode() As long
+                    Returns or Sets whether support surfaces are trimmed or not. Possible values of SupportsTrimMode = 0 : No trim of fillet supports. = 1 : Trim of both fillet supports. = 2 : Trim of fillet support 1. = 3 : Trim of fillet support 2.
 
         :return: int
         """
@@ -451,15 +433,14 @@ class HybridShapeFilletBiTangent(HybridShape):
     def append_new_face_to_keep(self, i_face: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub AppendNewFaceToKeep(Reference iFace)
-                |     Append a new face to keep.
-                | 
-                |     Parameters:
-                | 
-                |         iFace
+                Sub AppendNewFaceToKeep(Reference iFace)
+                    Append a new face to keep.
+                
+                    Parameters:
+                
+                        iFace
 
         :param Reference i_face:
         :return: None
@@ -469,18 +450,17 @@ class HybridShapeFilletBiTangent(HybridShape):
     def get_face_to_keep(self, i_pos: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetFaceToKeep(long iPos) As Reference
-                |     Gets the face to keep for fillet operation.
-                | 
-                |     Parameters:
-                | 
-                |         oFace
-                |             The face to keep for fillet operation. 
-                |         iPos
-                |             Position of the face to be retrieved.
+                Func GetFaceToKeep(long iPos) As Reference
+                    Gets the face to keep for fillet operation.
+                
+                    Parameters:
+                
+                        oFace
+                            The face to keep for fillet operation. 
+                        iPos
+                            Position of the face to be retrieved.
 
         :param int i_pos:
         :return: Reference
@@ -490,11 +470,10 @@ class HybridShapeFilletBiTangent(HybridShape):
     def invert_first_orientation(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub InvertFirstOrientation()
-                |     Inverts first orientation used to specify fillet center position.
+                Sub InvertFirstOrientation()
+                    Inverts first orientation used to specify fillet center position.
 
         :return: None
         """
@@ -503,11 +482,10 @@ class HybridShapeFilletBiTangent(HybridShape):
     def invert_second_orientation(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub InvertSecondOrientation()
-                |     Inverts second orientation used to specify fillet center position.
+                Sub InvertSecondOrientation()
+                    Inverts second orientation used to specify fillet center position.
 
         :return: None
         """
@@ -516,11 +494,10 @@ class HybridShapeFilletBiTangent(HybridShape):
     def remove_all_faces_to_keep(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveAllFacesToKeep()
-                |     Remove all the faces to keep.
+                Sub RemoveAllFacesToKeep()
+                    Remove all the faces to keep.
 
         :return: None
         """
@@ -529,15 +506,14 @@ class HybridShapeFilletBiTangent(HybridShape):
     def remove_face_to_keep(self, i_face: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveFaceToKeep(Reference iFace)
-                |     Remove a face to keep.
-                | 
-                |     Parameters:
-                | 
-                |         iFace
+                Sub RemoveFaceToKeep(Reference iFace)
+                    Remove a face to keep.
+                
+                    Parameters:
+                
+                        iFace
 
         :param Reference i_face:
         :return: None
@@ -545,4 +521,4 @@ class HybridShapeFilletBiTangent(HybridShape):
         return self.com_object.RemoveFaceToKeep(i_face.com_object)
 
     def __repr__(self):
-        return f'HybridShapeFilletBiTangent(name="{ self.name }")'
+        return f'HybridShapeFilletBiTangent(name="{self.name}")'

@@ -14,26 +14,24 @@ from pycatia3dx.dnb_igp_olp_use.olp_variables import OLPVariables
 
 
 class OLPBehavior(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     OlpBehavior
-                | 
-                | Interface for accessing a resource's behavior.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | This object can be retrieved from a
-                | OlpTranslatorHelper.Behavior.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    OlpBehavior
+                
+                Interface for accessing a resource's behavior.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                This object can be retrieved from a
+                OlpTranslatorHelper.Behavior.
     
     """
 
@@ -45,11 +43,10 @@ class OLPBehavior(AnyObject):
     def global_variables(self) -> OLPVariables:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property GlobalVariables() As OlpVariables (Read Only)
-                |     The global variables, IO, and constants in this behavior.
+                Property GlobalVariables() As OlpVariables (Read Only)
+                    The global variables, IO, and constants in this behavior.
 
         :return: OLPVariables
         """
@@ -60,13 +57,12 @@ class OLPBehavior(AnyObject):
     def procedures(self) -> OLPProcedures:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Procedures() As OlpProcedures (Read Only)
-                |     All procedures (robot tasks) for this behavior.
-                |     To get a list of the procedures being downloaded use
-                |     OlpTranslatorHelper.Tasks 
+                Property Procedures() As OlpProcedures (Read Only)
+                    All procedures (robot tasks) for this behavior.
+                    To get a list of the procedures being downloaded use
+                    OlpTranslatorHelper.Tasks 
 
         :return: OLPProcedures
         """
@@ -74,4 +70,4 @@ class OLPBehavior(AnyObject):
         return OLPProcedures(self.com_object.Procedures)
 
     def __repr__(self):
-        return f'OLPBehavior(name="{ self.name }")'
+        return f'OLPBehavior(name="{self.name}")'

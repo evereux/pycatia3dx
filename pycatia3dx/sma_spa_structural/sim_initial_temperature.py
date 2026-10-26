@@ -14,59 +14,57 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimInitialTemperature(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimInitialTemperature
-                | 
-                | Represents the Initial Temperature object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimInitialTemperature as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyInitialTemperature As SimInitialTemperature
-                |      Set MyInitialTemperature = MyFeatures.Add("SimInitialTemperature")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimInitialTemperature named
-                |     "Initial Temperature.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyInitialTemperature As SimInitialTemperature
-                |      Set MyInitialTemperature = MyFeatures.Item("Initial Temperature.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a
-                |     SimInitialTemperature as following:
-                | 
-                |      ...
-                |      myInitialTemperature = myFeatures.Add("SimInitialTemperature")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a
-                |     SimInitialTemperature named "Initial Temperature.1" as
-                |     following:
-                | 
-                |      ...
-                |      myInitialTemperature = myFeatures.Item("Initial Temperature.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimInitialTemperature
+                
+                Represents the Initial Temperature object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimInitialTemperature as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyInitialTemperature As SimInitialTemperature
+                     Set MyInitialTemperature = MyFeatures.Add("SimInitialTemperature")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimInitialTemperature named
+                    "Initial Temperature.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyInitialTemperature As SimInitialTemperature
+                     Set MyInitialTemperature = MyFeatures.Item("Initial Temperature.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a
+                    SimInitialTemperature as following:
+                
+                     ...
+                     myInitialTemperature = myFeatures.Add("SimInitialTemperature")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a
+                    SimInitialTemperature named "Initial Temperature.1" as
+                    following:
+                
+                     ...
+                     myInitialTemperature = myFeatures.Item("Initial Temperature.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -78,14 +76,13 @@ class SimInitialTemperature(AnyObject):
     def absolute_exterior_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AbsoluteExteriorTolerance() As double
-                |     Returns or sets the Absolute Exterior Tolerance. This is the value that
-                |     nodes of the structural model can be outside the region of the elements of the
-                |     thermal model. If this value is zero, the value for the relative exterior
-                |     tolerance is used.
+                Property AbsoluteExteriorTolerance() As double
+                    Returns or sets the Absolute Exterior Tolerance. This is the value that
+                    nodes of the structural model can be outside the region of the elements of the
+                    thermal model. If this value is zero, the value for the relative exterior
+                    tolerance is used.
 
         :return: float
         """
@@ -104,11 +101,10 @@ class SimInitialTemperature(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -127,11 +123,10 @@ class SimInitialTemperature(AnyObject):
     def analysis_case(self) -> SimThermalAnalysisCase:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AnalysisCase() As SimThermalAnalysisCase
-                |     Returns or sets the Thermal Analysis Case.
+                Property AnalysisCase() As SimThermalAnalysisCase
+                    Returns or sets the Thermal Analysis Case.
 
         :return: SimThermalAnalysisCase
         """
@@ -150,25 +145,24 @@ class SimInitialTemperature(AnyObject):
     def from_step_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FromStepFlag() As boolean
-                |     Returns or sets the flag for an initial temperature from a
-                |     SimThermalAnalysisCase and SimStep. This example demonstrates how to use the
-                |     SimInitialTemperature object with a temperature field.
-                | 
-                |      Dim MyInitialTemperature As SimInitialTemperature
-                |      Dim MyThermalAnalysisCase As SimThermalAnalysisCase
-                |      Dim MySteadyStateHeatTransferStep As
-                |      SimSteadyStateHeatTransferStep
-                |      ...
-                |      MyInitialTemperature.FromStepFlag = True
-                |      MyInitialTemperature.AnalysisCase = MyThermalAnalysisCase
-                |      MyInitialTemperature.Step = MySteadyStateHeatTransferStep
-                |      MyInitialTemperature.Increment = 999999
-                |      MyInitialTemperature.AbsoluteExteriorTolerance = 0.0
-                |      MyInitialTemperature.RelativeExteriorTolerance = 0.1
+                Property FromStepFlag() As boolean
+                    Returns or sets the flag for an initial temperature from a
+                    SimThermalAnalysisCase and SimStep. This example demonstrates how to use the
+                    SimInitialTemperature object with a temperature field.
+                
+                     Dim MyInitialTemperature As SimInitialTemperature
+                     Dim MyThermalAnalysisCase As SimThermalAnalysisCase
+                     Dim MySteadyStateHeatTransferStep As
+                     SimSteadyStateHeatTransferStep
+                     ...
+                     MyInitialTemperature.FromStepFlag = True
+                     MyInitialTemperature.AnalysisCase = MyThermalAnalysisCase
+                     MyInitialTemperature.Step = MySteadyStateHeatTransferStep
+                     MyInitialTemperature.Increment = 999999
+                     MyInitialTemperature.AbsoluteExteriorTolerance = 0.0
+                     MyInitialTemperature.RelativeExteriorTolerance = 0.1
 
         :return: bool
         """
@@ -187,12 +181,11 @@ class SimInitialTemperature(AnyObject):
     def increment(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Increment() As long
-                |     Returns or sets the Increment. Use 1 for the first increment. Use 999999
-                |     for the last increment.
+                Property Increment() As long
+                    Returns or sets the Increment. Use 1 for the first increment. Use 999999
+                    for the last increment.
 
         :return: int
         """
@@ -211,13 +204,12 @@ class SimInitialTemperature(AnyObject):
     def relative_exterior_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RelativeExteriorTolerance() As double
-                |     Returns or sets the Relative Exterior Tolerance. This is the fraction of
-                |     the average element size that nodes of the structural model can be outside the
-                |     region of the elements of the thermal model.
+                Property RelativeExteriorTolerance() As double
+                    Returns or sets the Relative Exterior Tolerance. This is the fraction of
+                    the average element size that nodes of the structural model can be outside the
+                    region of the elements of the thermal model.
 
         :return: float
         """
@@ -236,11 +228,10 @@ class SimInitialTemperature(AnyObject):
     def scalar_field(self) -> SimScalarField:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ScalarField() As SimScalarField (Read Only)
-                |     Returns the scalar field.
+                Property ScalarField() As SimScalarField (Read Only)
+                    Returns the scalar field.
 
         :return: SimScalarField
         """
@@ -251,12 +242,11 @@ class SimInitialTemperature(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. See SimFeatures.GetSpecTreeCategory for usage.
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. See SimFeatures.GetSpecTreeCategory for usage.
 
         :return: str
         """
@@ -267,11 +257,10 @@ class SimInitialTemperature(AnyObject):
     def step(self) -> SimStep:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Step() As SimStep
-                |     Returns or sets the Step.
+                Property Step() As SimStep
+                    Returns or sets the Step.
 
         :return: SimStep
         """
@@ -290,11 +279,10 @@ class SimInitialTemperature(AnyObject):
     def uniform_magnitude(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UniformMagnitude() As double
-                |     Temperature value. Quantity: TEMPRTRE, units: Kdeg
+                Property UniformMagnitude() As double
+                    Temperature value. Quantity: TEMPRTRE, units: Kdeg
 
         :return: float
         """
@@ -313,14 +301,13 @@ class SimInitialTemperature(AnyObject):
     def uniform_magnitude_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UniformMagnitudeFlag() As boolean (Read Only)
-                |     Returns or sets the flag that determines if the magnitude is
-                |     uniform.
-                |     TRUE: the magnitude is uniform.
-                |     FALSE: the magnitude is not uniform. 
+                Property UniformMagnitudeFlag() As boolean (Read Only)
+                    Returns or sets the flag that determines if the magnitude is
+                    uniform.
+                    TRUE: the magnitude is uniform.
+                    FALSE: the magnitude is not uniform. 
 
         :return: bool
         """
@@ -328,4 +315,4 @@ class SimInitialTemperature(AnyObject):
         return self.com_object.UniformMagnitudeFlag
 
     def __repr__(self):
-        return f'SimInitialTemperature(name="{ self.name }")'
+        return f'SimInitialTemperature(name="{self.name}")'

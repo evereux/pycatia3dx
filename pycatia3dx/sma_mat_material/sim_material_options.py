@@ -18,31 +18,30 @@ from pycatia3dx.types.general import CATVariant
 class SimMaterialOptions(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SimMaterialOptions
-                | 
-                | Represents the collection of material options.
-                | 
-                | Example:
-                |     Given a SimMaterialDomain object you can retrieve a SimMaterialOptions
-                |     collection as following:
-                | 
-                |      Dim MyMaterialDomain As SimMaterialDomain
-                |      ...
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      Set MyMaterialOptions = MyMaterialDomain.Options
-                |      
-                | 
-                | See also:
-                |     SimMaterialDomain
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SimMaterialOptions
+                
+                Represents the collection of material options.
+                
+                Example:
+                    Given a SimMaterialDomain object you can retrieve a SimMaterialOptions
+                    collection as following:
+                
+                     Dim MyMaterialDomain As SimMaterialDomain
+                     ...
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     Set MyMaterialOptions = MyMaterialDomain.Options
+                     
+                
+                See also:
+                    SimMaterialDomain
     
     """
 
@@ -53,43 +52,42 @@ class SimMaterialOptions(Collection):
     def add(self, i_type: str) -> SimMaterialOption:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add(CATBSTR iType) As CATBaseDispatch
-                |     Creates a new material option in a simulation domain.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             Type of the material option.
-                | 
-                |                 SimIsotropicConductivity for conductivity.
-                |                 SimDensity for Density.
-                |                 SimElasticity for Elastic.
-                |                 SimExpansion for Expansion.
-                |                 SimGasketMembraneElastic for Gasket Membrane
-                |                 Elastic.
-                |                 SimGasketThicknessBehavior for Gasket Thickness
-                |                 Behavior.
-                |                 SimGasketTransverseShearElastic for Gasket Transverse Shear
-                |                 Elastic.
-                |                 SimHashinDamage for Hashin Damage.
-                |                 SimPlasticity for Plastic.
-                |                 SMAMatCastIronPlasticity for Cast Iron
-                |                 Plasticity.
-                |                 SMAMatDamping for Damping.
-                |                 SMAMatBulkModulus for Bulk Modulus.
-                |                 SMAMatSpecificHeat for Specific Heat.
-                |                 SMAMatInelasticHeatFraction for Inelastic Heat
-                |                 Fraction.
-                |                 SMAMatLatentHeat for Latent Heat.
-                |                 SMAMatVolumetricDrag for Volumetric Drag.
-                |                 SMAMatAcousticAbsorption for Acoustic Absorption.
-                |                 
-                | 
-                |     Returns:
-                |         Created material option.
+                Func Add(CATBSTR iType) As CATBaseDispatch
+                    Creates a new material option in a simulation domain.
+                
+                    Parameters:
+                
+                        iType
+                            Type of the material option.
+                
+                                SimIsotropicConductivity for conductivity.
+                                SimDensity for Density.
+                                SimElasticity for Elastic.
+                                SimExpansion for Expansion.
+                                SimGasketMembraneElastic for Gasket Membrane
+                                Elastic.
+                                SimGasketThicknessBehavior for Gasket Thickness
+                                Behavior.
+                                SimGasketTransverseShearElastic for Gasket Transverse Shear
+                                Elastic.
+                                SimHashinDamage for Hashin Damage.
+                                SimPlasticity for Plastic.
+                                SMAMatCastIronPlasticity for Cast Iron
+                                Plasticity.
+                                SMAMatDamping for Damping.
+                                SMAMatBulkModulus for Bulk Modulus.
+                                SMAMatSpecificHeat for Specific Heat.
+                                SMAMatInelasticHeatFraction for Inelastic Heat
+                                Fraction.
+                                SMAMatLatentHeat for Latent Heat.
+                                SMAMatVolumetricDrag for Volumetric Drag.
+                                SMAMatAcousticAbsorption for Acoustic Absorption.
+                                
+                
+                    Returns:
+                        Created material option.
 
         :param str i_type:
         :return: SimMaterialOption
@@ -99,19 +97,18 @@ class SimMaterialOptions(Collection):
     def item(self, i_index: CATVariant) -> SimMaterialOption:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As CATBaseDispatch
-                |     Returns a material option object.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the material option. 
-                | 
-                |     Returns:
-                |         The material option object.
+                Func Item(CATVariant iIndex) As CATBaseDispatch
+                    Returns a material option object.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the material option. 
+                
+                    Returns:
+                        The material option object.
 
         :param CATVariant i_index:
         :return: SimMaterialOption
@@ -121,16 +118,15 @@ class SimMaterialOptions(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(CATVariant iIndex)
-                |     Removes a material option object.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the material option to be removed. 
+                Sub Remove(CATVariant iIndex)
+                    Removes a material option object.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the material option to be removed. 
 
         :param CATVariant i_index:
         :return: None

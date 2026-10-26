@@ -17,18 +17,17 @@ from pycatia3dx.types.general import CATVariant
 class TPSViews(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     TPSViews
-                | 
-                | Interface for collection of TPS Views CATIATPSView.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    TPSViews
+                
+                Interface for collection of TPS Views CATIATPSView.
     
     """
 
@@ -39,11 +38,10 @@ class TPSViews(Collection):
     def item(self, i_index: CATVariant) -> TPSView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As AnyObject
-                |     Retrieve a TPS View. 
+                Func Item(CATVariant iIndex) As AnyObject
+                    Retrieve a TPS View. 
 
         :param CATVariant i_index:
         :return: TPSView

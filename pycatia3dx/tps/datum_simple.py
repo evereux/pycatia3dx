@@ -18,19 +18,18 @@ if TYPE_CHECKING:
 class DatumSimple(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DatumSimple
-                | 
-                | Interface for Simple Datum TPS (datum entity).
-                | TPS for Technological Product Specifications.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DatumSimple
+                
+                Interface for Simple Datum TPS (datum entity).
+                TPS for Technological Product Specifications.
     
     """
 
@@ -42,11 +41,10 @@ class DatumSimple(AnyObject):
     def label(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Label() As CATBSTR
-                |     Retrieves or sets Label.
+                Property Label() As CATBSTR
+                    Retrieves or sets Label.
 
         :return: str
         """
@@ -65,12 +63,11 @@ class DatumSimple(AnyObject):
     def targets(self) -> 'Annotations':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Targets() As Annotations (Read Only)
-                |     Retrieves a CATITPSList to read the list of datum target. All objects of
-                |     the list adhere to CATITPSDatumTarget. 
+                Property Targets() As Annotations (Read Only)
+                    Retrieves a CATITPSList to read the list of datum target. All objects of
+                    the list adhere to CATITPSDatumTarget. 
 
         :return: Annotations
         """

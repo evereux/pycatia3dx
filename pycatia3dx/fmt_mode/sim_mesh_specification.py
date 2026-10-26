@@ -15,18 +15,17 @@ from pycatia3dx.types.general import CATVariant
 class SimMeshSpecification(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimMeshSpecification
-                | 
-                | Represents a Local Mesh Specification.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimMeshSpecification
+                
+                Represents a Local Mesh Specification.
     
     """
 
@@ -38,11 +37,10 @@ class SimMeshSpecification(AnyObject):
     def type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As CATBSTR (Read Only)
-                |     Returns the type of the Local Mesh Specification.
+                Property Type() As CATBSTR (Read Only)
+                    Returns the type of the Local Mesh Specification.
 
         :return: str
         """
@@ -52,19 +50,18 @@ class SimMeshSpecification(AnyObject):
     def get_attribute_value(self, i_attribute: str, o_value: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetAttributeValue(CATBSTR iAttribute,CATVariant oValue)
-                |     Retrieves the value corresponding to the given attribute.
-                | 
-                |     Parameters:
-                | 
-                |         iAttribute:
-                |             The identifier of the attribute. 
-                | 
-                |     Returns:
-                |         The value of the Local Mesh Specification attribute.
+                Sub GetAttributeValue(CATBSTR iAttribute,CATVariant oValue)
+                    Retrieves the value corresponding to the given attribute.
+                
+                    Parameters:
+                
+                        iAttribute:
+                            The identifier of the attribute. 
+                
+                    Returns:
+                        The value of the Local Mesh Specification attribute.
 
         :param str i_attribute:
         :param CATVariant o_value:
@@ -75,18 +72,17 @@ class SimMeshSpecification(AnyObject):
     def set_attribute_value(self, i_attribute: str, i_value: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAttributeValue(CATBSTR iAttribute,CATVariant iValue)
-                |     Sets the value corresponding to the given attribute.
-                | 
-                |     Parameters:
-                | 
-                |         iAttribute:
-                |             The identifier of the attribute. 
-                |         iValue:
-                |             The value of the Local Mesh Specification attribute.
+                Sub SetAttributeValue(CATBSTR iAttribute,CATVariant iValue)
+                    Sets the value corresponding to the given attribute.
+                
+                    Parameters:
+                
+                        iAttribute:
+                            The identifier of the attribute. 
+                        iValue:
+                            The value of the Local Mesh Specification attribute.
 
         :param str i_attribute:
         :param CATVariant i_value:

@@ -12,62 +12,60 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimCompositeContinuumShellSection(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimCompositeContinuumShellSection
-                | 
-                | Represents the Composite Continnum Shell Section object.
-                | 
-                | Example:
-                |     Given a SimProperties object, you can create a
-                |     SimCompositeContinuumShellSection as following:
-                | 
-                |      Dim MyProperties As SimProperties
-                |      ...
-                |      Dim MyCompositeContinuumShellSection As
-                |      SimCompositeContinuumShellSection
-                |      Set MyCompositeContinuumShellSection = MyProperties.Add("SimCompositeContinuumShellSection")
-                |      
-                | 
-                |     Given a SimProperties object, you can retrieve a
-                |     SimCompositeContinuumShellSection named "Composite Continnum Shell Section.1"
-                |     as following:
-                | 
-                |      Dim MyProperties As SimProperties
-                |      ...
-                |      Dim MyCompositeContinuumShellSection As
-                |      SimCompositeContinuumShellSection
-                |      Set MyCompositeContinuumShellSection = MyProperties.Item("Composite Continnum Shell Section.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimProperties object myProperties, you can create a
-                |     SimCompositeContinuumShellSection as following:
-                | 
-                |      ...
-                |      MyCompositeContinuumShellSection = myProperties.Add("SimCompositeContinuumShellSection")
-                |      
-                | 
-                |     Given a SimProperties object myProperties, you can retrieve a
-                |     SimCompositeContinuumShellSection named "Composite Continnum Shell Section.1"
-                |     as following:
-                | 
-                |      ...
-                |      MyCompositeContinuumShellSection = myProperties.Item("Composite Continnum Shell Section.1")
-                |      
-                | 
-                | See also:
-                |     SimProperties
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimCompositeContinuumShellSection
+                
+                Represents the Composite Continnum Shell Section object.
+                
+                Example:
+                    Given a SimProperties object, you can create a
+                    SimCompositeContinuumShellSection as following:
+                
+                     Dim MyProperties As SimProperties
+                     ...
+                     Dim MyCompositeContinuumShellSection As
+                     SimCompositeContinuumShellSection
+                     Set MyCompositeContinuumShellSection = MyProperties.Add("SimCompositeContinuumShellSection")
+                     
+                
+                    Given a SimProperties object, you can retrieve a
+                    SimCompositeContinuumShellSection named "Composite Continnum Shell Section.1"
+                    as following:
+                
+                     Dim MyProperties As SimProperties
+                     ...
+                     Dim MyCompositeContinuumShellSection As
+                     SimCompositeContinuumShellSection
+                     Set MyCompositeContinuumShellSection = MyProperties.Item("Composite Continnum Shell Section.1")
+                     
+                
+                Example in Python:
+                    Given a SimProperties object myProperties, you can create a
+                    SimCompositeContinuumShellSection as following:
+                
+                     ...
+                     MyCompositeContinuumShellSection = myProperties.Add("SimCompositeContinuumShellSection")
+                     
+                
+                    Given a SimProperties object myProperties, you can retrieve a
+                    SimCompositeContinuumShellSection named "Composite Continnum Shell Section.1"
+                    as following:
+                
+                     ...
+                     MyCompositeContinuumShellSection = myProperties.Item("Composite Continnum Shell Section.1")
+                     
+                
+                See also:
+                    SimProperties
     
     """
 
@@ -79,19 +77,18 @@ class SimCompositeContinuumShellSection(AnyObject):
     def composite_support(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CompositeSupport() As CATBaseDispatch (Read Only)
-                |     Retrieves the composite support.
-                | 
-                |     Parameters:
-                | 
-                |         ospCompositeSupport
-                |             [out] The composite support. 
-                | 
-                |     Returns:
-                |         S_OK if successful.
+                Property CompositeSupport() As CATBaseDispatch (Read Only)
+                    Retrieves the composite support.
+                
+                    Parameters:
+                
+                        ospCompositeSupport
+                            [out] The composite support. 
+                
+                    Returns:
+                        S_OK if successful.
 
         :return: AnyObject
         """
@@ -102,11 +99,10 @@ class SimCompositeContinuumShellSection(AnyObject):
     def core_sampling_depth(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CoreSamplingDepth() As double
-                |     Returns or sets the core sampling depth. Quantity: LENGTH, units: m
+                Property CoreSamplingDepth() As double
+                    Returns or sets the core sampling depth. Quantity: LENGTH, units: m
 
         :return: float
         """
@@ -125,16 +121,15 @@ class SimCompositeContinuumShellSection(AnyObject):
     def core_sampling_depth_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CoreSamplingDepthFlag() As boolean
-                |     Returns or sets the flag that determines if the core sampling depth is
-                |     enabled.
-                | 
-                |     TRUE: the core sampling depth is enabled.
-                | 
-                |     FALSE: if the core sampling depth is not enabled.
+                Property CoreSamplingDepthFlag() As boolean
+                    Returns or sets the flag that determines if the core sampling depth is
+                    enabled.
+                
+                    TRUE: the core sampling depth is enabled.
+                
+                    FALSE: if the core sampling depth is not enabled.
 
         :return: bool
         """
@@ -153,16 +148,15 @@ class SimCompositeContinuumShellSection(AnyObject):
     def cut_pieces_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CutPiecesFlag() As boolean
-                |     Returns or sets the flag that determines if the core sampling depth is
-                |     enabled.
-                | 
-                |     TRUE: the core sampling depth is enabled.
-                | 
-                |     FALSE: if the core sampling depth is not enabled.
+                Property CutPiecesFlag() As boolean
+                    Returns or sets the flag that determines if the core sampling depth is
+                    enabled.
+                
+                    TRUE: the core sampling depth is enabled.
+                
+                    FALSE: if the core sampling depth is not enabled.
 
         :return: bool
         """
@@ -181,18 +175,17 @@ class SimCompositeContinuumShellSection(AnyObject):
     def fiber_orientations_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FiberOrientationsFlag() As boolean
-                |     Returns the flag that determines if the fiber orientations computation is
-                |     from manufacturing parameters.
-                | 
-                |     TRUE: the fiber orientations are computed using the manufacturing core
-                |     sampling algorithm.
-                | 
-                |     FALSE: if the orientations are computed using a geometrical core sampling
-                |     algorithm.
+                Property FiberOrientationsFlag() As boolean
+                    Returns the flag that determines if the fiber orientations computation is
+                    from manufacturing parameters.
+                
+                    TRUE: the fiber orientations are computed using the manufacturing core
+                    sampling algorithm.
+                
+                    FALSE: if the orientations are computed using a geometrical core sampling
+                    algorithm.
 
         :return: bool
         """
@@ -211,12 +204,11 @@ class SimCompositeContinuumShellSection(AnyObject):
     def integration_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IntegrationScheme() As
-                | SimShellSectionIntegrationScheme
-                |     Returns or sets the integration method used for the section.
+                Property IntegrationScheme() As
+                SimShellSectionIntegrationScheme
+                    Returns or sets the integration method used for the section.
 
         :return: SimShellSectionIntegrationScheme
         """
@@ -235,21 +227,20 @@ class SimCompositeContinuumShellSection(AnyObject):
     def layer_material_support(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LayerMaterialSupport() As CATBaseDispatch (Read Only)
-                |     Returns the support of the layer material through which the simulation
-                |     material behavior for each unique material can be
-                |     specified.
-                | 
-                |     Parameters:
-                | 
-                |         oLayerMaterialSupport[out]
-                |             The layer material support. 
-                | 
-                |     Returns:
-                |         S_OK if successful.
+                Property LayerMaterialSupport() As CATBaseDispatch (Read Only)
+                    Returns the support of the layer material through which the simulation
+                    material behavior for each unique material can be
+                    specified.
+                
+                    Parameters:
+                
+                        oLayerMaterialSupport[out]
+                            The layer material support. 
+                
+                    Returns:
+                        S_OK if successful.
 
         :return: AnyObject
         """
@@ -260,11 +251,10 @@ class SimCompositeContinuumShellSection(AnyObject):
     def nonstructural_ply_angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NonstructuralPlyAngle() As double
-                |     Returns or sets the ply angle to be defined to the dummy plies.
+                Property NonstructuralPlyAngle() As double
+                    Returns or sets the ply angle to be defined to the dummy plies.
 
         :return: float
         """
@@ -283,15 +273,14 @@ class SimCompositeContinuumShellSection(AnyObject):
     def nonstructural_ply_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NonstructuralPlyFlag() As boolean
-                |     Returns or sets the non structural plies flag.
-                | 
-                |     TRUE: the non structural plies are to be included.
-                | 
-                |     FALSE: if non structural plies arenot be included.
+                Property NonstructuralPlyFlag() As boolean
+                    Returns or sets the non structural plies flag.
+                
+                    TRUE: the non structural plies are to be included.
+                
+                    FALSE: if non structural plies arenot be included.
 
         :return: bool
         """
@@ -310,11 +299,10 @@ class SimCompositeContinuumShellSection(AnyObject):
     def nonstructural_ply_material(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NonstructuralPlyMaterial() As CATBaseDispatch
-                |     Returns or sets the material to be applied to the dummy plies.
+                Property NonstructuralPlyMaterial() As CATBaseDispatch
+                    Returns or sets the material to be applied to the dummy plies.
 
         :return: AnyObject
         """
@@ -333,12 +321,11 @@ class SimCompositeContinuumShellSection(AnyObject):
     def nonstructural_ply_position(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NonstructuralPlyPosition() As
-                | SimNonStructPlyPositionScheme
-                |     Returns or sets the position at which the dummy plies is to be created.
+                Property NonstructuralPlyPosition() As
+                SimNonStructPlyPositionScheme
+                    Returns or sets the position at which the dummy plies is to be created.
 
         :return: int
         """
@@ -357,11 +344,10 @@ class SimCompositeContinuumShellSection(AnyObject):
     def num_int_points(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumIntPoints() As long
-                |     Returns or sets the number of integration points used for the section.
+                Property NumIntPoints() As long
+                    Returns or sets the number of integration points used for the section.
 
         :return: int
         """
@@ -380,12 +366,11 @@ class SimCompositeContinuumShellSection(AnyObject):
     def num_int_points_per_layer_material(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumIntPointsPerLayerMaterial() As CATSafeArrayVariant
-                |     Returns or sets the number of integration points used for each unique
-                |     material used by the composite ply layers.
+                Property NumIntPointsPerLayerMaterial() As CATSafeArrayVariant
+                    Returns or sets the number of integration points used for each unique
+                    material used by the composite ply layers.
 
         :return: tuple
         """
@@ -404,11 +389,10 @@ class SimCompositeContinuumShellSection(AnyObject):
     def poisson_method(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PoissonMethod() As SimShellSectionPoissonMethod
-                |     Returns or sets the Poisson method used for the section.
+                Property PoissonMethod() As SimShellSectionPoissonMethod
+                    Returns or sets the Poisson method used for the section.
 
         :return: SimShellSectionPoissonMethod
         """
@@ -427,11 +411,10 @@ class SimCompositeContinuumShellSection(AnyObject):
     def poisson_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PoissonValue() As double
-                |     Poisson's ratio value. Quantity: Real, units: None
+                Property PoissonValue() As double
+                    Poisson's ratio value. Quantity: Real, units: None
 
         :return: float
         """
@@ -450,17 +433,16 @@ class SimCompositeContinuumShellSection(AnyObject):
     def pre_integration_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PreIntegrationFlag() As boolean
-                |     Returns or sets the flag that determines if the Composite Continnum Shell
-                |     section is pre-integrated.
-                | 
-                |     TRUE: the Composite Continnum Shell section is
-                |     pre-integrated.
-                | 
-                |     FALSE: the Composite Continnum Shell section is not pre-integrated.
+                Property PreIntegrationFlag() As boolean
+                    Returns or sets the flag that determines if the Composite Continnum Shell
+                    section is pre-integrated.
+                
+                    TRUE: the Composite Continnum Shell section is
+                    pre-integrated.
+                
+                    FALSE: the Composite Continnum Shell section is not pre-integrated.
 
         :return: bool
         """
@@ -479,36 +461,35 @@ class SimCompositeContinuumShellSection(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. Possible values are:
-                | 
-                |         Abstractions
-                |         Amplitudes
-                |         Controls
-                |         Connections
-                |         Damping
-                |         ElementTypeAssignments
-                |         Envelopes
-                |         FieldPlots
-                |         FlowConditions
-                |         HistoryPlots
-                |         InitialConditions
-                |         Interactions
-                |         LinearLoadCases
-                |         Loads
-                |         LoadSets
-                |         OutputRequests
-                |         PredefinedFields
-                |         Properties
-                |         Restraints
-                |         Sensors
-                |         Streams
-                |         ThermalConditions
-                |         NotDefined
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. Possible values are:
+                
+                        Abstractions
+                        Amplitudes
+                        Controls
+                        Connections
+                        Damping
+                        ElementTypeAssignments
+                        Envelopes
+                        FieldPlots
+                        FlowConditions
+                        HistoryPlots
+                        InitialConditions
+                        Interactions
+                        LinearLoadCases
+                        Loads
+                        LoadSets
+                        OutputRequests
+                        PredefinedFields
+                        Properties
+                        Restraints
+                        Sensors
+                        Streams
+                        ThermalConditions
+                        NotDefined
 
         :return: str
         """
@@ -516,4 +497,4 @@ class SimCompositeContinuumShellSection(AnyObject):
         return self.com_object.SpecTreeCategory
 
     def __repr__(self):
-        return f'SimCompositeContinuumShellSection(name="{ self.name }")'
+        return f'SimCompositeContinuumShellSection(name="{self.name}")'

@@ -12,30 +12,28 @@ from pycatia3dx.mmr_automation_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeDisconnect(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeDisconnect
-                | 
-                | Represents the hybrid shape disconnect object.
-                | Role: To access the data of the hybrid shape disconnect
-                | object.
-                | 
-                | Use the HybridShapeFactory to create a HybridShapeDisconnect
-                | object.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeDisconnect
+                
+                Represents the hybrid shape disconnect object.
+                Role: To access the data of the hybrid shape disconnect
+                object.
+                
+                Use the HybridShapeFactory to create a HybridShapeDisconnect
+                object.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -44,4 +42,4 @@ class HybridShapeDisconnect(HybridShape):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'HybridShapeDisconnect(name="{ self.name }")'
+        return f'HybridShapeDisconnect(name="{self.name}")'

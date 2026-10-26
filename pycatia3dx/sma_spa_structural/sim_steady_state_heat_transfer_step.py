@@ -11,62 +11,60 @@ from pycatia3dx.sma_mpa_foundation.sim_step import SimStep
 
 
 class SimSteadyStateHeatTransferStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SMAMpaFoundationIDLItf.SimStep
-                |                         SimSteadyStateHeatTransferStep
-                | 
-                | Represents the Steady State Heat Transfer Step object.
-                | 
-                | Example:
-                |     Given a SimSteps object, you can create a SimSteadyStateHeatTransferStep as
-                |     following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MySteadyStateHeatTransferStep As
-                |      SimSteadyStateHeatTransferStep
-                |      Set MySteadyStateHeatTransferStep = MySteps.Add("SimSteadyStateHeatTransferStep")
-                |      
-                | 
-                |     Given a SimSteps object, you can retrieve a SimSteadyStateHeatTransferStep
-                |     named "Steady State Heat Transfer Step.1" as following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MySteadyStateHeatTransferStep As
-                |      SimSteadyStateHeatTransferStep
-                |      Set MySteadyStateHeatTransferStep = MySteps.Item("Steady State Heat Transfer Step.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimSteps object mySteps, you can create a
-                |     SimSteadyStateHeatTransferStep as following:
-                | 
-                |      ...
-                |      mySteadyStateHeatTransferStep = mySteps.Add("SimSteadyStateHeatTransferStep")
-                |      
-                | 
-                |     Given a SimSteps object mySteps, you can retrieve a
-                |     SimSteadyStateHeatTransferStep named "Steady State Heat Transfer Step.1" as
-                |     following:
-                | 
-                |      ...
-                |      mySteadyStateHeatTransferStep = mySteps.Item("Steady State Heat Transfer Step.1")
-                |      
-                | 
-                | See also:
-                |     SimSteps
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SMAMpaFoundationIDLItf.SimStep
+                                        SimSteadyStateHeatTransferStep
+                
+                Represents the Steady State Heat Transfer Step object.
+                
+                Example:
+                    Given a SimSteps object, you can create a SimSteadyStateHeatTransferStep as
+                    following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MySteadyStateHeatTransferStep As
+                     SimSteadyStateHeatTransferStep
+                     Set MySteadyStateHeatTransferStep = MySteps.Add("SimSteadyStateHeatTransferStep")
+                     
+                
+                    Given a SimSteps object, you can retrieve a SimSteadyStateHeatTransferStep
+                    named "Steady State Heat Transfer Step.1" as following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MySteadyStateHeatTransferStep As
+                     SimSteadyStateHeatTransferStep
+                     Set MySteadyStateHeatTransferStep = MySteps.Item("Steady State Heat Transfer Step.1")
+                     
+                
+                Example in Python:
+                    Given a SimSteps object mySteps, you can create a
+                    SimSteadyStateHeatTransferStep as following:
+                
+                     ...
+                     mySteadyStateHeatTransferStep = mySteps.Add("SimSteadyStateHeatTransferStep")
+                     
+                
+                    Given a SimSteps object mySteps, you can retrieve a
+                    SimSteadyStateHeatTransferStep named "Steady State Heat Transfer Step.1" as
+                    following:
+                
+                     ...
+                     mySteadyStateHeatTransferStep = mySteps.Item("Steady State Heat Transfer Step.1")
+                     
+                
+                See also:
+                    SimSteps
     
     """
 
@@ -78,11 +76,10 @@ class SimSteadyStateHeatTransferStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -101,11 +98,10 @@ class SimSteadyStateHeatTransferStep(SimStep):
     def initial_time_step(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InitialTimeStep() As double
-                |     Returns or sets the initial time step. Quantity: TIME, units: s
+                Property InitialTimeStep() As double
+                    Returns or sets the initial time step. Quantity: TIME, units: s
 
         :return: float
         """
@@ -124,12 +120,11 @@ class SimSteadyStateHeatTransferStep(SimStep):
     def maximum_number_of_increments(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumNumberOfIncrements() As long
-                |     Returns or sets the maximum number of increments. Quantity: Integer, units:
-                |     None
+                Property MaximumNumberOfIncrements() As long
+                    Returns or sets the maximum number of increments. Quantity: Integer, units:
+                    None
 
         :return: int
         """
@@ -148,11 +143,10 @@ class SimSteadyStateHeatTransferStep(SimStep):
     def maximum_time_step(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumTimeStep() As double
-                |     Returns or sets the maximum time step. Quantity: TIME, units: s
+                Property MaximumTimeStep() As double
+                    Returns or sets the maximum time step. Quantity: TIME, units: s
 
         :return: float
         """
@@ -171,11 +165,10 @@ class SimSteadyStateHeatTransferStep(SimStep):
     def minimum_time_step(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MinimumTimeStep() As double
-                |     Returns or sets the minimum time step. Quantity: TIME, units: s
+                Property MinimumTimeStep() As double
+                    Returns or sets the minimum time step. Quantity: TIME, units: s
 
         :return: float
         """
@@ -194,12 +187,11 @@ class SimSteadyStateHeatTransferStep(SimStep):
     def time_incrementation_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TimeIncrementationScheme() As
-                | SimTimeIncrementationScheme
-                |     Returns or sets the incrementation scheme.
+                Property TimeIncrementationScheme() As
+                SimTimeIncrementationScheme
+                    Returns or sets the incrementation scheme.
 
         :return: SimTimeIncrementationScheme
         """
@@ -218,11 +210,10 @@ class SimSteadyStateHeatTransferStep(SimStep):
     def total_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TotalTime() As double
-                |     Returns or sets the total time. Quantity: TIME, units: s 
+                Property TotalTime() As double
+                    Returns or sets the total time. Quantity: TIME, units: s 
 
         :return: float
         """
@@ -238,4 +229,4 @@ class SimSteadyStateHeatTransferStep(SimStep):
         self.com_object.TotalTime = value
 
     def __repr__(self):
-        return f'SimSteadyStateHeatTransferStep(name="{ self.name }")'
+        return f'SimSteadyStateHeatTransferStep(name="{self.name}")'

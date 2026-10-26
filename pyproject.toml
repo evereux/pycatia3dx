@@ -1,6 +1,6 @@
 [project]
 name = "pycatia3dx"
-version = "0.1.1"
+version = "0.2.0"
 dependencies = [
     "pywin32 == 312",
     "psutil==7.2.1",
@@ -25,6 +25,11 @@ Issues = "https://github.com/evereux/pycatia3dx/issues"
 dev = [
     "mypy==1.19.1",
     "pytest==9.0.2",
+    "Sphinx==9.2.0",
+    "furo==2025.12.19"
+]
+docs = [
+    "Sphinx==9.2.0"
 ]
 [build-system]
 requires = [

@@ -12,23 +12,21 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingExport(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingExport
-                | 
-                | 
-                | Deprecated:
-                |     R427 - Functionnality is now available with a new command. Interface to export Manufacturing Data sample :
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingExport
+                
+                
+                Deprecated:
+                    R427 - Functionnality is now available with a new command. Interface to export Manufacturing Data sample :
     
     """
 
@@ -39,22 +37,21 @@ class ManufacturingExport(AnyObject):
     def export_nc3_d(self, i_physid: str, i_file_path: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ExportNC3D(CATBSTR iPHYSID,CATBSTR iFilePath)
-                | 
-                |     Deprecated:
-                |         R427 - Functionnality is now available with a new command. API to
-                |         generate the 3D (stl or step) of object called iPHYSID
-                |         
-                |     Parameters:
-                | 
-                |         iPHYSID
-                |             The name could be retrieved in the xml file (attribute called
-                |             V6_3DEXP_PHYSID) 
-                |         iFilePath
-                |             The path of the file with good extension : .stl or .step
+                Sub ExportNC3D(CATBSTR iPHYSID,CATBSTR iFilePath)
+                
+                    Deprecated:
+                        R427 - Functionnality is now available with a new command. API to
+                        generate the 3D (stl or step) of object called iPHYSID
+                        
+                    Parameters:
+                
+                        iPHYSID
+                            The name could be retrieved in the xml file (attribute called
+                            V6_3DEXP_PHYSID) 
+                        iFilePath
+                            The path of the file with good extension : .stl or .step
 
         :param str i_physid:
         :param str i_file_path:
@@ -65,18 +62,17 @@ class ManufacturingExport(AnyObject):
     def export_nc_data(self, i_xml_file_path: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ExportNCData(CATBSTR iXMLFilePath)
-                | 
-                |     Deprecated:
-                |         R427 - Functionnality is now available with a new command. Export the
-                |         NC Data to a xml file 
-                |     Parameters:
-                | 
-                |         iXMLFilePath
-                |             The path of the file created to export the information
+                Sub ExportNCData(CATBSTR iXMLFilePath)
+                
+                    Deprecated:
+                        R427 - Functionnality is now available with a new command. Export the
+                        NC Data to a xml file 
+                    Parameters:
+                
+                        iXMLFilePath
+                            The path of the file created to export the information
 
         :param str i_xml_file_path:
         :return: None
@@ -84,4 +80,4 @@ class ManufacturingExport(AnyObject):
         return self.com_object.ExportNCData(i_xml_file_path)
 
     def __repr__(self):
-        return f'ManufacturingExport(name="{ self.name }")'
+        return f'ManufacturingExport(name="{self.name}")'

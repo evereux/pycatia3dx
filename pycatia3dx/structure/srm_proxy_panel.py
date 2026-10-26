@@ -17,19 +17,18 @@ from pycatia3dx.structure.srm_proxy_profiles import SrmProxyProfiles
 class SrmProxyPanel(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SrmProxyPanel
-                | 
-                | Object to manage the Proxy Panel.
-                | Planning breaks are treated similar like limits.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SrmProxyPanel
+                
+                Object to manage the Proxy Panel.
+                Planning breaks are treated similar like limits.
     
     """
 
@@ -40,18 +39,17 @@ class SrmProxyPanel(AnyObject):
     def get_location(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetLocation() As long
-                |     Returns the proxy panel location under the proxy tool.
-                | 
-                |     Parameters:
-                | 
-                |         oLocation
-                |             Legal Values:
-                |             1 : IN.
-                |             2 : OUT.
+                Func GetLocation() As long
+                    Returns the proxy panel location under the proxy tool.
+                
+                    Parameters:
+                
+                        oLocation
+                            Legal Values:
+                            1 : IN.
+                            2 : OUT.
 
         :return: int
         """
@@ -60,11 +58,10 @@ class SrmProxyPanel(AnyObject):
     def get_panel(self) -> SfdPanel:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetPanel() As SfdPanel
-                |     Returns the panel pointed by the proxy.
+                Func GetPanel() As SfdPanel
+                    Returns the panel pointed by the proxy.
 
         :return: SfdPanel
         """
@@ -73,22 +70,21 @@ class SrmProxyPanel(AnyObject):
     def get_planning_breaks(self) -> SrmPlanningBreaks:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetPlanningBreaks() As SrmPlanningBreaks
-                |     Create the planning break to the Proxy Panel.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example gets the list of planning breaks of
-                |              SrmProxyPanel.
-                |              
-                | 
-                |               Dim ObjSrmProxyPanel As SrmProxyPanel
-                |               Set ObjSrmProxyPanel = ObjSrmProxies.Item(1)
-                |               Set ObjSrmPlanningBreaks = ObjSrmProxyPanel.GetPlanningBreaks
+                Func GetPlanningBreaks() As SrmPlanningBreaks
+                    Create the planning break to the Proxy Panel.
+                
+                    Example:
+                
+                
+                             This example gets the list of planning breaks of
+                             SrmProxyPanel.
+                             
+                
+                              Dim ObjSrmProxyPanel As SrmProxyPanel
+                              Set ObjSrmProxyPanel = ObjSrmProxies.Item(1)
+                              Set ObjSrmPlanningBreaks = ObjSrmProxyPanel.GetPlanningBreaks
 
         :return: SrmPlanningBreaks
         """
@@ -97,25 +93,24 @@ class SrmProxyPanel(AnyObject):
     def get_profile_proxies(self, i_location: int) -> SrmProxyProfiles:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetProfileProxies(long iLocation) As SrmProxyProfiles
-                |     Returns the List of Profile Proxies
-                | 
-                |     Parameters:
-                | 
-                |         iLocation
-                |             Return Values 1 : ProxyStiffenerTool_IN. 2 : ProxyStiffenerTool_OUT. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the SrmProxyProfiles of
-                |              SrmProxyPanel.
-                |              
-                | 
-                |               Set ListOfProfileProxies = ObjSrmProxyPanel.GetProfileProxies
+                Func GetProfileProxies(long iLocation) As SrmProxyProfiles
+                    Returns the List of Profile Proxies
+                
+                    Parameters:
+                
+                        iLocation
+                            Return Values 1 : ProxyStiffenerTool_IN. 2 : ProxyStiffenerTool_OUT. 
+                
+                    Example:
+                
+                
+                             This example retrieves the SrmProxyProfiles of
+                             SrmProxyPanel.
+                             
+                
+                              Set ListOfProfileProxies = ObjSrmProxyPanel.GetProfileProxies
 
         :param int i_location:
         :return: SrmProxyProfiles

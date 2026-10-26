@@ -11,64 +11,62 @@ from pycatia3dx.sma_few_optimization.sim_non_parametric_response_variable import
 
 
 class SimRelativeMassResponseVariable(SimNonParametricResponseVariable):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                    SMAFeaOptimizationIDLItf.SimDesignImprovementResponseVariable
-                |                        SMAFeaOptimizationIDLItf.SimNonParametricResponseVariable
-                |                             SimRelativeMassResponseVariable
-                | 
-                | Represents the relative mass response variable object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimRelativeMassResponseVariable as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyRelativeMassResponseVariable As
-                |      SimRelativeMassResponseVariable
-                |      Set MyRelativeMassResponseVariable = MyFeatures.Add("SimRelativeMassResponseVariable")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimRelativeMassResponseVariable named "Mass Response Variable.1" as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyRelativeMassResponseVariable As
-                |      SimRelativeMassResponseVariable
-                |      Set MyRelativeMassResponseVariable = MyFeatures.Item("Mass Response Variable.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimRelativeMassResponseVariable as following:
-                | 
-                |      ...
-                |      MyRelativeMassResponseVariable = MyFeatures.Add("SimRelativeMassResponseVariable")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimRelativeMassResponseVariable named "Mass Response Variable.1" as
-                |     following:
-                | 
-                |      ...
-                |      MyRelativeMassResponseVariable = MyFeatures.Item("Mass Response Variable.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                   SMAFeaOptimizationIDLItf.SimDesignImprovementResponseVariable
+                                       SMAFeaOptimizationIDLItf.SimNonParametricResponseVariable
+                                            SimRelativeMassResponseVariable
+                
+                Represents the relative mass response variable object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimRelativeMassResponseVariable as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyRelativeMassResponseVariable As
+                     SimRelativeMassResponseVariable
+                     Set MyRelativeMassResponseVariable = MyFeatures.Add("SimRelativeMassResponseVariable")
+                     
+                
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimRelativeMassResponseVariable named "Mass Response Variable.1" as
+                    following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyRelativeMassResponseVariable As
+                     SimRelativeMassResponseVariable
+                     Set MyRelativeMassResponseVariable = MyFeatures.Item("Mass Response Variable.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimRelativeMassResponseVariable as following:
+                
+                     ...
+                     MyRelativeMassResponseVariable = MyFeatures.Add("SimRelativeMassResponseVariable")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimRelativeMassResponseVariable named "Mass Response Variable.1" as
+                    following:
+                
+                     ...
+                     MyRelativeMassResponseVariable = MyFeatures.Item("Mass Response Variable.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -77,4 +75,4 @@ class SimRelativeMassResponseVariable(SimNonParametricResponseVariable):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'SimRelativeMassResponseVariable(name="{ self.name }")'
+        return f'SimRelativeMassResponseVariable(name="{self.name}")'

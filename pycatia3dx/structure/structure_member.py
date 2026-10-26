@@ -20,20 +20,19 @@ from pycatia3dx.structure.structure_profile import StructureProfile
 class StructureMember(StructureProfile):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATStrIDLItf.StructureProfile
-                |                         StructureMember
-                | 
-                | Object to manage Structure Member.
-                | Role: Allows accessing and setting of structure Member's data.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATStrIDLItf.StructureProfile
+                                        StructureMember
+                
+                Object to manage Structure Member.
+                Role: Allows accessing and setting of structure Member's data.
     
     """
 
@@ -45,20 +44,19 @@ class StructureMember(StructureProfile):
     def str_category_mngt(self) -> StrCategoryMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrCategoryMngt() As StrCategoryMngt (Read Only)
-                |     Returns the StrCategoryMngt object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves StrCategoryMngt of the
-                |              SddMember.
-                |              
-                | 
-                |              Set ObjStrProfilePtPt = ObjSddMember.StrCategoryMngt
+                Property StrCategoryMngt() As StrCategoryMngt (Read Only)
+                    Returns the StrCategoryMngt object.
+                
+                    Example:
+                
+                
+                             This example retrieves StrCategoryMngt of the
+                             SddMember.
+                             
+                
+                             Set ObjStrProfilePtPt = ObjSddMember.StrCategoryMngt
 
         :return: StrCategoryMngt
         """
@@ -69,20 +67,19 @@ class StructureMember(StructureProfile):
     def str_profile_crv(self) -> StrProfileCrv:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrProfileCrv() As StrProfileCrv (Read Only)
-                |     Returns the StrProfileCrv object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves StrProfileCrv of the
-                |              SddMember.
-                |              
-                | 
-                |              Set ObjStrProfilePtPt = ObjSddMember.StrProfileCrv
+                Property StrProfileCrv() As StrProfileCrv (Read Only)
+                    Returns the StrProfileCrv object.
+                
+                    Example:
+                
+                
+                             This example retrieves StrProfileCrv of the
+                             SddMember.
+                             
+                
+                             Set ObjStrProfilePtPt = ObjSddMember.StrProfileCrv
 
         :return: StrProfileCrv
         """
@@ -93,21 +90,20 @@ class StructureMember(StructureProfile):
     def str_profile_pt_length(self) -> StrProfilePtLength:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrProfilePtLength() As StrProfilePtLength (Read
-                | Only)
-                |     Returns the StrProfilePtLength object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves StrProfilePtLength of the
-                |              SddMember.
-                |              
-                | 
-                |              Set ObjStrProfilePtPt = ObjSddMember.StrProfilePtLength
+                Property StrProfilePtLength() As StrProfilePtLength (Read
+                Only)
+                    Returns the StrProfilePtLength object.
+                
+                    Example:
+                
+                
+                             This example retrieves StrProfilePtLength of the
+                             SddMember.
+                             
+                
+                             Set ObjStrProfilePtPt = ObjSddMember.StrProfilePtLength
 
         :return: StrProfilePtLength
         """
@@ -118,20 +114,19 @@ class StructureMember(StructureProfile):
     def str_profile_pt_limit(self) -> StrProfilePtLimit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrProfilePtLimit() As StrProfilePtLimit (Read Only)
-                |     Returns the StrProfilePtLimit object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves StrProfilePtLimit of the
-                |              SddMember.
-                |              
-                | 
-                |              Set ObjStrProfilePtPt = ObjSddMember.StrProfilePtLimit
+                Property StrProfilePtLimit() As StrProfilePtLimit (Read Only)
+                    Returns the StrProfilePtLimit object.
+                
+                    Example:
+                
+                
+                             This example retrieves StrProfilePtLimit of the
+                             SddMember.
+                             
+                
+                             Set ObjStrProfilePtPt = ObjSddMember.StrProfilePtLimit
 
         :return: StrProfilePtLimit
         """
@@ -142,20 +137,19 @@ class StructureMember(StructureProfile):
     def str_profile_pt_pt(self) -> StrProfilePtPt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrProfilePtPt() As StrProfilePtPt (Read Only)
-                |     Returns the StrProfilePtPt object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves StrProfilePtPt of the
-                |              SddMember.
-                |              
-                | 
-                |              Set ObjStrProfilePtPt = ObjSddMember.StrProfilePtPt
+                Property StrProfilePtPt() As StrProfilePtPt (Read Only)
+                    Returns the StrProfilePtPt object.
+                
+                    Example:
+                
+                
+                             This example retrieves StrProfilePtPt of the
+                             SddMember.
+                             
+                
+                             Set ObjStrProfilePtPt = ObjSddMember.StrProfilePtPt
 
         :return: StrProfilePtPt
         """
@@ -166,21 +160,20 @@ class StructureMember(StructureProfile):
     def str_profile_surf2_crvs(self) -> StrProfileSurf2Crvs:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrProfileSurf2Crvs() As StrProfileSurf2Crvs (Read
-                | Only)
-                |     Returns the StrProfileSurf2Crvs object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves StrProfileSurf2Crvs of the
-                |              SddMember.
-                |              
-                | 
-                |              Set ObjStrProfilePtPt = ObjSddMember.StrProfileSurf2Crvs
+                Property StrProfileSurf2Crvs() As StrProfileSurf2Crvs (Read
+                Only)
+                    Returns the StrProfileSurf2Crvs object.
+                
+                    Example:
+                
+                
+                             This example retrieves StrProfileSurf2Crvs of the
+                             SddMember.
+                             
+                
+                             Set ObjStrProfilePtPt = ObjSddMember.StrProfileSurf2Crvs
 
         :return: StrProfileSurf2Crvs
         """
@@ -191,21 +184,20 @@ class StructureMember(StructureProfile):
     def str_profile_surf_surf(self) -> StrProfileSurfSurf:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrProfileSurfSurf() As StrProfileSurfSurf (Read
-                | Only)
-                |     Returns the StrProfileSurfSurf object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves StrProfileSurfSurf of the
-                |              SddMember.
-                |              
-                | 
-                |              Set ObjStrProfilePtPt = ObjSddMember.StrProfileSurfSurf
+                Property StrProfileSurfSurf() As StrProfileSurfSurf (Read
+                Only)
+                    Returns the StrProfileSurfSurf object.
+                
+                    Example:
+                
+                
+                             This example retrieves StrProfileSurfSurf of the
+                             SddMember.
+                             
+                
+                             Set ObjStrProfilePtPt = ObjSddMember.StrProfileSurfSurf
 
         :return: StrProfileSurfSurf
         """

@@ -14,18 +14,17 @@ from pycatia3dx.system.any_object import AnyObject
 class KinCommand(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     KinCommand
-                | 
-                | The interface to access a CATIAKinCommand.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    KinCommand
+                
+                The interface to access a CATIAKinCommand.
     
     """
 
@@ -37,26 +36,25 @@ class KinCommand(AnyObject):
     def command_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CommandType() As CATKinMechanismCommandType (Read
-                | Only)
-                |     Returns the command type.
-                | 
-                |     Parameters:
-                | 
-                |         oType
-                | 
-                |             Legal Types:
-                | 
-                |             CATKinEmpty2,
-                |             CATKinAngleCmd2,
-                |             CATKinLengthCmd2,
-                |             CATKinAngle1Cmd2,
-                |             CATKinLength1Cmd2,
-                |             CATKinAngle2Cmd2,
-                |             CATKinLength2Cmd2
+                Property CommandType() As CATKinMechanismCommandType (Read
+                Only)
+                    Returns the command type.
+                
+                    Parameters:
+                
+                        oType
+                
+                            Legal Types:
+                
+                            CATKinEmpty2,
+                            CATKinAngleCmd2,
+                            CATKinLengthCmd2,
+                            CATKinAngle1Cmd2,
+                            CATKinLength1Cmd2,
+                            CATKinAngle2Cmd2,
+                            CATKinLength2Cmd2
 
         :return: int
         """
@@ -67,22 +65,21 @@ class KinCommand(AnyObject):
     def current_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CurrentValue() As double (Read Only)
-                |     Returns the current value of a Command.
-                | 
-                |     Parameters:
-                | 
-                |         oCurrentValue
-                | 
-                |             Units values:
-                | 
-                |             Millimiters
-                |             for length commands.
-                |             Degrees
-                |             for angle commands.
+                Property CurrentValue() As double (Read Only)
+                    Returns the current value of a Command.
+                
+                    Parameters:
+                
+                        oCurrentValue
+                
+                            Units values:
+                
+                            Millimiters
+                            for length commands.
+                            Degrees
+                            for angle commands.
 
         :return: float
         """
@@ -93,15 +90,14 @@ class KinCommand(AnyObject):
     def joint(self) -> EngConnection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Joint() As EngConnection (Read Only)
-                |     Returns the joint corresponding to the command.
-                | 
-                |     Parameters:
-                | 
-                |         oJoint
+                Property Joint() As EngConnection (Read Only)
+                    Returns the joint corresponding to the command.
+                
+                    Parameters:
+                
+                        oJoint
 
         :return: EngConnection
         """
@@ -112,23 +108,22 @@ class KinCommand(AnyObject):
     def lower_limit(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LowerLimit() As double (Read Only)
-                |     Returns the lower limit of the command if it is set. Otherwise returns 0 by
-                |     default.
-                | 
-                |     Parameters:
-                | 
-                |         oLowerLimit
-                | 
-                |             Units values:
-                | 
-                |             Millimiters
-                |             for length commands.
-                |             Degrees
-                |             for angle commands.
+                Property LowerLimit() As double (Read Only)
+                    Returns the lower limit of the command if it is set. Otherwise returns 0 by
+                    default.
+                
+                    Parameters:
+                
+                        oLowerLimit
+                
+                            Units values:
+                
+                            Millimiters
+                            for length commands.
+                            Degrees
+                            for angle commands.
 
         :return: float
         """
@@ -139,23 +134,22 @@ class KinCommand(AnyObject):
     def upper_limit(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UpperLimit() As double (Read Only)
-                |     Returns the upper limit of the command if it is set. Otherwise returns 0 by
-                |     default.
-                | 
-                |     Parameters:
-                | 
-                |         oUpperLimit
-                | 
-                |             Units values:
-                | 
-                |             Millimiters
-                |             for length commands.
-                |             Degrees
-                |             for angle commands.
+                Property UpperLimit() As double (Read Only)
+                    Returns the upper limit of the command if it is set. Otherwise returns 0 by
+                    default.
+                
+                    Parameters:
+                
+                        oUpperLimit
+                
+                            Units values:
+                
+                            Millimiters
+                            for length commands.
+                            Degrees
+                            for angle commands.
 
         :return: float
         """
@@ -165,16 +159,15 @@ class KinCommand(AnyObject):
     def is_lower_limit_set(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsLowerLimitSet() As boolean
-                |     Returns the status of the lower limit of the command.
-                | 
-                |     Parameters:
-                | 
-                |         oStatus
-                |             The status of the lower limit.
+                Func IsLowerLimitSet() As boolean
+                    Returns the status of the lower limit of the command.
+                
+                    Parameters:
+                
+                        oStatus
+                            The status of the lower limit.
 
         :return: bool
         """
@@ -183,16 +176,15 @@ class KinCommand(AnyObject):
     def is_upper_limit_set(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsUpperLimitSet() As boolean
-                |     Returns the status of the upper limit of the command.
-                | 
-                |     Parameters:
-                | 
-                |         oStatus
-                |             The status of the upper limit.
+                Func IsUpperLimitSet() As boolean
+                    Returns the status of the upper limit of the command.
+                
+                    Parameters:
+                
+                        oStatus
+                            The status of the upper limit.
 
         :return: bool
         """

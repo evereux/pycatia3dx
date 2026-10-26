@@ -17,18 +17,17 @@ from pycatia3dx.types.general import CATVariant
 class SsmSpaceConceptNodes(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SsmSpaceConceptNodes
-                | 
-                | Role: This interface is collection of Space concept Node
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SsmSpaceConceptNodes
+                
+                Role: This interface is collection of Space concept Node
     
     """
 
@@ -39,16 +38,15 @@ class SsmSpaceConceptNodes(Collection):
     def item(self, i_index: CATVariant) -> SsmSpaceConceptNode:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As SsmSpaceConceptNode
-                |     Retrieves a Space concept Node
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of Space concept Node 
+                Func Item(CATVariant iIndex) As SsmSpaceConceptNode
+                    Retrieves a Space concept Node
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of Space concept Node 
 
         :param CATVariant i_index:
         :return: SsmSpaceConceptNode

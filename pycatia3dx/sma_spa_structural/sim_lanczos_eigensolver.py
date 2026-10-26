@@ -12,21 +12,19 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimLanczosEigensolver(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimLanczosEigensolver
-                | 
-                | Represents the Lanczos Eigensolver object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimLanczosEigensolver
+                
+                Represents the Lanczos Eigensolver object.
     
     """
 
@@ -38,12 +36,11 @@ class SimLanczosEigensolver(AnyObject):
     def acoustic_coupling_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AcousticCouplingType() As
-                | SimLanczosEigensolverAcousticCouplingType
-                |     Returns or sets the acoustic coupling type.
+                Property AcousticCouplingType() As
+                SimLanczosEigensolverAcousticCouplingType
+                    Returns or sets the acoustic coupling type.
 
         :return: SimLanczosEigensolverAcousticCouplingType
         """
@@ -62,14 +59,13 @@ class SimLanczosEigensolver(AnyObject):
     def damping_projection_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DampingProjectionFlag() As boolean
-                |     Returns or sets the flag that determines if the damping projection option
-                |     is used.
-                |     TRUE : the damping projection option is used.
-                |     FALSE : the damping projection option is not used.
+                Property DampingProjectionFlag() As boolean
+                    Returns or sets the flag that determines if the damping projection option
+                    is used.
+                    TRUE : the damping projection option is used.
+                    FALSE : the damping projection option is not used.
 
         :return: bool
         """
@@ -88,11 +84,10 @@ class SimLanczosEigensolver(AnyObject):
     def maximum_frequency(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumFrequency() As double
-                |     Returns or sets the maximum frequency. Quantity: FREQUENCY, units: Hz.
+                Property MaximumFrequency() As double
+                    Returns or sets the maximum frequency. Quantity: FREQUENCY, units: Hz.
 
         :return: float
         """
@@ -111,14 +106,13 @@ class SimLanczosEigensolver(AnyObject):
     def maximum_frequency_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumFrequencyFlag() As boolean
-                |     Returns or sets the flag that determines if the maximum frequency is
-                |     specified.
-                |     TRUE : the maximum frequency is specified.
-                |     FALSE : the maximum frequency is not specified.
+                Property MaximumFrequencyFlag() As boolean
+                    Returns or sets the flag that determines if the maximum frequency is
+                    specified.
+                    TRUE : the maximum frequency is specified.
+                    FALSE : the maximum frequency is not specified.
 
         :return: bool
         """
@@ -137,11 +131,10 @@ class SimLanczosEigensolver(AnyObject):
     def minimum_frequency(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MinimumFrequency() As double
-                |     Returns or sets the minimum frequency. Quantity: FREQUENCY, units: Hz.
+                Property MinimumFrequency() As double
+                    Returns or sets the minimum frequency. Quantity: FREQUENCY, units: Hz.
 
         :return: float
         """
@@ -160,14 +153,13 @@ class SimLanczosEigensolver(AnyObject):
     def minimum_frequency_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MinimumFrequencyFlag() As boolean
-                |     Returns or sets the flag that determines if the minimum frequency is
-                |     specified.
-                |     TRUE : the minimum frequency is specified.
-                |     FALSE : the minimum frequency is not specified.
+                Property MinimumFrequencyFlag() As boolean
+                    Returns or sets the flag that determines if the minimum frequency is
+                    specified.
+                    TRUE : the minimum frequency is specified.
+                    FALSE : the minimum frequency is not specified.
 
         :return: bool
         """
@@ -186,11 +178,10 @@ class SimLanczosEigensolver(AnyObject):
     def number_of_modes(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfModes() As long
-                |     Returns or sets the number of modes.
+                Property NumberOfModes() As long
+                    Returns or sets the number of modes.
 
         :return: int
         """
@@ -209,14 +200,13 @@ class SimLanczosEigensolver(AnyObject):
     def residual_modes_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ResidualModesFlag() As boolean
-                |     Returns or sets the flag that determines if the residual modes option is
-                |     used.
-                |     TRUE : the residual modes option is used.
-                |     FALSE : the residual modes option is not used.
+                Property ResidualModesFlag() As boolean
+                    Returns or sets the flag that determines if the residual modes option is
+                    used.
+                    TRUE : the residual modes option is used.
+                    FALSE : the residual modes option is not used.
 
         :return: bool
         """
@@ -235,11 +225,10 @@ class SimLanczosEigensolver(AnyObject):
     def shift_point(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ShiftPoint() As double
-                |     Returns or sets the shift point. Quantity: HERTZSQUARE, units: Hz2.
+                Property ShiftPoint() As double
+                    Returns or sets the shift point. Quantity: HERTZSQUARE, units: Hz2.
 
         :return: float
         """
@@ -258,14 +247,13 @@ class SimLanczosEigensolver(AnyObject):
     def shift_point_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ShiftPointFlag() As boolean
-                |     Returns or sets the flag that determines if the shift point is
-                |     specified.
-                |     TRUE : the shift point is specified.
-                |     FALSE : the shift point is not specified.
+                Property ShiftPointFlag() As boolean
+                    Returns or sets the flag that determines if the shift point is
+                    specified.
+                    TRUE : the shift point is specified.
+                    FALSE : the shift point is not specified.
 
         :return: bool
         """
@@ -284,14 +272,13 @@ class SimLanczosEigensolver(AnyObject):
     def specified_modes_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecifiedModesFlag() As boolean
-                |     Returns or sets the flag that determines if the number of eigenvalues to be
-                |     calculated is specified.
-                |     TRUE : the number of eigenvalues to be calculated is specified.
-                |     FALSE : all the eigenvalues from the minimum frequency of interest up to the maximum frequency of interest will be calculated. 
+                Property SpecifiedModesFlag() As boolean
+                    Returns or sets the flag that determines if the number of eigenvalues to be
+                    calculated is specified.
+                    TRUE : the number of eigenvalues to be calculated is specified.
+                    FALSE : all the eigenvalues from the minimum frequency of interest up to the maximum frequency of interest will be calculated. 
 
         :return: bool
         """
@@ -307,4 +294,4 @@ class SimLanczosEigensolver(AnyObject):
         self.com_object.SpecifiedModesFlag = value
 
     def __repr__(self):
-        return f'SimLanczosEigensolver(name="{ self.name }")'
+        return f'SimLanczosEigensolver(name="{self.name}")'

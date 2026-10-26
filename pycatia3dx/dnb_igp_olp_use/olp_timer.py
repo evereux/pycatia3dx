@@ -13,25 +13,23 @@ from pycatia3dx.dnb_igp_olp_use.olp_variable import OLPVariable
 
 
 class OLPTimer(OLPInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DNBIgpOlpUseItf.OlpInstruction
-                |                         OlpTimer
-                | 
-                | An instruction to start, stop or reset a timer.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DNBIgpOlpUseItf.OlpInstruction
+                                        OlpTimer
+                
+                An instruction to start, stop or reset a timer.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
     
     """
 
@@ -43,11 +41,10 @@ class OLPTimer(OLPInstruction):
     def action(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Action() As DELOlpTimerAction
-                |     The action to perform on the timer.
+                Property Action() As DELOlpTimerAction
+                    The action to perform on the timer.
 
         :return: DELOlpTimerAction
         """
@@ -66,14 +63,13 @@ class OLPTimer(OLPInstruction):
     def destination(self) -> OLPVariable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Destination() As OlpVariable
-                |     The timer which is being started, stopped or reset.
-                |     You can retrieve an existing timer using OlpInstruction.FindVariable or
-                |     create a new one using OlpVariables. The variable assigned, must be of type
-                |     timer.
+                Property Destination() As OlpVariable
+                    The timer which is being started, stopped or reset.
+                    You can retrieve an existing timer using OlpInstruction.FindVariable or
+                    create a new one using OlpVariables. The variable assigned, must be of type
+                    timer.
 
         :return: OLPVariable
         """
@@ -92,11 +88,10 @@ class OLPTimer(OLPInstruction):
     def destination_express(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DestinationExpress() As OlpAstBranch
-                |     The variable which is being assigned as an expression.
+                Property DestinationExpress() As OlpAstBranch
+                    The variable which is being assigned as an expression.
 
         :return: OLPAstBranch
         """
@@ -112,4 +107,4 @@ class OLPTimer(OLPInstruction):
         self.com_object.DestinationExpress = value
 
     def __repr__(self):
-        return f'OLPTimer(name="{ self.name }")'
+        return f'OLPTimer(name="{self.name}")'

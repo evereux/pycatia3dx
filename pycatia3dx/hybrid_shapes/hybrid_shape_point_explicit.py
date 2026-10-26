@@ -12,27 +12,25 @@ from pycatia3dx.hybrid_shapes.point import Point
 
 
 class HybridShapePointExplicit(Point):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.Point
-                |                             HybridShapePointExplicit
-                | 
-                | Represents the hybrid shape point explicit feature object.
-                | Role: Declare hybrid shape point explicit feature object.
-                | 
-                | See also:
-                |     HybridShapeFactory.AddNewPointDatum
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.Point
+                                            HybridShapePointExplicit
+                
+                Represents the hybrid shape point explicit feature object.
+                Role: Declare hybrid shape point explicit feature object.
+                
+                See also:
+                    HybridShapeFactory.AddNewPointDatum
     
     """
 
@@ -41,4 +39,4 @@ class HybridShapePointExplicit(Point):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'HybridShapePointExplicit(name="{ self.name }")'
+        return f'HybridShapePointExplicit(name="{self.name}")'

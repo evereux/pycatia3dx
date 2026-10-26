@@ -14,58 +14,56 @@ from pycatia3dx.sma_mpa_base.sim_table_column import SimTableColumn
 
 
 class SimViscoelasticity(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimViscoelasticity
-                | 
-                | Represents the Viscoelasticity object.
-                | 
-                | Example:
-                |     Given a SimMaterialOptions object, you can create a SimViscoelasticity as
-                |     following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyViscoelasticity As SimViscoelasticity
-                |      Set MyViscoelasticity = MyMaterialOptions.Add("SimViscoelasticity")
-                |      
-                | 
-                |     Given a SimMaterialOptions object, you can retrieve a SimViscoelasticity
-                |     named "Viscoelasticity.1" as following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyViscoelasticity As SimViscoelasticity
-                |      Set MyViscoelasticity = MyMaterialOptions.Item("Viscoelasticity.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMaterialOptions object myMaterialOptions, you can create a
-                |     SimViscoelasticity as following:
-                | 
-                |      ...
-                |      myViscoelasticity = myMaterialOptions.Add("SimViscoelasticity")
-                |      
-                | 
-                |     Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
-                |     SimViscoelasticity named "Viscoelasticity.1" as following:
-                | 
-                |      ...
-                |      myViscoelasticity = myMaterialOptions.Item("Viscoelasticity.1")
-                |      
-                | 
-                | See also:
-                |     SimMaterialOptions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimViscoelasticity
+                
+                Represents the Viscoelasticity object.
+                
+                Example:
+                    Given a SimMaterialOptions object, you can create a SimViscoelasticity as
+                    following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyViscoelasticity As SimViscoelasticity
+                     Set MyViscoelasticity = MyMaterialOptions.Add("SimViscoelasticity")
+                     
+                
+                    Given a SimMaterialOptions object, you can retrieve a SimViscoelasticity
+                    named "Viscoelasticity.1" as following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyViscoelasticity As SimViscoelasticity
+                     Set MyViscoelasticity = MyMaterialOptions.Item("Viscoelasticity.1")
+                     
+                
+                Example in Python:
+                    Given a SimMaterialOptions object myMaterialOptions, you can create a
+                    SimViscoelasticity as following:
+                
+                     ...
+                     myViscoelasticity = myMaterialOptions.Add("SimViscoelasticity")
+                     
+                
+                    Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
+                    SimViscoelasticity named "Viscoelasticity.1" as following:
+                
+                     ...
+                     myViscoelasticity = myMaterialOptions.Item("Viscoelasticity.1")
+                     
+                
+                See also:
+                    SimMaterialOptions
     
     """
 
@@ -77,12 +75,11 @@ class SimViscoelasticity(AnyObject):
     def error_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ErrorTolerance() As double
-                |     Returns or sets the error tolerance for time domain viscoelasticity with
-                |     frequency-dependent test data.
+                Property ErrorTolerance() As double
+                    Returns or sets the error tolerance for time domain viscoelasticity with
+                    frequency-dependent test data.
 
         :return: float
         """
@@ -101,12 +98,11 @@ class SimViscoelasticity(AnyObject):
     def frequency_domain_sub_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FrequencyDomainSubType() As
-                | SimViscoelasticityFrequencyType
-                |     Returns or sets the type of frequency domain viscoelasticity.
+                Property FrequencyDomainSubType() As
+                SimViscoelasticityFrequencyType
+                    Returns or sets the type of frequency domain viscoelasticity.
 
         :return: int
         """
@@ -125,11 +121,10 @@ class SimViscoelasticity(AnyObject):
     def material_table(self) -> SimMaterialTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialTable() As SimMaterialTable (Read Only)
-                |     Returns the material table.
+                Property MaterialTable() As SimMaterialTable (Read Only)
+                    Returns the material table.
 
         :return: SimMaterialTable
         """
@@ -140,12 +135,11 @@ class SimViscoelasticity(AnyObject):
     def nmax(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Nmax() As long
-                |     Returns or sets the number of terms in Prony series for time domain
-                |     viscoelasticity with frequency-dependent test data.
+                Property Nmax() As long
+                    Returns or sets the number of terms in Prony series for time domain
+                    viscoelasticity with frequency-dependent test data.
 
         :return: int
         """
@@ -164,12 +158,11 @@ class SimViscoelasticity(AnyObject):
     def preload(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Preload() As SimViscoelasticityPreloadType
-                |     Returns or sets the type of preload used for frequency domain
-                |     viscoelasticity with tabular data.
+                Property Preload() As SimViscoelasticityPreloadType
+                    Returns or sets the type of preload used for frequency domain
+                    viscoelasticity with tabular data.
 
         :return: int
         """
@@ -188,12 +181,11 @@ class SimViscoelasticity(AnyObject):
     def tabular_sub_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TabularSubType() As SimViscoelasticityTabularSubType
-                |     Returns or sets the type of tabular data for frequency domain
-                |     viscoelasticity.
+                Property TabularSubType() As SimViscoelasticityTabularSubType
+                    Returns or sets the type of tabular data for frequency domain
+                    viscoelasticity.
 
         :return: int
         """
@@ -212,11 +204,10 @@ class SimViscoelasticity(AnyObject):
     def time_domain_sub_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TimeDomainSubType() As SimViscoelasticityTimeType
-                |     Returns or sets the type of time domain viscoelasticity.
+                Property TimeDomainSubType() As SimViscoelasticityTimeType
+                    Returns or sets the type of time domain viscoelasticity.
 
         :return: int
         """
@@ -235,12 +226,11 @@ class SimViscoelasticity(AnyObject):
     def viscoelasticity_domain(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ViscoelasticityDomain() As
-                | SimViscoelasticityViscoelasticityDomain
-                |     Returns or sets the type of viscoelasticity domain.
+                Property ViscoelasticityDomain() As
+                SimViscoelasticityViscoelasticityDomain
+                    Returns or sets the type of viscoelasticity domain.
 
         :return: int
         """
@@ -258,22 +248,21 @@ class SimViscoelasticity(AnyObject):
     def get_material_table_column(self, i_material_table_column: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMaterialTableColumn(SimViscoelasticityMaterialTableColumn
-                | iMaterialTableColumn) As SimTableColumn
-                |     Retrieves the column object for the specified table
-                |     column.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterialTableColumn[in]
-                |             The specified table column. 
-                | 
-                |     Returns:
-                |         The table column object. This value will be NULL_var in case the
-                |         specified column is not found in the table. 
+                Func GetMaterialTableColumn(SimViscoelasticityMaterialTableColumn
+                iMaterialTableColumn) As SimTableColumn
+                    Retrieves the column object for the specified table
+                    column.
+                
+                    Parameters:
+                
+                        iMaterialTableColumn[in]
+                            The specified table column. 
+                
+                    Returns:
+                        The table column object. This value will be NULL_var in case the
+                        specified column is not found in the table. 
 
         :param int i_material_table_column:
         :return: SimTableColumn
@@ -281,4 +270,4 @@ class SimViscoelasticity(AnyObject):
         return SimTableColumn(self.com_object.GetMaterialTableColumn(i_material_table_column))
 
     def __repr__(self):
-        return f'SimViscoelasticity(name="{ self.name }")'
+        return f'SimViscoelasticity(name="{self.name}")'

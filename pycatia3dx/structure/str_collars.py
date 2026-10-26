@@ -17,16 +17,15 @@ from pycatia3dx.types.general import CATVariant
 class StrCollars(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     StrCollars
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    StrCollars
 
     
     """
@@ -38,27 +37,26 @@ class StrCollars(Collection):
     def add(self) -> StrCollar:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add() As StrCollar
-                |     Adds a collar to the slot. (@see CATIAStrCollar)
-                | 
-                |     Parameters:
-                | 
-                |         oCollar
-                |             New Collar added to the slot. 
-                | 
-                |     Example:
-                | 
-                |          
-                | 
-                |              This example creates a collar on the slot.
-                |              
-                | 
-                |               Dim ObjStrCollars As StrCollars
-                |               Set ObjStrCollars = iObjStrSlot.Collars
-                |               Set oObjStrCollar = ObjStrCollars.Add
+                Func Add() As StrCollar
+                    Adds a collar to the slot. (@see CATIAStrCollar)
+                
+                    Parameters:
+                
+                        oCollar
+                            New Collar added to the slot. 
+                
+                    Example:
+                
+                         
+                
+                             This example creates a collar on the slot.
+                             
+                
+                              Dim ObjStrCollars As StrCollars
+                              Set ObjStrCollars = iObjStrSlot.Collars
+                              Set oObjStrCollar = ObjStrCollars.Add
 
         :return: StrCollar
         """
@@ -67,26 +65,25 @@ class StrCollars(Collection):
     def item(self, i_index: CATVariant) -> StrCollar:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As StrCollar
-                |     Returns a collar from a list of collars. (@see
-                |     CATIAStrCollar)
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of StrCollar 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves  the first collar from the list of
-                |              collars.
-                |              
-                | 
-                |               Set oObjStrCollar = ObjStrCollars.Item(1)
+                Func Item(CATVariant iIndex) As StrCollar
+                    Returns a collar from a list of collars. (@see
+                    CATIAStrCollar)
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of StrCollar 
+                
+                    Example:
+                
+                
+                             This example retrieves  the first collar from the list of
+                             collars.
+                             
+                
+                              Set oObjStrCollar = ObjStrCollars.Item(1)
 
         :param CATVariant i_index:
         :return: StrCollar
@@ -96,28 +93,27 @@ class StrCollars(Collection):
     def remove(self, i_collar: StrCollar) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(StrCollar iCollar)
-                |     Removes the Collar.
-                | 
-                |     Parameters:
-                | 
-                |         iCollar
-                |             The Collar object to be removed. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example removes the collar 
-                | 
-                |              ObjStrCollar 
-                | 
-                |             .
-                |              
-                | 
-                |               ObjStrCollars.Remove ObjStrCollar
+                Sub Remove(StrCollar iCollar)
+                    Removes the Collar.
+                
+                    Parameters:
+                
+                        iCollar
+                            The Collar object to be removed. 
+                
+                    Example:
+                
+                
+                             This example removes the collar 
+                
+                             ObjStrCollar 
+                
+                            .
+                             
+                
+                              ObjStrCollars.Remove ObjStrCollar
 
         :param StrCollar i_collar:
         :return: None

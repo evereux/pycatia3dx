@@ -16,18 +16,17 @@ from pycatia3dx.system.any_object import AnyObject
 class SimSequenceResults(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimSequenceResults
-                | 
-                | Interface representing Simulation Sequence Results.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimSequenceResults
+                
+                Interface representing Simulation Sequence Results.
     
     """
 
@@ -39,11 +38,10 @@ class SimSequenceResults(AnyObject):
     def is_current(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IsCurrent() As boolean (Read Only)
-                |     Retrieves the current status of the sequence results.
+                Property IsCurrent() As boolean (Read Only)
+                    Retrieves the current status of the sequence results.
 
         :return: bool
         """
@@ -54,11 +52,10 @@ class SimSequenceResults(AnyObject):
     def is_successfully_computed(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IsSuccessfullyComputed() As boolean (Read Only)
-                |     Retrieves the compute status of the sequence results.
+                Property IsSuccessfullyComputed() As boolean (Read Only)
+                    Retrieves the compute status of the sequence results.
 
         :return: bool
         """
@@ -69,11 +66,10 @@ class SimSequenceResults(AnyObject):
     def scenario_results(self) -> SimScenarioResults:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ScenarioResults() As SimScenarioResults (Read Only)
-                |     Retrieves the collection of all scenario results. SimScenarioResults
+                Property ScenarioResults() As SimScenarioResults (Read Only)
+                    Retrieves the collection of all scenario results. SimScenarioResults
 
         :return: SimScenarioResults
         """
@@ -84,11 +80,10 @@ class SimSequenceResults(AnyObject):
     def scenario_to_compute(self) -> SimScenarioSpec:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ScenarioToCompute() As SimScenarioSpec
-                |     Sets or retrieves the scenario to compute.
+                Property ScenarioToCompute() As SimScenarioSpec
+                    Sets or retrieves the scenario to compute.
 
         :return: SimScenarioSpec
         """
@@ -107,11 +102,10 @@ class SimSequenceResults(AnyObject):
     def sequence(self) -> SimSequence:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Sequence() As SimSequence (Read Only)
-                |     Retrieves the sequence associated to this sequence results. SimSequence
+                Property Sequence() As SimSequence (Read Only)
+                    Retrieves the sequence associated to this sequence results. SimSequence
 
         :return: SimSequence
         """
@@ -121,11 +115,10 @@ class SimSequenceResults(AnyObject):
     def update(self, isp_scenario_to_compute: SimScenarioSpec) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Update(SimScenarioSpec ispScenarioToCompute)
-                |     Updates and computes the specified scenario. SimScenarioSpec
+                Sub Update(SimScenarioSpec ispScenarioToCompute)
+                    Updates and computes the specified scenario. SimScenarioSpec
 
         :param SimScenarioSpec isp_scenario_to_compute:
         :return: None

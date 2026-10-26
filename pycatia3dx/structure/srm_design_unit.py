@@ -15,18 +15,17 @@ from pycatia3dx.structure.srm_proxies import SrmProxies
 class SrmDesignUnit(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SrmDesignUnit
-                | 
-                | Object to manage volume under the design unit.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SrmDesignUnit
+                
+                Object to manage volume under the design unit.
     
     """
 
@@ -37,27 +36,26 @@ class SrmDesignUnit(AnyObject):
     def get_proxies(self, i_location: int) -> SrmProxies:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetProxies(long iLocation) As SrmProxies
-                |     Returns the List of Proxies
-                | 
-                |     Parameters:
-                | 
-                |         iLocation
-                |             If iLocation == 1 : ProxyRootTool_IN. If iLocation == 2 : ProxyRootTool_OUT. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves list of Proxies.
-                |              
-                | 
-                |              Dim ObjSrmDesignUnit As SrmDesignUnit
-                |              ObjSelection.Add ObjPart
-                |              Set ObjSrmDesignUnit = ObjSelection.FindObject("CATIASrmDesignUnit")
-                |              Set ListOfProxies = ObjSrmDesignUnit.GetProxies
+                Func GetProxies(long iLocation) As SrmProxies
+                    Returns the List of Proxies
+                
+                    Parameters:
+                
+                        iLocation
+                            If iLocation == 1 : ProxyRootTool_IN. If iLocation == 2 : ProxyRootTool_OUT. 
+                
+                    Example:
+                
+                
+                             This example retrieves list of Proxies.
+                             
+                
+                             Dim ObjSrmDesignUnit As SrmDesignUnit
+                             ObjSelection.Add ObjPart
+                             Set ObjSrmDesignUnit = ObjSelection.FindObject("CATIASrmDesignUnit")
+                             Set ListOfProxies = ObjSrmDesignUnit.GetProxies
 
         :param int i_location:
         :return: SrmProxies

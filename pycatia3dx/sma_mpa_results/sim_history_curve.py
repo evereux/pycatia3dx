@@ -12,23 +12,21 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimHistoryCurve(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimHistoryCurve
-                | 
-                | Represents the history curve.
-                | Role:This Interface can be retrieved using
-                | SMAIAMpaHistoryPlot::GetHistoryCurveList() method.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimHistoryCurve
+                
+                Represents the history curve.
+                Role:This Interface can be retrieved using
+                SMAIAMpaHistoryPlot::GetHistoryCurveList() method.
     
     """
 
@@ -39,30 +37,29 @@ class SimHistoryCurve(AnyObject):
     def export(self, ics_file_name: str, ics_file_location: str, ie_file_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Export(CATBSTR icsFileName,CATBSTR icsFileLocation,SimFileType
-                | ieFileType)
-                |     Exports the curve values in the specified file format at the given
-                |     location. The first column has the abscissa values and the second column has
-                |     the ordinate values. The first row specifies the abscissa and ordinate
-                |     units.
-                | 
-                |     Parameters:
-                | 
-                |         icsFileName
-                |             The name of the file. If not specified, the name of the curve will
-                |             be taken by default. 
-                |         icsFileLocation
-                |             The location at which the exported file needs to be created.
-                |             
-                |         ieFileType
-                |             The file types. The available options can be found in
-                |             SMAIAMpaFileTypeEnum class. 
-                | 
-                |     Returns:
-                |         S_OK if successful.
+                Sub Export(CATBSTR icsFileName,CATBSTR icsFileLocation,SimFileType
+                ieFileType)
+                    Exports the curve values in the specified file format at the given
+                    location. The first column has the abscissa values and the second column has
+                    the ordinate values. The first row specifies the abscissa and ordinate
+                    units.
+                
+                    Parameters:
+                
+                        icsFileName
+                            The name of the file. If not specified, the name of the curve will
+                            be taken by default. 
+                        icsFileLocation
+                            The location at which the exported file needs to be created.
+                            
+                        ieFileType
+                            The file types. The available options can be found in
+                            SMAIAMpaFileTypeEnum class. 
+                
+                    Returns:
+                        S_OK if successful.
 
         :param str ics_file_name:
         :param str ics_file_location:
@@ -74,26 +71,25 @@ class SimHistoryCurve(AnyObject):
     def export_to_plm_doc(self, ics_file_name: str, ie_file_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ExportToPLMDoc(CATBSTR icsFileName,SimFileType ieFileType)
-                |     Exports the curve values in the specified file format in the database as
-                |     VPMDocument. The first column has the abscissa values and the second column has
-                |     the ordinate values. The first row specifies the abscissa and ordinate
-                |     units.
-                | 
-                |     Parameters:
-                | 
-                |         icsFileName
-                |             The name of the file. If not specified, the name of the curve will
-                |             be taken by default. 
-                |         ieFileType
-                |             The file types. The available options can be found in
-                |             SMAIAMpaFileTypeEnum class. 
-                | 
-                |     Returns:
-                |         S_OK if successful.
+                Sub ExportToPLMDoc(CATBSTR icsFileName,SimFileType ieFileType)
+                    Exports the curve values in the specified file format in the database as
+                    VPMDocument. The first column has the abscissa values and the second column has
+                    the ordinate values. The first row specifies the abscissa and ordinate
+                    units.
+                
+                    Parameters:
+                
+                        icsFileName
+                            The name of the file. If not specified, the name of the curve will
+                            be taken by default. 
+                        ieFileType
+                            The file types. The available options can be found in
+                            SMAIAMpaFileTypeEnum class. 
+                
+                    Returns:
+                        S_OK if successful.
 
         :param str ics_file_name:
         :param int ie_file_type:
@@ -104,18 +100,17 @@ class SimHistoryCurve(AnyObject):
     def get_min_max_values(self, od_min: float, od_max: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetMinMaxValues(double odMin,double odMax)
-                |     Retrieves the minimum and maximum values of the curve.
-                | 
-                |     Parameters:
-                | 
-                |         odMin
-                |             Returns the minimum value. 
-                |         odMax
-                |             Returns the maximum value. 
+                Sub GetMinMaxValues(double odMin,double odMax)
+                    Retrieves the minimum and maximum values of the curve.
+                
+                    Parameters:
+                
+                        odMin
+                            Returns the minimum value. 
+                        odMax
+                            Returns the maximum value. 
 
         :param float od_min:
         :param float od_max:
@@ -124,4 +119,4 @@ class SimHistoryCurve(AnyObject):
         return self.com_object.GetMinMaxValues(od_min, od_max)
 
     def __repr__(self):
-        return f'SimHistoryCurve(name="{ self.name }")'
+        return f'SimHistoryCurve(name="{self.name}")'

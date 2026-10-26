@@ -12,21 +12,19 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimBuckleLanczosEigensolver(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimBuckleLanczosEigensolver
-                | 
-                | Represents the Buckle Lanczos Eigensolver object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimBuckleLanczosEigensolver
+                
+                Represents the Buckle Lanczos Eigensolver object.
     
     """
 
@@ -38,11 +36,10 @@ class SimBuckleLanczosEigensolver(AnyObject):
     def maximum_eigenvalue(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumEigenvalue() As double
-                |     Returns or sets the maximum Eigen value.
+                Property MaximumEigenvalue() As double
+                    Returns or sets the maximum Eigen value.
 
         :return: float
         """
@@ -61,14 +58,13 @@ class SimBuckleLanczosEigensolver(AnyObject):
     def maximum_eigenvalue_set(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumEigenvalueSet() As boolean
-                |     Returns or sets the flag that determines if the maximum Eigen value is
-                |     specified.
-                |     TRUE : the maximum Eigen value is specified.
-                |     FALSE : the maximum Eigen value is not specified.
+                Property MaximumEigenvalueSet() As boolean
+                    Returns or sets the flag that determines if the maximum Eigen value is
+                    specified.
+                    TRUE : the maximum Eigen value is specified.
+                    FALSE : the maximum Eigen value is not specified.
 
         :return: bool
         """
@@ -87,11 +83,10 @@ class SimBuckleLanczosEigensolver(AnyObject):
     def minimum_eigenvalue(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MinimumEigenvalue() As double
-                |     Returns or sets the minimum Eigen value.
+                Property MinimumEigenvalue() As double
+                    Returns or sets the minimum Eigen value.
 
         :return: float
         """
@@ -110,14 +105,13 @@ class SimBuckleLanczosEigensolver(AnyObject):
     def minimum_eigenvalue_set(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MinimumEigenvalueSet() As boolean
-                |     Returns or sets the flag that determines if the minimum Eigen value is
-                |     specified.
-                |     TRUE : the minimum Eigen value is specified.
-                |     FALSE : the minimum Eigen value is not specified.
+                Property MinimumEigenvalueSet() As boolean
+                    Returns or sets the flag that determines if the minimum Eigen value is
+                    specified.
+                    TRUE : the minimum Eigen value is specified.
+                    FALSE : the minimum Eigen value is not specified.
 
         :return: bool
         """
@@ -136,11 +130,10 @@ class SimBuckleLanczosEigensolver(AnyObject):
     def number_of_eigenvalues(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfEigenvalues() As long
-                |     Returns or sets the number of Eigen values. 
+                Property NumberOfEigenvalues() As long
+                    Returns or sets the number of Eigen values. 
 
         :return: int
         """
@@ -156,4 +149,4 @@ class SimBuckleLanczosEigensolver(AnyObject):
         self.com_object.NumberOfEigenvalues = value
 
     def __repr__(self):
-        return f'SimBuckleLanczosEigensolver(name="{ self.name }")'
+        return f'SimBuckleLanczosEigensolver(name="{self.name}")'

@@ -17,19 +17,18 @@ from pycatia3dx.types.general import CATVariant
 class StrOpenings(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     StrOpenings
-                | 
-                | Object for StrOpenings.
-                | Role: To access an opening from a collection of openings.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    StrOpenings
+                
+                Object for StrOpenings.
+                Role: To access an opening from a collection of openings.
     
     """
 
@@ -40,24 +39,23 @@ class StrOpenings(Collection):
     def add(self) -> StrOpening:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add() As StrOpening
-                |     Returns the Opening created with all the data structure
-                |     Role: Create an Opening with all the data structure.
-                | 
-                |     Example:
-                | 
-                |          
-                | 
-                |              This example creates an Opening
-                |              
-                | 
-                |              Dim ObjStrOpenings As StrOpenings
-                |              Set ObjStrOpenings = iObjSfdPanel.GetOpenings(0)
-                |              Dim ObjStrOpening As StrOpening
-                |              Set ObjStrOpening = ObjStrOpenings.Add
+                Func Add() As StrOpening
+                    Returns the Opening created with all the data structure
+                    Role: Create an Opening with all the data structure.
+                
+                    Example:
+                
+                         
+                
+                             This example creates an Opening
+                             
+                
+                             Dim ObjStrOpenings As StrOpenings
+                             Set ObjStrOpenings = iObjSfdPanel.GetOpenings(0)
+                             Dim ObjStrOpening As StrOpening
+                             Set ObjStrOpening = ObjStrOpenings.Add
 
         :return: StrOpening
         """
@@ -66,30 +64,29 @@ class StrOpenings(Collection):
     def item(self, i_index: CATVariant) -> StrOpening:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As StrOpening
-                |     Returns an Opening from a list
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of StrOpening 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in first opening from the list of
-                |              openings.
-                |              
-                | 
-                |               'Get all created opening on the object
-                |               Dim ObjStrOpenings As StrOpenings
-                |               Set ObjStrOpenings = ObjSfdPanel.GetOpenings(0)
-                |               'Get first opening from the list of opening
-                |               Dim ObjStrOpening As StrOpening
-                |               set ObjStrOpening = ObjStrOpenings.Item(1)
+                Func Item(CATVariant iIndex) As StrOpening
+                    Returns an Opening from a list
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of StrOpening 
+                
+                    Example:
+                
+                
+                             This example retrieves in first opening from the list of
+                             openings.
+                             
+                
+                              'Get all created opening on the object
+                              Dim ObjStrOpenings As StrOpenings
+                              Set ObjStrOpenings = ObjSfdPanel.GetOpenings(0)
+                              'Get first opening from the list of opening
+                              Dim ObjStrOpening As StrOpening
+                              set ObjStrOpening = ObjStrOpenings.Item(1)
 
         :param CATVariant i_index:
         :return: StrOpening
@@ -99,26 +96,25 @@ class StrOpenings(Collection):
     def remove(self, i_opening: StrOpening) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(StrOpening iOpening)
-                |     Removes an opening. The opening must belong to this Panel /
-                |     Profile.
-                | 
-                |     Parameters:
-                | 
-                |         iOpening
-                |             Opening. 
-                | 
-                |     Example:
-                | 
-                |          
-                | 
-                |              This example removes an Opening
-                |              
-                | 
-                |              ObjStrOpenings.Remove(ObjStrOpening)
+                Sub Remove(StrOpening iOpening)
+                    Removes an opening. The opening must belong to this Panel /
+                    Profile.
+                
+                    Parameters:
+                
+                        iOpening
+                            Opening. 
+                
+                    Example:
+                
+                         
+                
+                             This example removes an Opening
+                             
+                
+                             ObjStrOpenings.Remove(ObjStrOpening)
 
         :param StrOpening i_opening:
         :return: None

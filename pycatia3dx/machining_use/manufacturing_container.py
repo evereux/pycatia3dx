@@ -12,23 +12,21 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingContainer(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingContainer
-                | 
-                | Interface to manage the machining activities container.
-                | Role: This interface allows to initialize the machining activities
-                | container.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingContainer
+                
+                Interface to manage the machining activities container.
+                Role: This interface allows to initialize the machining activities
+                container.
     
     """
 
@@ -39,20 +37,19 @@ class ManufacturingContainer(AnyObject):
     def get_part_operations(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetPartOperations() As CATSafeArrayVariant
-                |     Retrieves Part operations
-                | 
-                |     Parameters:
-                | 
-                |         oListOfPartOperations
-                |             List of Part Operations
+                Func GetPartOperations() As CATSafeArrayVariant
+                    Retrieves Part operations
+                
+                    Parameters:
+                
+                        oListOfPartOperations
+                            List of Part Operations
 
         :return: tuple
         """
         return self.com_object.GetPartOperations()
 
     def __repr__(self):
-        return f'ManufacturingContainer(name="{ self.name }")'
+        return f'ManufacturingContainer(name="{self.name}")'

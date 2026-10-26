@@ -13,33 +13,31 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeCircle3Points(HybridShapeCircle):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.HybridShapeCircle
-                |                             HybridShapeCircle3Points
-                | 
-                | Represents the hybrid shape circle object defined using three
-                | points.
-                | Role: To access the data of the hybrid shape circle object.
-                | 
-                | This data includes the circle three passing points.
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapeCircle2PointsRad
-                | object.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.HybridShapeCircle
+                                            HybridShapeCircle3Points
+                
+                Represents the hybrid shape circle object defined using three
+                points.
+                Role: To access the data of the hybrid shape circle object.
+                
+                This data includes the circle three passing points.
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapeCircle2PointsRad
+                object.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -51,21 +49,20 @@ class HybridShapeCircle3Points(HybridShapeCircle):
     def element1(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Element1() As Reference
-                |     Returns or sets the circle first passing point.
-                |     Sub-element(s) supported (see Boundary object): Vertex.
-                | 
-                |     Example:
-                |         This example retrieves the first passing point of the HybShpCircle3Pt
-                |         hybrid shape circle in HybShpCircle3PtFirstPassingPoint
-                |         point.
-                | 
-                |          Dim HybShpCircle3PtFirstPassingPoint As Reference
-                |          Set HybShpCircle3PtFirstPassingPoint=
-                |          HybShpCircle3Pt.Element1
+                Property Element1() As Reference
+                    Returns or sets the circle first passing point.
+                    Sub-element(s) supported (see Boundary object): Vertex.
+                
+                    Example:
+                        This example retrieves the first passing point of the HybShpCircle3Pt
+                        hybrid shape circle in HybShpCircle3PtFirstPassingPoint
+                        point.
+                
+                         Dim HybShpCircle3PtFirstPassingPoint As Reference
+                         Set HybShpCircle3PtFirstPassingPoint=
+                         HybShpCircle3Pt.Element1
 
         :return: Reference
         """
@@ -84,18 +81,17 @@ class HybridShapeCircle3Points(HybridShapeCircle):
     def element2(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Element2() As Reference
-                |     Returns or sets the circle second passing point.
-                |     Sub-element(s) supported (see Boundary object): Vertex.
-                | 
-                |     Example:
-                |         This example sets the second passing point of the HybShpCircle3Pt
-                |         hybrid shape circle as the Point2 point.
-                | 
-                |          HybShpCircle3Pt.Element2 Point2
+                Property Element2() As Reference
+                    Returns or sets the circle second passing point.
+                    Sub-element(s) supported (see Boundary object): Vertex.
+                
+                    Example:
+                        This example sets the second passing point of the HybShpCircle3Pt
+                        hybrid shape circle as the Point2 point.
+                
+                         HybShpCircle3Pt.Element2 Point2
 
         :return: Reference
         """
@@ -114,21 +110,20 @@ class HybridShapeCircle3Points(HybridShapeCircle):
     def element3(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Element3() As Reference
-                |     Returns or sets the circle third passing point.
-                |     Sub-element(s) supported (see Boundary object): Vertex.
-                | 
-                |     Example:
-                |         This example retrieves the third passing point of the HybShpCircle3Pt
-                |         hybrid shape circle in HybShpCircle3PtThirdPassingPoint
-                |         point.
-                | 
-                |          Dim HybShpCircle3PtThirdPassingPoint As Reference
-                |          Set HybShpCircle3PtThirdPassingPoint=
-                |          HybShpCircle3Pt.Element3
+                Property Element3() As Reference
+                    Returns or sets the circle third passing point.
+                    Sub-element(s) supported (see Boundary object): Vertex.
+                
+                    Example:
+                        This example retrieves the third passing point of the HybShpCircle3Pt
+                        hybrid shape circle in HybShpCircle3PtThirdPassingPoint
+                        point.
+                
+                         Dim HybShpCircle3PtThirdPassingPoint As Reference
+                         Set HybShpCircle3PtThirdPassingPoint=
+                         HybShpCircle3Pt.Element3
 
         :return: Reference
         """
@@ -147,19 +142,18 @@ class HybridShapeCircle3Points(HybridShapeCircle):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Support() As Reference
-                |     Returns or sets the circle support surface.
-                |     Sub-element(s) supported (see Boundary object): Face.
-                | 
-                |     Example:
-                |         This example retrieves in HybShpCircleSupportSurf the support surface
-                |         of the HybShpCircle hybrid shape circle.
-                | 
-                |          Dim HybShpCircleSupportSurf As Reference 
-                |          HybShpCircleSupportSurf = HybShpCircle.Support
+                Property Support() As Reference
+                    Returns or sets the circle support surface.
+                    Sub-element(s) supported (see Boundary object): Face.
+                
+                    Example:
+                        This example retrieves in HybShpCircleSupportSurf the support surface
+                        of the HybShpCircle hybrid shape circle.
+                
+                         Dim HybShpCircleSupportSurf As Reference 
+                         HybShpCircleSupportSurf = HybShpCircle.Support
 
         :return: Reference
         """
@@ -177,15 +171,14 @@ class HybridShapeCircle3Points(HybridShapeCircle):
     def remove_support(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveSupport()
-                |     Removes the support surface.
+                Sub RemoveSupport()
+                    Removes the support surface.
 
         :return: None
         """
         return self.com_object.RemoveSupport()
 
     def __repr__(self):
-        return f'HybridShapeCircle3Points(name="{ self.name }")'
+        return f'HybridShapeCircle3Points(name="{self.name}")'

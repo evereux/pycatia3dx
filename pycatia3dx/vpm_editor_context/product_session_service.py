@@ -15,30 +15,29 @@ from pycatia3dx.product_structure_client.vpm_root_occurrence import VPMRootOccur
 class ProductSessionService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         ProductSessionService
-                | 
-                | Interface representing the session service related to Product
-                | data.
-                | This interface is to be used as service to :
-                | 
-                |     get the session CATIAShape3Ds collection object.
-                |     compare Root Occurrences.
-                | 
-                | Example of how to retrieve such an object using
-                | Application.GetSessionService:
-                | 
-                |  Dim aProductModelerSrv as ProductSessionService
-                |  Set aProductModelerSrv = CATIA.GetSessionService("ProductSessionService")
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        ProductSessionService
+                
+                Interface representing the session service related to Product
+                data.
+                This interface is to be used as service to :
+                
+                    get the session CATIAShape3Ds collection object.
+                    compare Root Occurrences.
+                
+                Example of how to retrieve such an object using
+                Application.GetSessionService:
+                
+                 Dim aProductModelerSrv as ProductSessionService
+                 Set aProductModelerSrv = CATIA.GetSessionService("ProductSessionService")
     
     """
 
@@ -50,12 +49,11 @@ class ProductSessionService(Service):
     def shape_3ds(self) -> Shape3Ds:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Property Shape3Ds() As Shape3Ds (Read Only)
-                |     Returns the CATIAShape3Ds collection of CATIAShape3D objects available in
-                |     session.
+                Property Shape3Ds() As Shape3Ds (Read Only)
+                    Returns the CATIAShape3Ds collection of CATIAShape3D objects available in
+                    session.
 
         :return: Shape3Ds
         """
@@ -66,23 +64,22 @@ class ProductSessionService(Service):
                                  i_second_root_occurrence: VPMRootOccurrence) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917))
-                | Func CompareRootOccurrences(VPMRootOccurrence
-                | iFirstRootOccurrence,VPMRootOccurrence iSecondRootOccurrence) As
-                | CatCompareOccurrenceResult
-                |     Compare two Root Occurrences.
-                | 
-                |     Parameters:
-                | 
-                |         iFirstRootOccurrence
-                |             one of the two Root Occurrences to be compared. 
-                |         iSecondRootOccurrence
-                |             the other Root Occurrences to be compared. 
-                | 
-                |     Returns:
-                |         The CatCompareOccurrenceResult as result of the comparison operation.
+                Func CompareRootOccurrences(VPMRootOccurrence
+                iFirstRootOccurrence,VPMRootOccurrence iSecondRootOccurrence) As
+                CatCompareOccurrenceResult
+                    Compare two Root Occurrences.
+                
+                    Parameters:
+                
+                        iFirstRootOccurrence
+                            one of the two Root Occurrences to be compared. 
+                        iSecondRootOccurrence
+                            the other Root Occurrences to be compared. 
+                
+                    Returns:
+                        The CatCompareOccurrenceResult as result of the comparison operation.
 
         :param VPMRootOccurrence i_first_root_occurrence:
         :param VPMRootOccurrence i_second_root_occurrence:

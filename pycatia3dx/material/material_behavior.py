@@ -7,26 +7,30 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia3dx.material.material_behavior_options import MaterialBehaviorOptions
+from typing import TYPE_CHECKING
+
+# from pycatia3dx.material.material_behavior_options import MaterialBehaviorOptions
 from pycatia3dx.plm_modeller_base.plm_entity import PLMEntity
+
+if TYPE_CHECKING:
+    from pycatia3dx.material.material_behavior_options import MaterialBehaviorOptions
 
 
 class MaterialBehavior(PLMEntity):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PLMModelerBaseIDLItf.PLMEntity
-                |                         MaterialBehavior
-                | 
-                | Represents a Material Behavior.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PLMModelerBaseIDLItf.PLMEntity
+                                        MaterialBehavior
+                
+                Represents a Material Behavior.
     
     """
 
@@ -38,11 +42,10 @@ class MaterialBehavior(PLMEntity):
     def behavior_options(self) -> MaterialBehaviorOptions:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property BehaviorOptions() As MaterialBehaviorOptions (Read
-                | Only)
+                Property BehaviorOptions() As MaterialBehaviorOptions (Read
+                Only)
 
         :return: MaterialBehaviorOptions
         """

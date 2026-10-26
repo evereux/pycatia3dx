@@ -13,22 +13,20 @@ from pycatia3dx.sma_mpa_results.sim_frames_selection import SimFramesSelection
 
 
 class SimSensorBase(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimSensorBase
-                | 
-                | Represents the Base Sensor.
-                | All the sensors are derived from this sensor.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimSensorBase
+                
+                Represents the Base Sensor.
+                All the sensors are derived from this sensor.
     
     """
 
@@ -40,12 +38,11 @@ class SimSensorBase(AnyObject):
     def frame_selector(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FrameSelector(SimFramesSelection ispFrameSelector) (Write
-                | Only)
-                |     Sets the frame selector.
+                Property FrameSelector(SimFramesSelection ispFrameSelector) (Write
+                Only)
+                    Sets the frame selector.
 
         :return: None
         """
@@ -64,13 +61,12 @@ class SimSensorBase(AnyObject):
     def sim_support(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SimSupport(CATSafeArrayVariant icusSupport) (Write
-                | Only)
-                |     Sets the support for orphan results. The name of the support such as node
-                |     set.
+                Property SimSupport(CATSafeArrayVariant icusSupport) (Write
+                Only)
+                    Sets the support for orphan results. The name of the support such as node
+                    set.
 
         :return: None
         """
@@ -89,12 +85,11 @@ class SimSensorBase(AnyObject):
     def support(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Support(CATSafeArrayVariant ilsSupport) (Write Only)
-                |     Sets the support for native results. Support can be features such as loads,
-                |     restraints.
+                Property Support(CATSafeArrayVariant ilsSupport) (Write Only)
+                    Sets the support for native results. Support can be features such as loads,
+                    restraints.
 
         :return: None
         """
@@ -112,16 +107,15 @@ class SimSensorBase(AnyObject):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Update()
-                |     Updates the sensor. It should be called at the end after setting all the
-                |     sensor properties and the frame selector.
+                Sub Update()
+                    Updates the sensor. It should be called at the end after setting all the
+                    sensor properties and the frame selector.
 
         :return: None
         """
         return self.com_object.Update()
 
     def __repr__(self):
-        return f'SimSensorBase(name="{ self.name }")'
+        return f'SimSensorBase(name="{self.name}")'

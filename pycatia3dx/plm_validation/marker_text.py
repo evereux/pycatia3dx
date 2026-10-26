@@ -11,22 +11,20 @@ from pycatia3dx.plm_validation.marker import Marker
 
 
 class MarkerText(Marker):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PLMValidationIDLItf.Marker
-                |                         MarkerText
-                | 
-                | Allows management of Marker Text information.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PLMValidationIDLItf.Marker
+                                        MarkerText
+                
+                Allows management of Marker Text information.
     
     """
 
@@ -38,18 +36,17 @@ class MarkerText(Marker):
     def text(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Text() As CATBSTR
-                |     Returns or sets the text for a text marker.
-                | 
-                |     Example:
-                | 
-                |          This example retrieves the text
+                Property Text() As CATBSTR
+                    Returns or sets the text for a text marker.
+                
+                    Example:
+                
+                         This example retrieves the text
                 |
-                |          Dim text As String
-                |          text = oMarkerText.Text
+                         Dim text As String
+                         text = oMarkerText.Text
 
         :return: str
         """
@@ -68,18 +65,17 @@ class MarkerText(Marker):
     def text_font(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TextFont() As CATBSTR
-                |     Returns or sets the text's font for a marker.
-                | 
-                |     Example:
-                | 
-                |          This example retrieves text font
+                Property TextFont() As CATBSTR
+                    Returns or sets the text's font for a marker.
+                
+                    Example:
+                
+                         This example retrieves text font
                 |
-                |          Dim font As String
-                |          font = oMarkerText.TextFont
+                         Dim font As String
+                         font = oMarkerText.TextFont
 
         :return: str
         """
@@ -98,18 +94,17 @@ class MarkerText(Marker):
     def text_size(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TextSize() As double
-                |     Returns or sets the text's size for a marker.
-                | 
-                |     Example:
-                | 
-                |          This example retrieves the text size
+                Property TextSize() As double
+                    Returns or sets the text's size for a marker.
+                
+                    Example:
+                
+                         This example retrieves the text size
                 |
-                |          Dim size As Double
-                |          size = oMarkerText.TextSize
+                         Dim size As Double
+                         size = oMarkerText.TextSize
 
         :return: float
         """
@@ -125,4 +120,4 @@ class MarkerText(Marker):
         self.com_object.TextSize = value
 
     def __repr__(self):
-        return f'MarkerText(name="{ self.name }")'
+        return f'MarkerText(name="{self.name}")'

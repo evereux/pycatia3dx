@@ -12,21 +12,19 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimFeatureState(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimFeatureState
-                | 
-                | Represents the Feature State object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimFeatureState
+                
+                Represents the Feature State object.
     
     """
 
@@ -38,13 +36,12 @@ class SimFeatureState(AnyObject):
     def amplitude(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Amplitude() As CATBaseDispatch
-                |     Returns or sets the amplitude reference. It will adhere to
-                |     SMAIMpaTabularAmplitude interface if the amplitude reference points to a
-                |     tabular amplitude.
+                Property Amplitude() As CATBaseDispatch
+                    Returns or sets the amplitude reference. It will adhere to
+                    SMAIMpaTabularAmplitude interface if the amplitude reference points to a
+                    tabular amplitude.
 
         :return: AnyObject
         """
@@ -63,14 +60,13 @@ class SimFeatureState(AnyObject):
     def amplitude_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AmplitudeFlag() As boolean (Read Only)
-                |     Returns or sets the flag that determines if the feature has an
-                |     amplitude.
-                |     TRUE: the feature has an amplitude.
-                |     FALSE: the feature has no amplitude.
+                Property AmplitudeFlag() As boolean (Read Only)
+                    Returns or sets the flag that determines if the feature has an
+                    amplitude.
+                    TRUE: the feature has an amplitude.
+                    FALSE: the feature has no amplitude.
 
         :return: bool
         """
@@ -81,12 +77,11 @@ class SimFeatureState(AnyObject):
     def beginning_increment(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property BeginningIncrement() As long
-                |     Returns or sets the Beginning Increment. Use 1 for the first increment. Use
-                |     999999 for the last increment.
+                Property BeginningIncrement() As long
+                    Returns or sets the Beginning Increment. Use 1 for the first increment. Use
+                    999999 for the last increment.
 
         :return: int
         """
@@ -105,11 +100,10 @@ class SimFeatureState(AnyObject):
     def beginning_step(self) -> SimStep:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property BeginningStep() As SimStep
-                |     Returns or sets the Beginning Step.
+                Property BeginningStep() As SimStep
+                    Returns or sets the Beginning Step.
 
         :return: SimStep
         """
@@ -128,12 +122,11 @@ class SimFeatureState(AnyObject):
     def ending_increment(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property EndingIncrement() As long
-                |     Returns or sets the Ending Increment. Use 1 for the first increment. Use
-                |     999999 for the last increment.
+                Property EndingIncrement() As long
+                    Returns or sets the Ending Increment. Use 1 for the first increment. Use
+                    999999 for the last increment.
 
         :return: int
         """
@@ -152,11 +145,10 @@ class SimFeatureState(AnyObject):
     def ending_step(self) -> SimStep:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property EndingStep() As SimStep
-                |     Returns or sets the Ending Step.
+                Property EndingStep() As SimStep
+                    Returns or sets the Ending Step.
 
         :return: SimStep
         """
@@ -175,11 +167,10 @@ class SimFeatureState(AnyObject):
     def feature(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Feature() As CATBaseDispatch (Read Only)
-                |     Returns the feature referenced by the feature state.
+                Property Feature() As CATBaseDispatch (Read Only)
+                    Returns the feature referenced by the feature state.
 
         :return: AnyObject
         """
@@ -190,23 +181,22 @@ class SimFeatureState(AnyObject):
     def field_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FieldFlag() As boolean (Read Only)
-                |     Returns if the feature state has a field. This example demonstrates how to
-                |     use SimFeatureState from a field.
-                | 
-                |      Dim MyFeatureState As SimFeatureState
-                |      Dim MySteadyStateHeatTransferStep As
-                |      SimSteadyStateHeatTransferStep
-                |      ...
-                |      If MyFeatureState.FieldFlag = True Then
-                |          MyFeatureState.BeginningStep = MySteadyStateHeatTransferStep
-                |          MyFeatureState.BeginningIncrement = 1
-                |          MyFeatureState.EndingStep = MySteadyStateHeatTransferStep
-                |          MyFeatureState.EndingIncrement = 999999
-                |      End If
+                Property FieldFlag() As boolean (Read Only)
+                    Returns if the feature state has a field. This example demonstrates how to
+                    use SimFeatureState from a field.
+                
+                     Dim MyFeatureState As SimFeatureState
+                     Dim MySteadyStateHeatTransferStep As
+                     SimSteadyStateHeatTransferStep
+                     ...
+                     If MyFeatureState.FieldFlag = True Then
+                         MyFeatureState.BeginningStep = MySteadyStateHeatTransferStep
+                         MyFeatureState.BeginningIncrement = 1
+                         MyFeatureState.EndingStep = MySteadyStateHeatTransferStep
+                         MyFeatureState.EndingIncrement = 999999
+                     End If
 
         :return: bool
         """
@@ -217,11 +207,10 @@ class SimFeatureState(AnyObject):
     def phase_angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PhaseAngle() As double
-                |     Returns or sets the phase angle value.
+                Property PhaseAngle() As double
+                    Returns or sets the phase angle value.
 
         :return: float
         """
@@ -240,14 +229,13 @@ class SimFeatureState(AnyObject):
     def phase_angle_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PhaseAngleFlag() As boolean (Read Only)
-                |     Returns or sets the flag that determines if the feature has a phase
-                |     angle.
-                |     TRUE: the feature has a phase angle.
-                |     FALSE: the feature has no phase angle.
+                Property PhaseAngleFlag() As boolean (Read Only)
+                    Returns or sets the flag that determines if the feature has a phase
+                    angle.
+                    TRUE: the feature has a phase angle.
+                    FALSE: the feature has no phase angle.
 
         :return: bool
         """
@@ -258,44 +246,43 @@ class SimFeatureState(AnyObject):
     def propagation_state(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PropagationState() As CATBSTR (Read Only)
-                |     Returns the propagation state of the feature referenced by the feature
-                |     state. Possible values:
-                | 
-                |     Created
-                |         Created in this step.
-                |     Propagated
-                |         Propagated from a preceding General step in this General
-                |         step.
-                |     Modified
-                |         Propagated and modified in this General step.
-                |     Deactivated
-                |         Propagated and deactivated in this General step.
-                |     Inactive
-                |         Propagated and inactive in this step.
-                |     Reactivated
-                |         Deactivated in preceding General step is activated in this General
-                |         step.
-                |     PropagatedfromBaseState
-                |         Propagated from a preceding General step into this Perturbation
-                |         step.
-                |     ModifiedfromBaseState
-                |         Propagated and modified from a preceding General step in this
-                |         Perturbation step.
-                |     DeactivatedfromBaseState
-                |         Propagated and deactivated from a preceding General step in this
-                |         Perturbation step.
-                |     BuiltintoBaseState
-                |         Inherited state from the preceding General step in this Perturbation
-                |         step. Applies only to boundary conditions.
-                |     BuiltintoMode
-                |         Inherited modes of the preceding Frequency step in this Linear Dynamic
-                |         step. Applies only to boundary conditions.
-                |     NotApplicable
-                |         Does not apply in this step.
+                Property PropagationState() As CATBSTR (Read Only)
+                    Returns the propagation state of the feature referenced by the feature
+                    state. Possible values:
+                
+                    Created
+                        Created in this step.
+                    Propagated
+                        Propagated from a preceding General step in this General
+                        step.
+                    Modified
+                        Propagated and modified in this General step.
+                    Deactivated
+                        Propagated and deactivated in this General step.
+                    Inactive
+                        Propagated and inactive in this step.
+                    Reactivated
+                        Deactivated in preceding General step is activated in this General
+                        step.
+                    PropagatedfromBaseState
+                        Propagated from a preceding General step into this Perturbation
+                        step.
+                    ModifiedfromBaseState
+                        Propagated and modified from a preceding General step in this
+                        Perturbation step.
+                    DeactivatedfromBaseState
+                        Propagated and deactivated from a preceding General step in this
+                        Perturbation step.
+                    BuiltintoBaseState
+                        Inherited state from the preceding General step in this Perturbation
+                        step. Applies only to boundary conditions.
+                    BuiltintoMode
+                        Inherited modes of the preceding Frequency step in this Linear Dynamic
+                        step. Applies only to boundary conditions.
+                    NotApplicable
+                        Does not apply in this step.
 
         :return: str
         """
@@ -306,11 +293,10 @@ class SimFeatureState(AnyObject):
     def scale_factor(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ScaleFactor() As double
-                |     Returns or sets the scale factor value.
+                Property ScaleFactor() As double
+                    Returns or sets the scale factor value.
 
         :return: float
         """
@@ -329,14 +315,13 @@ class SimFeatureState(AnyObject):
     def scale_factor_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ScaleFactorFlag() As boolean (Read Only)
-                |     Returns or sets the flag that determines if the feature has a scale
-                |     factor.
-                |     TRUE: the feature has a scale factor.
-                |     FALSE: the feature has no scale factor. 
+                Property ScaleFactorFlag() As boolean (Read Only)
+                    Returns or sets the flag that determines if the feature has a scale
+                    factor.
+                    TRUE: the feature has a scale factor.
+                    FALSE: the feature has no scale factor. 
 
         :return: bool
         """
@@ -344,4 +329,4 @@ class SimFeatureState(AnyObject):
         return self.com_object.ScaleFactorFlag
 
     def __repr__(self):
-        return f'SimFeatureState(name="{ self.name }")'
+        return f'SimFeatureState(name="{self.name}")'

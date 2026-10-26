@@ -21,18 +21,17 @@ if TYPE_CHECKING:
 class SimSequence(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimSequence
-                | 
-                | Interface representing Simulation Sequence.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimSequence
+                
+                Interface representing Simulation Sequence.
     
     """
 
@@ -44,11 +43,10 @@ class SimSequence(AnyObject):
     def excitations(self) -> SimExcitations:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Excitations() As SimExcitations (Read Only)
-                |     Retrieves the collection of all Excitations. SimExcitations
+                Property Excitations() As SimExcitations (Read Only)
+                    Retrieves the collection of all Excitations. SimExcitations
 
         :return: SimExcitations
         """
@@ -59,11 +57,10 @@ class SimSequence(AnyObject):
     def probes(self) -> SimProbes:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Probes() As SimProbes (Read Only)
-                |     Retrieves the collection of all Excitations. SimProbes
+                Property Probes() As SimProbes (Read Only)
+                    Retrieves the collection of all Excitations. SimProbes
 
         :return: SimProbes
         """
@@ -74,11 +71,10 @@ class SimSequence(AnyObject):
     def scenario_specs(self) -> SimScenarioSpecs:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ScenarioSpecs() As SimScenarioSpecs (Read Only)
-                |     Retrieves the collection of all Scenarios. SimScenarioSpecs
+                Property ScenarioSpecs() As SimScenarioSpecs (Read Only)
+                    Retrieves the collection of all Scenarios. SimScenarioSpecs
 
         :return: SimScenarioSpecs
         """
@@ -89,12 +85,11 @@ class SimSequence(AnyObject):
     def sequence_results(self) -> 'SimSequenceResults':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SequenceResults() As SimSequenceResults (Read Only)
-                |     Retrieves the sequence results associated to this sequence.
-                |     SimSequenceResults
+                Property SequenceResults() As SimSequenceResults (Read Only)
+                    Retrieves the sequence results associated to this sequence.
+                    SimSequenceResults
 
         :return: SimSequenceResults
         """
@@ -104,11 +99,10 @@ class SimSequence(AnyObject):
     def add_behavior(self, i_behavior: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddBehavior(AnyObject iBehavior)
-                |     Adds behavior links.
+                Sub AddBehavior(AnyObject iBehavior)
+                    Adds behavior links.
 
         :param AnyObject i_behavior:
         :return: None
@@ -118,11 +112,10 @@ class SimSequence(AnyObject):
     def get_behaviors(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetBehaviors() As CATSafeArrayVariant
-                |     Gets behavior links.
+                Func GetBehaviors() As CATSafeArrayVariant
+                    Gets behavior links.
 
         :return: tuple
         """
@@ -131,11 +124,10 @@ class SimSequence(AnyObject):
     def remove_behavior(self, i_behavior: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveBehavior(AnyObject iBehavior)
-                |     Removes behavior links.
+                Sub RemoveBehavior(AnyObject iBehavior)
+                    Removes behavior links.
 
         :param AnyObject i_behavior:
         :return: None

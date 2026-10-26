@@ -17,18 +17,17 @@ from pycatia3dx.types.general import CATVariant
 class SddPlates(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SddPlates
-                | 
-                | Object to manage list of SddPlate
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SddPlates
+                
+                Object to manage list of SddPlate
     
     """
 
@@ -39,28 +38,27 @@ class SddPlates(Collection):
     def add(self, i_sdd_plate: SddPlate) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Add(SddPlate iSddPlate)
-                |     Adds a already created SddPlate in the collection.
-                | 
-                |     Parameters:
-                | 
-                |         iSddPlate
-                |             SddPlate. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example Adds SddPlate to the list of
-                |              SddPlates.
-                |              
-                | 
-                |               Dim ListOfSddPlates As SddPlates
-                |               Set ListOfSddPlates = ObjSddOtherSupportPlates.OtherSupportPlates
-                |               'add the SddPlate of the list
-                |               ListOfSddPlates.Add ObjSddPlate
+                Sub Add(SddPlate iSddPlate)
+                    Adds a already created SddPlate in the collection.
+                
+                    Parameters:
+                
+                        iSddPlate
+                            SddPlate. 
+                
+                    Example:
+                
+                
+                             This example Adds SddPlate to the list of
+                             SddPlates.
+                             
+                
+                              Dim ListOfSddPlates As SddPlates
+                              Set ListOfSddPlates = ObjSddOtherSupportPlates.OtherSupportPlates
+                              'add the SddPlate of the list
+                              ListOfSddPlates.Add ObjSddPlate
 
         :param SddPlate i_sdd_plate:
         :return: None
@@ -70,26 +68,25 @@ class SddPlates(Collection):
     def item(self, i_index: CATVariant) -> SddPlate:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As SddPlate
-                |     Returns a SddPlate from a list of SddPlates
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of SddPlate 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves  the first plate from the list of
-                |              plate.
-                |              
-                | 
-                |               Dim ObjSddPlate As SddPlate
-                |               Set ObjSddPlate = ObjSddPlateList.Item(1)
+                Func Item(CATVariant iIndex) As SddPlate
+                    Returns a SddPlate from a list of SddPlates
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of SddPlate 
+                
+                    Example:
+                
+                
+                             This example retrieves  the first plate from the list of
+                             plate.
+                             
+                
+                              Dim ObjSddPlate As SddPlate
+                              Set ObjSddPlate = ObjSddPlateList.Item(1)
 
         :param CATVariant i_index:
         :return: SddPlate

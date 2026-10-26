@@ -12,23 +12,21 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ControlledRadius(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ControledRadius
-                | 
-                | Interface for accessing Controled Radius modifier on a linear TPS (ASME norm
-                | only).
-                | This interface is exposed only by radius linear TPS.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ControledRadius
+                
+                Interface for accessing Controled Radius modifier on a linear TPS (ASME norm
+                only).
+                This interface is exposed only by radius linear TPS.
     
     """
 
@@ -40,11 +38,10 @@ class ControlledRadius(AnyObject):
     def modifier(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Modifier() As CATBSTR (Read Only)
-                |     Retrieves Controled Radius modifier. 
+                Property Modifier() As CATBSTR (Read Only)
+                    Retrieves Controled Radius modifier. 
 
         :return: str
         """
@@ -52,4 +49,4 @@ class ControlledRadius(AnyObject):
         return self.com_object.Modifier
 
     def __repr__(self):
-        return f'ControledRadius(name="{ self.name }")'
+        return f'ControledRadius(name="{self.name}")'

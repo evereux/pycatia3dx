@@ -17,18 +17,17 @@ from pycatia3dx.types.general import CATVariant
 class SrsGridSets(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SrsGridSets
-                | 
-                | Object for RfgPlaneSystems
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SrsGridSets
+                
+                Object for RfgPlaneSystems
     
     """
 
@@ -39,25 +38,24 @@ class SrsGridSets(Collection):
     def item(self, i_index: CATVariant) -> SrsGridSet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As SrsGridSet
-                |     Returns a SrsGridSet from a list of PlaneSystems
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of SrsGridSet 
-                | 
-                |     Returns:
-                |         The retrieved grid face based on the index. 
-                |     Example:
-                | 
-                |              This example retrieves  the first PlaneSet from the list of
-                |              GridSets.
+                Func Item(CATVariant iIndex) As SrsGridSet
+                    Returns a SrsGridSet from a list of PlaneSystems
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of SrsGridSet 
+                
+                    Returns:
+                        The retrieved grid face based on the index. 
+                    Example:
+                
+                             This example retrieves  the first PlaneSet from the list of
+                             GridSets.
                 |
-                |               Set GridSetReference = ListOfPlaneSystems.Item(1)
+                              Set GridSetReference = ListOfPlaneSystems.Item(1)
 
         :param CATVariant i_index:
         :return: SrsGridSet

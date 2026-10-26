@@ -12,58 +12,56 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimMeshedBolt(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimMeshedBolt
-                | 
-                | Represents the Meshed Bolt object.
-                | 
-                | Example:
-                |     Given a SimProperties object, you can create a SimMeshedBolt as
-                |     following:
-                | 
-                |      Dim MyProperties As SimProperties
-                |      ...
-                |      Dim MyMeshedBolt As SimMeshedBolt
-                |      Set MyMeshedBolt = MyProperties.Add("SimMeshedBolt")
-                |      
-                | 
-                |     Given a SimProperties object, you can retrieve a SimMeshedBolt named
-                |     "Meshed Bolt.1" as following:
-                | 
-                |      Dim MyProperties As SimProperties
-                |      ...
-                |      Dim MyMeshedBolt As SimMeshedBolt
-                |      Set MyMeshedBolt = MyProperties.Item("Meshed Bolt.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimProperties object myProperties, you can create a SimMeshedBolt
-                |     as following:
-                | 
-                |      ...
-                |      myMeshedBolt = myProperties.Add("SimMeshedBolt")
-                |      
-                | 
-                |     Given a SimProperties object myProperties, you can retrieve a SimMeshedBolt
-                |     named "Meshed Bolt.1" as following:
-                | 
-                |      ...
-                |      myMeshedBolt = myProperties.Item("Meshed Bolt.1")
-                |      
-                | 
-                | See also:
-                |     SimProperties
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimMeshedBolt
+                
+                Represents the Meshed Bolt object.
+                
+                Example:
+                    Given a SimProperties object, you can create a SimMeshedBolt as
+                    following:
+                
+                     Dim MyProperties As SimProperties
+                     ...
+                     Dim MyMeshedBolt As SimMeshedBolt
+                     Set MyMeshedBolt = MyProperties.Add("SimMeshedBolt")
+                     
+                
+                    Given a SimProperties object, you can retrieve a SimMeshedBolt named
+                    "Meshed Bolt.1" as following:
+                
+                     Dim MyProperties As SimProperties
+                     ...
+                     Dim MyMeshedBolt As SimMeshedBolt
+                     Set MyMeshedBolt = MyProperties.Item("Meshed Bolt.1")
+                     
+                
+                Example in Python:
+                    Given a SimProperties object myProperties, you can create a SimMeshedBolt
+                    as following:
+                
+                     ...
+                     myMeshedBolt = myProperties.Add("SimMeshedBolt")
+                     
+                
+                    Given a SimProperties object myProperties, you can retrieve a SimMeshedBolt
+                    named "Meshed Bolt.1" as following:
+                
+                     ...
+                     myMeshedBolt = myProperties.Item("Meshed Bolt.1")
+                     
+                
+                See also:
+                    SimProperties
     
     """
 
@@ -75,11 +73,10 @@ class SimMeshedBolt(AnyObject):
     def local_plane(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LocalPlane(AnyObject iPlane) (Write Only)
-                |     Sets the meshed bolt plane.
+                Property LocalPlane(AnyObject iPlane) (Write Only)
+                    Sets the meshed bolt plane.
 
         :return: None
         """
@@ -98,11 +95,10 @@ class SimMeshedBolt(AnyObject):
     def plane(self) -> SimMathPlane:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Plane() As SimMathPlane (Read Only)
-                |     Returns the meshed bolt plane.
+                Property Plane() As SimMathPlane (Read Only)
+                    Returns the meshed bolt plane.
 
         :return: SimMathPlane
         """
@@ -113,36 +109,35 @@ class SimMeshedBolt(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. Possible values are:
-                | 
-                |         Abstractions
-                |         Amplitudes
-                |         Controls
-                |         Connections
-                |         Damping
-                |         ElementTypeAssignments
-                |         Envelopes
-                |         FieldPlots
-                |         FlowConditions
-                |         HistoryPlots
-                |         InitialConditions
-                |         Interactions
-                |         LinearLoadCases
-                |         Loads
-                |         LoadSets
-                |         OutputRequests
-                |         PredefinedFields
-                |         Properties
-                |         Restraints
-                |         Sensors
-                |         Streams
-                |         ThermalConditions
-                |         NotDefined
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. Possible values are:
+                
+                        Abstractions
+                        Amplitudes
+                        Controls
+                        Connections
+                        Damping
+                        ElementTypeAssignments
+                        Envelopes
+                        FieldPlots
+                        FlowConditions
+                        HistoryPlots
+                        InitialConditions
+                        Interactions
+                        LinearLoadCases
+                        Loads
+                        LoadSets
+                        OutputRequests
+                        PredefinedFields
+                        Properties
+                        Restraints
+                        Sensors
+                        Streams
+                        ThermalConditions
+                        NotDefined
 
         :return: str
         """
@@ -150,4 +145,4 @@ class SimMeshedBolt(AnyObject):
         return self.com_object.SpecTreeCategory
 
     def __repr__(self):
-        return f'SimMeshedBolt(name="{ self.name }")'
+        return f'SimMeshedBolt(name="{self.name}")'

@@ -13,24 +13,22 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class KnowledgeSet(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     KnowledgeSet
-                | 
-                | Base interface for Knowledge sets.
-                | 
-                | See also:
-                |     KnowledgeObjects.GetKnowledgeRootSet
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    KnowledgeSet
+                
+                Base interface for Knowledge sets.
+                
+                See also:
+                    KnowledgeObjects.GetKnowledgeRootSet
     
     """
 
@@ -42,11 +40,10 @@ class KnowledgeSet(AnyObject):
     def collection(self) -> KnowledgeCollection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Collection() As KnowledgeCollection (Read Only)
-                |     Returns a collection for accessing objects of the kind of the set.
+                Property Collection() As KnowledgeCollection (Read Only)
+                    Returns a collection for accessing objects of the kind of the set.
 
         :return: KnowledgeCollection
         """
@@ -57,11 +54,10 @@ class KnowledgeSet(AnyObject):
     def factory(self) -> KnowledgeFactory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Factory() As KnowledgeFactory (Read Only)
-                |     Returns a factory for creating objects of the kind of the set.
+                Property Factory() As KnowledgeFactory (Read Only)
+                    Returns a factory for creating objects of the kind of the set.
 
         :return: KnowledgeFactory
         """
@@ -69,4 +65,4 @@ class KnowledgeSet(AnyObject):
         return KnowledgeFactory(self.com_object.Factory)
 
     def __repr__(self):
-        return f'KnowledgeSet(name="{ self.name }")'
+        return f'KnowledgeSet(name="{self.name}")'

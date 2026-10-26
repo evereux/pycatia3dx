@@ -15,21 +15,20 @@ from pycatia3dx.system.i_dispatch import IDispatch
 class CATBaseUnknown(IDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         CATBaseUnknown
-                | 
-                | Base class for creating interfaces and for implementing
-                | interfaces.
-                | Role: CATBaseUnknown supplies the infrastructure and the basic mechanisms to
-                | create interface abstract classes and to manage interface pointers. It is also
-                | the base class for classes which implements interfaces and for their extension
-                | classes because it supplies the code for the interface methods QueryInterface,
-                | AddRef and Release.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        CATBaseUnknown
+                
+                Base class for creating interfaces and for implementing
+                interfaces.
+                Role: CATBaseUnknown supplies the infrastructure and the basic mechanisms to
+                create interface abstract classes and to manage interface pointers. It is also
+                the base class for classes which implements interfaces and for their extension
+                classes because it supplies the code for the interface methods QueryInterface,
+                AddRef and Release.
     
     """
 

@@ -12,23 +12,21 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class MachiningCell(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     MachiningCell
-                | 
-                | Interface to manage the machining cell.
-                | Role: This interface offers services to manage the machining
-                | cell.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    MachiningCell
+                
+                Interface to manage the machining cell.
+                Role: This interface offers services to manage the machining
+                cell.
     
     """
 
@@ -39,11 +37,10 @@ class MachiningCell(AnyObject):
     def set_current(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCurrent()
-                |     Set the machining cell current.
+                Sub SetCurrent()
+                    Set the machining cell current.
 
         :return: None
         """
@@ -52,11 +49,10 @@ class MachiningCell(AnyObject):
     def set_current_machine(self, i_machine: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCurrentMachine(AnyObject iMachine)
-                |     Set the given machine as current.
+                Sub SetCurrentMachine(AnyObject iMachine)
+                    Set the given machine as current.
 
         :param AnyObject i_machine:
         :return: None
@@ -64,4 +60,4 @@ class MachiningCell(AnyObject):
         return self.com_object.SetCurrentMachine(i_machine.com_object)
 
     def __repr__(self):
-        return f'MachiningCell(name="{ self.name }")'
+        return f'MachiningCell(name="{self.name}")'

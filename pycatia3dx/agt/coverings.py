@@ -17,19 +17,18 @@ from pycatia3dx.types.general import CATVariant
 class Coverings(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     Coverings
-                | 
-                | Object for Coverings.
-                | To retrieve a Covering from collection.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    Coverings
+                
+                Object for Coverings.
+                To retrieve a Covering from collection.
     
     """
 
@@ -40,36 +39,35 @@ class Coverings(Collection):
     def item(self, i_index: CATVariant) -> Covering:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As Covering
-                |     Retrieves a Covering from the collection of Covering.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of Covering 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves Covering from the list of
-                |              Coverings
-                |              
-                | 
-                |              Dim myPart as CATIAPart
-                |              Set myPart = CATIA.ActiveEditor.ActievObject
-                |              Dim MyAGTRoot As AGTRoot
-                |              Set MyAGTRoot = myPart.GetItem("CATAGTRoot")
-                |              'Get a second Covering from the list of Covering by
-                |              index
-                |              Dim CoveringByIndex As AGTCoverings
-                |              Set CoveringByIndex = MyAGTRoot.Coverings.Item(2)
-                |              'Get a Covering named "MyCovering.2" from the list of Covering by
-                |              name
-                |              Dim CoveringByName As AGTCoverings
-                |              Set CoveringByName = MyAGTRoot.Coverings.Item("MyCovering.2")
+                Func Item(CATVariant iIndex) As Covering
+                    Retrieves a Covering from the collection of Covering.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of Covering 
+                
+                    Example:
+                
+                
+                             This example retrieves Covering from the list of
+                             Coverings
+                             
+                
+                             Dim myPart as CATIAPart
+                             Set myPart = CATIA.ActiveEditor.ActievObject
+                             Dim MyAGTRoot As AGTRoot
+                             Set MyAGTRoot = myPart.GetItem("CATAGTRoot")
+                             'Get a second Covering from the list of Covering by
+                             index
+                             Dim CoveringByIndex As AGTCoverings
+                             Set CoveringByIndex = MyAGTRoot.Coverings.Item(2)
+                             'Get a Covering named "MyCovering.2" from the list of Covering by
+                             name
+                             Dim CoveringByName As AGTCoverings
+                             Set CoveringByName = MyAGTRoot.Coverings.Item("MyCovering.2")
 
         :param CATVariant i_index:
         :return: Covering

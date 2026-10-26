@@ -12,21 +12,19 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class NonSemanticDatumTarget(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     NonSemanticDatumTarget
-                | 
-                | Interface Managing Non Semantic Datum Target.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    NonSemanticDatumTarget
+                
+                Interface Managing Non Semantic Datum Target.
     
     """
 
@@ -38,11 +36,10 @@ class NonSemanticDatumTarget(AnyObject):
     def low_label(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LowLabel() As CATBSTR
-                |     Retrieves or sets Lower Label.
+                Property LowLabel() As CATBSTR
+                    Retrieves or sets Lower Label.
 
         :return: str
         """
@@ -61,16 +58,15 @@ class NonSemanticDatumTarget(AnyObject):
     def type_specifier(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TypeSpecifier() As CATBSTR
-                |     Retrieves or sets the type of specifier.
-                |     Legal values:
-                | 
-                |         None
-                |         Square
-                |         Diameter
+                Property TypeSpecifier() As CATBSTR
+                    Retrieves or sets the type of specifier.
+                    Legal values:
+                
+                        None
+                        Square
+                        Diameter
 
         :return: str
         """
@@ -89,11 +85,10 @@ class NonSemanticDatumTarget(AnyObject):
     def up_label(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UpLabel() As CATBSTR
-                |     Retrieves or sets Upper Label. 
+                Property UpLabel() As CATBSTR
+                    Retrieves or sets Upper Label. 
 
         :return: str
         """
@@ -109,4 +104,4 @@ class NonSemanticDatumTarget(AnyObject):
         self.com_object.UpLabel = value
 
     def __repr__(self):
-        return f'NonSemanticDatumTarget(name="{ self.name }")'
+        return f'NonSemanticDatumTarget(name="{self.name}")'

@@ -12,23 +12,21 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class MaterialDomainContent(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     MaterialDomainContent
-                | 
-                | Represents a Material applicative Domain content.
-                | 
-                | Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    MaterialDomainContent
+                
+                Represents a Material applicative Domain content.
+                
+                Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
     
     """
 
@@ -37,4 +35,4 @@ class MaterialDomainContent(AnyObject):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'MaterialDomainContent(name="{ self.name }")'
+        return f'MaterialDomainContent(name="{self.name}")'

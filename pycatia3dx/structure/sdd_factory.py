@@ -17,21 +17,20 @@ from pycatia3dx.structure.sdd_product_plate import SddProductPlate
 class SddFactory(Factory):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Factory
-                |                         SddFactory
-                | 
-                | Object to create Structure Detail Modeler Objects.
-                | Role: To create the structure object such as Plate, Contour Based Plate and
-                | Member.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Factory
+                                        SddFactory
+                
+                Object to create Structure Detail Modeler Objects.
+                Role: To create the structure object such as Plate, Contour Based Plate and
+                Member.
     
     """
 
@@ -42,37 +41,36 @@ class SddFactory(Factory):
     def add_product_bracket(self, i_position_mode: int) -> SddProductBracket:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func AddProductBracket(CATStrUseBracketPositionMode iPositionMode) As
-                | SddProductBracket
-                |     Returns a created Bracket. For setting further attributes please refer to
-                |     StrCategoryMngt, StrMaterialMngt, StrPanelSurf, StrPlateExtrusionMngt,
-                |     StrPanelLimitMngt, StrSketchBasedDMSMngt.
-                |     Role: Creates a Bracket.
-                | 
-                |     Parameters:
-                | 
-                |         iPositionMode
-                |             The PositionMode define the delimitation is made by which type of
-                |             mode. ( CATStrUseBracketPositionMode)
-                |             - 3: catStr3DAxisPositionMode
-                |             - 4: catStrPlateStiffenerPositionMode
-                |             - 5: catStrStiffenerStiffenerPositionMode
-                |             - 6: catStrMultiLimitsPositionMode 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example creates a Bracket.
-                |              
-                | 
-                |              Dim ObjSddFactory As SddFactory
-                |              SFDProdSel.Add ObjVPMRootOccurrence
-                |              Set ObjSddFactory = SFDProdSel.FindObject("CATIASddFactory")
-                |              Dim ObjProductBracket As SddProductBracket
-                |              Set ObjProductBracket = ObjSddFactory.AddProductBracket(5)
+                Func AddProductBracket(CATStrUseBracketPositionMode iPositionMode) As
+                SddProductBracket
+                    Returns a created Bracket. For setting further attributes please refer to
+                    StrCategoryMngt, StrMaterialMngt, StrPanelSurf, StrPlateExtrusionMngt,
+                    StrPanelLimitMngt, StrSketchBasedDMSMngt.
+                    Role: Creates a Bracket.
+                
+                    Parameters:
+                
+                        iPositionMode
+                            The PositionMode define the delimitation is made by which type of
+                            mode. ( CATStrUseBracketPositionMode)
+                            - 3: catStr3DAxisPositionMode
+                            - 4: catStrPlateStiffenerPositionMode
+                            - 5: catStrStiffenerStiffenerPositionMode
+                            - 6: catStrMultiLimitsPositionMode 
+                
+                    Example:
+                
+                
+                             This example creates a Bracket.
+                             
+                
+                             Dim ObjSddFactory As SddFactory
+                             SFDProdSel.Add ObjVPMRootOccurrence
+                             Set ObjSddFactory = SFDProdSel.FindObject("CATIASddFactory")
+                             Dim ObjProductBracket As SddProductBracket
+                             Set ObjProductBracket = ObjSddFactory.AddProductBracket(5)
 
         :param int i_position_mode:
         :return: SddProductBracket
@@ -82,31 +80,30 @@ class SddFactory(Factory):
     def add_product_member(self) -> SddProductMember:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func AddProductMember() As SddProductMember
-                |     Returns a created Member. See StrCategoryMngt, StrMaterialMngt,
-                |     StrSectionMngt, StrOpenings, StrProfileLimitMngt objects.
-                |     Role: Creates a Member.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example creates a member.
-                |              
-                | 
-                |               'Get SddFactory
-                |               Dim product1Service As PLMProductService
-                |               Set product1Service = CATIA.ActiveEditor.GetService("PLMProductService")
-                |               Dim ObjVPMRootOccurrence As VPMRootOccurrence
-                |               Set ObjVPMRootOccurrence = product1Service.RootOccurrence
-                |               Set ObjSelection = CATIA.ActiveEditor.Selection
-                |               ObjSelection.Add ObjVPMRootOccurrence
-                |               Dim ObjSddFactory As SddFactory
-                |               Set ObjSddFactory = ObjSelection.FindObject("CATIASddFactory")
-                |               Dim ObjMember As SddProductMember
-                |               Set ObjMember = ObjSddFactory.AddProductMember
+                Func AddProductMember() As SddProductMember
+                    Returns a created Member. See StrCategoryMngt, StrMaterialMngt,
+                    StrSectionMngt, StrOpenings, StrProfileLimitMngt objects.
+                    Role: Creates a Member.
+                
+                    Example:
+                
+                
+                             This example creates a member.
+                             
+                
+                              'Get SddFactory
+                              Dim product1Service As PLMProductService
+                              Set product1Service = CATIA.ActiveEditor.GetService("PLMProductService")
+                              Dim ObjVPMRootOccurrence As VPMRootOccurrence
+                              Set ObjVPMRootOccurrence = product1Service.RootOccurrence
+                              Set ObjSelection = CATIA.ActiveEditor.Selection
+                              ObjSelection.Add ObjVPMRootOccurrence
+                              Dim ObjSddFactory As SddFactory
+                              Set ObjSddFactory = ObjSelection.FindObject("CATIASddFactory")
+                              Dim ObjMember As SddProductMember
+                              Set ObjMember = ObjSddFactory.AddProductMember
 
         :return: SddProductMember
         """
@@ -115,20 +112,19 @@ class SddFactory(Factory):
     def add_product_plate(self, i_concave_mode: bool) -> SddProductPlate:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func AddProductPlate(boolean iConcaveMode) As SddProductPlate
-                |     Returns an empty panel created.
-                |     Role:Creates an empty panel, ie a VPMReference typed with
-                |     V_Discipline="Structure_Plate" and
-                |     PLMExtension="StrPlate".
-                | 
-                |     Parameters:
-                | 
-                |         iConcaveMode
-                |             Defines Advanced plate or basic plate. For creation of advanced
-                |             plate this should be TRUE.
+                Func AddProductPlate(boolean iConcaveMode) As SddProductPlate
+                    Returns an empty panel created.
+                    Role:Creates an empty panel, ie a VPMReference typed with
+                    V_Discipline="Structure_Plate" and
+                    PLMExtension="StrPlate".
+                
+                    Parameters:
+                
+                        iConcaveMode
+                            Defines Advanced plate or basic plate. For creation of advanced
+                            plate this should be TRUE.
 
         :param bool i_concave_mode:
         :return: SddProductPlate
@@ -138,17 +134,16 @@ class SddFactory(Factory):
     def init_resources(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub InitResources()
-                |     Loads SDD resources
-                | 
-                |     Example:
-                |              This example initializes resources for SDD
-                |              system.
+                Sub InitResources()
+                    Loads SDD resources
+                
+                    Example:
+                             This example initializes resources for SDD
+                             system.
                 |
-                |               ObjSddFactory.InitResources
+                              ObjSddFactory.InitResources
 
         :return: None
         """

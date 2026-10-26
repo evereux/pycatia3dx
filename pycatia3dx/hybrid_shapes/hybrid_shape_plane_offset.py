@@ -14,25 +14,23 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapePlaneOffset(Plane):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.Plane
-                |                             HybridShapePlaneOffset
-                | 
-                | Offset plane.
-                | Role: Allows to access data of the plane feature created with an offset to
-                | another plane.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.Plane
+                                            HybridShapePlaneOffset
+                
+                Offset plane.
+                Role: Allows to access data of the plane feature created with an offset to
+                another plane.
     
     """
 
@@ -44,11 +42,10 @@ class HybridShapePlaneOffset(Plane):
     def offset(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Offset() As Length (Read Only)
-                |     Returns the offset value.
+                Property Offset() As Length (Read Only)
+                    Returns the offset value.
 
         :return: Length
         """
@@ -59,15 +56,14 @@ class HybridShapePlaneOffset(Plane):
     def orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Orientation() As long
-                |     Returns or sets the plane orientation.
-                |     Role: The orientation allows you to invert the plane from the reference
-                |     plane.
-                |     Legal values: the orientation is 1 if the plane orientation is not
-                |     inverted, and -1 otherwise.
+                Property Orientation() As long
+                    Returns or sets the plane orientation.
+                    Role: The orientation allows you to invert the plane from the reference
+                    plane.
+                    Legal values: the orientation is 1 if the plane orientation is not
+                    inverted, and -1 otherwise.
 
         :return: int
         """
@@ -86,12 +82,11 @@ class HybridShapePlaneOffset(Plane):
     def plane(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Plane() As Reference
-                |     Returns or sets the reference plane.
-                |     Sub-element(s) supported (see Boundary object): PlanarFace.
+                Property Plane() As Reference
+                    Returns or sets the reference plane.
+                    Sub-element(s) supported (see Boundary object): PlanarFace.
 
         :return: Reference
         """
@@ -107,4 +102,4 @@ class HybridShapePlaneOffset(Plane):
         self.com_object.Plane = value
 
     def __repr__(self):
-        return f'HybridShapePlaneOffset(name="{ self.name }")'
+        return f'HybridShapePlaneOffset(name="{self.name}")'

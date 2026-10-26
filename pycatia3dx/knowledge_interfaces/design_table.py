@@ -13,31 +13,29 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DesignTable(Relation):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     KnowledgeIDLItf.KnowledgeObject
-                |                        
-                |                        KnowledgeIDLItf.KnowledgeActivateObject
-                |                             KnowledgeIDLItf.Relation
-                |                                 DesignTable
-                | 
-                | Represents the DesignTable object.
-                | A design table is a Knowledge relation that uses an external file to deduce the
-                | values of its parameters.
-                | 
-                | See also:
-                |     RelationsFactory.CreateDesignTable,
-                |     RelationsFactory.CreateHorizontalDesignTable
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    KnowledgeIDLItf.KnowledgeObject
+                                       
+                                       KnowledgeIDLItf.KnowledgeActivateObject
+                                            KnowledgeIDLItf.Relation
+                                                DesignTable
+                
+                Represents the DesignTable object.
+                A design table is a Knowledge relation that uses an external file to deduce the
+                values of its parameters.
+                
+                See also:
+                    RelationsFactory.CreateDesignTable,
+                    RelationsFactory.CreateHorizontalDesignTable
     
     """
 
@@ -49,11 +47,10 @@ class DesignTable(Relation):
     def columns_nb(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property ColumnsNb() As short (Read Only)
-                |     Returns the nb of columns in the design table file.
+                Property ColumnsNb() As short (Read Only)
+                    Returns the nb of columns in the design table file.
 
         :return: int
         """
@@ -64,12 +61,11 @@ class DesignTable(Relation):
     def configuration(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Configuration() As short
-                |     Returns or sets the current configuration. Legal values: 1 to
-                |     ConfigurationsNb.
+                Property Configuration() As short
+                    Returns or sets the current configuration. Legal values: 1 to
+                    ConfigurationsNb.
 
         :return: int
         """
@@ -88,11 +84,10 @@ class DesignTable(Relation):
     def configurations_nb(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property ConfigurationsNb() As short (Read Only)
-                |     Returns the number of design table configurations.
+                Property ConfigurationsNb() As short (Read Only)
+                    Returns the number of design table configurations.
 
         :return: int
         """
@@ -103,12 +98,11 @@ class DesignTable(Relation):
     def copy_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property CopyMode() As boolean
-                |     Returns or sets whether the data contained in the file must be included
-                |     inside the CATIA model.
+                Property CopyMode() As boolean
+                    Returns or sets whether the data contained in the file must be included
+                    inside the CATIA model.
 
         :return: bool
         """
@@ -127,14 +121,13 @@ class DesignTable(Relation):
     def file_path(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property FilePath() As CATBSTR
-                |     Not to be used anymore.
-                | 
-                |     See also:
-                |         DesignTable.SheetRepRef
+                Property FilePath() As CATBSTR
+                    Not to be used anymore.
+                
+                    See also:
+                        DesignTable.SheetRepRef
 
         :return: str
         """
@@ -153,11 +146,10 @@ class DesignTable(Relation):
     def sheet_rep_ref(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property SheetRepRef() As AnyObject
-                |     Gets or sets the representation reference wrapping the design table file.
+                Property SheetRepRef() As AnyObject
+                    Gets or sets the representation reference wrapping the design table file.
 
         :return: AnyObject
         """
@@ -175,23 +167,22 @@ class DesignTable(Relation):
     def add_association(self, i_parameter: Parameter, i_sheet_column: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub AddAssociation(Parameter iParameter,CATBSTR iSheetColumn)
-                |     Adds an association between a parameter iParameter and a column of the
-                |     design table.
-                |     This method does nothing if the column does not exist or if the type of the
-                |     parameter isn't compliant with the column type.
-                | 
-                |     Parameters:
-                | 
-                |         iParameter
-                |             The parameter. 
-                |         iSheetColumn
-                |             The name of the column to be associated with the parameter. The
-                |             parameter must be in the same container as the design table. We will enforce
-                |             this behavior in the future to avoid data model problems.
+                Sub AddAssociation(Parameter iParameter,CATBSTR iSheetColumn)
+                    Adds an association between a parameter iParameter and a column of the
+                    design table.
+                    This method does nothing if the column does not exist or if the type of the
+                    parameter isn't compliant with the column type.
+                
+                    Parameters:
+                
+                        iParameter
+                            The parameter. 
+                        iSheetColumn
+                            The name of the column to be associated with the parameter. The
+                            parameter must be in the same container as the design table. We will enforce
+                            this behavior in the future to avoid data model problems.
 
         :param Parameter i_parameter:
         :param str i_sheet_column:
@@ -202,14 +193,13 @@ class DesignTable(Relation):
     def add_new_row(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub AddNewRow()
-                |     Adds a row in the design table source file. The new row is filled in with values of associated parameters. ##### Since V5R14 ##### If the file contains at least one empty row between two not empty rows, the behavior of this method is the same for Excel and Text files : => the new row containing the current parameters values replaces the first empty row found from the beginning of the file. RQ : before R14, for text files, the new row was appended at the end of the file. The empty rows were never filed by this way, so that the new row was not visible in Design Table dialog. ######################
-                | 
-                |     Returns:
-                |         S_OK if succeeded, E_FAIL else.
+                Sub AddNewRow()
+                    Adds a row in the design table source file. The new row is filled in with values of associated parameters. ##### Since V5R14 ##### If the file contains at least one empty row between two not empty rows, the behavior of this method is the same for Excel and Text files : => the new row containing the current parameters values replaces the first empty row found from the beginning of the file. RQ : before R14, for text files, the new row was appended at the end of the file. The empty rows were never filed by this way, so that the new row was not visible in Design Table dialog. ######################
+                
+                    Returns:
+                        S_OK if succeeded, E_FAIL else.
 
         :return: None
         """
@@ -218,22 +208,21 @@ class DesignTable(Relation):
     def cell_as_string(self, i_row: int, i_column: int) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func CellAsString(short iRow,short iColumn) As CATBSTR
-                |     Returns the content of a specific cell.
-                | 
-                |     Parameters:
-                | 
-                |         iRow
-                |             the index of the row where the cell is located. 
-                |         iColumn
-                |             the index of the column where the cell is located.
-                |             
-                | 
-                |     Returns:
-                |         the content of the cell.
+                Func CellAsString(short iRow,short iColumn) As CATBSTR
+                    Returns the content of a specific cell.
+                
+                    Parameters:
+                
+                        iRow
+                            the index of the row where the cell is located. 
+                        iColumn
+                            the index of the column where the cell is located.
+                            
+                
+                    Returns:
+                        the content of the cell.
 
         :param int i_row:
         :param int i_column:
@@ -244,17 +233,16 @@ class DesignTable(Relation):
     def remove_association(self, i_sheet_column: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub RemoveAssociation(CATBSTR iSheetColumn)
-                |     Removes an existing association. This method does nothing
-                |     if the column isn't associated or if it does not exist.
-                | 
-                |     Parameters:
-                | 
-                |         iSheetColumn
-                |             The name of an associated column.
+                Sub RemoveAssociation(CATBSTR iSheetColumn)
+                    Removes an existing association. This method does nothing
+                    if the column isn't associated or if it does not exist.
+                
+                    Parameters:
+                
+                        iSheetColumn
+                            The name of an associated column.
 
         :param str i_sheet_column:
         :return: None
@@ -264,17 +252,16 @@ class DesignTable(Relation):
     def synchronize(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub Synchronize()
-                |     Synchronizes the design table with its source file. If the file is managed
-                |     in Enovia LCA, copies this file on local disk, and synchronizes design table
-                |     content
+                Sub Synchronize()
+                    Synchronizes the design table with its source file. If the file is managed
+                    in Enovia LCA, copies this file on local disk, and synchronizes design table
+                    content
 
         :return: None
         """
         return self.com_object.Synchronize()
 
     def __repr__(self):
-        return f'DesignTable(name="{ self.name }")'
+        return f'DesignTable(name="{self.name}")'

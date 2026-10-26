@@ -14,23 +14,21 @@ from pycatia3dx.machining_use.manufacturing_output import ManufacturingOutput
 
 
 class ManufacturingGeneratorData(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingGeneratorData
-                | 
-                | Represents the manufacturing output stream object.
-                | This object contains the output stream generated for the output files (APT,
-                | etc.).
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingGeneratorData
+                
+                Represents the manufacturing output stream object.
+                This object contains the output stream generated for the output files (APT,
+                etc.).
     
     """
 
@@ -41,16 +39,15 @@ class ManufacturingGeneratorData(AnyObject):
     def add_object_to_generate(self, i_object: CATBaseUnknown) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddObjectToGenerate(CATBaseUnknown iObject)
-                |     Adds an object to the output stream.
-                | 
-                |     Parameters:
-                | 
-                |         iObject
-                |             The object to add
+                Sub AddObjectToGenerate(CATBaseUnknown iObject)
+                    Adds an object to the output stream.
+                
+                    Parameters:
+                
+                        iObject
+                            The object to add
 
         :param CATBaseUnknown i_object:
         :return: None
@@ -60,16 +57,15 @@ class ManufacturingGeneratorData(AnyObject):
     def add_object_to_generate_from_buffer(self, i_object: CATBaseUnknown) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddObjectToGenerateFromBuffer(CATBaseUnknown iObject)
-                |     Adds an object to the output stream from the buffer.
-                | 
-                |     Parameters:
-                | 
-                |         iObject
-                |             The object to add
+                Sub AddObjectToGenerateFromBuffer(CATBaseUnknown iObject)
+                    Adds an object to the output stream from the buffer.
+                
+                    Parameters:
+                
+                        iObject
+                            The object to add
 
         :param CATBaseUnknown i_object:
         :return: None
@@ -79,16 +75,15 @@ class ManufacturingGeneratorData(AnyObject):
     def add_object_to_generate_with_buffer(self, i_object: CATBaseUnknown) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddObjectToGenerateWithBuffer(CATBaseUnknown iObject)
-                |     Adds an object to the output stream within the buffer.
-                | 
-                |     Parameters:
-                | 
-                |         iObject
-                |             The object to add
+                Sub AddObjectToGenerateWithBuffer(CATBaseUnknown iObject)
+                    Adds an object to the output stream within the buffer.
+                
+                    Parameters:
+                
+                        iObject
+                            The object to add
 
         :param CATBaseUnknown i_object:
         :return: None
@@ -98,16 +93,15 @@ class ManufacturingGeneratorData(AnyObject):
     def add_object_to_generate_with_out_buffer(self, i_object: CATBaseUnknown) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddObjectToGenerateWithOutBuffer(CATBaseUnknown iObject)
-                |     Adds an object to the output stream without the buffer.
-                | 
-                |     Parameters:
-                | 
-                |         iObject
-                |             The object to add
+                Sub AddObjectToGenerateWithOutBuffer(CATBaseUnknown iObject)
+                    Adds an object to the output stream without the buffer.
+                
+                    Parameters:
+                
+                        iObject
+                            The object to add
 
         :param CATBaseUnknown i_object:
         :return: None
@@ -117,16 +111,15 @@ class ManufacturingGeneratorData(AnyObject):
     def add_object_to_modal_values(self, i_object: CATBaseUnknown) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddObjectToModalValues(CATBaseUnknown iObject)
-                |     Adds an object to the modal values manager only.
-                | 
-                |     Parameters:
-                | 
-                |         iObject
-                |             The object to add
+                Sub AddObjectToModalValues(CATBaseUnknown iObject)
+                    Adds an object to the modal values manager only.
+                
+                    Parameters:
+                
+                        iObject
+                            The object to add
 
         :param CATBaseUnknown i_object:
         :return: None
@@ -136,16 +129,15 @@ class ManufacturingGeneratorData(AnyObject):
     def get_ft06_stream(self, o_stream: ManufacturingOutput) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetFT06Stream(ManufacturingOutput oStream)
-                |     Retrieves the FT06 stream.
-                | 
-                |     Parameters:
-                | 
-                |         oStream
-                |             The retrieved stream
+                Sub GetFT06Stream(ManufacturingOutput oStream)
+                    Retrieves the FT06 stream.
+                
+                    Parameters:
+                
+                        oStream
+                            The retrieved stream
 
         :param ManufacturingOutput o_stream:
         :return: None
@@ -155,16 +147,15 @@ class ManufacturingGeneratorData(AnyObject):
     def get_last_object_to_generate(self, o_object: CATBaseUnknown) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetLastObjectToGenerate(CATBaseUnknown oObject)
-                |     Retrieves the last object to generate.
-                | 
-                |     Parameters:
-                | 
-                |         oObject
-                |             The retrieved object
+                Sub GetLastObjectToGenerate(CATBaseUnknown oObject)
+                    Retrieves the last object to generate.
+                
+                    Parameters:
+                
+                        oObject
+                            The retrieved object
 
         :param CATBaseUnknown o_object:
         :return: None
@@ -174,16 +165,15 @@ class ManufacturingGeneratorData(AnyObject):
     def get_output_stream(self, o_stream: ManufacturingOutput) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetOutputStream(ManufacturingOutput oStream)
-                |     Retrieves the output stream.
-                | 
-                |     Parameters:
-                | 
-                |         oStream
-                |             The retrieved stream
+                Sub GetOutputStream(ManufacturingOutput oStream)
+                    Retrieves the output stream.
+                
+                    Parameters:
+                
+                        oStream
+                            The retrieved stream
 
         :param ManufacturingOutput o_stream:
         :return: None
@@ -193,25 +183,24 @@ class ManufacturingGeneratorData(AnyObject):
     def keep_stream_open(self, i_keep_open: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub KeepStreamOpen(boolean iKeepOpen)
-                |     Keep the stream open at end of current generation The default behavior is
-                |     to close stream at end of output generation for current program. In case
-                |     multiple program outputs need to be appended in a single file, this method
-                |     should be called after InitFileGenerator with TRUE for initial programs and
-                |     FALSE for final program.
-                | 
-                |     Parameters:
-                | 
-                |         iKeepOpen
-                |             A flag to indicate whether the stream should be kept open or
-                |             closed
-                |             Legal values:
-                | 
-                |                 TRUE: Keep the stream open
-                |                 FALSE: Close the stream
+                Sub KeepStreamOpen(boolean iKeepOpen)
+                    Keep the stream open at end of current generation The default behavior is
+                    to close stream at end of output generation for current program. In case
+                    multiple program outputs need to be appended in a single file, this method
+                    should be called after InitFileGenerator with TRUE for initial programs and
+                    FALSE for final program.
+                
+                    Parameters:
+                
+                        iKeepOpen
+                            A flag to indicate whether the stream should be kept open or
+                            closed
+                            Legal values:
+                
+                                TRUE: Keep the stream open
+                                FALSE: Close the stream
 
         :param bool i_keep_open:
         :return: None
@@ -221,11 +210,10 @@ class ManufacturingGeneratorData(AnyObject):
     def reset_all_modal_values(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ResetAllModalValues()
-                |     Resets all modal values.
+                Sub ResetAllModalValues()
+                    Resets all modal values.
 
         :return: None
         """
@@ -234,16 +222,15 @@ class ManufacturingGeneratorData(AnyObject):
     def set_last_object_to_generate(self, i_object: CATBaseUnknown) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetLastObjectToGenerate(CATBaseUnknown iObject)
-                |     Sets the last Activity to generate.
-                | 
-                |     Parameters:
-                | 
-                |         iObject
-                |             The activity to generate
+                Sub SetLastObjectToGenerate(CATBaseUnknown iObject)
+                    Sets the last Activity to generate.
+                
+                    Parameters:
+                
+                        iObject
+                            The activity to generate
 
         :param CATBaseUnknown i_object:
         :return: None
@@ -251,4 +238,4 @@ class ManufacturingGeneratorData(AnyObject):
         return self.com_object.SetLastObjectToGenerate(i_object.com_object)
 
     def __repr__(self):
-        return f'ManufacturingGeneratorData(name="{ self.name }")'
+        return f'ManufacturingGeneratorData(name="{self.name}")'

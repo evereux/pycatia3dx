@@ -13,60 +13,58 @@ from pycatia3dx.sma_mpa_base.sim_axis_system import SimAxisSystem
 
 
 class SimExtrusionControl(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimExtrusionControl
-                | 
-                | Represents the casting control object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimExtrusionControl as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyExtrusionControl As SimExtrusionControl
-                |      Set MyExtrusionControl = MyFeatures.Add("SimExtrusionControl")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimExtrusionControl named "Extrusion Control.1" as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyExtrusionControl As SimExtrusionControl
-                |      Set MyExtrusionControl = MyFeatures.Item("Extrusion Control.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimExtrusionControl as following:
-                | 
-                |      ...
-                |      MyExtrusionControl = MyFeatures.Add("SimExtrusionControl")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimExtrusionControl named "Extrusion Control.1" as
-                |     following:
-                | 
-                |      ...
-                |      MyExtrusionControl = MyFeatures.Item("Extrusion Control.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimExtrusionControl
+                
+                Represents the casting control object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimExtrusionControl as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyExtrusionControl As SimExtrusionControl
+                     Set MyExtrusionControl = MyFeatures.Add("SimExtrusionControl")
+                     
+                
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimExtrusionControl named "Extrusion Control.1" as
+                    following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyExtrusionControl As SimExtrusionControl
+                     Set MyExtrusionControl = MyFeatures.Item("Extrusion Control.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimExtrusionControl as following:
+                
+                     ...
+                     MyExtrusionControl = MyFeatures.Add("SimExtrusionControl")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimExtrusionControl named "Extrusion Control.1" as
+                    following:
+                
+                     ...
+                     MyExtrusionControl = MyFeatures.Item("Extrusion Control.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -78,11 +76,10 @@ class SimExtrusionControl(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the axis system used for extrusion control.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the axis system used for extrusion control.
 
         :return: SimAxisSystem
         """
@@ -93,13 +90,12 @@ class SimExtrusionControl(AnyObject):
     def prevent_material_removal_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PreventMaterialRemovalFlag() As boolean
-                |     Returns or sets the flag to prevent material removal in preserved region's shadow.
-                |     FALSE : No prevention for material removal,
-                |     TRUE : Prevention for material removal in applied.
+                Property PreventMaterialRemovalFlag() As boolean
+                    Returns or sets the flag to prevent material removal in preserved region's shadow.
+                    FALSE : No prevention for material removal,
+                    TRUE : Prevention for material removal in applied.
 
         :return: bool
         """
@@ -115,4 +111,4 @@ class SimExtrusionControl(AnyObject):
         self.com_object.PreventMaterialRemovalFlag = value
 
     def __repr__(self):
-        return f'SimExtrusionControl(name="{ self.name }")'
+        return f'SimExtrusionControl(name="{self.name}")'

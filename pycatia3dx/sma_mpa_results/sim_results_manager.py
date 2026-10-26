@@ -15,32 +15,31 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 class SimResultsManager(CATBaseDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 SimResultsManager
-                | 
-                | Represents the resutls manager and can be used to retrieve the results analysis
-                | cases and multi view manager.
-                | 
-                |  
-                | Example:
-                | 
-                |  Given a SimulationReference object, you can create a SimResultsManager object
-                |  as following.
-                |  
-                | 
-                |  Dim oResultsManager As SimResultsManager
-                |  Set oResultsManager = oSimulationReference.GetItem("SimResultsManager")
-                |  
-                | 
-                | See also:
-                |     SimulationReference
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                SimResultsManager
+                
+                Represents the resutls manager and can be used to retrieve the results analysis
+                cases and multi view manager.
+                
+                 
+                Example:
+                
+                 Given a SimulationReference object, you can create a SimResultsManager object
+                 as following.
+                 
+                
+                 Dim oResultsManager As SimResultsManager
+                 Set oResultsManager = oSimulationReference.GetItem("SimResultsManager")
+                 
+                
+                See also:
+                    SimulationReference
     
     """
 
@@ -52,12 +51,11 @@ class SimResultsManager(CATBaseDispatch):
     def multi_view_manager(self) -> SimMultiView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MultiViewManager() As SimMultiView (Read Only)
-                |     Returns the MultiViewManager to be used for configuring the viewer and
-                |     adding plots in the multi view layout.
+                Property MultiViewManager() As SimMultiView (Read Only)
+                    Returns the MultiViewManager to be used for configuring the viewer and
+                    adding plots in the multi view layout.
 
         :return: SimMultiView
         """
@@ -68,13 +66,12 @@ class SimResultsManager(CATBaseDispatch):
     def results_analysis_cases(self) -> SimResultsAnalysisCases:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ResultsAnalysisCases() As SimResultsAnalysisCases (Read
-                | Only)
-                |     Returns a list of ResultsAnalysisCases created within this
-                |     Manager.
+                Property ResultsAnalysisCases() As SimResultsAnalysisCases (Read
+                Only)
+                    Returns a list of ResultsAnalysisCases created within this
+                    Manager.
 
         :return: SimResultsAnalysisCases
         """
@@ -84,20 +81,19 @@ class SimResultsManager(CATBaseDispatch):
     def get_load_case_identifier(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetLoadCaseIdentifier(CATSafeArrayVariant
-                | ocsLoadCasePersistentIDs,CATSafeArrayVariant ocsLoadCaseNames)
-                |     Gets the load case information.
+                Sub GetLoadCaseIdentifier(CATSafeArrayVariant
+                ocsLoadCasePersistentIDs,CATSafeArrayVariant ocsLoadCaseNames)
+                    Gets the load case information.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         ocsLoadCasePersistentIDs
-                |             The list of persistent ID's of all the load cases in the model.
+                        ocsLoadCasePersistentIDs
+                            The list of persistent ID's of all the load cases in the model.
                 |
-                |         ocsLoadCaseNames
-                |             The list of all the load case names present in the model.
+                        ocsLoadCaseNames
+                            The list of all the load case names present in the model.
 
         :return: tuple
         """

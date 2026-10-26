@@ -14,62 +14,60 @@ from pycatia3dx.sma_mpa_base.sim_table_column import SimTableColumn
 
 
 class SimHeatGeneration(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimHeatGeneration
-                | 
-                | Represents the Heat Generation User Defined object.
-                | 
-                | Example:
-                |     Given a SimMaterialOptions object, you can create a
-                |     SimHeatGenerationUserDefined as following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyHeatGenerationUserDefined As
-                |      SimHeatGenerationUserDefined
-                |      Set MyHeatGenerationUserDefined = MyMaterialOptions.Add("SimHeatGenerationUserDefined")
-                |      
-                | 
-                |     Given a SimMaterialOptions object, you can retrieve a
-                |     SimHeatGenerationUserDefined named "Heat Generation User Defined.1" as
-                |     following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyHeatGenerationUserDefined As
-                |      SimHeatGenerationUserDefined
-                |      Set MyHeatGenerationUserDefined = MyMaterialOptions.Item("Heat Generation User Defined.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMaterialOptions object myMaterialOptions, you can create a
-                |     SimHeatGenerationUserDefined as following:
-                | 
-                |      ...
-                |      myHeatGenerationUserDefined = myMaterialOptions.Add("SimHeatGenerationUserDefined")
-                |      
-                | 
-                |     Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
-                |     SimHeatGenerationUserDefined named "Heat Generation User Defined.1" as
-                |     following:
-                | 
-                |      ...
-                |      myHeatGenerationUserDefined = myMaterialOptions.Item("Heat Generation User Defined.1")
-                |      
-                | 
-                | See also:
-                |     SimMaterialOptions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimHeatGeneration
+                
+                Represents the Heat Generation User Defined object.
+                
+                Example:
+                    Given a SimMaterialOptions object, you can create a
+                    SimHeatGenerationUserDefined as following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyHeatGenerationUserDefined As
+                     SimHeatGenerationUserDefined
+                     Set MyHeatGenerationUserDefined = MyMaterialOptions.Add("SimHeatGenerationUserDefined")
+                     
+                
+                    Given a SimMaterialOptions object, you can retrieve a
+                    SimHeatGenerationUserDefined named "Heat Generation User Defined.1" as
+                    following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyHeatGenerationUserDefined As
+                     SimHeatGenerationUserDefined
+                     Set MyHeatGenerationUserDefined = MyMaterialOptions.Item("Heat Generation User Defined.1")
+                     
+                
+                Example in Python:
+                    Given a SimMaterialOptions object myMaterialOptions, you can create a
+                    SimHeatGenerationUserDefined as following:
+                
+                     ...
+                     myHeatGenerationUserDefined = myMaterialOptions.Add("SimHeatGenerationUserDefined")
+                     
+                
+                    Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
+                    SimHeatGenerationUserDefined named "Heat Generation User Defined.1" as
+                    following:
+                
+                     ...
+                     myHeatGenerationUserDefined = myMaterialOptions.Item("Heat Generation User Defined.1")
+                     
+                
+                See also:
+                    SimMaterialOptions
     
     """
 
@@ -81,11 +79,10 @@ class SimHeatGeneration(AnyObject):
     def material_table(self) -> SimMaterialTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialTable() As SimMaterialTable (Read Only)
-                |     Returns the material table.
+                Property MaterialTable() As SimMaterialTable (Read Only)
+                    Returns the material table.
 
         :return: SimMaterialTable
         """
@@ -95,26 +92,25 @@ class SimHeatGeneration(AnyObject):
     def get_material_table_column(self, i_material_table_column: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMaterialTableColumn(SimHeatGenerationUserDefinedMaterialTableColumn
-                | iMaterialTableColumn) As SimTableColumn
-                |     Retrieves the column object for the specified table
-                |     column.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterialTableColumn[in]
-                |             The material table column. 
-                |         oMaterialTableColumn[out]
-                |             The table column object. This value will be NULL_var in case the
-                |             specified column is not found in the table. 
-                | 
-                |     Returns:
-                |         S_OK if successful. S_FALSE if the supplied TableColumn enum is valid
-                |         but the column does not exist currently or exists currently but is not active.
-                |         E_INVALIDARG if the supplied TableColumn enum is invalid. E_FAIL otherwise.
+                Func GetMaterialTableColumn(SimHeatGenerationUserDefinedMaterialTableColumn
+                iMaterialTableColumn) As SimTableColumn
+                    Retrieves the column object for the specified table
+                    column.
+                
+                    Parameters:
+                
+                        iMaterialTableColumn[in]
+                            The material table column. 
+                        oMaterialTableColumn[out]
+                            The table column object. This value will be NULL_var in case the
+                            specified column is not found in the table. 
+                
+                    Returns:
+                        S_OK if successful. S_FALSE if the supplied TableColumn enum is valid
+                        but the column does not exist currently or exists currently but is not active.
+                        E_INVALIDARG if the supplied TableColumn enum is invalid. E_FAIL otherwise.
 
         :param int i_material_table_column:
         :return: SimTableColumn
@@ -122,4 +118,4 @@ class SimHeatGeneration(AnyObject):
         return SimTableColumn(self.com_object.GetMaterialTableColumn(i_material_table_column))
 
     def __repr__(self):
-        return f'SimHeatGeneration(name="{ self.name }")'
+        return f'SimHeatGeneration(name="{self.name}")'

@@ -14,21 +14,19 @@ from pycatia3dx.sma_mpa_structural_mode.sim_connector_elasticities import SimCon
 
 
 class SimConnectorBehavior(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimConnectorBehavior
-                | 
-                | Represents the Connector Behavior object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimConnectorBehavior
+                
+                Represents the Connector Behavior object.
     
     """
 
@@ -40,13 +38,12 @@ class SimConnectorBehavior(AnyObject):
     def connector_dampings(self) -> SimConnectorDampings:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ConnectorDampings() As SimConnectorDampings (Read
-                | Only)
-                |     Returns the list of connector dampings. Each member of the list will adhere
-                |     to SMAMpaConnectorDamping interface.
+                Property ConnectorDampings() As SimConnectorDampings (Read
+                Only)
+                    Returns the list of connector dampings. Each member of the list will adhere
+                    to SMAMpaConnectorDamping interface.
 
         :return: SimConnectorDampings
         """
@@ -57,13 +54,12 @@ class SimConnectorBehavior(AnyObject):
     def connector_elasticities(self) -> SimConnectorElasticities:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ConnectorElasticities() As SimConnectorElasticities (Read
-                | Only)
-                |     Returns the connector elasticities. Each member of the list will adhere to
-                |     SMAIMpaConnectorElasticity interface.
+                Property ConnectorElasticities() As SimConnectorElasticities (Read
+                Only)
+                    Returns the connector elasticities. Each member of the list will adhere to
+                    SMAIMpaConnectorElasticity interface.
 
         :return: SimConnectorElasticities
         """
@@ -73,20 +69,19 @@ class SimConnectorBehavior(AnyObject):
     def get_reference_length(self, i_degree_of_freedom: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetReferenceLength(SimDof iDegreeOfFreedom) As double
-                |     Retrieves the reference length for a specific degree of
-                |     freedom.
-                | 
-                |     Parameters:
-                | 
-                |         iDegreeOfFreedom
-                |             [in] The degree of freedom. 
-                | 
-                |     Returns:
-                |         The reference length.
+                Func GetReferenceLength(SimDof iDegreeOfFreedom) As double
+                    Retrieves the reference length for a specific degree of
+                    freedom.
+                
+                    Parameters:
+                
+                        iDegreeOfFreedom
+                            [in] The degree of freedom. 
+                
+                    Returns:
+                        The reference length.
 
         :param int i_degree_of_freedom:
         :return: float
@@ -96,20 +91,19 @@ class SimConnectorBehavior(AnyObject):
     def get_reference_length_flag(self, i_degree_of_freedom: int) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetReferenceLengthFlag(SimDof iDegreeOfFreedom) As
-                | boolean
-                |     Retrieves the flag which determines if a reference length is active on a
-                |     particular degree of freedom.
-                | 
-                |     Parameters:
-                | 
-                |         iDegreeOfFreedom
-                |             [in] The degree of freedom. 
-                |         oReferenceLengthFlag[out]
-                |             The reference length flag. TRUE : the reference length is active, FALSE : the reference length is not active.
+                Func GetReferenceLengthFlag(SimDof iDegreeOfFreedom) As
+                boolean
+                    Retrieves the flag which determines if a reference length is active on a
+                    particular degree of freedom.
+                
+                    Parameters:
+                
+                        iDegreeOfFreedom
+                            [in] The degree of freedom. 
+                        oReferenceLengthFlag[out]
+                            The reference length flag. TRUE : the reference length is active, FALSE : the reference length is not active.
 
         :param int i_degree_of_freedom:
         :return: bool
@@ -119,20 +113,19 @@ class SimConnectorBehavior(AnyObject):
     def set_reference_length(self, i_degree_of_freedom: int, i_reference_length: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetReferenceLength(SimDof iDegreeOfFreedom,double
-                | iReferenceLength)
-                |     Sets the reference length for a specific degree of
-                |     freedom.
-                | 
-                |     Parameters:
-                | 
-                |         iDegreeOfFreedom
-                |             [in] The degree of freedom. 
-                |         iReferenceLength
-                |             [in] The reference length.
+                Sub SetReferenceLength(SimDof iDegreeOfFreedom,double
+                iReferenceLength)
+                    Sets the reference length for a specific degree of
+                    freedom.
+                
+                    Parameters:
+                
+                        iDegreeOfFreedom
+                            [in] The degree of freedom. 
+                        iReferenceLength
+                            [in] The reference length.
 
         :param int i_degree_of_freedom:
         :param float i_reference_length:
@@ -143,20 +136,19 @@ class SimConnectorBehavior(AnyObject):
     def set_reference_length_flag(self, i_degree_of_freedom: int, i_reference_length_flag: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetReferenceLengthFlag(SimDof iDegreeOfFreedom,boolean
-                | iReferenceLengthFlag)
-                |     Set the flag which determines if a reference length is active on a
-                |     particular degree of freedom.
-                | 
-                |     Parameters:
-                | 
-                |         iDegreeOfFreedom
-                |             [in] The degree of freedom. 
-                |         iReferenceLengthFlag[in]
-                |             The reference length flag. TRUE : the reference length is active, FALSE : the reference length is not active. 
+                Sub SetReferenceLengthFlag(SimDof iDegreeOfFreedom,boolean
+                iReferenceLengthFlag)
+                    Set the flag which determines if a reference length is active on a
+                    particular degree of freedom.
+                
+                    Parameters:
+                
+                        iDegreeOfFreedom
+                            [in] The degree of freedom. 
+                        iReferenceLengthFlag[in]
+                            The reference length flag. TRUE : the reference length is active, FALSE : the reference length is not active. 
 
         :param int i_degree_of_freedom:
         :param bool i_reference_length_flag:
@@ -165,4 +157,4 @@ class SimConnectorBehavior(AnyObject):
         return self.com_object.SetReferenceLengthFlag(i_degree_of_freedom, i_reference_length_flag)
 
     def __repr__(self):
-        return f'SimConnectorBehavior(name="{ self.name }")'
+        return f'SimConnectorBehavior(name="{self.name}")'

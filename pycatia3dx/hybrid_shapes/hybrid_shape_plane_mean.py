@@ -13,33 +13,31 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapePlaneMean(Plane):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.Plane
-                |                             HybridShapePlaneMean
-                | 
-                | Represents the hybrid shape mean plane feature object.
-                | Role: To access the data of the hybrid shape mean plane feature object. This
-                | data includes:
-                | 
-                |     The list of points
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapePlaneMean
-                | object.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.Plane
+                                            HybridShapePlaneMean
+                
+                Represents the hybrid shape mean plane feature object.
+                Role: To access the data of the hybrid shape mean plane feature object. This
+                data includes:
+                
+                    The list of points
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapePlaneMean
+                object.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -50,18 +48,17 @@ class HybridShapePlaneMean(Plane):
     def add_point(self, i_passing_point: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub AddPoint(Reference iPassingPoint)
-                |     Adds a point to the mean plane.
-                | 
-                |     Parameters:
-                | 
-                |         iPassingPoint
-                |             The point to add
-                | 
-                |             Sub-element(s) supported (see Boundary object): Vertex.
+                Sub AddPoint(Reference iPassingPoint)
+                    Adds a point to the mean plane.
+                
+                    Parameters:
+                
+                        iPassingPoint
+                            The point to add
+                
+                            Sub-element(s) supported (see Boundary object): Vertex.
 
         :param Reference i_passing_point:
         :return: None
@@ -71,18 +68,17 @@ class HybridShapePlaneMean(Plane):
     def get_point(self, i_rank: int, o_passing_point: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetPoint(long iRank,Reference oPassingPoint)
-                |     Retrieves the point at a given position.
-                | 
-                |     Parameters:
-                | 
-                |         iRank
-                |             The rank of the point to retrieve 
-                |         oPassingPoint
-                |             The point retrieved at this rank
+                Sub GetPoint(long iRank,Reference oPassingPoint)
+                    Retrieves the point at a given position.
+                
+                    Parameters:
+                
+                        iRank
+                            The rank of the point to retrieve 
+                        oPassingPoint
+                            The point retrieved at this rank
 
         :param int i_rank:
         :param Reference o_passing_point:
@@ -93,18 +89,17 @@ class HybridShapePlaneMean(Plane):
     def get_pos(self, i_point: Reference) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetPos(Reference iPoint) As long
-                |     Gets the position of an element in the list.
-                | 
-                |     Parameters:
-                | 
-                |         iPoint
-                |             point 
-                |         oPos
-                |             position of point
+                Func GetPos(Reference iPoint) As long
+                    Gets the position of an element in the list.
+                
+                    Parameters:
+                
+                        iPoint
+                            point 
+                        oPos
+                            position of point
 
         :param Reference i_point:
         :return: int
@@ -114,16 +109,15 @@ class HybridShapePlaneMean(Plane):
     def get_size(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetSize() As long
-                |     Gets the size of the list (number of points).
-                | 
-                |     Parameters:
-                | 
-                |         oSize
-                |             position of point
+                Func GetSize() As long
+                    Gets the size of the list (number of points).
+                
+                    Parameters:
+                
+                        oSize
+                            position of point
 
         :return: int
         """
@@ -132,11 +126,10 @@ class HybridShapePlaneMean(Plane):
     def remove_all(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveAll()
-                |     Removes all elements in the list of points.
+                Sub RemoveAll()
+                    Removes all elements in the list of points.
 
         :return: None
         """
@@ -145,16 +138,15 @@ class HybridShapePlaneMean(Plane):
     def remove_element(self, i_rank: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveElement(long iRank)
-                |     Removes a point in the list.
-                | 
-                |     Parameters:
-                | 
-                |         iRank
-                |             The rank of the point to remove
+                Sub RemoveElement(long iRank)
+                    Removes a point in the list.
+                
+                    Parameters:
+                
+                        iRank
+                            The rank of the point to remove
 
         :param int i_rank:
         :return: None
@@ -164,18 +156,17 @@ class HybridShapePlaneMean(Plane):
     def replace_point_at_position(self, i_point: Reference, i_pos: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub ReplacePointAtPosition(Reference iPoint,long iPos)
-                |     Replaces a point in the list at the given position.
-                | 
-                |     Parameters:
-                | 
-                |         oPoint
-                |             point 
-                |         iPos
-                |             position of point
+                Sub ReplacePointAtPosition(Reference iPoint,long iPos)
+                    Replaces a point in the list at the given position.
+                
+                    Parameters:
+                
+                        oPoint
+                            point 
+                        iPos
+                            position of point
 
         :param Reference i_point:
         :param int i_pos:
@@ -184,4 +175,4 @@ class HybridShapePlaneMean(Plane):
         return self.hybrid_shape_plane_mean.ReplacePointAtPosition(i_point.com_object, i_pos)
 
     def __repr__(self):
-        return f'HybridShapePlaneMean(name="{ self.name }")'
+        return f'HybridShapePlaneMean(name="{self.name}")'

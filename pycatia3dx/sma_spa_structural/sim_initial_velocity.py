@@ -13,59 +13,57 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimInitialVelocity(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimInitialVelocity
-                | 
-                | Represents the Initial Velocity object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimInitialVelocity as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyInitialVelocity As SimInitialVelocity
-                |      Set MyInitialVelocity = MyFeatures.Add("SimInitialVelocity")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimInitialVelocity named
-                |     "Initial Velocity.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyInitialVelocity As SimInitialVelocity
-                |      Set MyInitialVelocity = MyFeatures.Item("Initial Velocity.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a SimInitialVelocity
-                |     as following:
-                | 
-                |      ...
-                |      myInitialVelocity = myFeatures.Add("SimInitialVelocity")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a
-                |     SimInitialVelocity named "Initial Velocity.1" as
-                |     following:
-                | 
-                |      ...
-                |      myInitialVelocity = myFeatures.Item("Initial Velocity.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimInitialVelocity
+                
+                Represents the Initial Velocity object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimInitialVelocity as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyInitialVelocity As SimInitialVelocity
+                     Set MyInitialVelocity = MyFeatures.Add("SimInitialVelocity")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimInitialVelocity named
+                    "Initial Velocity.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyInitialVelocity As SimInitialVelocity
+                     Set MyInitialVelocity = MyFeatures.Item("Initial Velocity.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a SimInitialVelocity
+                    as following:
+                
+                     ...
+                     myInitialVelocity = myFeatures.Add("SimInitialVelocity")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a
+                    SimInitialVelocity named "Initial Velocity.1" as
+                    following:
+                
+                     ...
+                     myInitialVelocity = myFeatures.Item("Initial Velocity.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -77,11 +75,10 @@ class SimInitialVelocity(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -100,11 +97,10 @@ class SimInitialVelocity(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the axis system.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the axis system.
 
         :return: SimAxisSystem
         """
@@ -115,11 +111,10 @@ class SimInitialVelocity(AnyObject):
     def dof(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Dof() As SimDof
-                |     Returns or sets the degree of freedom on which the translation is applied.
+                Property Dof() As SimDof
+                    Returns or sets the degree of freedom on which the translation is applied.
 
         :return: int
         """
@@ -138,11 +133,10 @@ class SimInitialVelocity(AnyObject):
     def line(self) -> SimAxis:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Line() As SimAxis (Read Only)
-                |     Returns the axis of rotation.
+                Property Line() As SimAxis (Read Only)
+                    Returns the axis of rotation.
 
         :return: SimAxis
         """
@@ -153,12 +147,11 @@ class SimInitialVelocity(AnyObject):
     def rotational_velocity(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RotationalVelocity() As double
-                |     Rotational velocity of the applied rotation velocity. Quantity:
-                |     ANGULAR_VELOCITY, units: turn_mn
+                Property RotationalVelocity() As double
+                    Rotational velocity of the applied rotation velocity. Quantity:
+                    ANGULAR_VELOCITY, units: turn_mn
 
         :return: float
         """
@@ -177,11 +170,10 @@ class SimInitialVelocity(AnyObject):
     def specify_rotation_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecifyRotationFlag() As boolean
-                |     Returns or sets the Specify rotation flag. TRUE : a rotation velocity is defined, FALSE : no rotation velocity is defined.
+                Property SpecifyRotationFlag() As boolean
+                    Returns or sets the Specify rotation flag. TRUE : a rotation velocity is defined, FALSE : no rotation velocity is defined.
 
         :return: bool
         """
@@ -200,11 +192,10 @@ class SimInitialVelocity(AnyObject):
     def specify_translation_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecifyTranslationFlag() As boolean
-                |     Returns or sets the Specify translation flag. TRUE : a translation velocity is defined, FALSE : no translation velocity is defined.
+                Property SpecifyTranslationFlag() As boolean
+                    Returns or sets the Specify translation flag. TRUE : a translation velocity is defined, FALSE : no translation velocity is defined.
 
         :return: bool
         """
@@ -223,12 +214,11 @@ class SimInitialVelocity(AnyObject):
     def translational_velocity(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TranslationalVelocity() As double
-                |     Translational velocity of the applied translation velocity. Quantity:
-                |     SPEED, units: m_s1 
+                Property TranslationalVelocity() As double
+                    Translational velocity of the applied translation velocity. Quantity:
+                    SPEED, units: m_s1 
 
         :return: float
         """
@@ -244,4 +234,4 @@ class SimInitialVelocity(AnyObject):
         self.com_object.TranslationalVelocity = value
 
     def __repr__(self):
-        return f'SimInitialVelocity(name="{ self.name }")'
+        return f'SimInitialVelocity(name="{self.name}")'

@@ -12,23 +12,21 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingResourceFactory(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingResourceFactory
-                | 
-                | Interface to create manufacturing resources.
-                | Role: This interface offers services to create manufacturing
-                | resources
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingResourceFactory
+                
+                Interface to create manufacturing resources.
+                Role: This interface offers services to create manufacturing
+                resources
     
     """
 
@@ -39,28 +37,27 @@ class ManufacturingResourceFactory(AnyObject):
     def create_resource(self, i_type: str, i_add_list: bool) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateResource(CATBSTR iType,boolean iAddList) As
-                | AnyObject
-                |     This method is used to create a new manufacturing
-                |     resource.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The type of the resource to create. 
-                |         oResource
-                |             Handler on the newly created resource of given type.
-                |             
-                | 
-                |     See also:
-                |         ManufacturingResource
-                |     Parameters:
-                | 
-                |         iAddList
-                |             Flag to add the resource into the resource List.
+                Func CreateResource(CATBSTR iType,boolean iAddList) As
+                AnyObject
+                    This method is used to create a new manufacturing
+                    resource.
+                
+                    Parameters:
+                
+                        iType
+                            The type of the resource to create. 
+                        oResource
+                            Handler on the newly created resource of given type.
+                            
+                
+                    See also:
+                        ManufacturingResource
+                    Parameters:
+                
+                        iAddList
+                            Flag to add the resource into the resource List.
 
         :param str i_type:
         :param bool i_add_list:
@@ -71,29 +68,28 @@ class ManufacturingResourceFactory(AnyObject):
     def create_resource2(self, i_type: str, i_catalog_name: str, i_client_id: str, i_add_list: bool) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateResource2(CATBSTR iType,CATBSTR iCatalogName,CATBSTR
-                | iClientId,boolean iAddList) As AnyObject
-                |     This method is used to create a new user resource.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The type of the resource to create. 
-                |         iCatalogName
-                |             the catalog base name 
-                |         iClientId
-                |             the client id related to catalog 
-                |         iAddList
-                |             Flag to add the resource into the resource List. 
-                |         oResource
-                |             Handler on the newly created resource of given type.
-                |             
-                | 
-                |     See also:
-                |         ManufacturingResource
+                Func CreateResource2(CATBSTR iType,CATBSTR iCatalogName,CATBSTR
+                iClientId,boolean iAddList) As AnyObject
+                    This method is used to create a new user resource.
+                
+                    Parameters:
+                
+                        iType
+                            The type of the resource to create. 
+                        iCatalogName
+                            the catalog base name 
+                        iClientId
+                            the client id related to catalog 
+                        iAddList
+                            Flag to add the resource into the resource List. 
+                        oResource
+                            Handler on the newly created resource of given type.
+                            
+                
+                    See also:
+                        ManufacturingResource
 
         :param str i_type:
         :param str i_catalog_name:
@@ -104,4 +100,4 @@ class ManufacturingResourceFactory(AnyObject):
         return AnyObject(self.com_object.CreateResource2(i_type, i_catalog_name, i_client_id, i_add_list))
 
     def __repr__(self):
-        return f'ManufacturingResourceFactory(name="{ self.name }")'
+        return f'ManufacturingResourceFactory(name="{self.name}")'

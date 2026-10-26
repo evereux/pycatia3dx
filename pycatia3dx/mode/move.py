@@ -14,24 +14,23 @@ from pycatia3dx.system.any_object import AnyObject
 class Move(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Move
-                | 
-                | Represents an object associated with any kind of objects which retrieves the
-                | corresponding movable object.
-                | An object can be moved only if it is independent from other objects. For
-                | example, a pad can be moved, and is as such a movable object, while an edge
-                | cannot be moved individually. It should be moved with all the objects making up
-                | the pad to which it belongs as a whole. In this case, the underlying edge's
-                | movable object is the pad.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Move
+                
+                Represents an object associated with any kind of objects which retrieves the
+                corresponding movable object.
+                An object can be moved only if it is independent from other objects. For
+                example, a pad can be moved, and is as such a movable object, while an edge
+                cannot be moved individually. It should be moved with all the objects making up
+                the pad to which it belongs as a whole. In this case, the underlying edge's
+                movable object is the pad.
     
     """
 
@@ -43,19 +42,18 @@ class Move(AnyObject):
     def movable_object(self) -> 'Move':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property MovableObject() As Move (Read Only)
-                |     Returns the movable object associated with the used
-                |     object.
-                | 
-                |     Example:
-                |         This example retrieves the myMovableObject from Move object associated
-                |         with MyObject.
-                | 
-                |          Dim myMovableObject As Move
-                |          Set myMovableObject = MyObject.Move.MovableObject
+                Property MovableObject() As Move (Read Only)
+                    Returns the movable object associated with the used
+                    object.
+                
+                    Example:
+                        This example retrieves the myMovableObject from Move object associated
+                        with MyObject.
+                
+                         Dim myMovableObject As Move
+                         Set myMovableObject = MyObject.Move.MovableObject
 
         :return: Move
         """
@@ -65,45 +63,44 @@ class Move(AnyObject):
     def apply(self, i_transformation_array: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub Apply(CATSafeArrayVariant iTransformationArray)
-                |     Applies a move transformation to a movable object.
+                Sub Apply(CATSafeArrayVariant iTransformationArray)
+                    Applies a move transformation to a movable object.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         TransformationArray
-                |             The linear transformation array initialized successively by the
-                |             four columns of the transformation matrix. The first nine components represent
-                |             the rotation matrix. The last three components represent the translation
-                |             vector.
+                        TransformationArray
+                            The linear transformation array initialized successively by the
+                            four columns of the transformation matrix. The first nine components represent
+                            the rotation matrix. The last three components represent the translation
+                            vector.
                 |
-                |     Example:
+                    Example:
                 |
-                |          This example applies the transformation (45 degrees-rotation
-                |          around
-                |          the x axis and a translation) stored in
-                |          TransformationArray
-                |          to the Move object associated with myMovableObject:
+                         This example applies the transformation (45 degrees-rotation
+                         around
+                         the x axis and a translation) stored in
+                         TransformationArray
+                         to the Move object associated with myMovableObject:
                 |
                 |
-                |          Dim TransformationArray( 11 )
-                |          'Rotation( 45 degrees around the x axis) components
-                |          TransformationArray( 0 )  = 1.000
-                |          TransformationArray( 1 )  = 0
-                |          TransformationArray( 2 )  = 0
-                |          TransformationArray( 3 )  = 0
-                |          TransformationArray( 4 )  = 0.707
-                |          TransformationArray( 5 )  = 0.707
-                |          TransformationArray( 6 )  = 0
-                |          TransformationArray( 7 )  = -0.707
-                |          TransformationArray( 8 )  = 0.707
-                |          'Translation Vector (10,20,30)
-                |          TransformationArray( 9 )  = 10.000
-                |          TransformationArray( 10 ) = 20.000
-                |          TransformationArray( 11 ) = 30.000
-                |          MyMovableObject.Apply TransformationArray
+                         Dim TransformationArray( 11 )
+                         'Rotation( 45 degrees around the x axis) components
+                         TransformationArray( 0 )  = 1.000
+                         TransformationArray( 1 )  = 0
+                         TransformationArray( 2 )  = 0
+                         TransformationArray( 3 )  = 0
+                         TransformationArray( 4 )  = 0.707
+                         TransformationArray( 5 )  = 0.707
+                         TransformationArray( 6 )  = 0
+                         TransformationArray( 7 )  = -0.707
+                         TransformationArray( 8 )  = 0.707
+                         'Translation Vector (10,20,30)
+                         TransformationArray( 9 )  = 10.000
+                         TransformationArray( 10 ) = 20.000
+                         TransformationArray( 11 ) = 30.000
+                         MyMovableObject.Apply TransformationArray
 
         :param tuple i_transformation_array:
         :return: None

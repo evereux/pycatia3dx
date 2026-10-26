@@ -12,26 +12,24 @@ from pycatia3dx.part.boolean_shape import BooleanShape
 
 
 class Assemble(BooleanShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.BooleanShape
-                |                             Assemble
-                | 
-                | Represents the assemble boolean operation.
-                | It is performed between a body and the current shape. An assemble operation
-                | adds material if the body is "positive" and remove material if the body is
-                | "negative".
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.BooleanShape
+                                            Assemble
+                
+                Represents the assemble boolean operation.
+                It is performed between a body and the current shape. An assemble operation
+                adds material if the body is "positive" and remove material if the body is
+                "negative".
 
     """
 
@@ -40,4 +38,4 @@ class Assemble(BooleanShape):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'Assemble(name="{ self.name }")'
+        return f'Assemble(name="{self.name}")'

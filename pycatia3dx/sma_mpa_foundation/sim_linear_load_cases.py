@@ -15,41 +15,39 @@ from pycatia3dx.types.general import CATVariant
 
 
 class SimLinearLoadCases(CATBaseDispatch):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 SimLinearLoadCases
-                | 
-                | Represents the Linear Load Cases collection.
-                | 
-                | Example:
-                |     Given a SimStep object with LoadCase property you can retrieve a
-                |     SimLinearLoadCases collection as following:
-                | 
-                |      Dim MyPerturbationStep As SimPerturbationStep
-                |      ...
-                |      Dim MyLinearLoadCases As SimLinearLoadCases
-                |      Set MyLinearLoadCases = MyPerturbationStep.LoadCase
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimStep object with LoadCase property you can retrieve a
-                |     SimLinearLoadCases collection as following:
-                | 
-                |      ...
-                |      myLinearLoadCases = myPerturbationStep.LoadCase
-                |      
-                | 
-                | See also:
-                |     SimStep
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                SimLinearLoadCases
+                
+                Represents the Linear Load Cases collection.
+                
+                Example:
+                    Given a SimStep object with LoadCase property you can retrieve a
+                    SimLinearLoadCases collection as following:
+                
+                     Dim MyPerturbationStep As SimPerturbationStep
+                     ...
+                     Dim MyLinearLoadCases As SimLinearLoadCases
+                     Set MyLinearLoadCases = MyPerturbationStep.LoadCase
+                     
+                
+                Example in Python:
+                    Given a SimStep object with LoadCase property you can retrieve a
+                    SimLinearLoadCases collection as following:
+                
+                     ...
+                     myLinearLoadCases = myPerturbationStep.LoadCase
+                     
+                
+                See also:
+                    SimStep
     
     """
 
@@ -61,25 +59,24 @@ class SimLinearLoadCases(CATBaseDispatch):
     def application(self) -> Application:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Application() As Application (Read Only)
-                |     Returns the application. The application is the root object in the object
-                |     structure and can be retrieved from any object in the object structure using
-                |     the Application property. The Application property is the way to jump from any
-                |     object up to the root of the object data structure, allowing then to navigate
-                |     downwards. For in-process scripting, the application is always referred to as
-                |     CATIA. Note that the Application property of the Application object returns the
-                |     Application object itself.
-                | 
-                |     Example:
-                |         This example retrieves in CurrentApplication the application object,
-                |         root of the object structure, from a given object of this structure: a document
-                |         refered to using the MyDocCollecion variable.
-                | 
-                |          Dim CurrentApplication As Application
-                |          Set CurrentApplication = MyDocCollecion.Application
+                Property Application() As Application (Read Only)
+                    Returns the application. The application is the root object in the object
+                    structure and can be retrieved from any object in the object structure using
+                    the Application property. The Application property is the way to jump from any
+                    object up to the root of the object data structure, allowing then to navigate
+                    downwards. For in-process scripting, the application is always referred to as
+                    CATIA. Note that the Application property of the Application object returns the
+                    Application object itself.
+                
+                    Example:
+                        This example retrieves in CurrentApplication the application object,
+                        root of the object structure, from a given object of this structure: a document
+                        refered to using the MyDocCollecion variable.
+                
+                         Dim CurrentApplication As Application
+                         Set CurrentApplication = MyDocCollecion.Application
 
         :return: Application
         """
@@ -90,18 +87,17 @@ class SimLinearLoadCases(CATBaseDispatch):
     def count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Count() As long (Read Only)
-                |     Returns the number of objects in the collection. This is handy to scan all
-                |     the objects in a collection.
-                | 
-                |     Example:
-                |         This example retrieves in ObjectNumber the number of objects currently
-                |         gathered in MyCollection.
-                | 
-                |          ObjectNumber = MyCollection.Count
+                Property Count() As long (Read Only)
+                    Returns the number of objects in the collection. This is handy to scan all
+                    the objects in a collection.
+                
+                    Example:
+                        This example retrieves in ObjectNumber the number of objects currently
+                        gathered in MyCollection.
+                
+                         ObjectNumber = MyCollection.Count
 
         :return: int
         """
@@ -112,22 +108,21 @@ class SimLinearLoadCases(CATBaseDispatch):
     def name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Name() As CATBSTR (Read Only)
-                |     Returns or sets the name of the object. The name is a character string you
-                |     can assign to any object to handle it easier. In the case of an object part of
-                |     a collection, the name can often be used in place of the object rank to
-                |     retrieve or remove the object, providing the Item and Remove methods of the
-                |     collection feature an argument with the Variant type. If the object has no name
-                |     set, the name returned is the one of its parent.
-                | 
-                |     Example:
-                |         This example sets to MyObject the name Nice and Handy Object
-                |         Name.
-                | 
-                |          MyObject.Name("Nice and Handy Object Name")
+                Property Name() As CATBSTR (Read Only)
+                    Returns or sets the name of the object. The name is a character string you
+                    can assign to any object to handle it easier. In the case of an object part of
+                    a collection, the name can often be used in place of the object rank to
+                    retrieve or remove the object, providing the Item and Remove methods of the
+                    collection feature an argument with the Variant type. If the object has no name
+                    set, the name returned is the one of its parent.
+                
+                    Example:
+                        This example sets to MyObject the name Nice and Handy Object
+                        Name.
+                
+                         MyObject.Name("Nice and Handy Object Name")
 
         :return: str
         """
@@ -138,24 +133,23 @@ class SimLinearLoadCases(CATBaseDispatch):
     def parent(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Parent() As CATBaseDispatch (Read Only)
-                |     Returns the parent object. The parent object of a given object is the
-                |     object that created this object, usually the object just above in the object
-                |     tree structure and that aggregates it. In the case of an object part of a
-                |     collection, the parent object is not the collection object itself, but the
-                |     object that aggregates the collection object. The Parent property is the way to
-                |     step upwards in the object data structure. Note that the Parent property of the
-                |     Application object returns the Application object itself.
-                | 
-                |     Example:
-                |         This example retrieves in ParentObject the parent object of the
-                |         GivenObject object.
-                | 
-                |          Dim ParentObject As AnyObject
-                |          Set ParentObject = GivenObject.Parent
+                Property Parent() As CATBaseDispatch (Read Only)
+                    Returns the parent object. The parent object of a given object is the
+                    object that created this object, usually the object just above in the object
+                    tree structure and that aggregates it. In the case of an object part of a
+                    collection, the parent object is not the collection object itself, but the
+                    object that aggregates the collection object. The Parent property is the way to
+                    step upwards in the object data structure. Note that the Parent property of the
+                    Application object returns the Application object itself.
+                
+                    Example:
+                        This example retrieves in ParentObject the parent object of the
+                        GivenObject object.
+                
+                         Dim ParentObject As AnyObject
+                         Set ParentObject = GivenObject.Parent
 
         :return: AnyObject
         """
@@ -165,20 +159,19 @@ class SimLinearLoadCases(CATBaseDispatch):
     def add(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add() As CATBaseDispatch
-                |     Creates a Linear Load Case object and returns it.
-                | 
-                |     Parameters:
-                | 
-                |         iLoadSet
-                |             The Load Set for which linear load case needs to be created.
-                |             
-                | 
-                |     Returns:
-                |         The SimLinearLoadCase object
+                Func Add() As CATBaseDispatch
+                    Creates a Linear Load Case object and returns it.
+                
+                    Parameters:
+                
+                        iLoadSet
+                            The Load Set for which linear load case needs to be created.
+                            
+                
+                    Returns:
+                        The SimLinearLoadCase object
 
         :return: AnyObject
         """
@@ -187,22 +180,21 @@ class SimLinearLoadCases(CATBaseDispatch):
     def get_item(self, id_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetItem(CATBSTR IDName) As CATBaseDispatch
-                |     Returns an object from its name.
-                |     Role: To retrieve an object when only its name is available. You should not
-                |     use this method, but you can find it in the macros generated by the
-                |     Tools->Macro command.
-                | 
-                |     Parameters:
-                | 
-                |         IDName
-                |             The searched object name 
-                | 
-                |     Returns:
-                |         The searched object
+                Func GetItem(CATBSTR IDName) As CATBaseDispatch
+                    Returns an object from its name.
+                    Role: To retrieve an object when only its name is available. You should not
+                    use this method, but you can find it in the macros generated by the
+                    Tools->Macro command.
+                
+                    Parameters:
+                
+                        IDName
+                            The searched object name 
+                
+                    Returns:
+                        The searched object
 
         :param str id_name:
         :return: AnyObject
@@ -212,19 +204,18 @@ class SimLinearLoadCases(CATBaseDispatch):
     def item(self, i_index: CATVariant) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As CATBaseDispatch
-                |     Returns a Linear Load Case from the collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the Linear Load Case. 
-                | 
-                |     Returns:
-                |         The SimLinearLoadCase object
+                Func Item(CATVariant iIndex) As CATBaseDispatch
+                    Returns a Linear Load Case from the collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the Linear Load Case. 
+                
+                    Returns:
+                        The SimLinearLoadCase object
 
         :param CATVariant i_index:
         :return: AnyObject
@@ -234,16 +225,15 @@ class SimLinearLoadCases(CATBaseDispatch):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(CATVariant iIndex)
-                |     Removes a Linear Load Case from the collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the Linear Load Case. 
+                Sub Remove(CATVariant iIndex)
+                    Removes a Linear Load Case from the collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the Linear Load Case. 
 
         :param CATVariant i_index:
         :return: None
@@ -251,4 +241,4 @@ class SimLinearLoadCases(CATBaseDispatch):
         return self.com_object.Remove(i_index)
 
     def __repr__(self):
-        return f'SimLinearLoadCases(name="{ self.name }")'
+        return f'SimLinearLoadCases(name="{self.name}")'

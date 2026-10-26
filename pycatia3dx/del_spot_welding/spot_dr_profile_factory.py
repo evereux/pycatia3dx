@@ -16,16 +16,15 @@ from pycatia3dx.del_spot_welding.spot_dr_profile import SpotDrProfile
 class SpotDrProfileFactory(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SpotDrProfileFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SpotDrProfileFactory
 
     
     """
@@ -37,22 +36,21 @@ class SpotDrProfileFactory(Collection):
     def create_drill_rivet_profile(self, i_type: int, o_drill_rivet_profile: SpotDrProfile) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub CreateDrillRivetProfile(DELDRProfileType iType,SpotDrProfile
-                | oDrillRivetProfile)
-                |     This method creates a DrillRivet profile
-                | 
-                |     Parameters:
-                | 
-                |         iType,
-                |             Valid Values : DrillOnly, RivetOnly, DrillRivet 
-                |         oDrillRivetProfile,
-                |             newly created DrillRivet profile 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub CreateDrillRivetProfile(DELDRProfileType iType,SpotDrProfile
+                oDrillRivetProfile)
+                    This method creates a DrillRivet profile
+                
+                    Parameters:
+                
+                        iType,
+                            Valid Values : DrillOnly, RivetOnly, DrillRivet 
+                        oDrillRivetProfile,
+                            newly created DrillRivet profile 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_type:
         :param SpotDrProfile o_drill_rivet_profile:
@@ -63,19 +61,18 @@ class SpotDrProfileFactory(Collection):
     def destroy_drill_rivet_profile(self, i_drill_rivet_profile: SpotDrProfile) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DestroyDrillRivetProfile(SpotDrProfile iDrillRivetProfile)
-                |     This method destroys the DrillRivet profile
-                | 
-                |     Parameters:
-                | 
-                |         iDrillRivetProfile,
-                |             DrillRivet profile to be destroyed. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure. 
+                Sub DestroyDrillRivetProfile(SpotDrProfile iDrillRivetProfile)
+                    This method destroys the DrillRivet profile
+                
+                    Parameters:
+                
+                        iDrillRivetProfile,
+                            DrillRivet profile to be destroyed. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure. 
 
         :param SpotDrProfile i_drill_rivet_profile:
         :return: None

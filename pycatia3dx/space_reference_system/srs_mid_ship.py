@@ -15,18 +15,17 @@ from pycatia3dx.system.any_object import AnyObject
 class SrsMidShip(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SrsMidShip
-                | 
-                | Role: Allows accessing of MidShip's data.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SrsMidShip
+                
+                Role: Allows accessing of MidShip's data.
     
     """
 
@@ -38,10 +37,9 @@ class SrsMidShip(AnyObject):
     def reference_plane(self) -> SrsGridFace:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ReferencePlane() As SrsGridFace (Read Only)
+                Property ReferencePlane() As SrsGridFace (Read Only)
 
         :return: SrsGridFace
         """
@@ -51,11 +49,10 @@ class SrsMidShip(AnyObject):
     def get_front_orientation_direction(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetFrontOrientationDirection(CATSafeArrayVariant
-                | oDirection)
+                Sub GetFrontOrientationDirection(CATSafeArrayVariant
+                oDirection)
 
         :return: tuple
         """

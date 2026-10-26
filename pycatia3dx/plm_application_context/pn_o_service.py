@@ -12,30 +12,28 @@ from pycatia3dx.plm_application_context.person import Person
 
 
 class PnOService(Service):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         PnOService
-                | 
-                | Represents the service to access the current connected Person.
-                | 
-                | Example:
-                | 
-                |      This example shows how to retrieve the PnO Service.
-                |      
-                | 
-                |       Dim zePnOService as PnOService
-                |       Set zePnOService = CATIA.GetSessionService("PnOService")
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        PnOService
+                
+                Represents the service to access the current connected Person.
+                
+                Example:
+                
+                     This example shows how to retrieve the PnO Service.
+                     
+                
+                      Dim zePnOService as PnOService
+                      Set zePnOService = CATIA.GetSessionService("PnOService")
     
     """
 
@@ -47,21 +45,20 @@ class PnOService(Service):
     def person(self) -> Person:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Person() As Person (Read Only)
-                |     Returns a Person object that represents the current connected
-                |     Person.
-                | 
-                |     Example:
-                | 
-                |          This example shows how to retrieve the current connected
-                |          Person.
-                |          
-                | 
-                |          Dim zePerson as Person
-                |          Set zePerson = zePnOService.Person
+                Property Person() As Person (Read Only)
+                    Returns a Person object that represents the current connected
+                    Person.
+                
+                    Example:
+                
+                         This example shows how to retrieve the current connected
+                         Person.
+                         
+                
+                         Dim zePerson as Person
+                         Set zePerson = zePnOService.Person
 
         :return: Person
         """
@@ -69,4 +66,4 @@ class PnOService(Service):
         return Person(self.com_object.Person)
 
     def __repr__(self):
-        return f'PnOService(name="{ self.name }")'
+        return f'PnOService(name="{self.name}")'

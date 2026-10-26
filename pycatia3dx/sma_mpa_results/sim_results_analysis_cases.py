@@ -17,31 +17,30 @@ from pycatia3dx.types.general import CATVariant
 class SimResultsAnalysisCases(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SimResultsAnalysisCases
-                | 
-                | Represents the collection of results analysis cases and can be used to retrieve
-                | each results case.
-                | Example:
-                | 
-                |  Given a SimResultsManager object, you can create a SimResultsAnalysisCases
-                |  object as following.
-                |  
-                | 
-                |   Dim oResultsAnalysisCases As SimResultsAnalysisCases
-                |   Set oResultsAnalysisCases = oResultsManager.ResultsAnalysisCases
-                |  
-                | 
-                | See also:
-                |     SimResultsManager
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SimResultsAnalysisCases
+                
+                Represents the collection of results analysis cases and can be used to retrieve
+                each results case.
+                Example:
+                
+                 Given a SimResultsManager object, you can create a SimResultsAnalysisCases
+                 object as following.
+                 
+                
+                  Dim oResultsAnalysisCases As SimResultsAnalysisCases
+                  Set oResultsAnalysisCases = oResultsManager.ResultsAnalysisCases
+                 
+                
+                See also:
+                    SimResultsManager
     
     """
 
@@ -52,20 +51,19 @@ class SimResultsAnalysisCases(Collection):
     def item(self, i_index: CATVariant) -> SimResultsAnalysisCase:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As SimResultsAnalysisCase
-                |     Returns a Results Analysis Case.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of case to access. The index starts from 1.
-                |             
-                | 
-                |     Returns:
-                |         Returns the case for the given index 
+                Func Item(CATVariant iIndex) As SimResultsAnalysisCase
+                    Returns a Results Analysis Case.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of case to access. The index starts from 1.
+                            
+                
+                    Returns:
+                        Returns the case for the given index 
 
         :param CATVariant i_index:
         :return: SimResultsAnalysisCase

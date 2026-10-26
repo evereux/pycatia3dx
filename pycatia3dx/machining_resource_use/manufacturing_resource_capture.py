@@ -12,21 +12,19 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingResourceCapture(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingResourceCapture
-                | 
-                | Interface use to capture a screenshot to illustrate resource
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingResourceCapture
+                
+                Interface use to capture a screenshot to illustrate resource
     
     """
 
@@ -37,26 +35,25 @@ class ManufacturingResourceCapture(AnyObject):
     def save_capture(self, filepath: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SaveCapture(CATBSTR filepath)
-                | 
-                |     Save Capture:
-                | 
-                |     Parameters:
-                | 
-                |         filepath
-                |             file path where capture is saved 
-                | 
-                |     Returns:
-                | 
-                |         S_OK
-                |         E_FAIL
-                | 
-                |     Deprecated:
-                |         R424 Use ManufacturingResourceCapture::SaveScreenshot with is3DPrefered
-                |         parameter
+                Sub SaveCapture(CATBSTR filepath)
+                
+                    Save Capture:
+                
+                    Parameters:
+                
+                        filepath
+                            file path where capture is saved 
+                
+                    Returns:
+                
+                        S_OK
+                        E_FAIL
+                
+                    Deprecated:
+                        R424 Use ManufacturingResourceCapture::SaveScreenshot with is3DPrefered
+                        parameter
 
         :param str filepath:
         :return: None
@@ -66,25 +63,24 @@ class ManufacturingResourceCapture(AnyObject):
     def save_screenshot(self, filepath: str, is3_d_prefered: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SaveScreenshot(CATBSTR filepath,boolean is3DPrefered)
-                | 
-                |     Save Capture:
-                | 
-                |     Parameters:
-                | 
-                |         filepath
-                |             file path where capture is saved 
-                |         is3DPrefered
-                |             Capture in 3D if available else capture in 2D if available
-                |             
-                | 
-                |     Returns:
-                | 
-                |         S_OK
-                |         E_FAIL
+                Sub SaveScreenshot(CATBSTR filepath,boolean is3DPrefered)
+                
+                    Save Capture:
+                
+                    Parameters:
+                
+                        filepath
+                            file path where capture is saved 
+                        is3DPrefered
+                            Capture in 3D if available else capture in 2D if available
+                            
+                
+                    Returns:
+                
+                        S_OK
+                        E_FAIL
 
         :param str filepath:
         :param bool is3_d_prefered:
@@ -93,4 +89,4 @@ class ManufacturingResourceCapture(AnyObject):
         return self.com_object.SaveScreenshot(filepath, is3_d_prefered)
 
     def __repr__(self):
-        return f'ManufacturingResourceCapture(name="{ self.name }")'
+        return f'ManufacturingResourceCapture(name="{self.name}")'

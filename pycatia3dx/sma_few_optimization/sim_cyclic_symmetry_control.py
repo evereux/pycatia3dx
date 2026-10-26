@@ -14,60 +14,58 @@ from pycatia3dx.sma_mpa_base.sim_axis_system import SimAxisSystem
 
 
 class SimCyclicSymmetryControl(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimCyclicSymmetryControl
-                | 
-                | Represents the cyclic symmetry control object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimCyclicSymmetryControl as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyCyclicSymmetryControl As SimCyclicSymmetryControl
-                |      Set MyCyclicSymmetryControl = MyFeatures.Add("SimCyclicSymmetryControl")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimCyclicSymmetryControl named "Cyclic Symmetry Control.1" as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyCyclicSymmetryControl As SimCyclicSymmetryControl
-                |      Set MyCyclicSymmetryControl = MyFeatures.Item("Cyclic Symmetry Control.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimCyclicSymmetryControl as following:
-                | 
-                |      ...
-                |      MyCyclicSymmetryControll = MyFeatures.Add("SimCyclicSymmetryControl")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimCyclicSymmetryControl named "Cyclic Symmetry Control.1" as
-                |     following:
-                | 
-                |      ...
-                |      MyCyclicSymmetryControll = MyFeatures.Item("Cyclic Symmetry Control.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimCyclicSymmetryControl
+                
+                Represents the cyclic symmetry control object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimCyclicSymmetryControl as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyCyclicSymmetryControl As SimCyclicSymmetryControl
+                     Set MyCyclicSymmetryControl = MyFeatures.Add("SimCyclicSymmetryControl")
+                     
+                
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimCyclicSymmetryControl named "Cyclic Symmetry Control.1" as
+                    following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyCyclicSymmetryControl As SimCyclicSymmetryControl
+                     Set MyCyclicSymmetryControl = MyFeatures.Item("Cyclic Symmetry Control.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimCyclicSymmetryControl as following:
+                
+                     ...
+                     MyCyclicSymmetryControll = MyFeatures.Add("SimCyclicSymmetryControl")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimCyclicSymmetryControl named "Cyclic Symmetry Control.1" as
+                    following:
+                
+                     ...
+                     MyCyclicSymmetryControll = MyFeatures.Item("Cyclic Symmetry Control.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -79,11 +77,10 @@ class SimCyclicSymmetryControl(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the local axis system used for Cyclic Symmetry Control.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the local axis system used for Cyclic Symmetry Control.
 
         :return: SimAxisSystem
         """
@@ -94,11 +91,10 @@ class SimCyclicSymmetryControl(AnyObject):
     def line(self) -> SimAxis:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Line() As SimAxis (Read Only)
-                |     Returns the axis of symmetry used for cyclic symmetry control.
+                Property Line() As SimAxis (Read Only)
+                    Returns the axis of symmetry used for cyclic symmetry control.
 
         :return: SimAxis
         """
@@ -109,13 +105,12 @@ class SimCyclicSymmetryControl(AnyObject):
     def specify_symmetry_plane_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecifySymmetryPlaneFlag() As boolean
-                |     Returns or sets the use of symmetry plane flag.
-                |     FALSE : No symmetry plane is used ,
-                |     TRUE : Symmetry plane is used.
+                Property SpecifySymmetryPlaneFlag() As boolean
+                    Returns or sets the use of symmetry plane flag.
+                    FALSE : No symmetry plane is used ,
+                    TRUE : Symmetry plane is used.
 
         :return: bool
         """
@@ -134,11 +129,10 @@ class SimCyclicSymmetryControl(AnyObject):
     def start_point(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StartPoint() As CATBaseDispatch (Read Only)
-                |     Returns the start point.
+                Property StartPoint() As CATBaseDispatch (Read Only)
+                    Returns the start point.
 
         :return: AnyObject
         """
@@ -148,16 +142,15 @@ class SimCyclicSymmetryControl(AnyObject):
     def set_num_segments(self, i_num_segements: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetNumSegments(long iNumSegements)
-                |     Sets the num of segements.
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Number of segments value. Quantity: REAL, units: None
+                Sub SetNumSegments(long iNumSegements)
+                    Sets the num of segements.
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Number of segments value. Quantity: REAL, units: None
 
         :param int i_num_segements:
         :return: None
@@ -165,4 +158,4 @@ class SimCyclicSymmetryControl(AnyObject):
         return self.com_object.SetNumSegments(i_num_segements)
 
     def __repr__(self):
-        return f'SimCyclicSymmetryControl(name="{ self.name }")'
+        return f'SimCyclicSymmetryControl(name="{self.name}")'

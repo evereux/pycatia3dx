@@ -13,19 +13,17 @@ from pycatia3dx.del_spot_welding.spot_dr_operation import SpotDrOperation
 
 
 class SpotDrOperationFactory(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SpotDrOperationFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SpotDrOperationFactory
 
     
     """
@@ -37,20 +35,19 @@ class SpotDrOperationFactory(AnyObject):
     def create_operation(self, i_type: str, i_ref_act: AnyObject) -> SpotDrOperation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateOperation(CATBSTR iType,AnyObject iRefAct) As
-                | SpotDrOperation
-                |     This method creates a DrillRivet operation
-                | 
-                |     Parameters:
-                | 
-                |         oDrillRivetOperation,
-                |             newly created DrillRivet operation 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Func CreateOperation(CATBSTR iType,AnyObject iRefAct) As
+                SpotDrOperation
+                    This method creates a DrillRivet operation
+                
+                    Parameters:
+                
+                        oDrillRivetOperation,
+                            newly created DrillRivet operation 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param str i_type:
         :param AnyObject i_ref_act:
@@ -61,19 +58,18 @@ class SpotDrOperationFactory(AnyObject):
     def delete_operation(self, i_drill_rivet_operation: SpotDrOperation) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DeleteOperation(SpotDrOperation iDrillRivetOperation)
-                |     This method deletes the passed DrillRivet operation
-                | 
-                |     Parameters:
-                | 
-                |         iDrillRivetOperation,
-                |             DrillRivet operation to be deleted. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure. 
+                Sub DeleteOperation(SpotDrOperation iDrillRivetOperation)
+                    This method deletes the passed DrillRivet operation
+                
+                    Parameters:
+                
+                        iDrillRivetOperation,
+                            DrillRivet operation to be deleted. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure. 
 
         :param SpotDrOperation i_drill_rivet_operation:
         :return: None
@@ -81,4 +77,4 @@ class SpotDrOperationFactory(AnyObject):
         return self.com_object.DeleteOperation(i_drill_rivet_operation.com_object)
 
     def __repr__(self):
-        return f'SpotDrOperationFactory(name="{ self.name }")'
+        return f'SpotDrOperationFactory(name="{self.name}")'

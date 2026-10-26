@@ -14,20 +14,19 @@ from pycatia3dx.system.any_object import AnyObject
 class ManufacturingFsConfigManagement(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingFSConfigManagement
-                | 
-                | Interface dedicated to manage FS Configuration.
-                | Role: This interface offers services to manage the FS configuration
-                | parameters.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingFSConfigManagement
+                
+                Interface dedicated to manage FS Configuration.
+                Role: This interface offers services to manage the FS configuration
+                parameters.
     
     """
 
@@ -38,10 +37,9 @@ class ManufacturingFsConfigManagement(AnyObject):
     def add_config(self, key1: str, key2: str, key3: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddConfig(CATBSTR key1,CATBSTR key2,CATBSTR key3)
+                Sub AddConfig(CATBSTR key1,CATBSTR key2,CATBSTR key3)
 
         :param str key1:
         :param str key2:
@@ -53,11 +51,10 @@ class ManufacturingFsConfigManagement(AnyObject):
     def get_all_config_keys(self, ) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetAllConfigKeys(CATSafeArrayVariant oListKeys1,CATSafeArrayVariant
-                | oListKeys2,CATSafeArrayVariant oListKeys3)
+                Sub GetAllConfigKeys(CATSafeArrayVariant oListKeys1,CATSafeArrayVariant
+                oListKeys2,CATSafeArrayVariant oListKeys3)
 
         :return: tuple
         """
@@ -82,11 +79,10 @@ class ManufacturingFsConfigManagement(AnyObject):
     def get_instance_value(self, ikey1: str, ikey2: str, ikey3: str, i_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetInstanceValue(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR iName)
-                | As AnyObject
+                Func GetInstanceValue(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR iName)
+                As AnyObject
 
         :param str ikey1:
         :param str ikey2:
@@ -99,11 +95,10 @@ class ManufacturingFsConfigManagement(AnyObject):
     def get_instance_value_boolean(self, ikey1: str, ikey2: str, ikey3: str, i_name: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetInstanceValueBoolean(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
-                | iName) As boolean
+                Func GetInstanceValueBoolean(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                iName) As boolean
 
         :param str ikey1:
         :param str ikey2:
@@ -116,11 +111,10 @@ class ManufacturingFsConfigManagement(AnyObject):
     def get_instance_value_double(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_unit: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetInstanceValueDouble(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
-                | iName,long iUnit) As double
+                Func GetInstanceValueDouble(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                iName,long iUnit) As double
 
         :param str ikey1:
         :param str ikey2:
@@ -134,11 +128,10 @@ class ManufacturingFsConfigManagement(AnyObject):
     def get_instance_value_long(self, ikey1: str, ikey2: str, ikey3: str, i_name: str) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetInstanceValueLong(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
-                | iName) As long
+                Func GetInstanceValueLong(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                iName) As long
 
         :param str ikey1:
         :param str ikey2:
@@ -151,11 +144,10 @@ class ManufacturingFsConfigManagement(AnyObject):
     def get_instance_value_str(self, ikey1: str, ikey2: str, ikey3: str, i_name: str) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetInstanceValueStr(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
-                | iName) As CATBSTR
+                Func GetInstanceValueStr(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                iName) As CATBSTR
 
         :param str ikey1:
         :param str ikey2:
@@ -168,11 +160,10 @@ class ManufacturingFsConfigManagement(AnyObject):
     def get_reference_value(self, ikey1: str, ikey2: str, ikey3: str, i_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetReferenceValue(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR iName)
-                | As AnyObject
+                Func GetReferenceValue(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR iName)
+                As AnyObject
 
         :param str ikey1:
         :param str ikey2:
@@ -185,11 +176,10 @@ class ManufacturingFsConfigManagement(AnyObject):
     def get_reference_value_boolean(self, ikey1: str, ikey2: str, ikey3: str, i_name: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetReferenceValueBoolean(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
-                | iName) As boolean
+                Func GetReferenceValueBoolean(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                iName) As boolean
 
         :param str ikey1:
         :param str ikey2:
@@ -202,11 +192,10 @@ class ManufacturingFsConfigManagement(AnyObject):
     def get_reference_value_double(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_unit: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetReferenceValueDouble(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
-                | iName,long iUnit) As double
+                Func GetReferenceValueDouble(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                iName,long iUnit) As double
 
         :param str ikey1:
         :param str ikey2:
@@ -220,11 +209,10 @@ class ManufacturingFsConfigManagement(AnyObject):
     def get_reference_value_long(self, ikey1: str, ikey2: str, ikey3: str, i_name: str) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetReferenceValueLong(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
-                | iName) As long
+                Func GetReferenceValueLong(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                iName) As long
 
         :param str ikey1:
         :param str ikey2:
@@ -237,11 +225,10 @@ class ManufacturingFsConfigManagement(AnyObject):
     def get_reference_value_str(self, ikey1: str, ikey2: str, ikey3: str, i_name: str) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetReferenceValueStr(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
-                | iName) As CATBSTR
+                Func GetReferenceValueStr(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                iName) As CATBSTR
 
         :param str ikey1:
         :param str ikey2:
@@ -254,11 +241,10 @@ class ManufacturingFsConfigManagement(AnyObject):
     def is_config_available(self, key1: str, key2: str, key3: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsConfigAvailable(CATBSTR key1,CATBSTR key2,CATBSTR key3) As
-                | boolean
+                Func IsConfigAvailable(CATBSTR key1,CATBSTR key2,CATBSTR key3) As
+                boolean
 
         :param str key1:
         :param str key2:
@@ -270,11 +256,10 @@ class ManufacturingFsConfigManagement(AnyObject):
     def is_forbidden_access_local(self, ikey1: str, ikey2: str, ikey3: str, i_name: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsForbiddenAccessLocal(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
-                | iName) As boolean
+                Func IsForbiddenAccessLocal(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                iName) As boolean
 
         :param str ikey1:
         :param str ikey2:
@@ -287,11 +272,10 @@ class ManufacturingFsConfigManagement(AnyObject):
     def is_modified_locally(self, ikey1: str, ikey2: str, ikey3: str, i_name: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsModifiedLocally(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR iName)
-                | As boolean
+                Func IsModifiedLocally(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR iName)
+                As boolean
 
         :param str ikey1:
         :param str ikey2:
@@ -304,10 +288,9 @@ class ManufacturingFsConfigManagement(AnyObject):
     def remove_config(self, key1: str, key2: str, key3: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveConfig(CATBSTR key1,CATBSTR key2,CATBSTR key3)
+                Sub RemoveConfig(CATBSTR key1,CATBSTR key2,CATBSTR key3)
 
         :param str key1:
         :param str key2:
@@ -319,11 +302,10 @@ class ManufacturingFsConfigManagement(AnyObject):
     def set_forbidden_access_local(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_state: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetForbiddenAccessLocal(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
-                | iName,boolean iState)
+                Sub SetForbiddenAccessLocal(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                iName,boolean iState)
 
         :param str ikey1:
         :param str ikey2:
@@ -337,11 +319,10 @@ class ManufacturingFsConfigManagement(AnyObject):
     def set_instance_value(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_value: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetInstanceValue(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
-                | iName,AnyObject iValue)
+                Sub SetInstanceValue(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                iName,AnyObject iValue)
 
         :param str ikey1:
         :param str ikey2:
@@ -355,11 +336,10 @@ class ManufacturingFsConfigManagement(AnyObject):
     def set_instance_value_boolean(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_value: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetInstanceValueBoolean(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
-                | iName,boolean iValue)
+                Sub SetInstanceValueBoolean(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                iName,boolean iValue)
 
         :param str ikey1:
         :param str ikey2:
@@ -373,11 +353,10 @@ class ManufacturingFsConfigManagement(AnyObject):
     def set_instance_value_double(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetInstanceValueDouble(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
-                | iName,double iValue)
+                Sub SetInstanceValueDouble(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                iName,double iValue)
 
         :param str ikey1:
         :param str ikey2:
@@ -391,11 +370,10 @@ class ManufacturingFsConfigManagement(AnyObject):
     def set_instance_value_long(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_value: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetInstanceValueLong(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
-                | iName,long iValue)
+                Sub SetInstanceValueLong(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                iName,long iValue)
 
         :param str ikey1:
         :param str ikey2:
@@ -409,11 +387,10 @@ class ManufacturingFsConfigManagement(AnyObject):
     def set_instance_value_str(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_value: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetInstanceValueStr(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
-                | iName,CATBSTR iValue)
+                Sub SetInstanceValueStr(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                iName,CATBSTR iValue)
 
         :param str ikey1:
         :param str ikey2:
@@ -428,11 +405,10 @@ class ManufacturingFsConfigManagement(AnyObject):
                                      i_unit: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetInstanceValueWithUnit(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
-                | iName,double iValue,long iUnit)
+                Sub SetInstanceValueWithUnit(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                iName,double iValue,long iUnit)
 
         :param str ikey1:
         :param str ikey2:
@@ -447,11 +423,10 @@ class ManufacturingFsConfigManagement(AnyObject):
     def set_local_modification_state(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_state: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetLocalModificationState(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
-                | iName,boolean iState)
+                Sub SetLocalModificationState(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                iName,boolean iState)
 
         :param str ikey1:
         :param str ikey2:
@@ -465,11 +440,10 @@ class ManufacturingFsConfigManagement(AnyObject):
     def set_reference_value(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_value: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetReferenceValue(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
-                | iName,AnyObject iValue)
+                Sub SetReferenceValue(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                iName,AnyObject iValue)
 
         :param str ikey1:
         :param str ikey2:
@@ -483,11 +457,10 @@ class ManufacturingFsConfigManagement(AnyObject):
     def set_reference_value_boolean(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_value: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetReferenceValueBoolean(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
-                | iName,boolean iValue)
+                Sub SetReferenceValueBoolean(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                iName,boolean iValue)
 
         :param str ikey1:
         :param str ikey2:
@@ -501,11 +474,10 @@ class ManufacturingFsConfigManagement(AnyObject):
     def set_reference_value_double(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetReferenceValueDouble(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
-                | iName,double iValue)
+                Sub SetReferenceValueDouble(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                iName,double iValue)
 
         :param str ikey1:
         :param str ikey2:
@@ -519,11 +491,10 @@ class ManufacturingFsConfigManagement(AnyObject):
     def set_reference_value_long(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_value: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetReferenceValueLong(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
-                | iName,long iValue)
+                Sub SetReferenceValueLong(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                iName,long iValue)
 
         :param str ikey1:
         :param str ikey2:
@@ -537,11 +508,10 @@ class ManufacturingFsConfigManagement(AnyObject):
     def set_reference_value_str(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_value: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetReferenceValueStr(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
-                | iName,CATBSTR iValue)
+                Sub SetReferenceValueStr(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                iName,CATBSTR iValue)
 
         :param str ikey1:
         :param str ikey2:
@@ -556,11 +526,10 @@ class ManufacturingFsConfigManagement(AnyObject):
                                       i_unit: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetReferenceValueWithUnit(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
-                | iName,double iValue,long iUnit)
+                Sub SetReferenceValueWithUnit(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                iName,double iValue,long iUnit)
 
         :param str ikey1:
         :param str ikey2:

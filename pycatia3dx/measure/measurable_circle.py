@@ -13,23 +13,22 @@ from pycatia3dx.measure.measurable_curve import MeasurableCurve
 class MeasurableCircle(MeasurableCurve):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATOpnsMeasureIDLItf.MeasurableInContext
-                |                         CATOpnsMeasureIDLItf.MeasurableCurve
-                |                             MeasurableCircle
-                | 
-                | Interface representing the measurement on a circle.
-                | Get the length and the characteristic points on the curve (start, middle and
-                | end points) by inheritance. Get the center, the radius, the angle and the axis
-                | vector of the circle.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATOpnsMeasureIDLItf.MeasurableInContext
+                                        CATOpnsMeasureIDLItf.MeasurableCurve
+                                            MeasurableCircle
+                
+                Interface representing the measurement on a circle.
+                Get the length and the characteristic points on the curve (start, middle and
+                end points) by inheritance. Get the center, the radius, the angle and the axis
+                vector of the circle.
     
     """
 
@@ -40,23 +39,22 @@ class MeasurableCircle(MeasurableCurve):
     def get_angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAngle() As double
-                |     Retrieves the angle of the circle.
-                | 
-                |     Example:
-                | 
-                |            This example retrieves the Angle of theMeasurableCircle
-                |            measure.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasurableCircle As MeasurableCircle
-                |              Set theMeasurableCircle = theMeasureService.GetMeasurable(theSelection, CAAMeasurableCircle)
-                |              Dim theAngle As Double
-                |              theAngle = theMeasurableCircle.GetAngle
+                Func GetAngle() As double
+                    Retrieves the angle of the circle.
+                
+                    Example:
+                
+                           This example retrieves the Angle of theMeasurableCircle
+                           measure.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasurableCircle As MeasurableCircle
+                             Set theMeasurableCircle = theMeasureService.GetMeasurable(theSelection, CAAMeasurableCircle)
+                             Dim theAngle As Double
+                             theAngle = theMeasurableCircle.GetAngle
 
         :return: float
         """
@@ -65,83 +63,76 @@ class MeasurableCircle(MeasurableCurve):
     def get_axis(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetAxis(double oXVector,double oYVector,double oZVector)
-                |     Retrieves the axis vector of the circle.
-                | 
-                |     Example:
-                | 
-                |            This example retrieves the axis vector of theMeasurableCircle
-                |            measure.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasurableCircle As MeasurableCircle
-                |              Set theMeasurableCircle = theMeasureService.GetMeasurable(theSelection, CAAMeasurableCircle)
-                |              Dim theXVector As Double
-                |              Dim theYVector As Double
-                |              Dim theZVector As Double
-                |              theMeasurableCircle.GetAxis theXVector, theYVector,
-                |              theZVector
+                Sub GetAxis(double oXVector,double oYVector,double oZVector)
+                    Retrieves the axis vector of the circle.
+                
+                    Example:
+                
+                           This example retrieves the axis vector of theMeasurableCircle
+                           measure.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasurableCircle As MeasurableCircle
+                             Set theMeasurableCircle = theMeasureService.GetMeasurable(theSelection, CAAMeasurableCircle)
+                             Dim theXVector As Double
+                             Dim theYVector As Double
+                             Dim theZVector As Double
+                             theMeasurableCircle.GetAxis theXVector, theYVector,
+                             theZVector
 
         :return: tuple
         """
-        # todo: check this method, does it require system service?
         return self.com_object.GetAxis()
 
-    def get_center(self, o_x_center: float, o_y_center: float, o_z_center: float) -> None:
+    def get_center(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetCenter(double oXCenter,double oYCenter,double oZCenter)
-                |     Retrieves the position of the center of the circle.
-                | 
-                |     Example:
-                | 
-                |            This example retrieves the position of the center of
-                |            theMeasurableCircle measure.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasurableCircle As MeasurableCircle
-                |              Set theMeasurableCircle = theMeasureService.GetMeasurable(theSelection, CAAMeasurableCircle)
-                |              Dim theXCenter As Double
-                |              Dim theYCenter As Double
-                |              Dim theZCenter As Double
-                |              theMeasurableCircle.GetCenter theXCenter, theYCenter,
-                |              theZCenter
+                Sub GetCenter(double oXCenter,double oYCenter,double oZCenter)
+                    Retrieves the position of the center of the circle.
+                
+                    Example:
+                
+                           This example retrieves the position of the center of
+                           theMeasurableCircle measure.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasurableCircle As MeasurableCircle
+                             Set theMeasurableCircle = theMeasureService.GetMeasurable(theSelection, CAAMeasurableCircle)
+                             Dim theXCenter As Double
+                             Dim theYCenter As Double
+                             Dim theZCenter As Double
+                             theMeasurableCircle.GetCenter theXCenter, theYCenter,
+                             theZCenter
 
-        :param float o_x_center:
-        :param float o_y_center:
-        :param float o_z_center:
-        :return: None
+        :return: tuple
         """
-        return self.com_object.GetCenter(o_x_center, o_y_center, o_z_center)
+        return self.com_object.GetCenter()
 
     def get_radius(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetRadius() As double
-                |     Retrieves the radius of the circle.
-                | 
-                |     Example:
-                | 
-                |            This example retrieves the Radius of theMeasurableCircle
-                |            measure.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasurableCircle As MeasurableCircle
-                |              Set theMeasurableCircle = theMeasureService.GetMeasurable(theSelection, CAAMeasurableCircle)
-                |              Dim theRadius As Double
-                |              theRadius = theMeasurableCircle.GetRadius
+                Func GetRadius() As double
+                    Retrieves the radius of the circle.
+                
+                    Example:
+                
+                           This example retrieves the Radius of theMeasurableCircle
+                           measure.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasurableCircle As MeasurableCircle
+                             Set theMeasurableCircle = theMeasureService.GetMeasurable(theSelection, CAAMeasurableCircle)
+                             Dim theRadius As Double
+                             theRadius = theMeasurableCircle.GetRadius
 
         :return: float
         """

@@ -13,21 +13,19 @@ from pycatia3dx.machining_use.manufacturing_generator_data import ManufacturingG
 
 
 class ManufacturingOutputGenerator(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingOutputGenerator
-                | 
-                | Father object to generate output machining code.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingOutputGenerator
+                
+                Father object to generate output machining code.
     
     """
 
@@ -38,11 +36,10 @@ class ManufacturingOutputGenerator(AnyObject):
     def add_me_to_buffer(self, o_add_me: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddMeToBuffer(long oAddMe)
-                |     Management of specific buffer for aligned points elimination.
+                Sub AddMeToBuffer(long oAddMe)
+                    Management of specific buffer for aligned points elimination.
 
         :param int o_add_me:
         :return: None
@@ -52,11 +49,10 @@ class ManufacturingOutputGenerator(AnyObject):
     def generate_output_code(self, i_data: ManufacturingGeneratorData) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GenerateOutputCode(ManufacturingGeneratorData iData)
-                |     Return the Output Code for an object in the right CNC Machine.
+                Sub GenerateOutputCode(ManufacturingGeneratorData iData)
+                    Return the Output Code for an object in the right CNC Machine.
 
         :param ManufacturingGeneratorData i_data:
         :return: None
@@ -66,11 +62,10 @@ class ManufacturingOutputGenerator(AnyObject):
     def get_apt_code(self, i_data: ManufacturingGeneratorData, o_code: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetAPTCode(ManufacturingGeneratorData iData,CATBSTR oCode)
-                |     Retrieve generated APT code.
+                Sub GetAPTCode(ManufacturingGeneratorData iData,CATBSTR oCode)
+                    Retrieve generated APT code.
 
         :param ManufacturingGeneratorData i_data:
         :param str o_code:
@@ -81,11 +76,10 @@ class ManufacturingOutputGenerator(AnyObject):
     def get_current_object(self, o_current_object: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetCurrentObject(long oCurrentObject)
-                |     Get current object from buffer.
+                Sub GetCurrentObject(long oCurrentObject)
+                    Get current object from buffer.
 
         :param int o_current_object:
         :return: None
@@ -95,11 +89,10 @@ class ManufacturingOutputGenerator(AnyObject):
     def has_to_reset_modal_values(self, o_is_modal: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub HasToResetModalValues(long oIsModal)
-                |     Return the characteristic of an object : Reset or not Modal Values.
+                Sub HasToResetModalValues(long oIsModal)
+                    Return the characteristic of an object : Reset or not Modal Values.
 
         :param int o_is_modal:
         :return: None
@@ -109,23 +102,22 @@ class ManufacturingOutputGenerator(AnyObject):
     def init_file_generator(self, i_format: str, i_file_name: str, o_data: ManufacturingGeneratorData) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub InitFileGenerator(CATBSTR iFormat,CATBSTR
-                | iFileName,ManufacturingGeneratorData oData)
-                |     Init the Output Generator on the current Object and initialise all datas.
-                |     Generation of NC code can start from the Process, Setup, Program or an
-                |     Activity.
-                | 
-                |     Parameters:
-                | 
-                |         iFormat
-                |             Format of the output file : "APT", ... 
-                |         iFileName
-                |             Output file name 
-                |         oData
-                |             iData contains all the information about the generated NC code
+                Sub InitFileGenerator(CATBSTR iFormat,CATBSTR
+                iFileName,ManufacturingGeneratorData oData)
+                    Init the Output Generator on the current Object and initialise all datas.
+                    Generation of NC code can start from the Process, Setup, Program or an
+                    Activity.
+                
+                    Parameters:
+                
+                        iFormat
+                            Format of the output file : "APT", ... 
+                        iFileName
+                            Output file name 
+                        oData
+                            iData contains all the information about the generated NC code
 
         :param str i_format:
         :param str i_file_name:
@@ -137,11 +129,10 @@ class ManufacturingOutputGenerator(AnyObject):
     def is_modal(self, o_is_modal: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub IsModal(long oIsModal)
-                |     Return the characteristic of an object : Modal or Not Modal.
+                Sub IsModal(long oIsModal)
+                    Return the characteristic of an object : Modal or Not Modal.
 
         :param int o_is_modal:
         :return: None
@@ -151,12 +142,11 @@ class ManufacturingOutputGenerator(AnyObject):
     def is_similar_to(self, i_object: 'ManufacturingOutputGenerator') -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsSimilarTo(ManufacturingOutputGenerator iObject) As long
-                |     Implement a method to specify if two objects are same (when Modal Mode).
-                |     The result depends on the tolerance on the values (to points)
+                Func IsSimilarTo(ManufacturingOutputGenerator iObject) As long
+                    Implement a method to specify if two objects are same (when Modal Mode).
+                    The result depends on the tolerance on the values (to points)
 
         :param ManufacturingOutputGenerator i_object:
         :return: int
@@ -166,18 +156,17 @@ class ManufacturingOutputGenerator(AnyObject):
     def run_file_generator(self, i_data: ManufacturingGeneratorData) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RunFileGenerator(ManufacturingGeneratorData iData)
-                |     Runs the Output Generator on the datas used for generation. Generation of
-                |     NC code can start from the Process, Setup, Program or an
-                |     Activity.
-                | 
-                |     Parameters:
-                | 
-                |         iData
-                |             iData contains all the information about the generated NC code
+                Sub RunFileGenerator(ManufacturingGeneratorData iData)
+                    Runs the Output Generator on the datas used for generation. Generation of
+                    NC code can start from the Process, Setup, Program or an
+                    Activity.
+                
+                    Parameters:
+                
+                        iData
+                            iData contains all the information about the generated NC code
 
         :param ManufacturingGeneratorData i_data:
         :return: None
@@ -187,11 +176,10 @@ class ManufacturingOutputGenerator(AnyObject):
     def set_current_object(self, i_current_object: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCurrentObject(long iCurrentObject)
-                |     Set current object to buffer.
+                Sub SetCurrentObject(long iCurrentObject)
+                    Set current object to buffer.
 
         :param int i_current_object:
         :return: None
@@ -199,4 +187,4 @@ class ManufacturingOutputGenerator(AnyObject):
         return self.com_object.SetCurrentObject(i_current_object)
 
     def __repr__(self):
-        return f'ManufacturingOutputGenerator(name="{ self.name }")'
+        return f'ManufacturingOutputGenerator(name="{self.name}")'

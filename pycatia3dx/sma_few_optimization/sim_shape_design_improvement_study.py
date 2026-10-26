@@ -11,46 +11,44 @@ from pycatia3dx.sma_few_optimization.sim_design_improvement_study_case import Si
 
 
 class SimShapeDesignImprovementStudy(SimDesignImprovementStudyCase):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                    SMAFeaOptimizationIDLItf.SimDesignExplorationStudyCase
-                |                        SMAFeaOptimizationIDLItf.SimDesignImprovementStudyCase
-                |                             SimShapeDesignImprovementStudy
-                | 
-                | Represents the Shape Design Improvement Study object.
-                | 
-                | Example:
-                |     Given a SimAnalysisCases collection you can retrieve a
-                |     SimShapeDesignImprovementStudy object named as "Shape Design Improvement
-                |     Study.1" through the following code:
-                | 
-                |      Dim MyAnalysisCases As SimAnalysisCases
-                |      ...
-                |      Dim MyDesignImprovementStudy As
-                |      SimShapeDesignImprovementStudy
-                |      Set MyDesignImprovementStudy = MyAnalysisCases.Item("Shape Design Improvement Study.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimAnalysisCases collection you can retrieve a
-                |     SimShapeDesignImprovementStudyCase object as following:
-                | 
-                |      ...
-                |      MyDesignImprovementStudy  = MyAnalysisCases.Item("Shape Design Improvement Study.1")
-                |      
-                | 
-                | See also:
-                |     SimAnalysisCases
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                   SMAFeaOptimizationIDLItf.SimDesignExplorationStudyCase
+                                       SMAFeaOptimizationIDLItf.SimDesignImprovementStudyCase
+                                            SimShapeDesignImprovementStudy
+                
+                Represents the Shape Design Improvement Study object.
+                
+                Example:
+                    Given a SimAnalysisCases collection you can retrieve a
+                    SimShapeDesignImprovementStudy object named as "Shape Design Improvement
+                    Study.1" through the following code:
+                
+                     Dim MyAnalysisCases As SimAnalysisCases
+                     ...
+                     Dim MyDesignImprovementStudy As
+                     SimShapeDesignImprovementStudy
+                     Set MyDesignImprovementStudy = MyAnalysisCases.Item("Shape Design Improvement Study.1")
+                     
+                
+                Example in Python:
+                    Given a SimAnalysisCases collection you can retrieve a
+                    SimShapeDesignImprovementStudyCase object as following:
+                
+                     ...
+                     MyDesignImprovementStudy  = MyAnalysisCases.Item("Shape Design Improvement Study.1")
+                     
+                
+                See also:
+                    SimAnalysisCases
     
     """
 
@@ -59,4 +57,4 @@ class SimShapeDesignImprovementStudy(SimDesignImprovementStudyCase):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'SimShapeDesignImprovementStudy(name="{ self.name }")'
+        return f'SimShapeDesignImprovementStudy(name="{self.name}")'

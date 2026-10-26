@@ -13,32 +13,30 @@ from pycatia3dx.sma_mpa_results.sim_history_sensor import SimHistorySensor
 
 
 class SimHistorySensorFactory(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimHistorySensorFactory
-                | 
-                | Represents the history sensor factory.
-                | Role:Creates and returns the history sensor object.
-                | Example:
-                | 
-                |  Given the SimResultsAnalysisCase, you can get the SimHistorySensorFactory as
-                |  mentioned below.
-                |  
-                | 
-                |  Dim oHistSensorFactory As SimHistorySensorFactory
-                |  Set oHistSensorFactory = oResultsAnalysisCase.GetItem("SimHistorySensorFactory")
-                |  Dim oHistSensor As SimHistorySensor
-                |  oHistSensor = oHistSensorFactory.CreateSensor
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimHistorySensorFactory
+                
+                Represents the history sensor factory.
+                Role:Creates and returns the history sensor object.
+                Example:
+                
+                 Given the SimResultsAnalysisCase, you can get the SimHistorySensorFactory as
+                 mentioned below.
+                 
+                
+                 Dim oHistSensorFactory As SimHistorySensorFactory
+                 Set oHistSensorFactory = oResultsAnalysisCase.GetItem("SimHistorySensorFactory")
+                 Dim oHistSensor As SimHistorySensor
+                 oHistSensor = oHistSensorFactory.CreateSensor
     
     """
 
@@ -49,18 +47,17 @@ class SimHistorySensorFactory(AnyObject):
     def create_sensor(self) -> SimHistorySensor:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateSensor() As SimHistorySensor
-                |     Creates a history sensor.
-                | 
-                |     Returns:
-                |         Creates and returns the history sensor object 
+                Func CreateSensor() As SimHistorySensor
+                    Creates a history sensor.
+                
+                    Returns:
+                        Creates and returns the history sensor object 
 
         :return: SimHistorySensor
         """
         return SimHistorySensor(self.com_object.CreateSensor())
 
     def __repr__(self):
-        return f'SimHistorySensorFactory(name="{ self.name }")'
+        return f'SimHistorySensorFactory(name="{self.name}")'

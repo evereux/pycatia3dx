@@ -13,27 +13,25 @@ from pycatia3dx.mode.reference import Reference
 
 
 class SurfaceBasedShape(Shape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         SurfaceBasedShape
-                | 
-                | Represents the shapes based on Surface.
-                | It is the base object for Split , SewSurface , CloseSurface and ThickSurface
-                | shapes.
-                | 
-                | See also:
-                |     Split, SewSurface, CloseSurface, ThickSurface
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        SurfaceBasedShape
+                
+                Represents the shapes based on Surface.
+                It is the base object for Split , SewSurface , CloseSurface and ThickSurface
+                shapes.
+                
+                See also:
+                    Split, SewSurface, CloseSurface, ThickSurface
     
     """
 
@@ -45,11 +43,10 @@ class SurfaceBasedShape(Shape):
     def surface(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Surface() As Reference
-                |     Returns or sets the surface. 
+                Property Surface() As Reference
+                    Returns or sets the surface. 
 
         :return: Reference
         """
@@ -65,4 +62,4 @@ class SurfaceBasedShape(Shape):
         self.com_object.Surface = value
 
     def __repr__(self):
-        return f'SurfaceBasedShape(name="{ self.name }")'
+        return f'SurfaceBasedShape(name="{self.name}")'

@@ -1,7 +1,7 @@
 """
     Example - Inertia - 001
 
-    Catia must be running with a Part open that contains a solid object within
+    Catia must be running with a 3DShape open that contains a solid object within
     the MainBody (PartBody).
 
     This example will only measure the inertia for the MainBody.
@@ -22,8 +22,6 @@ from pycatia3dx import catia3dx
 from pycatia3dx.mmr_automation_interfaces.part import Part
 from pycatia3dx.inertia.inertia import Inertia
 from pycatia3dx.types.service import InertiaService
-
-__author__ = '[ptm] by plm-forum.ru | ported to pycatia3dx by HdCadUser'
 
 application = catia3dx()
 

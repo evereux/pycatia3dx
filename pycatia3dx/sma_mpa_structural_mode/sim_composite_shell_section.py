@@ -16,56 +16,55 @@ from pycatia3dx.system.any_object import AnyObject
 class SimCompositeShellSection(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimCompositeShellSection
-                | 
-                | Represents the Composite Shell Section object.
-                | 
-                | Example:
-                |     Given a SimProperties object, you can create a SimCompositeShellSection as
-                |     following:
-                | 
-                |      Dim MyProperties As SimProperties
-                |      ...
-                |      Dim MyCompositeShellSection As SimCompositeShellSection
-                |      Set MyCompositeShellSection = MyProperties.Add("SimCompositeShellSection")
-                |      
-                | 
-                |     Given a SimProperties object, you can retrieve a SimCompositeShellSection
-                |     named "Composite Shell Section.1" as following:
-                | 
-                |      Dim MyProperties As SimProperties
-                |      ...
-                |      Dim MyCompositeShellSection As SimCompositeShellSection
-                |      Set MyCompositeShellSection = MyProperties.Item("Composite Shell Section.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimProperties object myProperties, you can create a
-                |     SimCompositeShellSection as following:
-                | 
-                |      ...
-                |      MyCompositeShellSection = myProperties.Add("SimCompositeShellSection")
-                |      
-                | 
-                |     Given a SimProperties object myProperties, you can retrieve a
-                |     SimCompositeShellSection named "Composite Shell Section.1" as
-                |     following:
-                | 
-                |      ...
-                |      MyCompositeShellSection = myProperties.Item("Composite Shell Section.1")
-                |      
-                | 
-                | See also:
-                |     SimProperties
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimCompositeShellSection
+                
+                Represents the Composite Shell Section object.
+                
+                Example:
+                    Given a SimProperties object, you can create a SimCompositeShellSection as
+                    following:
+                
+                     Dim MyProperties As SimProperties
+                     ...
+                     Dim MyCompositeShellSection As SimCompositeShellSection
+                     Set MyCompositeShellSection = MyProperties.Add("SimCompositeShellSection")
+                     
+                
+                    Given a SimProperties object, you can retrieve a SimCompositeShellSection
+                    named "Composite Shell Section.1" as following:
+                
+                     Dim MyProperties As SimProperties
+                     ...
+                     Dim MyCompositeShellSection As SimCompositeShellSection
+                     Set MyCompositeShellSection = MyProperties.Item("Composite Shell Section.1")
+                     
+                
+                Example in Python:
+                    Given a SimProperties object myProperties, you can create a
+                    SimCompositeShellSection as following:
+                
+                     ...
+                     MyCompositeShellSection = myProperties.Add("SimCompositeShellSection")
+                     
+                
+                    Given a SimProperties object myProperties, you can retrieve a
+                    SimCompositeShellSection named "Composite Shell Section.1" as
+                    following:
+                
+                     ...
+                     MyCompositeShellSection = myProperties.Item("Composite Shell Section.1")
+                     
+                
+                See also:
+                    SimProperties
     
     """
 
@@ -77,12 +76,11 @@ class SimCompositeShellSection(AnyObject):
     def composite_layup_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CompositeLayupType() As SimCompositeLayupType
-                |     Returns or sets the composite layup type used for the section. It requires
-                |     some licence so if the licence is not available the method returns E_FAIL.
+                Property CompositeLayupType() As SimCompositeLayupType
+                    Returns or sets the composite layup type used for the section. It requires
+                    some licence so if the licence is not available the method returns E_FAIL.
 
         :return: int
         """
@@ -101,16 +99,15 @@ class SimCompositeShellSection(AnyObject):
     def composite_support(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CompositeSupport() As CATBaseDispatch (Read Only)
-                |     Retrieves the composite support.
-                | 
-                |     Parameters:
-                | 
-                |         ospCompositeSupport
-                |             [out] The composite support of type SimCompositeSupportDefinition
+                Property CompositeSupport() As CATBaseDispatch (Read Only)
+                    Retrieves the composite support.
+                
+                    Parameters:
+                
+                        ospCompositeSupport
+                            [out] The composite support of type SimCompositeSupportDefinition
 
         :return: AnyObject
         """
@@ -121,11 +118,10 @@ class SimCompositeShellSection(AnyObject):
     def core_sampling_depth(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CoreSamplingDepth() As double
-                |     Returns or sets the core sampling depth. Quantity: LENGTH, units: m
+                Property CoreSamplingDepth() As double
+                    Returns or sets the core sampling depth. Quantity: LENGTH, units: m
 
         :return: float
         """
@@ -144,16 +140,15 @@ class SimCompositeShellSection(AnyObject):
     def core_sampling_depth_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CoreSamplingDepthFlag() As boolean (Read Only)
-                |     Returns the flag that determines if the core sampling depth is
-                |     enabled.
-                | 
-                |     TRUE: the core sampling depth is enabled.
-                | 
-                |     FALSE: if the core sampling depth is not enabled.
+                Property CoreSamplingDepthFlag() As boolean (Read Only)
+                    Returns the flag that determines if the core sampling depth is
+                    enabled.
+                
+                    TRUE: the core sampling depth is enabled.
+                
+                    FALSE: if the core sampling depth is not enabled.
 
         :return: bool
         """
@@ -164,17 +159,16 @@ class SimCompositeShellSection(AnyObject):
     def cut_pieces_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CutPiecesFlag() As boolean
-                |     Returns or sets the flag that determines if the cut-pieces need to be
-                |     included in the composite section. This method is applicable only when the
-                |     composite model is defined using ply groups.
-                | 
-                |     TRUE: if the composite section includes the cut-pieces
-                | 
-                |     FALSE: if the composite shell section does not include the cut-pieces.
+                Property CutPiecesFlag() As boolean
+                    Returns or sets the flag that determines if the cut-pieces need to be
+                    included in the composite section. This method is applicable only when the
+                    composite model is defined using ply groups.
+                
+                    TRUE: if the composite section includes the cut-pieces
+                
+                    FALSE: if the composite shell section does not include the cut-pieces.
 
         :return: bool
         """
@@ -193,18 +187,17 @@ class SimCompositeShellSection(AnyObject):
     def fiber_orientations_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FiberOrientationsFlag() As boolean (Read Only)
-                |     Returns the flag that determines if the fiber orientations computation is
-                |     from manufacturing parameters.
-                | 
-                |     TRUE: the fiber orientations are computed using the manufacturing core
-                |     sampling algorithm.
-                | 
-                |     FALSE: if the orientations are computed using a geometrical core sampling
-                |     algorithm.
+                Property FiberOrientationsFlag() As boolean (Read Only)
+                    Returns the flag that determines if the fiber orientations computation is
+                    from manufacturing parameters.
+                
+                    TRUE: the fiber orientations are computed using the manufacturing core
+                    sampling algorithm.
+                
+                    FALSE: if the orientations are computed using a geometrical core sampling
+                    algorithm.
 
         :return: bool
         """
@@ -215,11 +208,10 @@ class SimCompositeShellSection(AnyObject):
     def field_point_specified_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FieldPointSpecifiedFlag() As boolean (Read Only)
-                |     Returns If field point is specified.
+                Property FieldPointSpecifiedFlag() As boolean (Read Only)
+                    Returns If field point is specified.
 
         :return: bool
         """
@@ -230,11 +222,10 @@ class SimCompositeShellSection(AnyObject):
     def field_points(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FieldPoints() As long
-                |     Returns or sets the number of Field points used for the section.
+                Property FieldPoints() As long
+                    Returns or sets the number of Field points used for the section.
 
         :return: int
         """
@@ -253,12 +244,11 @@ class SimCompositeShellSection(AnyObject):
     def integration_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IntegrationScheme() As
-                | SimShellSectionIntegrationScheme
-                |     Returns or sets the integration method used for the section.
+                Property IntegrationScheme() As
+                SimShellSectionIntegrationScheme
+                    Returns or sets the integration method used for the section.
 
         :return: int
         """
@@ -277,21 +267,20 @@ class SimCompositeShellSection(AnyObject):
     def layer_material_support(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LayerMaterialSupport() As CATBaseDispatch (Read Only)
-                |     Returns the support of the layer material through which the simulation
-                |     material behavior for each unique material can be
-                |     specified.
-                | 
-                |     Parameters:
-                | 
-                |         oLayerMaterialSupport[out]
-                |             The layer material support. 
-                | 
-                |     Returns:
-                |         S_OK if successful.
+                Property LayerMaterialSupport() As CATBaseDispatch (Read Only)
+                    Returns the support of the layer material through which the simulation
+                    material behavior for each unique material can be
+                    specified.
+                
+                    Parameters:
+                
+                        oLayerMaterialSupport[out]
+                            The layer material support. 
+                
+                    Returns:
+                        S_OK if successful.
 
         :return: AnyObject
         """
@@ -302,11 +291,10 @@ class SimCompositeShellSection(AnyObject):
     def nonstructural_ply_angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NonstructuralPlyAngle() As double
-                |     Returns or sets the ply angle to be defined to the dummy plies.
+                Property NonstructuralPlyAngle() As double
+                    Returns or sets the ply angle to be defined to the dummy plies.
 
         :return: float
         """
@@ -325,15 +313,14 @@ class SimCompositeShellSection(AnyObject):
     def nonstructural_ply_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NonstructuralPlyFlag() As boolean
-                |     Returns or sets the non structural plies flag.
-                | 
-                |     TRUE: the non structural plies are to be included.
-                | 
-                |     FALSE: if non structural plies arenot be included.
+                Property NonstructuralPlyFlag() As boolean
+                    Returns or sets the non structural plies flag.
+                
+                    TRUE: the non structural plies are to be included.
+                
+                    FALSE: if non structural plies arenot be included.
 
         :return: bool
         """
@@ -352,11 +339,10 @@ class SimCompositeShellSection(AnyObject):
     def nonstructural_ply_material(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NonstructuralPlyMaterial() As CATBaseDispatch
-                |     Returns or sets the material to be applied to the dummy plies.
+                Property NonstructuralPlyMaterial() As CATBaseDispatch
+                    Returns or sets the material to be applied to the dummy plies.
 
         :return: AnyObject
         """
@@ -375,12 +361,11 @@ class SimCompositeShellSection(AnyObject):
     def nonstructural_ply_position(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NonstructuralPlyPosition() As
-                | SimNonStructPlyPositionScheme
-                |     Returns or sets the position at which the dummy plies is to be created.
+                Property NonstructuralPlyPosition() As
+                SimNonStructPlyPositionScheme
+                    Returns or sets the position at which the dummy plies is to be created.
 
         :return: SimNonStructPlyPositionScheme
         """
@@ -399,11 +384,10 @@ class SimCompositeShellSection(AnyObject):
     def num_int_points(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumIntPoints() As long
-                |     Returns or sets the number of integration points used for the section.
+                Property NumIntPoints() As long
+                    Returns or sets the number of integration points used for the section.
 
         :return: int
         """
@@ -422,12 +406,11 @@ class SimCompositeShellSection(AnyObject):
     def num_int_points_per_layer_material(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumIntPointsPerLayerMaterial() As CATSafeArrayVariant
-                |     Returns or sets the number of integration points used for each unique
-                |     material used by the composite ply layers.
+                Property NumIntPointsPerLayerMaterial() As CATSafeArrayVariant
+                    Returns or sets the number of integration points used for each unique
+                    material used by the composite ply layers.
 
         :return: tuple
         """
@@ -446,12 +429,11 @@ class SimCompositeShellSection(AnyObject):
     def offset_method(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OffsetMethod() As
-                | SimCompositeShellSectionOffsetMethod
-                |     Returns or sets the offset method used for the section.
+                Property OffsetMethod() As
+                SimCompositeShellSectionOffsetMethod
+                    Returns or sets the offset method used for the section.
 
         :return: int
         """
@@ -470,12 +452,11 @@ class SimCompositeShellSection(AnyObject):
     def offset_ratio(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OffsetRatio() As double
-                |     Returns or sets the offset ratio used for section. Quantity: Real, units:
-                |     None
+                Property OffsetRatio() As double
+                    Returns or sets the offset ratio used for section. Quantity: Real, units:
+                    None
 
         :return: float
         """
@@ -494,12 +475,11 @@ class SimCompositeShellSection(AnyObject):
     def offset_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OffsetValue() As double
-                |     Returns or sets the offset value used for the section. Quantity: LENGTH,
-                |     units: m
+                Property OffsetValue() As double
+                    Returns or sets the offset value used for the section. Quantity: LENGTH,
+                    units: m
 
         :return: float
         """
@@ -518,16 +498,15 @@ class SimCompositeShellSection(AnyObject):
     def pre_integration_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PreIntegrationFlag() As boolean
-                |     Returns or sets the flag that determines if the composite shell section is
-                |     pre-integrated.
-                | 
-                |     TRUE: the composite shell section is pre-integrated.
-                | 
-                |     FALSE: the composite shell section is not pre-integrated.
+                Property PreIntegrationFlag() As boolean
+                    Returns or sets the flag that determines if the composite shell section is
+                    pre-integrated.
+                
+                    TRUE: the composite shell section is pre-integrated.
+                
+                    FALSE: the composite shell section is not pre-integrated.
 
         :return: bool
         """
@@ -546,36 +525,35 @@ class SimCompositeShellSection(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. Possible values are:
-                | 
-                |         Abstractions
-                |         Amplitudes
-                |         Controls
-                |         Connections
-                |         Damping
-                |         ElementTypeAssignments
-                |         Envelopes
-                |         FieldPlots
-                |         FlowConditions
-                |         HistoryPlots
-                |         InitialConditions
-                |         Interactions
-                |         LinearLoadCases
-                |         Loads
-                |         LoadSets
-                |         OutputRequests
-                |         PredefinedFields
-                |         Properties
-                |         Restraints
-                |         Sensors
-                |         Streams
-                |         ThermalConditions
-                |         NotDefined
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. Possible values are:
+                
+                        Abstractions
+                        Amplitudes
+                        Controls
+                        Connections
+                        Damping
+                        ElementTypeAssignments
+                        Envelopes
+                        FieldPlots
+                        FlowConditions
+                        HistoryPlots
+                        InitialConditions
+                        Interactions
+                        LinearLoadCases
+                        Loads
+                        LoadSets
+                        OutputRequests
+                        PredefinedFields
+                        Properties
+                        Restraints
+                        Sensors
+                        Streams
+                        ThermalConditions
+                        NotDefined
 
         :return: str
         """
@@ -586,16 +564,15 @@ class SimCompositeShellSection(AnyObject):
     def symmetrical_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SymmetricalFlag() As boolean
-                |     Returns or sets the flag that determines if the composite shell section is
-                |     symmetrical. This method is applicable only when the composite model is defined
-                |     by Zones.
-                |     TRUE: the composite shell section is symmetrical.
-                | 
-                |     FALSE: the composite shell section is not symmetrical.
+                Property SymmetricalFlag() As boolean
+                    Returns or sets the flag that determines if the composite shell section is
+                    symmetrical. This method is applicable only when the composite model is defined
+                    by Zones.
+                    TRUE: the composite shell section is symmetrical.
+                
+                    FALSE: the composite shell section is not symmetrical.
 
         :return: bool
         """
@@ -613,26 +590,25 @@ class SimCompositeShellSection(AnyObject):
     def create_grid(self, i_geometries: tuple, i_rosette: AnyObject) -> SimCompositeGrid:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Func CreateGrid(CATSafeArrayVariant iGeometries,CATBaseDispatch iRosette) As
-                | SimCompositeGrid
-                |     Creates a composite grid definition on the Composite Shell Section support
-                |     geometry. The method will work only when the below conditions are satisfied:
-                |     (i) Licensing for Composite Structures Analysis Engineer role is available.
-                |     (ii) The Composite Shell Section has single surface geometry selected in the
-                |     main support.
+                Func CreateGrid(CATSafeArrayVariant iGeometries,CATBaseDispatch iRosette) As
+                SimCompositeGrid
+                    Creates a composite grid definition on the Composite Shell Section support
+                    geometry. The method will work only when the below conditions are satisfied:
+                    (i) Licensing for Composite Structures Analysis Engineer role is available.
+                    (ii) The Composite Shell Section has single surface geometry selected in the
+                    main support.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iGeometries
-                |             [in] Reference geometries for creating grid.
-                |         iRosette
-                |             [in] Rosette definition for creating grid.
+                        iGeometries
+                            [in] Reference geometries for creating grid.
+                        iRosette
+                            [in] Rosette definition for creating grid.
                 |
-                |     Returns:
-                |         The created Composite Grid.
+                    Returns:
+                        The created Composite Grid.
 
         :param tuple i_geometries:
         :param AnyObject i_rosette:
@@ -659,22 +635,21 @@ class SimCompositeShellSection(AnyObject):
     def get_composite_parameters(self) -> SimCompositeParameters:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCompositeParameters() As SimCompositeParameters
-                |     Creates or retrieves the Composite Parameter. The method will work only
-                |     when the below conditions are satisfied: (i) Licensing for Composite Structures
-                |     Analysis Engineer role is available. (ii) The Composite Shell Section has
-                |     single surface geometry selected in the main support.
-                | 
-                |     Parameters:
-                | 
-                |         oCompositeParam
-                |             [out] 
-                | 
-                |     Returns:
-                |         Created/retrieved Composite Parameter. 
+                Func GetCompositeParameters() As SimCompositeParameters
+                    Creates or retrieves the Composite Parameter. The method will work only
+                    when the below conditions are satisfied: (i) Licensing for Composite Structures
+                    Analysis Engineer role is available. (ii) The Composite Shell Section has
+                    single surface geometry selected in the main support.
+                
+                    Parameters:
+                
+                        oCompositeParam
+                            [out] 
+                
+                    Returns:
+                        Created/retrieved Composite Parameter. 
 
         :return: SimCompositeParameters
         """

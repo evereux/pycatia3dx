@@ -12,22 +12,20 @@ from pycatia3dx.mmr_automation_interfaces.shape import Shape
 
 
 class MultiHole(Shape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         MultiHole
-                | 
-                | MultiHole Feature in Part Design.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        MultiHole
+                
+                MultiHole Feature in Part Design.
 
     """
 
@@ -36,4 +34,4 @@ class MultiHole(Shape):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'MultiHole(name="{ self.name }")'
+        return f'MultiHole(name="{self.name}")'

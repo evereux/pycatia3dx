@@ -12,19 +12,17 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SpotDrManufacturingPatternFactory(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SpotDrManufacturingPatternFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SpotDrManufacturingPatternFactory
 
     
     """
@@ -36,20 +34,19 @@ class SpotDrManufacturingPatternFactory(AnyObject):
     def create_dr_manufacturing_pattern(self, oh_mfg_pattern: AnyObject, i_list_of_mfg_fasteners: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub CreateDRManufacturingPattern(AnyObject ohMfgPattern,CATSafeArrayVariant
-                | iListOfMfgFasteners)
-                |     Creates a DR Manufacturing pattern.
-                | 
-                |     Parameters:
-                | 
-                |         ohMfgPattern
-                |             The newly created pattern. 
-                |         iListOfMfgFasteners
-                |             List of manufacturing fasteners to add in the pattern. Array of
-                |             CATIABase pointers
+                Sub CreateDRManufacturingPattern(AnyObject ohMfgPattern,CATSafeArrayVariant
+                iListOfMfgFasteners)
+                    Creates a DR Manufacturing pattern.
+                
+                    Parameters:
+                
+                        ohMfgPattern
+                            The newly created pattern. 
+                        iListOfMfgFasteners
+                            List of manufacturing fasteners to add in the pattern. Array of
+                            CATIABase pointers
 
         :param AnyObject oh_mfg_pattern:
         :param tuple i_list_of_mfg_fasteners:
@@ -60,16 +57,15 @@ class SpotDrManufacturingPatternFactory(AnyObject):
     def delete_dr_manufacturing_pattern(self, ih_mfg_pattern: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DeleteDRManufacturingPattern(AnyObject ihMfgPattern)
-                |     Deletes a DR Manufacturing pattern.
-                | 
-                |     Parameters:
-                | 
-                |         ihMfgPattern
-                |             Pattern to be deleted. 
+                Sub DeleteDRManufacturingPattern(AnyObject ihMfgPattern)
+                    Deletes a DR Manufacturing pattern.
+                
+                    Parameters:
+                
+                        ihMfgPattern
+                            Pattern to be deleted. 
 
         :param AnyObject ih_mfg_pattern:
         :return: None
@@ -77,4 +73,4 @@ class SpotDrManufacturingPatternFactory(AnyObject):
         return self.com_object.DeleteDRManufacturingPattern(ih_mfg_pattern.com_object)
 
     def __repr__(self):
-        return f'SpotDrManufacturingPatternFactory(name="{ self.name }")'
+        return f'SpotDrManufacturingPatternFactory(name="{self.name}")'

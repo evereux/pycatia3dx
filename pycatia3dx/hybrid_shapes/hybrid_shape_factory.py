@@ -7,7 +7,11 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Union
 
+import pythoncom
+
+from pycatia3dx import CATScriptLanguage
 from pycatia3dx.hybrid_shapes.hybrid_shape_3d_curve_offset import HybridShape3DCurveOffset
 from pycatia3dx.hybrid_shapes.hybrid_shape_affinity import HybridShapeAffinity
 from pycatia3dx.hybrid_shapes.hybrid_shape_assemble import HybridShapeAssemble
@@ -113,39 +117,39 @@ from pycatia3dx.hybrid_shapes.hybrid_shape_wrap_curve import HybridShapeWrapCurv
 from pycatia3dx.hybrid_shapes.hybrid_shape_wrap_surface import HybridShapeWrapSurface
 from pycatia3dx.mmr_automation_interfaces.factory import Factory
 from pycatia3dx.mode.reference import Reference
+from pycatia3dx.scripts.vba import vba_nothing, VBANothing
 
 
 class HybridShapeFactory(Factory):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Factory
-                |                         HybridShapeFactory
-                | 
-                | Interface to create all kinds of HybridShape objects that may be needed in
-                | wireframe and surface design.
-                | 
-                | Note:
-                | This interface concern GSD/GSO/DL1 feature creation via VB
-                | Use of the creation methods requires to have granted license configuration for
-                | feature creation
-                | i.e:
-                | - Bump, Develop,WrapCurve,WrapSurface require GSO license.
-                | - Unfold, Develop require DL1 license.
-                | - Other require GSD license.
-                | Note2:
-                | For all methods creating datums AddNew*Datum,
-                | the object passed as parameter to create the datum has to be in the current
-                | container.
-                | Otherwise, an error occurs.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Factory
+                                        HybridShapeFactory
+                
+                Interface to create all kinds of HybridShape objects that may be needed in
+                wireframe and surface design.
+                
+                Note:
+                This interface concern GSD/GSO/DL1 feature creation via VB
+                Use of the creation methods requires to have granted license configuration for
+                feature creation
+                i.e:
+                - Bump, Develop,WrapCurve,WrapSurface require GSO license.
+                - Unfold, Develop require DL1 license.
+                - Other require GSD license.
+                Note2:
+                For all methods creating datums AddNew*Datum,
+                the object passed as parameter to create the datum has to be in the current
+                container.
+                Otherwise, an error occurs.
     
     """
 
@@ -164,39 +168,38 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCorner:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNew3DCorner(Reference iElement1,Reference
-                | iElement2,HybridShapeDirection iDirection,double iRadius,long
-                | iOrientation1,long iOrientation2,boolean iTrim) As
-                | HybridShapeCorner
-                |     Creates a new 3D Corner within the current body.
-                |     Create a 3D corner curve between a point and a curve or 2 curves along a
-                |     direction.
-                | 
-                |     Parameters:
-                | 
-                |         iElement1
-                |             First reference curve. 
-                |         iElement2
-                |             Second reference curve. 
-                |         iDirection
-                |             Direction. 
-                |         iRadius
-                |             Radius of the corner. 
-                |         iOrientation1
-                |             Manage the corner center position. Value can be 1 or -1
-                |             
-                |         iOrientation2
-                |             Manage the corner center position. Value can be 1 or -1
-                |             
-                |         iTrim
-                |             Value can be FALSE or TRUE
-                |             if TRUE the 2 curves are trimed and asembled with the corner.
-                |             
-                |         oCorner
-                |             Created corner.
+                Func AddNew3DCorner(Reference iElement1,Reference
+                iElement2,HybridShapeDirection iDirection,double iRadius,long
+                iOrientation1,long iOrientation2,boolean iTrim) As
+                HybridShapeCorner
+                    Creates a new 3D Corner within the current body.
+                    Create a 3D corner curve between a point and a curve or 2 curves along a
+                    direction.
+                
+                    Parameters:
+                
+                        iElement1
+                            First reference curve. 
+                        iElement2
+                            Second reference curve. 
+                        iDirection
+                            Direction. 
+                        iRadius
+                            Radius of the corner. 
+                        iOrientation1
+                            Manage the corner center position. Value can be 1 or -1
+                            
+                        iOrientation2
+                            Manage the corner center position. Value can be 1 or -1
+                            
+                        iTrim
+                            Value can be FALSE or TRUE
+                            if TRUE the 2 curves are trimed and asembled with the corner.
+                            
+                        oCorner
+                            Created corner.
 
         :param Reference i_element1:
         :param Reference i_element2:
@@ -228,29 +231,28 @@ class HybridShapeFactory(Factory):
     ) -> HybridShape3DCurveOffset:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNew3DCurveOffset(Reference iCurveToOffset,HybridShapeDirection
-                | iDirection,double iOffset,double iCornerRadius,double iCornerTension) As
-                | HybridShape3DCurveOffset
-                |     Creates a 3D Curve Offset.
-                | 
-                |     Parameters:
-                | 
-                |         iCurve
-                |             The curve to offset 
-                |         iDirection
-                |             Offset pulling direction. 
-                |         iOffsetValue
-                |             Offset Value. 
-                |         iCornerRadius
-                |             Radius of the 3D corners. 
-                |         iCornerTension
-                |             Tension of the 3D corners. 
-                | 
-                |     Returns:
-                |         CATIGSM3DCurveOffset_var created 3DCurveOffset.
+                Func AddNew3DCurveOffset(Reference iCurveToOffset,HybridShapeDirection
+                iDirection,double iOffset,double iCornerRadius,double iCornerTension) As
+                HybridShape3DCurveOffset
+                    Creates a 3D Curve Offset.
+                
+                    Parameters:
+                
+                        iCurve
+                            The curve to offset 
+                        iDirection
+                            Offset pulling direction. 
+                        iOffsetValue
+                            Offset Value. 
+                        iCornerRadius
+                            Radius of the 3D corners. 
+                        iCornerTension
+                            Tension of the 3D corners. 
+                
+                    Returns:
+                        CATIGSM3DCurveOffset_var created 3DCurveOffset.
 
         :param Reference i_curve_to_offset:
         :param HybridShapeDirection i_direction:
@@ -278,27 +280,26 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeAffinity:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewAffinity(Reference iElement,double iXRatio,double iYRatio,double
-                | iZRatio) As HybridShapeAffinity
-                |     Creates a new Affinity within the current body.
-                | 
-                |     Parameters:
-                | 
-                |         iElement
-                |             point, curve, surface or solid.
-                |             Sub-element(s) supported (see Boundary object): see Face,
-                |             TriDimFeatEdge, BiDimFeatEdge and Vertex. 
-                |         iXRatio
-                |             Ratio of affinity in iX direction. 
-                |         iYRatio
-                |             Ratio of affinity in iY direction. 
-                |         iZRatio
-                |             Ratio of affinity in iZ direction. 
-                |         oAffinity
-                |             Created affinity
+                Func AddNewAffinity(Reference iElement,double iXRatio,double iYRatio,double
+                iZRatio) As HybridShapeAffinity
+                    Creates a new Affinity within the current body.
+                
+                    Parameters:
+                
+                        iElement
+                            point, curve, surface or solid.
+                            Sub-element(s) supported (see Boundary object): see Face,
+                            TriDimFeatEdge, BiDimFeatEdge and Vertex. 
+                        iXRatio
+                            Ratio of affinity in iX direction. 
+                        iYRatio
+                            Ratio of affinity in iY direction. 
+                        iZRatio
+                            Ratio of affinity in iZ direction. 
+                        oAffinity
+                            Created affinity
 
         :param Reference i_element:
         :param float i_x_ratio:
@@ -318,19 +319,18 @@ class HybridShapeFactory(Factory):
     def add_new_axis_line(self, i_element: Reference) -> HybridShapeAxisLine:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewAxisLine(Reference iElement) As HybridShapeAxisLine
-                |     Creates a new AxisLine within the current body.
-                | 
-                |     Parameters:
-                | 
-                |         iElement
-                |             Circle, Ellipse, Oblong, Sphere, Revolution surface. Axis is
-                |             computed for this element 
-                |         oAxisLine
-                |             Created axis line
+                Func AddNewAxisLine(Reference iElement) As HybridShapeAxisLine
+                    Creates a new AxisLine within the current body.
+                
+                    Parameters:
+                
+                        iElement
+                            Circle, Ellipse, Oblong, Sphere, Revolution surface. Axis is
+                            computed for this element 
+                        oAxisLine
+                            Created axis line
 
         :param Reference i_element:
         :return: HybridShapeAxisLine
@@ -345,24 +345,23 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeAxisToAxis:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewAxisToAxis(Reference iObject,Reference iReferenceAxis,Reference
-                | iTargetAxis) As HybridShapeAxisToAxis
-                |     Creates a new axis to axis transformation within the current
-                |     body.
-                | 
-                |     Parameters:
-                | 
-                |         iObject
-                |             Point, curve, surface or solid to transform. 
-                |         iReferenceAxis
-                |             reference axis system 
-                |         iTargetAxis
-                |             target axis system 
-                |         oAxisToAxis
-                |             Created axis to axis transformation.
+                Func AddNewAxisToAxis(Reference iObject,Reference iReferenceAxis,Reference
+                iTargetAxis) As HybridShapeAxisToAxis
+                    Creates a new axis to axis transformation within the current
+                    body.
+                
+                    Parameters:
+                
+                        iObject
+                            Point, curve, surface or solid to transform. 
+                        iReferenceAxis
+                            reference axis system 
+                        iTargetAxis
+                            target axis system 
+                        oAxisToAxis
+                            Created axis to axis transformation.
 
         :param Reference i_object:
         :param Reference i_reference_axis:
@@ -379,16 +378,15 @@ class HybridShapeFactory(Factory):
     def add_new_blend(self) -> HybridShapeBlend:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewBlend() As HybridShapeBlend
-                |     Creates a new blend surface within the current body.
-                | 
-                |     Parameters:
-                | 
-                |         oBlend
-                |             The Blend object if succeded
+                Func AddNewBlend() As HybridShapeBlend
+                    Creates a new blend surface within the current body.
+                
+                    Parameters:
+                
+                        oBlend
+                            The Blend object if succeded
 
         :return: HybridShapeBlend
         """
@@ -402,33 +400,32 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeBoundary:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewBoundary(Reference iInitialElement,Reference iSupport,long
-                | iTypedePropagation) As HybridShapeBoundary
-                |     Creates a new Boundary within the current body.
-                | 
-                |     Parameters:
-                | 
-                |         iInitialElement
-                |             the element used to initialise the propagation around the
-                |             surface
-                | 
-                |             Sub-element(s) supported (see Boundary object): see BiDimFeatEdge.
-                |             
-                |         iSupport
-                |             the surface used to compute the boundary around it
-                | 
-                |             Sub-element(s) supported (see Boundary object): see Face.
-                |             
-                |         iTypedePropagation
-                |             Propagation type the values are: 0 for Boundary for all edges 1 for
-                |             Boundary propagation for edges on connexe point 2 for Boundary propagation for
-                |             edges tangent at point breaks 3 for Boundary not propagation from the current
-                |             edge 
-                |         oBoundary
-                |             The computed element
+                Func AddNewBoundary(Reference iInitialElement,Reference iSupport,long
+                iTypedePropagation) As HybridShapeBoundary
+                    Creates a new Boundary within the current body.
+                
+                    Parameters:
+                
+                        iInitialElement
+                            the element used to initialise the propagation around the
+                            surface
+                
+                            Sub-element(s) supported (see Boundary object): see BiDimFeatEdge.
+                            
+                        iSupport
+                            the surface used to compute the boundary around it
+                
+                            Sub-element(s) supported (see Boundary object): see Face.
+                            
+                        iTypedePropagation
+                            Propagation type the values are: 0 for Boundary for all edges 1 for
+                            Boundary propagation for edges on connexe point 2 for Boundary propagation for
+                            edges tangent at point breaks 3 for Boundary not propagation from the current
+                            edge 
+                        oBoundary
+                            The computed element
 
         :param Reference i_initial_element:
         :param Reference i_support:
@@ -446,20 +443,19 @@ class HybridShapeFactory(Factory):
     def add_new_boundary_of_surface(self, surface: Reference) -> HybridShapeBoundary:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewBoundaryOfSurface(Reference Surface) As
-                | HybridShapeBoundary
-                |     Creates a Boundary within the current body.
-                | 
-                |     Parameters:
-                | 
-                |         iSurface
-                |             the feature on which all the boundaries will be computed
-                |             
-                |         oBoundary
-                |             the whole boundary of the Surface given in first parameter
+                Func AddNewBoundaryOfSurface(Reference Surface) As
+                HybridShapeBoundary
+                    Creates a Boundary within the current body.
+                
+                    Parameters:
+                
+                        iSurface
+                            the feature on which all the boundaries will be computed
+                            
+                        oBoundary
+                            the whole boundary of the Surface given in first parameter
 
         :param Reference surface:
         :return: HybridShapeBoundary
@@ -469,19 +465,18 @@ class HybridShapeFactory(Factory):
     def add_new_bump(self, i_body_to_bump: Reference) -> HybridShapeBump:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewBump(Reference iBodyToBump) As HybridShapeBump
-                |     Creates a new Bump within the current body.
-                |     Note: require GSO license.
-                | 
-                |     Parameters:
-                | 
-                |         :
-                |             iBodyToBump Body to deform witn a Bump 
-                |         :
-                |             oBump Bump result
+                Func AddNewBump(Reference iBodyToBump) As HybridShapeBump
+                    Creates a new Bump within the current body.
+                    Note: require GSO license.
+                
+                    Parameters:
+                
+                        :
+                            iBodyToBump Body to deform witn a Bump 
+                        :
+                            oBump Bump result
 
         :param Reference i_body_to_bump:
         :return: HybridShapeBump
@@ -499,41 +494,40 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCircle2PointsRad:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewCircle2PointsRad(Reference iPoint1,Reference iPoint2,Reference
-                | iSupport,boolean iGeodesic,double iRadius,long iOri) As
-                | HybridShapeCircle2PointsRad
-                |     Creates a new Circle passing through 2 points with a radius within the
-                |     current body.
-                | 
-                |     Parameters:
-                | 
-                |         iPoint1
-                |             first passing point.
-                |             Sub-element(s) supported (see Boundary object): see Vertex.
-                |             
-                |         iPoint2
-                |             second passing point.
-                |             Sub-element(s) supported (see Boundary object): see Vertex.
-                |             
-                |         iSupport
-                |             support surface.
-                |             Sub-element(s) supported (see Boundary object): see Face.
-                |             
-                |         iGeodesic
-                |             Puts the circle on the surface. 
-                |         iRadius
-                |             Value specified is considered as radius. To use this value as
-                |             diameter, set DiameterMode using SetDiameterMode method
-                |             
-                |         iOri
-                |             circle orientation. Defines the side where circle is computed using
-                |             the normal direction of line between the 2 passing points.
-                |             
-                |         oCircle
-                |             The Circle object if succeded
+                Func AddNewCircle2PointsRad(Reference iPoint1,Reference iPoint2,Reference
+                iSupport,boolean iGeodesic,double iRadius,long iOri) As
+                HybridShapeCircle2PointsRad
+                    Creates a new Circle passing through 2 points with a radius within the
+                    current body.
+                
+                    Parameters:
+                
+                        iPoint1
+                            first passing point.
+                            Sub-element(s) supported (see Boundary object): see Vertex.
+                            
+                        iPoint2
+                            second passing point.
+                            Sub-element(s) supported (see Boundary object): see Vertex.
+                            
+                        iSupport
+                            support surface.
+                            Sub-element(s) supported (see Boundary object): see Face.
+                            
+                        iGeodesic
+                            Puts the circle on the surface. 
+                        iRadius
+                            Value specified is considered as radius. To use this value as
+                            diameter, set DiameterMode using SetDiameterMode method
+                            
+                        iOri
+                            circle orientation. Defines the side where circle is computed using
+                            the normal direction of line between the 2 passing points.
+                            
+                        oCircle
+                            The Circle object if succeded
 
         :param Reference i_point1:
         :param Reference i_point2:
@@ -562,30 +556,29 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCircle3Points:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewCircle3Points(Reference iPoint1,Reference iPoint2,Reference iPoint3)
-                | As HybridShapeCircle3Points
-                |     Creates a new circle passing through 3 points within the current
-                |     body.
-                | 
-                |     Parameters:
-                | 
-                |         iPoint1
-                |             first passing point.
-                |             Sub-element(s) supported (see Boundary object): see Vertex.
-                |             
-                |         iPoint2
-                |             second passing point.
-                |             Sub-element(s) supported (see Boundary object): see Vertex.
-                |             
-                |         iPoint3
-                |             third passing point.
-                |             Sub-element(s) supported (see Boundary object): see Vertex.
-                |             
-                |         oCircle
-                |             Created circle
+                Func AddNewCircle3Points(Reference iPoint1,Reference iPoint2,Reference iPoint3)
+                As HybridShapeCircle3Points
+                    Creates a new circle passing through 3 points within the current
+                    body.
+                
+                    Parameters:
+                
+                        iPoint1
+                            first passing point.
+                            Sub-element(s) supported (see Boundary object): see Vertex.
+                            
+                        iPoint2
+                            second passing point.
+                            Sub-element(s) supported (see Boundary object): see Vertex.
+                            
+                        iPoint3
+                            third passing point.
+                            Sub-element(s) supported (see Boundary object): see Vertex.
+                            
+                        oCircle
+                            Created circle
 
         :param Reference i_point1:
         :param Reference i_point2:
@@ -611,40 +604,39 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCircleBitangentPoint:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewCircleBitangentPoint(Reference iCurve1,Reference iCurve2,Reference
-                | iPoint,Reference iSupport,long iOri1,long iOri2) As
-                | HybridShapeCircleBitangentPoint
-                |     Creates a new circle tangent to 2 curves and passing through one point
-                |     within the current body.
-                | 
-                |     Parameters:
-                | 
-                |         iCurve1
-                |             first curve to which the circle will be tangent.
-                |             Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
-                |             and BiDimFeatEdge. 
-                |         iCurve2
-                |             second curve to which the circle will be tangent.
-                |             Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
-                |             and BiDimFeatEdge. 
-                |         iPoint
-                |             passing point. This point must lie on second
-                |             curve.
-                |             Sub-element(s) supported (see Boundary object): see Vertex.
-                |             
-                |         iSupport
-                |             support surface.
-                |             Sub-element(s) supported (see Boundary object): see Face.
-                |             
-                |         iOri1
-                |             first curve orientation for circle computation. 
-                |         iOri2
-                |             second curve orientation for circle computation. 
-                |         oCircle
-                |             Created circle
+                Func AddNewCircleBitangentPoint(Reference iCurve1,Reference iCurve2,Reference
+                iPoint,Reference iSupport,long iOri1,long iOri2) As
+                HybridShapeCircleBitangentPoint
+                    Creates a new circle tangent to 2 curves and passing through one point
+                    within the current body.
+                
+                    Parameters:
+                
+                        iCurve1
+                            first curve to which the circle will be tangent.
+                            Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
+                            and BiDimFeatEdge. 
+                        iCurve2
+                            second curve to which the circle will be tangent.
+                            Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
+                            and BiDimFeatEdge. 
+                        iPoint
+                            passing point. This point must lie on second
+                            curve.
+                            Sub-element(s) supported (see Boundary object): see Vertex.
+                            
+                        iSupport
+                            support surface.
+                            Sub-element(s) supported (see Boundary object): see Face.
+                            
+                        iOri1
+                            first curve orientation for circle computation. 
+                        iOri2
+                            second curve orientation for circle computation. 
+                        oCircle
+                            Created circle
 
         :param Reference i_curve1:
         :param Reference i_curve2:
@@ -674,39 +666,38 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCircleBitangentRadius:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewCircleBitangentRadius(Reference iCurve1,Reference iCurve2,Reference
-                | iSupport,double iRadius,long iOri1,long iOri2) As
-                | HybridShapeCircleBitangentRadius
-                |     Creates a new circle tangent to 2 curves and with a radius within the
-                |     current body.
-                | 
-                |     Parameters:
-                | 
-                |         iCurve1
-                |             first curve to which the circle will be tangent.
-                |             Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
-                |             and BiDimFeatEdge. 
-                |         iCurve2
-                |             second curve to which the circle will be tangent.
-                |             Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
-                |             and BiDimFeatEdge. 
-                |         iSupport
-                |             support surface.
-                |             Sub-element(s) supported (see Boundary object): see Face.
-                |             
-                |         iRadius
-                |             Value specified is considered as radius. To use this value as
-                |             diameter, set DiameterMode using SetDiameterMode method
-                |             
-                |         iOri1
-                |             first curve orientation for circle computation. 
-                |         iOri2
-                |             second curve orientation for circle computation. 
-                |         oCircle
-                |             Created circle
+                Func AddNewCircleBitangentRadius(Reference iCurve1,Reference iCurve2,Reference
+                iSupport,double iRadius,long iOri1,long iOri2) As
+                HybridShapeCircleBitangentRadius
+                    Creates a new circle tangent to 2 curves and with a radius within the
+                    current body.
+                
+                    Parameters:
+                
+                        iCurve1
+                            first curve to which the circle will be tangent.
+                            Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
+                            and BiDimFeatEdge. 
+                        iCurve2
+                            second curve to which the circle will be tangent.
+                            Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
+                            and BiDimFeatEdge. 
+                        iSupport
+                            support surface.
+                            Sub-element(s) supported (see Boundary object): see Face.
+                            
+                        iRadius
+                            Value specified is considered as radius. To use this value as
+                            diameter, set DiameterMode using SetDiameterMode method
+                            
+                        iOri1
+                            first curve orientation for circle computation. 
+                        iOri2
+                            second curve orientation for circle computation. 
+                        oCircle
+                            Created circle
 
         :param Reference i_curve1:
         :param Reference i_curve2:
@@ -736,26 +727,25 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCircleCenterAxis:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewCircleCenterAxis(Reference iAxis,Reference iPoint,double
-                | iValue,boolean iProjection) As HybridShapeCircleCenterAxis
-                |     Creates a circle from point and axis.
-                | 
-                |     Parameters:
-                | 
-                |         iAxis
-                |             Axis of plane in which circle is lying 
-                |         iPoint
-                |             Point used for center computation. It will be the center if ProjectionMode is False. If ProjectionMode = True, this point will be projected on to axis/line 
-                |         iValue
-                |             Value specified is considered as radius. To use this value as
-                |             diameter, set DiameterMode property 
-                |         iProjection
-                |             Sets Projection Mode. ProjectionMode = TRUE implies point will be projected on to axis/line, ProjectionMode = FALSE implies that point will be center of the circle. 
-                |         oCircle
-                |             Created circle
+                Func AddNewCircleCenterAxis(Reference iAxis,Reference iPoint,double
+                iValue,boolean iProjection) As HybridShapeCircleCenterAxis
+                    Creates a circle from point and axis.
+                
+                    Parameters:
+                
+                        iAxis
+                            Axis of plane in which circle is lying 
+                        iPoint
+                            Point used for center computation. It will be the center if ProjectionMode is False. If ProjectionMode = True, this point will be projected on to axis/line 
+                        iValue
+                            Value specified is considered as radius. To use this value as
+                            diameter, set DiameterMode property 
+                        iProjection
+                            Sets Projection Mode. ProjectionMode = TRUE implies point will be projected on to axis/line, ProjectionMode = FALSE implies that point will be center of the circle. 
+                        oCircle
+                            Created circle
 
         :param Reference i_axis:
         :param Reference i_point:
@@ -782,33 +772,32 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCircleCenterAxis:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewCircleCenterAxisWithAngles(Reference iAxis,Reference iPoint,double
-                | iValue,boolean iProjection,double iStartAngle,double iEndAngle) As
-                | HybridShapeCircleCenterAxis
-                |     Creates a circle from point and axis.
-                | 
-                |     Parameters:
-                | 
-                |         iAxis
-                |             Axis of plane in which circle is lying
-                |             Sub-element(s) supported (see Boundary object): 
-                |         iPoint
-                |             Point used for center computation. It will be the center if ProjectionMode is False. If ProjectionMode = True, this point will be projected on to axis/line
-                |             Sub-element(s) supported (see Boundary object): 
-                |         iValue
-                |             Value specified is considered as radius. To use this value as
-                |             diameter, set DiameterMode property 
-                |         iProjection
-                |             Sets Projection Mode. ProjectionMode = TRUE implies point will be projected on to axis/line, ProjectionMode = FALSE implies that point will be center of the circle. 
-                |         iStartAngle
-                |             start angle 
-                |         iEndAngle
-                |             end angle 
-                |         oCircle
-                |             Created circle
+                Func AddNewCircleCenterAxisWithAngles(Reference iAxis,Reference iPoint,double
+                iValue,boolean iProjection,double iStartAngle,double iEndAngle) As
+                HybridShapeCircleCenterAxis
+                    Creates a circle from point and axis.
+                
+                    Parameters:
+                
+                        iAxis
+                            Axis of plane in which circle is lying
+                            Sub-element(s) supported (see Boundary object): 
+                        iPoint
+                            Point used for center computation. It will be the center if ProjectionMode is False. If ProjectionMode = True, this point will be projected on to axis/line
+                            Sub-element(s) supported (see Boundary object): 
+                        iValue
+                            Value specified is considered as radius. To use this value as
+                            diameter, set DiameterMode property 
+                        iProjection
+                            Sets Projection Mode. ProjectionMode = TRUE implies point will be projected on to axis/line, ProjectionMode = FALSE implies that point will be center of the circle. 
+                        iStartAngle
+                            start angle 
+                        iEndAngle
+                            end angle 
+                        oCircle
+                            Created circle
 
         :param Reference i_axis:
         :param Reference i_point:
@@ -838,29 +827,28 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCircleCenterTangent:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewCircleCenterTangent(Reference iCenterElem,Reference
-                | iTangentCurve,Reference iSupport,double iRadius) As
-                | HybridShapeCircleCenterTangent
-                |     Creates a new circle with given center element and tangent
-                |     curve.
-                | 
-                |     Parameters:
-                | 
-                |         iCenterElem
-                |             Can be either curve or point. 
-                |         iTangentCurve
-                |             Curve to which the circle will be tangent. 
-                |         iSupport
-                |             support surface or plane. 
-                |         iRadius
-                |             circle radius, valid only if center element is curve. Value
-                |             specified is considered as radius. To use this value as diameter, set
-                |             DiameterMode using SetDiameterMode method 
-                |         oCircle
-                |             Created circle
+                Func AddNewCircleCenterTangent(Reference iCenterElem,Reference
+                iTangentCurve,Reference iSupport,double iRadius) As
+                HybridShapeCircleCenterTangent
+                    Creates a new circle with given center element and tangent
+                    curve.
+                
+                    Parameters:
+                
+                        iCenterElem
+                            Can be either curve or point. 
+                        iTangentCurve
+                            Curve to which the circle will be tangent. 
+                        iSupport
+                            support surface or plane. 
+                        iRadius
+                            circle radius, valid only if center element is curve. Value
+                            specified is considered as radius. To use this value as diameter, set
+                            DiameterMode using SetDiameterMode method 
+                        oCircle
+                            Created circle
 
         :param Reference i_center_elem:
         :param Reference i_tangent_curve:
@@ -886,32 +874,31 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCircleCtrPt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewCircleCtrPt(Reference iCenter,Reference iCrossingPoint,Reference
-                | iSupport,boolean iGeodesic) As HybridShapeCircleCtrPt
-                |     Creates a new whole circle defined by its center, a passing point within
-                |     the current body.
-                | 
-                |     Parameters:
-                | 
-                |         iCenter
-                |             circle center.
-                |             Sub-element(s) supported (see Boundary object): see Vertex.
-                |             
-                |         iCrossingPoint
-                |             passing point.
-                |             Sub-element(s) supported (see Boundary object): see Vertex.
-                |             
-                |         iSupport
-                |             support surface.
-                |             Sub-element(s) supported (see Boundary object): see Face.
-                |             
-                |         iGeodesic
-                |             Puts the circle on the surface. 
-                |         oCircle
-                |             CreatedCircle
+                Func AddNewCircleCtrPt(Reference iCenter,Reference iCrossingPoint,Reference
+                iSupport,boolean iGeodesic) As HybridShapeCircleCtrPt
+                    Creates a new whole circle defined by its center, a passing point within
+                    the current body.
+                
+                    Parameters:
+                
+                        iCenter
+                            circle center.
+                            Sub-element(s) supported (see Boundary object): see Vertex.
+                            
+                        iCrossingPoint
+                            passing point.
+                            Sub-element(s) supported (see Boundary object): see Vertex.
+                            
+                        iSupport
+                            support surface.
+                            Sub-element(s) supported (see Boundary object): see Face.
+                            
+                        iGeodesic
+                            Puts the circle on the surface. 
+                        oCircle
+                            CreatedCircle
 
         :param Reference i_center:
         :param Reference i_crossing_point:
@@ -938,37 +925,36 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCircleCtrPt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewCircleCtrPtWithAngles(Reference iCenter,Reference
-                | iCrossingPoint,Reference iSupport,boolean iGeodesic,double iStartAngle,double
-                | iEndAngle) As HybridShapeCircleCtrPt
-                |     Creates a new circle defined by its center, a passing point and angles
-                |     within the current body.
-                | 
-                |     Parameters:
-                | 
-                |         iCenter
-                |             circle center.
-                |             Sub-element(s) supported (see Boundary object): see Vertex.
-                |             
-                |         iCrossingPoint
-                |             passing point.
-                |             Sub-element(s) supported (see Boundary object): see Vertex.
-                |             
-                |         iSupport
-                |             support surface.
-                |             Sub-element(s) supported (see Boundary object): see Face.
-                |             
-                |         iGeodesic
-                |             Puts the circle on the surface. 
-                |         iStartAngle
-                |             start angle 
-                |         iEndAngle
-                |             end angle 
-                |         oCircle
-                |             Created circle
+                Func AddNewCircleCtrPtWithAngles(Reference iCenter,Reference
+                iCrossingPoint,Reference iSupport,boolean iGeodesic,double iStartAngle,double
+                iEndAngle) As HybridShapeCircleCtrPt
+                    Creates a new circle defined by its center, a passing point and angles
+                    within the current body.
+                
+                    Parameters:
+                
+                        iCenter
+                            circle center.
+                            Sub-element(s) supported (see Boundary object): see Vertex.
+                            
+                        iCrossingPoint
+                            passing point.
+                            Sub-element(s) supported (see Boundary object): see Vertex.
+                            
+                        iSupport
+                            support surface.
+                            Sub-element(s) supported (see Boundary object): see Face.
+                            
+                        iGeodesic
+                            Puts the circle on the surface. 
+                        iStartAngle
+                            start angle 
+                        iEndAngle
+                            end angle 
+                        oCircle
+                            Created circle
 
         :param Reference i_center:
         :param Reference i_crossing_point:
@@ -998,32 +984,31 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCircleCtrRad:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewCircleCtrRad(Reference iCenter,Reference iSupport,boolean
-                | iGeodesic,double iRadius) As HybridShapeCircleCtrRad
-                |     Creates a new whole circle defined by its center and a radius within the
-                |     current body.
-                | 
-                |     Parameters:
-                | 
-                |         iCenter
-                |             circle center.
-                |             Sub-element(s) supported (see Boundary object): see Vertex.
-                |             
-                |         iSupport
-                |             support surface.
-                |             Sub-element(s) supported (see Boundary object): see Face.
-                |             
-                |         iGeodesic
-                |             Puts the circle on the surface. 
-                |         iRadius
-                |             Value specified is considered as radius. To use this value as
-                |             diameter, set DiameterMode using SetDiameterMode method
-                |             
-                |         oCircle
-                |             Created circle
+                Func AddNewCircleCtrRad(Reference iCenter,Reference iSupport,boolean
+                iGeodesic,double iRadius) As HybridShapeCircleCtrRad
+                    Creates a new whole circle defined by its center and a radius within the
+                    current body.
+                
+                    Parameters:
+                
+                        iCenter
+                            circle center.
+                            Sub-element(s) supported (see Boundary object): see Vertex.
+                            
+                        iSupport
+                            support surface.
+                            Sub-element(s) supported (see Boundary object): see Face.
+                            
+                        iGeodesic
+                            Puts the circle on the surface. 
+                        iRadius
+                            Value specified is considered as radius. To use this value as
+                            diameter, set DiameterMode using SetDiameterMode method
+                            
+                        oCircle
+                            Created circle
 
         :param Reference i_center:
         :param Reference i_support:
@@ -1051,37 +1036,36 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCircleCtrRad:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewCircleCtrRadWithAngles(Reference iCenter,Reference iSupport,boolean
-                | iGeodesic,double iRadius,double iStartAngle,double iEndAngle) As
-                | HybridShapeCircleCtrRad
-                |     Creates a new circle defined by its center, a radius and angles within the
-                |     current body.
-                | 
-                |     Parameters:
-                | 
-                |         iCenter
-                |             circle center.
-                |             Sub-element(s) supported (see Boundary object): see Vertex.
-                |             
-                |         iSupport
-                |             support surface.
-                |             Sub-element(s) supported (see Boundary object): see Face.
-                |             
-                |         iGeodesic
-                |             Puts the circle on the surface. 
-                |         iRadius
-                |             Value specified is considered as radius. To use this value as
-                |             diameter, set DiameterMode using SetDiameterMode method
-                |             
-                |         iStartAngle
-                |             start angle 
-                |         iEndAngle
-                |             end angle 
-                |         oCircle
-                |             Created circle
+                Func AddNewCircleCtrRadWithAngles(Reference iCenter,Reference iSupport,boolean
+                iGeodesic,double iRadius,double iStartAngle,double iEndAngle) As
+                HybridShapeCircleCtrRad
+                    Creates a new circle defined by its center, a radius and angles within the
+                    current body.
+                
+                    Parameters:
+                
+                        iCenter
+                            circle center.
+                            Sub-element(s) supported (see Boundary object): see Vertex.
+                            
+                        iSupport
+                            support surface.
+                            Sub-element(s) supported (see Boundary object): see Face.
+                            
+                        iGeodesic
+                            Puts the circle on the surface. 
+                        iRadius
+                            Value specified is considered as radius. To use this value as
+                            diameter, set DiameterMode using SetDiameterMode method
+                            
+                        iStartAngle
+                            start angle 
+                        iEndAngle
+                            end angle 
+                        oCircle
+                            Created circle
 
         :param Reference i_center:
         :param Reference i_support:
@@ -1105,21 +1089,20 @@ class HybridShapeFactory(Factory):
     def add_new_circle_datum(self, i_object: Reference) -> HybridShapeCircleExplicit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewCircleDatum(Reference iObject) As
-                | HybridShapeCircleExplicit
-                |     Creates a new datum of circle within the current body.
-                | 
-                |     Parameters:
-                | 
-                |         iObject
-                |             The object whose topological body will be duplicated and put into
-                |             created datum 
-                |         oCircle
-                |             Created datum Note2: the object passed as parameter to create the
-                |             datum has to be in the current container. Otherwise, an error occurs.
+                Func AddNewCircleDatum(Reference iObject) As
+                HybridShapeCircleExplicit
+                    Creates a new datum of circle within the current body.
+                
+                    Parameters:
+                
+                        iObject
+                            The object whose topological body will be duplicated and put into
+                            created datum 
+                        oCircle
+                            Created datum Note2: the object passed as parameter to create the
+                            datum has to be in the current container. Otherwise, an error occurs.
 
         :param Reference i_object:
         :return: HybridShapeCircleExplicit
@@ -1138,40 +1121,39 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCircleTritangent:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewCircleTritangent(Reference iCurve1,Reference iCurve2,Reference
-                | iCurve3,Reference iSupport,long iOri1,long iOri2,long iOri3) As
-                | HybridShapeCircleTritangent
-                |     Creates a new tritangent circle within the current body.
-                | 
-                |     Parameters:
-                | 
-                |         iCurve1
-                |             first curve to which the circle will be tangent.
-                |             Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
-                |             and BiDimFeatEdge. 
-                |         iCurve2
-                |             second curve to which the circle will be tangent.
-                |             Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
-                |             and BiDimFeatEdge. 
-                |         iCurve3
-                |             third curve to which the circle will be tangent.
-                |             Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
-                |             and BiDimFeatEdge. 
-                |         iSupport
-                |             support surface.
-                |             Sub-element(s) supported (see Boundary object): see Face.
-                |             
-                |         iOri1
-                |             first curve orientation for circle computation. 
-                |         iOri2
-                |             second curve orientation for circle computation. 
-                |         iOri3
-                |             third curve orientation for circle computation. 
-                |         oCircle
-                |             Created circle
+                Func AddNewCircleTritangent(Reference iCurve1,Reference iCurve2,Reference
+                iCurve3,Reference iSupport,long iOri1,long iOri2,long iOri3) As
+                HybridShapeCircleTritangent
+                    Creates a new tritangent circle within the current body.
+                
+                    Parameters:
+                
+                        iCurve1
+                            first curve to which the circle will be tangent.
+                            Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
+                            and BiDimFeatEdge. 
+                        iCurve2
+                            second curve to which the circle will be tangent.
+                            Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
+                            and BiDimFeatEdge. 
+                        iCurve3
+                            third curve to which the circle will be tangent.
+                            Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
+                            and BiDimFeatEdge. 
+                        iSupport
+                            support surface.
+                            Sub-element(s) supported (see Boundary object): see Face.
+                            
+                        iOri1
+                            first curve orientation for circle computation. 
+                        iOri2
+                            second curve orientation for circle computation. 
+                        iOri3
+                            third curve orientation for circle computation. 
+                        oCircle
+                            Created circle
 
         :param Reference i_curve1:
         :param Reference i_curve2:
@@ -1202,32 +1184,31 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCombine:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewCombine(Reference iFirstCurve,Reference iSecondCurve,long
-                | iNearestSolutions) As HybridShapeCombine
-                |     Creates a new Combine within the current body. By default, the combine
-                |     direction is the normal of each curve. If you want to change see
-                |     CATIAHybridShapeCombine interfaces.
-                | 
-                |     Parameters:
-                | 
-                |         iFirstCurve
-                |             First curve to combine
-                | 
-                |             Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
-                |             and BiDimFeatEdge. 
-                |         iSecondCurve
-                |             Second curve to combine
-                | 
-                |             Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
-                |             and BiDimFeatEdge. 
-                |         iNearestSolution
-                |             If more than one solution, to choose the nearest solution of the
-                |             first curve 
-                |         oCombine
-                |             The combine object if succeded
+                Func AddNewCombine(Reference iFirstCurve,Reference iSecondCurve,long
+                iNearestSolutions) As HybridShapeCombine
+                    Creates a new Combine within the current body. By default, the combine
+                    direction is the normal of each curve. If you want to change see
+                    CATIAHybridShapeCombine interfaces.
+                
+                    Parameters:
+                
+                        iFirstCurve
+                            First curve to combine
+                
+                            Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
+                            and BiDimFeatEdge. 
+                        iSecondCurve
+                            Second curve to combine
+                
+                            Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
+                            and BiDimFeatEdge. 
+                        iNearestSolution
+                            If more than one solution, to choose the nearest solution of the
+                            first curve 
+                        oCombine
+                            The combine object if succeded
 
         :param Reference i_first_curve:
         :param Reference i_second_curve:
@@ -1250,30 +1231,29 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeConic:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewConic(Reference iSupport,Reference iStartingPoint,Reference
-                | iEndPoint) As HybridShapeConic
-                |     Creates a new conic within the current body.
-                | 
-                |     Parameters:
-                | 
-                |         iSupport
-                |             The conic support (always a plane).
-                |             Sub-element(s) supported (see Boundary object): see PlanarFace.
-                |             
-                |         iStartingPoint
-                |             Starting Point.
-                |             Sub-element(s) supported (see Boundary object): see Vertex.
-                |             
-                |         iEndPoint
-                |             End Point
-                | 
-                |             Sub-element(s) supported (see Boundary object): see Vertex.
-                |             
-                |         oConic
-                |             The Conic object if succeded
+                Func AddNewConic(Reference iSupport,Reference iStartingPoint,Reference
+                iEndPoint) As HybridShapeConic
+                    Creates a new conic within the current body.
+                
+                    Parameters:
+                
+                        iSupport
+                            The conic support (always a plane).
+                            Sub-element(s) supported (see Boundary object): see PlanarFace.
+                            
+                        iStartingPoint
+                            Starting Point.
+                            Sub-element(s) supported (see Boundary object): see Vertex.
+                            
+                        iEndPoint
+                            End Point
+                
+                            Sub-element(s) supported (see Boundary object): see Vertex.
+                            
+                        oConic
+                            The Conic object if succeded
 
         :param Reference i_support:
         :param Reference i_starting_point:
@@ -1298,40 +1278,39 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeReflectLine:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewConicalReflectLineWithType(Reference iSupport,Reference
-                | iOrigin,double iAngle,long iOrientationSupport,long iType) As
-                | HybridShapeReflectLine
-                |     Creates a new conical ReflectLine within the current body.
-                |     Create a conical reflectline curve on a support surface from an origin
-                |     point with an angle.
-                | 
-                |     Parameters:
-                | 
-                |         iSupport
-                |             Support surface. 
-                |         iOrigin
-                |             Origin point. 
-                |         iAngle
-                |             Angle of the reflectline. 
-                |         iOrientationSupport
-                |             Manage the angle used to compute the reflectline. Value can be 1 or
-                |             -1 
-                |         iType
-                |             Manage the type used to compute the reflectline. Value can be 0 or
-                |             1 Returns or sets whether the reflectline curve is or should be created with
-                |             the normal to the support or the tangent plane to the
-                |             support.
-                |             Role: The TypeSolution indicates whether the created reflectline
-                |             curve is compute with the angle between the normale to the support and the
-                |             direction or with the angle between the tangent plane to the support and the
-                |             direction..
-                |             Legal values: 0 for the normal and 1 for the tangent plane.
-                |             
-                |         oReflectLine
-                |             Created conical reflectline.
+                Func AddNewConicalReflectLineWithType(Reference iSupport,Reference
+                iOrigin,double iAngle,long iOrientationSupport,long iType) As
+                HybridShapeReflectLine
+                    Creates a new conical ReflectLine within the current body.
+                    Create a conical reflectline curve on a support surface from an origin
+                    point with an angle.
+                
+                    Parameters:
+                
+                        iSupport
+                            Support surface. 
+                        iOrigin
+                            Origin point. 
+                        iAngle
+                            Angle of the reflectline. 
+                        iOrientationSupport
+                            Manage the angle used to compute the reflectline. Value can be 1 or
+                            -1 
+                        iType
+                            Manage the type used to compute the reflectline. Value can be 0 or
+                            1 Returns or sets whether the reflectline curve is or should be created with
+                            the normal to the support or the tangent plane to the
+                            support.
+                            Role: The TypeSolution indicates whether the created reflectline
+                            curve is compute with the angle between the normale to the support and the
+                            direction or with the angle between the tangent plane to the support and the
+                            direction..
+                            Legal values: 0 for the normal and 1 for the tangent plane.
+                            
+                        oReflectLine
+                            Created conical reflectline.
 
         :param Reference i_support:
         :param Reference i_origin:
@@ -1364,51 +1343,50 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeConnect:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewConnect(Reference iCurve1,Reference iPoint1,long iOrient1,long
-                | iContinuity1,double iTension1,Reference iCurve2,Reference iPoint2,long
-                | iOrient2,long iContinuity2,double iTension2,boolean Trim) As
-                | HybridShapeConnect
-                |     Creates a new Connect within the current body.
-                | 
-                |     Parameters:
-                | 
-                |         iCurve1
-                |             First curve.
-                |             Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
-                |             and BiDimFeatEdge. 
-                |         iPoint1
-                |             First point (lying on the first curve)
-                | 
-                |             Sub-element(s) supported (see Boundary object): see Vertex.
-                |             
-                |         iOrient1
-                |             Orientation on the first curve 
-                |         iContinuity1
-                |             Continuity on first curve 
-                |         iTension1
-                |             Tension on first curve 
-                |         iCurve2
-                |             Second curve.
-                |             Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
-                |             and BiDimFeatEdge. 
-                |         iPoint2
-                |             Second point (lying on the second curve)
-                | 
-                |             Sub-element(s) supported (see Boundary object): see Vertex.
-                |             
-                |         iOrient2
-                |             Orientation on the second curve 
-                |         iContinuity2
-                |             Continuity on second curve 
-                |         iTension2
-                |             Tension on second curve 
-                |         iTrim
-                |             Trim the two curves with the connect 
-                |         oConnect
-                |             The connect object
+                Func AddNewConnect(Reference iCurve1,Reference iPoint1,long iOrient1,long
+                iContinuity1,double iTension1,Reference iCurve2,Reference iPoint2,long
+                iOrient2,long iContinuity2,double iTension2,boolean Trim) As
+                HybridShapeConnect
+                    Creates a new Connect within the current body.
+                
+                    Parameters:
+                
+                        iCurve1
+                            First curve.
+                            Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
+                            and BiDimFeatEdge. 
+                        iPoint1
+                            First point (lying on the first curve)
+                
+                            Sub-element(s) supported (see Boundary object): see Vertex.
+                            
+                        iOrient1
+                            Orientation on the first curve 
+                        iContinuity1
+                            Continuity on first curve 
+                        iTension1
+                            Tension on first curve 
+                        iCurve2
+                            Second curve.
+                            Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
+                            and BiDimFeatEdge. 
+                        iPoint2
+                            Second point (lying on the second curve)
+                
+                            Sub-element(s) supported (see Boundary object): see Vertex.
+                            
+                        iOrient2
+                            Orientation on the second curve 
+                        iContinuity2
+                            Continuity on second curve 
+                        iTension2
+                            Tension on second curve 
+                        iTrim
+                            Trim the two curves with the connect 
+                        oConnect
+                            The connect object
 
         :param Reference i_curve1:
         :param Reference i_point1:
@@ -1451,44 +1429,43 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCorner:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewCorner(Reference iElement1,Reference iElement2,Reference
-                | iSupport,double iRadius,long iOrientation1,long iOrientation2,boolean iTrim) As
-                | HybridShapeCorner
-                |     Creates a new Corner within the current body.
-                |     Create a corner curve between a point and a curve or 2 curves on a support
-                |     surface.
-                | 
-                |     Parameters:
-                | 
-                |         iElement1
-                |             First reference curve.
-                |             Sub-element(s) supported (see Boundary object): see TriDimFeatEdge,
-                |             BiDimFeatEdge and Vertex. 
-                |         iElement2
-                |             Second reference curve.
-                |             Sub-element(s) supported (see Boundary object): see TriDimFeatEdge,
-                |             BiDimFeatEdge and Vertex. 
-                |         iSupport
-                |             Support surface.
-                |             Sub-element(s) supported (see Boundary object): see Face.
-                |             
-                |         iRadius
-                |             Radius of the corner. 
-                |         iOrientation1
-                |             Manage the corner center position. Value can be 1 or -1
-                |             
-                |         iOrientation2
-                |             Manage the corner center position. Value can be 1 or -1
-                |             
-                |         iTrim
-                |             Value can be FALSE or TRUE
-                |             if TRUE the 2 curves are trimed and asembled with the corner.
-                |             
-                |         oCorner
-                |             Created corner.
+                Func AddNewCorner(Reference iElement1,Reference iElement2,Reference
+                iSupport,double iRadius,long iOrientation1,long iOrientation2,boolean iTrim) As
+                HybridShapeCorner
+                    Creates a new Corner within the current body.
+                    Create a corner curve between a point and a curve or 2 curves on a support
+                    surface.
+                
+                    Parameters:
+                
+                        iElement1
+                            First reference curve.
+                            Sub-element(s) supported (see Boundary object): see TriDimFeatEdge,
+                            BiDimFeatEdge and Vertex. 
+                        iElement2
+                            Second reference curve.
+                            Sub-element(s) supported (see Boundary object): see TriDimFeatEdge,
+                            BiDimFeatEdge and Vertex. 
+                        iSupport
+                            Support surface.
+                            Sub-element(s) supported (see Boundary object): see Face.
+                            
+                        iRadius
+                            Radius of the corner. 
+                        iOrientation1
+                            Manage the corner center position. Value can be 1 or -1
+                            
+                        iOrientation2
+                            Manage the corner center position. Value can be 1 or -1
+                            
+                        iTrim
+                            Value can be FALSE or TRUE
+                            if TRUE the 2 curves are trimed and asembled with the corner.
+                            
+                        oCorner
+                            Created corner.
 
         :param Reference i_element1:
         :param Reference i_element2:
@@ -1514,21 +1491,20 @@ class HybridShapeFactory(Factory):
     def add_new_curve_datum(self, i_object: Reference) -> HybridShapeCurveExplicit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewCurveDatum(Reference iObject) As
-                | HybridShapeCurveExplicit
-                |     Creates a new datum of curve within the current body.
-                | 
-                |     Parameters:
-                | 
-                |         iObject
-                |             The object whose topological body will be duplicated and put into
-                |             created datum 
-                |         oCurve
-                |             Created curve Note2: the object passed as parameter to create the
-                |             datum has to be in the current container. Otherwise, an error occurs.
+                Func AddNewCurveDatum(Reference iObject) As
+                HybridShapeCurveExplicit
+                    Creates a new datum of curve within the current body.
+                
+                    Parameters:
+                
+                        iObject
+                            The object whose topological body will be duplicated and put into
+                            created datum 
+                        oCurve
+                            Created curve Note2: the object passed as parameter to create the
+                            datum has to be in the current container. Otherwise, an error occurs.
 
         :param Reference i_object:
         :return: HybridShapeCurveExplicit
@@ -1544,32 +1520,31 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCurvePar:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewCurvePar(Reference Curve,Reference Support,double Distance,boolean
-                | InvertDirection,boolean Geodesic) As HybridShapeCurvePar
-                |     Creates a new CurvePar within the current body.
-                | 
-                |     Parameters:
-                | 
-                |         iCurve
-                |             Reference curve.
-                |             Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
-                |             and BiDimFeatEdge. 
-                |         iSupport
-                |             Support on which the curve is lying on
-                | 
-                |             Sub-element(s) supported (see Boundary object): see Face.
-                |             
-                |         iDistance
-                |             Distance value 
-                |         iInvertDirection
-                |             Orientation 
-                |         iGeodesic
-                |             Geodesic mode 
-                |         oCurvePar
-                |             Parallel curve
+                Func AddNewCurvePar(Reference Curve,Reference Support,double Distance,boolean
+                InvertDirection,boolean Geodesic) As HybridShapeCurvePar
+                    Creates a new CurvePar within the current body.
+                
+                    Parameters:
+                
+                        iCurve
+                            Reference curve.
+                            Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
+                            and BiDimFeatEdge. 
+                        iSupport
+                            Support on which the curve is lying on
+                
+                            Sub-element(s) supported (see Boundary object): see Face.
+                            
+                        iDistance
+                            Distance value 
+                        iInvertDirection
+                            Orientation 
+                        iGeodesic
+                            Geodesic mode 
+                        oCurvePar
+                            Parallel curve
 
         :param Reference curve:
         :param Reference support:
@@ -1591,19 +1566,18 @@ class HybridShapeFactory(Factory):
     def add_new_curve_smooth(self, ip_ia_curve: Reference) -> HybridShapeCurveSmooth:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewCurveSmooth(Reference ipIACurve) As
-                | HybridShapeCurveSmooth
-                |     Creates a new CurveSmooth within the current body.
-                | 
-                |     Parameters:
-                | 
-                |         iCurve
-                |             Reference curve to be smoothened 
-                |         oCurveSmooth
-                |             Smoothened curve
+                Func AddNewCurveSmooth(Reference ipIACurve) As
+                HybridShapeCurveSmooth
+                    Creates a new CurveSmooth within the current body.
+                
+                    Parameters:
+                
+                        iCurve
+                            Reference curve to be smoothened 
+                        oCurveSmooth
+                            Smoothened curve
 
         :param Reference ip_ia_curve:
         :return: HybridShapeCurveSmooth
@@ -1623,29 +1597,28 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCylinder:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewCylinder(Reference iCenter,double iRadius,double iFirstLength,double
-                | iSecondLength,HybridShapeDirection iDirection) As
-                | HybridShapeCylinder
-                |     Creates a new Cylinder within the current body.
-                | 
-                |     Parameters:
-                | 
-                |         iCenter
-                |             Center of the Cylinder - Can be Point or Vertex.
-                |             Sub-element(s) supported (see Vertex object): 
-                |         iRadius
-                |             Radius of Cylinder. 
-                |         iFirstLength
-                |             Length of Cylinder in the given direction. 
-                |         iSecondLength
-                |             Length of Cylinder in the opposite direction. 
-                |         iDirection
-                |             Direction of extrusion for Cylinder. 
-                |         oCylinderObject
-                |             Created CylinderObjct.
+                Func AddNewCylinder(Reference iCenter,double iRadius,double iFirstLength,double
+                iSecondLength,HybridShapeDirection iDirection) As
+                HybridShapeCylinder
+                    Creates a new Cylinder within the current body.
+                
+                    Parameters:
+                
+                        iCenter
+                            Center of the Cylinder - Can be Point or Vertex.
+                            Sub-element(s) supported (see Vertex object): 
+                        iRadius
+                            Radius of Cylinder. 
+                        iFirstLength
+                            Length of Cylinder in the given direction. 
+                        iSecondLength
+                            Length of Cylinder in the opposite direction. 
+                        iDirection
+                            Direction of extrusion for Cylinder. 
+                        oCylinderObject
+                            Created CylinderObjct.
 
         :param Reference i_center:
         :param float i_radius:
@@ -1667,43 +1640,42 @@ class HybridShapeFactory(Factory):
     def add_new_datums(self, i_elem: Reference) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func AddNewDatums(Reference iElem) As CATSafeArrayVariant
-                |     Creates datums from a multi-domain result feature, one datum is created by
-                |     object domain.
-                |     Note; Available only for a shape design feature as input ( not for datum
-                |     feature ).
-                | 
-                |     Parameters:
-                | 
-                |         iElem
-                |             Reference element 
-                |         oArrayOfDatum
-                |             List of datum objects , one datum is created per
-                |             omain
-                |             Level of availability = V5R14
-                | 
-                |             Example:
-                |                 This example converts a hybrid shape object in as much as
-                |                 datums that the original hybrid shape features contains of
-                |                 domain
-                | 
-                |                   Dim HShape 
-                |                   Set reference   = part.CreateReferenceFromObject(hybridShapeObject)
-                |                   ' Convert to Datums 
-                |                   HShape = hybridShapeFactory.AddNewDatums reference  
-                |                   Num =UBound(HShape)
-                |                   For i = 0 to Num  
-                |                         hybridBody1.AppendHybridShape HShape (i)
-                |                         
-                |                   Next 
-                |                   part.InWorkObject = HShape(num) 
-                |                   part.Update 
-                |                   ' Delete original feature 
-                |                   hybridShapeFactory.DeleteObjectForDatum
-                |                   reference
+                Func AddNewDatums(Reference iElem) As CATSafeArrayVariant
+                    Creates datums from a multi-domain result feature, one datum is created by
+                    object domain.
+                    Note; Available only for a shape design feature as input ( not for datum
+                    feature ).
+                
+                    Parameters:
+                
+                        iElem
+                            Reference element 
+                        oArrayOfDatum
+                            List of datum objects , one datum is created per
+                            omain
+                            Level of availability = V5R14
+                
+                            Example:
+                                This example converts a hybrid shape object in as much as
+                                datums that the original hybrid shape features contains of
+                                domain
+                
+                                  Dim HShape 
+                                  Set reference   = part.CreateReferenceFromObject(hybridShapeObject)
+                                  ' Convert to Datums 
+                                  HShape = hybridShapeFactory.AddNewDatums reference  
+                                  Num =UBound(HShape)
+                                  For i = 0 to Num  
+                                        hybridBody1.AppendHybridShape HShape (i)
+                                        
+                                  Next 
+                                  part.InWorkObject = HShape(num) 
+                                  part.Update 
+                                  ' Delete original feature 
+                                  hybridShapeFactory.DeleteObjectForDatum
+                                  reference
 
 
         :param Reference i_elem:
@@ -1714,28 +1686,27 @@ class HybridShapeFactory(Factory):
     def add_new_develop(self, i_mode: int, i_to_develop: Reference, i_support: Reference) -> HybridShapeDevelop:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewDevelop(long iMode,Reference iToDevelop,Reference iSupport) As
-                | HybridShapeDevelop
-                |     Creates a new Develop within the current body.
-                |     Note: require either DL1 or GSO license.
+                Func AddNewDevelop(long iMode,Reference iToDevelop,Reference iSupport) As
+                HybridShapeDevelop
+                    Creates a new Develop within the current body.
+                    Note: require either DL1 or GSO license.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iMode
-                |             Develop method.
-                |         iToDevelop
-                |             Wire to be developed.
-                |             Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
-                |             and BiDimFeatEdge.
-                |         iSupport
-                |             Revolution support surface.
-                |             Sub-element(s) supported (see Boundary object): see
-                |             Face.
-                |         oExt
-                |             Created developed wire.
+                        iMode
+                            Develop method.
+                        iToDevelop
+                            Wire to be developed.
+                            Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
+                            and BiDimFeatEdge.
+                        iSupport
+                            Revolution support surface.
+                            Sub-element(s) supported (see Boundary object): see
+                            Face.
+                        oExt
+                            Created developed wire.
 
         :param int i_mode:
         :param Reference i_to_develop:
@@ -1747,25 +1718,24 @@ class HybridShapeFactory(Factory):
     def add_new_direction(self, i_element: Reference) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewDirection(Reference iElement) As
-                | HybridShapeDirection
-                |     Creates a new direction specified by an element within the current
-                |     body.
+                Func AddNewDirection(Reference iElement) As
+                HybridShapeDirection
+                    Creates a new direction specified by an element within the current
+                    body.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iElement
-                |             Line or plane specifying the direction. In case of plane, the plane
-                |             normal vector is the direction
+                        iElement
+                            Line or plane specifying the direction. In case of plane, the plane
+                            normal vector is the direction
                 |
-                |             Sub-element(s) supported (see Boundary object): see
-                |             RectilinearTriDimFeatEdge, RectilinearBiDimFeatEdge and
-                |             RectilinearMonoDimFeatEdge.
-                |         oDirection
-                |             Created direction.
+                            Sub-element(s) supported (see Boundary object): see
+                            RectilinearTriDimFeatEdge, RectilinearBiDimFeatEdge and
+                            RectilinearMonoDimFeatEdge.
+                        oDirection
+                            Created direction.
 
         :param Reference i_element:
         :return: HybridShapeDirection
@@ -1775,24 +1745,23 @@ class HybridShapeFactory(Factory):
     def add_new_direction_by_coord(self, i_x: float, i_y: float, i_z: float) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewDirectionByCoord(double iX,double iY,double iZ) As
-                | HybridShapeDirection
-                |     Creates a new Direction specifed by coordinates within the current
-                |     body.
+                Func AddNewDirectionByCoord(double iX,double iY,double iZ) As
+                HybridShapeDirection
+                    Creates a new Direction specifed by coordinates within the current
+                    body.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iX
-                |             X component
-                |         iY
-                |             Y component
-                |         iZ
-                |             Z component
-                |         oDirection
-                |             Created direction
+                        iX
+                            X component
+                        iY
+                            Y component
+                        iZ
+                            Z component
+                        oDirection
+                            Created direction
 
         :param float i_x:
         :param float i_y:
@@ -1808,21 +1777,20 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeDisconnect:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewDisconnect(Reference iEltToBeDisconnected,Reference
-                | iDisconnectingElt) As HybridShapeDisconnect
-                |     Creates a new Disconnect within the current body.
+                Func AddNewDisconnect(Reference iEltToBeDisconnected,Reference
+                iDisconnectingElt) As HybridShapeDisconnect
+                    Creates a new Disconnect within the current body.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iEltToBeDisconnected
-                |             Element to be disconnect
-                |         iDisconnectingElt
-                |             Element used as disconnecting element
-                |         oDisconnect
-                |             Disconnect if su`````cceded
+                        iEltToBeDisconnected
+                            Element to be disconnect
+                        iDisconnectingElt
+                            Element used as disconnecting element
+                        oDisconnect
+                            Disconnect if su`````cceded
 
         :param Reference i_elt_to_be_disconnected:
         :param Reference i_disconnecting_elt:
@@ -1834,11 +1802,10 @@ class HybridShapeFactory(Factory):
     def add_new_empty_rotate(self) -> HybridShapeRotate:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewEmptyRotate() As HybridShapeRotate
-                |     Creates a new empty Rotate within the current body.
+                Func AddNewEmptyRotate() As HybridShapeRotate
+                    Creates a new empty Rotate within the current body.
 
         :return: HybridShapeRotate
         """
@@ -1847,11 +1814,10 @@ class HybridShapeFactory(Factory):
     def add_new_empty_translate(self) -> HybridShapeTranslate:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewEmptyTranslate() As HybridShapeTranslate
-                |     Creates a new empty Translate within the current body.
+                Func AddNewEmptyTranslate() As HybridShapeTranslate
+                    Creates a new empty Translate within the current body.
 
         :return: HybridShapeTranslate
         """
@@ -1860,21 +1826,20 @@ class HybridShapeFactory(Factory):
     def add_new_extract(self, element: Reference) -> HybridShapeExtract:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewExtract(Reference Element) As HybridShapeExtract
-                |     Creates a new Extract within the current body.
+                Func AddNewExtract(Reference Element) As HybridShapeExtract
+                    Creates a new Extract within the current body.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iElement
-                |             Initial element used to start the extraction
+                        iElement
+                            Initial element used to start the extraction
                 |
-                |             Sub-element(s) supported (see Boundary object): see
-                |             Boundary.
-                |         oExt
-                |             The extracted object
+                            Sub-element(s) supported (see Boundary object): see
+                            Boundary.
+                        oExt
+                            The extracted object
 
         :param Reference element:
         :return: HybridShapeExtract
@@ -1884,22 +1849,21 @@ class HybridShapeFactory(Factory):
     def add_new_extract_multi(self, element: Reference) -> HybridShapeExtractMulti:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewExtractMulti(Reference Element) As
-                | HybridShapeExtractMulti
-                |     Creates a new Multiple Extract within the current body.
+                Func AddNewExtractMulti(Reference Element) As
+                HybridShapeExtractMulti
+                    Creates a new Multiple Extract within the current body.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iElement
-                |             Initial element used to start the extraction
+                        iElement
+                            Initial element used to start the extraction
                 |
-                |             Sub-element(s) supported (see Boundary object): see
-                |             Boundary.
-                |         oExt
-                |             The extracted object
+                            Sub-element(s) supported (see Boundary object): see
+                            Boundary.
+                        oExt
+                            The extracted object
 
         :param Reference element:
         :return: HybridShapeExtractMulti
@@ -1914,29 +1878,28 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeExtrapol:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewExtrapolLength(Reference iBoundary,Reference iToExtrapol,double
-                | iLength) As HybridShapeExtrapol
-                |     Creates a new Extrapol (specified by length) within the current
-                |     body.
+                Func AddNewExtrapolLength(Reference iBoundary,Reference iToExtrapol,double
+                iLength) As HybridShapeExtrapol
+                    Creates a new Extrapol (specified by length) within the current
+                    body.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iBoundary
-                |             Boundary point of curve to extrapolate or boundary curve of surface
-                |             to extrapolate.
-                |             Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
-                |             and BiDimFeatEdge.
-                |         iToExtrapol
-                |             Curve or surface to extrapolate.
-                |             Sub-element(s) supported (see Boundary object): see Face,
-                |             TriDimFeatEdge and BiDimFeatEdge.
-                |         iLength
-                |             Extrapolation length.
-                |         oExtrapol
-                |             Created Extrapolation.
+                        iBoundary
+                            Boundary point of curve to extrapolate or boundary curve of surface
+                            to extrapolate.
+                            Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
+                            and BiDimFeatEdge.
+                        iToExtrapol
+                            Curve or surface to extrapolate.
+                            Sub-element(s) supported (see Boundary object): see Face,
+                            TriDimFeatEdge and BiDimFeatEdge.
+                        iLength
+                            Extrapolation length.
+                        oExtrapol
+                            Created Extrapolation.
 
         :param Reference i_boundary:
         :param Reference i_to_extrapol:
@@ -1959,29 +1922,28 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeExtrapol:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewExtrapolUntil(Reference iBoundary,Reference iToExtrapol,Reference
-                | iUntil) As HybridShapeExtrapol
-                |     Creates a new Extrapol (until an element) within the current
-                |     body.
+                Func AddNewExtrapolUntil(Reference iBoundary,Reference iToExtrapol,Reference
+                iUntil) As HybridShapeExtrapol
+                    Creates a new Extrapol (until an element) within the current
+                    body.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iBoundary
-                |             Boundary point of curve to extrapolate or boundary curve of surface
-                |             to extrapolate.
-                |             Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
-                |             and BiDimFeatEdge.
-                |         iToExtrapol
-                |             Curve or surface to extrapolate.
-                |             Sub-element(s) supported (see Boundary object): see Face,
-                |             TriDimFeatEdge and BiDimFeatEdge.
-                |         iUntil
-                |             Extrapolation limit surface.
-                |         oExtrapol
-                |             Created Extrapolation.
+                        iBoundary
+                            Boundary point of curve to extrapolate or boundary curve of surface
+                            to extrapolate.
+                            Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
+                            and BiDimFeatEdge.
+                        iToExtrapol
+                            Curve or surface to extrapolate.
+                            Sub-element(s) supported (see Boundary object): see Face,
+                            TriDimFeatEdge and BiDimFeatEdge.
+                        iUntil
+                            Extrapolation limit surface.
+                        oExtrapol
+                            Created Extrapolation.
 
         :param Reference i_boundary:
         :param Reference i_to_extrapol:
@@ -1999,26 +1961,25 @@ class HybridShapeFactory(Factory):
     def add_new_extremum(self, i_objet: Reference, i_dir: HybridShapeDirection, i_min_max: int) -> HybridShapeExtremum:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewExtremum(Reference iObjet,HybridShapeDirection iDir,long iMinMax) As
-                | HybridShapeExtremum
-                |     Creates a new Extremum within the current body.
+                Func AddNewExtremum(Reference iObjet,HybridShapeDirection iDir,long iMinMax) As
+                HybridShapeExtremum
+                    Creates a new Extremum within the current body.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iObjet
-                |             Element onto extremum is computed
+                        iObjet
+                            Element onto extremum is computed
                 |
-                |             Sub-element(s) supported (see Boundary object): see TriDimFeatEdge,
-                |             BiDimFeatEdge and Face.
-                |         iDir
-                |             Extremum direction
-                |         iMinMax
-                |             Maximum (GSMMax) or Minimum (GSMMin)
-                |         oExt
-                |             The extremum object if succeded
+                            Sub-element(s) supported (see Boundary object): see TriDimFeatEdge,
+                            BiDimFeatEdge and Face.
+                        iDir
+                            Extremum direction
+                        iMinMax
+                            Maximum (GSMMax) or Minimum (GSMMin)
+                        oExt
+                            The extremum object if succeded
 
         :param Reference i_objet:
         :param HybridShapeDirection i_dir:
@@ -2030,22 +1991,21 @@ class HybridShapeFactory(Factory):
     def add_new_extremum_polar(self, i_type: int, ip_ia_contour: Reference) -> HybridShapeExtremumPolar:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewExtremumPolar(short iType,Reference ipIAContour) As
-                | HybridShapeExtremumPolar
-                |     Creates a new Extremum Polar within the current body.
+                Func AddNewExtremumPolar(short iType,Reference ipIAContour) As
+                HybridShapeExtremumPolar
+                    Creates a new Extremum Polar within the current body.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iType
-                |             Type of extremum polar 0-Min Radius 1-Max Radius 2- Min Angle 3-
-                |             Maximum Angle
-                |         ipIAContour
-                |             Extremum Polar Contour. It should be non convex
-                |         opIAExtPolar
-                |             The extremum polar object if succeded
+                        iType
+                            Type of extremum polar 0-Min Radius 1-Max Radius 2- Min Angle 3-
+                            Maximum Angle
+                        ipIAContour
+                            Extremum Polar Contour. It should be non convex
+                        opIAExtPolar
+                            The extremum polar object if succeded
 
         :param int i_type:
         :param Reference ip_ia_contour:
@@ -2062,30 +2022,29 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeExtrude:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewExtrude(Reference iObjectToExtrude,double iOffsetDebut,double
-                | iOffsetFin,HybridShapeDirection iDirection) As
-                | HybridShapeExtrude
-                |     Creates a new extrude within the current body.
+                Func AddNewExtrude(Reference iObjectToExtrude,double iOffsetDebut,double
+                iOffsetFin,HybridShapeDirection iDirection) As
+                HybridShapeExtrude
+                    Creates a new extrude within the current body.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iObjectToExtrude
-                |             Object to be extruded (point, line ,curve,or face)
+                        iObjectToExtrude
+                            Object to be extruded (point, line ,curve,or face)
                 |
-                |             Sub-element(s) supported (see Boundary object): see
-                |             Boundary.
-                |         iOffsetDebut
-                |             Length value
-                |         iOffsetFin
-                |             Length value ( iOffsetFin has to be larger than
-                |             iOffsetDebut)
-                |         iDirection
-                |             Extrusion direction
-                |         oExtrudeObject
-                |             Extruded result
+                            Sub-element(s) supported (see Boundary object): see
+                            Boundary.
+                        iOffsetDebut
+                            Length value
+                        iOffsetFin
+                            Length value ( iOffsetFin has to be larger than
+                            iOffsetDebut)
+                        iDirection
+                            Extrusion direction
+                        oExtrudeObject
+                            Extruded result
 
         :param Reference i_object_to_extrude:
         :param float i_offset_debut:
@@ -2105,16 +2064,15 @@ class HybridShapeFactory(Factory):
     def add_new_fill(self) -> HybridShapeFill:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewFill() As HybridShapeFill
-                |     Creates a new Fill within the current body.
+                Func AddNewFill() As HybridShapeFill
+                    Creates a new Fill within the current body.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oFill
-                |             Fill object
+                        oFill
+                            Fill object
 
         :return: HybridShapeFill
         """
@@ -2131,37 +2089,36 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeFilletBiTangent:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewFilletBiTangent(Reference iElement1,Reference iElement2,double
-                | iRadius,long iOrientation1,long iOrientation2,long iSupportsTrimMode,long
-                | iRibbonRelimitationMode) As HybridShapeFilletBiTangent
-                |     Creates a new a sphere bitangent fillet between two skins.
+                Func AddNewFilletBiTangent(Reference iElement1,Reference iElement2,double
+                iRadius,long iOrientation1,long iOrientation2,long iSupportsTrimMode,long
+                iRibbonRelimitationMode) As HybridShapeFilletBiTangent
+                    Creates a new a sphere bitangent fillet between two skins.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iElement1
-                |             First support of fillet.
-                |             Sub-element(s) supported (see Boundary object): see
-                |             Face.
-                |         iElement2
-                |             Second support of fillet.
-                |             Sub-element(s) supported (see Boundary object): see
-                |             Face.
-                |         iRadius
-                |             Radius of the fillet.
-                |         iOrientation1
-                |             Manage the fillet center position.
-                |         iOrientation2
-                |             Manage the fillet center position.
-                |         iSupportsTrimMode
-                |             The 2 supports can be trimmed and assembled with the fillet. Value
-                |             can be 0 (No trim ) or 1 (Trim)
-                |         iRibbonRelimitationMode
-                |             Manage the relimition of fillet extremities. Value can be : 0 (Smooth), 1 (Straight), 2 (Maximum) or 3 (Minimum)
-                |         oFillet
-                |             Created fillet.
+                        iElement1
+                            First support of fillet.
+                            Sub-element(s) supported (see Boundary object): see
+                            Face.
+                        iElement2
+                            Second support of fillet.
+                            Sub-element(s) supported (see Boundary object): see
+                            Face.
+                        iRadius
+                            Radius of the fillet.
+                        iOrientation1
+                            Manage the fillet center position.
+                        iOrientation2
+                            Manage the fillet center position.
+                        iSupportsTrimMode
+                            The 2 supports can be trimmed and assembled with the fillet. Value
+                            can be 0 (No trim ) or 1 (Trim)
+                        iRibbonRelimitationMode
+                            Manage the relimition of fillet extremities. Value can be : 0 (Smooth), 1 (Straight), 2 (Maximum) or 3 (Minimum)
+                        oFillet
+                            Created fillet.
 
         :param Reference i_element1:
         :param Reference i_element2:
@@ -2193,42 +2150,41 @@ class HybridShapeFactory(Factory):
             i_ribbon_relimitation_mode: int) -> HybridShapeFilletTriTangent:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewFilletTriTangent(Reference iElement1,Reference iElement2,Reference
-                | iRemoveElem,long iOrientation1,long iOrientation2,long iRemoveOrientation,long
-                | iSupportsTrimMode,long iRibbonRelimitationMode) As
-                | HybridShapeFilletTriTangent
-                |     Creates a new a tritangent fillet between three skins.
+                Func AddNewFilletTriTangent(Reference iElement1,Reference iElement2,Reference
+                iRemoveElem,long iOrientation1,long iOrientation2,long iRemoveOrientation,long
+                iSupportsTrimMode,long iRibbonRelimitationMode) As
+                HybridShapeFilletTriTangent
+                    Creates a new a tritangent fillet between three skins.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iElement1
-                |             First support of fillet.
-                |             Sub-element(s) supported (see Boundary object): see
-                |             Face.
-                |         iElement2
-                |             Second support of fillet.
-                |             Sub-element(s) supported (see Boundary object): see
-                |             Face.
-                |         iRemoveElem
-                |             Support to remove of fillet.
-                |             Sub-element(s) supported (see Boundary object): see
-                |             Face.
-                |         iOrientation1
-                |             Manage the fillet center position.
-                |         iOrientation2
-                |             Manage the fillet center position.
-                |         iRemoveOrientation
-                |             Manage the fillet center position.
-                |         iSupportsTrimMode
-                |             The 2 supports can be trimmed and assembled with the fillet. Value
-                |             can be 0 (No trim ) or 1 (Trim)
-                |         iRibbonRelimitationMode
-                |             Manage the relimition of fillet extremities. Value can be : 0 (Smooth), 1 (Straight), 2 (Maximum) or 3 (Minimum)
-                |         oFillet
-                |             Created fillet.
+                        iElement1
+                            First support of fillet.
+                            Sub-element(s) supported (see Boundary object): see
+                            Face.
+                        iElement2
+                            Second support of fillet.
+                            Sub-element(s) supported (see Boundary object): see
+                            Face.
+                        iRemoveElem
+                            Support to remove of fillet.
+                            Sub-element(s) supported (see Boundary object): see
+                            Face.
+                        iOrientation1
+                            Manage the fillet center position.
+                        iOrientation2
+                            Manage the fillet center position.
+                        iRemoveOrientation
+                            Manage the fillet center position.
+                        iSupportsTrimMode
+                            The 2 supports can be trimmed and assembled with the fillet. Value
+                            can be 0 (No trim ) or 1 (Trim)
+                        iRibbonRelimitationMode
+                            Manage the relimition of fillet extremities. Value can be : 0 (Smooth), 1 (Straight), 2 (Maximum) or 3 (Minimum)
+                        oFillet
+                            Created fillet.
 
         :param Reference i_element1:
         :param Reference i_element2:
@@ -2249,19 +2205,18 @@ class HybridShapeFactory(Factory):
     def add_new_healing(self, i_body_toheal: Reference) -> HybridShapeHealing:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewHealing(Reference iBodyToheal) As
-                | HybridShapeHealing
-                |     Creates a new healing within the current body.
+                Func AddNewHealing(Reference iBodyToheal) As
+                HybridShapeHealing
+                    Creates a new healing within the current body.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iBodyToHeal
-                |             The body to heal
-                |         oHealing
-                |             The created healing
+                        iBodyToHeal
+                            The body to heal
+                        oHealing
+                            The created healing
 
         :param Reference i_body_toheal:
         :return: HybridShapeHealing
@@ -2282,45 +2237,44 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeHelix:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewHelix(Reference iAxis,boolean iInvertAxis,Reference
-                | iStartingPoint,double iPitch,double iHeight,boolean iClockwiseRevolution,double
-                | iStartingAngle,double iTaperAngle,boolean iTaperOutward) As
-                | HybridShapeHelix
-                |     Creates a new Helix within the current body.
+                Func AddNewHelix(Reference iAxis,boolean iInvertAxis,Reference
+                iStartingPoint,double iPitch,double iHeight,boolean iClockwiseRevolution,double
+                iStartingAngle,double iTaperAngle,boolean iTaperOutward) As
+                HybridShapeHelix
+                    Creates a new Helix within the current body.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iAxis
-                |             The helix axis (always a line).
-                |             Sub-element(s) supported (see Boundary object): see
-                |             RectilinearTriDimFeatEdge and
-                |             RectilinearBiDimFeatEdge.
-                |         iInvertAxis
-                |         iStartingPoint
-                |             Starting Point.
-                |             Sub-element(s) supported (see Boundary object): see
-                |             Vertex.
-                |         iPitch
-                |             Pitch.
-                |         iHeight
-                |             Helix height.
-                |         iClockwiseRevolution
-                |             Revolutions are clockwise if TRUE, counterclockwise if
-                |             FALSE.
-                |         iStartingAngle
-                |             Starting angle from starting point measured on the helix itself. If
-                |             no starting angle is wanted, set it to 0.0.
-                |         iTaperAngle
-                |             0 <= Taper Angle < Pi/2 If no taper angle is wanted, set it to 0.0
-                |             (constant helix radius).
-                |         iTaperOutward
-                |             Helix radius increases if TRUE, decreases if
-                |             FALSE.
-                |         oHelix
-                |             The Helix object if succeded
+                        iAxis
+                            The helix axis (always a line).
+                            Sub-element(s) supported (see Boundary object): see
+                            RectilinearTriDimFeatEdge and
+                            RectilinearBiDimFeatEdge.
+                        iInvertAxis
+                        iStartingPoint
+                            Starting Point.
+                            Sub-element(s) supported (see Boundary object): see
+                            Vertex.
+                        iPitch
+                            Pitch.
+                        iHeight
+                            Helix height.
+                        iClockwiseRevolution
+                            Revolutions are clockwise if TRUE, counterclockwise if
+                            FALSE.
+                        iStartingAngle
+                            Starting angle from starting point measured on the helix itself. If
+                            no starting angle is wanted, set it to 0.0.
+                        iTaperAngle
+                            0 <= Taper Angle < Pi/2 If no taper angle is wanted, set it to 0.0
+                            (constant helix radius).
+                        iTaperOutward
+                            Helix radius increases if TRUE, decreases if
+                            FALSE.
+                        oHelix
+                            The Helix object if succeded
 
         :param Reference i_axis:
         :param bool i_invert_axis:
@@ -2354,27 +2308,26 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeScaling:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewHybridScaling(Reference iElemToScale,Reference iCenter,double
-                | iRatio) As HybridShapeScaling
-                |     Creates a new scaling within the current body.
+                Func AddNewHybridScaling(Reference iElemToScale,Reference iCenter,double
+                iRatio) As HybridShapeScaling
+                    Creates a new scaling within the current body.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iElemToScale
-                |             Point, curve, surface or solid to transform.
-                |             Sub-element(s) supported (see Boundary object): see Face,
-                |             TriDimFeatEdge, BiDimFeatEdge and Vertex.
-                |         iCenter
-                |             Reference point or reference plane.
-                |             Sub-element(s) supported (see Boundary object): see PlanarFace and
-                |             Vertex.
-                |         iRatio
-                |             Scaling ratio.
-                |         oScaling
-                |             Created scaling.
+                        iElemToScale
+                            Point, curve, surface or solid to transform.
+                            Sub-element(s) supported (see Boundary object): see Face,
+                            TriDimFeatEdge, BiDimFeatEdge and Vertex.
+                        iCenter
+                            Reference point or reference plane.
+                            Sub-element(s) supported (see Boundary object): see PlanarFace and
+                            Vertex.
+                        iRatio
+                            Scaling ratio.
+                        oScaling
+                            Created scaling.
 
         :param Reference i_elem_to_scale:
         :param Reference i_center:
@@ -2397,28 +2350,27 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeSplit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewHybridSplit(Reference iElement1,Reference iElement2,long
-                | iOrientation) As HybridShapeSplit
-                |     Creates a new Split within the current body.
+                Func AddNewHybridSplit(Reference iElement1,Reference iElement2,long
+                iOrientation) As HybridShapeSplit
+                    Creates a new Split within the current body.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iElement1
-                |             The feature to cut (curve or surface).
-                |             Sub-element(s) supported (see Boundary object): see Face,
-                |             TriDimFeatEdge and BiDimFeatEdge.
-                |         iElement2
-                |             The cutting feature (point, curve, surface).
-                |             Sub-element(s) supported (see Boundary object): see Face,
-                |             TriDimFeatEdge, BiDimFeatEdge and Vertex.
-                |         iOrientation
-                |             Manage the kept side of the feature to cut (value can be 1 or
-                |             -1)
-                |         oSplit
-                |             Created split
+                        iElement1
+                            The feature to cut (curve or surface).
+                            Sub-element(s) supported (see Boundary object): see Face,
+                            TriDimFeatEdge and BiDimFeatEdge.
+                        iElement2
+                            The cutting feature (point, curve, surface).
+                            Sub-element(s) supported (see Boundary object): see Face,
+                            TriDimFeatEdge, BiDimFeatEdge and Vertex.
+                        iOrientation
+                            Manage the kept side of the feature to cut (value can be 1 or
+                            -1)
+                        oSplit
+                            Created split
 
         :param Reference i_element1:
         :param Reference i_element2:
@@ -2442,29 +2394,28 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeTrim:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewHybridTrim(Reference iElement1,long iOrientation1,Reference
-                | iElement2,long iOrientation2) As HybridShapeTrim
-                |     Creates a new Trim within the current body by cutting and joining two
-                |     elements.
-                |     You can trim a surface by a surface or a curve by a curve.
+                Func AddNewHybridTrim(Reference iElement1,long iOrientation1,Reference
+                iElement2,long iOrientation2) As HybridShapeTrim
+                    Creates a new Trim within the current body by cutting and joining two
+                    elements.
+                    You can trim a surface by a surface or a curve by a curve.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iElement1
-                |             The feature to trim (curve or surface).
-                |         iOrientation1
-                |             Manage the kept side of iElement1 (value can be 1 or
-                |             -1).
-                |         iElement2
-                |             The second feature to trim (curve or surface).
-                |         iOrientation2
-                |             Manage the kept side of iElement2 (value can be 1 or
-                |             -1).
-                |         oTrim
-                |             Created trim.
+                        iElement1
+                            The feature to trim (curve or surface).
+                        iOrientation1
+                            Manage the kept side of iElement1 (value can be 1 or
+                            -1).
+                        iElement2
+                            The second feature to trim (curve or surface).
+                        iOrientation2
+                            Manage the kept side of iElement2 (value can be 1 or
+                            -1).
+                        oTrim
+                            Created trim.
 
         :param Reference i_element1:
         :param int i_orientation1:
@@ -2484,17 +2435,16 @@ class HybridShapeFactory(Factory):
     def add_new_integrated_law(self, i_type: int) -> HybridShapeIntegratedLaw:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewIntegratedLaw(long iType) As
-                | HybridShapeIntegratedLaw
-                |     Creates Integrated Law.
+                Func AddNewIntegratedLaw(long iType) As
+                HybridShapeIntegratedLaw
+                    Creates Integrated Law.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iType
-                |             Type of law = 0 : None = 1 : Constant = 2 : Linear = 3 : SType = 4 : Advanced = 5 : Implicit
+                        iType
+                            Type of law = 0 : None = 1 : Constant = 2 : Linear = 3 : SType = 4 : Advanced = 5 : Implicit
 
         :param int i_type:
         :return: HybridShapeIntegratedLaw
@@ -2508,27 +2458,26 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeIntersection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewIntersection(Reference iObject1,Reference iObject2) As
-                | HybridShapeIntersection
-                |     Creates a new Intersection within the current body.
+                Func AddNewIntersection(Reference iObject1,Reference iObject2) As
+                HybridShapeIntersection
+                    Creates a new Intersection within the current body.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iObject1
-                |             First element ( line, curve, plane, surface.
-                |             Sub-element(s) supported (see Boundary object): see Face,
-                |             RectilinearTriDimFeatEdge and
-                |             RectilinearBiDimFeatEdge.
-                |         iObject2
-                |             Second element ( line , curve, plane, surface.
-                |             Sub-element(s) supported (see Boundary object): see Face,
-                |             RectilinearTriDimFeatEdge and
-                |             RectilinearBiDimFeatEdge.
-                |         oIntersection
-                |             Intersection
+                        iObject1
+                            First element ( line, curve, plane, surface.
+                            Sub-element(s) supported (see Boundary object): see Face,
+                            RectilinearTriDimFeatEdge and
+                            RectilinearBiDimFeatEdge.
+                        iObject2
+                            Second element ( line , curve, plane, surface.
+                            Sub-element(s) supported (see Boundary object): see Face,
+                            RectilinearTriDimFeatEdge and
+                            RectilinearBiDimFeatEdge.
+                        oIntersection
+                            Intersection
 
         :param Reference i_object1:
         :param Reference i_object2:
@@ -2544,22 +2493,21 @@ class HybridShapeFactory(Factory):
     def add_new_inverse(self, element: Reference, inverse: int) -> HybridShapeInverse:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewInverse(Reference Element,long Inverse) As
-                | HybridShapeInverse
-                |     Creates a new Inverse within the current body.
+                Func AddNewInverse(Reference Element,long Inverse) As
+                HybridShapeInverse
+                    Creates a new Inverse within the current body.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iElement
-                |             The objet to inverse
-                |         iInverse
-                |             the type of inversion (see CATGSMOrientation.h) 1 for no inversion
-                |             -1 for inversion
-                |         oInv
-                |             The inverted object
+                        iElement
+                            The objet to inverse
+                        iInverse
+                            the type of inversion (see CATGSMOrientation.h) 1 for no inversion
+                            -1 for inversion
+                        oInv
+                            The inverted object
 
         :param Reference element:
         :param int inverse:
@@ -2570,28 +2518,27 @@ class HybridShapeFactory(Factory):
     def add_new_join(self, element1: Reference, element2: Reference) -> HybridShapeAssemble:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewJoin(Reference Element1,Reference Element2) As
-                | HybridShapeAssemble
-                |     Creates a new Join within the current body.
+                Func AddNewJoin(Reference Element1,Reference Element2) As
+                HybridShapeAssemble
+                    Creates a new Join within the current body.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iElement1
-                |             First element to join ( curve or surface.
-                |             Sub-element(s) supported (see Boundary object): see Face,
-                |             TriDimFeatEdge and BiDimFeatEdge.
-                |         iElement2
-                |             Second element to join ( same type of the first
-                |             element)
+                        iElement1
+                            First element to join ( curve or surface.
+                            Sub-element(s) supported (see Boundary object): see Face,
+                            TriDimFeatEdge and BiDimFeatEdge.
+                        iElement2
+                            Second element to join ( same type of the first
+                            element)
                 |
-                |             Sub-element(s) supported (see Boundary object): see Face,
-                |             TriDimFeatEdge and BiDimFeatEdge.
-                |         oExt
-                |             Join result The default value used to join element is
-                |             0.001mm
+                            Sub-element(s) supported (see Boundary object): see Face,
+                            TriDimFeatEdge and BiDimFeatEdge.
+                        oExt
+                            Join result The default value used to join element is
+                            0.001mm
 
         :param Reference element1:
         :param Reference element2:
@@ -2602,26 +2549,25 @@ class HybridShapeFactory(Factory):
     def add_new_law_dist_proj(self, i_reference: Reference, i_definition: Reference) -> HybridShapeLawDistProj:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewLawDistProj(Reference iReference,Reference iDefinition) As
-                | HybridShapeLawDistProj
-                |     Creates a new law within the current body.
+                Func AddNewLawDistProj(Reference iReference,Reference iDefinition) As
+                HybridShapeLawDistProj
+                    Creates a new law within the current body.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iReference
-                |             Reference line of the law.
-                |             Sub-element(s) supported (see Boundary object): see
-                |             RectilinearTriDimFeatEdge and
-                |             RectilinearBiDimFeatEdge.
-                |         iDefinition
-                |             Definition curve of the law.
-                |             Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
-                |             and BiDimFeatEdge.
-                |         oLaw
-                |             The Law object if succeded
+                        iReference
+                            Reference line of the law.
+                            Sub-element(s) supported (see Boundary object): see
+                            RectilinearTriDimFeatEdge and
+                            RectilinearBiDimFeatEdge.
+                        iDefinition
+                            Definition curve of the law.
+                            Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
+                            and BiDimFeatEdge.
+                        oLaw
+                            The Law object if succeded
 
         :param Reference i_reference:
         :param Reference i_definition:
@@ -2642,42 +2588,41 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLineAngle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewLineAngle(Reference iCurve,Reference iSurface,Reference
-                | iPoint,boolean iGeodesic,double iBeginOffset,double iEndOffset,double
-                | iAngle,boolean iOrientation) As HybridShapeLineAngle
-                |     Creates a new angle line within the current body.
+                Func AddNewLineAngle(Reference iCurve,Reference iSurface,Reference
+                iPoint,boolean iGeodesic,double iBeginOffset,double iEndOffset,double
+                iAngle,boolean iOrientation) As HybridShapeLineAngle
+                    Creates a new angle line within the current body.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iCurve
-                |             Reference curve.
-                |             Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
-                |             and BiDimFeatEdge.
-                |         iSurface
-                |             Reference surface.
-                |             Sub-element(s) supported (see Boundary object): see
-                |             Face.
-                |         iPoint
-                |             reference point.
-                |             Sub-element(s) supported (see Boundary object): see
-                |             Vertex.
-                |         iGeodesic
-                |             Puts the line on the surface
-                |         iBeginOffset
-                |             start offset
-                |         iEndOffset
-                |             end offset
-                |         iAngle
-                |             angle to reference curve
-                |         iOrientation
-                |             Orientation allows to reverse the line direction from the reference
-                |             point. For a line of L length, it is the same as creating this line with -L
-                |             length.
-                |         oLine
-                |             Created line
+                        iCurve
+                            Reference curve.
+                            Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
+                            and BiDimFeatEdge.
+                        iSurface
+                            Reference surface.
+                            Sub-element(s) supported (see Boundary object): see
+                            Face.
+                        iPoint
+                            reference point.
+                            Sub-element(s) supported (see Boundary object): see
+                            Vertex.
+                        iGeodesic
+                            Puts the line on the surface
+                        iBeginOffset
+                            start offset
+                        iEndOffset
+                            end offset
+                        iAngle
+                            angle to reference curve
+                        iOrientation
+                            Orientation allows to reverse the line direction from the reference
+                            point. For a line of L length, it is the same as creating this line with -L
+                            length.
+                        oLine
+                            Created line
 
         :param Reference i_curve:
         :param Reference i_surface:
@@ -2706,45 +2651,55 @@ class HybridShapeFactory(Factory):
             self,
             i_curve1: Reference,
             i_element2: Reference,
-            i_support: Reference
+            i_support: Reference | VBANothing
     ) -> HybridShapeLineBiTangent:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewLineBiTangent(Reference iCurve1,Reference iElement2,Reference
-                | iSupport) As HybridShapeLineBiTangent
-                |     Creates a new bitangent line within the current body.
+                Func AddNewLineBiTangent(Reference iCurve1,Reference iElement2,Reference
+                iSupport) As HybridShapeLineBiTangent
+                    Creates a new bitangent line within the current body.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iCurve1
-                |             First tangency curve lying on the support surface.
-                |             Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
-                |             and BiDimFeatEdge.
-                |         iCurve2
-                |             Second tangency element (point, curve) lying on the support
-                |             surface.
-                |             Sub-element(s) supported (see Boundary object): see TriDimFeatEdge,
-                |             BiDimFeatEdge and Vertex.
-                |         iSupport
-                |             The support surface of the two elements.
-                |             Sub-element(s) supported (see Boundary object): see
-                |             Face.
-                |         oLine
-                |             Created line
+                        iCurve1
+                            First tangency curve lying on the support surface.
+                            Sub-element(s) supported (see Boundary object): see TriDimFeatEdge
+                            and BiDimFeatEdge.
+                        iCurve2
+                            Second tangency element (point, curve) lying on the support
+                            surface.
+                            Sub-element(s) supported (see Boundary object): see TriDimFeatEdge,
+                            BiDimFeatEdge and Vertex.
+                        iSupport
+                            The support surface of the two elements.
+                            Sub-element(s) supported (see Boundary object): see
+                            Face.
+                        oLine
+                            Created line
 
         :param Reference i_curve1:
         :param Reference i_element2:
         :param Reference i_support:
         :return: HybridShapeLineBiTangent
         """
+
+        if isinstance(i_support, VBANothing):
+            i_support = self.application.system_service.evaluate(
+                vba_nothing,
+                CATScriptLanguage.CATVBScriptLanguage,
+                'N',
+                []
+            )
+        else:
+            i_support = i_support.com_object
+
         return HybridShapeLineBiTangent(
             self.com_object.AddNewLineBiTangent(
                 i_curve1.com_object,
                 i_element2.com_object,
-                i_support.com_object
+                i_support
             )
         )
 
@@ -2758,36 +2713,35 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLineBisecting:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewLineBisecting(Reference iLine1,Reference iLine2,double
-                | iBeginOffset,double iEndOffset,boolean iOrientation,long SolutionNb) As
-                | HybridShapeLineBisecting
-                |     Creates a new bisecting line within the current body.
+                Func AddNewLineBisecting(Reference iLine1,Reference iLine2,double
+                iBeginOffset,double iEndOffset,boolean iOrientation,long SolutionNb) As
+                HybridShapeLineBisecting
+                    Creates a new bisecting line within the current body.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iLine1
-                |             First line.
-                |             Sub-element(s) supported (see Boundary object): see
-                |             RectilinearTriDimFeatEdge and
-                |             RectilinearBiDimFeatEdge.
-                |         iLine2
-                |             Second line.
-                |             Sub-element(s) supported (see Boundary object): see
-                |             RectilinearTriDimFeatEdge and
-                |             RectilinearBiDimFeatEdge.
-                |         iBeginOffset
-                |             start offset
-                |         iEndOffset
-                |             end offset
-                |         iOrientation
-                |             Orientation allows to reverse the line direction from the reference
-                |             point. For a line of L length, it is the same as creating this line with -L
-                |             length.
-                |         oLine
-                |             Created line
+                        iLine1
+                            First line.
+                            Sub-element(s) supported (see Boundary object): see
+                            RectilinearTriDimFeatEdge and
+                            RectilinearBiDimFeatEdge.
+                        iLine2
+                            Second line.
+                            Sub-element(s) supported (see Boundary object): see
+                            RectilinearTriDimFeatEdge and
+                            RectilinearBiDimFeatEdge.
+                        iBeginOffset
+                            start offset
+                        iEndOffset
+                            end offset
+                        iOrientation
+                            Orientation allows to reverse the line direction from the reference
+                            point. For a line of L length, it is the same as creating this line with -L
+                            length.
+                        oLine
+                            Created line
 
         :param Reference i_line1:
         :param Reference i_line2:
@@ -2819,41 +2773,40 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLineBisecting:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewLineBisectingOnSupport(Reference iLine1,Reference iLine2,Reference
-                | iSurface,double iBeginOffset,double iEndOffset,boolean iOrientation,long
-                | SolutionNb) As HybridShapeLineBisecting
-                |     Creates a new bisecting line on a support within the current
-                |     body.
+                Func AddNewLineBisectingOnSupport(Reference iLine1,Reference iLine2,Reference
+                iSurface,double iBeginOffset,double iEndOffset,boolean iOrientation,long
+                SolutionNb) As HybridShapeLineBisecting
+                    Creates a new bisecting line on a support within the current
+                    body.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iLine1
-                |             First line.
-                |             Sub-element(s) supported (see Boundary object): see
-                |             RectilinearTriDimFeatEdge and
-                |             RectilinearBiDimFeatEdge.
-                |         iLine2
-                |             Second line.
-                |             Sub-element(s) supported (see Boundary object): see
-                |             RectilinearTriDimFeatEdge and
-                |             RectilinearBiDimFeatEdge.
-                |         iSurface
-                |             Reference surface.
-                |             Sub-element(s) supported (see Boundary object): see
-                |             Face.
-                |         iBeginOffset
-                |             start offset
-                |         iEndOffset
-                |             end offset
-                |         iOrientation
-                |             Orientation allows to reverse the line direction from the reference
-                |             point. For a line of L length, it is the same as creating this line with -L
-                |             length.
-                |         oLine
-                |             Created line
+                        iLine1
+                            First line.
+                            Sub-element(s) supported (see Boundary object): see
+                            RectilinearTriDimFeatEdge and
+                            RectilinearBiDimFeatEdge.
+                        iLine2
+                            Second line.
+                            Sub-element(s) supported (see Boundary object): see
+                            RectilinearTriDimFeatEdge and
+                            RectilinearBiDimFeatEdge.
+                        iSurface
+                            Reference surface.
+                            Sub-element(s) supported (see Boundary object): see
+                            Face.
+                        iBeginOffset
+                            start offset
+                        iEndOffset
+                            end offset
+                        iOrientation
+                            Orientation allows to reverse the line direction from the reference
+                            point. For a line of L length, it is the same as creating this line with -L
+                            length.
+                        oLine
+                            Created line
 
         :param Reference i_line1:
         :param Reference i_line2:
@@ -2888,46 +2841,45 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLineBisecting:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewLineBisectingOnSupportWithPoint(Reference iLine1,Reference
-                | iLine2,Reference iRefPoint,Reference iSurface,double iBeginOffset,double
-                | iEndOffset,boolean iOrientation,long SolutionNb) As
-                | HybridShapeLineBisecting
-                |     Creates a new bisecting line on a support with a atarting point within the
-                |     current body.
+                Func AddNewLineBisectingOnSupportWithPoint(Reference iLine1,Reference
+                iLine2,Reference iRefPoint,Reference iSurface,double iBeginOffset,double
+                iEndOffset,boolean iOrientation,long SolutionNb) As
+                HybridShapeLineBisecting
+                    Creates a new bisecting line on a support with a atarting point within the
+                    current body.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iLine1
-                |             First line.
-                |             Sub-element(s) supported (see Boundary object): see
-                |             RectilinearTriDimFeatEdge and
-                |             RectilinearBiDimFeatEdge.
-                |         iLine2
-                |             Second line.
-                |             Sub-element(s) supported (see Boundary object): see
-                |             RectilinearTriDimFeatEdge and
-                |             RectilinearBiDimFeatEdge.
-                |         iRefPoint
-                |             Starting point of the bisecting line.
-                |             Sub-element(s) supported (see Boundary object): see
-                |             Vertex.
-                |         iSurface
-                |             Reference surface.
-                |             Sub-element(s) supported (see Boundary object): see
-                |             Face.
-                |         iBeginOffset
-                |             start offset
-                |         iEndOffset
-                |             end offset
-                |         iOrientation
-                |             Orientation allows to reverse the line direction from the reference
-                |             point. For a line of L length, it is the same as creating this line with -L
-                |             length.
-                |         oLine
-                |             Created line
+                        iLine1
+                            First line.
+                            Sub-element(s) supported (see Boundary object): see
+                            RectilinearTriDimFeatEdge and
+                            RectilinearBiDimFeatEdge.
+                        iLine2
+                            Second line.
+                            Sub-element(s) supported (see Boundary object): see
+                            RectilinearTriDimFeatEdge and
+                            RectilinearBiDimFeatEdge.
+                        iRefPoint
+                            Starting point of the bisecting line.
+                            Sub-element(s) supported (see Boundary object): see
+                            Vertex.
+                        iSurface
+                            Reference surface.
+                            Sub-element(s) supported (see Boundary object): see
+                            Face.
+                        iBeginOffset
+                            start offset
+                        iEndOffset
+                            end offset
+                        iOrientation
+                            Orientation allows to reverse the line direction from the reference
+                            point. For a line of L length, it is the same as creating this line with -L
+                            length.
+                        oLine
+                            Created line
 
         :param Reference i_line1:
         :param Reference i_line2:
@@ -2964,36 +2916,35 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLineBisecting:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Func AddNewLineBisectingWithPoint(Reference iLine1,Reference iLine2,Reference
-                | iRefPoint,double iBeginOffset,double iEndOffset,boolean iOrientation,long
-                | SolutionNb) As HybridShapeLineBisecting
-                |     Creates a new bisecting line with a starting point within the current
-                |     body.
+                Func AddNewLineBisectingWithPoint(Reference iLine1,Reference iLine2,Reference
+                iRefPoint,double iBeginOffset,double iEndOffset,boolean iOrientation,long
+                SolutionNb) As HybridShapeLineBisecting
+                    Creates a new bisecting line with a starting point within the current
+                    body.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iLine1
-                |             First line.
-                |             Sub-element(s) supported (see Boundary object): see
-                |             RectilinearTriDimFeatEdge and
-                |             RectilinearBiDimFeatEdge.
-                |         iLine2
-                |             Second line.
-                |             Sub-element(s) supported (see Boundary object): see
-                |             RectilinearTriDimFeatEdge and
-                |             RectilinearBiDimFeatEdge.
-                |         iRefPoint
-                |             Starting point of the bisecting line.
-                |             Sub-element(s) supported (see Boundary object): see
-                |             Vertex.
-                |         iBeginOffset
-                |             start offset
-                |         iEndOffset
-                |             end offset
-                |         iOrientation
+                        iLine1
+                            First line.
+                            Sub-element(s) supported (see Boundary object): see
+                            RectilinearTriDimFeatEdge and
+                            RectilinearBiDimFeatEdge.
+                        iLine2
+                            Second line.
+                            Sub-element(s) supported (see Boundary object): see
+                            RectilinearTriDimFeatEdge and
+                            RectilinearBiDimFeatEdge.
+                        iRefPoint
+                            Starting point of the bisecting line.
+                            Sub-element(s) supported (see Boundary object): see
+                            Vertex.
+                        iBeginOffset
+                            start offset
+                        iEndOffset
+                            end offset
+                        iOrientation
                 |             Orientation allows to reverse the line direction from the reference
                 |             point. For a line of L length, it is the same as creating this line with -L
                 |             length.
@@ -3024,7 +2975,6 @@ class HybridShapeFactory(Factory):
     def add_new_line_datum(self, i_object: Reference) -> HybridShapeLineExplicit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLineDatum(Reference iObject) As
@@ -3056,7 +3006,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLineNormal:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLineNormal(Reference iSurface,Reference iPoint,double
@@ -3112,7 +3061,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLinePtDir:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLinePtDir(Reference iPt,HybridShapeDirection iDirection,double
@@ -3168,7 +3116,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLinePtDir:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLinePtDirOnSupport(Reference iPt,HybridShapeDirection
@@ -3227,7 +3174,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLinePtPt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLinePtPt(Reference iPtOrigine,Reference iPtExtremite) As
@@ -3267,7 +3213,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLinePtPt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLinePtPtExtended(Reference iPtOrigine,Reference iPtExtremite,double
@@ -3314,7 +3259,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLinePtPt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLinePtPtOnSupport(Reference iPtOrigine,Reference
@@ -3362,7 +3306,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLinePtPt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLinePtPtOnSupportExtended(Reference iPtOrigine,Reference
@@ -3419,7 +3362,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLineTangency:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLineTangency(Reference iCurve,Reference iPoint,double
@@ -3475,7 +3417,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLineTangency:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLineTangencyOnSupport(Reference iCurve,Reference iPoint,Reference
@@ -3529,7 +3470,6 @@ class HybridShapeFactory(Factory):
     def add_new_loft(self) -> HybridShapeLoft:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLoft() As HybridShapeLoft
@@ -3551,7 +3491,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeMidSurface:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewMidSurface(Reference iSupport,long iCreationMode,double iThreshold)
@@ -3591,7 +3530,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeMidSurface:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewMidSurfaceWithAutoThreshold(Reference iSupport,long
@@ -3631,7 +3569,6 @@ class HybridShapeFactory(Factory):
     def add_new_near(self, multi_element: Reference, reference_element: Reference) -> HybridShapeNear:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewNear(Reference MultiElement,Reference ReferenceElement) As
@@ -3668,7 +3605,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeOffset:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewOffset(Reference iObjectToOffset,double iOffset,boolean
@@ -3709,7 +3645,6 @@ class HybridShapeFactory(Factory):
     def add_new_plane1_curve(self, i_planar_curve: Reference) -> HybridShapePlane1Curve:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPlane1Curve(Reference iPlanarCurve) As
@@ -3734,7 +3669,6 @@ class HybridShapeFactory(Factory):
     def add_new_plane1_line1_pt(self, i_ln: Reference, i_pt: Reference) -> HybridShapePlane1Line1Pt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPlane1Line1Pt(Reference iLn,Reference iPt) As
@@ -3765,7 +3699,6 @@ class HybridShapeFactory(Factory):
     def add_new_plane2_lines(self, i_ln1: Reference, i_ln2: Reference) -> HybridShapePlane2Lines:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPlane2Lines(Reference iLn1,Reference iLn2) As
@@ -3797,7 +3730,6 @@ class HybridShapeFactory(Factory):
     def add_new_plane3_points(self, i_pt1: Reference, i_pt2: Reference, i_pt3: Reference) -> HybridShapePlane3Points:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPlane3Points(Reference iPt1,Reference iPt2,Reference iPt3) As
@@ -3841,7 +3773,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePlaneAngle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPlaneAngle(Reference iPlane,Reference iRevolAxis,double
@@ -3893,7 +3824,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePlaneBetween:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPlaneBetween(Reference iPlane1,Reference iPlane2,double iRatio,long
@@ -3936,7 +3866,6 @@ class HybridShapeFactory(Factory):
     def add_new_plane_datum(self, i_object: Reference) -> HybridShapePlaneExplicit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPlaneDatum(Reference iObject) As
@@ -3966,7 +3895,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePlaneEquation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPlaneEquation(double iA_Coeff,double iB_Coeff,double iC_Coeff,double
@@ -4004,7 +3932,6 @@ class HybridShapeFactory(Factory):
     def add_new_plane_mean(self, i_list_of_points: tuple, nb_point: int) -> HybridShapePlaneMean:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPlaneMean(CATSafeArrayVariant iListOfPoints,long NbPoint) As
@@ -4046,7 +3973,6 @@ class HybridShapeFactory(Factory):
     def add_new_plane_normal(self, i_curve: Reference, i_pt: Reference) -> HybridShapePlaneNormal:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPlaneNormal(Reference iCurve,Reference iPt) As
@@ -4075,7 +4001,6 @@ class HybridShapeFactory(Factory):
     def add_new_plane_offset(self, i_plane: Reference, i_offset: float, i_orientation: bool) -> HybridShapePlaneOffset:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPlaneOffset(Reference iPlane,double iOffset,boolean iOrientation) As
@@ -4107,7 +4032,6 @@ class HybridShapeFactory(Factory):
     def add_new_plane_offset_pt(self, i_plane: Reference, i_pt: Reference) -> HybridShapePlaneOffsetPt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPlaneOffsetPt(Reference iPlane,Reference iPt) As
@@ -4138,7 +4062,6 @@ class HybridShapeFactory(Factory):
     def add_new_plane_tangent(self, i_surface: Reference, i_pt: Reference) -> HybridShapePlaneTangent:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPlaneTangent(Reference iSurface,Reference iPt) As
@@ -4172,7 +4095,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePointBetween:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointBetween(Reference iPoint1,Reference iPoint2,double iRatio,long
@@ -4215,7 +4137,6 @@ class HybridShapeFactory(Factory):
     def add_new_point_center(self, i_curve: Reference) -> HybridShapePointCenter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointCenter(Reference iCurve) As
@@ -4240,7 +4161,6 @@ class HybridShapeFactory(Factory):
     def add_new_point_coord(self, i_x: float, i_y: float, i_z: float) -> HybridShapePointCoord:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointCoord(double iX,double iY,double iZ) As
@@ -4274,7 +4194,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePointCoord:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointCoordWithReference(double iX,double iY,double iZ,Reference iPt)
@@ -4308,7 +4227,6 @@ class HybridShapeFactory(Factory):
     def add_new_point_datum(self, i_object: Reference) -> HybridShapePointExplicit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointDatum(Reference iObject) As
@@ -4338,7 +4256,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePointOnCurve:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointOnCurveAlongDirection(Reference iCrv,double iLong,boolean
@@ -4385,7 +4302,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePointOnCurve:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointOnCurveFromDistance(Reference iCrv,double iLong,boolean
@@ -4426,7 +4342,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePointOnCurve:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointOnCurveFromPercent(Reference iCrv,double iLong,boolean
@@ -4464,7 +4379,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePointOnCurve:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointOnCurveWithReferenceAlongDirection(Reference iCrv,Reference
@@ -4516,7 +4430,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePointOnCurve:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointOnCurveWithReferenceFromDistance(Reference iCrv,Reference
@@ -4565,7 +4478,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePointOnCurve:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointOnCurveWithReferenceFromPercent(Reference iCrv,Reference
@@ -4609,7 +4521,6 @@ class HybridShapeFactory(Factory):
     def add_new_point_on_plane(self, i_plane: Reference, i_x: float, i_y: float) -> HybridShapePointOnPlane:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointOnPlane(Reference iPlane,double iX,double iY) As
@@ -4645,7 +4556,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePointOnPlane:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointOnPlaneWithReference(Reference iPlane,Reference iPt,double
@@ -4695,7 +4605,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePointOnSurface:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointOnSurface(Reference iSurface,HybridShapeDirection
@@ -4737,7 +4646,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePointOnSurface:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointOnSurfaceWithReference(Reference iSurface,Reference
@@ -4785,7 +4693,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePointTangent:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointTangent(Reference iCurve,HybridShapeDirection iDirection) As
@@ -4817,7 +4724,6 @@ class HybridShapeFactory(Factory):
     def add_new_polyline(self) -> HybridShapePolyline:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPolyline() As HybridShapePolyline
@@ -4835,7 +4741,6 @@ class HybridShapeFactory(Factory):
     def add_new_position_transform(self, i_mode: int) -> HybridShapePositionTransform:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPositionTransfo(long iMode) As
@@ -4858,7 +4763,6 @@ class HybridShapeFactory(Factory):
     def add_new_project(self, i_element: Reference, i_support: Reference) -> HybridShapeProject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewProject(Reference iElement,Reference iSupport) As
@@ -4894,7 +4798,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeReflectLine:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewReflectLine(Reference iSupport,HybridShapeDirection iDir,double
@@ -4951,7 +4854,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeReflectLine:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewReflectLineWithType(Reference iSupport,HybridShapeDirection
@@ -5015,7 +4917,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeRevol:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewRevol(Reference iObjectToExtrude,double iOffsetDebut,double
@@ -5061,7 +4962,6 @@ class HybridShapeFactory(Factory):
     def add_new_rotate(self, i_to_rotate: Reference, i_axis: Reference, i_angle: float) -> HybridShapeRotate:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewRotate(Reference iToRotate,Reference iAxis,double iAngle) As
@@ -5093,7 +4993,6 @@ class HybridShapeFactory(Factory):
     def add_new_section(self) -> HybridShapeSection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewSection() As HybridShapeSection
@@ -5111,7 +5010,7 @@ class HybridShapeFactory(Factory):
     def add_new_sphere(
             self,
             i_center: Reference,
-            i_axis: Reference,
+            i_axis: Reference | VBANothing,
             i_radius: float,
             i_begin_parallel_angle: float,
             i_end_parallel_angle: float,
@@ -5120,7 +5019,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeSphere:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewSphere(Reference iCenter,Reference iAxis,double iRadius,double
@@ -5158,10 +5056,21 @@ class HybridShapeFactory(Factory):
         :param float i_end_meridian_angle:
         :return: HybridShapeSphere
         """
+
+        if isinstance(i_axis, VBANothing):
+            i_axis = self.application.system_service.evaluate(
+                vba_nothing,
+                CATScriptLanguage.CATVBScriptLanguage,
+                'N',
+                []
+            )
+        else:
+            i_axis = i_axis.com_object
+
         return HybridShapeSphere(
             self.com_object.AddNewSphere(
                 i_center.com_object,
-                i_axis.com_object,
+                i_axis,
                 i_radius,
                 i_begin_parallel_angle,
                 i_end_parallel_angle,
@@ -5172,7 +5081,6 @@ class HybridShapeFactory(Factory):
     def add_new_spine(self) -> HybridShapeSpine:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewSpine() As HybridShapeSpine
@@ -5198,7 +5106,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeSpiral:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewSpiral(long iType,Reference iSupport,Reference
@@ -5247,7 +5154,6 @@ class HybridShapeFactory(Factory):
     def add_new_spline(self) -> HybridShapeSpline:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewSpline() As HybridShapeSpline
@@ -5265,7 +5171,6 @@ class HybridShapeFactory(Factory):
     def add_new_surface_datum(self, i_object: Reference) -> HybridShapeSurfaceExplicit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewSurfaceDatum(Reference iObject) As
@@ -5290,7 +5195,6 @@ class HybridShapeFactory(Factory):
     def add_new_sweep_circle(self, i_guide1: Reference) -> HybridShapeSweepCircle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewSweepCircle(Reference iGuide1) As
@@ -5314,7 +5218,6 @@ class HybridShapeFactory(Factory):
     def add_new_sweep_conic(self, ip_ia_guide1: Reference) -> HybridShapeSweepConic:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewSweepConic(Reference ipIAGuide1) As
@@ -5336,7 +5239,6 @@ class HybridShapeFactory(Factory):
     def add_new_sweep_explicit(self, i_profile: Reference, i_guide: Reference) -> HybridShapeSweepExplicit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewSweepExplicit(Reference iProfile,Reference iGuide) As
@@ -5365,7 +5267,6 @@ class HybridShapeFactory(Factory):
     def add_new_sweep_line(self, i_guide1: Reference) -> HybridShapeSweepLine:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewSweepLine(Reference iGuide1) As
@@ -5387,7 +5288,6 @@ class HybridShapeFactory(Factory):
     def add_new_symmetry(self, i_object: Reference, i_reference: Reference) -> HybridShapeSymmetry:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewSymmetry(Reference iObject,Reference iReference) As
@@ -5416,7 +5316,6 @@ class HybridShapeFactory(Factory):
     def add_new_transfer(self, i_element_to_transfer: Reference, i_type_of_transfer: int) -> HybridShapeTransfer:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewTransfer(Reference iElementToTransfer,long iTypeOfTransfer) As
@@ -5443,7 +5342,6 @@ class HybridShapeFactory(Factory):
                           i_distance: float) -> HybridShapeTranslate:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewTranslate(Reference iElement,HybridShapeDirection iDirection,double
@@ -5479,7 +5377,6 @@ class HybridShapeFactory(Factory):
     def add_new_unfold(self) -> HybridShapeUnfold:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewUnfold() As HybridShapeUnfold
@@ -5498,7 +5395,6 @@ class HybridShapeFactory(Factory):
     def add_new_volume_datum(self, i_object: Reference) -> HybridShapeVolumeExplicit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewVolumeDatum(Reference iObject) As
@@ -5524,7 +5420,6 @@ class HybridShapeFactory(Factory):
     def add_new_wrap_curve(self) -> HybridShapeWrapCurve:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewWrapCurve() As HybridShapeWrapCurve
@@ -5543,7 +5438,6 @@ class HybridShapeFactory(Factory):
     def add_new_wrap_surface(self, i_body_to_deform: Reference) -> HybridShapeWrapSurface:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewWrapSurface(Reference iBodyToDeform) As
@@ -5566,7 +5460,6 @@ class HybridShapeFactory(Factory):
     def change_feature_name(self, i_elem: Reference, name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Sub ChangeFeatureName(Reference iElem,CATBSTR Name)
@@ -5588,7 +5481,6 @@ class HybridShapeFactory(Factory):
     def delete_object_for_datum(self, i_object: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Sub DeleteObjectForDatum(Reference iObject)
@@ -5607,7 +5499,6 @@ class HybridShapeFactory(Factory):
     def gsm_visibility(self, i_elem: Reference, show: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Sub GSMVisibility(Reference iElem,long Show)
@@ -5629,7 +5520,6 @@ class HybridShapeFactory(Factory):
     def get_geometrical_feature_type(self, i_elem: Reference) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func GetGeometricalFeatureType(Reference iElem) As short

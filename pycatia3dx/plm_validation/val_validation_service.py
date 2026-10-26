@@ -12,22 +12,20 @@ from pycatia3dx.plm_validation.val_validation import VALValidation
 
 
 class VALValidationService(Service):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         VALValidationService
-                | 
-                | Provides services around Validation
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        VALValidationService
+                
+                Provides services around Validation
     
     """
 
@@ -39,11 +37,10 @@ class VALValidationService(Service):
     def validation(self) -> VALValidation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Validation() As VALValidation (Read Only)
-                |     Returns the Validation of the current editor.
+                Property Validation() As VALValidation (Read Only)
+                    Returns the Validation of the current editor.
 
         :return: VALValidation
         """
@@ -51,4 +48,4 @@ class VALValidationService(Service):
         return VALValidation(self.com_object.Validation)
 
     def __repr__(self):
-        return f'ValValidationService(name="{ self.name }")'
+        return f'ValValidationService(name="{self.name}")'

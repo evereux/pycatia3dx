@@ -15,16 +15,15 @@ from pycatia3dx.types.general import CATVariant
 class SpotDrManufacturingFastener(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SpotDrManufacturingFastener
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SpotDrManufacturingFastener
 
     
     """
@@ -37,20 +36,19 @@ class SpotDrManufacturingFastener(AnyObject):
     def diameter(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Diameter(double iDiameter)
-                |     This method sets the diameter of the Manufacturing
-                |     Fastener
-                | 
-                |     Parameters:
-                | 
-                |         iDiameter,
-                |             name to be set 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Property Diameter(double iDiameter)
+                    This method sets the diameter of the Manufacturing
+                    Fastener
+                
+                    Parameters:
+                
+                        iDiameter,
+                            name to be set 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :return: float
         """
@@ -69,19 +67,18 @@ class SpotDrManufacturingFastener(AnyObject):
     def length(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Length(double iLength)
-                |     This method sets the length of the Manufacturing Fastener
-                | 
-                |     Parameters:
-                | 
-                |         iLength,
-                |             name to be set 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Property Length(double iLength)
+                    This method sets the length of the Manufacturing Fastener
+                
+                    Parameters:
+                
+                        iLength,
+                            name to be set 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :return: float
         """
@@ -100,20 +97,19 @@ class SpotDrManufacturingFastener(AnyObject):
     def reference_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ReferenceName(CATBSTR iReferenceName)
-                |     This method sets the reference name of the Manufacturing
-                |     Fastener
-                | 
-                |     Parameters:
-                | 
-                |         iReferenceName,
-                |             name to be set 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Property ReferenceName(CATBSTR iReferenceName)
+                    This method sets the reference name of the Manufacturing
+                    Fastener
+                
+                    Parameters:
+                
+                        iReferenceName,
+                            name to be set 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :return: str
         """
@@ -131,11 +127,10 @@ class SpotDrManufacturingFastener(AnyObject):
     def create_fastener_parameter(self, i_param_name: str, i_param_value: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub CreateFastenerParameter(CATBSTR iParamName,CATVariant
-                | iParamValue)
+                Sub CreateFastenerParameter(CATBSTR iParamName,CATVariant
+                iParamValue)
 
         :param str i_param_name:
         :param CATVariant i_param_value:
@@ -146,10 +141,9 @@ class SpotDrManufacturingFastener(AnyObject):
     def get_fastener_parameter(self, i_param_name: str) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetFastenerParameter(CATBSTR iParamName) As double
+                Func GetFastenerParameter(CATBSTR iParamName) As double
 
         :param str i_param_name:
         :return: float
@@ -159,24 +153,23 @@ class SpotDrManufacturingFastener(AnyObject):
     def get_position(self, o_xpos: float, o_ypos: float) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetPosition(double oXpos,double oYpos) As double
-                |     This method gets the position of the Manufacturing
-                |     Fastener
-                | 
-                |     Parameters:
-                | 
-                |         oXpos,
-                |             X Coordinate 
-                |         oYpos,
-                |             Y Coordinate 
-                |         oZpos,
-                |             Z Coordinate 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Func GetPosition(double oXpos,double oYpos) As double
+                    This method gets the position of the Manufacturing
+                    Fastener
+                
+                    Parameters:
+                
+                        oXpos,
+                            X Coordinate 
+                        oYpos,
+                            Y Coordinate 
+                        oZpos,
+                            Z Coordinate 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param float o_xpos:
         :param float o_ypos:
@@ -187,24 +180,23 @@ class SpotDrManufacturingFastener(AnyObject):
     def get_tangent(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTangent(double oXdir,double oYdir) As double
-                |     This method gets the tangent direction of the Manufacturing
-                |     Fastener
-                | 
-                |     Parameters:
-                | 
-                |         oXdir,
-                |             X Direction 
-                |         oYdir,
-                |             Y Direction 
-                |         oZdir,
-                |             Z Direction 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Func GetTangent(double oXdir,double oYdir) As double
+                    This method gets the tangent direction of the Manufacturing
+                    Fastener
+                
+                    Parameters:
+                
+                        oXdir,
+                            X Direction 
+                        oYdir,
+                            Y Direction 
+                        oZdir,
+                            Z Direction 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :return: tuple
         """
@@ -213,19 +205,18 @@ class SpotDrManufacturingFastener(AnyObject):
     def remove_fastener_parameter(self, i_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveFastenerParameter(CATBSTR iName)
-                |     This method removes a user parameter
-                | 
-                |     Parameters:
-                | 
-                |         iName,
-                |             Parameter Name 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub RemoveFastenerParameter(CATBSTR iName)
+                    This method removes a user parameter
+                
+                    Parameters:
+                
+                        iName,
+                            Parameter Name 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param str i_name:
         :return: None
@@ -235,11 +226,10 @@ class SpotDrManufacturingFastener(AnyObject):
     def set_fastener_parameter(self, i_param_name: str, i_param_value: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetFastenerParameter(CATBSTR iParamName,CATVariant
-                | iParamValue)
+                Sub SetFastenerParameter(CATBSTR iParamName,CATVariant
+                iParamValue)
 
         :param str i_param_name:
         :param CATVariant i_param_value:
@@ -250,24 +240,23 @@ class SpotDrManufacturingFastener(AnyObject):
     def set_position(self, i_xpos: float, i_ypos: float, i_zpos: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetPosition(double iXpos,double iYpos,double iZpos)
-                |     This method sets the position of the Manufacturing
-                |     Fastener
-                | 
-                |     Parameters:
-                | 
-                |         iXpos,
-                |             X Coordinate 
-                |         iYpos,
-                |             Y Coordinate 
-                |         iZpos,
-                |             Z Coordinate 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetPosition(double iXpos,double iYpos,double iZpos)
+                    This method sets the position of the Manufacturing
+                    Fastener
+                
+                    Parameters:
+                
+                        iXpos,
+                            X Coordinate 
+                        iYpos,
+                            Y Coordinate 
+                        iZpos,
+                            Z Coordinate 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param float i_xpos:
         :param float i_ypos:
@@ -279,24 +268,23 @@ class SpotDrManufacturingFastener(AnyObject):
     def set_tangent(self, i_xdir: float, i_ydir: float, i_zdir: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTangent(double iXdir,double iYdir,double iZdir)
-                |     This method sets the tangent direction of the Manufacturing
-                |     Fastener
-                | 
-                |     Parameters:
-                | 
-                |         iXdir,
-                |             X Direction 
-                |         iYdir,
-                |             Y Direction 
-                |         iZdir,
-                |             Z Direction 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure. 
+                Sub SetTangent(double iXdir,double iYdir,double iZdir)
+                    This method sets the tangent direction of the Manufacturing
+                    Fastener
+                
+                    Parameters:
+                
+                        iXdir,
+                            X Direction 
+                        iYdir,
+                            Y Direction 
+                        iZdir,
+                            Z Direction 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure. 
 
         :param float i_xdir:
         :param float i_ydir:

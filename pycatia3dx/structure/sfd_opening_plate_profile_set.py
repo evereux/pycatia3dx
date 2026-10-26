@@ -12,34 +12,32 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SfdOpeningPlateProfileSet(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SfdOpeningPlateProfileSet
-                | 
-                | Object to filter a Structure Functional Modeler OpeningPlateProfileSet by
-                | adhesion.
-                | 
-                | Example:
-                | 
-                | 
-                |          This example shows how to retrieve SfdOpeningPlateProfileSet
-                |          object.
-                |          
-                | 
-                |          Dim ObjSfdOpeningPlateProfileSet As
-                |          SfdOpeningPlateProfileSet
-                |          Set ObjSfdOpeningPlateProfileSet=
-                |          ObjStrOpening.GetItem("SfdOpeningPlateProfileSet")
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SfdOpeningPlateProfileSet
+                
+                Object to filter a Structure Functional Modeler OpeningPlateProfileSet by
+                adhesion.
+                
+                Example:
+                
+                
+                         This example shows how to retrieve SfdOpeningPlateProfileSet
+                         object.
+                         
+                
+                         Dim ObjSfdOpeningPlateProfileSet As
+                         SfdOpeningPlateProfileSet
+                         Set ObjSfdOpeningPlateProfileSet=
+                         ObjStrOpening.GetItem("SfdOpeningPlateProfileSet")
 
     """
 
@@ -48,4 +46,4 @@ class SfdOpeningPlateProfileSet(AnyObject):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'SfdOpeningPlateProfileSet(name="{ self.name }")'
+        return f'SfdOpeningPlateProfileSet(name="{self.name}")'

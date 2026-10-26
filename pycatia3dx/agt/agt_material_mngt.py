@@ -14,19 +14,18 @@ from pycatia3dx.system.any_object import AnyObject
 class AGTMaterialMngt(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     AGTMaterialMngt
-                | 
-                | Object to manage material.
-                | To access material of structure object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    AGTMaterialMngt
+                
+                Object to manage material.
+                To access material of structure object.
     
     """
 
@@ -37,21 +36,20 @@ class AGTMaterialMngt(AnyObject):
     def get_material(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMaterial() As CATBSTR
-                |     Returns the material as a string on this function.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the material of object.
-                |              
-                | 
-                |              Dim ObjAGTMaterialMngt As AGTMaterialMngt
-                |              Set ObjAGTMaterialMngt = ObjAGTInsulation.AGTMaterialMngt
-                |              AGTMaterial = ObjAGTMaterialMngt.GetMaterial
+                Func GetMaterial() As CATBSTR
+                    Returns the material as a string on this function.
+                
+                    Example:
+                
+                
+                             This example retrieves the material of object.
+                             
+                
+                             Dim ObjAGTMaterialMngt As AGTMaterialMngt
+                             Set ObjAGTMaterialMngt = ObjAGTInsulation.AGTMaterialMngt
+                             AGTMaterial = ObjAGTMaterialMngt.GetMaterial
 
         :return: str
         """
@@ -60,21 +58,20 @@ class AGTMaterialMngt(AnyObject):
     def get_sub_material(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetSubMaterial() As CATBSTR
-                |     Returns the material as a string on this function.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the material of object.
-                |              
-                | 
-                |              Dim ObjAGTMaterialMngt As AGTMaterialMngt
-                |              Set ObjAGTMaterialMngt = ObjAGTInsulation.AGTMaterialMngt
-                |              AGTMaterial = ObjAGTMaterialMngt.GetSubMaterial
+                Func GetSubMaterial() As CATBSTR
+                    Returns the material as a string on this function.
+                
+                    Example:
+                
+                
+                             This example retrieves the material of object.
+                             
+                
+                             Dim ObjAGTMaterialMngt As AGTMaterialMngt
+                             Set ObjAGTMaterialMngt = ObjAGTInsulation.AGTMaterialMngt
+                             AGTMaterial = ObjAGTMaterialMngt.GetSubMaterial
 
         :return: str
         """
@@ -83,24 +80,23 @@ class AGTMaterialMngt(AnyObject):
     def set_material(self, i_material_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMaterial(CATBSTR iMaterialName)
-                |     Sets the material as a string on this function.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterialName
-                |             Material name. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example sets the material of the object
-                |              
-                | 
-                |              ObjAGTMaterialMngt.SetMaterial "A-800"
+                Sub SetMaterial(CATBSTR iMaterialName)
+                    Sets the material as a string on this function.
+                
+                    Parameters:
+                
+                        iMaterialName
+                            Material name. 
+                
+                    Example:
+                
+                
+                             This example sets the material of the object
+                             
+                
+                             ObjAGTMaterialMngt.SetMaterial "A-800"
 
         :param str i_material_name:
         :return: None
@@ -110,22 +106,21 @@ class AGTMaterialMngt(AnyObject):
     def set_sub_material(self, i_material_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetSubMaterial(CATBSTR iMaterialName)
-                |     Sets the material as a string on this function.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterialName
-                |             Material name. 
-                | 
-                |     Example:
+                Sub SetSubMaterial(CATBSTR iMaterialName)
+                    Sets the material as a string on this function.
+                
+                    Parameters:
+                
+                        iMaterialName
+                            Material name. 
+                
+                    Example:
                 |
-                |              This example sets the material of the object
+                             This example sets the material of the object
                 |
-                |              ObjAGTMaterialMngt.SetSubMaterial "A-800"
+                             ObjAGTMaterialMngt.SetSubMaterial "A-800"
 
         :param str i_material_name:
         :return: None

@@ -14,22 +14,20 @@ from pycatia3dx.sma_mpa_structural_mode.sim_composite_laminate import SimComposi
 
 
 class SimCompositeGridCell(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimCompositeGridCell
-                | 
-                | Represents the Composite Grid Cell object.
-                | Given a SimCompositeGrid object, you can retrieve a SimCompositeGridCell as below: Dim myCompShellSection As SimCompositeShellSection .... Refer SMAIAMpaCompositeGrid.idl to create/retrieve a SimCompositeGrid .... Dim myCompositeGrid As SimCompositeGrid ... Dim myCompositeGridCell As SimCompositeGridCell i) Dim myCompositeGridCellList 'As SimCompositeGridCellList //Do not use type myCompositeGridCellList = myCompositeGrid.GetCells ...Loop for listSize = UBound(myCompositeGridCellList) - LBound(myCompositeGridCellList) + 1 if needed.. Set myCompositeGridCell = myCompositeGridCellList(0) or ii) Set myCompositeGridCell = myCompositeGrid.GetCell iIndex
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimCompositeGridCell
+                
+                Represents the Composite Grid Cell object.
+                Given a SimCompositeGrid object, you can retrieve a SimCompositeGridCell as below: Dim myCompShellSection As SimCompositeShellSection .... Refer SMAIAMpaCompositeGrid.idl to create/retrieve a SimCompositeGrid .... Dim myCompositeGrid As SimCompositeGrid ... Dim myCompositeGridCell As SimCompositeGridCell i) Dim myCompositeGridCellList 'As SimCompositeGridCellList //Do not use type myCompositeGridCellList = myCompositeGrid.GetCells ...Loop for listSize = UBound(myCompositeGridCellList) - LBound(myCompositeGridCellList) + 1 if needed.. Set myCompositeGridCell = myCompositeGridCellList(0) or ii) Set myCompositeGridCell = myCompositeGrid.GetCell iIndex
     
     """
 
@@ -40,14 +38,13 @@ class SimCompositeGridCell(AnyObject):
     def get_cell_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCellName() As CATBSTR
-                |     Retreives the name of the grid cell.
-                | 
-                |     Returns:
-                |         Name of the cell.
+                Func GetCellName() As CATBSTR
+                    Retreives the name of the grid cell.
+                
+                    Returns:
+                        Name of the cell.
 
         :return: str
         """
@@ -56,14 +53,13 @@ class SimCompositeGridCell(AnyObject):
     def get_grid(self) -> SimCompositeGrid:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetGrid() As SimCompositeGrid
-                |     Retreives the Grid associated to the cell.
-                | 
-                |     Returns:
-                |         Grid that holds the cell.
+                Func GetGrid() As SimCompositeGrid
+                    Retreives the Grid associated to the cell.
+                
+                    Returns:
+                        Grid that holds the cell.
 
         :return: SimCompositeGrid
         """
@@ -72,14 +68,13 @@ class SimCompositeGridCell(AnyObject):
     def get_laminate_on_cell(self) -> SimCompositeLaminate:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetLaminateOnCell() As SimCompositeLaminate
-                |     Retreives the laminate.
-                | 
-                |     Returns:
-                |         Laminate on the cell.
+                Func GetLaminateOnCell() As SimCompositeLaminate
+                    Retreives the laminate.
+                
+                    Returns:
+                        Laminate on the cell.
 
         :return: SimCompositeLaminate
         """
@@ -88,16 +83,15 @@ class SimCompositeGridCell(AnyObject):
     def set_cell_name(self, i_cell_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCellName(CATBSTR iCellName)
-                |     Sets the name of the grid cell.
-                | 
-                |     Parameters:
-                | 
-                |         iCellName
-                |             [in] Name to be set to the cell.
+                Sub SetCellName(CATBSTR iCellName)
+                    Sets the name of the grid cell.
+                
+                    Parameters:
+                
+                        iCellName
+                            [in] Name to be set to the cell.
 
         :param str i_cell_name:
         :return: None
@@ -107,16 +101,15 @@ class SimCompositeGridCell(AnyObject):
     def set_laminate_on_cell(self, i_laminate: SimCompositeLaminate) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetLaminateOnCell(SimCompositeLaminate iLaminate)
-                |     Sets the laminate.
-                | 
-                |     Parameters:
-                | 
-                |         iLaminate
-                |             [in] Laminate to be set on the cell. 
+                Sub SetLaminateOnCell(SimCompositeLaminate iLaminate)
+                    Sets the laminate.
+                
+                    Parameters:
+                
+                        iLaminate
+                            [in] Laminate to be set on the cell. 
 
         :param SimCompositeLaminate i_laminate:
         :return: None
@@ -124,4 +117,4 @@ class SimCompositeGridCell(AnyObject):
         return self.com_object.SetLaminateOnCell(i_laminate.com_object)
 
     def __repr__(self):
-        return f'SimCompositeGridCell(name="{ self.name }")'
+        return f'SimCompositeGridCell(name="{self.name}")'

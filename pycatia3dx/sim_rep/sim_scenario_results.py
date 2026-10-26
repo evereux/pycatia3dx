@@ -17,21 +17,20 @@ from pycatia3dx.types.general import CATVariant
 class SimScenarioResults(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SimScenarioResults
-                | 
-                | Represents the collection of Scenario Results.
-                | 
-                | See also:
-                |     SimScenarioResult
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SimScenarioResults
+                
+                Represents the collection of Scenario Results.
+                
+                See also:
+                    SimScenarioResult
     
     """
 
@@ -42,24 +41,23 @@ class SimScenarioResults(Collection):
     def item(self, i_index: CATVariant) -> SimScenarioResult:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As SimScenarioResult
-                |     Returns a scenario result using its index from the scenario result
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the scenario result to retrieve from the collection of
-                |             scenario results.
-                |             This index is the rank of the scenario result in the collection.
-                |             The index of the first scenario result in the collection is 1, and the index of
-                |             the last scenario result is Count. 
-                | 
-                |     Returns:
-                |         The retrieved scenario result.
+                Func Item(CATVariant iIndex) As SimScenarioResult
+                    Returns a scenario result using its index from the scenario result
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the scenario result to retrieve from the collection of
+                            scenario results.
+                            This index is the rank of the scenario result in the collection.
+                            The index of the first scenario result in the collection is 1, and the index of
+                            the last scenario result is Count. 
+                
+                    Returns:
+                        The retrieved scenario result.
 
         :param CATVariant i_index:
         :return: SimScenarioResult

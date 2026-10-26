@@ -14,62 +14,60 @@ from pycatia3dx.sma_spa_structural.sim_stabilization import SimStabilization
 
 
 class SimSteadyStateTransportStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SMAMpaFoundationIDLItf.SimStep
-                |                         SimSteadyStateTransportStep
-                | 
-                | Represents the Steady State Transport Step object.
-                | 
-                | Example:
-                |     Given a SimSteps object, you can create a SimSteadyStateTransportStep as
-                |     following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MySteadyStateTransportStep As
-                |      SimSteadyStateTransportStep
-                |      Set MySteadyStateTransportStep = MySteps.Add("SimSteadyStateTransportStep")
-                |      
-                | 
-                |     Given a SimSteps object, you can retrieve a SimSteadyStateTransportStep
-                |     named "Steady State Transport Step.1" as following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MySteadyStateTransportStep As
-                |      SimSteadyStateTransportStep
-                |      Set MySteadyStateTransportStep = MySteps.Item("Steady State Transport Step.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimSteps object mySteps, you can create a
-                |     SimSteadyStateTransportStep as following:
-                | 
-                |      ...
-                |      mySteadyStateTransportStep = mySteps.Add("SimSteadyStateTransportStep")
-                |      
-                | 
-                |     Given a SimSteps object mySteps, you can retrieve a
-                |     SimSteadyStateTransportStep named "Steady State Transport Step.1" as
-                |     following:
-                | 
-                |      ...
-                |      mySteadyStateTransportStep = mySteps.Item("Steady State Transport Step.1")
-                |      
-                | 
-                | See also:
-                |     SimSteps
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SMAMpaFoundationIDLItf.SimStep
+                                        SimSteadyStateTransportStep
+                
+                Represents the Steady State Transport Step object.
+                
+                Example:
+                    Given a SimSteps object, you can create a SimSteadyStateTransportStep as
+                    following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MySteadyStateTransportStep As
+                     SimSteadyStateTransportStep
+                     Set MySteadyStateTransportStep = MySteps.Add("SimSteadyStateTransportStep")
+                     
+                
+                    Given a SimSteps object, you can retrieve a SimSteadyStateTransportStep
+                    named "Steady State Transport Step.1" as following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MySteadyStateTransportStep As
+                     SimSteadyStateTransportStep
+                     Set MySteadyStateTransportStep = MySteps.Item("Steady State Transport Step.1")
+                     
+                
+                Example in Python:
+                    Given a SimSteps object mySteps, you can create a
+                    SimSteadyStateTransportStep as following:
+                
+                     ...
+                     mySteadyStateTransportStep = mySteps.Add("SimSteadyStateTransportStep")
+                     
+                
+                    Given a SimSteps object mySteps, you can retrieve a
+                    SimSteadyStateTransportStep named "Steady State Transport Step.1" as
+                    following:
+                
+                     ...
+                     mySteadyStateTransportStep = mySteps.Item("Steady State Transport Step.1")
+                     
+                
+                See also:
+                    SimSteps
     
     """
 
@@ -81,11 +79,10 @@ class SimSteadyStateTransportStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -104,11 +101,10 @@ class SimSteadyStateTransportStep(SimStep):
     def eulerian_support(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property EulerianSupport() As CATBaseDispatch (Read Only)
-                |     Returns the Eulerian support on which spatial rigid body motion is applied.
+                Property EulerianSupport() As CATBaseDispatch (Read Only)
+                    Returns the Eulerian support on which spatial rigid body motion is applied.
 
         :return: AnyObject
         """
@@ -119,14 +115,13 @@ class SimSteadyStateTransportStep(SimStep):
     def geometric_non_linearity_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property GeometricNonLinearityFlag() As boolean
-                |     Returns or sets the flag that determines if the step is geometrically non
-                |     linear.
-                |     TRUE: the step is geometrically non linear.
-                |     FALSE: the step is not geometrically non linear.
+                Property GeometricNonLinearityFlag() As boolean
+                    Returns or sets the flag that determines if the step is geometrically non
+                    linear.
+                    TRUE: the step is geometrically non linear.
+                    FALSE: the step is not geometrically non linear.
 
         :return: bool
         """
@@ -145,12 +140,11 @@ class SimSteadyStateTransportStep(SimStep):
     def inertia_effect(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InertiaEffect() As
-                | SimSteadyStateTransportStepInertiaEffect
-                |     Returns or sets the inertia effect.
+                Property InertiaEffect() As
+                SimSteadyStateTransportStepInertiaEffect
+                    Returns or sets the inertia effect.
 
         :return: SimSteadyStateTransportStepInertiaEffect
         """
@@ -169,12 +163,11 @@ class SimSteadyStateTransportStep(SimStep):
     def inertia_stabilization_factor(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InertiaStabilizationFactor() As double
-                |     Returns or sets the inertia stabilization factor. Quantity: DIMENSIONLESS,
-                |     Units: None.
+                Property InertiaStabilizationFactor() As double
+                    Returns or sets the inertia stabilization factor. Quantity: DIMENSIONLESS,
+                    Units: None.
 
         :return: float
         """
@@ -193,12 +186,11 @@ class SimSteadyStateTransportStep(SimStep):
     def initial_time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InitialTimeIncrement() As double
-                |     Returns or sets the initial time for the increments of the Steady State
-                |     Transport step.
+                Property InitialTimeIncrement() As double
+                    Returns or sets the initial time for the increments of the Steady State
+                    Transport step.
 
         :return: float
         """
@@ -217,12 +209,11 @@ class SimSteadyStateTransportStep(SimStep):
     def matrix_storage_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MatrixStorageScheme() As SimMatrixStorageScheme
-                |     Returns or sets the type of the matrix storage for the Steady State
-                |     Transport step.
+                Property MatrixStorageScheme() As SimMatrixStorageScheme
+                    Returns or sets the type of the matrix storage for the Steady State
+                    Transport step.
 
         :return: SimMatrixStorageScheme
         """
@@ -241,12 +232,11 @@ class SimSteadyStateTransportStep(SimStep):
     def maximum_increments(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumIncrements() As long
-                |     Returns or sets the maximum number of increments for the Steady State
-                |     Transport step.
+                Property MaximumIncrements() As long
+                    Returns or sets the maximum number of increments for the Steady State
+                    Transport step.
 
         :return: int
         """
@@ -265,12 +255,11 @@ class SimSteadyStateTransportStep(SimStep):
     def maximum_time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumTimeIncrement() As double
-                |     Returns or sets the maximum time for the increments of the Steady State
-                |     Transport step.
+                Property MaximumTimeIncrement() As double
+                    Returns or sets the maximum time for the increments of the Steady State
+                    Transport step.
 
         :return: float
         """
@@ -289,12 +278,11 @@ class SimSteadyStateTransportStep(SimStep):
     def minimum_time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MinimumTimeIncrement() As double
-                |     Returns or sets the minimum time for the increments of the Steady State
-                |     Transport step.
+                Property MinimumTimeIncrement() As double
+                    Returns or sets the minimum time for the increments of the Steady State
+                    Transport step.
 
         :return: float
         """
@@ -313,12 +301,11 @@ class SimSteadyStateTransportStep(SimStep):
     def mullins_effect(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MullinsEffect() As
-                | SimSteadyStateTransportStepMullinsEffect
-                |     Returns or sets the Mullins effect.
+                Property MullinsEffect() As
+                SimSteadyStateTransportStepMullinsEffect
+                    Returns or sets the Mullins effect.
 
         :return: SimSteadyStateTransportStepMullinsEffect
         """
@@ -337,12 +324,11 @@ class SimSteadyStateTransportStep(SimStep):
     def restart_step_property(self) -> SimAnalysisRestartStepProperty:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RestartStepProperty() As SimAnalysisRestartStepProperty (Read
-                | Only)
-                |     Returns the restart step property for the Steady State Transport step.
+                Property RestartStepProperty() As SimAnalysisRestartStepProperty (Read
+                Only)
+                    Returns the restart step property for the Steady State Transport step.
 
         :return: SimAnalysisRestartStepProperty
         """
@@ -353,11 +339,10 @@ class SimSteadyStateTransportStep(SimStep):
     def stabilization(self) -> SimStabilization:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Stabilization() As SimStabilization (Read Only)
-                |     Returns the stabilization for the Steady State Transport step.
+                Property Stabilization() As SimStabilization (Read Only)
+                    Returns the stabilization for the Steady State Transport step.
 
         :return: SimStabilization
         """
@@ -368,11 +353,10 @@ class SimSteadyStateTransportStep(SimStep):
     def step_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StepTime() As double
-                |     Returns or sets the total time for the Steady State Transport step.
+                Property StepTime() As double
+                    Returns or sets the total time for the Steady State Transport step.
 
         :return: float
         """
@@ -391,13 +375,12 @@ class SimSteadyStateTransportStep(SimStep):
     def time_incrementation_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TimeIncrementationScheme() As
-                | SimTimeIncrementationScheme
-                |     Returns or sets the time incrementation type for the Steady State Transport
-                |     step.
+                Property TimeIncrementationScheme() As
+                SimTimeIncrementationScheme
+                    Returns or sets the time incrementation type for the Steady State Transport
+                    step.
 
         :return: SimTimeIncrementationScheme
         """
@@ -416,16 +399,15 @@ class SimSteadyStateTransportStep(SimStep):
     def use_instantaneous_elastic_response_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UseInstantaneousElasticResponseFlag() As boolean
-                |     Returns or sets the use instantaneous elastic response flag. Applicable
-                |     only when either time-domain viscoelastic or two-layer viscoplastic behaviors
-                |     are active.
-                |     TRUE: use the instantaneous elastic response of the
-                |     material.
-                |     FALSE: use long term elastic response.
+                Property UseInstantaneousElasticResponseFlag() As boolean
+                    Returns or sets the use instantaneous elastic response flag. Applicable
+                    only when either time-domain viscoelastic or two-layer viscoplastic behaviors
+                    are active.
+                    TRUE: use the instantaneous elastic response of the
+                    material.
+                    FALSE: use long term elastic response.
 
         :return: bool
         """
@@ -444,13 +426,12 @@ class SimSteadyStateTransportStep(SimStep):
     def use_quasi_steady_state_procedure_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UseQuasiSteadyStateProcedureFlag() As boolean
-                |     Returns or sets the use quasi steady state procedure flag.
-                |     TRUE: obtain steady-state solution.
-                |     FALSE: obtain solution directly. 
+                Property UseQuasiSteadyStateProcedureFlag() As boolean
+                    Returns or sets the use quasi steady state procedure flag.
+                    TRUE: obtain steady-state solution.
+                    FALSE: obtain solution directly. 
 
         :return: bool
         """
@@ -466,4 +447,4 @@ class SimSteadyStateTransportStep(SimStep):
         self.com_object.UseQuasiSteadyStateProcedureFlag = value
 
     def __repr__(self):
-        return f'SimSteadyStateTransportStep(name="{ self.name }")'
+        return f'SimSteadyStateTransportStep(name="{self.name}")'

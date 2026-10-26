@@ -11,32 +11,30 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 
 
 class SimShellSectionNodalThickness(CATBaseDispatch):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 SimShellSectionNodalThickness
-                | 
-                | Represents the shell section nodal thickness.
-                | Role:This object can be retrieved on an existing shell section. You can use
-                | this object to set thickness mapping to nodes.
-                | Example:
-                | 
-                |  Given a shell section object, you can get this object and set thicknes mapping
-                |  to Nodes.
-                |  
-                | 
-                |  Dim oShellSectionNodalThickness As
-                |  SimShellSectionNodalThickness
-                |  Set oShellSectionNodalThickness = oShellSection.GetItem("SimShellSectionNodalThickness")
-                |  oShellSectionNodalThickness.MapThicknessToNodesFlag = True
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                SimShellSectionNodalThickness
+                
+                Represents the shell section nodal thickness.
+                Role:This object can be retrieved on an existing shell section. You can use
+                this object to set thickness mapping to nodes.
+                Example:
+                
+                 Given a shell section object, you can get this object and set thicknes mapping
+                 to Nodes.
+                 
+                
+                 Dim oShellSectionNodalThickness As
+                 SimShellSectionNodalThickness
+                 Set oShellSectionNodalThickness = oShellSection.GetItem("SimShellSectionNodalThickness")
+                 oShellSectionNodalThickness.MapThicknessToNodesFlag = True
     
     """
 
@@ -48,15 +46,14 @@ class SimShellSectionNodalThickness(CATBaseDispatch):
     def map_thickness_to_nodes_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MapThicknessToNodesFlag() As boolean
-                |     Returns or sets the flag that determines if the thickness is to be mapped
-                |     to nodes or elements (default).
-                |     TRUE: the thickness mapped to nodes.
-                | 
-                |     FALSE: the thickness mapped to elements.
+                Property MapThicknessToNodesFlag() As boolean
+                    Returns or sets the flag that determines if the thickness is to be mapped
+                    to nodes or elements (default).
+                    TRUE: the thickness mapped to nodes.
+                
+                    FALSE: the thickness mapped to elements.
 
         :return: bool
         """
@@ -75,11 +72,10 @@ class SimShellSectionNodalThickness(CATBaseDispatch):
     def nodal_thickness_map_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NodalThicknessMapFlag() As boolean
-                |     deprecated R426. Please use MapThicknessToNodesFlag method
+                Property NodalThicknessMapFlag() As boolean
+                    deprecated R426. Please use MapThicknessToNodesFlag method
 
         :return: bool
         """

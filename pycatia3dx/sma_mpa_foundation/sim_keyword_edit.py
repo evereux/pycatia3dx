@@ -12,58 +12,56 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimKeywordEdit(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimKeywordEdit
-                | 
-                | Represents the Keyword Edit object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimKeywordEdit as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyKeywordEdit As SimKeywordEdit
-                |      Set MyKeywordEdit = MyFeatures.Add("SimKeywordEdit")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimKeywordEdit named
-                |     "Keyword Edit.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyKeywordEdit As SimKeywordEdit
-                |      Set MyKeywordEdit = MyFeatures.Item("Keyword Edit.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a SimKeywordEdit as
-                |     following:
-                | 
-                |      ...
-                |      myKeywordEdit = myFeatures.Add("SimKeywordEdit")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a SimKeywordEdit
-                |     named "Keyword Edit.1" as following:
-                | 
-                |      ...
-                |      myKeywordEdit = myFeatures.Item("Keyword Edit.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimKeywordEdit
+                
+                Represents the Keyword Edit object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimKeywordEdit as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyKeywordEdit As SimKeywordEdit
+                     Set MyKeywordEdit = MyFeatures.Add("SimKeywordEdit")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimKeywordEdit named
+                    "Keyword Edit.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyKeywordEdit As SimKeywordEdit
+                     Set MyKeywordEdit = MyFeatures.Item("Keyword Edit.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a SimKeywordEdit as
+                    following:
+                
+                     ...
+                     myKeywordEdit = myFeatures.Add("SimKeywordEdit")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a SimKeywordEdit
+                    named "Keyword Edit.1" as following:
+                
+                     ...
+                     myKeywordEdit = myFeatures.Item("Keyword Edit.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -75,11 +73,10 @@ class SimKeywordEdit(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -98,11 +95,10 @@ class SimKeywordEdit(AnyObject):
     def keyword_edit_document(self) -> PLMDocument:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property KeywordEditDocument() As PLMDocument
-                |     Returns or sets the PLM document associated with the keyword edit.
+                Property KeywordEditDocument() As PLMDocument
+                    Returns or sets the PLM document associated with the keyword edit.
 
         :return: PLMDocument
         """
@@ -121,12 +117,11 @@ class SimKeywordEdit(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. 
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. 
 
         :return: str
         """
@@ -134,4 +129,4 @@ class SimKeywordEdit(AnyObject):
         return self.com_object.SpecTreeCategory
 
     def __repr__(self):
-        return f'SimKeywordEdit(name="{ self.name }")'
+        return f'SimKeywordEdit(name="{self.name}")'

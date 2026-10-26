@@ -19,21 +19,20 @@ if TYPE_CHECKING:
 class Folder(FileComponent):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfOSIDLItf.FileComponent
-                |                         Folder
-                | 
-                | Represents the folder object.
-                | It allows you to manipulate folders and gives access to information about
-                | them.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfOSIDLItf.FileComponent
+                                        Folder
+                
+                Represents the folder object.
+                It allows you to manipulate folders and gives access to information about
+                them.
     
     """
 
@@ -45,18 +44,17 @@ class Folder(FileComponent):
     def files(self) -> Files:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Files() As Files (Read Only)
-                |     Returns the file collection of the folder.
-                | 
-                |     Example:
-                |         This example retrieves in TestFiles the file collection of the folder
-                |         TestFolder.
-                | 
-                |          Dim TestFiles As Files
-                |          Set TestFiles = TestFolder.Files
+                Property Files() As Files (Read Only)
+                    Returns the file collection of the folder.
+                
+                    Example:
+                        This example retrieves in TestFiles the file collection of the folder
+                        TestFolder.
+                
+                         Dim TestFiles As Files
+                         Set TestFiles = TestFolder.Files
 
         :return: Files
         """
@@ -67,18 +65,17 @@ class Folder(FileComponent):
     def sub_folders(self) -> 'Folders':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property SubFolders() As Folders (Read Only)
-                |     Returns the folder collection of the folder.
-                | 
-                |     Example:
-                |         This example retrieves in TestSubFolders the folder colection of the
-                |         folder TestFolder.
-                | 
-                |          Dim TestSubFolders As CATIAFolders
-                |          Set TestSubFolders = TestFolder.SubFolders
+                Property SubFolders() As Folders (Read Only)
+                    Returns the folder collection of the folder.
+                
+                    Example:
+                        This example retrieves in TestSubFolders the folder colection of the
+                        folder TestFolder.
+                
+                         Dim TestSubFolders As CATIAFolders
+                         Set TestSubFolders = TestFolder.SubFolders
 
         :return: Folders
         """

@@ -14,22 +14,20 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ShapeInstance(Shape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         ShapeInstance
-                | 
-                | The interface to access a CATIAShapeInstance.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        ShapeInstance
+                
+                The interface to access a CATIAShapeInstance.
     
     """
 
@@ -41,17 +39,16 @@ class ShapeInstance(Shape):
     def inputs_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property InputsCount() As long (Read Only)
-                |     Returns the number of Inputs.
-                | 
-                |     Example:
-                |         The following example retrieves in inputsCount the number of Inputs of
-                |         hybridShapeInstance:
-                | 
-                |          inputsCount = hybridShapeInstance.InputsCount
+                Property InputsCount() As long (Read Only)
+                    Returns the number of Inputs.
+                
+                    Example:
+                        The following example retrieves in inputsCount the number of Inputs of
+                        hybridShapeInstance:
+                
+                         inputsCount = hybridShapeInstance.InputsCount
 
         :return: int
         """
@@ -62,17 +59,16 @@ class ShapeInstance(Shape):
     def outputs_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property OutputsCount() As long (Read Only)
-                |     Returns the number of Outputs.
-                | 
-                |     Example:
-                |         The following example retrieves in outputsCount the number of Outputs
-                |         of hybridShapeInstance:
-                | 
-                |          outputsCount = hybridShapeInstance.OutputsCount
+                Property OutputsCount() As long (Read Only)
+                    Returns the number of Outputs.
+                
+                    Example:
+                        The following example retrieves in outputsCount the number of Outputs
+                        of hybridShapeInstance:
+                
+                         outputsCount = hybridShapeInstance.OutputsCount
 
         :return: int
         """
@@ -83,17 +79,16 @@ class ShapeInstance(Shape):
     def parameters_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property ParametersCount() As long (Read Only)
-                |     Returns the number of Parameters.
-                | 
-                |     Example:
-                |         The following example retrieves in parametersCount the number of
-                |         parameters of hybridShapeInstance:
-                | 
-                |          parametersCount = hybridShapeInstance.ParametersCount
+                Property ParametersCount() As long (Read Only)
+                    Returns the number of Parameters.
+                
+                    Example:
+                        The following example retrieves in parametersCount the number of
+                        parameters of hybridShapeInstance:
+                
+                         parametersCount = hybridShapeInstance.ParametersCount
 
         :return: int
         """
@@ -103,26 +98,25 @@ class ShapeInstance(Shape):
     def get_input(self, i_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func GetInput(CATBSTR iName) As AnyObject
-                |     Gets an input of a shape instance by its name.
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The name of the input of the shape instance 
-                | 
-                |     Returns:
-                |         The input, if found 
-                |     Example:
-                |         The following example tests if the input was found:
-                | 
-                |          Set input = shapeInstance.GetInput("Input1")
-                |          If TypeName(input)="Nothing" Then
-                |               MsgBox "Input not found"
-                |          End If
+                Func GetInput(CATBSTR iName) As AnyObject
+                    Gets an input of a shape instance by its name.
+                
+                    Parameters:
+                
+                        iName
+                            The name of the input of the shape instance 
+                
+                    Returns:
+                        The input, if found 
+                    Example:
+                        The following example tests if the input was found:
+                
+                         Set input = shapeInstance.GetInput("Input1")
+                         If TypeName(input)="Nothing" Then
+                              MsgBox "Input not found"
+                         End If
 
         :param str i_name:
         :return: AnyObject
@@ -132,27 +126,26 @@ class ShapeInstance(Shape):
     def get_input_data(self, i_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func GetInputData(CATBSTR iName) As CATBaseDispatch
-                |     Gets an input of a shape instance by its name. Use this method if you want
-                |     to retrieve a Reference.
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The name of the input of the shape instance 
-                | 
-                |     Returns:
-                |         The input, if found 
-                |     Example:
-                |         The following example tests if the input was found:
-                | 
-                |          Set input = shapeInstance.GetInput("Input1")
-                |          If TypeName(input)="Nothing" Then
-                |               MsgBox "Input not found"
-                |          End If
+                Func GetInputData(CATBSTR iName) As CATBaseDispatch
+                    Gets an input of a shape instance by its name. Use this method if you want
+                    to retrieve a Reference.
+                
+                    Parameters:
+                
+                        iName
+                            The name of the input of the shape instance 
+                
+                    Returns:
+                        The input, if found 
+                    Example:
+                        The following example tests if the input was found:
+                
+                         Set input = shapeInstance.GetInput("Input1")
+                         If TypeName(input)="Nothing" Then
+                              MsgBox "Input not found"
+                         End If
 
         :param str i_name:
         :return: AnyObject
@@ -162,28 +155,27 @@ class ShapeInstance(Shape):
     def get_input_data_from_position(self, i_position: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func GetInputDataFromPosition(long iPosition) As
-                | CATBaseDispatch
-                |     Gets an input of a hybrid shape instance from its position. Use this method
-                |     if you want to retrieve a Reference.
-                | 
-                |     Parameters:
-                | 
-                |         iPosition
-                |             The position 
-                | 
-                |     Returns:
-                |         The input, if found 
-                |     Example:
-                |         The following example tests if the input was found:
-                | 
-                |          Set input = hybridShapeInstance.GetInputFromPosition(2)
-                |          If TypeName(input)="Nothing" Then
-                |               MsgBox "Input not found"
-                |          End If
+                Func GetInputDataFromPosition(long iPosition) As
+                CATBaseDispatch
+                    Gets an input of a hybrid shape instance from its position. Use this method
+                    if you want to retrieve a Reference.
+                
+                    Parameters:
+                
+                        iPosition
+                            The position 
+                
+                    Returns:
+                        The input, if found 
+                    Example:
+                        The following example tests if the input was found:
+                
+                         Set input = hybridShapeInstance.GetInputFromPosition(2)
+                         If TypeName(input)="Nothing" Then
+                              MsgBox "Input not found"
+                         End If
 
         :param int i_position:
         :return: AnyObject
@@ -193,27 +185,26 @@ class ShapeInstance(Shape):
     def get_input_from_position(self, i_position: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func GetInputFromPosition(long iPosition) As AnyObject
-                |     Gets an input of a hybrid shape instance from its
-                |     position.
-                | 
-                |     Parameters:
-                | 
-                |         iPosition
-                |             The position 
-                | 
-                |     Returns:
-                |         The input, if found 
-                |     Example:
-                |         The following example tests if the input was found:
-                | 
-                |          Set input = hybridShapeInstance.GetInputFromPosition(2)
-                |          If TypeName(input)="Nothing" Then
-                |               MsgBox "Input not found"
-                |          End If
+                Func GetInputFromPosition(long iPosition) As AnyObject
+                    Gets an input of a hybrid shape instance from its
+                    position.
+                
+                    Parameters:
+                
+                        iPosition
+                            The position 
+                
+                    Returns:
+                        The input, if found 
+                    Example:
+                        The following example tests if the input was found:
+                
+                         Set input = hybridShapeInstance.GetInputFromPosition(2)
+                         If TypeName(input)="Nothing" Then
+                              MsgBox "Input not found"
+                         End If
 
         :param int i_position:
         :return: AnyObject
@@ -223,26 +214,25 @@ class ShapeInstance(Shape):
     def get_output(self, i_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func GetOutput(CATBSTR iName) As AnyObject
-                |     Gets a Ouput by its name.
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The name of the output of the shape instance 
-                | 
-                |     Returns:
-                |         The output, if found 
-                |     Example:
-                |         The following example tests if the output was found:
-                | 
-                |          Set output = shapeInstance.GetOuput("Output1")
-                |          If TypeName(output)="Nothing" Then
-                |               MsgBox "Output not found"
-                |          End If
+                Func GetOutput(CATBSTR iName) As AnyObject
+                    Gets a Ouput by its name.
+                
+                    Parameters:
+                
+                        iName
+                            The name of the output of the shape instance 
+                
+                    Returns:
+                        The output, if found 
+                    Example:
+                        The following example tests if the output was found:
+                
+                         Set output = shapeInstance.GetOuput("Output1")
+                         If TypeName(output)="Nothing" Then
+                              MsgBox "Output not found"
+                         End If
 
         :param str i_name:
         :return: AnyObject
@@ -252,26 +242,25 @@ class ShapeInstance(Shape):
     def get_output_from_position(self, i_position: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func GetOutputFromPosition(long iPosition) As AnyObject
-                |     Gets a Ouput from its position.
-                | 
-                |     Parameters:
-                | 
-                |         iPosition
-                |             The position 
-                | 
-                |     Returns:
-                |         The output, if found 
-                |     Example:
-                |         The following example tests if the output was found:
-                | 
-                |          Set output = shapeInstance.GetOuputFromPosition(2)
-                |          If TypeName(output)="Nothing" Then
-                |               MsgBox "Output not found"
-                |          End If
+                Func GetOutputFromPosition(long iPosition) As AnyObject
+                    Gets a Ouput from its position.
+                
+                    Parameters:
+                
+                        iPosition
+                            The position 
+                
+                    Returns:
+                        The output, if found 
+                    Example:
+                        The following example tests if the output was found:
+                
+                         Set output = shapeInstance.GetOuputFromPosition(2)
+                         If TypeName(output)="Nothing" Then
+                              MsgBox "Output not found"
+                         End If
 
         :param int i_position:
         :return: AnyObject
@@ -281,27 +270,26 @@ class ShapeInstance(Shape):
     def get_parameter(self, i_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func GetParameter(CATBSTR iName) As AnyObject
-                |     Gets a parameter of a shape instance by its name.
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The name of the parameter of the shape instance 
-                | 
-                |     Returns:
-                |         The parameter, if found 
-                |     Example:
-                |         The following example tests if the parameter was
-                |         found:
-                | 
-                |          Set parameter = shapeInstance.GetParameter("Parameter1")
-                |          If TypeName(parameter)="Nothing" Then
-                |               MsgBox "Parameter not found"
-                |          End If
+                Func GetParameter(CATBSTR iName) As AnyObject
+                    Gets a parameter of a shape instance by its name.
+                
+                    Parameters:
+                
+                        iName
+                            The name of the parameter of the shape instance 
+                
+                    Returns:
+                        The parameter, if found 
+                    Example:
+                        The following example tests if the parameter was
+                        found:
+                
+                         Set parameter = shapeInstance.GetParameter("Parameter1")
+                         If TypeName(parameter)="Nothing" Then
+                              MsgBox "Parameter not found"
+                         End If
 
         :param str i_name:
         :return: AnyObject
@@ -311,28 +299,27 @@ class ShapeInstance(Shape):
     def get_parameter_from_position(self, i_position: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func GetParameterFromPosition(long iPosition) As AnyObject
-                |     Gets a parameter of a hybrid shape instance from its
-                |     position.
-                | 
-                |     Parameters:
-                | 
-                |         iPosition
-                |             The position 
-                | 
-                |     Returns:
-                |         The parameter, if found 
-                |     Example:
-                |         The following example tests if the parameter was
-                |         found:
-                | 
-                |          Set parameter = hybridShapeInstance.GetParameterFromPosition(2)
-                |          If TypeName(input)="Nothing" Then
-                |                MsgBox "Parameter not found"
-                |          End If
+                Func GetParameterFromPosition(long iPosition) As AnyObject
+                    Gets a parameter of a hybrid shape instance from its
+                    position.
+                
+                    Parameters:
+                
+                        iPosition
+                            The position 
+                
+                    Returns:
+                        The parameter, if found 
+                    Example:
+                        The following example tests if the parameter was
+                        found:
+                
+                         Set parameter = hybridShapeInstance.GetParameterFromPosition(2)
+                         If TypeName(input)="Nothing" Then
+                               MsgBox "Parameter not found"
+                         End If
 
         :param int i_position:
         :return: AnyObject
@@ -342,26 +329,25 @@ class ShapeInstance(Shape):
     def put_input(self, i_name: str, i_input: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub PutInput(CATBSTR iName,AnyObject iInput)
-                |     Defines an input of a shape instance.
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The input name 
-                |         iInput
-                |             The element wich will be input of the shape
-                |             instance
-                |             All types of Boundary object are possibly supported.
-                |             
-                |         Example:
-                |             The following example defines the input of a shape instance The
-                |             input will be a point and its name will be Input1.
-                | 
-                |              shapeInstance.PutInput "Input1",point
+                Sub PutInput(CATBSTR iName,AnyObject iInput)
+                    Defines an input of a shape instance.
+                
+                    Parameters:
+                
+                        iName
+                            The input name 
+                        iInput
+                            The element wich will be input of the shape
+                            instance
+                            All types of Boundary object are possibly supported.
+                            
+                        Example:
+                            The following example defines the input of a shape instance The
+                            input will be a point and its name will be Input1.
+                
+                             shapeInstance.PutInput "Input1",point
 
         :param str i_name:
         :param AnyObject i_input:
@@ -372,27 +358,26 @@ class ShapeInstance(Shape):
     def put_input_data(self, i_name: str, i_input: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub PutInputData(CATBSTR iName,CATBaseDispatch iInput)
-                |     Defines an input of a shape instance. Use this method if you want to set as
-                |     input a Reference.
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The input name 
-                |         iInput
-                |             The element wich will be input of the shape
-                |             instance
-                |             All types of Boundary object are possibly supported.
-                |             
-                |         Example:
-                |             The following example defines the input of a shape instance The
-                |             input will be a point and its name will be Input1.
-                | 
-                |              shapeInstance.PutInput "Input1",point
+                Sub PutInputData(CATBSTR iName,CATBaseDispatch iInput)
+                    Defines an input of a shape instance. Use this method if you want to set as
+                    input a Reference.
+                
+                    Parameters:
+                
+                        iName
+                            The input name 
+                        iInput
+                            The element wich will be input of the shape
+                            instance
+                            All types of Boundary object are possibly supported.
+                            
+                        Example:
+                            The following example defines the input of a shape instance The
+                            input will be a point and its name will be Input1.
+                
+                             shapeInstance.PutInput "Input1",point
 
         :param str i_name:
         :param AnyObject i_input:
@@ -401,4 +386,4 @@ class ShapeInstance(Shape):
         return self.com_object.PutInputData(i_name, i_input.com_object)
 
     def __repr__(self):
-        return f'ShapeInstance(name="{ self.name }")'
+        return f'ShapeInstance(name="{self.name}")'

@@ -13,62 +13,60 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimAppliedTranslationVelocity(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimAppliedTranslationVelocity
-                | 
-                | Represents the Applied Translation Velocity object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimAppliedTranslationVelocity
-                |     as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyAppliedTranslationVelocity As
-                |      SimAppliedTranslationVelocity
-                |      Set MyAppliedTranslationVelocity = MyFeatures.Add("SimAppliedTranslationVelocity")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a
-                |     SimAppliedTranslationVelocity named "Applied Translation Velocity.1" as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyAppliedTranslationVelocity As
-                |      SimAppliedTranslationVelocity
-                |      Set MyAppliedTranslationVelocity = MyFeatures.Item("Applied Translation Velocity.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a
-                |     SimAppliedTranslationVelocity as following:
-                | 
-                |      ...
-                |      myAppliedTranslationVelocity = myFeatures.Add("SimAppliedTranslationVelocity")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a
-                |     SimAppliedTranslationVelocity named "Applied Translation Velocity.1" as
-                |     following:
-                | 
-                |      ...
-                |      myAppliedTranslationVelocity = myFeatures.Item("Applied Translation Velocity.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimAppliedTranslationVelocity
+                
+                Represents the Applied Translation Velocity object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimAppliedTranslationVelocity
+                    as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyAppliedTranslationVelocity As
+                     SimAppliedTranslationVelocity
+                     Set MyAppliedTranslationVelocity = MyFeatures.Add("SimAppliedTranslationVelocity")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a
+                    SimAppliedTranslationVelocity named "Applied Translation Velocity.1" as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyAppliedTranslationVelocity As
+                     SimAppliedTranslationVelocity
+                     Set MyAppliedTranslationVelocity = MyFeatures.Item("Applied Translation Velocity.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a
+                    SimAppliedTranslationVelocity as following:
+                
+                     ...
+                     myAppliedTranslationVelocity = myFeatures.Add("SimAppliedTranslationVelocity")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a
+                    SimAppliedTranslationVelocity named "Applied Translation Velocity.1" as
+                    following:
+                
+                     ...
+                     myAppliedTranslationVelocity = myFeatures.Item("Applied Translation Velocity.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -80,11 +78,10 @@ class SimAppliedTranslationVelocity(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -103,11 +100,10 @@ class SimAppliedTranslationVelocity(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the axis system.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the axis system.
 
         :return: SimAxisSystem
         """
@@ -118,11 +114,10 @@ class SimAppliedTranslationVelocity(AnyObject):
     def dof(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Dof() As SimDof
-                |     Returns or sets the degree of freedom on which the translation is applied.
+                Property Dof() As SimDof
+                    Returns or sets the degree of freedom on which the translation is applied.
 
         :return: int
         """
@@ -141,11 +136,10 @@ class SimAppliedTranslationVelocity(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureHistory() As SimFeatureHistory (Read Only)
-                |     Returns the feature history.
+                Property FeatureHistory() As SimFeatureHistory (Read Only)
+                    Returns the feature history.
 
         :return: SimFeatureHistory
         """
@@ -156,12 +150,11 @@ class SimAppliedTranslationVelocity(AnyObject):
     def translational_velocity(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TranslationalVelocity() As double
-                |     Translational velocity of the applied translation velocity. Quantity:
-                |     SPEED, units: m_s1 
+                Property TranslationalVelocity() As double
+                    Translational velocity of the applied translation velocity. Quantity:
+                    SPEED, units: m_s1 
 
         :return: float
         """
@@ -177,4 +170,4 @@ class SimAppliedTranslationVelocity(AnyObject):
         self.com_object.TranslationalVelocity = value
 
     def __repr__(self):
-        return f'SimAppliedTranslationVelocity(name="{ self.name }")'
+        return f'SimAppliedTranslationVelocity(name="{self.name}")'

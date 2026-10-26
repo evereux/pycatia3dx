@@ -14,19 +14,18 @@ from pycatia3dx.space_reference_system.srs_coordinate_converter import SrsCoordi
 class SrsInstantiateService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         SrsInstantiateService
-                | 
-                | Role: Allows using create Coordinate converter method.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        SrsInstantiateService
+                
+                Role: Allows using create Coordinate converter method.
     
     """
 
@@ -37,20 +36,19 @@ class SrsInstantiateService(Service):
     def create_srs_coordinate_converter(self, op_srs_coordinate_converter: SrsCoordinateConverter) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub CreateSrsCoordinateConverter(SrsCoordinateConverter
-                | opSrsCoordinateConverter)
-                |     Instantiate a SRS Coordinate Converter which can create converter absolute
-                |     coordinates to SRS coordinates.
-                |     Role: This method creates a new SRS Coordinate Converter.
-                | 
-                |         Parameters:
-                | 
-                |             opSrsCoordinateConverter
-                |                 [out, CATBaseUnknown#Release] CATISrsCoordinateConverter. The
-                |                 pointer on the SRS Coordinate Converter. 
+                Sub CreateSrsCoordinateConverter(SrsCoordinateConverter
+                opSrsCoordinateConverter)
+                    Instantiate a SRS Coordinate Converter which can create converter absolute
+                    coordinates to SRS coordinates.
+                    Role: This method creates a new SRS Coordinate Converter.
+                
+                        Parameters:
+                
+                            opSrsCoordinateConverter
+                                [out, CATBaseUnknown#Release] CATISrsCoordinateConverter. The
+                                pointer on the SRS Coordinate Converter. 
 
         :param SrsCoordinateConverter op_srs_coordinate_converter:
         :return: None

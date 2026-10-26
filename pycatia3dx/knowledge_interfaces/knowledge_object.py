@@ -13,21 +13,19 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class KnowledgeObject(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     KnowledgeObject
-                | 
-                | Interface to access a CATIAKnowledgeObject.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    KnowledgeObject
+                
+                Interface to access a CATIAKnowledgeObject.
     
     """
 
@@ -39,12 +37,11 @@ class KnowledgeObject(AnyObject):
     def hidden(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Hidden() As boolean
-                |     Returns or sets whether the relation is hidden or should be hidden or
-                |     not.
+                Property Hidden() As boolean
+                    Returns or sets whether the relation is hidden or should be hidden or
+                    not.
 
         :return: bool
         """
@@ -63,12 +60,11 @@ class KnowledgeObject(AnyObject):
     def is_const(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property IsConst() As boolean
-                |     Returns or sets whether the relation is Const or should be Const or
-                |     not.
+                Property IsConst() As boolean
+                    Returns or sets whether the relation is Const or should be Const or
+                    not.
 
         :return: bool
         """
@@ -84,4 +80,4 @@ class KnowledgeObject(AnyObject):
         self.com_object.IsConst = value
 
     def __repr__(self):
-        return f'KnowledgeObject(name="{ self.name }")'
+        return f'KnowledgeObject(name="{self.name}")'

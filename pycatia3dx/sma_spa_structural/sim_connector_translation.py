@@ -12,59 +12,57 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimConnectorTranslation(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimConnectorTranslation
-                | 
-                | Represents the Connector Translation object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimConnectorTranslation as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyConnectorTranslation As SimConnectorTranslation
-                |      Set MyConnectorTranslation = MyFeatures.Add("SimConnectorTranslation")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimConnectorTranslation
-                |     named "Connector Translation.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyConnectorTranslation As SimConnectorTranslation
-                |      Set MyConnectorTranslation = MyFeatures.Item("Connector Translation.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a
-                |     SimConnectorTranslation as following:
-                | 
-                |      ...
-                |      myConnectorTranslation = myFeatures.Add("SimConnectorTranslation")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a
-                |     SimConnectorTranslation named "Connector Translation.1" as
-                |     following:
-                | 
-                |      ...
-                |      myConnectorTranslation = myFeatures.Item("Connector Translation.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimConnectorTranslation
+                
+                Represents the Connector Translation object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimConnectorTranslation as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyConnectorTranslation As SimConnectorTranslation
+                     Set MyConnectorTranslation = MyFeatures.Add("SimConnectorTranslation")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimConnectorTranslation
+                    named "Connector Translation.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyConnectorTranslation As SimConnectorTranslation
+                     Set MyConnectorTranslation = MyFeatures.Item("Connector Translation.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a
+                    SimConnectorTranslation as following:
+                
+                     ...
+                     myConnectorTranslation = myFeatures.Add("SimConnectorTranslation")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a
+                    SimConnectorTranslation named "Connector Translation.1" as
+                    following:
+                
+                     ...
+                     myConnectorTranslation = myFeatures.Item("Connector Translation.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -76,11 +74,10 @@ class SimConnectorTranslation(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -99,12 +96,11 @@ class SimConnectorTranslation(AnyObject):
     def available_connector_components(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AvailableConnectorComponents() As CATSafeArrayVariant (Read
-                | Only)
-                |     Returns the list of available connector components of relative motion. The list can contains the following values: 1 : the first translation DOF is available, 2 : the second translation DOF is available, 3 : the third translation DOF is available.
+                Property AvailableConnectorComponents() As CATSafeArrayVariant (Read
+                Only)
+                    Returns the list of available connector components of relative motion. The list can contains the following values: 1 : the first translation DOF is available, 2 : the second translation DOF is available, 3 : the third translation DOF is available.
 
         :return: tuple
         """
@@ -115,11 +111,10 @@ class SimConnectorTranslation(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureHistory() As SimFeatureHistory (Read Only)
-                |     Returns the feature history.
+                Property FeatureHistory() As SimFeatureHistory (Read Only)
+                    Returns the feature history.
 
         :return: SimFeatureHistory
         """
@@ -130,12 +125,11 @@ class SimConnectorTranslation(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. See SimFeatures.GetSpecTreeCategory for usage.
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. See SimFeatures.GetSpecTreeCategory for usage.
 
         :return: str
         """
@@ -146,12 +140,11 @@ class SimConnectorTranslation(AnyObject):
     def variation_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property VariationType() As
-                | SimConnectorTranslationVariationType
-                |     Returns or sets the variation type.
+                Property VariationType() As
+                SimConnectorTranslationVariationType
+                    Returns or sets the variation type.
 
         :return: int
         """
@@ -169,20 +162,19 @@ class SimConnectorTranslation(AnyObject):
     def get_displacement(self, i_degree_of_freedom: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetDisplacement(SimDof iDegreeOfFreedom) As double
-                |     Retrieves the displacement value for a specific degree of
-                |     freedom.
-                | 
-                |     Parameters:
-                | 
-                |         iDegreeOfFreedom[in]
-                |             The degree of freedom. Valid input values are : SimTranslation1, SimTranslation2 and SimTranslation3 
-                | 
-                |     Returns:
-                |         The displacement value. Quantity: LENGTH, units: m
+                Func GetDisplacement(SimDof iDegreeOfFreedom) As double
+                    Retrieves the displacement value for a specific degree of
+                    freedom.
+                
+                    Parameters:
+                
+                        iDegreeOfFreedom[in]
+                            The degree of freedom. Valid input values are : SimTranslation1, SimTranslation2 and SimTranslation3 
+                
+                    Returns:
+                        The displacement value. Quantity: LENGTH, units: m
 
         :param int i_degree_of_freedom:
         :return: float
@@ -192,20 +184,19 @@ class SimConnectorTranslation(AnyObject):
     def get_translation_activation_flag(self, i_degree_of_freedom: int) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTranslationActivationFlag(SimDof iDegreeOfFreedom) As
-                | boolean
-                |     Retrieves the flag which determines if a translation is active on a
-                |     particular degree of freedom.
-                | 
-                |     Parameters:
-                | 
-                |         iDegreeOfFreedom[in]
-                |             The degree of freedom. Valid input values are : SimTranslation1, SimTranslation2 and SimTranslation3 
-                |         oTranslationActivationFlag[out]
-                |             The activation flag. TRUE : the translation is active for the specified DoF, FALSE : the translation is not active for the specified DoF.
+                Func GetTranslationActivationFlag(SimDof iDegreeOfFreedom) As
+                boolean
+                    Retrieves the flag which determines if a translation is active on a
+                    particular degree of freedom.
+                
+                    Parameters:
+                
+                        iDegreeOfFreedom[in]
+                            The degree of freedom. Valid input values are : SimTranslation1, SimTranslation2 and SimTranslation3 
+                        oTranslationActivationFlag[out]
+                            The activation flag. TRUE : the translation is active for the specified DoF, FALSE : the translation is not active for the specified DoF.
 
         :param int i_degree_of_freedom:
         :return: bool
@@ -215,20 +206,19 @@ class SimConnectorTranslation(AnyObject):
     def set_displacement(self, i_degree_of_freedom: int, i_displacement: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetDisplacement(SimDof iDegreeOfFreedom,double
-                | iDisplacement)
-                |     Sets the displacement value for a specific degree of
-                |     freedom.
-                | 
-                |     Parameters:
-                | 
-                |         iDegreeOfFreedom[in]
-                |             The degree of freedom. Valid input values are : SimTranslation1, SimTranslation2 and SimTranslation3 
-                |         iDisplacement[in]
-                |             The displacement value. Quantity: LENGTH, units: m
+                Sub SetDisplacement(SimDof iDegreeOfFreedom,double
+                iDisplacement)
+                    Sets the displacement value for a specific degree of
+                    freedom.
+                
+                    Parameters:
+                
+                        iDegreeOfFreedom[in]
+                            The degree of freedom. Valid input values are : SimTranslation1, SimTranslation2 and SimTranslation3 
+                        iDisplacement[in]
+                            The displacement value. Quantity: LENGTH, units: m
 
         :param int i_degree_of_freedom:
         :param float i_displacement:
@@ -239,20 +229,19 @@ class SimConnectorTranslation(AnyObject):
     def set_translation_activation_flag(self, i_degree_of_freedom: int, i_translation_activation_flag: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTranslationActivationFlag(SimDof iDegreeOfFreedom,boolean
-                | iTranslationActivationFlag)
-                |     Set the flag which determines if a translation is active on a particular
-                |     degree of freedom.
-                | 
-                |     Parameters:
-                | 
-                |         iDegreeOfFreedom[in]
-                |             The degree of freedom. Valid input values are : SimTranslation1, SimTranslation2 and SimTranslation3 
-                |         iTranslationActivationFlag[in]
-                |             The activation flag. TRUE : the translation is active for the specified DoF, FALSE : the translation is not active for the specified DoF. 
+                Sub SetTranslationActivationFlag(SimDof iDegreeOfFreedom,boolean
+                iTranslationActivationFlag)
+                    Set the flag which determines if a translation is active on a particular
+                    degree of freedom.
+                
+                    Parameters:
+                
+                        iDegreeOfFreedom[in]
+                            The degree of freedom. Valid input values are : SimTranslation1, SimTranslation2 and SimTranslation3 
+                        iTranslationActivationFlag[in]
+                            The activation flag. TRUE : the translation is active for the specified DoF, FALSE : the translation is not active for the specified DoF. 
 
         :param int i_degree_of_freedom:
         :param bool i_translation_activation_flag:
@@ -261,4 +250,4 @@ class SimConnectorTranslation(AnyObject):
         return self.com_object.SetTranslationActivationFlag(i_degree_of_freedom, i_translation_activation_flag)
 
     def __repr__(self):
-        return f'SimConnectorTranslation(name="{ self.name }")'
+        return f'SimConnectorTranslation(name="{self.name}")'

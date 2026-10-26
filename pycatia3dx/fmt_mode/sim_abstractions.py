@@ -15,16 +15,15 @@ from pycatia3dx.types.general import CATVariant
 class SimAbstractions(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SimAbstractions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SimAbstractions
 
     
     """
@@ -37,19 +36,18 @@ class SimAbstractions(Collection):
     def add(self, i_type: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add(CATBSTR iType) As CATBaseDispatch
-                |     Creates a new abstraction and adds it to the collection.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The type of abstraction to create. 
-                | 
-                |     Returns:
-                |         The created abstraction.
+                Func Add(CATBSTR iType) As CATBaseDispatch
+                    Creates a new abstraction and adds it to the collection.
+                
+                    Parameters:
+                
+                        iType
+                            The type of abstraction to create. 
+                
+                    Returns:
+                        The created abstraction.
 
         :param str i_type:
         :return: AnyObject
@@ -59,25 +57,24 @@ class SimAbstractions(Collection):
     def item(self, i_index: CATVariant) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As CATBaseDispatch
-                |     Returns an abstraction using its index or its name from the
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or the name of the abstraction to retrieve from the
-                |             collection of abstractions.
-                |             As a numeric, this index is the rank of the abstraction in the
-                |             collection. The index of the first abstraction in the collection is 1, and the
-                |             index of the last abstraction is Count.
-                |             As a string, it is the name you assigned to the abstraction using
-                |             the Name object property. 
-                | 
-                |     Returns:
+                Func Item(CATVariant iIndex) As CATBaseDispatch
+                    Returns an abstraction using its index or its name from the
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index or the name of the abstraction to retrieve from the
+                            collection of abstractions.
+                            As a numeric, this index is the rank of the abstraction in the
+                            collection. The index of the first abstraction in the collection is 1, and the
+                            index of the last abstraction is Count.
+                            As a string, it is the name you assigned to the abstraction using
+                            the Name object property. 
+                
+                    Returns:
 
         :param CATVariant i_index:
         :return: AnyObject
@@ -87,23 +84,22 @@ class SimAbstractions(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(CATVariant iIndex)
-                |     Removes an abstraction using its index or its name from the
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or the name of the abstraction to retrieve from the
-                |             collection of abstractions.
-                |             As a numeric, this index is the rank of the abstraction in the
-                |             collection. The index of the first abstraction in the collection is 1, and the
-                |             index of the last abstraction is Count.
-                |             As a string, it is the name you assigned to the abstraction using
-                |             the Name object property.
+                Sub Remove(CATVariant iIndex)
+                    Removes an abstraction using its index or its name from the
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index or the name of the abstraction to retrieve from the
+                            collection of abstractions.
+                            As a numeric, this index is the rank of the abstraction in the
+                            collection. The index of the first abstraction in the collection is 1, and the
+                            index of the last abstraction is Count.
+                            As a string, it is the name you assigned to the abstraction using
+                            the Name object property.
 
         :param CATVariant i_index:
         :return: None

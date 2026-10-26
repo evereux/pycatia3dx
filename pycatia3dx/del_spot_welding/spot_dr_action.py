@@ -14,16 +14,15 @@ from pycatia3dx.system.any_object import AnyObject
 class SpotDrAction(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SpotDrAction
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SpotDrAction
 
     
     """
@@ -36,19 +35,18 @@ class SpotDrAction(AnyObject):
     def drill_rivet_profile(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DrillRivetProfile() As AnyObject
-                |     Get the assigned Drill-Rivet Profile
-                | 
-                |     Parameters:
-                | 
-                |         oDRProfile
-                |             Assigned Drill-Rivet Profile 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Property DrillRivetProfile() As AnyObject
+                    Get the assigned Drill-Rivet Profile
+                
+                    Parameters:
+                
+                        oDRProfile
+                            Assigned Drill-Rivet Profile 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :return: AnyObject
         """
@@ -67,19 +65,18 @@ class SpotDrAction(AnyObject):
     def object_profile(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ObjectProfile(AnyObject iObjectProfile)
-                |     Set the Object Frame Profile
-                | 
-                |     Parameters:
-                | 
-                |         iObjectProfile
-                |             Object Frame Profile to Assign 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Property ObjectProfile(AnyObject iObjectProfile)
+                    Set the Object Frame Profile
+                
+                    Parameters:
+                
+                        iObjectProfile
+                            Object Frame Profile to Assign 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :return: AnyObject
         """
@@ -98,19 +95,18 @@ class SpotDrAction(AnyObject):
     def tool_profile(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ToolProfile(AnyObject iToolProfile)
-                |     Set the Tool Profile
-                | 
-                |     Parameters:
-                | 
-                |         iToolProfile
-                |             Tool Profile to Assign 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Property ToolProfile(AnyObject iToolProfile)
+                    Set the Tool Profile
+                
+                    Parameters:
+                
+                        iToolProfile
+                            Tool Profile to Assign 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :return: AnyObject
         """
@@ -128,36 +124,35 @@ class SpotDrAction(AnyObject):
     def add_instruction(self, ih_instruction: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddInstruction(AnyObject ihInstruction)
-                |     This method adds the passed instruction to the Drill-Rivet
-                |     Action
-                | 
-                |     Parameters:
-                | 
-                |         ihInstruction,
-                |             instruction to be created 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure. 
-                |     Example:
-                | 
-                |          
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            Dim DRAction As SpotDrAction
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            Set ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim iIndex
-                |            iIndex=-1
-                |            Dim oCreatedCustom As RscCustomInstruction
-                |            Set oCreatedCustom = ResourceSequence.CreateRscCustomInstruction(iIndex)
-                |            ......
-                |            DRAction.AddInstruction(oCreatedCustom)
+                Sub AddInstruction(AnyObject ihInstruction)
+                    This method adds the passed instruction to the Drill-Rivet
+                    Action
+                
+                    Parameters:
+                
+                        ihInstruction,
+                            instruction to be created 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure. 
+                    Example:
+                
+                         
+                
+                           Dim oResourceTask As ResourceTask2
+                           Dim DRAction As SpotDrAction
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           Set ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim iIndex
+                           iIndex=-1
+                           Dim oCreatedCustom As RscCustomInstruction
+                           Set oCreatedCustom = ResourceSequence.CreateRscCustomInstruction(iIndex)
+                           ......
+                           DRAction.AddInstruction(oCreatedCustom)
 
         :param AnyObject ih_instruction:
         :return: None
@@ -167,19 +162,18 @@ class SpotDrAction(AnyObject):
     def get_manufacturing_fastener(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetManufacturingFastener() As AnyObject
-                |     Get the Fastener associated to the DR Action.
-                | 
-                |     Parameters:
-                | 
-                |         opFastener
-                |             Manufacturing Fastener. 
-                | 
-                |     Returns:
-                |         S_OK = Successfully get the handle to Manufacturing Fastener. E_FAIL = Failed to get the associated Manufacturing Fastener.
+                Func GetManufacturingFastener() As AnyObject
+                    Get the Fastener associated to the DR Action.
+                
+                    Parameters:
+                
+                        opFastener
+                            Manufacturing Fastener. 
+                
+                    Returns:
+                        S_OK = Successfully get the handle to Manufacturing Fastener. E_FAIL = Failed to get the associated Manufacturing Fastener.
 
         :return: AnyObject
         """
@@ -188,29 +182,28 @@ class SpotDrAction(AnyObject):
     def get_position_coordinates(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetPositionCoordinates() As CATSafeArrayVariant
-                |     Gets the position coordinates(like X, Y, Z, Y, P, R) associated to the DR
-                |     Action.
-                | 
-                |     Parameters:
-                | 
-                |         oFastenerPosCoords
-                |             The X, Y, Z, Y, P, R values of Fastener position The position are
-                |             of double type. The values get via CATSafeArrayVariant for oFastenerPosCoords
-                |             is array of double pointers, having 6 position values.
-                |             
-                | 
-                |     Returns:
-                |         An HRESULT.
-                |         Legal values:
-                | 
-                |         S_OK
-                |             Cartesian target successfully set
-                |         E_FAIL
-                |             Cartesian target could not be set successfully
+                Func GetPositionCoordinates() As CATSafeArrayVariant
+                    Gets the position coordinates(like X, Y, Z, Y, P, R) associated to the DR
+                    Action.
+                
+                    Parameters:
+                
+                        oFastenerPosCoords
+                            The X, Y, Z, Y, P, R values of Fastener position The position are
+                            of double type. The values get via CATSafeArrayVariant for oFastenerPosCoords
+                            is array of double pointers, having 6 position values.
+                            
+                
+                    Returns:
+                        An HRESULT.
+                        Legal values:
+                
+                        S_OK
+                            Cartesian target successfully set
+                        E_FAIL
+                            Cartesian target could not be set successfully
 
         :return: tuple
         """
@@ -219,23 +212,22 @@ class SpotDrAction(AnyObject):
     def list_instructions(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func ListInstructions() As CATSafeArrayVariant
-                |     List all instructions present in this Sequence.
-                | 
-                |     Parameters:
-                | 
-                |         oListInstructions
-                |             The list of instructions to complete (Previous list content is not
-                |             removed). 
-                | 
-                |     Returns:
-                |         Legal values:
-                | 
-                |             S_OK : The method has succeeded
-                |             E_FAIL : if an error occurs.
+                Func ListInstructions() As CATSafeArrayVariant
+                    List all instructions present in this Sequence.
+                
+                    Parameters:
+                
+                        oListInstructions
+                            The list of instructions to complete (Previous list content is not
+                            removed). 
+                
+                    Returns:
+                        Legal values:
+                
+                            S_OK : The method has succeeded
+                            E_FAIL : if an error occurs.
 
         :return: tuple
         """
@@ -244,20 +236,19 @@ class SpotDrAction(AnyObject):
     def remove_instruction(self, ih_instruction: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveInstruction(AnyObject ihInstruction)
-                |     This method removes the passed instruction to the Drill-Rivet
-                |     Action
-                | 
-                |     Parameters:
-                | 
-                |         ihInstruction,
-                |             instruction to be removed 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub RemoveInstruction(AnyObject ihInstruction)
+                    This method removes the passed instruction to the Drill-Rivet
+                    Action
+                
+                    Parameters:
+                
+                        ihInstruction,
+                            instruction to be removed 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param AnyObject ih_instruction:
         :return: None
@@ -267,30 +258,29 @@ class SpotDrAction(AnyObject):
     def set_position_coordinates(self, i_fastener_pos_coords: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetPositionCoordinates(CATSafeArrayVariant
-                | iFastenerPosCoords)
-                |     Sets the position coordinates(like X, Y, Z, Y, P, R) associated to the DR
-                |     Action.
+                Sub SetPositionCoordinates(CATSafeArrayVariant
+                iFastenerPosCoords)
+                    Sets the position coordinates(like X, Y, Z, Y, P, R) associated to the DR
+                    Action.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iFastenerPosCoords
-                |             The X, Y, Z, Y, P, R values of Fastener position The position are
-                |             of double type. The values get via CATSafeArrayVariant for oFastenerPosCoords
-                |             is array of double pointers, having 6 position values.
+                        iFastenerPosCoords
+                            The X, Y, Z, Y, P, R values of Fastener position The position are
+                            of double type. The values get via CATSafeArrayVariant for oFastenerPosCoords
+                            is array of double pointers, having 6 position values.
                 |
                 |
-                |     Returns:
-                |         An HRESULT.
-                |         Legal values:
+                    Returns:
+                        An HRESULT.
+                        Legal values:
                 |
-                |         S_OK
-                |             Cartesian target successfully set
-                |         E_FAIL
-                |             Cartesian target could not be set successfully
+                        S_OK
+                            Cartesian target successfully set
+                        E_FAIL
+                            Cartesian target could not be set successfully
 
         :param tuple i_fastener_pos_coords:
         :return: None

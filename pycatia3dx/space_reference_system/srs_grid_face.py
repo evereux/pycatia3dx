@@ -19,18 +19,17 @@ if TYPE_CHECKING:
 class SrsGridFace(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SrsGridFace
-                | 
-                | Role: Allows accessing of Plane Face's data.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SrsGridFace
+                
+                Role: Allows accessing of Plane Face's data.
     
     """
 
@@ -42,20 +41,19 @@ class SrsGridFace(AnyObject):
     def category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Category() As CATBSTR
-                |     Returns or Sets the Category.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the category of the grid
-                |              face.
-                |              
-                | 
-                |               CategoryName = ObjSrsGridFace.Category
+                Property Category() As CATBSTR
+                    Returns or Sets the Category.
+                
+                    Example:
+                
+                
+                             This example retrieves the category of the grid
+                             face.
+                             
+                
+                              CategoryName = ObjSrsGridFace.Category
 
         :return: str
         """
@@ -74,22 +72,21 @@ class SrsGridFace(AnyObject):
     def orientation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Orientation() As boolean (Read Only)
-                |     Returns the Orientation.
-                | 
-                |     Returns:
-                |         The orientation of the grid face 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves orientation of the Grid
-                |              Face.
-                |              
-                | 
-                |               oOrient = ObjSrsGridFace.Orientation
+                Property Orientation() As boolean (Read Only)
+                    Returns the Orientation.
+                
+                    Returns:
+                        The orientation of the grid face 
+                    Example:
+                
+                
+                             This example retrieves orientation of the Grid
+                             Face.
+                             
+                
+                              oOrient = ObjSrsGridFace.Orientation
 
         :return: bool
         """
@@ -100,19 +97,18 @@ class SrsGridFace(AnyObject):
     def short_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ShortName() As CATBSTR
-                |     Returns or Sets the short name.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves short name for Grid Face.
-                |              
-                | 
-                |               ShortName = ObjSrsGridFace.ShortName
+                Property ShortName() As CATBSTR
+                    Returns or Sets the short name.
+                
+                    Example:
+                
+                
+                             This example retrieves short name for Grid Face.
+                             
+                
+                              ShortName = ObjSrsGridFace.ShortName
 
         :return: str
         """
@@ -130,23 +126,22 @@ class SrsGridFace(AnyObject):
     def get_abs_offset(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAbsOffset() As double
-                |     Returns the absolute offset of the grid face.
-                | 
-                |     Returns:
-                |         The absolute offset of the grid face 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the absolute offset of the grid
-                |              face.
-                |              
-                | 
-                |               Dim AbsOffset As double
-                |               AbsOffset = ObjSrsGridFace.GetAbsOffset
+                Func GetAbsOffset() As double
+                    Returns the absolute offset of the grid face.
+                
+                    Returns:
+                        The absolute offset of the grid face 
+                    Example:
+                
+                
+                             This example retrieves the absolute offset of the grid
+                             face.
+                             
+                
+                              Dim AbsOffset As double
+                              AbsOffset = ObjSrsGridFace.GetAbsOffset
 
         :return: float
         """
@@ -155,22 +150,21 @@ class SrsGridFace(AnyObject):
     def get_grid_set(self) -> 'SrsGridSet':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetGridSet() As SrsGridSet
-                |     Returns the Grid set of this Grid Face.
-                | 
-                |     Returns:
-                |         The grid set to which this grid face belongs 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves grid set of the grid face.
-                |              
-                | 
-                |               Dim ObjSrsGridSet As SrsGridSet
-                |               ObjSrsGridSet = ObjSrsGridFace.GetGridSet
+                Func GetGridSet() As SrsGridSet
+                    Returns the Grid set of this Grid Face.
+                
+                    Returns:
+                        The grid set to which this grid face belongs 
+                    Example:
+                
+                
+                             This example retrieves grid set of the grid face.
+                             
+                
+                              Dim ObjSrsGridSet As SrsGridSet
+                              ObjSrsGridSet = ObjSrsGridFace.GetGridSet
 
         :return: SrsGridSet
         """
@@ -180,23 +174,22 @@ class SrsGridFace(AnyObject):
     def get_reference(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetReference() As Reference
-                |     Returns the reference object of the grid face.
-                | 
-                |     Returns:
-                |         The reference object of the grid face 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the reference object of the grid
-                |              face.
-                |              
-                | 
-                |               Dim ObjGridFaceReference As Reference
-                |               ObjGridFaceReference = ObjSrsGridFace.GetReference
+                Func GetReference() As Reference
+                    Returns the reference object of the grid face.
+                
+                    Returns:
+                        The reference object of the grid face 
+                    Example:
+                
+                
+                             This example retrieves the reference object of the grid
+                             face.
+                             
+                
+                              Dim ObjGridFaceReference As Reference
+                              ObjGridFaceReference = ObjSrsGridFace.GetReference
 
         :return: Reference
         """
@@ -205,23 +198,22 @@ class SrsGridFace(AnyObject):
     def get_rel_offset(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetRelOffset() As double
-                |     Returns the relative offset of the grid face.
-                | 
-                |     Returns:
-                |         The relative offset of the grid face 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the relative offset of the grid
-                |              face.
-                |              
-                | 
-                |               Dim RelOffset As double
-                |               RelOffset = ObjSrsGridFace.GetRelOffset
+                Func GetRelOffset() As double
+                    Returns the relative offset of the grid face.
+                
+                    Returns:
+                        The relative offset of the grid face 
+                    Example:
+                
+                
+                             This example retrieves the relative offset of the grid
+                             face.
+                             
+                
+                              Dim RelOffset As double
+                              RelOffset = ObjSrsGridFace.GetRelOffset
 
         :return: float
         """
@@ -230,25 +222,24 @@ class SrsGridFace(AnyObject):
     def is_origin_face(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsOriginFace() As boolean
-                |     Returns whether the grid face is the origin face of the grid
-                |     set.
-                | 
-                |     Returns:
-                |         Boolean whether this grid face is the origin face or not (TRUE means
-                |         that the grid face is the origin face). 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves whether the grid face is the origin face of
-                |              the grid set.
-                |              
-                | 
-                |               Dim IsOriginFace As Boolean
-                |               IsOriginFace = ObjSrsGridFace.IsAftAtOrigin
+                Func IsOriginFace() As boolean
+                    Returns whether the grid face is the origin face of the grid
+                    set.
+                
+                    Returns:
+                        Boolean whether this grid face is the origin face or not (TRUE means
+                        that the grid face is the origin face). 
+                    Example:
+                
+                
+                             This example retrieves whether the grid face is the origin face of
+                             the grid set.
+                             
+                
+                              Dim IsOriginFace As Boolean
+                              IsOriginFace = ObjSrsGridFace.IsAftAtOrigin
 
         :return: bool
         """
@@ -257,20 +248,19 @@ class SrsGridFace(AnyObject):
     def reset_category(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ResetCategory()
-                |     Resets the category of the grid face.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example resets the category of the grid
-                |              face.
-                |              
-                | 
-                |               ObjSrsGridFace.ResetCategory
+                Sub ResetCategory()
+                    Resets the category of the grid face.
+                
+                    Example:
+                
+                
+                             This example resets the category of the grid
+                             face.
+                             
+                
+                              ObjSrsGridFace.ResetCategory
 
         :return: None
         """

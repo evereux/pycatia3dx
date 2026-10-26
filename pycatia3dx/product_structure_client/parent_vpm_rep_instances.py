@@ -13,24 +13,23 @@ from pycatia3dx.plm_modeller_base.plm_entities import PLMEntities
 class ParentVPMRepInstances(PLMEntities):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     PLMModelerBaseIDLItf.PLMEntities
-                |                         ParentVPMRepInstances
-                | 
-                | Collection containing all the parent PLM Representation Instances of a PLM
-                | Representation Reference.
-                | To retrieve PLM Representation Instances from a PLM Product Reference,
-                | you can also use the following collection :
-                | @ref CATIAVPMRepInstances /!\\ The parent of this collection is
-                | the PLM Representation Reference
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    PLMModelerBaseIDLItf.PLMEntities
+                                        ParentVPMRepInstances
+                
+                Collection containing all the parent PLM Representation Instances of a PLM
+                Representation Reference.
+                To retrieve PLM Representation Instances from a PLM Product Reference,
+                you can also use the following collection :
+                @ref CATIAVPMRepInstances /!\\ The parent of this collection is
+                the PLM Representation Reference
     
     """
 

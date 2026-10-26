@@ -12,60 +12,58 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimGeneralConstraint(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimGeneralConstraint
-                | 
-                | Represents the general constraint object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimGeneralConstraint as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyGeneralConstraint As SimGeneralConstraint
-                |      Set MyGeneralConstraint = MyFeatures.Add("SimGeneralConstraint")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimGeneralConstraint named "General Constraint.1" as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyGeneralConstraint As SimGeneralConstraint
-                |      Set MyGeneralConstraint = MyFeatures.Item("General Constraint.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimGeneralConstraint as following:
-                | 
-                |      ...
-                |      MyGeneralConstraint = MyFeatures.Add("SimGeneralConstraint")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimGeneralConstraint named "General Constraint.1" as
-                |     following:
-                | 
-                |      ...
-                |      MyGeneralConstraint = MyFeatures.Item("General Constraint.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimGeneralConstraint
+                
+                Represents the general constraint object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimGeneralConstraint as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyGeneralConstraint As SimGeneralConstraint
+                     Set MyGeneralConstraint = MyFeatures.Add("SimGeneralConstraint")
+                     
+                
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimGeneralConstraint named "General Constraint.1" as
+                    following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyGeneralConstraint As SimGeneralConstraint
+                     Set MyGeneralConstraint = MyFeatures.Item("General Constraint.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimGeneralConstraint as following:
+                
+                     ...
+                     MyGeneralConstraint = MyFeatures.Add("SimGeneralConstraint")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimGeneralConstraint named "General Constraint.1" as
+                    following:
+                
+                     ...
+                     MyGeneralConstraint = MyFeatures.Item("General Constraint.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -76,16 +74,15 @@ class SimGeneralConstraint(AnyObject):
     def get_maximum(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetMaximum(double oVal)
-                |     Gets the Maximum value.
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Constraint value. Quantity: Response variable units
+                Sub GetMaximum(double oVal)
+                    Gets the Maximum value.
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Constraint value. Quantity: Response variable units
 
         :param float o_val:
         :return: None
@@ -95,16 +92,15 @@ class SimGeneralConstraint(AnyObject):
     def get_minimum(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetMinimum(double oVal)
-                |     Gets the Minimum value.
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Constraint value. Quantity: Response variable units
+                Sub GetMinimum(double oVal)
+                    Gets the Minimum value.
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Constraint value. Quantity: Response variable units
 
         :param float o_val:
         :return: None
@@ -114,16 +110,15 @@ class SimGeneralConstraint(AnyObject):
     def set_maximum(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMaximum(double iVal)
-                |     Sets the Maximum value.
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Constraint value. Quantity: Response variable units
+                Sub SetMaximum(double iVal)
+                    Sets the Maximum value.
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Constraint value. Quantity: Response variable units
 
         :param float i_val:
         :return: None
@@ -133,16 +128,15 @@ class SimGeneralConstraint(AnyObject):
     def set_minimum(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMinimum(double iVal)
-                |     Sets the Minimum value.
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Constraint value. Quantity: Response variable units
+                Sub SetMinimum(double iVal)
+                    Sets the Minimum value.
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Constraint value. Quantity: Response variable units
 
         :param float i_val:
         :return: None
@@ -150,4 +144,4 @@ class SimGeneralConstraint(AnyObject):
         return self.com_object.SetMinimum(i_val)
 
     def __repr__(self):
-        return f'SimGeneralConstraint(name="{ self.name }")'
+        return f'SimGeneralConstraint(name="{self.name}")'

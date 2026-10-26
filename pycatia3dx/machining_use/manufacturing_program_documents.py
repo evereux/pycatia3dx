@@ -12,23 +12,21 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingProgramDocuments(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingProgramDocuments
-                | 
-                | Interface dedicated to published documents of a manufacturing
-                | program.
-                | It is implemented on ManufacturingProgram object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingProgramDocuments
+                
+                Interface dedicated to published documents of a manufacturing
+                program.
+                It is implemented on ManufacturingProgram object.
     
     """
 
@@ -39,11 +37,10 @@ class ManufacturingProgramDocuments(AnyObject):
     def get_published_documents(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetPublishedDocuments() As CATSafeArrayVariant
-                |     Retrieve PLM documents attached to the manufacturing program.
+                Func GetPublishedDocuments() As CATSafeArrayVariant
+                    Retrieve PLM documents attached to the manufacturing program.
 
         :return: tuple
         """
@@ -52,18 +49,17 @@ class ManufacturingProgramDocuments(AnyObject):
     def publish(self, i_file_path: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Publish(CATBSTR iFilePath)
-                |     Create a PLM document and attach it to the manufacturing program. When a
-                |     document with same file name already exists, it updates its
-                |     content.
-                | 
-                |     Parameters:
-                | 
-                |         iFilePath
-                |             The full path of file to add to the document.
+                Sub Publish(CATBSTR iFilePath)
+                    Create a PLM document and attach it to the manufacturing program. When a
+                    document with same file name already exists, it updates its
+                    content.
+                
+                    Parameters:
+                
+                        iFilePath
+                            The full path of file to add to the document.
 
         :param str i_file_path:
         :return: None
@@ -71,4 +67,4 @@ class ManufacturingProgramDocuments(AnyObject):
         return self.com_object.Publish(i_file_path)
 
     def __repr__(self):
-        return f'ManufacturingProgramDocuments(name="{ self.name }")'
+        return f'ManufacturingProgramDocuments(name="{self.name}")'

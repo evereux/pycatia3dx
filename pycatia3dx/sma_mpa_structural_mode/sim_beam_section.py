@@ -13,58 +13,56 @@ from pycatia3dx.sma_mpa_structural_mode.sim_beam_profile import SimBeamProfile
 
 
 class SimBeamSection(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimBeamSection
-                | 
-                | Represents the Beam Section object.
-                | 
-                | Example:
-                |     Given a SimProperties object, you can create a SimBeamSection as
-                |     following:
-                | 
-                |      Dim MyProperties As SimProperties
-                |      ...
-                |      Dim MyBeamSection As SimBeamSection
-                |      Set MyBeamSection = MyProperties.Add("SimBeamSection")
-                |      
-                | 
-                |     Given a SimProperties object, you can retrieve a SimBeamSection named "Beam
-                |     Section.1" as following:
-                | 
-                |      Dim MyProperties As SimProperties
-                |      ...
-                |      Dim MyBeamSection As SimBeamSection
-                |      Set MyBeamSection = MyProperties.Item("Beam Section.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimProperties object myProperties, you can create a SimBeamSection
-                |     as following:
-                | 
-                |      ...
-                |      myBeamSection = myProperties.Add("SimBeamSection")
-                |      
-                | 
-                |     Given a SimProperties object myProperties, you can retrieve a
-                |     SimBeamSection named "Beam Section.1" as following:
-                | 
-                |      ...
-                |      myBeamSection = myProperties.Item("Beam Section.1")
-                |      
-                | 
-                | See also:
-                |     SimProperties
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimBeamSection
+                
+                Represents the Beam Section object.
+                
+                Example:
+                    Given a SimProperties object, you can create a SimBeamSection as
+                    following:
+                
+                     Dim MyProperties As SimProperties
+                     ...
+                     Dim MyBeamSection As SimBeamSection
+                     Set MyBeamSection = MyProperties.Add("SimBeamSection")
+                     
+                
+                    Given a SimProperties object, you can retrieve a SimBeamSection named "Beam
+                    Section.1" as following:
+                
+                     Dim MyProperties As SimProperties
+                     ...
+                     Dim MyBeamSection As SimBeamSection
+                     Set MyBeamSection = MyProperties.Item("Beam Section.1")
+                     
+                
+                Example in Python:
+                    Given a SimProperties object myProperties, you can create a SimBeamSection
+                    as following:
+                
+                     ...
+                     myBeamSection = myProperties.Add("SimBeamSection")
+                     
+                
+                    Given a SimProperties object myProperties, you can retrieve a
+                    SimBeamSection named "Beam Section.1" as following:
+                
+                     ...
+                     myBeamSection = myProperties.Item("Beam Section.1")
+                     
+                
+                See also:
+                    SimProperties
     
     """
 
@@ -76,12 +74,11 @@ class SimBeamSection(AnyObject):
     def beam_tangent_direction(self) -> SimMathVector:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property BeamTangentDirection() As SimMathVector (Read Only)
-                |     Returns the tangent direction vector of beam profile orientation used for
-                |     the section.
+                Property BeamTangentDirection() As SimMathVector (Read Only)
+                    Returns the tangent direction vector of beam profile orientation used for
+                    the section.
 
         :return: SimMathVector
         """
@@ -92,17 +89,16 @@ class SimBeamSection(AnyObject):
     def lumped_mass_matrix_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LumpedMassMatrixFlag() As boolean
-                |     Returns or sets the flag that determines if the Beam should use lumped mass
-                |     matrix.
-                | 
-                |     TRUE: the Beam should use lumped mass matrix.
-                | 
-                |     FALSE: the Beam should use mass matrix based on cubic interpolation of
-                |     deflection and quadratic interpolation of the rotation fields.
+                Property LumpedMassMatrixFlag() As boolean
+                    Returns or sets the flag that determines if the Beam should use lumped mass
+                    matrix.
+                
+                    TRUE: the Beam should use lumped mass matrix.
+                
+                    FALSE: the Beam should use mass matrix based on cubic interpolation of
+                    deflection and quadratic interpolation of the rotation fields.
 
         :return: bool
         """
@@ -121,11 +117,10 @@ class SimBeamSection(AnyObject):
     def material_behavior(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialBehavior() As CATBaseDispatch
-                |     Returns or sets the simulation material behavior.
+                Property MaterialBehavior() As CATBaseDispatch
+                    Returns or sets the simulation material behavior.
 
         :return: AnyObject
         """
@@ -144,11 +139,10 @@ class SimBeamSection(AnyObject):
     def material_behavior_by_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialBehaviorByName() As CATBSTR
-                |     Returns or sets the simulation material behavior by name.
+                Property MaterialBehaviorByName() As CATBSTR
+                    Returns or sets the simulation material behavior by name.
 
         :return: str
         """
@@ -167,11 +161,10 @@ class SimBeamSection(AnyObject):
     def orientation_direction(self) -> SimMathVector:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OrientationDirection() As SimMathVector
-                |     Returns or sets the beam profile orientation direction.
+                Property OrientationDirection() As SimMathVector
+                    Returns or sets the beam profile orientation direction.
 
         :return: SimMathVector
         """
@@ -190,11 +183,10 @@ class SimBeamSection(AnyObject):
     def orientation_method(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OrientationMethod() As SimBeamSectionOrientation
-                |     Returns or sets the method used to orient beam profile.
+                Property OrientationMethod() As SimBeamSectionOrientation
+                    Returns or sets the method used to orient beam profile.
 
         :return: SimBeamSectionOrientation
         """
@@ -213,11 +205,10 @@ class SimBeamSection(AnyObject):
     def orientation_support(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OrientationSupport() As CATBaseDispatch (Read Only)
-                |     Returns the beam profile orientation support.
+                Property OrientationSupport() As CATBaseDispatch (Read Only)
+                    Returns the beam profile orientation support.
 
         :return: AnyObject
         """
@@ -228,11 +219,10 @@ class SimBeamSection(AnyObject):
     def oriented_axis(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OrientedAxis() As SimBeamSectionCrossSectionAxis
-                |     Returns or sets the beam section axis used for orientation.
+                Property OrientedAxis() As SimBeamSectionCrossSectionAxis
+                    Returns or sets the beam section axis used for orientation.
 
         :return: SimBeamSectionCrossSectionAxis
         """
@@ -251,11 +241,10 @@ class SimBeamSection(AnyObject):
     def poisson_ratio_for_cs_area_change(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PoissonRatioForCSAreaChange() As double
-                |     Poisson's ratio value. Quantity: Real, units: None
+                Property PoissonRatioForCSAreaChange() As double
+                    Poisson's ratio value. Quantity: Real, units: None
 
         :return: float
         """
@@ -274,16 +263,15 @@ class SimBeamSection(AnyObject):
     def pre_integration_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PreIntegrationFlag() As boolean
-                |     Returns or sets the flag that determines if the integration should be
-                |     performed before analysis.
-                | 
-                |     TRUE: the integration should be performed before analysis.
-                | 
-                |     FALSE: the integration should be performed during the solution.
+                Property PreIntegrationFlag() As boolean
+                    Returns or sets the flag that determines if the integration should be
+                    performed before analysis.
+                
+                    TRUE: the integration should be performed before analysis.
+                
+                    FALSE: the integration should be performed during the solution.
 
         :return: bool
         """
@@ -302,11 +290,10 @@ class SimBeamSection(AnyObject):
     def profile(self) -> SimBeamProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Profile() As SimBeamProfile
-                |     Returns or sets the beam profile.
+                Property Profile() As SimBeamProfile
+                    Returns or sets the beam profile.
 
         :return: SimBeamProfile
         """
@@ -325,12 +312,11 @@ class SimBeamSection(AnyObject):
     def slenderness_option(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SlendernessOption() As
-                | SimBeamSectionSlendernessOption
-                |     Returns or sets the option used to define slenderness.
+                Property SlendernessOption() As
+                SimBeamSectionSlendernessOption
+                    Returns or sets the option used to define slenderness.
 
         :return: int
         """
@@ -349,12 +335,11 @@ class SimBeamSection(AnyObject):
     def slenderness_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SlendernessValue() As double
-                |     Returns or sets the value of the slenderness compensation. Quantity: Real,
-                |     units: None
+                Property SlendernessValue() As double
+                    Returns or sets the value of the slenderness compensation. Quantity: Real,
+                    units: None
 
         :return: float
         """
@@ -373,36 +358,35 @@ class SimBeamSection(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. Possible values are:
-                | 
-                |         Abstractions
-                |         Amplitudes
-                |         Controls
-                |         Connections
-                |         Damping
-                |         ElementTypeAssignments
-                |         Envelopes
-                |         FieldPlots
-                |         FlowConditions
-                |         HistoryPlots
-                |         InitialConditions
-                |         Interactions
-                |         LinearLoadCases
-                |         Loads
-                |         LoadSets
-                |         OutputRequests
-                |         PredefinedFields
-                |         Properties
-                |         Restraints
-                |         Sensors
-                |         Streams
-                |         ThermalConditions
-                |         NotDefined
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. Possible values are:
+                
+                        Abstractions
+                        Amplitudes
+                        Controls
+                        Connections
+                        Damping
+                        ElementTypeAssignments
+                        Envelopes
+                        FieldPlots
+                        FlowConditions
+                        HistoryPlots
+                        InitialConditions
+                        Interactions
+                        LinearLoadCases
+                        Loads
+                        LoadSets
+                        OutputRequests
+                        PredefinedFields
+                        Properties
+                        Restraints
+                        Sensors
+                        Streams
+                        ThermalConditions
+                        NotDefined
 
         :return: str
         """
@@ -413,12 +397,11 @@ class SimBeamSection(AnyObject):
     def transverse_shear_stiffness_method(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TransverseShearStiffnessMethod() As
-                | SimBeamSectionTransverseShearStiffness
-                |     Returns or sets the method used to define transverse shear stiffness.
+                Property TransverseShearStiffnessMethod() As
+                SimBeamSectionTransverseShearStiffness
+                    Returns or sets the method used to define transverse shear stiffness.
 
         :return: int
         """
@@ -437,18 +420,17 @@ class SimBeamSection(AnyObject):
     def transverse_shear_stiffness_values(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TransverseShearStiffnessValues() As
-                | CATSafeArrayVariant
-                |     Returns or sets the list of transverse shear stiffness values. Quantity:
-                |     FORCE, Units: N For the various options used to define shear stiffness, The
-                |     number of values and sequence of values will be as
-                |     following:
-                | 
-                |         TransverseShearStiffness = Isotropic : {Transverse shear stiffness}
-                |         TransverseShearStiffness = Orthotropic : {Transverse shear stiffness K13, Transverse stiffness K23}
+                Property TransverseShearStiffnessValues() As
+                CATSafeArrayVariant
+                    Returns or sets the list of transverse shear stiffness values. Quantity:
+                    FORCE, Units: N For the various options used to define shear stiffness, The
+                    number of values and sequence of values will be as
+                    following:
+                
+                        TransverseShearStiffness = Isotropic : {Transverse shear stiffness}
+                        TransverseShearStiffness = Orthotropic : {Transverse shear stiffness K13, Transverse stiffness K23}
 
         :return: tuple
         """
@@ -466,17 +448,16 @@ class SimBeamSection(AnyObject):
     def get_material_behavior(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMaterialBehavior() As CATBaseDispatch
-                | 
-                |     Deprecated:
-                |         R418 Retrieves the material behavior. 
-                |     Returns:
-                |         The material behavior. 
-                |     Returns:
-                |         S_OK if successful.
+                Func GetMaterialBehavior() As CATBaseDispatch
+                
+                    Deprecated:
+                        R418 Retrieves the material behavior. 
+                    Returns:
+                        The material behavior. 
+                    Returns:
+                        S_OK if successful.
 
         :return: AnyObject
         """
@@ -485,21 +466,20 @@ class SimBeamSection(AnyObject):
     def get_offset_values(self, o_offset_x_value: float, o_offset_y_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetOffsetValues(double oOffsetXValue,double oOffsetYValue)
-                |     Retrieves the values of the beam profile offset. Offset will be considered
-                |     with general beam profile.
-                | 
-                |     Parameters:
-                | 
-                |         oOffsetXValue
-                |             [out] The offset in local x-direction of beam profile which is used
-                |             for the beam section. Quantity: LENGTH, units: m 
-                |         oOffsetYValue
-                |             [out] The offset in local y-direction of beam profile which is used
-                |             for the beam section. Quantity: LENGTH, units: m
+                Sub GetOffsetValues(double oOffsetXValue,double oOffsetYValue)
+                    Retrieves the values of the beam profile offset. Offset will be considered
+                    with general beam profile.
+                
+                    Parameters:
+                
+                        oOffsetXValue
+                            [out] The offset in local x-direction of beam profile which is used
+                            for the beam section. Quantity: LENGTH, units: m 
+                        oOffsetYValue
+                            [out] The offset in local y-direction of beam profile which is used
+                            for the beam section. Quantity: LENGTH, units: m
 
         :param float o_offset_x_value:
         :param float o_offset_y_value:
@@ -510,23 +490,22 @@ class SimBeamSection(AnyObject):
     def set_material_behavior(self, i_behavior_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMaterialBehavior(CATBSTR iBehaviorName)
-                | 
-                |     Deprecated:
-                |         R418 Sets the material behavior. 
-                |     Parameters:
-                | 
-                |         iBehaviorName
-                |             [in] Alias (name) of the simulation material behavior. Default
-                |             behavior is set if the specified behavior is not found. If multiple behaviors
-                |             have the same alias, the first one found is selected.
-                |             
-                | 
-                |     Returns:
-                |         S_OK if successful.
+                Sub SetMaterialBehavior(CATBSTR iBehaviorName)
+                
+                    Deprecated:
+                        R418 Sets the material behavior. 
+                    Parameters:
+                
+                        iBehaviorName
+                            [in] Alias (name) of the simulation material behavior. Default
+                            behavior is set if the specified behavior is not found. If multiple behaviors
+                            have the same alias, the first one found is selected.
+                            
+                
+                    Returns:
+                        S_OK if successful.
 
         :param str i_behavior_name:
         :return: None
@@ -536,22 +515,21 @@ class SimBeamSection(AnyObject):
     def set_offset_values(self, i_offset_x_value: float, i_offset_y_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetOffsetValues(double iOffsetXValue,double iOffsetYValue)
-                |     Sets the values of the beam profile offset. Offset will be considered with
-                |     general beam profile.
-                | 
-                |     Parameters:
-                | 
-                |         iOffsetXValue
-                |             [in] The offset in local x-direction of beam profile which should
-                |             be used for the beam section. Quantity: LENGTH, units: m
-                |             
-                |         iOffsetYValue
-                |             [in] The offset in local y-direction of beam profile which should
-                |             be used for the beam section. Quantity: LENGTH, units: m
+                Sub SetOffsetValues(double iOffsetXValue,double iOffsetYValue)
+                    Sets the values of the beam profile offset. Offset will be considered with
+                    general beam profile.
+                
+                    Parameters:
+                
+                        iOffsetXValue
+                            [in] The offset in local x-direction of beam profile which should
+                            be used for the beam section. Quantity: LENGTH, units: m
+                            
+                        iOffsetYValue
+                            [in] The offset in local y-direction of beam profile which should
+                            be used for the beam section. Quantity: LENGTH, units: m
 
         :param float i_offset_x_value:
         :param float i_offset_y_value:
@@ -560,4 +538,4 @@ class SimBeamSection(AnyObject):
         return self.com_object.SetOffsetValues(i_offset_x_value, i_offset_y_value)
 
     def __repr__(self):
-        return f'SimBeamSection(name="{ self.name }")'
+        return f'SimBeamSection(name="{self.name}")'

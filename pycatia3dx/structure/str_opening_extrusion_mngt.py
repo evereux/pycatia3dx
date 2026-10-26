@@ -12,22 +12,20 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrOpeningExtrusionMngt(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrOpeningExtrusionMngt
-                | 
-                | Object to manage Structure Opening's extrusion.
-                | Role: To manage structure opening's extrusion.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrOpeningExtrusionMngt
+                
+                Object to manage Structure Opening's extrusion.
+                Role: To manage structure opening's extrusion.
     
     """
 
@@ -39,28 +37,27 @@ class StrOpeningExtrusionMngt(AnyObject):
     def extrusion_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ExtrusionMode() As long
-                |     Returns or Sets the extrusion mode of this Opening
-                |     Legal values are:
-                |     -1: Undefined extrusion mode
-                |     1: Before forming extrusion mode
-                |     2: After forming extrusion mode
-                |     3: Removal extrusion mode
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in ExtrusionMode of the
-                |              opening.
-                |              
-                | 
-                |              Dim ObjStrOpeningExtrusionMngt As
-                |              StrOpeningExtrusionMngt
-                |              Set ObjStrOpeningExtrusionMngt = ObjStrOpening.StrOpeningExtrusionMngt
-                |              lExtrusionMode = ObjStrOpeningExtrusionMngt.ExtrusionMode
+                Property ExtrusionMode() As long
+                    Returns or Sets the extrusion mode of this Opening
+                    Legal values are:
+                    -1: Undefined extrusion mode
+                    1: Before forming extrusion mode
+                    2: After forming extrusion mode
+                    3: Removal extrusion mode
+                
+                    Example:
+                
+                
+                             This example retrieves in ExtrusionMode of the
+                             opening.
+                             
+                
+                             Dim ObjStrOpeningExtrusionMngt As
+                             StrOpeningExtrusionMngt
+                             Set ObjStrOpeningExtrusionMngt = ObjStrOpening.StrOpeningExtrusionMngt
+                             lExtrusionMode = ObjStrOpeningExtrusionMngt.ExtrusionMode
 
         :return: int
         """
@@ -76,4 +73,4 @@ class StrOpeningExtrusionMngt(AnyObject):
         self.com_object.ExtrusionMode = value
 
     def __repr__(self):
-        return f'StrOpeningExtrusionMngt(name="{ self.name }")'
+        return f'StrOpeningExtrusionMngt(name="{self.name}")'

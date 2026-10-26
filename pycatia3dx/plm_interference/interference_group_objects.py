@@ -19,18 +19,17 @@ from pycatia3dx.types.general import CATVariant
 class InterferenceGroupObjects(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     InterferenceGroupObjects
-                | 
-                | A collection of InterferenceGroupObjects.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    InterferenceGroupObjects
+                
+                A collection of InterferenceGroupObjects.
     
     """
 
@@ -41,27 +40,26 @@ class InterferenceGroupObjects(Collection):
     def add(self, i_plm_occurence: PLMOccurrence) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Add(PLMOccurrence iPLMOccurence)
-                | 
-                |     Deprecated:
-                |         R213. use Add2
-                |         Adds an occurrence in the InterferenceGroupObjects collection.
-                |         
-                |     Parameters:
-                | 
-                |         iPLMOccurence
-                |             The occurrence to add. 
-                | 
-                |     Example:
-                | 
-                |             The following example adds the oOccurrence1 occurrence to the
-                |             cInterferenceGroupObjects collection.
-                |             
-                | 
-                |             cInterferenceGroupObjects.Add(oOccurrence1)
+                Sub Add(PLMOccurrence iPLMOccurence)
+                
+                    Deprecated:
+                        R213. use Add2
+                        Adds an occurrence in the InterferenceGroupObjects collection.
+                        
+                    Parameters:
+                
+                        iPLMOccurence
+                            The occurrence to add. 
+                
+                    Example:
+                
+                            The following example adds the oOccurrence1 occurrence to the
+                            cInterferenceGroupObjects collection.
+                            
+                
+                            cInterferenceGroupObjects.Add(oOccurrence1)
 
         :param PLMOccurrence i_plm_occurence:
         :return: None
@@ -71,17 +69,16 @@ class InterferenceGroupObjects(Collection):
     def add2(self, i_vpm_occurence: VPMOccurrence) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Add2(VPMOccurrence iVPMOccurence)
-                |     Adds a VPMOccurrence in the InterferenceGroupObjects
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iVPMOccurence
-                |             The occurrence to add.
+                Sub Add2(VPMOccurrence iVPMOccurence)
+                    Adds a VPMOccurrence in the InterferenceGroupObjects
+                    collection.
+                
+                    Parameters:
+                
+                        iVPMOccurence
+                            The occurrence to add.
 
         :param VPMOccurrence i_vpm_occurence:
         :return: None
@@ -91,32 +88,31 @@ class InterferenceGroupObjects(Collection):
     def item(self, i_index: CATVariant) -> VPMOccurrence:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As CATBaseDispatch
-                |     Returns an occurrence using its index from the InterferenceGroupObjects
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the occurrence to retrieve from the collection of
-                |             InterferenceGroupObjects. As a numerics, this index is the rank of the
-                |             occurrence in the collection. The index of the first occurrence in the
-                |             collection is 1, and the index of the last occurrence is Count.
-                |             
-                | 
-                |     Returns:
-                |         The retrieved occurrence 
-                |     Example:
-                | 
-                |             This example retrieves in oOccurrence1 the ninth occurrence from
-                |             the cInterferenceGroupObjects collection.
-                |             
-                | 
-                |             Dim oOccurrence1 As PLMOccurrence
-                |             Set oOccurrence1 = cInterferenceGroupObjects.Item(9)
+                Func Item(CATVariant iIndex) As CATBaseDispatch
+                    Returns an occurrence using its index from the InterferenceGroupObjects
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the occurrence to retrieve from the collection of
+                            InterferenceGroupObjects. As a numerics, this index is the rank of the
+                            occurrence in the collection. The index of the first occurrence in the
+                            collection is 1, and the index of the last occurrence is Count.
+                            
+                
+                    Returns:
+                        The retrieved occurrence 
+                    Example:
+                
+                            This example retrieves in oOccurrence1 the ninth occurrence from
+                            the cInterferenceGroupObjects collection.
+                            
+                
+                            Dim oOccurrence1 As PLMOccurrence
+                            Set oOccurrence1 = cInterferenceGroupObjects.Item(9)
 
         :param CATVariant i_index:
         :return: VPMOccurrence
@@ -126,27 +122,26 @@ class InterferenceGroupObjects(Collection):
     def remove(self, i_plm_occurence: PLMOccurrence) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(PLMOccurrence iPLMOccurence)
-                | 
-                |     Deprecated:
-                |         R213. use Remove2
-                |         Removes an occurrence from the InterferenceGroupObjects collection.
-                |         
-                |     Parameters:
-                | 
-                |         iPLMOccurence
-                |             The occurrence to remove. 
-                | 
-                |     Example:
-                | 
-                |             The following example removes the oOccurrence1 occurrence from the
-                |             cInterferenceGroupObjects collection.
-                |             
-                | 
-                |             cInterferenceGroupObjects.Remove(oOccurrence1)
+                Sub Remove(PLMOccurrence iPLMOccurence)
+                
+                    Deprecated:
+                        R213. use Remove2
+                        Removes an occurrence from the InterferenceGroupObjects collection.
+                        
+                    Parameters:
+                
+                        iPLMOccurence
+                            The occurrence to remove. 
+                
+                    Example:
+                
+                            The following example removes the oOccurrence1 occurrence from the
+                            cInterferenceGroupObjects collection.
+                            
+                
+                            cInterferenceGroupObjects.Remove(oOccurrence1)
 
         :param PLMOccurrence i_plm_occurence:
         :return: None
@@ -156,17 +151,16 @@ class InterferenceGroupObjects(Collection):
     def remove2(self, i_vpm_occurence: VPMOccurrence) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove2(VPMOccurrence iVPMOccurence)
-                |     Removes an occurrence from the InterferenceGroupObjects
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iVPMOccurence
-                |             The occurrence to remove.
+                Sub Remove2(VPMOccurrence iVPMOccurence)
+                    Removes an occurrence from the InterferenceGroupObjects
+                    collection.
+                
+                    Parameters:
+                
+                        iVPMOccurence
+                            The occurrence to remove.
 
         :param VPMOccurrence i_vpm_occurence:
         :return: None

@@ -13,62 +13,60 @@ from pycatia3dx.sma_few_optimization.sim_non_parametric_response_variable import
 
 
 class SimStrainResponseVariable(SimNonParametricResponseVariable):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                    SMAFeaOptimizationIDLItf.SimDesignImprovementResponseVariable
-                |                        SMAFeaOptimizationIDLItf.SimNonParametricResponseVariable
-                |                             SimStrainResponseVariable
-                | 
-                | Represents the strain response variable object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimStrainResponseVariable as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyStrainResponseVariable As SimStrainResponseVariable
-                |      Set MyStrainResponseVariable = MyFeatures.Add("SimStrainResponseVariable")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimStrainResponseVariable named "Strain Response Variable.1" as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyStrainResponseVariable As SimStrainResponseVariable
-                |      Set MyStrainResponseVariable = MyFeatures.Item("Strain Response Variable.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimStrainResponseVariable as following:
-                | 
-                |      ...
-                |      MyStrainResponseVariable = MyFeatures.Add("SimStrainResponseVariable")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimStrainResponseVariable named "Strain Response Variable.1" as
-                |     following:
-                | 
-                |      ...
-                |      MyStrainResponseVariable = MyFeatures.Item("Strain Response Variable.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                   SMAFeaOptimizationIDLItf.SimDesignImprovementResponseVariable
+                                       SMAFeaOptimizationIDLItf.SimNonParametricResponseVariable
+                                            SimStrainResponseVariable
+                
+                Represents the strain response variable object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimStrainResponseVariable as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyStrainResponseVariable As SimStrainResponseVariable
+                     Set MyStrainResponseVariable = MyFeatures.Add("SimStrainResponseVariable")
+                     
+                
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimStrainResponseVariable named "Strain Response Variable.1" as
+                    following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyStrainResponseVariable As SimStrainResponseVariable
+                     Set MyStrainResponseVariable = MyFeatures.Item("Strain Response Variable.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimStrainResponseVariable as following:
+                
+                     ...
+                     MyStrainResponseVariable = MyFeatures.Add("SimStrainResponseVariable")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimStrainResponseVariable named "Strain Response Variable.1" as
+                    following:
+                
+                     ...
+                     MyStrainResponseVariable = MyFeatures.Item("Strain Response Variable.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -80,11 +78,10 @@ class SimStrainResponseVariable(SimNonParametricResponseVariable):
     def load_case(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LoadCase() As CATBaseDispatch (Read Only)
-                |     Returns the Linear Loadcase used for the strain response variable.
+                Property LoadCase() As CATBaseDispatch (Read Only)
+                    Returns the Linear Loadcase used for the strain response variable.
 
         :return: AnyObject
         """
@@ -95,11 +92,10 @@ class SimStrainResponseVariable(SimNonParametricResponseVariable):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As SimStrainType
-                |     Returns or sets the type of strain response variable.
+                Property Type() As SimStrainType
+                    Returns or sets the type of strain response variable.
 
         :return: int
         """
@@ -115,4 +111,4 @@ class SimStrainResponseVariable(SimNonParametricResponseVariable):
         self.com_object.Type = value
 
     def __repr__(self):
-        return f'SimStrainResponseVariable(name="{ self.name }")'
+        return f'SimStrainResponseVariable(name="{self.name}")'

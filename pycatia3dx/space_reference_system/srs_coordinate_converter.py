@@ -14,18 +14,17 @@ from pycatia3dx.system.any_object import AnyObject
 class SrsCoordinateConverter(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SrsCoordinateConverter
-                | 
-                | Object for SrsCoordinateConverter.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SrsCoordinateConverter
+                
+                Object for SrsCoordinateConverter.
     
     """
 
@@ -37,31 +36,30 @@ class SrsCoordinateConverter(AnyObject):
                                             olu_srs_coordinates: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ConvertAbsoluteCoordToSrsCoord(double iX,double iY,double
-                | iZ,CATSafeArrayVariant oluSrsCoordinates)
-                |     Convert Absolute Coordinate To SRS Coordinate
-                | 
-                |     Parameters:
-                | 
-                |         iX
-                |             [in] X coordinate expressed in absolute coordinate (in mm).
-                |             
-                |         iY
-                |             [in] Y coordinate expressed in absolute coordinate (in mm).
-                |             
-                |         iZ
-                |             [in] Z coordinate expressed in absolute coordinate (in mm).
-                |             
-                |         oluSrsCoordinates
-                |             [out] SRS Coordinates as a list of strings (Plane name + distance
-                |             to plane) with correct units. The order of the output is CROSS, LONG, DECK.
-                |             
-                | 
-                |     Returns:
-                |         Error code of function.
+                Sub ConvertAbsoluteCoordToSrsCoord(double iX,double iY,double
+                iZ,CATSafeArrayVariant oluSrsCoordinates)
+                    Convert Absolute Coordinate To SRS Coordinate
+                
+                    Parameters:
+                
+                        iX
+                            [in] X coordinate expressed in absolute coordinate (in mm).
+                            
+                        iY
+                            [in] Y coordinate expressed in absolute coordinate (in mm).
+                            
+                        iZ
+                            [in] Z coordinate expressed in absolute coordinate (in mm).
+                            
+                        oluSrsCoordinates
+                            [out] SRS Coordinates as a list of strings (Plane name + distance
+                            to plane) with correct units. The order of the output is CROSS, LONG, DECK.
+                            
+                
+                    Returns:
+                        Error code of function.
 
         :param float i_x:
         :param float i_y:
@@ -74,31 +72,30 @@ class SrsCoordinateConverter(AnyObject):
     def convert_srs_coord_to_absolute_coord(self, ilu_srs_coordinates: tuple) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub ConvertSrsCoordToAbsoluteCoord(CATSafeArrayVariant iluSrsCoordinates,double
-                | oX,double oY,double oZ)
-                |     Convert SRS Coordinate To Absolute Coordinate
+                Sub ConvertSrsCoordToAbsoluteCoord(CATSafeArrayVariant iluSrsCoordinates,double
+                oX,double oY,double oZ)
+                    Convert SRS Coordinate To Absolute Coordinate
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iluSrsCoordinates
-                |             [in] SRS Coordinates as a list of strings (Plane name + distance to
-                |             plane) with correct units. The order of the intput should be CROSS, LONG, DECK.
+                        iluSrsCoordinates
+                            [in] SRS Coordinates as a list of strings (Plane name + distance to
+                            plane) with correct units. The order of the intput should be CROSS, LONG, DECK.
                 |
-                |         oX
-                |             [out] X coordinate expressed in absolute coordinate (in mm).
+                        oX
+                            [out] X coordinate expressed in absolute coordinate (in mm).
                 |
-                |         oY
-                |             [out] Y coordinate expressed in absolute coordinate (in mm).
+                        oY
+                            [out] Y coordinate expressed in absolute coordinate (in mm).
                 |
-                |         oZ
-                |             [out] Z coordinate expressed in absolute coordinate (in mm).
+                        oZ
+                            [out] Z coordinate expressed in absolute coordinate (in mm).
                 |
                 |
-                |     Returns:
-                |         Error code of function.
+                    Returns:
+                        Error code of function.
 
         :param tuple ilu_srs_coordinates:
         :return: tuple

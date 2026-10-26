@@ -12,19 +12,17 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class UserSurface(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     UserSurface
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    UserSurface
 
     
     """
@@ -36,16 +34,15 @@ class UserSurface(AnyObject):
     def add_reference(self, i_support: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddReference(Reference iSupport)
-                |     Add a surface in a User Surface Support
-                | 
-                |     Parameters:
-                | 
-                |         iSupport
-                |             The surface that you want to add in the User Surface.
+                Sub AddReference(Reference iSupport)
+                    Add a surface in a User Surface Support
+                
+                    Parameters:
+                
+                        iSupport
+                            The surface that you want to add in the User Surface.
 
         :param Reference i_support:
         :return: None
@@ -55,16 +52,15 @@ class UserSurface(AnyObject):
     def add_user_surface(self, i_user_surf: 'UserSurface') -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddUserSurface(UserSurface iUserSurf)
-                |     Add a User Surface Support in a User Surface Node
-                | 
-                |     Parameters:
-                | 
-                |         iUserSurf
-                |             The User Surface Support that you want to add in the User Surface.
+                Sub AddUserSurface(UserSurface iUserSurf)
+                    Add a User Surface Support in a User Surface Node
+                
+                    Parameters:
+                
+                        iUserSurf
+                            The User Surface Support that you want to add in the User Surface.
 
         :param UserSurface i_user_surf:
         :return: None
@@ -72,4 +68,4 @@ class UserSurface(AnyObject):
         return self.com_object.AddUserSurface(i_user_surf.com_object)
 
     def __repr__(self):
-        return f'UserSurface(name="{ self.name }")'
+        return f'UserSurface(name="{self.name}")'

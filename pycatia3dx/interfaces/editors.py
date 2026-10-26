@@ -17,22 +17,21 @@ from pycatia3dx.types.general import CATVariant
 class Editors(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     Editors
-                | 
-                | A collection of all the editors objects currently managed by the
-                | application.
-                | 
-                | See also:
-                |     Editor
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    Editors
+                
+                A collection of all the editors objects currently managed by the
+                application.
+                
+                See also:
+                    Editor
     
     """
 
@@ -43,29 +42,28 @@ class Editors(Collection):
     def item(self, i_index: CATVariant) -> Editor:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Func Item(CATVariant iIndex) As Editor
-                |     Returns an editor using its index from the editors
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the editor to retrieve from the collection of editors.
-                |             This index is the rank of the editor in the collection. The index of the first
-                |             editor in the collection is 1, and the index of the last editor is Count.
-                |             
-                | 
-                |     Returns:
-                |         The retrieved editor 
-                |     Example:
-                |         This example retrieves in ThisEditor the fifth editor in the
-                |         collection.
-                | 
-                |          Dim ThisEditor As Editor
-                |          Set ThisEditor = Editors.Item(5)
+                Func Item(CATVariant iIndex) As Editor
+                    Returns an editor using its index from the editors
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the editor to retrieve from the collection of editors.
+                            This index is the rank of the editor in the collection. The index of the first
+                            editor in the collection is 1, and the index of the last editor is Count.
+                            
+                
+                    Returns:
+                        The retrieved editor 
+                    Example:
+                        This example retrieves in ThisEditor the fifth editor in the
+                        collection.
+                
+                         Dim ThisEditor As Editor
+                         Set ThisEditor = Editors.Item(5)
 
         :param CATVariant i_index:
         :return: Editor

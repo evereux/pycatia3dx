@@ -13,22 +13,20 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrParameter(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrParameter
-                | 
-                | Object representing a relationship to a parameter used in the Structures model
-                | elements
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrParameter
+                
+                Object representing a relationship to a parameter used in the Structures model
+                elements
     
     """
 
@@ -40,22 +38,21 @@ class StrParameter(AnyObject):
     def parameter(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Parameter() As Parameter
-                |     Returns or sets the CKE parameter related to this volatile parameter
-                |     object. This CKE parameter may be a volatile or persistent CKE parameter,
-                |     depending on the state of the object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in ContourParam the parameter of the
-                |              object.
-                |              
-                | 
-                |              Set ContourParam = ObjStrParameter.Parameter
+                Property Parameter() As Parameter
+                    Returns or sets the CKE parameter related to this volatile parameter
+                    object. This CKE parameter may be a volatile or persistent CKE parameter,
+                    depending on the state of the object.
+                
+                    Example:
+                
+                
+                             This example retrieves in ContourParam the parameter of the
+                             object.
+                             
+                
+                             Set ContourParam = ObjStrParameter.Parameter
 
         :return: Parameter
         """
@@ -74,26 +71,25 @@ class StrParameter(AnyObject):
     def role(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Role() As CATBSTR (Read Only)
-                |     Returns the role of this parameter. The role is specific to the element
-                |     from which this interface was retrieved.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in StrRole the role of the
-                |              parameter.
-                |              
-                | 
-                |              Dim ObjStrStandardContourParameters As
-                |              StrStandardContourParameters
-                |              Set ObjStrStandardContourParameters = ObjStrOpeningsMgr.GetStandardContourParms(ContourName)
-                |              Dim ObjStrParameter As StrParameter
-                |              Set ObjStrParameter = ObjStrStandardContourParameters.Item(1)
-                |              StrRole = ObjStrParameter.Role
+                Property Role() As CATBSTR (Read Only)
+                    Returns the role of this parameter. The role is specific to the element
+                    from which this interface was retrieved.
+                
+                    Example:
+                
+                
+                             This example retrieves in StrRole the role of the
+                             parameter.
+                             
+                
+                             Dim ObjStrStandardContourParameters As
+                             StrStandardContourParameters
+                             Set ObjStrStandardContourParameters = ObjStrOpeningsMgr.GetStandardContourParms(ContourName)
+                             Dim ObjStrParameter As StrParameter
+                             Set ObjStrParameter = ObjStrStandardContourParameters.Item(1)
+                             StrRole = ObjStrParameter.Role
 
         :return: str
         """
@@ -101,4 +97,4 @@ class StrParameter(AnyObject):
         return self.com_object.Role
 
     def __repr__(self):
-        return f'StrParameter(name="{ self.name }")'
+        return f'StrParameter(name="{self.name}")'

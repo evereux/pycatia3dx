@@ -17,19 +17,18 @@ from pycatia3dx.system.any_object import AnyObject
 class AxisSystem(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     AxisSystem
-                | 
-                | The object Axis System A axis system has got one origin point and three
-                | orthogonal axes, crossing at the origin point.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    AxisSystem
+                
+                The object Axis System A axis system has got one origin point and three
+                orthogonal axes, crossing at the origin point.
     
     """
 
@@ -41,13 +40,12 @@ class AxisSystem(AnyObject):
     def axis_rotation_angle(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property AxisRotationAngle() As Angle (Read Only)
-                |     Returns the rotation angle of an axis system. Succeeds only if the axis
-                |     system is defined by a rotation around an axis, wich means that its type is
-                |     catAxisSystemAxisRotation.
+                Property AxisRotationAngle() As Angle (Read Only)
+                    Returns the rotation angle of an axis system. Succeeds only if the axis
+                    system is defined by a rotation around an axis, wich means that its type is
+                    catAxisSystemAxisRotation.
 
         :return: Angle
         """
@@ -58,13 +56,12 @@ class AxisSystem(AnyObject):
     def axis_rotation_reference(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property AxisRotationReference() As Reference
-                |     Returns the reference for the axis rotation. Succeeds only if the axis
-                |     system is defined by a rotation around an axis, wich means that its type is
-                |     catAxisSystemAxisRotation.
+                Property AxisRotationReference() As Reference
+                    Returns the reference for the axis rotation. Succeeds only if the axis
+                    system is defined by a rotation around an axis, wich means that its type is
+                    catAxisSystemAxisRotation.
 
         :return: Reference
         """
@@ -83,28 +80,27 @@ class AxisSystem(AnyObject):
     def is_current(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property IsCurrent() As boolean
-                |     Returns True if the axis system is the current one, else returns False.
-                |     Sets the axis system as the current one or not.
-                | 
-                |     Example:
-                |         The following example returns in isCurrent True if the axis system
-                |         axisSystem is the current one :
-                | 
-                |          isCurrent = axisSystem.IsCurrent
-                | 
-                |         The following example sets the axis system axisSystem as the current
-                |         one :
-                | 
-                |          axisSystem.IsCurrent = 1
-                | 
-                |         The following example sets the axis system axisSystem as not the
-                |         current one :
-                | 
-                |          axisSystem.IsCurrent = 0
+                Property IsCurrent() As boolean
+                    Returns True if the axis system is the current one, else returns False.
+                    Sets the axis system as the current one or not.
+                
+                    Example:
+                        The following example returns in isCurrent True if the axis system
+                        axisSystem is the current one :
+                
+                         isCurrent = axisSystem.IsCurrent
+                
+                        The following example sets the axis system axisSystem as the current
+                        one :
+                
+                         axisSystem.IsCurrent = 1
+                
+                        The following example sets the axis system axisSystem as not the
+                        current one :
+                
+                         axisSystem.IsCurrent = 0
 
         :return: bool
         """
@@ -123,29 +119,28 @@ class AxisSystem(AnyObject):
     def origin_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property OriginPoint() As Reference
-                |     Returns or sets the geometric point which defines the origin of the axis
-                |     system.
-                |     OriginPoint is and must be a reference on a geometric 3D
-                |     point.
-                | 
-                |     Example:
-                |         The following example sets the point Point.1 of the Geometrical Set
-                |         Geometrical Set.1 as the origin point of the axis system
-                |         AxisSystem0:
-                | 
-                |          Dim HybridBody4 As AnyObject
-                |          Set HybridBody4 = Body1.HybridBodies.Item  ( "Geometrical Set.1" ) 
-                |          Dim HybridShapePointCoord5 As AnyObject
-                |          Set HybridShapePointCoord5 = HybridBody4.HybridShapes.Item  ( "Point.1" ) 
-                |          Set Editor = CATIA.ActiveEditor
-                |          Set Part = Editor.ActiveObject
-                |          Dim Reference6 As Reference
-                |          Set Reference6 = Part.CreateReferenceFromGeometry  ( HybridShapePointCoord5 ) 
-                |          AxisSystem0.OriginPoint = Reference6
+                Property OriginPoint() As Reference
+                    Returns or sets the geometric point which defines the origin of the axis
+                    system.
+                    OriginPoint is and must be a reference on a geometric 3D
+                    point.
+                
+                    Example:
+                        The following example sets the point Point.1 of the Geometrical Set
+                        Geometrical Set.1 as the origin point of the axis system
+                        AxisSystem0:
+                
+                         Dim HybridBody4 As AnyObject
+                         Set HybridBody4 = Body1.HybridBodies.Item  ( "Geometrical Set.1" ) 
+                         Dim HybridShapePointCoord5 As AnyObject
+                         Set HybridShapePointCoord5 = HybridBody4.HybridShapes.Item  ( "Point.1" ) 
+                         Set Editor = CATIA.ActiveEditor
+                         Set Part = Editor.ActiveObject
+                         Dim Reference6 As Reference
+                         Set Reference6 = Part.CreateReferenceFromGeometry  ( HybridShapePointCoord5 ) 
+                         AxisSystem0.OriginPoint = Reference6
 
         :return: Reference
         """
@@ -164,30 +159,29 @@ class AxisSystem(AnyObject):
     def origin_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property OriginType() As CATAxisSystemOriginType
-                |     Returns or sets the way the origin point is defined.
-                |     The origin point can be not specified, or be defined by coordinates or by a
-                |     geometric point.
-                |     CATAxisSystemOriginType is the enumeration which describes how the origin
-                |     point is defined :
-                |     If OriginType=0, the origin point is defined by a geometric point. If no
-                |     point si selected, the origin will be automatically put at the intersection of
-                |     the lines or planes defining the axes.
-                |     If OriginType=1, the origin is defined by three coordinates x,y,z. Then,
-                |     the origin will allways stays at the position defined by the
-                |     coordinates.
-                | 
-                |     Example:
-                |         The following example prints the origin type :
-                | 
-                |          Catia.SystemService.Print " OriginType = " & axisSystem.OriginType
-                | 
-                |         The following example sets the origin type to 1 :
-                | 
-                |          axisSystem.OriginType = 1
+                Property OriginType() As CATAxisSystemOriginType
+                    Returns or sets the way the origin point is defined.
+                    The origin point can be not specified, or be defined by coordinates or by a
+                    geometric point.
+                    CATAxisSystemOriginType is the enumeration which describes how the origin
+                    point is defined :
+                    If OriginType=0, the origin point is defined by a geometric point. If no
+                    point si selected, the origin will be automatically put at the intersection of
+                    the lines or planes defining the axes.
+                    If OriginType=1, the origin is defined by three coordinates x,y,z. Then,
+                    the origin will allways stays at the position defined by the
+                    coordinates.
+                
+                    Example:
+                        The following example prints the origin type :
+                
+                         Catia.SystemService.Print " OriginType = " & axisSystem.OriginType
+                
+                        The following example sets the origin type to 1 :
+                
+                         axisSystem.OriginType = 1
 
         :return: int
         """
@@ -206,33 +200,32 @@ class AxisSystem(AnyObject):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Type() As CATAxisSystemMainType
-                |     Returns or sets the type of the axis system. Sets the axis system
-                |     type.
-                | 
-                |     Example:
-                |         The following example returns in type1 the type of the axis system
-                |         axisSystem1:
-                | 
-                |          type1 = axisSystem1.Type
-                | 
-                |         The following example sets the type of the axis system axisSystem1 as
-                |         standard:
-                | 
-                |          axisSystem1.Type = 0
-                | 
-                |         The following example sets the type of the axis system axisSystem1 as
-                |         axis rotation:
-                | 
-                |          axisSystem1.Type = 1
-                | 
-                |     The following example sets the type of the axis system axisSystem1 as datum
-                |     (explicit):
-                | 
-                |      axisSystem1.Type = 3
+                Property Type() As CATAxisSystemMainType
+                    Returns or sets the type of the axis system. Sets the axis system
+                    type.
+                
+                    Example:
+                        The following example returns in type1 the type of the axis system
+                        axisSystem1:
+                
+                         type1 = axisSystem1.Type
+                
+                        The following example sets the type of the axis system axisSystem1 as
+                        standard:
+                
+                         axisSystem1.Type = 0
+                
+                        The following example sets the type of the axis system axisSystem1 as
+                        axis rotation:
+                
+                         axisSystem1.Type = 1
+                
+                    The following example sets the type of the axis system axisSystem1 as datum
+                    (explicit):
+                
+                     axisSystem1.Type = 3
 
         :return: int
         """
@@ -251,29 +244,28 @@ class AxisSystem(AnyObject):
     def x_axis_direction(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property XAxisDirection() As Reference
-                |     Reads or sets the geometric point, line or plane which defines the
-                |     direction of the X axis.
-                |     AxisDirection is and must be a reference on a 3D point or 3D line or
-                |     plane.
-                | 
-                |     Example:
-                |         The following example sets the point Point.1 of the Geometrical Set
-                |         Geometrical Set.1 as the direction of the X axis of the axis system
-                |         AxisSystem0:
-                | 
-                |          Dim HybridBody4 As AnyObject
-                |          Set HybridBody4 = Body1.HybridBodies.Item  ( "Geometrical Set.1" ) 
-                |          Dim HybridShapePointCoord5 As AnyObject
-                |          Set HybridShapePointCoord5 = HybridBody4.HybridShapes.Item  ( "Point.1" ) 
-                |          Set Editor = CATIA.ActiveEditor
-                |          Set Part = Editor.ActiveObject
-                |          Dim Reference6 As Reference
-                |          Set Reference6 = Part.CreateReferenceFromGeometry  ( HybridShapePointCoord5 ) 
-                |          AxisSystem0.XAxisDirection = Reference6
+                Property XAxisDirection() As Reference
+                    Reads or sets the geometric point, line or plane which defines the
+                    direction of the X axis.
+                    AxisDirection is and must be a reference on a 3D point or 3D line or
+                    plane.
+                
+                    Example:
+                        The following example sets the point Point.1 of the Geometrical Set
+                        Geometrical Set.1 as the direction of the X axis of the axis system
+                        AxisSystem0:
+                
+                         Dim HybridBody4 As AnyObject
+                         Set HybridBody4 = Body1.HybridBodies.Item  ( "Geometrical Set.1" ) 
+                         Dim HybridShapePointCoord5 As AnyObject
+                         Set HybridShapePointCoord5 = HybridBody4.HybridShapes.Item  ( "Point.1" ) 
+                         Set Editor = CATIA.ActiveEditor
+                         Set Part = Editor.ActiveObject
+                         Dim Reference6 As Reference
+                         Set Reference6 = Part.CreateReferenceFromGeometry  ( HybridShapePointCoord5 ) 
+                         AxisSystem0.XAxisDirection = Reference6
 
         :return: Reference
         """
@@ -292,25 +284,24 @@ class AxisSystem(AnyObject):
     def x_axis_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property XAxisType() As CATAxisSystemAxisType
-                |     Reads or sets the way the X axis is specified.
-                |     An axis X,Y, or Z of the axis system can be defined by a geometric point,
-                |     line or plane, or by coordinates.
-                |     AxisType = 0 : The axis is defined by a geometric point, line or plane and with the same direction.
-                |     AxisType = 1 : The axis direction is defined by the three coordinates x,y,z, of a vector, to which the axis will allways stay parallel.
-                |     AxisType = 2 : the axis is defined by a geometric point, line or plane and with the opposite direction. Notice : If the X axis is neither defined by coordinates nor by a point,line or plane, the axis will be automatically computed in order to build an orthogonal axis sytem with the other specified axes.
-                | 
-                |     Example:
-                |         The following example prints the X axis type :
-                | 
-                |          Catia.SystemService.Print " XAxisType = " & axisSystem.XAxisType
-                | 
-                |         The following example sets the X axis type to 1 :
-                | 
-                |          axisSystem.XAxisType = 1
+                Property XAxisType() As CATAxisSystemAxisType
+                    Reads or sets the way the X axis is specified.
+                    An axis X,Y, or Z of the axis system can be defined by a geometric point,
+                    line or plane, or by coordinates.
+                    AxisType = 0 : The axis is defined by a geometric point, line or plane and with the same direction.
+                    AxisType = 1 : The axis direction is defined by the three coordinates x,y,z, of a vector, to which the axis will allways stay parallel.
+                    AxisType = 2 : the axis is defined by a geometric point, line or plane and with the opposite direction. Notice : If the X axis is neither defined by coordinates nor by a point,line or plane, the axis will be automatically computed in order to build an orthogonal axis sytem with the other specified axes.
+                
+                    Example:
+                        The following example prints the X axis type :
+                
+                         Catia.SystemService.Print " XAxisType = " & axisSystem.XAxisType
+                
+                        The following example sets the X axis type to 1 :
+                
+                         axisSystem.XAxisType = 1
 
         :return: int
         """
@@ -329,29 +320,28 @@ class AxisSystem(AnyObject):
     def y_axis_direction(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property YAxisDirection() As Reference
-                |     Reads or sets the geometric point, line or plane which defines the
-                |     direction of the Y axis.
-                |     AxisDirection is and must be a reference on a 3D point or 3D line or
-                |     plane.
-                | 
-                |     Example:
-                |         The following example sets the point Point.1 of the Geometrical Set
-                |         Geometrical Set.1 as the direction of the Y axis of the axis system
-                |         AxisSystem0:
-                | 
-                |          Dim HybridBody4 As AnyObject
-                |          Set HybridBody4 = Body1.HybridBodies.Item  ( "Geometrical Set.1" ) 
-                |          Dim HybridShapePointCoord5 As AnyObject
-                |          Set HybridShapePointCoord5 = HybridBody4.HybridShapes.Item  ( "Point.1" ) 
-                |          Set Editor = CATIA.ActiveEditor
-                |          Set Part = Editor.ActiveObject
-                |          Dim Reference6 As Reference
-                |          Set Reference6 = Part.CreateReferenceFromGeometry  ( HybridShapePointCoord5 ) 
-                |          AxisSystem0.YAxisDirection = Reference6
+                Property YAxisDirection() As Reference
+                    Reads or sets the geometric point, line or plane which defines the
+                    direction of the Y axis.
+                    AxisDirection is and must be a reference on a 3D point or 3D line or
+                    plane.
+                
+                    Example:
+                        The following example sets the point Point.1 of the Geometrical Set
+                        Geometrical Set.1 as the direction of the Y axis of the axis system
+                        AxisSystem0:
+                
+                         Dim HybridBody4 As AnyObject
+                         Set HybridBody4 = Body1.HybridBodies.Item  ( "Geometrical Set.1" ) 
+                         Dim HybridShapePointCoord5 As AnyObject
+                         Set HybridShapePointCoord5 = HybridBody4.HybridShapes.Item  ( "Point.1" ) 
+                         Set Editor = CATIA.ActiveEditor
+                         Set Part = Editor.ActiveObject
+                         Dim Reference6 As Reference
+                         Set Reference6 = Part.CreateReferenceFromGeometry  ( HybridShapePointCoord5 ) 
+                         AxisSystem0.YAxisDirection = Reference6
 
         :return: Reference
         """
@@ -370,25 +360,24 @@ class AxisSystem(AnyObject):
     def y_axis_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property YAxisType() As CATAxisSystemAxisType
-                |     Reads or sets the way the Y axis is specified.
-                |     An axis X,Y, or Z of the axis system can be defined by a geometric point,
-                |     line or plane, or by coordinates.
-                |     AxisType = 0 : The axis is defined by a geometric point, line or plane and with the same direction.
-                |     AxisType = 1 : The axis direction is defined by the three coordinates x,y,z, of a vector, to which the axis will allways stay parallel.
-                |     AxisType = 2 : the axis is defined by a geometric point, line or plane and with the opposite direction. Notice : If the Y axis is neither defined by coordinates nor by a point,line or plane, the axis will be automatically computed in order to build an orthogonal axis sytem with the other specified axes.
-                | 
-                |     Example:
-                |         The following example prints the Y axis type :
-                | 
-                |          Catia.SystemService.Print " YAxisType = " & axisSystem.YAxisType
-                | 
-                |         The following example sets the Y axis type to 1 :
-                | 
-                |          axisSystem.YAxisType = 1
+                Property YAxisType() As CATAxisSystemAxisType
+                    Reads or sets the way the Y axis is specified.
+                    An axis X,Y, or Z of the axis system can be defined by a geometric point,
+                    line or plane, or by coordinates.
+                    AxisType = 0 : The axis is defined by a geometric point, line or plane and with the same direction.
+                    AxisType = 1 : The axis direction is defined by the three coordinates x,y,z, of a vector, to which the axis will allways stay parallel.
+                    AxisType = 2 : the axis is defined by a geometric point, line or plane and with the opposite direction. Notice : If the Y axis is neither defined by coordinates nor by a point,line or plane, the axis will be automatically computed in order to build an orthogonal axis sytem with the other specified axes.
+                
+                    Example:
+                        The following example prints the Y axis type :
+                
+                         Catia.SystemService.Print " YAxisType = " & axisSystem.YAxisType
+                
+                        The following example sets the Y axis type to 1 :
+                
+                         axisSystem.YAxisType = 1
 
         :return: int
         """
@@ -407,29 +396,28 @@ class AxisSystem(AnyObject):
     def z_axis_direction(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property ZAxisDirection() As Reference
-                |     Reads or sets the geometric point, line or plane which defines the
-                |     direction of the Z axis.
-                |     AxisDirection is and must be a reference on a 3D point or 3D line or
-                |     plane.
-                | 
-                |     Example:
-                |         The following example sets the point Point.1 of the Geometrical Set
-                |         Geometrical Set.1 as the direction of the Z axis of the axis system
-                |         AxisSystem0:
-                | 
-                |          Dim HybridBody4 As AnyObject
-                |          Set HybridBody4 = Body1.HybridBodies.Item  ( "Geometrical Set.1" ) 
-                |          Dim HybridShapePointCoord5 As AnyObject
-                |          Set HybridShapePointCoord5 = HybridBody4.HybridShapes.Item  ( "Point.1" ) 
-                |          Set Editor = CATIA.ActiveEditor
-                |          Set Part = Editor.ActiveObject
-                |          Dim Reference6 As Reference
-                |          Set Reference6 = Part.CreateReferenceFromGeometry  ( HybridShapePointCoord5 ) 
-                |          AxisSystem0.ZAxisDirection = Reference6
+                Property ZAxisDirection() As Reference
+                    Reads or sets the geometric point, line or plane which defines the
+                    direction of the Z axis.
+                    AxisDirection is and must be a reference on a 3D point or 3D line or
+                    plane.
+                
+                    Example:
+                        The following example sets the point Point.1 of the Geometrical Set
+                        Geometrical Set.1 as the direction of the Z axis of the axis system
+                        AxisSystem0:
+                
+                         Dim HybridBody4 As AnyObject
+                         Set HybridBody4 = Body1.HybridBodies.Item  ( "Geometrical Set.1" ) 
+                         Dim HybridShapePointCoord5 As AnyObject
+                         Set HybridShapePointCoord5 = HybridBody4.HybridShapes.Item  ( "Point.1" ) 
+                         Set Editor = CATIA.ActiveEditor
+                         Set Part = Editor.ActiveObject
+                         Dim Reference6 As Reference
+                         Set Reference6 = Part.CreateReferenceFromGeometry  ( HybridShapePointCoord5 ) 
+                         AxisSystem0.ZAxisDirection = Reference6
 
         :return: Reference
         """
@@ -448,25 +436,24 @@ class AxisSystem(AnyObject):
     def z_axis_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property ZAxisType() As CATAxisSystemAxisType
-                |     Reads or sets the way the Z axis is specified.
-                |     An axis X,Y, or Z of the axis system can be defined by a geometric point,
-                |     line or plane, or by coordinates.
-                |     AxisType = 0 : The axis is defined by a geometric point, line or plane and with the same direction.
-                |     AxisType = 1 : The axis direction is defined by the three coordinates x,y,z, of a vector, to which the axis will allways stay parallel.
-                |     AxisType = 2 : the axis is defined by a geometric point, line or plane and with the opposite direction. Notice : If the Z axis is neither defined by coordinates nor by a point,line or plane, the axis will be automatically computed in order to build an orthogonal axis sytem with the other specified axes.
-                | 
-                |     Example:
-                |         The following example prints the Z axis type :
-                | 
-                |          Catia.SystemService.Print " ZAxisType = " & axisSystem.ZAxisType
-                | 
-                |         The following example sets the Z axis type to 1 :
-                | 
-                |          axisSystem.ZAxisType = 1
+                Property ZAxisType() As CATAxisSystemAxisType
+                    Reads or sets the way the Z axis is specified.
+                    An axis X,Y, or Z of the axis system can be defined by a geometric point,
+                    line or plane, or by coordinates.
+                    AxisType = 0 : The axis is defined by a geometric point, line or plane and with the same direction.
+                    AxisType = 1 : The axis direction is defined by the three coordinates x,y,z, of a vector, to which the axis will allways stay parallel.
+                    AxisType = 2 : the axis is defined by a geometric point, line or plane and with the opposite direction. Notice : If the Z axis is neither defined by coordinates nor by a point,line or plane, the axis will be automatically computed in order to build an orthogonal axis sytem with the other specified axes.
+                
+                    Example:
+                        The following example prints the Z axis type :
+                
+                         Catia.SystemService.Print " ZAxisType = " & axisSystem.ZAxisType
+                
+                        The following example sets the Z axis type to 1 :
+                
+                         axisSystem.ZAxisType = 1
 
         :return: int
         """
@@ -484,14 +471,13 @@ class AxisSystem(AnyObject):
     def get_euler_angles(self, o_first_angle: Angle, o_second_angle: Angle, third_angle: Angle) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub GetEulerAngles(Angle oFirstAngle,Angle oSecondAngle,Angle
-                | ThirdAngle)
-                |     Returns the Euler Angles of an axis system. Succeeds only if the axis
-                |     system is defined by Euler angles, wich means its type is
-                |     catAxisSystemEulerAngles.
+                Sub GetEulerAngles(Angle oFirstAngle,Angle oSecondAngle,Angle
+                ThirdAngle)
+                    Returns the Euler Angles of an axis system. Succeeds only if the axis
+                    system is defined by Euler angles, wich means its type is
+                    catAxisSystemEulerAngles.
 
         :param Angle o_first_angle:
         :param Angle o_second_angle:
@@ -504,25 +490,24 @@ class AxisSystem(AnyObject):
     def get_origin(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub GetOrigin(CATSafeArrayVariant oOrigin)
-                |     Returns the coordinates X,Y,Z of the origin point of the axis
-                |     system.
-                | 
-                |     Parameters:
-                | 
-                |         oOrigin
-                |             A Safe Array made up of 3 doubles: X, Y, Z, representing the
-                |             coordinates in model space of the origin point of the axis system.
+                Sub GetOrigin(CATSafeArrayVariant oOrigin)
+                    Returns the coordinates X,Y,Z of the origin point of the axis
+                    system.
+                
+                    Parameters:
+                
+                        oOrigin
+                            A Safe Array made up of 3 doubles: X, Y, Z, representing the
+                            coordinates in model space of the origin point of the axis system.
                 |
-                |     Example:
-                |         The following example retrieves in originCoord the coordinates of the
-                |         origin point of the axisSystem axis system:
-                | 
-                |          Dim originCoord(2)
-                |          axisSystem.GetOrigin originCoord
+                    Example:
+                        The following example retrieves in originCoord the coordinates of the
+                        origin point of the axisSystem axis system:
+                
+                         Dim originCoord(2)
+                         axisSystem.GetOrigin originCoord
 
         :return: tuple
         """
@@ -547,33 +532,32 @@ class AxisSystem(AnyObject):
     def get_vectors(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub GetVectors(CATSafeArrayVariant oVectorX,CATSafeArrayVariant
-                | oVectorY)
-                |     Returns the coordinates X,Y,Z of the axes X and Y of the axis
-                |     system.
-                | 
-                |     Parameters:
-                | 
-                |         oVectorX
-                |             A Safe Array made up of 3 doubles: X, Y, Z, representing the
-                |             coordinates in model space of the X axis vector of the axis system.
-                |             
-                |         oVectorY
-                |             A Safe Array made up of 3 doubles: X, Y, Z, representing the
-                |             coordinates in model space of the Y axis vector of the axis system.
-                |             
-                | 
-                |     Example:
-                |         The following example retrieves in vectorXCoord and vectorYCoord the
-                |         coordinates of the vectors of the axisSystem axis
-                |         system:
-                | 
-                |          Dim vectorXCoord(2)
-                |          Dim vectorYCoord(2)
-                |          axisSystem.GetVectors vectorXCoord, vectorYCoord
+                Sub GetVectors(CATSafeArrayVariant oVectorX,CATSafeArrayVariant
+                oVectorY)
+                    Returns the coordinates X,Y,Z of the axes X and Y of the axis
+                    system.
+                
+                    Parameters:
+                
+                        oVectorX
+                            A Safe Array made up of 3 doubles: X, Y, Z, representing the
+                            coordinates in model space of the X axis vector of the axis system.
+                            
+                        oVectorY
+                            A Safe Array made up of 3 doubles: X, Y, Z, representing the
+                            coordinates in model space of the Y axis vector of the axis system.
+                            
+                
+                    Example:
+                        The following example retrieves in vectorXCoord and vectorYCoord the
+                        coordinates of the vectors of the axisSystem axis
+                        system:
+                
+                         Dim vectorXCoord(2)
+                         Dim vectorYCoord(2)
+                         axisSystem.GetVectors vectorXCoord, vectorYCoord
 
         :return:  tuple
         """
@@ -598,26 +582,25 @@ class AxisSystem(AnyObject):
     def get_x_axis(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub GetXAxis(CATSafeArrayVariant oXAxis)
-                |     Returns the coordinates X,Y,Z of the X axis of the axis
-                |     system.
-                | 
-                |     Parameters:
-                | 
-                |         oXAxis
-                |             A Safe Array made up of 3 doubles: X, Y, Z, representing the
-                |             coordinates in model space of the X axis of the axis system.
-                |             
-                | 
-                |     Example:
-                |         The following example retrieves in XAxisCoord the coordinates of the X
-                |         axis of the axisSystem axis system:
-                | 
-                |          Dim XAxisCoord(2)
-                |          axisSystem.GetXAxis XAxisCoord
+                Sub GetXAxis(CATSafeArrayVariant oXAxis)
+                    Returns the coordinates X,Y,Z of the X axis of the axis
+                    system.
+                
+                    Parameters:
+                
+                        oXAxis
+                            A Safe Array made up of 3 doubles: X, Y, Z, representing the
+                            coordinates in model space of the X axis of the axis system.
+                            
+                
+                    Example:
+                        The following example retrieves in XAxisCoord the coordinates of the X
+                        axis of the axisSystem axis system:
+                
+                         Dim XAxisCoord(2)
+                         axisSystem.GetXAxis XAxisCoord
 
         :return: tuple
         """
@@ -642,26 +625,25 @@ class AxisSystem(AnyObject):
     def get_y_axis(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub GetYAxis(CATSafeArrayVariant oYAxis)
-                |     Returns the coordinates X,Y,Z of the Y axis of the axis
-                |     system.
-                | 
-                |     Parameters:
-                | 
-                |         oYAxis
-                |             A Safe Array made up of 3 doubles: X, Y, Z, representing the
-                |             coordinates in model space of the Y axis of the axis system.
-                |             
-                | 
-                |     Example:
-                |         The following example retrieves in YAxisCoord the coordinates of the Y
-                |         axis of the axisSystem axis system:
-                | 
-                |          Dim YAxisCoord(2)
-                |          axisSystem.GetYAxis XAxisCoord
+                Sub GetYAxis(CATSafeArrayVariant oYAxis)
+                    Returns the coordinates X,Y,Z of the Y axis of the axis
+                    system.
+                
+                    Parameters:
+                
+                        oYAxis
+                            A Safe Array made up of 3 doubles: X, Y, Z, representing the
+                            coordinates in model space of the Y axis of the axis system.
+                            
+                
+                    Example:
+                        The following example retrieves in YAxisCoord the coordinates of the Y
+                        axis of the axisSystem axis system:
+                
+                         Dim YAxisCoord(2)
+                         axisSystem.GetYAxis XAxisCoord
 
         :return: tuple
         """
@@ -686,26 +668,25 @@ class AxisSystem(AnyObject):
     def get_z_axis(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub GetZAxis(CATSafeArrayVariant oZAxis)
-                |     Returns the coordinates X,Y,Z of the Z axis of the axis
-                |     system.
-                | 
-                |     Parameters:
-                | 
-                |         oZAxis
-                |             A Safe Array made up of 3 doubles: X, Y, Z, representing the
-                |             coordinates in model space of the Z axis of the axis system.
-                |             
-                | 
-                |     Example:
-                |         The following example retrieves in ZAxisCoord the coordinates of the Z
-                |         axis of the axisSystem axis system:
-                | 
-                |          Dim ZAxisCoord(2)
-                |          axisSystem.GetZAxis ZAxisCoord
+                Sub GetZAxis(CATSafeArrayVariant oZAxis)
+                    Returns the coordinates X,Y,Z of the Z axis of the axis
+                    system.
+                
+                    Parameters:
+                
+                        oZAxis
+                            A Safe Array made up of 3 doubles: X, Y, Z, representing the
+                            coordinates in model space of the Z axis of the axis system.
+                            
+                
+                    Example:
+                        The following example retrieves in ZAxisCoord the coordinates of the Z
+                        axis of the axisSystem axis system:
+                
+                         Dim ZAxisCoord(2)
+                         axisSystem.GetZAxis ZAxisCoord
 
         :return: tuple
         """
@@ -730,29 +711,28 @@ class AxisSystem(AnyObject):
     def put_origin(self, i_origin: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub PutOrigin(CATSafeArrayVariant iOrigin)
-                |     Defines the coordinates X,Y,Z of the origin point of the axis
-                |     system.
-                | 
-                |     Parameters:
-                | 
-                |         iOrigin
-                |             A Safe Array made up of 3 doubles: X, Y, Z, representing the
-                |             coordinates in model space of the origin point of the axis system.
-                |             
-                | 
-                |     Example:
-                |         The following example puts in originCoord the new coordinates of the
-                |         origin point of the axisSystem axis system:
-                | 
-                |          Dim originCoord(2)
-                |          originCoord ( 0 )  = 100.000000
-                |          originCoord ( 1 )  = 200.000000
-                |          originCoord ( 2 )  = 10.000000
-                |          axisSystem.PutOrigin originCoord
+                Sub PutOrigin(CATSafeArrayVariant iOrigin)
+                    Defines the coordinates X,Y,Z of the origin point of the axis
+                    system.
+                
+                    Parameters:
+                
+                        iOrigin
+                            A Safe Array made up of 3 doubles: X, Y, Z, representing the
+                            coordinates in model space of the origin point of the axis system.
+                            
+                
+                    Example:
+                        The following example puts in originCoord the new coordinates of the
+                        origin point of the axisSystem axis system:
+                
+                         Dim originCoord(2)
+                         originCoord ( 0 )  = 100.000000
+                         originCoord ( 1 )  = 200.000000
+                         originCoord ( 2 )  = 10.000000
+                         axisSystem.PutOrigin originCoord
 
         :param tuple i_origin:
         :return: None
@@ -778,39 +758,38 @@ class AxisSystem(AnyObject):
     def put_vectors(self, i_vector_x: tuple, i_vector_y: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub PutVectors(CATSafeArrayVariant iVectorX,CATSafeArrayVariant
-                | iVectorY)
-                |     Defines the coordinates X,Y,Z of the axes X and Y of the axis
-                |     system.
-                | 
-                |     Parameters:
-                | 
-                |         iVectorX
-                |             A Safe Array made up of 3 doubles: X, Y, Z, representing the
-                |             coordinates in model space of the X axis vector of the axis system.
-                |             
-                |         iVectorY
-                |             A Safe Array made up of 3 doubles: X, Y, Z, representing the
-                |             coordinates in model space of the Y axis vector of the axis system.
-                |             
-                | 
-                |     Example:
-                |         The following example modifies in vectorXCoord and vectorYCoord the
-                |         coordinates of the vectors of the axisSystem axis
-                |         system:
-                | 
-                |          Dim vectorXCoord(2)
-                |          vectorYCoord ( 0 )  = 1.000000
-                |          vectorYCoord ( 1 )  = -1.000000
-                |          vectorYCoord ( 2 )  = 0.000000
-                |          Dim vectorYCoord(2)
-                |          vectorYCoord ( 0 )  = 0.000000
-                |          vectorYCoord ( 1 )  = 0.000000
-                |          vectorYCoord ( 2 )  = 1.000000
-                |          axisSystem.PutVectors vectorXCoord, vectorYCoord
+                Sub PutVectors(CATSafeArrayVariant iVectorX,CATSafeArrayVariant
+                iVectorY)
+                    Defines the coordinates X,Y,Z of the axes X and Y of the axis
+                    system.
+                
+                    Parameters:
+                
+                        iVectorX
+                            A Safe Array made up of 3 doubles: X, Y, Z, representing the
+                            coordinates in model space of the X axis vector of the axis system.
+                            
+                        iVectorY
+                            A Safe Array made up of 3 doubles: X, Y, Z, representing the
+                            coordinates in model space of the Y axis vector of the axis system.
+                            
+                
+                    Example:
+                        The following example modifies in vectorXCoord and vectorYCoord the
+                        coordinates of the vectors of the axisSystem axis
+                        system:
+                
+                         Dim vectorXCoord(2)
+                         vectorYCoord ( 0 )  = 1.000000
+                         vectorYCoord ( 1 )  = -1.000000
+                         vectorYCoord ( 2 )  = 0.000000
+                         Dim vectorYCoord(2)
+                         vectorYCoord ( 0 )  = 0.000000
+                         vectorYCoord ( 1 )  = 0.000000
+                         vectorYCoord ( 2 )  = 1.000000
+                         axisSystem.PutVectors vectorXCoord, vectorYCoord
 
         :param tuple i_vector_x:
         :param tuple i_vector_y:
@@ -837,29 +816,28 @@ class AxisSystem(AnyObject):
     def put_x_axis(self, i_x_axis: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub PutXAxis(CATSafeArrayVariant iXAxis)
-                |     Defines the coordinates X,Y,Z of the X axis of the axis
-                |     system.
-                | 
-                |     Parameters:
-                | 
-                |         iXAxis
-                |             A Safe Array made up of 3 doubles: X, Y, Z, representing the
-                |             coordinates in model space of the X axis of the axis system.
-                |             
-                | 
-                |     Example:
-                |         The following example puts in XAxisCoord the new coordinates of the X
-                |         axis of the axisSystem axis system:
-                | 
-                |          Dim XAxis(2)
-                |          XAxis ( 0 )  = 100.000000
-                |          XAxis ( 1 )  = 200.000000
-                |          XAxis ( 2 )  = 10.000000
-                |          axisSystem.PutXAxis XAxis
+                Sub PutXAxis(CATSafeArrayVariant iXAxis)
+                    Defines the coordinates X,Y,Z of the X axis of the axis
+                    system.
+                
+                    Parameters:
+                
+                        iXAxis
+                            A Safe Array made up of 3 doubles: X, Y, Z, representing the
+                            coordinates in model space of the X axis of the axis system.
+                            
+                
+                    Example:
+                        The following example puts in XAxisCoord the new coordinates of the X
+                        axis of the axisSystem axis system:
+                
+                         Dim XAxis(2)
+                         XAxis ( 0 )  = 100.000000
+                         XAxis ( 1 )  = 200.000000
+                         XAxis ( 2 )  = 10.000000
+                         axisSystem.PutXAxis XAxis
 
         :param tuple i_x_axis:
         :return: None
@@ -885,29 +863,28 @@ class AxisSystem(AnyObject):
     def put_y_axis(self, i_y_axis: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub PutYAxis(CATSafeArrayVariant iYAxis)
-                |     Defines the coordinates X,Y,Z of the Y axis of the axis
-                |     system.
-                | 
-                |     Parameters:
-                | 
-                |         iYAxis
-                |             A Safe Array made up of 3 doubles: X, Y, Z, representing the
-                |             coordinates in model space of the Y axis of the axis system.
-                |             
-                | 
-                |     Example:
-                |         The following example puts in XAxisCoord the new coordinates of the Y
-                |         axis of the axisSystem axis system:
-                | 
-                |          Dim YAxis(2)
-                |          YAxis ( 0 )  = 100.000000
-                |          YAxis ( 1 )  = 200.000000
-                |          YAxis ( 2 )  = 10.000000
-                |          axisSystem.PutYAxis YAxis
+                Sub PutYAxis(CATSafeArrayVariant iYAxis)
+                    Defines the coordinates X,Y,Z of the Y axis of the axis
+                    system.
+                
+                    Parameters:
+                
+                        iYAxis
+                            A Safe Array made up of 3 doubles: X, Y, Z, representing the
+                            coordinates in model space of the Y axis of the axis system.
+                            
+                
+                    Example:
+                        The following example puts in XAxisCoord the new coordinates of the Y
+                        axis of the axisSystem axis system:
+                
+                         Dim YAxis(2)
+                         YAxis ( 0 )  = 100.000000
+                         YAxis ( 1 )  = 200.000000
+                         YAxis ( 2 )  = 10.000000
+                         axisSystem.PutYAxis YAxis
 
         :param tuple i_y_axis:
         :return: None
@@ -933,29 +910,28 @@ class AxisSystem(AnyObject):
     def put_z_axis(self, i_z_axis: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub PutZAxis(CATSafeArrayVariant iZAxis)
-                |     Defines the coordinates X,Y,Z of the Z axis of the axis
-                |     system.
-                | 
-                |     Parameters:
-                | 
-                |         iZAxis
-                |             A Safe Array made up of 3 doubles: X, Y, Z, representing the
-                |             coordinates in model space of the Z axis of the axis system.
-                |             
-                | 
-                |     Example:
-                |         The following example puts in ZAxisCoord the new coordinates of the Z
-                |         axis of the axisSystem axis system:
-                | 
-                |          Dim ZAxis(2)
-                |          ZAxis ( 0 )  = 100.000000
-                |          ZAxis ( 1 )  = 200.000000
-                |          ZAxis ( 2 )  = 10.000000
-                |          axisSystem.PutZAxis ZAxis
+                Sub PutZAxis(CATSafeArrayVariant iZAxis)
+                    Defines the coordinates X,Y,Z of the Z axis of the axis
+                    system.
+                
+                    Parameters:
+                
+                        iZAxis
+                            A Safe Array made up of 3 doubles: X, Y, Z, representing the
+                            coordinates in model space of the Z axis of the axis system.
+                            
+                
+                    Example:
+                        The following example puts in ZAxisCoord the new coordinates of the Z
+                        axis of the axisSystem axis system:
+                
+                         Dim ZAxis(2)
+                         ZAxis ( 0 )  = 100.000000
+                         ZAxis ( 1 )  = 200.000000
+                         ZAxis ( 2 )  = 10.000000
+                         axisSystem.PutZAxis ZAxis
 
         :param tuple i_z_axis:
         :return: None

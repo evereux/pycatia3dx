@@ -12,21 +12,19 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class Slide(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Slide
-                | 
-                | Allows management of Slide entity
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Slide
+                
+                Allows management of Slide entity
     
     """
 
@@ -35,4 +33,4 @@ class Slide(AnyObject):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'Slide(name="{ self.name }")'
+        return f'Slide(name="{self.name}")'

@@ -14,18 +14,17 @@ from pycatia3dx.system.any_object import AnyObject
 class SimPoint(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimPoint
-                | 
-                | Represents the Point object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimPoint
+                
+                Represents the Point object.
     
     """
 
@@ -37,11 +36,10 @@ class SimPoint(AnyObject):
     def point_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PointType() As SimPointDefinitionMode
-                |     Returns or sets the type of point.
+                Property PointType() As SimPointDefinitionMode
+                    Returns or sets the type of point.
 
         :return: int
         """
@@ -59,20 +57,19 @@ class SimPoint(AnyObject):
     def get_coordinates(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetCoordinates(double oX1,double oX2,double oX3)
-                |     Retrieves the coordinates of the point.
-                | 
-                |     Parameters:
-                | 
-                |         oX1[out]
-                |             The X coordinate of the point. 
-                |         oX2[out]
-                |             The Y coordinate of the point. 
-                |         oX3[out]
-                |             The Z coordinate of the point.
+                Sub GetCoordinates(double oX1,double oX2,double oX3)
+                    Retrieves the coordinates of the point.
+                
+                    Parameters:
+                
+                        oX1[out]
+                            The X coordinate of the point. 
+                        oX2[out]
+                            The Y coordinate of the point. 
+                        oX3[out]
+                            The Z coordinate of the point.
 
         :return: tuple
         """
@@ -82,24 +79,23 @@ class SimPoint(AnyObject):
     def set_coordinates(self, i_x1: float, i_x2: float, i_x3: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCoordinates(double iX1,double iX2,double iX3)
-                |     Sets the coordinates of the point. Works only if
-                |     TypeEnum==Coordinates
-                | 
-                |     Parameters:
-                | 
-                |         iX1[in]
-                |             The X coordinate of the point. 
-                |         iX2[in]
-                |             The Y coordinate of the point. 
-                |         iX3[in]
-                |             The Z coordinate of the point. 
-                | 
-                | 
-                | Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
+                Sub SetCoordinates(double iX1,double iX2,double iX3)
+                    Sets the coordinates of the point. Works only if
+                    TypeEnum==Coordinates
+                
+                    Parameters:
+                
+                        iX1[in]
+                            The X coordinate of the point. 
+                        iX2[in]
+                            The Y coordinate of the point. 
+                        iX3[in]
+                            The Z coordinate of the point. 
+                
+                
+                Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
 
         :param float i_x1:
         :param float i_x2:

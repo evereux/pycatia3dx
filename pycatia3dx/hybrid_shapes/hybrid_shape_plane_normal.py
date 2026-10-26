@@ -13,25 +13,23 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapePlaneNormal(Plane):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.Plane
-                |                             HybridShapePlaneNormal
-                | 
-                | Normal plane.
-                | Role: Allows to access data of the plane feature normal to a curve at a given
-                | point.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.Plane
+                                            HybridShapePlaneNormal
+                
+                Normal plane.
+                Role: Allows to access data of the plane feature normal to a curve at a given
+                point.
     
     """
 
@@ -43,24 +41,23 @@ class HybridShapePlaneNormal(Plane):
     def curve(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Curve() As Reference
-                |     Role: Get the curve to which the plane is to be normal.
-                | 
-                |     Parameters:
-                | 
-                |         oCurve
-                |             reference curve. 
-                | 
-                |     See also:
-                |         Reference
-                |     Returns:
-                |         HRESULT S_OK if Ok E_FAIL else return error code for C++
-                |         Implementations 
-                |     See also:
-                |         HybridShapeFactory
+                Property Curve() As Reference
+                    Role: Get the curve to which the plane is to be normal.
+                
+                    Parameters:
+                
+                        oCurve
+                            reference curve. 
+                
+                    See also:
+                        Reference
+                    Returns:
+                        HRESULT S_OK if Ok E_FAIL else return error code for C++
+                        Implementations 
+                    See also:
+                        HybridShapeFactory
 
         :return: Reference
         """
@@ -79,24 +76,23 @@ class HybridShapePlaneNormal(Plane):
     def point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Point() As Reference
-                |     Role: Get the point where the plane is to be normal.
-                | 
-                |     Parameters:
-                | 
-                |         oPoint
-                |             point 
-                | 
-                |     See also:
-                |         Reference
-                |     Returns:
-                |         HRESULT S_OK if Ok E_FAIL else return error code for C++
-                |         Implementations 
-                |     See also:
-                |         HybridShapeFactory
+                Property Point() As Reference
+                    Role: Get the point where the plane is to be normal.
+                
+                    Parameters:
+                
+                        oPoint
+                            point 
+                
+                    See also:
+                        Reference
+                    Returns:
+                        HRESULT S_OK if Ok E_FAIL else return error code for C++
+                        Implementations 
+                    See also:
+                        HybridShapeFactory
 
         :return: Reference
         """
@@ -112,4 +108,4 @@ class HybridShapePlaneNormal(Plane):
         self.com_object.Point = value
 
     def __repr__(self):
-        return f'HybridShapePlaneNormal(name="{ self.name }")'
+        return f'HybridShapePlaneNormal(name="{self.name}")'

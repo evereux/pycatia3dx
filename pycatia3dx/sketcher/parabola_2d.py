@@ -13,21 +13,20 @@ from pycatia3dx.sketcher.curve_2d import Curve2D
 class Parabola2D(Curve2D):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATSketcherIDLItf.GeometricElement
-                |                         CATSketcherIDLItf.Geometry2D
-                |                             CATSketcherIDLItf.Curve2D
-                |                                 Parabola2D
-                | 
-                | Class defining an parabola in 2D Space.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATSketcherIDLItf.GeometricElement
+                                        CATSketcherIDLItf.Geometry2D
+                                            CATSketcherIDLItf.Curve2D
+                                                Parabola2D
+                
+                Class defining an parabola in 2D Space.
     
     """
 
@@ -39,14 +38,13 @@ class Parabola2D(Curve2D):
     def focal_distance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property FocalDistance() As double (Read Only)
-                |     Returns the focal distance of the parabola in 2D space.
-                | 
-                |     Returns:
-                |         oFocal The focal distance of the parabola
+                Property FocalDistance() As double (Read Only)
+                    Returns the focal distance of the parabola in 2D space.
+                
+                    Returns:
+                        oFocal The focal distance of the parabola
 
         :return: float
         """
@@ -56,21 +54,20 @@ class Parabola2D(Curve2D):
     def get_axis(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub GetAxis(CATSafeArrayVariant oAxis)
-                |     Returns the axis vector direction of the parabola in 2D
-                |     space.
-                | 
-                |     Parameters:
-                | 
-                |         oAxis
-                | 
-                |               oAxis[0]: The X coordinate of the axis vector
-                |               direction
-                |               oAxis[1]: The Y coordinate of the axis vector
-                |               direction
+                Sub GetAxis(CATSafeArrayVariant oAxis)
+                    Returns the axis vector direction of the parabola in 2D
+                    space.
+                
+                    Parameters:
+                
+                        oAxis
+                
+                              oAxis[0]: The X coordinate of the axis vector
+                              direction
+                              oAxis[1]: The Y coordinate of the axis vector
+                              direction
 
         :return: tuple
         """
@@ -95,20 +92,19 @@ class Parabola2D(Curve2D):
     def get_center(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetCenter(CATSafeArrayVariant oCenter)
-                |     Returns the center of the parabola in 2D space.
+                Sub GetCenter(CATSafeArrayVariant oCenter)
+                    Returns the center of the parabola in 2D space.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oCenter
+                        oCenter
                 |
-                |               oCenter[0]: The X Coordinate of the center point of the
-                |               parabola
-                |               oCenter[1]: The Y Coordinate of the center point of the
-                |               parabola
+                              oCenter[0]: The X Coordinate of the center point of the
+                              parabola
+                              oCenter[1]: The Y Coordinate of the center point of the
+                              parabola
 
         :return: tuple
         """
@@ -134,25 +130,24 @@ class Parabola2D(Curve2D):
                  i_focal_distance: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub SetData(double iCenterX,double iCenterY,double iAxisX,double iAxisY,double
-                | iFocalDistance)
-                |     Modifies the caracteristics of the parabola.
-                | 
-                |     Parameters:
-                | 
-                |         iCenterX
-                |             The X Coordinate of the parabola center 
-                |         iCenterY
-                |             The Y Coordinate of the parabola center 
-                |         iAxisX
-                |             The X coordinate of the axis vector direction 
-                |         iAxisY
-                |             The Y coordinate of the axis vector direction 
-                |         iFocalDistance
-                |             The focal distance of the parabola
+                Sub SetData(double iCenterX,double iCenterY,double iAxisX,double iAxisY,double
+                iFocalDistance)
+                    Modifies the caracteristics of the parabola.
+                
+                    Parameters:
+                
+                        iCenterX
+                            The X Coordinate of the parabola center 
+                        iCenterY
+                            The Y Coordinate of the parabola center 
+                        iAxisX
+                            The X coordinate of the axis vector direction 
+                        iAxisY
+                            The Y coordinate of the axis vector direction 
+                        iFocalDistance
+                            The focal distance of the parabola
 
         :param float i_center_x:
         :param float i_center_y:

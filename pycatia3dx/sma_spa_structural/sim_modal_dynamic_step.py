@@ -11,59 +11,57 @@ from pycatia3dx.sma_mpa_foundation.sim_step import SimStep
 
 
 class SimModalDynamicStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SMAMpaFoundationIDLItf.SimStep
-                |                         SimModalDynamicStep
-                | 
-                | Represents the Modal Dynamic Step object.
-                | 
-                | Example:
-                |     Given a SimSteps object, you can create a SimModalDynamicStep as
-                |     following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyModalDynamicStep As SimModalDynamicStep
-                |      Set MyModalDynamicStep = MySteps.Add("SimModalDynamicStep")
-                |      
-                | 
-                |     Given a SimSteps object, you can retrieve a SimModalDynamicStep named
-                |     "Modal Dynamic Step.1" as following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyModalDynamicStep As SimModalDynamicStep
-                |      Set MyModalDynamicStep = MySteps.Item("Modal Dynamic Step.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimSteps object mySteps, you can create a SimModalDynamicStep as
-                |     following:
-                | 
-                |      ...
-                |      myModalDynamicStep = mySteps.Add("SimModalDynamicStep")
-                |      
-                | 
-                |     Given a SimSteps object mySteps, you can retrieve a SimModalDynamicStep
-                |     named "Modal Dynamic Step.1" as following:
-                | 
-                |      ...
-                |      myModalDynamicStep = mySteps.Item("Modal Dynamic Step.1")
-                |      
-                | 
-                | See also:
-                |     SimSteps
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SMAMpaFoundationIDLItf.SimStep
+                                        SimModalDynamicStep
+                
+                Represents the Modal Dynamic Step object.
+                
+                Example:
+                    Given a SimSteps object, you can create a SimModalDynamicStep as
+                    following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyModalDynamicStep As SimModalDynamicStep
+                     Set MyModalDynamicStep = MySteps.Add("SimModalDynamicStep")
+                     
+                
+                    Given a SimSteps object, you can retrieve a SimModalDynamicStep named
+                    "Modal Dynamic Step.1" as following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyModalDynamicStep As SimModalDynamicStep
+                     Set MyModalDynamicStep = MySteps.Item("Modal Dynamic Step.1")
+                     
+                
+                Example in Python:
+                    Given a SimSteps object mySteps, you can create a SimModalDynamicStep as
+                    following:
+                
+                     ...
+                     myModalDynamicStep = mySteps.Add("SimModalDynamicStep")
+                     
+                
+                    Given a SimSteps object mySteps, you can retrieve a SimModalDynamicStep
+                    named "Modal Dynamic Step.1" as following:
+                
+                     ...
+                     myModalDynamicStep = mySteps.Item("Modal Dynamic Step.1")
+                     
+                
+                See also:
+                    SimSteps
     
     """
 
@@ -75,11 +73,10 @@ class SimModalDynamicStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -98,14 +95,13 @@ class SimModalDynamicStep(SimStep):
     def structural_material_damping_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StructuralMaterialDampingFlag() As boolean
-                |     Returns or sets the flag that determines if the structural material damping
-                |     option is used.
-                |     TRUE : the structural material damping option is used.
-                |     FALSE : the structural material damping option is not used.
+                Property StructuralMaterialDampingFlag() As boolean
+                    Returns or sets the flag that determines if the structural material damping
+                    option is used.
+                    TRUE : the structural material damping option is used.
+                    FALSE : the structural material damping option is not used.
 
         :return: bool
         """
@@ -124,11 +120,10 @@ class SimModalDynamicStep(SimStep):
     def time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TimeIncrement() As double
-                |     Returns or sets the time increment value. Quantity: TIME, units: s.
+                Property TimeIncrement() As double
+                    Returns or sets the time increment value. Quantity: TIME, units: s.
 
         :return: float
         """
@@ -147,11 +142,10 @@ class SimModalDynamicStep(SimStep):
     def total_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TotalTime() As double
-                |     Returns or sets the total time value. Quantity: TIME, units: s.
+                Property TotalTime() As double
+                    Returns or sets the total time value. Quantity: TIME, units: s.
 
         :return: float
         """
@@ -170,14 +164,13 @@ class SimModalDynamicStep(SimStep):
     def viscous_material_damping_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ViscousMaterialDampingFlag() As boolean
-                |     Returns or sets the flag that determines if the viscous material damping
-                |     option is used.
-                |     TRUE : the viscous material damping option is used.
-                |     FALSE : the viscous material damping option is not used. 
+                Property ViscousMaterialDampingFlag() As boolean
+                    Returns or sets the flag that determines if the viscous material damping
+                    option is used.
+                    TRUE : the viscous material damping option is used.
+                    FALSE : the viscous material damping option is not used. 
 
         :return: bool
         """
@@ -193,4 +186,4 @@ class SimModalDynamicStep(SimStep):
         self.com_object.ViscousMaterialDampingFlag = value
 
     def __repr__(self):
-        return f'SimModalDynamicStep(name="{ self.name }")'
+        return f'SimModalDynamicStep(name="{self.name}")'

@@ -12,59 +12,57 @@ from pycatia3dx.sma_spa_structural.sim_stabilization import SimStabilization
 
 
 class SimQuasiStaticStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SMAMpaFoundationIDLItf.SimStep
-                |                         SimQuasiStaticStep
-                | 
-                | Represents the Quasi Static Step object.
-                | 
-                | Example:
-                |     Given a SimSteps object, you can create a SimQuasiStaticStep as
-                |     following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyQuasiStaticStep As SimQuasiStaticStep
-                |      Set MyQuasiStaticStep = MySteps.Add("SimQuasiStaticStep")
-                |      
-                | 
-                |     Given a SimSteps object, you can retrieve a SimQuasiStaticStep named
-                |     "Quasi-Static Step.1" as following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyQuasiStaticStep As SimQuasiStaticStep
-                |      Set MyQuasiStaticStep = MySteps.Item("Quasi-Static Step.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimSteps object mySteps, you can create a SimQuasiStaticStep as
-                |     following:
-                | 
-                |      ...
-                |      MyQuasiStaticStep = mySteps.Add("SimQuasiStaticStep")
-                |      
-                | 
-                |     Given a SimSteps object mySteps, you can retrieve a SimQuasiStaticStep
-                |     named "Quasi-Static Step.1" as following:
-                | 
-                |      ...
-                |      MyQuasiStaticStep = mySteps.Item("Quasi-Static Step.1")
-                |      
-                | 
-                | See also:
-                |     SimSteps
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SMAMpaFoundationIDLItf.SimStep
+                                        SimQuasiStaticStep
+                
+                Represents the Quasi Static Step object.
+                
+                Example:
+                    Given a SimSteps object, you can create a SimQuasiStaticStep as
+                    following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyQuasiStaticStep As SimQuasiStaticStep
+                     Set MyQuasiStaticStep = MySteps.Add("SimQuasiStaticStep")
+                     
+                
+                    Given a SimSteps object, you can retrieve a SimQuasiStaticStep named
+                    "Quasi-Static Step.1" as following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyQuasiStaticStep As SimQuasiStaticStep
+                     Set MyQuasiStaticStep = MySteps.Item("Quasi-Static Step.1")
+                     
+                
+                Example in Python:
+                    Given a SimSteps object mySteps, you can create a SimQuasiStaticStep as
+                    following:
+                
+                     ...
+                     MyQuasiStaticStep = mySteps.Add("SimQuasiStaticStep")
+                     
+                
+                    Given a SimSteps object mySteps, you can retrieve a SimQuasiStaticStep
+                    named "Quasi-Static Step.1" as following:
+                
+                     ...
+                     MyQuasiStaticStep = mySteps.Item("Quasi-Static Step.1")
+                     
+                
+                See also:
+                    SimSteps
     
     """
 
@@ -76,11 +74,10 @@ class SimQuasiStaticStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -99,17 +96,16 @@ class SimQuasiStaticStep(SimStep):
     def explicit_integration_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ExplicitIntegrationFlag() As boolean
-                |     Returns or sets the flag that determines if the step is using explicit
-                |     integration for creep behavior.
-                | 
-                |     TRUE: the step uses explicit integration for creep
-                |     behavior.
-                | 
-                |     FALSE: the step does not use explicit integration for creep behavior.
+                Property ExplicitIntegrationFlag() As boolean
+                    Returns or sets the flag that determines if the step is using explicit
+                    integration for creep behavior.
+                
+                    TRUE: the step uses explicit integration for creep
+                    behavior.
+                
+                    FALSE: the step does not use explicit integration for creep behavior.
 
         :return: bool
         """
@@ -128,16 +124,15 @@ class SimQuasiStaticStep(SimStep):
     def geometric_non_linearity_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property GeometricNonLinearityFlag() As boolean
-                |     Returns or sets the flag that determines if the step is geometrically non
-                |     linear.
-                | 
-                |     TRUE: the step is geometrically non linear.
-                | 
-                |     FALSE: the step is not geometrically non linear.
+                Property GeometricNonLinearityFlag() As boolean
+                    Returns or sets the flag that determines if the step is geometrically non
+                    linear.
+                
+                    TRUE: the step is geometrically non linear.
+                
+                    FALSE: the step is not geometrically non linear.
 
         :return: bool
         """
@@ -156,12 +151,11 @@ class SimQuasiStaticStep(SimStep):
     def initial_time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InitialTimeIncrement() As double
-                |     Returns or sets the initial time for the increments of the Quasi-Static
-                |     step.
+                Property InitialTimeIncrement() As double
+                    Returns or sets the initial time for the increments of the Quasi-Static
+                    step.
 
         :return: float
         """
@@ -180,11 +174,10 @@ class SimQuasiStaticStep(SimStep):
     def matrix_storage_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MatrixStorageScheme() As SimMatrixStorageScheme
-                |     Returns or sets the type of the matrix storage for the Quasi-Static step.
+                Property MatrixStorageScheme() As SimMatrixStorageScheme
+                    Returns or sets the type of the matrix storage for the Quasi-Static step.
 
         :return: SimMatrixStorageScheme
         """
@@ -203,12 +196,11 @@ class SimQuasiStaticStep(SimStep):
     def maximum_creep_strain_rate_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumCreepStrainRateIncrement() As double
-                |     Returns or sets the maximum creep strain rate for the increments of the
-                |     Quasi-Static step.
+                Property MaximumCreepStrainRateIncrement() As double
+                    Returns or sets the maximum creep strain rate for the increments of the
+                    Quasi-Static step.
 
         :return: float
         """
@@ -227,11 +219,10 @@ class SimQuasiStaticStep(SimStep):
     def maximum_increments(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumIncrements() As long
-                |     Returns or sets the maximum number of increments for the Quasi-Static step.
+                Property MaximumIncrements() As long
+                    Returns or sets the maximum number of increments for the Quasi-Static step.
 
         :return: int
         """
@@ -250,12 +241,11 @@ class SimQuasiStaticStep(SimStep):
     def maximum_time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumTimeIncrement() As double
-                |     Returns or sets the maximum time for the increments of the Quasi Static
-                |     step.
+                Property MaximumTimeIncrement() As double
+                    Returns or sets the maximum time for the increments of the Quasi Static
+                    step.
 
         :return: float
         """
@@ -274,12 +264,11 @@ class SimQuasiStaticStep(SimStep):
     def minimum_time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MinimumTimeIncrement() As double
-                |     Returns or sets the minimum time for the increments of the Quasi-Static
-                |     step.
+                Property MinimumTimeIncrement() As double
+                    Returns or sets the minimum time for the increments of the Quasi-Static
+                    step.
 
         :return: float
         """
@@ -298,11 +287,10 @@ class SimQuasiStaticStep(SimStep):
     def stabilization(self) -> SimStabilization:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Stabilization() As SimStabilization (Read Only)
-                |     Returns the stabilization for the Quasi-Static step.
+                Property Stabilization() As SimStabilization (Read Only)
+                    Returns the stabilization for the Quasi-Static step.
 
         :return: SimStabilization
         """
@@ -313,11 +301,10 @@ class SimQuasiStaticStep(SimStep):
     def step_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StepTime() As double
-                |     Returns or sets the total time for the Quasi-Static step.
+                Property StepTime() As double
+                    Returns or sets the total time for the Quasi-Static step.
 
         :return: float
         """
@@ -336,12 +323,11 @@ class SimQuasiStaticStep(SimStep):
     def time_incrementation_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TimeIncrementationScheme() As
-                | SimTimeIncrementationScheme
-                |     Returns or sets the incrementation type for the Quasi-Static step.
+                Property TimeIncrementationScheme() As
+                SimTimeIncrementationScheme
+                    Returns or sets the incrementation type for the Quasi-Static step.
 
         :return: SimTimeIncrementationScheme
         """
@@ -357,4 +343,4 @@ class SimQuasiStaticStep(SimStep):
         self.com_object.TimeIncrementationScheme = value
 
     def __repr__(self):
-        return f'SimQuasiStaticStep(name="{ self.name }")'
+        return f'SimQuasiStaticStep(name="{self.name}")'

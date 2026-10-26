@@ -12,22 +12,20 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SemanticGDTCommonZone(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SemanticGDTCommonZone
-                | 
-                | Interface for accessing Common Zone, CZ, modifier on a Semantic GDT (ISO
-                | Standard only).
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SemanticGDTCommonZone
+                
+                Interface for accessing Common Zone, CZ, modifier on a Semantic GDT (ISO
+                Standard only).
     
     """
 
@@ -39,12 +37,11 @@ class SemanticGDTCommonZone(AnyObject):
     def modifier(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Modifier() As CATBSTR (Read Only)
-                |     Retrieves CZ modifier display.
-                |     Empty string is returned if modifier not applied. 
+                Property Modifier() As CATBSTR (Read Only)
+                    Retrieves CZ modifier display.
+                    Empty string is returned if modifier not applied. 
 
         :return: str
         """
@@ -52,4 +49,4 @@ class SemanticGDTCommonZone(AnyObject):
         return self.com_object.Modifier
 
     def __repr__(self):
-        return f'SemanticGdtCommonZone(name="{ self.name }")'
+        return f'SemanticGdtCommonZone(name="{self.name}")'

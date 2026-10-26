@@ -14,26 +14,25 @@ from pycatia3dx.interfaces.viewer_2d import Viewer2D
 class SpecsViewer(Viewer2D):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Viewer
-                |                         InfInterfaces.Viewer2D
-                |                             SpecsViewer
-                | 
-                | Represents the specification tree viewer.
-                | This viewer displays the document's specification tree according to the chosen
-                | layout, and can only be included in a SpecsAndGeomWindow
-                | object.
-                | 
-                | See also:
-                |     CatSpecsLayout, SpecsAndGeomWindow
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Viewer
+                                        InfInterfaces.Viewer2D
+                                            SpecsViewer
+                
+                Represents the specification tree viewer.
+                This viewer displays the document's specification tree according to the chosen
+                layout, and can only be included in a SpecsAndGeomWindow
+                object.
+                
+                See also:
+                    CatSpecsLayout, SpecsAndGeomWindow
     
     """
 
@@ -45,18 +44,17 @@ class SpecsViewer(Viewer2D):
     def layout(self) -> CatSpecsLayout:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Layout() As CatSpecsLayout
-                |     Returns or sets the specification tree layout.
-                | 
-                |     Example:
-                |         This example sets the specification tree layout for the SpecsTreeViewer
-                |         specification tree viewer to
-                |         catSpecsViewerHorizontalCentered.
-                | 
-                |          SpecsTreeViewer.Layout = catSpecsViewerHorizontalCentered
+                Property Layout() As CatSpecsLayout
+                    Returns or sets the specification tree layout.
+                
+                    Example:
+                        This example sets the specification tree layout for the SpecsTreeViewer
+                        specification tree viewer to
+                        catSpecsViewerHorizontalCentered.
+                
+                         SpecsTreeViewer.Layout = catSpecsViewerHorizontalCentered
 
         :return: int
         """

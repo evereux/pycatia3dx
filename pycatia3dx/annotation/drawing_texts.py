@@ -17,19 +17,18 @@ from pycatia3dx.types.general import CATVariant
 class DrawingTexts(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     DrawingTexts
-                | 
-                | A collection of all the drawing texts currently managed by a drawing view of
-                | drawing sheet in a drawing representation.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    DrawingTexts
+                
+                A collection of all the drawing texts currently managed by a drawing view of
+                drawing sheet in a drawing representation.
     
     """
 
@@ -40,38 +39,37 @@ class DrawingTexts(Collection):
     def add(self, i_drawing_text: str, i_position_x: float, i_position_y: float) -> DrawingText:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add(CATBSTR iDrawingText,double iPositionX,double iPositionY) As
-                | DrawingText
-                |     Creates a drawing text and adds it to the DrawingTexts collection.
-                |     
-                |     Notice that an authoring product licence is required.
-                | 
-                |     Parameters:
-                | 
-                |         iDrawingText
-                |             The character string that makes up the drawing text to create
-                |             
-                |         iPositionX,iPositionY
-                |             The drawing text x and y coordinates, expressed in millimeters,
-                |             with respect to the drawing view coordinate system
-                |             
-                | 
-                |     Returns:
-                |         The created drawing text 
-                | 
-                | Example:
-                |     The following example creates a drawing text with the string ComplexText
-                |     and retrieved in MyText in the drawing view collection of the MyView drawing
-                |     view. This view belongs to the drawing view collection of the drawing
-                |     sheet
-                | 
-                |      Dim MyView As DrawingView
-                |      Set MyView = MySheet.Views.ActiveView
-                |      Dim MyText As DrawingText
-                |      Set MyText = MyView.Texts.Add("ComplexText", 0., 0.)
+                Func Add(CATBSTR iDrawingText,double iPositionX,double iPositionY) As
+                DrawingText
+                    Creates a drawing text and adds it to the DrawingTexts collection.
+                    
+                    Notice that an authoring product licence is required.
+                
+                    Parameters:
+                
+                        iDrawingText
+                            The character string that makes up the drawing text to create
+                            
+                        iPositionX,iPositionY
+                            The drawing text x and y coordinates, expressed in millimeters,
+                            with respect to the drawing view coordinate system
+                            
+                
+                    Returns:
+                        The created drawing text 
+                
+                Example:
+                    The following example creates a drawing text with the string ComplexText
+                    and retrieved in MyText in the drawing view collection of the MyView drawing
+                    view. This view belongs to the drawing view collection of the drawing
+                    sheet
+                
+                     Dim MyView As DrawingView
+                     Set MyView = MySheet.Views.ActiveView
+                     Dim MyText As DrawingText
+                     Set MyText = MyView.Texts.Add("ComplexText", 0., 0.)
 
         :param str i_drawing_text:
         :param float i_position_x:
@@ -83,35 +81,34 @@ class DrawingTexts(Collection):
     def item(self, i_index: CATVariant) -> DrawingText:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As DrawingText
-                |     Returns a drawing text using its index from the DrawingTexts
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the drawing text to retrieve from the collection of
-                |             drawing texts. As a numerics, this index is the rank of the drawing text in the
-                |             collection. The index of the first drawing text in the collection is 1, and the
-                |             index of the last drawing text is Count. As a string, it is the name you
-                |             assigned to the drawing text using the AnyObject.Name property or when creating
-                |             it using the Add method. 
-                | 
-                |     Returns:
-                |         The retrieved drawing view 
-                |     Example:
-                |         This example retrieves in ThisDrawingText the second drawing text, in
-                |         the drawing view collection of the active view in the active sheet, in the
-                |         active representation supposed to be a drawing
-                |         representation.
-                | 
-                |          Dim MyView  As DrawingView
-                |          Set MyView  = MySheet.Views.ActiveView
-                |          Dim ThisDrawingText As DrawingText
-                |          Set ThisDrawingText = MyView.Texts.Item(2)
+                Func Item(CATVariant iIndex) As DrawingText
+                    Returns a drawing text using its index from the DrawingTexts
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the drawing text to retrieve from the collection of
+                            drawing texts. As a numerics, this index is the rank of the drawing text in the
+                            collection. The index of the first drawing text in the collection is 1, and the
+                            index of the last drawing text is Count. As a string, it is the name you
+                            assigned to the drawing text using the AnyObject.Name property or when creating
+                            it using the Add method. 
+                
+                    Returns:
+                        The retrieved drawing view 
+                    Example:
+                        This example retrieves in ThisDrawingText the second drawing text, in
+                        the drawing view collection of the active view in the active sheet, in the
+                        active representation supposed to be a drawing
+                        representation.
+                
+                         Dim MyView  As DrawingView
+                         Set MyView  = MySheet.Views.ActiveView
+                         Dim ThisDrawingText As DrawingText
+                         Set ThisDrawingText = MyView.Texts.Item(2)
 
         :param CATVariant i_index:
         :return: DrawingText
@@ -121,29 +118,28 @@ class DrawingTexts(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(CATVariant iIndex)
-                |     Removes a drawing text from the DrawingTexts collection. 
-                |     Notice that an authoring product licence is required.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the drawing text to remove from the collection of
-                |             drawing texts. As a numerics, this index is the rank of the drawing text in the
-                |             collection. The index of the first drawing text in the collection is 1, and the
-                |             index of the last drawing text is Count. 
-                | 
-                |     Example:
-                |         The following example removes the third drawing text in the drawing
-                |         text collection of the active view of the active representation, supposed to be
-                |         a drawing representation.
-                | 
-                |          Dim MyView As DrawingView
-                |          Set MyView  = MySheet.Views.ActiveView
-                |          MyView.DrawingTexts.Remove(3)
+                Sub Remove(CATVariant iIndex)
+                    Removes a drawing text from the DrawingTexts collection. 
+                    Notice that an authoring product licence is required.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the drawing text to remove from the collection of
+                            drawing texts. As a numerics, this index is the rank of the drawing text in the
+                            collection. The index of the first drawing text in the collection is 1, and the
+                            index of the last drawing text is Count. 
+                
+                    Example:
+                        The following example removes the third drawing text in the drawing
+                        text collection of the active view of the active representation, supposed to be
+                        a drawing representation.
+                
+                         Dim MyView As DrawingView
+                         Set MyView  = MySheet.Views.ActiveView
+                         MyView.DrawingTexts.Remove(3)
 
         :param CATVariant i_index:
         :return: None

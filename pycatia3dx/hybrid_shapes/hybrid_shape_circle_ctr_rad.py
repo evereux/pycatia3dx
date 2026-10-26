@@ -15,37 +15,35 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeCircleCtrRad(HybridShapeCircle):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.HybridShapeCircle
-                |                             HybridShapeCircleCtrRad
-                | 
-                | Represents the hybrid shape circle object defined using a center and a
-                | radius.
-                | Role: To access the data of the hybrid shape circle object.
-                | 
-                | This data includes:
-                | 
-                |     The circle center
-                |     The circle radius
-                |     The surface that supports the circle
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapeCircleCtrRad
-                | object.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.HybridShapeCircle
+                                            HybridShapeCircleCtrRad
+                
+                Represents the hybrid shape circle object defined using a center and a
+                radius.
+                Role: To access the data of the hybrid shape circle object.
+                
+                This data includes:
+                
+                    The circle center
+                    The circle radius
+                    The surface that supports the circle
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapeCircleCtrRad
+                object.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -57,19 +55,18 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
     def center(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Center() As Reference
-                |     Returns or sets the circle center.
-                |     Sub-element(s) supported (see Boundary object): Vertex.
-                | 
-                |     Example:
-                |         This example retrieves in HybShpCircleCenter the center of the
-                |         HybShpCircle hybrid shape circle.
-                | 
-                |          Dim HybShpCircleCenter As Reference
-                |          HybShpCircleCenter = HybShpCircle.Center
+                Property Center() As Reference
+                    Returns or sets the circle center.
+                    Sub-element(s) supported (see Boundary object): Vertex.
+                
+                    Example:
+                        This example retrieves in HybShpCircleCenter the center of the
+                        HybShpCircle hybrid shape circle.
+                
+                         Dim HybShpCircleCenter As Reference
+                         HybShpCircleCenter = HybShpCircle.Center
 
         :return: Reference
         """
@@ -88,20 +85,19 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
     def diameter(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Diameter() As Length (Read Only)
-                |     Returns the circle diameter.
-                |     It is expressed as a Length literal. Succeeds only if DiameterMode is set
-                |     to True. 
-                | 
-                | Example:
-                |     This example retrieves in HybShpCircleDiameter the diameter of the
-                |     HybShpCircle hybrid shape circle feature
-                | 
-                |      Dim HybShpCircleDiameter As Length
-                |      HybShpCircleDiameter = HybShpCircle.Diameter
+                Property Diameter() As Length (Read Only)
+                    Returns the circle diameter.
+                    It is expressed as a Length literal. Succeeds only if DiameterMode is set
+                    to True. 
+                
+                Example:
+                    This example retrieves in HybShpCircleDiameter the diameter of the
+                    HybShpCircle hybrid shape circle feature
+                
+                     Dim HybShpCircleDiameter As Length
+                     HybShpCircleDiameter = HybShpCircle.Diameter
 
         :return: Length
         """
@@ -112,22 +108,21 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
     def diameter_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property DiameterMode() As boolean
-                |     Returns or sets the DiameterMode.
-                |     Legal values: True implies diameter False implies radius (default). When
-                |     DiameterMode is changed, Radius/Diameter value, which is stored will not be
-                |     modified.
-                | 
-                |     Example:
-                | 
-                |           This example sets that the DiameterMode of
-                |           the HybShpCircle hybrid shape circle feature
-                |           
-                | 
-                |           HybShpCircle.DiameterMode = True
+                Property DiameterMode() As boolean
+                    Returns or sets the DiameterMode.
+                    Legal values: True implies diameter False implies radius (default). When
+                    DiameterMode is changed, Radius/Diameter value, which is stored will not be
+                    modified.
+                
+                    Example:
+                
+                          This example sets that the DiameterMode of
+                          the HybShpCircle hybrid shape circle feature
+                          
+                
+                          HybShpCircle.DiameterMode = True
 
         :return: bool
         """
@@ -146,22 +141,21 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
     def first_direction(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property FirstDirection() As HybridShapeDirection
-                |     Returns or sets the first direction used to set the angles reference.
-                |     
-                | Example:
-                |     This example retrieves in myHybridShapeDirection the first direction of the
-                |     HybShpCircle hybrid shape circle feature
-                | 
-                |      Dim myHybridShapeDirection As CATIAHybridShapeDirection 
-                |      myHybridShapeDirection = HybShpCircle.FirstDirection
-                |      
-                | 
-                |     See also:
-                |         HybridShapeDirection
+                Property FirstDirection() As HybridShapeDirection
+                    Returns or sets the first direction used to set the angles reference.
+                    
+                Example:
+                    This example retrieves in myHybridShapeDirection the first direction of the
+                    HybShpCircle hybrid shape circle feature
+                
+                     Dim myHybridShapeDirection As CATIAHybridShapeDirection 
+                     myHybridShapeDirection = HybShpCircle.FirstDirection
+                     
+                
+                    See also:
+                        HybridShapeDirection
 
         :return: HybridShapeDirection
         """
@@ -180,18 +174,17 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
     def radius(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Radius() As Length (Read Only)
-                |     Returns the circle radius. It is expressed as a Length literal. Succeeds
-                |     only if DiameterMode is set to False. 
-                | Example:
-                |     This example retrieves in HybShpCircleRadius the radius of the HybShpCircle
-                |     hybrid shape circle.
-                | 
-                |      Dim HybShpCircleRadius As Length
-                |      HybShpCircleRadius = HybShpCircle.Radius
+                Property Radius() As Length (Read Only)
+                    Returns the circle radius. It is expressed as a Length literal. Succeeds
+                    only if DiameterMode is set to False. 
+                Example:
+                    This example retrieves in HybShpCircleRadius the radius of the HybShpCircle
+                    hybrid shape circle.
+                
+                     Dim HybShpCircleRadius As Length
+                     HybShpCircleRadius = HybShpCircle.Radius
 
         :return: Length
         """
@@ -202,19 +195,18 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Support() As Reference
-                |     Returns or sets the circle support surface.
-                |     Sub-element(s) supported (see Boundary object): Face.
-                | 
-                |     Example:
-                |         This example retrieves in HybShpCircleSupportSurf the support surface
-                |         of the HybShpCircle hybrid shape circle.
-                | 
-                |          Dim HybShpCircleSupportSurf As Reference 
-                |          HybShpCircleSupportSurf = HybShpCircle.Support
+                Property Support() As Reference
+                    Returns or sets the circle support surface.
+                    Sub-element(s) supported (see Boundary object): Face.
+                
+                    Example:
+                        This example retrieves in HybShpCircleSupportSurf the support surface
+                        of the HybShpCircle hybrid shape circle.
+                
+                         Dim HybShpCircleSupportSurf As Reference 
+                         HybShpCircleSupportSurf = HybShpCircle.Support
 
         :return: Reference
         """
@@ -232,22 +224,21 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
     def get_second_direction(self, o_dir_x: float, o_dir_y: float, o_dir_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetSecondDirection(double oDirX,double oDirY,double oDirZ)
-                |     Gets the second direction on the plane to compute the point (for
-                |     stability).
-                |     This direction has to be kept perpendicular to the first
-                |     direction
-                | 
-                |     Parameters:
-                | 
-                |         oDirX,
-                |             oDirY, oDirZ. second direction 
-                | 
-                |     See also:
-                |         HybridShapeDirection
+                Sub GetSecondDirection(double oDirX,double oDirY,double oDirZ)
+                    Gets the second direction on the plane to compute the point (for
+                    stability).
+                    This direction has to be kept perpendicular to the first
+                    direction
+                
+                    Parameters:
+                
+                        oDirX,
+                            oDirY, oDirZ. second direction 
+                
+                    See also:
+                        HybridShapeDirection
 
         :param float o_dir_x:
         :param float o_dir_y:
@@ -259,16 +250,15 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
     def is_geodesic(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func IsGeodesic() As boolean
-                |     Queries whether the circle is geodesic or not.
-                | 
-                |     Parameters:
-                | 
-                |         oGeod
-                |             geodesic type : when TRUE, the circle is geodesic.
+                Func IsGeodesic() As boolean
+                    Queries whether the circle is geodesic or not.
+                
+                    Parameters:
+                
+                        oGeod
+                            geodesic type : when TRUE, the circle is geodesic.
 
         :return: bool
         """
@@ -277,12 +267,11 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
     def set_geometry_on_support(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetGeometryOnSupport()
-                |     Sets GeometryOnSupport of circle.
-                |     It puts the circle on the surface.
+                Sub SetGeometryOnSupport()
+                    Sets GeometryOnSupport of circle.
+                    It puts the circle on the surface.
 
         :return: None
         """
@@ -291,22 +280,21 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
     def set_second_direction(self, i_dir_x: float, i_dir_y: float, i_dir_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetSecondDirection(double iDirX,double iDirY,double iDirZ)
-                |     Sets the second direction on the plane to compute the point (for
-                |     stability).
-                |     This direction has to be kept perpendicular to the first
-                |     direction
-                | 
-                |     Parameters:
-                | 
-                |         iDirX,
-                |             iDirY, iDirZ. second direction 
-                | 
-                |     See also:
-                |         HybridShapeDirection
+                Sub SetSecondDirection(double iDirX,double iDirY,double iDirZ)
+                    Sets the second direction on the plane to compute the point (for
+                    stability).
+                    This direction has to be kept perpendicular to the first
+                    direction
+                
+                    Parameters:
+                
+                        iDirX,
+                            iDirY, iDirZ. second direction 
+                
+                    See also:
+                        HybridShapeDirection
 
         :param float i_dir_x:
         :param float i_dir_y:
@@ -318,16 +306,15 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
     def unset_geometry_on_support(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub UnsetGeometryOnSupport()
-                |     Inactivates GeometryOnSupport of circle.
-                |     Note: The circle becomes euclidean.
+                Sub UnsetGeometryOnSupport()
+                    Inactivates GeometryOnSupport of circle.
+                    Note: The circle becomes euclidean.
 
         :return: None
         """
         return self.com_object.UnsetGeometryOnSupport()
 
     def __repr__(self):
-        return f'HybridShapeCircleCtrRad(name="{ self.name }")'
+        return f'HybridShapeCircleCtrRad(name="{self.name}")'

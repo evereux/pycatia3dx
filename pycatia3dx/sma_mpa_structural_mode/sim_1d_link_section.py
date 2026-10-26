@@ -12,58 +12,56 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class Sim1DLinkSection(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Sim1DLinkSection
-                | 
-                | Represents the 1D Link Section object.
-                | 
-                | Example:
-                |     Given a SimProperties object, you can create a Sim1DLinkSection as
-                |     following:
-                | 
-                |      Dim MyProperties As SimProperties
-                |      ...
-                |      Dim My1DLinkSection As Sim1DLinkSection
-                |      Set My1DLinkSection = MyProperties.Add("Sim1DLinkSection")
-                |      
-                | 
-                |     Given a SimProperties object, you can retrieve a Sim1DLinkSection named
-                |     "1DLink Section.1" as following:
-                | 
-                |      Dim MyProperties As SimProperties
-                |      ...
-                |      Dim My1DLinkSection As Sim1DLinkSection
-                |      Set My1DLinkSection = MyProperties.Item("1DLink Section.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimProperties object myProperties, you can create a
-                |     Sim1DLinkSection as following:
-                | 
-                |      ...
-                |      my1DLinkSection = myProperties.Add("Sim1DLinkSection")
-                |      
-                | 
-                |     Given a SimProperties object myProperties, you can retrieve a
-                |     Sim1DLinkSection named "1DLink Section.1" as following:
-                | 
-                |      ...
-                |      my1DLinkSection = myProperties.Item("1DLink Section.1")
-                |      
-                | 
-                | See also:
-                |     SimProperties
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Sim1DLinkSection
+                
+                Represents the 1D Link Section object.
+                
+                Example:
+                    Given a SimProperties object, you can create a Sim1DLinkSection as
+                    following:
+                
+                     Dim MyProperties As SimProperties
+                     ...
+                     Dim My1DLinkSection As Sim1DLinkSection
+                     Set My1DLinkSection = MyProperties.Add("Sim1DLinkSection")
+                     
+                
+                    Given a SimProperties object, you can retrieve a Sim1DLinkSection named
+                    "1DLink Section.1" as following:
+                
+                     Dim MyProperties As SimProperties
+                     ...
+                     Dim My1DLinkSection As Sim1DLinkSection
+                     Set My1DLinkSection = MyProperties.Item("1DLink Section.1")
+                     
+                
+                Example in Python:
+                    Given a SimProperties object myProperties, you can create a
+                    Sim1DLinkSection as following:
+                
+                     ...
+                     my1DLinkSection = myProperties.Add("Sim1DLinkSection")
+                     
+                
+                    Given a SimProperties object myProperties, you can retrieve a
+                    Sim1DLinkSection named "1DLink Section.1" as following:
+                
+                     ...
+                     my1DLinkSection = myProperties.Item("1DLink Section.1")
+                     
+                
+                See also:
+                    SimProperties
     
     """
 
@@ -75,11 +73,10 @@ class Sim1DLinkSection(AnyObject):
     def area(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Area() As double
-                |     Returns or sets the area of 1D Link section.Quantity: AREA, units: m_2
+                Property Area() As double
+                    Returns or sets the area of 1D Link section.Quantity: AREA, units: m_2
 
         :return: float
         """
@@ -98,11 +95,10 @@ class Sim1DLinkSection(AnyObject):
     def material_behavior(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialBehavior() As CATBaseDispatch
-                |     Returns or sets the simulation material behavior.
+                Property MaterialBehavior() As CATBaseDispatch
+                    Returns or sets the simulation material behavior.
 
         :return: AnyObject
         """
@@ -121,11 +117,10 @@ class Sim1DLinkSection(AnyObject):
     def material_behavior_by_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialBehaviorByName() As CATBSTR
-                |     Returns or sets the simulation material behavior by name. 
+                Property MaterialBehaviorByName() As CATBSTR
+                    Returns or sets the simulation material behavior by name. 
 
         :return: str
         """
@@ -141,4 +136,4 @@ class Sim1DLinkSection(AnyObject):
         self.com_object.MaterialBehaviorByName = value
 
     def __repr__(self):
-        return f'Sim1DLinkSection(name="{ self.name }")'
+        return f'Sim1DLinkSection(name="{self.name}")'

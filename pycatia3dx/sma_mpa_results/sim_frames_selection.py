@@ -14,34 +14,33 @@ from pycatia3dx.system.any_object import AnyObject
 class SimFramesSelection(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimFramesSelection
-                | 
-                | Sets the step and frame information.
-                | Role:Frame Selection lets you select steps and frames for a customized frame
-                | range for animations, sensors, and envelopes.
-                | It can be used to customize a data range with unique combinations of time,
-                | mode, or frequency settings.
-                | Example:
-                | 
-                |  Given a SimResultsAnalysisCase object, you can create a Frame Selection object
-                |  as following.
-                |  
-                | 
-                |  Dim oFrameSelection As SimFramesSelection
-                |  Set oFrameSelection = ResultsAnalysisCase.CreateFrameSelector
-                |  
-                | 
-                | See also:
-                |     SimResultsAnalysisCase
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimFramesSelection
+                
+                Sets the step and frame information.
+                Role:Frame Selection lets you select steps and frames for a customized frame
+                range for animations, sensors, and envelopes.
+                It can be used to customize a data range with unique combinations of time,
+                mode, or frequency settings.
+                Example:
+                
+                 Given a SimResultsAnalysisCase object, you can create a Frame Selection object
+                 as following.
+                 
+                
+                 Dim oFrameSelection As SimFramesSelection
+                 Set oFrameSelection = ResultsAnalysisCase.CreateFrameSelector
+                 
+                
+                See also:
+                    SimResultsAnalysisCase
     
     """
 
@@ -53,25 +52,24 @@ class SimFramesSelection(AnyObject):
     def step_list(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StepList(CATSafeArrayVariant iStepsList) (Write Only)
-                |     Sets the step List.
-                |     It is a list of strings which are the steps ID's. The step ID's can be
-                |     retrieved from SimResultsStep.GetIdentifier().
-                | 
-                |     Example:
-                | 
-                |          The following example shows how to retrieve the step ID from results
-                |          step
-                |          
-                | 
-                |          Dim stepId As String
-                |          Dim stepName As String
-                |          Dim stepDescription As String
-                |          oResultsStep.GetIdentifier stepId, stepName,
-                |          stepDescription
+                Property StepList(CATSafeArrayVariant iStepsList) (Write Only)
+                    Sets the step List.
+                    It is a list of strings which are the steps ID's. The step ID's can be
+                    retrieved from SimResultsStep.GetIdentifier().
+                
+                    Example:
+                
+                         The following example shows how to retrieve the step ID from results
+                         step
+                         
+                
+                         Dim stepId As String
+                         Dim stepName As String
+                         Dim stepDescription As String
+                         oResultsStep.GetIdentifier stepId, stepName,
+                         stepDescription
 
         :return: bool
         """
@@ -90,21 +88,20 @@ class SimFramesSelection(AnyObject):
     def symbolic_frame_range(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SymbolicFrameRange(SimSymbolicFrameRangesEnum ieSymbolicFrameRange)
-                | (Write Only)
-                |     Sets the type of symbolic frame Range.
-                |     Following are the list of available values:
-                |     SimUndefined
-                |     SimAllFrames
-                |     SimLastFrameOfEachStep
-                |     SimAllFramesInStep
-                |     SimTimeBasedFrames
-                |     SimFrequencyFrames In case of SimAllFramesInStep, one must use the StepList
-                |     method
-                |     to specify the step ID.
+                Property SymbolicFrameRange(SimSymbolicFrameRangesEnum ieSymbolicFrameRange)
+                (Write Only)
+                    Sets the type of symbolic frame Range.
+                    Following are the list of available values:
+                    SimUndefined
+                    SimAllFrames
+                    SimLastFrameOfEachStep
+                    SimAllFramesInStep
+                    SimTimeBasedFrames
+                    SimFrequencyFrames In case of SimAllFramesInStep, one must use the StepList
+                    method
+                    to specify the step ID.
 
         :return: bool
         """
@@ -122,20 +119,19 @@ class SimFramesSelection(AnyObject):
     def set_frames(self, i_nb_frames: tuple, i_frame_index: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetFrames(CATSafeArrayVariant iNbFrames,CATSafeArrayVariant
-                | iFrameIndex)
-                |     Sets the frames to the frame selector. The array size must be same as that
-                |     of steps/load cases.
+                Sub SetFrames(CATSafeArrayVariant iNbFrames,CATSafeArrayVariant
+                iFrameIndex)
+                    Sets the frames to the frame selector. The array size must be same as that
+                    of steps/load cases.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iNbFrames
-                |             The number of frames in step/load case to set.
-                |         iFrameIndex
-                |             The frame index to set.
+                        iNbFrames
+                            The number of frames in step/load case to set.
+                        iFrameIndex
+                            The frame index to set.
 
         :param tuple i_nb_frames:
         :param tuple i_frame_index:
@@ -162,31 +158,30 @@ class SimFramesSelection(AnyObject):
     def set_load_cases(self, i_nb_load_cases_in_step: tuple, i_load_case_id_list: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetLoadCases(CATSafeArrayVariant iNbLoadCasesInStep,CATSafeArrayVariant
-                | iLoadCaseIDList)
-                |     Sets the load cases to the frame selector. This method must be called if
-                |     anyone has specified a list of steps (given through StepList() method). No need
-                |     to call this if there are no load cases in the steps. Suppose if there are two
-                |     steps and only one out of them has load cases, then for the steps without load
-                |     cases the user will have to specify the values as zero and the load case ID as
-                |     NULL string.
+                Sub SetLoadCases(CATSafeArrayVariant iNbLoadCasesInStep,CATSafeArrayVariant
+                iLoadCaseIDList)
+                    Sets the load cases to the frame selector. This method must be called if
+                    anyone has specified a list of steps (given through StepList() method). No need
+                    to call this if there are no load cases in the steps. Suppose if there are two
+                    steps and only one out of them has load cases, then for the steps without load
+                    cases the user will have to specify the values as zero and the load case ID as
+                    NULL string.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iNbLoadCasesInStep
-                |             It is the number of load cases in the step. The size of list must
-                |             be same as the steps specified in the StepList() method. Also it must be in the
-                |             same order as that of the steps.
-                |         iLoadCaseIDList
-                |             List of load case ID's to set. The ID's can be retrieved through
-                |             SMAIAMpaResultsManager::GetLoadCaseIdentifier() method.
+                        iNbLoadCasesInStep
+                            It is the number of load cases in the step. The size of list must
+                            be same as the steps specified in the StepList() method. Also it must be in the
+                            same order as that of the steps.
+                        iLoadCaseIDList
+                            List of load case ID's to set. The ID's can be retrieved through
+                            SMAIAMpaResultsManager::GetLoadCaseIdentifier() method.
                 |
                 |
                 |
-                | Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
+                Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
 
         :param tuple i_nb_load_cases_in_step:
         :param tuple i_load_case_id_list:

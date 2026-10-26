@@ -21,17 +21,10 @@ Installation
 
     python -m pip install pycatia3dx
 
-Usage
------
+Documentation
+-------------
 
-See the examples: https://github.com/evereux/pycatia3dx/tree/main/examples
-
-
-Links
------
-
-todo
-
+https://evereux.github.io/pycatia3dx-docs/
 
 
 Examples And Scripts

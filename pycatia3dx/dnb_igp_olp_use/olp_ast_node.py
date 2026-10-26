@@ -12,26 +12,24 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class OLPAstNode(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     OlpAstNode
-                | 
-                | Represents a node of the Abstract Syntax Tree (AST).
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | An OLP AST is a parsed version of a robot program in the native language of the
-                | robot.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    OlpAstNode
+                
+                Represents a node of the Abstract Syntax Tree (AST).
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                An OLP AST is a parsed version of a robot program in the native language of the
+                robot.
     
     """
 
@@ -43,11 +41,10 @@ class OLPAstNode(AnyObject):
     def editable_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property EditableType() As DELOlpEditableType
-                |     Editor type to create for a node that can be edited in NRL teach.
+                Property EditableType() As DELOlpEditableType
+                    Editor type to create for a node that can be edited in NRL teach.
 
         :return: DELOlpEditableType
         """
@@ -66,13 +63,12 @@ class OLPAstNode(AnyObject):
     def editable_type_string(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property EditableTypeString() As CATBSTR
-                |     Editor type to create for a node that can be edited in NRL teach. Valid
-                |     string values are "None", "String", "Int", "Double", "Combo" and
-                |     "EditableCombo".
+                Property EditableTypeString() As CATBSTR
+                    Editor type to create for a node that can be edited in NRL teach. Valid
+                    string values are "None", "String", "Int", "Double", "Combo" and
+                    "EditableCombo".
 
         :return: str
         """
@@ -91,14 +87,13 @@ class OLPAstNode(AnyObject):
     def editor_id(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property EditorId() As CATBSTR
-                |     Editor ID for a node that can be edited in NRL teach. Set to a value that
-                |     identifies the type of attribute being edited. When the user modifies the
-                |     value, the translator can query the editor ID to know how to process the
-                |     modification.
+                Property EditorId() As CATBSTR
+                    Editor ID for a node that can be edited in NRL teach. Set to a value that
+                    identifies the type of attribute being edited. When the user modifies the
+                    value, the translator can query the editor ID to know how to process the
+                    modification.
 
         :return: str
         """
@@ -117,15 +112,14 @@ class OLPAstNode(AnyObject):
     def hidden_instructions(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HiddenInstructions() As CATSafeArrayVariant
-                |     The list of instructions that should be hidden in the teach table. These
-                |     instructions will be hidden in teach when custom columns are enabled. This is a
-                |     subset of OlpAstNode.Instructions. If it has not been set, the associated
-                |     hidden instructions are retrieved from the parent. Each value in the array is a
-                |     OlpInstruction.
+                Property HiddenInstructions() As CATSafeArrayVariant
+                    The list of instructions that should be hidden in the teach table. These
+                    instructions will be hidden in teach when custom columns are enabled. This is a
+                    subset of OlpAstNode.Instructions. If it has not been set, the associated
+                    hidden instructions are retrieved from the parent. Each value in the array is a
+                    OlpInstruction.
 
         :return: tuple
         """
@@ -144,14 +138,13 @@ class OLPAstNode(AnyObject):
     def id(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Id() As CATBSTR
-                |     Identifies the function of the node or otherwise helps the translator find
-                |     a node among its siblings.
-                |     For example an id could be used to identify a part of a motion statement
-                |     (speed) or to identify the variable name in a list of declarations.
+                Property Id() As CATBSTR
+                    Identifies the function of the node or otherwise helps the translator find
+                    a node among its siblings.
+                    For example an id could be used to identify a part of a motion statement
+                    (speed) or to identify the variable name in a list of declarations.
 
         :return: str
         """
@@ -170,13 +163,12 @@ class OLPAstNode(AnyObject):
     def instructions(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Instructions() As CATSafeArrayVariant
-                |     The DELMIA instructions associated with this AST node. If it has not been
-                |     set, the associated instructions are retrieved from the parent. Each value in
-                |     the array is a OlpInstruction.
+                Property Instructions() As CATSafeArrayVariant
+                    The DELMIA instructions associated with this AST node. If it has not been
+                    set, the associated instructions are retrieved from the parent. Each value in
+                    the array is a OlpInstruction.
 
         :return: tuple
         """
@@ -195,12 +187,11 @@ class OLPAstNode(AnyObject):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As DELOlpAstNodeType
-                |     Classifies the language element stored in this node.
-                |     For example: keyword, variable, comment, statement, or header.
+                Property Type() As DELOlpAstNodeType
+                    Classifies the language element stored in this node.
+                    For example: keyword, variable, comment, statement, or header.
 
         :return: DELOlpAstNodeType
         """
@@ -219,12 +210,11 @@ class OLPAstNode(AnyObject):
     def value(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Value() As CATBSTR (Read Only)
-                |     The unparsed text contained by this node and all its children, without line
-                |     endings. The value can only be set for leaf nodes.
+                Property Value() As CATBSTR (Read Only)
+                    The unparsed text contained by this node and all its children, without line
+                    endings. The value can only be set for leaf nodes.
 
         :return: str
         """
@@ -235,12 +225,11 @@ class OLPAstNode(AnyObject):
     def value_with_eol(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ValueWithEOL() As CATBSTR (Read Only)
-                |     The unparsed text contained by this node and all its children, with line
-                |     endings. The value can only be set for leaf nodes.
+                Property ValueWithEOL() As CATBSTR (Read Only)
+                    The unparsed text contained by this node and all its children, with line
+                    endings. The value can only be set for leaf nodes.
 
         :return: str
         """
@@ -250,16 +239,15 @@ class OLPAstNode(AnyObject):
     def clone(self) -> 'OLPAstNode':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Clone() As OlpAstNode
-                |     Create a deep copy of the node.
-                |     A node cannot have 2 parents, so you must clone it before adding it to
-                |     another branch.
-                | 
-                |     Returns:
-                |         The new copy.
+                Func Clone() As OlpAstNode
+                    Create a deep copy of the node.
+                    A node cannot have 2 parents, so you must clone it before adding it to
+                    another branch.
+                
+                    Returns:
+                        The new copy.
 
         :return: OLPAstNode
         """
@@ -268,18 +256,17 @@ class OLPAstNode(AnyObject):
     def export_to_file(self, i_file_path: str, i_pretty_print: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ExportToFile(CATBSTR iFilePath,boolean iPrettyPrint)
-                |     Exports the node in XML form at the desired filepath.
-                | 
-                |     Parameters:
-                | 
-                |         iFilePath
-                |             The path to the export file 
-                |         iPrettyPrint
-                |             Pretty print the outputted XML 
+                Sub ExportToFile(CATBSTR iFilePath,boolean iPrettyPrint)
+                    Exports the node in XML form at the desired filepath.
+                
+                    Parameters:
+                
+                        iFilePath
+                            The path to the export file 
+                        iPrettyPrint
+                            Pretty print the outputted XML 
 
         :param str i_file_path:
         :param bool i_pretty_print:
@@ -288,4 +275,4 @@ class OLPAstNode(AnyObject):
         return self.com_object.ExportToFile(i_file_path, i_pretty_print)
 
     def __repr__(self):
-        return f'OLPAstNode(name="{ self.name }")'
+        return f'OLPAstNode(name="{self.name}")'

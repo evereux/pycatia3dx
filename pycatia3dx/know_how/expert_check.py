@@ -11,26 +11,24 @@ from pycatia3dx.know_how.expert_check_runtime import ExpertCheckRuntime
 
 
 class ExpertCheck(ExpertCheckRuntime):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                    KnowHowIDLItf.ExpertRuleBaseComponentRuntime
-                |                         KnowHowIDLItf.ExpertCheckRuntime
-                |                             ExpertCheck
-                | 
-                | Represents the edition part of a check.
-                | 
-                | See also:
-                |     ExpertCheckRuntime.CheckEdition, ExpertRuleSet.CreateCheck
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                   KnowHowIDLItf.ExpertRuleBaseComponentRuntime
+                                        KnowHowIDLItf.ExpertCheckRuntime
+                                            ExpertCheck
+                
+                Represents the edition part of a check.
+                
+                See also:
+                    ExpertCheckRuntime.CheckEdition, ExpertRuleSet.CreateCheck
     
     """
 
@@ -42,15 +40,14 @@ class ExpertCheck(ExpertCheckRuntime):
     def body(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Body() As CATBSTR
-                |     Returns or sets the body of a Check.
-                | 
-                |     Example:
-                | 
-                |          Check1.Body = "H.Diameter > 20mm AND GetSubString(P.Name, 1, 6) == \"\"myPad.\"\""
+                Property Body() As CATBSTR
+                    Returns or sets the body of a Check.
+                
+                    Example:
+                
+                         Check1.Body = "H.Diameter > 20mm AND GetSubString(P.Name, 1, 6) == \"\"myPad.\"\""
 
         :return: str
         """
@@ -69,16 +66,15 @@ class ExpertCheck(ExpertCheckRuntime):
     def language(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Language() As long
-                |     Returns or sets the language of a check.
-                | 
-                |     1
-                |         KWE language 
-                |     2
-                |         VB Script
+                Property Language() As long
+                    Returns or sets the language of a check.
+                
+                    1
+                        KWE language 
+                    2
+                        VB Script
 
         :return: int
         """
@@ -97,15 +93,14 @@ class ExpertCheck(ExpertCheckRuntime):
     def variables(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Variables() As CATBSTR
-                |     Returns or sets the variable scope of an Expert Check.
-                | 
-                |     Example:
-                | 
-                |          Check1.Variables = "H:Hole; P: Pad"
+                Property Variables() As CATBSTR
+                    Returns or sets the variable scope of an Expert Check.
+                
+                    Example:
+                
+                         Check1.Variables = "H:Hole; P: Pad"
 
         :return: str
         """
@@ -121,4 +116,4 @@ class ExpertCheck(ExpertCheckRuntime):
         self.com_object.Variables = value
 
     def __repr__(self):
-        return f'ExpertCheck(name="{ self.name }")'
+        return f'ExpertCheck(name="{self.name}")'

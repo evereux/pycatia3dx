@@ -13,23 +13,21 @@ from pycatia3dx.part.dress_up_shape import DressUpShape
 
 
 class Defeaturing(DressUpShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.DressUpShape
-                |                             Defeaturing
-                | 
-                | Represents the defeaturing.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.DressUpShape
+                                            Defeaturing
+                
+                Represents the defeaturing.
     
     """
 
@@ -41,27 +39,26 @@ class Defeaturing(DressUpShape):
     def filters(self) -> DefeaturingFilters:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Filters() As DefeaturingFilters (Read Only)
-                |     Returns the filter collection of the Defeaturing. The returned object is
-                |     the filter collection associated to this Defeaturing object. All changes
-                |     applied to the returned collection will be automatically applied to the
-                |     Defeaturing object. As a consequence there is no need to affect the collection
-                |     to the defeaturing after the change to update the
-                |     property.
-                | 
-                |     Returns:
-                |         oFilters The filter collection (see DefeaturingFilters for list of
-                |         possible actions)
-                | 
-                |         Example:
-                |             The following example returns in myDefeaturingFiltersCollection the
-                |             filter collection of the Defeaturing
-                |             firstDefeaturing:
-                | 
-                |              Set myDefeaturingFiltersCollection = firstDefeaturing.Filters
+                Property Filters() As DefeaturingFilters (Read Only)
+                    Returns the filter collection of the Defeaturing. The returned object is
+                    the filter collection associated to this Defeaturing object. All changes
+                    applied to the returned collection will be automatically applied to the
+                    Defeaturing object. As a consequence there is no need to affect the collection
+                    to the defeaturing after the change to update the
+                    property.
+                
+                    Returns:
+                        oFilters The filter collection (see DefeaturingFilters for list of
+                        possible actions)
+                
+                        Example:
+                            The following example returns in myDefeaturingFiltersCollection the
+                            filter collection of the Defeaturing
+                            firstDefeaturing:
+                
+                             Set myDefeaturingFiltersCollection = firstDefeaturing.Filters
 
         :return: DefeaturingFilters
         """
@@ -69,4 +66,4 @@ class Defeaturing(DressUpShape):
         return DefeaturingFilters(self.com_object.Filters)
 
     def __repr__(self):
-        return f'Defeaturing(name="{ self.name }")'
+        return f'Defeaturing(name="{self.name}")'

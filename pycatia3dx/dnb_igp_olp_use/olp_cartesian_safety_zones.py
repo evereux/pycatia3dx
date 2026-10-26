@@ -16,23 +16,22 @@ from pycatia3dx.dnb_igp_olp_use.olp_cartesian_safety_zone import OLPCartesianSaf
 class OLPCartesianSafetyZones(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     OlpCartesianSafetyZones
-                | 
-                | A list of Cartesian safety zones.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | This object can be retrieved using
-                | OlpController.CartesianSafetyZones
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    OlpCartesianSafetyZones
+                
+                A list of Cartesian safety zones.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                This object can be retrieved using
+                OlpController.CartesianSafetyZones
     
     """
 
@@ -43,14 +42,13 @@ class OLPCartesianSafetyZones(Collection):
     def create(self) -> OLPCartesianSafetyZone:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Create() As OlpCartesianSafetyZone
-                |     Create a new zone.
-                | 
-                |     Returns:
-                |         The created zone.
+                Func Create() As OlpCartesianSafetyZone
+                    Create a new zone.
+                
+                    Returns:
+                        The created zone.
 
         :return: OLPCartesianSafetyZone
         """
@@ -59,16 +57,15 @@ class OLPCartesianSafetyZones(Collection):
     def delete(self, i_zone: OLPCartesianSafetyZone) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Delete(OlpCartesianSafetyZone iZone)
-                |     Delete a zone.
-                | 
-                |     Parameters:
-                | 
-                |         iZone
-                |             The zone to delete.
+                Sub Delete(OlpCartesianSafetyZone iZone)
+                    Delete a zone.
+                
+                    Parameters:
+                
+                        iZone
+                            The zone to delete.
 
         :param OLPCartesianSafetyZone i_zone:
         :return: None
@@ -78,20 +75,19 @@ class OLPCartesianSafetyZones(Collection):
     def item(self, i_index: int) -> OLPCartesianSafetyZone:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(long iIndex) As OlpCartesianSafetyZone
-                |     Get a zone by index.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The zone index in collection (not the index property).
-                |             
-                | 
-                |     Returns:
-                |         The zone. 
+                Func Item(long iIndex) As OlpCartesianSafetyZone
+                    Get a zone by index.
+                
+                    Parameters:
+                
+                        iIndex
+                            The zone index in collection (not the index property).
+                            
+                
+                    Returns:
+                        The zone. 
 
         :param int i_index:
         :return: OLPCartesianSafetyZone

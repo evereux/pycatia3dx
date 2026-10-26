@@ -13,25 +13,23 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapePlane1Line1Pt(Plane):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.Plane
-                |                             HybridShapePlane1Line1Pt
-                | 
-                | Represents plane feature defined by a line and a point.
-                | Role: Allows to access data of the plane feature passing though one line and
-                | one point
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.Plane
+                                            HybridShapePlane1Line1Pt
+                
+                Represents plane feature defined by a line and a point.
+                Role: Allows to access data of the plane feature passing though one line and
+                one point
     
     """
 
@@ -43,21 +41,20 @@ class HybridShapePlane1Line1Pt(Plane):
     def line(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Line() As Reference
-                |     Returns or sets the passing line.
-                | 
-                |     Parameters:
-                | 
-                |         oLine
-                |             Line. 
-                | 
-                |     See also:
-                |         Reference
-                |     See also:
-                |         HybridShapeFactory
+                Property Line() As Reference
+                    Returns or sets the passing line.
+                
+                    Parameters:
+                
+                        oLine
+                            Line. 
+                
+                    See also:
+                        Reference
+                    See also:
+                        HybridShapeFactory
 
         :return: Reference
         """
@@ -76,21 +73,20 @@ class HybridShapePlane1Line1Pt(Plane):
     def point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Point() As Reference
-                |     Return or sets the passing point.
-                | 
-                |     Parameters:
-                | 
-                |         oPoint
-                |             Point. 
-                | 
-                |     See also:
-                |         Reference
-                |     See also:
-                |         HybridShapeFactory
+                Property Point() As Reference
+                    Return or sets the passing point.
+                
+                    Parameters:
+                
+                        oPoint
+                            Point. 
+                
+                    See also:
+                        Reference
+                    See also:
+                        HybridShapeFactory
 
         :return: Reference
         """
@@ -106,4 +102,4 @@ class HybridShapePlane1Line1Pt(Plane):
         self.com_object.Point = value
 
     def __repr__(self):
-        return f'HybridShapePlane1Line1Pt(name="{ self.name }")'
+        return f'HybridShapePlane1Line1Pt(name="{self.name}")'

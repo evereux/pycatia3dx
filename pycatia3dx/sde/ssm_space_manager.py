@@ -15,21 +15,19 @@ from pycatia3dx.sde.ssm_tool_set import SsmToolSet
 
 
 class SsmSpaceManager(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SsmSpaceManager
-                | 
-                | Role: This interface is specific to Space Manager
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SsmSpaceManager
+                
+                Role: This interface is specific to Space Manager
     
     """
 
@@ -41,19 +39,18 @@ class SsmSpaceManager(AnyObject):
     def bounding_box(self) -> SsmSpaceInput:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property BoundingBox() As SsmSpaceInput (Read Only)
-                |     Get Bounding Box
-                | 
-                |     Parameters:
-                | 
-                |         oBoundingBox
-                |             [out] BoundingBox 
-                | 
-                |     Returns:
-                |         Error code of function.
+                Property BoundingBox() As SsmSpaceInput (Read Only)
+                    Get Bounding Box
+                
+                    Parameters:
+                
+                        oBoundingBox
+                            [out] BoundingBox 
+                
+                    Returns:
+                        Error code of function.
 
         :return: SsmSpaceInput
         """
@@ -64,19 +61,18 @@ class SsmSpaceManager(AnyObject):
     def cutting_set(self) -> SsmCuttingSet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CuttingSet() As SsmCuttingSet (Read Only)
-                |     Get CuttingSet
-                | 
-                |     Parameters:
-                | 
-                |         oCuttingSet
-                |             [out] CuttingSet 
-                | 
-                |     Returns:
-                |         Error code of function.
+                Property CuttingSet() As SsmCuttingSet (Read Only)
+                    Get CuttingSet
+                
+                    Parameters:
+                
+                        oCuttingSet
+                            [out] CuttingSet 
+                
+                    Returns:
+                        Error code of function.
 
         :return: SsmCuttingSet
         """
@@ -87,19 +83,18 @@ class SsmSpaceManager(AnyObject):
     def external_volume(self) -> SsmSpaceInput:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ExternalVolume() As SsmSpaceInput (Read Only)
-                |     Get external volume
-                | 
-                |     Parameters:
-                | 
-                |         oExternalVolume
-                |             [out] External Volume 
-                | 
-                |     Returns:
-                |         Error code of function.
+                Property ExternalVolume() As SsmSpaceInput (Read Only)
+                    Get external volume
+                
+                    Parameters:
+                
+                        oExternalVolume
+                            [out] External Volume 
+                
+                    Returns:
+                        Error code of function.
 
         :return: SsmSpaceInput
         """
@@ -110,19 +105,18 @@ class SsmSpaceManager(AnyObject):
     def internal_space_set(self) -> SsmToolSet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InternalSpaceSet() As SsmToolSet (Read Only)
-                |     Get InternalSpaceSet
-                | 
-                |     Parameters:
-                | 
-                |         oInternalSpaceSet
-                |             [out] InternalSpaceSet 
-                | 
-                |     Returns:
-                |         Error code of function.
+                Property InternalSpaceSet() As SsmToolSet (Read Only)
+                    Get InternalSpaceSet
+                
+                    Parameters:
+                
+                        oInternalSpaceSet
+                            [out] InternalSpaceSet 
+                
+                    Returns:
+                        Error code of function.
 
         :return: SsmToolSet
         """
@@ -133,19 +127,18 @@ class SsmSpaceManager(AnyObject):
     def space_cell_set(self) -> SsmToolSet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpaceCellSet() As SsmToolSet (Read Only)
-                |     Get SpaceCellSet
-                | 
-                |     Parameters:
-                | 
-                |         oSpaceCellSet
-                |             [out] SpaceCellSet 
-                | 
-                |     Returns:
-                |         Error code of function. 
+                Property SpaceCellSet() As SsmToolSet (Read Only)
+                    Get SpaceCellSet
+                
+                    Parameters:
+                
+                        oSpaceCellSet
+                            [out] SpaceCellSet 
+                
+                    Returns:
+                        Error code of function. 
 
         :return: SsmToolSet
         """
@@ -153,4 +146,4 @@ class SsmSpaceManager(AnyObject):
         return SsmToolSet(self.com_object.SpaceCellSet)
 
     def __repr__(self):
-        return f'SsmSpaceManager(name="{ self.name }")'
+        return f'SsmSpaceManager(name="{self.name}")'

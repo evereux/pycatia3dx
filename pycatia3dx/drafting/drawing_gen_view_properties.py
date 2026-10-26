@@ -14,18 +14,17 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 class DrawingGenViewProperties(CATBaseDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 DrawingGenViewProperties
-                | 
-                | Represents the generative properties of a drawing generative
-                | view.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                DrawingGenViewProperties
+                
+                Represents the generative properties of a drawing generative
+                view.
     
     """
 
@@ -37,22 +36,21 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def ann_callout_generation_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AnnCalloutGenerationMode() As boolean
-                |     Returns or sets the Annotation Callout Generation mode for the
-                |     View.
-                | 
-                |     Example:
-                | 
-                |          This example sets the Annotation Callout Generation mode of the
-                |          MyViewProp
-                |          generative view properties to indicate that Annotation Callout must be
-                |          generated.
-                |          
-                | 
-                |          MyViewProp.AnnCalloutGenerationMode = true
+                Property AnnCalloutGenerationMode() As boolean
+                    Returns or sets the Annotation Callout Generation mode for the
+                    View.
+                
+                    Example:
+                
+                         This example sets the Annotation Callout Generation mode of the
+                         MyViewProp
+                         generative view properties to indicate that Annotation Callout must be
+                         generated.
+                         
+                
+                         MyViewProp.AnnCalloutGenerationMode = true
 
         :return: bool
         """
@@ -71,21 +69,20 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def approximate_parameter(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ApproximateParameter() As short
-                |     Returns or sets the level of detail for views generated as approximated
-                |     view.
-                | 
-                |     Example:
-                | 
-                |          This example sets the level of detail of the
-                |          MyViewProp
-                |          generative view properties to 6.
-                |          
-                | 
-                |          MyViewProp.ApproximateParameter = 6
+                Property ApproximateParameter() As short
+                    Returns or sets the level of detail for views generated as approximated
+                    view.
+                
+                    Example:
+                
+                         This example sets the level of detail of the
+                         MyViewProp
+                         generative view properties to 6.
+                         
+                
+                         MyViewProp.ApproximateParameter = 6
 
         :return: int
         """
@@ -104,23 +101,22 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def auto_hidden_line_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AutoHiddenLineMode() As boolean
-                |     Returns or sets the Auto hidden line mode. The auto hidden line mode
-                |     indicates whether to draw the auto hidden lines.
-                | 
-                |     Example:
-                | 
-                |          This example sets the auto hidden line mode of the
-                |          MyViewProp
-                |          generative view properties to indicate that auto hidden lines must
-                |          not
-                |          be drawn.
-                |          
-                | 
-                |          MyViewProp.AutoHiddenLineMode = true
+                Property AutoHiddenLineMode() As boolean
+                    Returns or sets the Auto hidden line mode. The auto hidden line mode
+                    indicates whether to draw the auto hidden lines.
+                
+                    Example:
+                
+                         This example sets the auto hidden line mode of the
+                         MyViewProp
+                         generative view properties to indicate that auto hidden lines must
+                         not
+                         be drawn.
+                         
+                
+                         MyViewProp.AutoHiddenLineMode = true
 
         :return: bool
         """
@@ -139,22 +135,21 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def axis_line_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisLineMode() As boolean
-                |     Returns or sets the view axisline mode. The axisline mode indicates whether
-                |     to draw the axislines.
-                | 
-                |     Example:
-                | 
-                |          This example sets the view axisline mode of the
-                |          MyViewProp
-                |          generative view properties to indicate that axislines must be
-                |          drawn.
-                |          
-                | 
-                |          MyViewProp.AxisLineMode = true
+                Property AxisLineMode() As boolean
+                    Returns or sets the view axisline mode. The axisline mode indicates whether
+                    to draw the axislines.
+                
+                    Example:
+                
+                         This example sets the view axisline mode of the
+                         MyViewProp
+                         generative view properties to indicate that axislines must be
+                         drawn.
+                         
+                
+                         MyViewProp.AxisLineMode = true
 
         :return: bool
         """
@@ -173,22 +168,21 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def centerline_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CenterlineMode() As boolean
-                |     Returns or sets the view centerline mode. The centerline mode indicates
-                |     whether to draw the centerlines.
-                | 
-                |     Example:
-                | 
-                |          This example sets the view centerline mode of the
-                |          MyViewProp
-                |          generative view properties to indicate that centerlines must be
-                |          drawn.
-                |          
-                | 
-                |          MyViewProp.CenterlineMode = true
+                Property CenterlineMode() As boolean
+                    Returns or sets the view centerline mode. The centerline mode indicates
+                    whether to draw the centerlines.
+                
+                    Example:
+                
+                         This example sets the view centerline mode of the
+                         MyViewProp
+                         generative view properties to indicate that centerlines must be
+                         drawn.
+                         
+                
+                         MyViewProp.CenterlineMode = true
 
         :return: bool
         """
@@ -207,23 +201,22 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def clash_detection_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ClashDetectionMode() As boolean
-                |     Returns or sets the view Clash Detection mode. Requiring or not extra
-                |     computation to proceed with possible clashes existing in
-                |     geometry.
-                | 
-                |     Example:
-                | 
-                |          This example sets the view pattern mode of the
-                |          MyViewProp
-                |          generative view properties to indicate that pattern must be
-                |          generated.
-                |          
-                | 
-                |          MyViewProp.ClashDetectionMode = true
+                Property ClashDetectionMode() As boolean
+                    Returns or sets the view Clash Detection mode. Requiring or not extra
+                    computation to proceed with possible clashes existing in
+                    geometry.
+                
+                    Example:
+                
+                         This example sets the view pattern mode of the
+                         MyViewProp
+                         generative view properties to indicate that pattern must be
+                         generated.
+                         
+                
+                         MyViewProp.ClashDetectionMode = true
 
         :return: bool
         """
@@ -242,23 +235,22 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def color_inheritance_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ColorInheritanceMode() As Cat3DColorInheritanceMode
-                |     Returns or sets the view color inheritance mode.
-                | 
-                |     Example:
-                | 
-                |          This example sets the view color inheritance mode of the
-                |          MyViewProp
-                |          generative view properties to cat3DColorInheritanceModeOn to indicate
-                |          that
-                |          generated items inherit the color of the 3D elements they come
-                |          from.
-                |          
-                | 
-                |          MyViewProp.ColorInheritanceMode = cat3DColorInheritanceModeOn
+                Property ColorInheritanceMode() As Cat3DColorInheritanceMode
+                    Returns or sets the view color inheritance mode.
+                
+                    Example:
+                
+                         This example sets the view color inheritance mode of the
+                         MyViewProp
+                         generative view properties to cat3DColorInheritanceModeOn to indicate
+                         that
+                         generated items inherit the color of the 3D elements they come
+                         from.
+                         
+                
+                         MyViewProp.ColorInheritanceMode = cat3DColorInheritanceModeOn
 
         :return: int
         """
@@ -277,23 +269,22 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def fillet_representation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FilletRepresentation() As CatFilletRepresentation
-                |     Returns or sets the view fillet representation mode. The fillet
-                |     representation mode indicates how to draw the 3D fillet.
-                | 
-                |     Example:
-                | 
-                |          This example sets the view fillet representation mode of the
-                |          MyViewProp
-                |          generative view properties to catFilletRepSymbolic to indicate that
-                |          fillet must
-                |          be drawn as symbolic.
-                |          
-                | 
-                |          MyViewProp.FilletRepresentation = catFilletRepSymbolic
+                Property FilletRepresentation() As CatFilletRepresentation
+                    Returns or sets the view fillet representation mode. The fillet
+                    representation mode indicates how to draw the 3D fillet.
+                
+                    Example:
+                
+                         This example sets the view fillet representation mode of the
+                         MyViewProp
+                         generative view properties to catFilletRepSymbolic to indicate that
+                         fillet must
+                         be drawn as symbolic.
+                         
+                
+                         MyViewProp.FilletRepresentation = catFilletRepSymbolic
 
         :return: int
         """
@@ -312,23 +303,22 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def hidden_line_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HiddenLineMode() As CatHiddenLineMode
-                |     Returns or sets the view hidden line drawing mode. The hidden line drawing
-                |     mode indicates whether to draw the hidden lines.
-                | 
-                |     Example:
-                | 
-                |          This example sets the view hidden line drawing mode of the
-                |          MyViewProp
-                |          generative view properties to catHLRModeOn to indicate that hidden
-                |          lines must not
-                |          be drawn.
-                |          
-                | 
-                |          MyViewProp.HiddenLineMode = catHLRModeOn
+                Property HiddenLineMode() As CatHiddenLineMode
+                    Returns or sets the view hidden line drawing mode. The hidden line drawing
+                    mode indicates whether to draw the hidden lines.
+                
+                    Example:
+                
+                         This example sets the view hidden line drawing mode of the
+                         MyViewProp
+                         generative view properties to catHLRModeOn to indicate that hidden
+                         lines must not
+                         be drawn.
+                         
+                
+                         MyViewProp.HiddenLineMode = catHLRModeOn
 
         :return: int
         """
@@ -347,21 +337,20 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def image_print_precision_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ImagePrintPrecisionMode() As RasterLevelOfDetail
-                |     Returns or sets the print precision mode for views generated as pixel image
-                |     (DPI). see ImageViewMode
-                | 
-                |     Example:
-                | 
-                |          This example sets the print precision mode of the
-                |          MyViewProp
-                |          generative view properties to HighQuality.
-                |          
-                | 
-                |          MyViewProp.ImagePrintPrecisionMode = HighQuality
+                Property ImagePrintPrecisionMode() As RasterLevelOfDetail
+                    Returns or sets the print precision mode for views generated as pixel image
+                    (DPI). see ImageViewMode
+                
+                    Example:
+                
+                         This example sets the print precision mode of the
+                         MyViewProp
+                         generative view properties to HighQuality.
+                         
+                
+                         MyViewProp.ImagePrintPrecisionMode = HighQuality
 
         :return: int
         """
@@ -380,24 +369,23 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def image_view_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ImageViewMode() As CatGenViewRasterMode
-                |     Returns or sets the representation mode for views generated as pixel image.
-                |     see RepresentationMode
-                | 
-                |     Example:
-                | 
-                |          This example sets the representation mode of the
-                |          MyViewProp
-                |          generative view properties to catImageShadingEdges to inicate
-                |          
-                |          that thew view is generated as an image with shading and
-                |          edges.
-                |          
-                | 
-                |          MyViewProp.ImageVisuPrecisionMode = catImageShadingEdges
+                Property ImageViewMode() As CatGenViewRasterMode
+                    Returns or sets the representation mode for views generated as pixel image.
+                    see RepresentationMode
+                
+                    Example:
+                
+                         This example sets the representation mode of the
+                         MyViewProp
+                         generative view properties to catImageShadingEdges to inicate
+                         
+                         that thew view is generated as an image with shading and
+                         edges.
+                         
+                
+                         MyViewProp.ImageVisuPrecisionMode = catImageShadingEdges
 
         :return: int
         """
@@ -416,21 +404,20 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def image_visu_precision_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ImageVisuPrecisionMode() As RasterLevelOfDetail
-                |     Returns or sets the visualization precision mode for views generated as
-                |     pixel image (DPI). see ImageViewMode
-                | 
-                |     Example:
-                | 
-                |          This example sets the visualization precision mode of the
-                |          MyViewProp
-                |          generative view properties to NormalQuality.
-                |          
-                | 
-                |          MyViewProp.ImageVisuPrecisionMode = NormalQuality
+                Property ImageVisuPrecisionMode() As RasterLevelOfDetail
+                    Returns or sets the visualization precision mode for views generated as
+                    pixel image (DPI). see ImageViewMode
+                
+                    Example:
+                
+                         This example sets the visualization precision mode of the
+                         MyViewProp
+                         generative view properties to NormalQuality.
+                         
+                
+                         MyViewProp.ImageVisuPrecisionMode = NormalQuality
 
         :return: int
         """
@@ -449,13 +436,12 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def limit_bounding_box(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LimitBoundingBox() As double
-                |     Returns or sets the bounding box limits under which a part. will not be
-                |     taken into account during view generation. The value 0. means that no part will
-                |     be filtered.
+                Property LimitBoundingBox() As double
+                    Returns or sets the bounding box limits under which a part. will not be
+                    taken into account during view generation. The value 0. means that no part will
+                    be filtered.
 
         :return: float
         """
@@ -474,23 +460,22 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def occlusion_culling_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OcclusionCullingMode() As boolean
-                |     Returns or sets the view occlusion culling mode. The occlusion culling mode
-                |     allows to load only the parts that will be seen in the resulting view
-                |     .
-                | 
-                |     Example:
-                | 
-                |          This example sets the occlusion culling mode of the
-                |          MyViewProp
-                |          generative view properties to indicate that the optimization must be
-                |          done.
-                |          
-                | 
-                |          MyViewProp.OcclusionCullingMode = true
+                Property OcclusionCullingMode() As boolean
+                    Returns or sets the view occlusion culling mode. The occlusion culling mode
+                    allows to load only the parts that will be seen in the resulting view
+                    .
+                
+                    Example:
+                
+                         This example sets the occlusion culling mode of the
+                         MyViewProp
+                         generative view properties to indicate that the optimization must be
+                         done.
+                         
+                
+                         MyViewProp.OcclusionCullingMode = true
 
         :return: bool
         """
@@ -509,22 +494,21 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def pattern_generation_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PatternGenerationMode() As boolean
-                |     Returns or sets the view pattern generation. The view pattern generation
-                |     mode indicates whether to draw the pattern.
-                | 
-                |     Example:
-                | 
-                |          This example sets the view pattern mode of the
-                |          MyViewProp
-                |          generative view properties to indicate that pattern must be
-                |          generated.
-                |          
-                | 
-                |          MyViewProp.PatternGenerationMode = true
+                Property PatternGenerationMode() As boolean
+                    Returns or sets the view pattern generation. The view pattern generation
+                    mode indicates whether to draw the pattern.
+                
+                    Example:
+                
+                         This example sets the view pattern mode of the
+                         MyViewProp
+                         generative view properties to indicate that pattern must be
+                         generated.
+                         
+                
+                         MyViewProp.PatternGenerationMode = true
 
         :return: bool
         """
@@ -543,23 +527,22 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def points_projection_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PointsProjectionMode() As CatPointsProjectionMode
-                |     Returns or sets projection mode for 3D points. This mode indicates whether
-                |     to project 3D points.
-                | 
-                |     Example:
-                | 
-                |          This example sets the points projection mode of the
-                |          MyViewProp
-                |          generative view properties to catPointsProjectionModeOn to indicate
-                |          that 
-                |          3D points must be projected.
-                |          
-                | 
-                |          MyViewProp.PointsProjectionMode = catPointsProjectionModeOn
+                Property PointsProjectionMode() As CatPointsProjectionMode
+                    Returns or sets projection mode for 3D points. This mode indicates whether
+                    to project 3D points.
+                
+                    Example:
+                
+                         This example sets the points projection mode of the
+                         MyViewProp
+                         generative view properties to catPointsProjectionModeOn to indicate
+                         that 
+                         3D points must be projected.
+                         
+                
+                         MyViewProp.PointsProjectionMode = catPointsProjectionModeOn
 
         :return: CatPointsProjectionMode
         """
@@ -578,12 +561,11 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def points_symbol(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PointsSymbol() As short
-                |     Returns or sets symbol for projected points. The 0 value means that
-                |     projected points inherit the symbol of 3D points they come from.
+                Property PointsSymbol() As short
+                    Returns or sets symbol for projected points. The 0 value means that
+                    projected points inherit the symbol of 3D points they come from.
 
         :return: int
         """
@@ -602,23 +584,22 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def polyhedral_data_integration(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PolyhedralDataIntegration() As boolean
-                |     Returns or sets the integration of polyhedral data into views in Exact
-                |     generation mode. To set or unset Shaded background mode on Exact
-                |     view.
-                | 
-                |     Example:
-                | 
-                |          This example activates the generation of polyhedral 3d data into the
-                |          view MyViewProp.
-                |          generative view properties to indicate that Exact view with polyhedral
-                |          data must be generated.
-                |          
-                | 
-                |          MyViewProp.PolyhedralDataIntegration = true
+                Property PolyhedralDataIntegration() As boolean
+                    Returns or sets the integration of polyhedral data into views in Exact
+                    generation mode. To set or unset Shaded background mode on Exact
+                    view.
+                
+                    Example:
+                
+                         This example activates the generation of polyhedral 3d data into the
+                         view MyViewProp.
+                         generative view properties to indicate that Exact view with polyhedral
+                         data must be generated.
+                         
+                
+                         MyViewProp.PolyhedralDataIntegration = true
 
         :return: bool
         """
@@ -637,21 +618,20 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def print_precision(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PrintPrecision() As double
-                |     Returns or sets the print precision for views generated as pixel image
-                |     (DPI). see ImagePrintPrecisionMode
-                | 
-                |     Example:
-                | 
-                |          This example sets the print precision of the
-                |          MyViewProp
-                |          generative view properties to 200.
-                |          
-                | 
-                |          MyViewProp.PrintPrecision = 200.
+                Property PrintPrecision() As double
+                    Returns or sets the print precision for views generated as pixel image
+                    (DPI). see ImagePrintPrecisionMode
+                
+                    Example:
+                
+                         This example sets the print precision of the
+                         MyViewProp
+                         generative view properties to 200.
+                         
+                
+                         MyViewProp.PrintPrecision = 200.
 
         :return: float
         """
@@ -670,22 +650,21 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def representation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RepresentationMode() As CatGenRepresentationMode
-                |     Returns or sets generated geometry representation mode.
-                | 
-                |     Example:
-                | 
-                |          This example sets the representation mode of the
-                |          MyViewProp
-                |          generative view properties to catCGRMode to indicate that
-                |          
-                |          it is generated from CGR data.
-                |          
-                | 
-                |          MyViewProp.RepresentationMode = catCGRMode
+                Property RepresentationMode() As CatGenRepresentationMode
+                    Returns or sets generated geometry representation mode.
+                
+                    Example:
+                
+                         This example sets the representation mode of the
+                         MyViewProp
+                         generative view properties to catCGRMode to indicate that
+                         
+                         it is generated from CGR data.
+                         
+                
+                         MyViewProp.RepresentationMode = catCGRMode
 
         :return: int
         """
@@ -704,23 +683,22 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def scan_3d_reps_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Scan3DRepsMode() As CatDftGenRepresentationPolicy
-                |     Returns or sets 3D rep instances projection strategy.
-                | 
-                |     Example:
-                | 
-                |          This example sets the projection strategy of the
-                |          MyViewProp
-                |          generative view properties to catDftGenAllDesignRepsPolicy to indicate
-                |          that 
-                |          all design 3D rep instances of the product structure will be
-                |          projected.
-                |          
-                | 
-                |          MyViewProp.Scan3DRepsMode = catDftGenAllDesignRepsPolicy
+                Property Scan3DRepsMode() As CatDftGenRepresentationPolicy
+                    Returns or sets 3D rep instances projection strategy.
+                
+                    Example:
+                
+                         This example sets the projection strategy of the
+                         MyViewProp
+                         generative view properties to catDftGenAllDesignRepsPolicy to indicate
+                         that 
+                         all design 3D rep instances of the product structure will be
+                         projected.
+                         
+                
+                         MyViewProp.Scan3DRepsMode = catDftGenAllDesignRepsPolicy
 
         :return: int
         """
@@ -739,22 +717,21 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def shaded_background_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ShadedBackgroundMode() As boolean
-                |     Returns or sets the Shaded background mode. To set or unset Shaded
-                |     background mode on Exact view.
-                | 
-                |     Example:
-                | 
-                |          This example sets the Shaded background mode on the view
-                |          MyViewProp.
-                |          generative view properties to indicate that shaded background Exact
-                |          view must be generated.
-                |          
-                | 
-                |          MyViewProp.ShadedBackgroundModeMode = true
+                Property ShadedBackgroundMode() As boolean
+                    Returns or sets the Shaded background mode. To set or unset Shaded
+                    background mode on Exact view.
+                
+                    Example:
+                
+                         This example sets the Shaded background mode on the view
+                         MyViewProp.
+                         generative view properties to indicate that shaded background Exact
+                         view must be generated.
+                         
+                
+                         MyViewProp.ShadedBackgroundModeMode = true
 
         :return: bool
         """
@@ -773,22 +750,21 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def smooth_edges_generation_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SmoothEdgesGenerationMode() As boolean
-                |     Returns or sets the Smooth Edges Generation mode for the
-                |     View.
-                | 
-                |     Example:
-                | 
-                |          This example sets the Smooth Edges Generation mode of the
-                |          MyViewProp
-                |          generative view properties to indicate that smooth edges must be
-                |          generated.
-                |          
-                | 
-                |          MyViewProp.SmoothEdgesGenerationMode = true
+                Property SmoothEdgesGenerationMode() As boolean
+                    Returns or sets the Smooth Edges Generation mode for the
+                    View.
+                
+                    Example:
+                
+                         This example sets the Smooth Edges Generation mode of the
+                         MyViewProp
+                         generative view properties to indicate that smooth edges must be
+                         generated.
+                         
+                
+                         MyViewProp.SmoothEdgesGenerationMode = true
 
         :return: bool
         """
@@ -807,22 +783,21 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def thread_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ThreadMode() As boolean
-                |     Returns or sets the view thread mode. The thread mode indicates whether to
-                |     draw the threads.
-                | 
-                |     Example:
-                | 
-                |          This example sets the view thread mode of the
-                |          MyViewProp
-                |          generative view properties to indicate that threads must be
-                |          drawn.
-                |          
-                | 
-                |          MyViewProp.ThreadMode = true
+                Property ThreadMode() As boolean
+                    Returns or sets the view thread mode. The thread mode indicates whether to
+                    draw the threads.
+                
+                    Example:
+                
+                         This example sets the view thread mode of the
+                         MyViewProp
+                         generative view properties to indicate that threads must be
+                         drawn.
+                         
+                
+                         MyViewProp.ThreadMode = true
 
         :return: bool
         """
@@ -841,21 +816,20 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def visu_precision(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property VisuPrecision() As double
-                |     Returns or sets the visualization precision for views generated as pixel
-                |     image (DPI). see ImageVisuPrecisionMode
-                | 
-                |     Example:
-                | 
-                |          This example sets the visualization precision of the
-                |          MyViewProp
-                |          generative view properties to 200.
-                |          
-                | 
-                |          MyViewProp.VisuPrecision = 200.
+                Property VisuPrecision() As double
+                    Returns or sets the visualization precision for views generated as pixel
+                    image (DPI). see ImageVisuPrecisionMode
+                
+                    Example:
+                
+                         This example sets the visualization precision of the
+                         MyViewProp
+                         generative view properties to 200.
+                         
+                
+                         MyViewProp.VisuPrecision = 200.
 
         :return: float
         """
@@ -874,23 +848,22 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def wireframe_extraction_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property WireframeExtractionMode() As CatWireframeMode
-                |     Returns or sets projection mode for 3D wireframe. This mode indicates
-                |     whether to project 3D wireframe.
-                | 
-                |     Example:
-                | 
-                |          This example sets the wireframe projection mode of the
-                |          MyViewProp
-                |          generative view properties to catGenWFAlwaysVisible to indicate that
-                |          
-                |          3D wireframe must be projected and always visible.
-                |          
-                | 
-                |          MyViewProp.WireframeExtractionMode = catGenWFAlwaysVisible
+                Property WireframeExtractionMode() As CatWireframeMode
+                    Returns or sets projection mode for 3D wireframe. This mode indicates
+                    whether to project 3D wireframe.
+                
+                    Example:
+                
+                         This example sets the wireframe projection mode of the
+                         MyViewProp
+                         generative view properties to catGenWFAlwaysVisible to indicate that
+                         
+                         3D wireframe must be projected and always visible.
+                         
+                
+                         MyViewProp.WireframeExtractionMode = catGenWFAlwaysVisible
 
         :return: int
         """
@@ -908,11 +881,10 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def retrieve_bck_color_property_for_op(self, ib_is_color_from_3d: bool, op_rgb_values: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RetrieveBckColorPropertyForOp(boolean ibIsColorFrom3D,CATSafeArrayVariant
-                | opRGBValues)
+                Sub RetrieveBckColorPropertyForOp(boolean ibIsColorFrom3D,CATSafeArrayVariant
+                opRGBValues)
 
         :param bool ib_is_color_from_3d:
         :param tuple op_rgb_values:
@@ -923,11 +895,10 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def set_bck_color_property_for_op(self, ib_is_color_from_3d: bool, ip_rgb_values: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetBckColorPropertyForOp(boolean ibIsColorFrom3D,CATSafeArrayVariant
-                | ipRGBValues)
+                Sub SetBckColorPropertyForOp(boolean ibIsColorFrom3D,CATSafeArrayVariant
+                ipRGBValues)
 
         :param bool ib_is_color_from_3d:
         :param tuple ip_rgb_values:

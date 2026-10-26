@@ -12,61 +12,59 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimInitialRotationVelocity(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimInitialRotationVelocity
-                | 
-                | Represents the Initial Rotation Velocity object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimInitialRotationVelocity as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyInitialRotationVelocity As
-                |      SimInitialRotationVelocity
-                |      Set MyInitialRotationVelocity = MyFeatures.Add("SimInitialRotationVelocity")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimInitialRotationVelocity
-                |     named "Initial Rotation Velocity.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyInitialRotationVelocity As
-                |      SimInitialRotationVelocity
-                |      Set MyInitialRotationVelocity = MyFeatures.Item("Initial Rotation Velocity.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a
-                |     SimInitialRotationVelocity as following:
-                | 
-                |      ...
-                |      myInitialRotationVelocity = myFeatures.Add("SimInitialRotationVelocity")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a
-                |     SimInitialRotationVelocity named "Initial Rotation Velocity.1" as
-                |     following:
-                | 
-                |      ...
-                |      myInitialRotationVelocity = myFeatures.Item("Initial Rotation Velocity.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimInitialRotationVelocity
+                
+                Represents the Initial Rotation Velocity object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimInitialRotationVelocity as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyInitialRotationVelocity As
+                     SimInitialRotationVelocity
+                     Set MyInitialRotationVelocity = MyFeatures.Add("SimInitialRotationVelocity")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimInitialRotationVelocity
+                    named "Initial Rotation Velocity.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyInitialRotationVelocity As
+                     SimInitialRotationVelocity
+                     Set MyInitialRotationVelocity = MyFeatures.Item("Initial Rotation Velocity.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a
+                    SimInitialRotationVelocity as following:
+                
+                     ...
+                     myInitialRotationVelocity = myFeatures.Add("SimInitialRotationVelocity")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a
+                    SimInitialRotationVelocity named "Initial Rotation Velocity.1" as
+                    following:
+                
+                     ...
+                     myInitialRotationVelocity = myFeatures.Item("Initial Rotation Velocity.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -78,11 +76,10 @@ class SimInitialRotationVelocity(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -101,11 +98,10 @@ class SimInitialRotationVelocity(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the axis system.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the axis system.
 
         :return: SimAxisSystem
         """
@@ -116,11 +112,10 @@ class SimInitialRotationVelocity(AnyObject):
     def dof(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Dof() As SimDof
-                |     Returns or sets the degree of freedom on which the rotation is applied.
+                Property Dof() As SimDof
+                    Returns or sets the degree of freedom on which the rotation is applied.
 
         :return: int
         """
@@ -139,12 +134,11 @@ class SimInitialRotationVelocity(AnyObject):
     def rotational_velocity(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RotationalVelocity() As double
-                |     Rotational velocity of the applied rotation velocity. Quantity:
-                |     ANGULAR_VELOCITY, units: turn_mn
+                Property RotationalVelocity() As double
+                    Rotational velocity of the applied rotation velocity. Quantity:
+                    ANGULAR_VELOCITY, units: turn_mn
 
         :return: float
         """
@@ -163,12 +157,11 @@ class SimInitialRotationVelocity(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. See SimFeatures.GetSpecTreeCategory for usage. 
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. See SimFeatures.GetSpecTreeCategory for usage. 
 
         :return: str
         """
@@ -176,4 +169,4 @@ class SimInitialRotationVelocity(AnyObject):
         return self.com_object.SpecTreeCategory
 
     def __repr__(self):
-        return f'SimInitialRotationVelocity(name="{ self.name }")'
+        return f'SimInitialRotationVelocity(name="{self.name}")'

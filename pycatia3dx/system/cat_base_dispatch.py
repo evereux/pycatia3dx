@@ -15,22 +15,21 @@ from pycatia3dx.system.cat_base_unknown import CATBaseUnknown
 class CATBaseDispatch(CATBaseUnknown):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             CATBaseDispatch
-                | 
-                | Base class for Automation interfaces.
-                | Role: All Automation interfaces must inherit from the CATBaseDispatch
-                | interface. They usually do not inherit directly from CATBaseDispatch, but
-                | rather from one of its subclasses: AnyObject for individual objects or
-                | Collection for collection objects. Some methods may however have arguments of
-                | type CATBaseDispatch when they accept both individual objects or collection
-                | objects. The interface provides no functionalities per se.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            CATBaseDispatch
+                
+                Base class for Automation interfaces.
+                Role: All Automation interfaces must inherit from the CATBaseDispatch
+                interface. They usually do not inherit directly from CATBaseDispatch, but
+                rather from one of its subclasses: AnyObject for individual objects or
+                Collection for collection objects. Some methods may however have arguments of
+                type CATBaseDispatch when they accept both individual objects or collection
+                objects. The interface provides no functionalities per se.
     
     """
 

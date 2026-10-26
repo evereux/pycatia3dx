@@ -19,22 +19,21 @@ if TYPE_CHECKING:
 class ParameterSet(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ParameterSet
-                | 
-                | Represents parameter set.
-                | It is the node that contains user parameters.
-                | 
-                | See also:
-                |     Parameters.RootParameterSet
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ParameterSet
+                
+                Represents parameter set.
+                It is the node that contains user parameters.
+                
+                See also:
+                    Parameters.RootParameterSet
     
     """
 
@@ -46,11 +45,10 @@ class ParameterSet(AnyObject):
     def all_parameters(self) -> 'Parameters':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property AllParameters() As Parameters (Read Only)
-                |     Returns all parameters under this set of parameter.
+                Property AllParameters() As Parameters (Read Only)
+                    Returns all parameters under this set of parameter.
 
         :return: Parameters
         """
@@ -61,11 +59,10 @@ class ParameterSet(AnyObject):
     def direct_parameters(self) -> 'Parameters':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property DirectParameters() As Parameters (Read Only)
-                |     Returns directly aggregated parameters.
+                Property DirectParameters() As Parameters (Read Only)
+                    Returns directly aggregated parameters.
 
         :return: Parameters
         """
@@ -76,11 +73,10 @@ class ParameterSet(AnyObject):
     def parameter_sets(self) -> 'ParameterSets':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property ParameterSets() As ParameterSets (Read Only)
-                |     Returns the children parameter sets.
+                Property ParameterSets() As ParameterSets (Read Only)
+                    Returns the children parameter sets.
 
         :return: ParameterSets
         """

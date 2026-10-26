@@ -17,18 +17,17 @@ from pycatia3dx.types.general import CATVariant
 class InterferenceResults(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     InterferenceResults
-                | 
-                | Interface representing InterferenceResult object collection.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    InterferenceResults
+                
+                Interface representing InterferenceResult object collection.
     
     """
 
@@ -39,20 +38,19 @@ class InterferenceResults(Collection):
     def item(self, i_index: CATVariant) -> InterferenceResult:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As InterferenceResult
-                |     Returns a InterferenceResult from its index.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the InterferenceResult to retrieve from the collection
-                |             of InterferenceResults. As a numerics, this index is the rank of the
-                |             InterferenceResult in the collection. The index of the first InterferenceResult
-                |             in the collection is 1, and the index of the last InterferenceResult is
-                |             returned by Collection.get_Count method.
+                Func Item(CATVariant iIndex) As InterferenceResult
+                    Returns a InterferenceResult from its index.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the InterferenceResult to retrieve from the collection
+                            of InterferenceResults. As a numerics, this index is the rank of the
+                            InterferenceResult in the collection. The index of the first InterferenceResult
+                            in the collection is 1, and the index of the last InterferenceResult is
+                            returned by Collection.get_Count method.
 
         :param CATVariant i_index:
         :return: InterferenceResult

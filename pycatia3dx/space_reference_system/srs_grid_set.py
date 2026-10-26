@@ -16,18 +16,17 @@ from pycatia3dx.system.any_object import AnyObject
 class SrsGridSet(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SrsGridSet
-                | 
-                | Role: Allows accessing of Grid Set's data.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SrsGridSet
+                
+                Role: Allows accessing of Grid Set's data.
     
     """
 
@@ -38,27 +37,26 @@ class SrsGridSet(AnyObject):
     def get_direction(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetDirection(CATSafeArrayVariant oDirection)
-                |     Gets direction of the grid set.
-                | 
-                |     Parameters:
-                | 
-                |         oDirection
-                |             Direction of grid set. 
-                | 
-                |     Example:
-                | 
-                |          
-                | 
-                |               This example retrieves the direction of the grid
-                |               set.
-                |               
-                | 
-                |                Dim GridSetDirection(2) as Variant
-                |                Set ObjHybridShapeDirection = ObjSrsGridSet.GetDirection GridSetDirection
+                Sub GetDirection(CATSafeArrayVariant oDirection)
+                    Gets direction of the grid set.
+                
+                    Parameters:
+                
+                        oDirection
+                            Direction of grid set. 
+                
+                    Example:
+                
+                         
+                
+                              This example retrieves the direction of the grid
+                              set.
+                              
+                
+                               Dim GridSetDirection(2) as Variant
+                               Set ObjHybridShapeDirection = ObjSrsGridSet.GetDirection GridSetDirection
 
         :return: tuple
         """
@@ -83,34 +81,33 @@ class SrsGridSet(AnyObject):
     def get_extreme_faces(self, o_grid_face_bfr: SrsGridFace, o_grid_face_afr: SrsGridFace) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetExtremeFaces(SrsGridFace oGridFaceBfr,SrsGridFace
-                | oGridFaceAfr)
-                |     Gets the extreme faces in the grid set.
-                | 
-                |     Parameters:
-                | 
-                |         oGridFaceBfr
-                |             Extreme Grid face present before the origin face in the grid set.
-                |             
-                |         oGridFaceAfr
-                |             Extreme Grid face present after the origin face in the grid set.
-                |             
-                | 
-                |     Example:
-                | 
-                |          
-                | 
-                |               This example retrieves the extreme grid faces in the grid
-                |               set.
-                |               
-                | 
-                |                Dim ObjSrsGridFaceBfr As SrsGridFace
-                |                Dim ObjSrsGridFaceAfr As SrsGridFace
-                |                ObjSrsGridSet.GetExtremeFaces ObjSrsGridFaceBfr
-                |                ObjSrsGridFaceBfr
+                Sub GetExtremeFaces(SrsGridFace oGridFaceBfr,SrsGridFace
+                oGridFaceAfr)
+                    Gets the extreme faces in the grid set.
+                
+                    Parameters:
+                
+                        oGridFaceBfr
+                            Extreme Grid face present before the origin face in the grid set.
+                            
+                        oGridFaceAfr
+                            Extreme Grid face present after the origin face in the grid set.
+                            
+                
+                    Example:
+                
+                         
+                
+                              This example retrieves the extreme grid faces in the grid
+                              set.
+                              
+                
+                               Dim ObjSrsGridFaceBfr As SrsGridFace
+                               Dim ObjSrsGridFaceAfr As SrsGridFace
+                               ObjSrsGridSet.GetExtremeFaces ObjSrsGridFaceBfr
+                               ObjSrsGridFaceBfr
 
         :param SrsGridFace o_grid_face_bfr:
         :param SrsGridFace o_grid_face_afr:
@@ -121,31 +118,30 @@ class SrsGridSet(AnyObject):
     def get_face(self, i_abs_offset: float, o_grid_face: SrsGridFace) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetFace(double iAbsOffset,SrsGridFace oGridFace)
-                |     Gets the grid face at the given offset in the grid set.
-                | 
-                |     Parameters:
-                | 
-                |         iAbsOffset
-                |             The absolute offset at which the face is located in the grid set.
-                |             
-                |         oGridFace
-                |             The grid face at the given absolute offset. 
-                | 
-                |     Example:
-                | 
-                |          
-                | 
-                |               This example retrieves the grid faces at the given absolute
-                |               offsetin the grid set.
-                |               
-                | 
-                |                Dim AbsOffset As double
-                |                Dim ObjSrsGridFace As SrsGridFace
-                |                ObjSrsGridSet.GetFace AbsOffset ObjSrsGridFace
+                Sub GetFace(double iAbsOffset,SrsGridFace oGridFace)
+                    Gets the grid face at the given offset in the grid set.
+                
+                    Parameters:
+                
+                        iAbsOffset
+                            The absolute offset at which the face is located in the grid set.
+                            
+                        oGridFace
+                            The grid face at the given absolute offset. 
+                
+                    Example:
+                
+                         
+                
+                              This example retrieves the grid faces at the given absolute
+                              offsetin the grid set.
+                              
+                
+                               Dim AbsOffset As double
+                               Dim ObjSrsGridFace As SrsGridFace
+                               ObjSrsGridSet.GetFace AbsOffset ObjSrsGridFace
 
         :param float i_abs_offset:
         :param SrsGridFace o_grid_face:
@@ -156,24 +152,23 @@ class SrsGridSet(AnyObject):
     def get_faces(self) -> SrsGridFaces:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetFaces() As SrsGridFaces
-                |     Returns all the faces in the grid set.
-                | 
-                |     Returns:
-                |         The list of grid faces present in the grid set 
-                |     Example:
-                | 
-                |          
-                | 
-                |               This example retrieves the grid faces in the grid
-                |               set.
-                |               
-                | 
-                |                Dim ObjSrsGridFaces As SrsGridFaces
-                |                ObjSrsGridFaces = ObjSrsGridSet.GetFaces
+                Func GetFaces() As SrsGridFaces
+                    Returns all the faces in the grid set.
+                
+                    Returns:
+                        The list of grid faces present in the grid set 
+                    Example:
+                
+                         
+                
+                              This example retrieves the grid faces in the grid
+                              set.
+                              
+                
+                               Dim ObjSrsGridFaces As SrsGridFaces
+                               ObjSrsGridFaces = ObjSrsGridSet.GetFaces
 
         :return: SrsGridFaces
         """
@@ -182,33 +177,32 @@ class SrsGridSet(AnyObject):
     def get_faces_of_group(self, i_last_grid_face: SrsGridFace) -> SrsGridFaces:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetFacesOfGroup(SrsGridFace iLastGridFace) As
-                | SrsGridFaces
-                |     Returns the faces belonging to a particular group in the grid
-                |     set.
-                | 
-                |     Parameters:
-                | 
-                |         iLastGridFace
-                |             Last face of the group present in the grid set. 
-                | 
-                |     Returns:
-                |         Faces belonging to the group. 
-                |     Example:
-                | 
-                |          
-                | 
-                |               This example retrieves the faces belonging to a particular
-                |               group.
-                |               
-                | 
-                |                Dim ObjLastSrsGridFace As SrsGridFace
-                |                Dim ObjSrsGridFacesGroup As SrsGridFaces
-                |                ObjSrsGridSet.GetFacesOfGroup ObjLastSrsGridFace
-                |                ObjSrsGridFacesGroup
+                Func GetFacesOfGroup(SrsGridFace iLastGridFace) As
+                SrsGridFaces
+                    Returns the faces belonging to a particular group in the grid
+                    set.
+                
+                    Parameters:
+                
+                        iLastGridFace
+                            Last face of the group present in the grid set. 
+                
+                    Returns:
+                        Faces belonging to the group. 
+                    Example:
+                
+                         
+                
+                              This example retrieves the faces belonging to a particular
+                              group.
+                              
+                
+                               Dim ObjLastSrsGridFace As SrsGridFace
+                               Dim ObjSrsGridFacesGroup As SrsGridFaces
+                               ObjSrsGridSet.GetFacesOfGroup ObjLastSrsGridFace
+                               ObjSrsGridFacesGroup
 
         :param SrsGridFace i_last_grid_face:
         :return: SrsGridFaces
@@ -219,37 +213,36 @@ class SrsGridSet(AnyObject):
                          o_grid_faces_afr: SrsGridFaces) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetFacesSorted(SrsGridFaces oGridFacesBfr,SrsGridFace
-                | oOriginFace,SrsGridFaces oGridFacesAfr)
-                |     Gets all the faces in the grid set.
-                | 
-                |     Parameters:
-                | 
-                |         oGridFacesBfr
-                |             Grid faces present before the origin face in the grid set.
-                |             
-                |         oOriginFace
-                |             Origin grid face of the grid set. 
-                |         oGridFacesAfr
-                |             Grid faces present after the origin face in the grid set.
-                |             
-                | 
-                |     Example:
-                | 
-                |          
-                | 
-                |               This example retrieves the grid faces in the grid
-                |               set.
-                |               
-                | 
-                |                Dim ObjSrsGridFacesBfr As SrsGridFaces
-                |                Dim ObjSrsOriginGridFace As SrsGridFace
-                |                Dim ObjSrsGridFacesAfr As SrsGridFaces
-                |                ObjSrsGridSet.GetFaces ObjSrsGridFacesBfr ObjSrsOriginGridFace
-                |                ObjSrsGridFacesAfr
+                Sub GetFacesSorted(SrsGridFaces oGridFacesBfr,SrsGridFace
+                oOriginFace,SrsGridFaces oGridFacesAfr)
+                    Gets all the faces in the grid set.
+                
+                    Parameters:
+                
+                        oGridFacesBfr
+                            Grid faces present before the origin face in the grid set.
+                            
+                        oOriginFace
+                            Origin grid face of the grid set. 
+                        oGridFacesAfr
+                            Grid faces present after the origin face in the grid set.
+                            
+                
+                    Example:
+                
+                         
+                
+                              This example retrieves the grid faces in the grid
+                              set.
+                              
+                
+                               Dim ObjSrsGridFacesBfr As SrsGridFaces
+                               Dim ObjSrsOriginGridFace As SrsGridFace
+                               Dim ObjSrsGridFacesAfr As SrsGridFaces
+                               ObjSrsGridSet.GetFaces ObjSrsGridFacesBfr ObjSrsOriginGridFace
+                               ObjSrsGridFacesAfr
 
         :param SrsGridFaces o_grid_faces_bfr:
         :param SrsGridFace o_origin_face:
@@ -262,35 +255,34 @@ class SrsGridSet(AnyObject):
     def get_group_faces(self, o_last_grid_faces_bfr: SrsGridFaces, o_last_grid_faces_afr: SrsGridFaces) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetGroupFaces(SrsGridFaces oLastGridFacesBfr,SrsGridFaces
-                | oLastGridFacesAfr)
-                |     Gets group faces before and after the origin face in the grid
-                |     set.
-                | 
-                |     Parameters:
-                | 
-                |         oLastGridFacesBfr
-                |             Last faces of the groups present before the origin face in the grid
-                |             set. 
-                |         oLastGridFacesAfr
-                |             Last faces of the groups present after the origin face in the grid
-                |             set. 
-                | 
-                |     Example:
-                | 
-                |          
-                | 
-                |               This example retrieves group faces present before and after the
-                |               origin face in the grid set.
-                |               
-                | 
-                |                Dim ObjSrsGridFacesBfr As SrsGridFaces
-                |                Dim ObjSrsGridFacesAfr As SrsGridFaces
-                |                ObjSrsGridSet.GetGroupFaces ObjSrsGridFacesBfr
-                |                ObjSrsGridFacesAfr
+                Sub GetGroupFaces(SrsGridFaces oLastGridFacesBfr,SrsGridFaces
+                oLastGridFacesAfr)
+                    Gets group faces before and after the origin face in the grid
+                    set.
+                
+                    Parameters:
+                
+                        oLastGridFacesBfr
+                            Last faces of the groups present before the origin face in the grid
+                            set. 
+                        oLastGridFacesAfr
+                            Last faces of the groups present after the origin face in the grid
+                            set. 
+                
+                    Example:
+                
+                         
+                
+                              This example retrieves group faces present before and after the
+                              origin face in the grid set.
+                              
+                
+                               Dim ObjSrsGridFacesBfr As SrsGridFaces
+                               Dim ObjSrsGridFacesAfr As SrsGridFaces
+                               ObjSrsGridSet.GetGroupFaces ObjSrsGridFacesBfr
+                               ObjSrsGridFacesAfr
 
         :param SrsGridFaces o_last_grid_faces_bfr:
         :param SrsGridFaces o_last_grid_faces_afr:
@@ -301,23 +293,22 @@ class SrsGridSet(AnyObject):
     def get_naming_prefix(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetNamingPrefix() As CATBSTR
-                |     Returns the prefix of face's name.
-                | 
-                |     Returns:
-                |         The prefix of the grid face's name 
-                |     Example:
-                | 
-                |          
-                | 
-                |               This example retrieves prefix of face's name.
-                |               
-                | 
-                |                Dim ObjPrefix As String
-                |                ObjPrefix = ObjSrsGridSet.GetNamingPrefix
+                Func GetNamingPrefix() As CATBSTR
+                    Returns the prefix of face's name.
+                
+                    Returns:
+                        The prefix of the grid face's name 
+                    Example:
+                
+                         
+                
+                              This example retrieves prefix of face's name.
+                              
+                
+                               Dim ObjPrefix As String
+                               ObjPrefix = ObjSrsGridSet.GetNamingPrefix
 
         :return: str
         """
@@ -326,24 +317,23 @@ class SrsGridSet(AnyObject):
     def get_nb_faces(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetNbFaces() As long
-                |     Returns number of faces present in the grid set.
-                | 
-                |     Returns:
-                |         The number of faces present in the grid set 
-                |     Example:
-                | 
-                |          
-                | 
-                |               This example retrieves the number of faces in the grid
-                |               set.
-                |               
-                | 
-                |                Dim NbFaces As integer
-                |                NbFaces = ObjSrsGridSet.GetNbFaces
+                Func GetNbFaces() As long
+                    Returns number of faces present in the grid set.
+                
+                    Returns:
+                        The number of faces present in the grid set 
+                    Example:
+                
+                         
+                
+                              This example retrieves the number of faces in the grid
+                              set.
+                              
+                
+                               Dim NbFaces As integer
+                               NbFaces = ObjSrsGridSet.GetNbFaces
 
         :return: int
         """
@@ -352,38 +342,37 @@ class SrsGridSet(AnyObject):
     def get_nb_faces_sorted(self, o_nb_faces_bfr: int, o_origin_face_exist: bool, o_nb_faces_aft: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetNbFacesSorted(long oNbFacesBfr,boolean oOriginFaceExist,long
-                | oNbFacesAft)
-                |     Gets number of faces present before and after the origin face in the grid
-                |     set.
-                | 
-                |     Parameters:
-                | 
-                |         oNbFacesBfr
-                |             Number of faces present before the origin face in the grid set.
-                |             
-                |         oOriginFaceExist
-                |             Origen Face exist in the grid set. 
-                |         oNbFacesAft
-                |             Number of faces present after the origin face in the grid set.
-                |             
-                | 
-                |     Example:
-                | 
-                |          
-                | 
-                |               This example retrieves the faces before and after the origin face
-                |               in the grid set.
-                |               
-                | 
-                |                Dim NbFacesBfr As integer
-                |                Dim OriginFaceExist As boolean
-                |                Dim NbFacesAfr As integer
-                |                ObjSrsGridSet.GetNbFaces NbFacesBfr OriginFaceExist
-                |                NbFacesAfr
+                Sub GetNbFacesSorted(long oNbFacesBfr,boolean oOriginFaceExist,long
+                oNbFacesAft)
+                    Gets number of faces present before and after the origin face in the grid
+                    set.
+                
+                    Parameters:
+                
+                        oNbFacesBfr
+                            Number of faces present before the origin face in the grid set.
+                            
+                        oOriginFaceExist
+                            Origen Face exist in the grid set. 
+                        oNbFacesAft
+                            Number of faces present after the origin face in the grid set.
+                            
+                
+                    Example:
+                
+                         
+                
+                              This example retrieves the faces before and after the origin face
+                              in the grid set.
+                              
+                
+                               Dim NbFacesBfr As integer
+                               Dim OriginFaceExist As boolean
+                               Dim NbFacesAfr As integer
+                               ObjSrsGridSet.GetNbFaces NbFacesBfr OriginFaceExist
+                               NbFacesAfr
 
         :param int o_nb_faces_bfr:
         :param bool o_origin_face_exist:
@@ -395,26 +384,25 @@ class SrsGridSet(AnyObject):
     def get_orientation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetOrientation() As boolean
-                |     Returns orientation of the Grid Set.
-                | 
-                |     Returns:
-                |         The boolean whether the orientation is same as direction of the grid
-                |         set (TRUE means that the orientation is same as direction)
-                |         
-                |     Example:
-                | 
-                |          
-                | 
-                |               This example retrieves orientation of the grid
-                |               set.
-                |               
-                | 
-                |                Dim Orientation As boolean
-                |                Orientation = ObjSrsGridSet.GetOrientation
+                Func GetOrientation() As boolean
+                    Returns orientation of the Grid Set.
+                
+                    Returns:
+                        The boolean whether the orientation is same as direction of the grid
+                        set (TRUE means that the orientation is same as direction)
+                        
+                    Example:
+                
+                         
+                
+                              This example retrieves orientation of the grid
+                              set.
+                              
+                
+                               Dim Orientation As boolean
+                               Orientation = ObjSrsGridSet.GetOrientation
 
         :return: bool
         """
@@ -423,25 +411,24 @@ class SrsGridSet(AnyObject):
     def is_symmetric(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsSymmetric() As boolean
-                |     Returns whether the grid set is symmetric.
-                | 
-                |     Returns:
-                |         The boolean whether the grid set is symmetric (TRUE means that the grid
-                |         set is symmetric) 
-                |     Example:
-                | 
-                |          
-                | 
-                |               This example retrieves the faces belonging to a particular
-                |               group.
-                |               
-                | 
-                |                Dim IsSymmetric As boolean
-                |                IsSymmetric = ObjSrsGridSet.IsSymmetric 
+                Func IsSymmetric() As boolean
+                    Returns whether the grid set is symmetric.
+                
+                    Returns:
+                        The boolean whether the grid set is symmetric (TRUE means that the grid
+                        set is symmetric) 
+                    Example:
+                
+                         
+                
+                              This example retrieves the faces belonging to a particular
+                              group.
+                              
+                
+                               Dim IsSymmetric As boolean
+                               IsSymmetric = ObjSrsGridSet.IsSymmetric 
 
         :return: bool
         """

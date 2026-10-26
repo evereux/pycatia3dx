@@ -13,59 +13,57 @@ from pycatia3dx.sma_spa_structural.sim_buckle_subspace_eigensolver import SimBuc
 
 
 class SimBuckleStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SMAMpaFoundationIDLItf.SimStep
-                |                         SimBuckleStep
-                | 
-                | Represents the Buckle Step object.
-                | 
-                | Example:
-                |     Given a SimSteps object, you can create a SimBuckleStep as
-                |     following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyBuckleStep As SimBuckleStep
-                |      Set MyBuckleStep = MySteps.Add("SimBuckleStep")
-                |      
-                | 
-                |     Given a SimSteps object, you can retrieve a SimBuckleStep named "Buckle
-                |     Step.1" as following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyBuckleStep As SimBuckleStep
-                |      Set MyBuckleStep = MySteps.Item("Buckle Step.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimSteps object mySteps, you can create a SimBuckleStep as
-                |     following:
-                | 
-                |      ...
-                |      myBuckleStep = mySteps.Add("SimBuckleStep")
-                |      
-                | 
-                |     Given a SimSteps object mySteps, you can retrieve a SimBuckleStep named
-                |     "Buckle Step.1" as following:
-                | 
-                |      ...
-                |      myBuckleStep = mySteps.Item("Buckle Step.1")
-                |      
-                | 
-                | See also:
-                |     SimSteps
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SMAMpaFoundationIDLItf.SimStep
+                                        SimBuckleStep
+                
+                Represents the Buckle Step object.
+                
+                Example:
+                    Given a SimSteps object, you can create a SimBuckleStep as
+                    following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyBuckleStep As SimBuckleStep
+                     Set MyBuckleStep = MySteps.Add("SimBuckleStep")
+                     
+                
+                    Given a SimSteps object, you can retrieve a SimBuckleStep named "Buckle
+                    Step.1" as following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyBuckleStep As SimBuckleStep
+                     Set MyBuckleStep = MySteps.Item("Buckle Step.1")
+                     
+                
+                Example in Python:
+                    Given a SimSteps object mySteps, you can create a SimBuckleStep as
+                    following:
+                
+                     ...
+                     myBuckleStep = mySteps.Add("SimBuckleStep")
+                     
+                
+                    Given a SimSteps object mySteps, you can retrieve a SimBuckleStep named
+                    "Buckle Step.1" as following:
+                
+                     ...
+                     myBuckleStep = mySteps.Item("Buckle Step.1")
+                     
+                
+                See also:
+                    SimSteps
     
     """
 
@@ -77,11 +75,10 @@ class SimBuckleStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -100,12 +97,11 @@ class SimBuckleStep(SimStep):
     def lanczos_solver(self) -> SimBuckleLanczosEigensolver:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LanczosSolver() As SimBuckleLanczosEigensolver (Read
-                | Only)
-                |     Returns the Lanczos solver.
+                Property LanczosSolver() As SimBuckleLanczosEigensolver (Read
+                Only)
+                    Returns the Lanczos solver.
 
         :return: SimBuckleLanczosEigensolver
         """
@@ -116,11 +112,10 @@ class SimBuckleStep(SimStep):
     def solver_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SolverType() As SimBuckleStepSolverType
-                |     Returns or sets the solver type.
+                Property SolverType() As SimBuckleStepSolverType
+                    Returns or sets the solver type.
 
         :return: int
         """
@@ -139,12 +134,11 @@ class SimBuckleStep(SimStep):
     def subspace_solver(self) -> SimBuckleSubspaceEigensolver:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SubspaceSolver() As SimBuckleSubspaceEigensolver (Read
-                | Only)
-                |     Returns the Subspace solver. 
+                Property SubspaceSolver() As SimBuckleSubspaceEigensolver (Read
+                Only)
+                    Returns the Subspace solver. 
 
         :return: SimBuckleSubspaceEigensolver
         """
@@ -152,4 +146,4 @@ class SimBuckleStep(SimStep):
         return SimBuckleSubspaceEigensolver(self.com_object.SubspaceSolver)
 
     def __repr__(self):
-        return f'SimBuckleStep(name="{ self.name }")'
+        return f'SimBuckleStep(name="{self.name}")'

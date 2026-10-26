@@ -16,31 +16,30 @@ from pycatia3dx.types.general import CATVariant
 class SimMcxProperties(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SimMCXProperties
-                | 
-                | Represents the collection of MCX properties.
-                | 
-                | Example:
-                | 
-                |      This example shows how to retrieve the collection of MCX properties from
-                |      an engineering connection.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SimMCXProperties
+                
+                Represents the collection of MCX properties.
+                
+                Example:
+                
+                     This example shows how to retrieve the collection of MCX properties from
+                     an engineering connection.
                 |
-                |      Dim myMCXConnection As EngConnection
-                |      Set myMCXConnection = ...
-                |      Dim myMCXProperties As SimMCXProperties
-                |      Set myMCXProperties = myMCXConnection.GetItem("SimMCXProperties")
+                     Dim myMCXConnection As EngConnection
+                     Set myMCXConnection = ...
+                     Dim myMCXProperties As SimMCXProperties
+                     Set myMCXProperties = myMCXConnection.GetItem("SimMCXProperties")
                 |
-                | See also:
-                |     EngConnections, EngConnection
+                See also:
+                    EngConnections, EngConnection
     
     """
 
@@ -52,19 +51,18 @@ class SimMcxProperties(Collection):
     def add(self, i_type: str, i_fem_root: SimFemRoot) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add(CATBSTR iType,SimFemRoot iFemRoot) As CATBaseDispatch
-                |     Creates a new MCX property and adds it to the collection.
-                | 
-                |     Parameters:
-                | 
-                |         iType:
-                |             The type of MCX property to create. 
-                | 
-                |     Returns:
-                |         The created MCX property.
+                Func Add(CATBSTR iType,SimFemRoot iFemRoot) As CATBaseDispatch
+                    Creates a new MCX property and adds it to the collection.
+                
+                    Parameters:
+                
+                        iType:
+                            The type of MCX property to create. 
+                
+                    Returns:
+                        The created MCX property.
 
         :param str i_type:
         :param SimFemRoot i_fem_root:
@@ -75,26 +73,25 @@ class SimMcxProperties(Collection):
     def item(self, i_index: CATVariant) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As CATBaseDispatch
-                |     Returns a MCX property using its index or its name from the
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex:
-                |             The index or the name of the MCX property to retrieve from the
-                |             collection of MCX connection.
-                |             As a numeric, this index is the rank of the MCX property in the
-                |             collection. The index of the first MCX property in the collection is 1, and the
-                |             index of the last MCX property is Count.
-                |             As a string, it is the name you assigned to the MCX property using
-                |             the Name object property. 
-                | 
-                |     Returns:
-                |         The retrieved MCX property.
+                Func Item(CATVariant iIndex) As CATBaseDispatch
+                    Returns a MCX property using its index or its name from the
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex:
+                            The index or the name of the MCX property to retrieve from the
+                            collection of MCX connection.
+                            As a numeric, this index is the rank of the MCX property in the
+                            collection. The index of the first MCX property in the collection is 1, and the
+                            index of the last MCX property is Count.
+                            As a string, it is the name you assigned to the MCX property using
+                            the Name object property. 
+                
+                    Returns:
+                        The retrieved MCX property.
 
         :param CATVariant i_index:
         :return: AnyObject
@@ -104,23 +101,22 @@ class SimMcxProperties(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(CATVariant iIndex)
-                |     Removes a MCX Property using its index or its name from the
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex:
-                |             The index or the name of the MCX property to retrieve from the
-                |             collection.
-                |             As a numeric, this index is the rank of the MCX property in the
-                |             collection. The index of the first MCX property in the collection is 1, and the
-                |             index of the last MCX property is Count.
-                |             As a string, it is the name you assigned to the MCX property using
-                |             the Name object property.
+                Sub Remove(CATVariant iIndex)
+                    Removes a MCX Property using its index or its name from the
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex:
+                            The index or the name of the MCX property to retrieve from the
+                            collection.
+                            As a numeric, this index is the rank of the MCX property in the
+                            collection. The index of the first MCX property in the collection is 1, and the
+                            index of the last MCX property is Count.
+                            As a string, it is the name you assigned to the MCX property using
+                            the Name object property.
 
         :param CATVariant i_index:
         :return: None

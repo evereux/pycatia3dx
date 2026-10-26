@@ -15,38 +15,36 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeCurveSmooth(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeCurveSmooth
-                | 
-                | Represents the hybrid shape curve smoothing operation feature.
-                | Role: To access the data of the curve smoothing operation.of the hybrid shape
-                | curve parameter object. This data includes:
-                | 
-                |     The curve to smooth
-                |     The support (if exist )
-                |     The tangent tolerance value (threshold)
-                |     The curvature tolerance value (threshold)
-                |     The info if curvature threshold is activated
-                |     The maximum deviation accepted
-                |     The info if maxcimum deviation is activated
-                |     The fixed points
-                |     The fixed segments
-                |     The info if topology simplification is activated
-                | 
-                | Use the HybridShapeFactory.AddNewCurveSmooth to create a HybridShapeCurveSmooth
-                | object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeCurveSmooth
+                
+                Represents the hybrid shape curve smoothing operation feature.
+                Role: To access the data of the curve smoothing operation.of the hybrid shape
+                curve parameter object. This data includes:
+                
+                    The curve to smooth
+                    The support (if exist )
+                    The tangent tolerance value (threshold)
+                    The curvature tolerance value (threshold)
+                    The info if curvature threshold is activated
+                    The maximum deviation accepted
+                    The info if maxcimum deviation is activated
+                    The fixed points
+                    The fixed segments
+                    The info if topology simplification is activated
+                
+                Use the HybridShapeFactory.AddNewCurveSmooth to create a HybridShapeCurveSmooth
+                object.
     
     """
 
@@ -58,31 +56,30 @@ class HybridShapeCurveSmooth(HybridShape):
     def correction_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property CorrectionMode() As long
-                |     Returns or sets the correction mode (threshold, point, tangency or
-                |     curvature) applied to the smoothed curve.
-                |     Legal values:
-                | 
-                |     0
-                |         CATGSMCSCorrectionMode_Threshold. no continuity 
-                |     1
-                |         CATGSMCSCorrectionMode_Point. continuity in point
-                |         (C0).
-                |     2
-                |         CATGSMCSCorrectionMode_Tangency. continuity in tangency
-                |         (C1).
-                |     3
-                |         CATGSMCSCorrectionMode_Curvature. continuity in curvature
-                |         (C2).
-                | 
-                | Example:
-                |     This example retrieves in oMode the correction mode for the
-                |     hybShpCurveSmooth hybrid shape feature.
-                | 
-                |      oMode = hybShpCurveSmooth.CorrectionMode
+                Property CorrectionMode() As long
+                    Returns or sets the correction mode (threshold, point, tangency or
+                    curvature) applied to the smoothed curve.
+                    Legal values:
+                
+                    0
+                        CATGSMCSCorrectionMode_Threshold. no continuity 
+                    1
+                        CATGSMCSCorrectionMode_Point. continuity in point
+                        (C0).
+                    2
+                        CATGSMCSCorrectionMode_Tangency. continuity in tangency
+                        (C1).
+                    3
+                        CATGSMCSCorrectionMode_Curvature. continuity in curvature
+                        (C2).
+                
+                Example:
+                    This example retrieves in oMode the correction mode for the
+                    hybShpCurveSmooth hybrid shape feature.
+                
+                     oMode = hybShpCurveSmooth.CorrectionMode
 
         :return: int
         """
@@ -101,17 +98,16 @@ class HybridShapeCurveSmooth(HybridShape):
     def curvature_threshold(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property CurvatureThreshold() As double
-                |     Returns or sets the CurvatureThreshold.
-                | 
-                |     Example: This example retrieves the CurvatureThreshold of the
-                |     hybShpCurveSmooth in CurvatureThH.
-                | 
-                |      Dim CurvatureThH as double
-                |      CurvatureThH = hybShpCurvePar.CurvatureThreshold
+                Property CurvatureThreshold() As double
+                    Returns or sets the CurvatureThreshold.
+                
+                    Example: This example retrieves the CurvatureThreshold of the
+                    hybShpCurveSmooth in CurvatureThH.
+                
+                     Dim CurvatureThH as double
+                     CurvatureThH = hybShpCurvePar.CurvatureThreshold
 
         :return: float
         """
@@ -130,17 +126,16 @@ class HybridShapeCurveSmooth(HybridShape):
     def curvature_threshold_activity(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property CurvatureThresholdActivity() As boolean
-                |     Returns or sets the CurvatureThresholdActivity.
-                | 
-                |     Example: This example retrieves the CurvatureThresholdActivity of the
-                |     hybShpCurveSmooth in CurvatureActivity .
-                | 
-                |      Dim CurvatureActivity as boolean 
-                |      CurvatureActivity = hybShpCurvePar.CurvatureThresholdActivity
+                Property CurvatureThresholdActivity() As boolean
+                    Returns or sets the CurvatureThresholdActivity.
+                
+                    Example: This example retrieves the CurvatureThresholdActivity of the
+                    hybShpCurveSmooth in CurvatureActivity .
+                
+                     Dim CurvatureActivity as boolean 
+                     CurvatureActivity = hybShpCurvePar.CurvatureThresholdActivity
 
         :return: bool
         """
@@ -159,17 +154,16 @@ class HybridShapeCurveSmooth(HybridShape):
     def curve_to_smooth(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property CurveToSmooth() As Reference
-                |     Returns or sets the curve to smooth.
-                | 
-                |     Example: This example retrieves the curve to smooth object of the
-                |     hybShpCurveSmooth in Curve.
-                | 
-                |      Dim Curve as CATIAReference 
-                |      Curve  = hybShpCurvePar.CurveToSmooth
+                Property CurveToSmooth() As Reference
+                    Returns or sets the curve to smooth.
+                
+                    Example: This example retrieves the curve to smooth object of the
+                    hybShpCurveSmooth in Curve.
+                
+                     Dim Curve as CATIAReference 
+                     Curve  = hybShpCurvePar.CurveToSmooth
 
         :return: Reference
         """
@@ -188,29 +182,28 @@ class HybridShapeCurveSmooth(HybridShape):
     def end_extremity_continuity(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property EndExtremityContinuity() As long
-                |     Returns or sets the continuity condition (curvature, tangency or point)
-                |     applied to the smoothed curve with regard to the input curve at the end
-                |     extremity of the input curve.
-                |     Legal values:
-                | 
-                |     0
-                |         CATGSMContinuity_Point. continuity in point (C0). 
-                |     1
-                |         CATGSMContinuity_Tangency. continuity in tangency
-                |         (C1).
-                |     2
-                |         CATGSMContinuity_Curvature. continuity in curvature
-                |         (C2).
-                | 
-                | Example:
-                |     This example retrieves in oContinuity the continuity at the end extremity
-                |     for the hybShpCurveSmooth hybrid shape feature.
-                | 
-                |      oContinuity = hybShpCurveSmooth.EndExtremityContinuity
+                Property EndExtremityContinuity() As long
+                    Returns or sets the continuity condition (curvature, tangency or point)
+                    applied to the smoothed curve with regard to the input curve at the end
+                    extremity of the input curve.
+                    Legal values:
+                
+                    0
+                        CATGSMContinuity_Point. continuity in point (C0). 
+                    1
+                        CATGSMContinuity_Tangency. continuity in tangency
+                        (C1).
+                    2
+                        CATGSMContinuity_Curvature. continuity in curvature
+                        (C2).
+                
+                Example:
+                    This example retrieves in oContinuity the continuity at the end extremity
+                    for the hybShpCurveSmooth hybrid shape feature.
+                
+                     oContinuity = hybShpCurveSmooth.EndExtremityContinuity
 
         :return: int
         """
@@ -229,17 +222,16 @@ class HybridShapeCurveSmooth(HybridShape):
     def maximum_deviation(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property MaximumDeviation() As Length (Read Only)
-                |     Returns the MaximumDeviation.
-                | 
-                |     Example: This example retrieves the MaximumDeviation of the
-                |     hybShpCurveSmooth in MaximumDeviationVal.
-                | 
-                |      Dim MaximumDeviationVal as CATIALength
-                |      MaximumDeviationVal  = hybShpCurvePar.MaximumDeviation
+                Property MaximumDeviation() As Length (Read Only)
+                    Returns the MaximumDeviation.
+                
+                    Example: This example retrieves the MaximumDeviation of the
+                    hybShpCurveSmooth in MaximumDeviationVal.
+                
+                     Dim MaximumDeviationVal as CATIALength
+                     MaximumDeviationVal  = hybShpCurvePar.MaximumDeviation
 
         :return: Length
         """
@@ -250,17 +242,16 @@ class HybridShapeCurveSmooth(HybridShape):
     def maximum_deviation_activity(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property MaximumDeviationActivity() As boolean
-                |     Returns or sets the MaximumDeviationActivity.
-                | 
-                |     Example: This example retrieves the MaximumDeviationActivity of the
-                |     hybShpCurveSmooth in MaxActivity .
-                | 
-                |      Dim MaxActivity as boolean
-                |      MaxActivity  = hybShpCurvePar.MaximumDeviationActivity
+                Property MaximumDeviationActivity() As boolean
+                    Returns or sets the MaximumDeviationActivity.
+                
+                    Example: This example retrieves the MaximumDeviationActivity of the
+                    hybShpCurveSmooth in MaxActivity .
+                
+                     Dim MaxActivity as boolean
+                     MaxActivity  = hybShpCurvePar.MaximumDeviationActivity
 
         :return: bool
         """
@@ -279,29 +270,28 @@ class HybridShapeCurveSmooth(HybridShape):
     def start_extremity_continuity(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property StartExtremityContinuity() As long
-                |     Returns or sets the continuity condition (curvature, tangency or point)
-                |     applied to the smoothed curve with regard to the input curve at the start
-                |     extremity of the input curve.
-                |     Legal values:
-                | 
-                |     0
-                |         CATGSMContinuity_Point. continuity in point (C0). 
-                |     1
-                |         CATGSMContinuity_Tangency. continuity in tangency
-                |         (C1).
-                |     2
-                |         CATGSMContinuity_Curvature. continuity in curvature
-                |         (C2).
-                | 
-                | Example:
-                |     This example retrieves in oContinuity the continuity at the start extremity
-                |     for the hybShpCurveSmooth hybrid shape feature.
-                | 
-                |      oContinuity = hybShpCurveSmooth.StartExtremityContinuity
+                Property StartExtremityContinuity() As long
+                    Returns or sets the continuity condition (curvature, tangency or point)
+                    applied to the smoothed curve with regard to the input curve at the start
+                    extremity of the input curve.
+                    Legal values:
+                
+                    0
+                        CATGSMContinuity_Point. continuity in point (C0). 
+                    1
+                        CATGSMContinuity_Tangency. continuity in tangency
+                        (C1).
+                    2
+                        CATGSMContinuity_Curvature. continuity in curvature
+                        (C2).
+                
+                Example:
+                    This example retrieves in oContinuity the continuity at the start extremity
+                    for the hybShpCurveSmooth hybrid shape feature.
+                
+                     oContinuity = hybShpCurveSmooth.StartExtremityContinuity
 
         :return: int
         """
@@ -320,18 +310,17 @@ class HybridShapeCurveSmooth(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Support() As Reference
-                |     Returns or sets the support of the curve.
-                |     if Suppport == nothing no support associated to the curve
-                | 
-                |     Example: This example retrieves the support of curve to smooth object of
-                |     the hybShpCurveSmooth in Support.
-                | 
-                |      Dim Support  as CATIAReference 
-                |      Support   = ybShpCurveSmooth.Support
+                Property Support() As Reference
+                    Returns or sets the support of the curve.
+                    if Suppport == nothing no support associated to the curve
+                
+                    Example: This example retrieves the support of curve to smooth object of
+                    the hybShpCurveSmooth in Support.
+                
+                     Dim Support  as CATIAReference 
+                     Support   = ybShpCurveSmooth.Support
 
         :return: Reference
         """
@@ -350,17 +339,16 @@ class HybridShapeCurveSmooth(HybridShape):
     def tangency_threshold(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property TangencyThreshold() As Angle (Read Only)
-                |     Returns the TangencyThreshold.
-                | 
-                |     Example: This example retrieves the curve to smooth object of the
-                |     hybShpCurveSmooth in AngleThH.
-                | 
-                |      Dim Curve as CATIAAngle  
-                |      AngleThH  = ybShpCurveSmooth.TangencyThreshold
+                Property TangencyThreshold() As Angle (Read Only)
+                    Returns the TangencyThreshold.
+                
+                    Example: This example retrieves the curve to smooth object of the
+                    hybShpCurveSmooth in AngleThH.
+                
+                     Dim Curve as CATIAAngle  
+                     AngleThH  = ybShpCurveSmooth.TangencyThreshold
 
         :return: Angle
         """
@@ -371,17 +359,16 @@ class HybridShapeCurveSmooth(HybridShape):
     def topology_simplification_activity(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property TopologySimplificationActivity() As boolean
-                |     Returns or sets the TopologySimplificationActivity.
-                | 
-                |     Example: This example retrieves the TopologySimplificationActivity of the
-                |     hybShpCurveSmooth in TopSimplifyAct.
-                | 
-                |      Dim TopSimplifyAct as boolean 
-                |      TopSimplifyAct  = hybShpCurvePar.TogologySimplificationActivity
+                Property TopologySimplificationActivity() As boolean
+                    Returns or sets the TopologySimplificationActivity.
+                
+                    Example: This example retrieves the TopologySimplificationActivity of the
+                    hybShpCurveSmooth in TopSimplifyAct.
+                
+                     Dim TopSimplifyAct as boolean 
+                     TopSimplifyAct  = hybShpCurvePar.TogologySimplificationActivity
 
         :return: bool
         """
@@ -399,24 +386,23 @@ class HybridShapeCurveSmooth(HybridShape):
     def add_frozen_curve_segment(self, i_curve: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub AddFrozenCurveSegment(Reference iCurve)
-                |     Adds a frozen curve to the hybrid shape curve smooth feature
-                |     object.
-                | 
-                |     Parameters:
-                | 
-                |         iCurve
-                |             The curve to be added to the hybrid shape curve smooth feature
-                |             object. 
-                | 
-                |     Example:
-                |         The following example adds the iCurve curve to the hybShpCurveSmooth
-                |         object.
-                | 
-                |          hybShpCurveSmooth.AddFrozenCurveSegment iCurve
+                Sub AddFrozenCurveSegment(Reference iCurve)
+                    Adds a frozen curve to the hybrid shape curve smooth feature
+                    object.
+                
+                    Parameters:
+                
+                        iCurve
+                            The curve to be added to the hybrid shape curve smooth feature
+                            object. 
+                
+                    Example:
+                        The following example adds the iCurve curve to the hybShpCurveSmooth
+                        object.
+                
+                         hybShpCurveSmooth.AddFrozenCurveSegment iCurve
 
         :param Reference i_curve:
         :return: None
@@ -426,24 +412,23 @@ class HybridShapeCurveSmooth(HybridShape):
     def add_frozen_point(self, i_point: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub AddFrozenPoint(Reference iPoint)
-                |     Adds a frozen points to the hybrid shape curve smooth feature
-                |     object.
-                | 
-                |     Parameters:
-                | 
-                |         iPoint
-                |             The frozen point to be added to the hybrid shape curve smooth
-                |             feature object. 
-                | 
-                |     Example:
-                |         The following example adds the iPoint frozen point to the
-                |         hybShpCurveSmooth object.
-                | 
-                |          hybShpCurveSmooth.AddFrozenPoint iPoint
+                Sub AddFrozenPoint(Reference iPoint)
+                    Adds a frozen points to the hybrid shape curve smooth feature
+                    object.
+                
+                    Parameters:
+                
+                        iPoint
+                            The frozen point to be added to the hybrid shape curve smooth
+                            feature object. 
+                
+                    Example:
+                        The following example adds the iPoint frozen point to the
+                        hybShpCurveSmooth object.
+                
+                         hybShpCurveSmooth.AddFrozenPoint iPoint
 
         :param Reference i_point:
         :return: None
@@ -453,25 +438,24 @@ class HybridShapeCurveSmooth(HybridShape):
     def get_frozen_curve_segment(self, i_pos: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetFrozenCurveSegment(long iPos) As Reference
-                |     Retrieves the Frozen Curve Segment at specified position in the hybrid
-                |     shape curve smooth object.
-                | 
-                |     Parameters:
-                | 
-                |         iPos
-                |             The position of the Frozen Curve Segment to retrieve.
-                |             
-                | 
-                |     Example:
-                |         The following example gets the oCurve Frozen Curve Segment of the
-                |         hybShpCurveSmooth object at the position iPos.
-                | 
-                |          Dim oCurve As Reference
-                |          Set oCurve = hybShpCurveSmooth.GetFrozenCurveSegment (iPos).
+                Func GetFrozenCurveSegment(long iPos) As Reference
+                    Retrieves the Frozen Curve Segment at specified position in the hybrid
+                    shape curve smooth object.
+                
+                    Parameters:
+                
+                        iPos
+                            The position of the Frozen Curve Segment to retrieve.
+                            
+                
+                    Example:
+                        The following example gets the oCurve Frozen Curve Segment of the
+                        hybShpCurveSmooth object at the position iPos.
+                
+                         Dim oCurve As Reference
+                         Set oCurve = hybShpCurveSmooth.GetFrozenCurveSegment (iPos).
 
         :param int i_pos:
         :return: Reference
@@ -481,26 +465,25 @@ class HybridShapeCurveSmooth(HybridShape):
     def get_frozen_curve_segments_size(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetFrozenCurveSegmentsSize() As long
-                |     Returns the number of frozen curve segments in the curve smooth
-                |     object.
-                | 
-                |     Parameters:
-                | 
-                |         oSize
-                |             Number of frozen curve segments in the curve
-                |             smooth.
-                | 
-                |             Example:
-                |                 This example retrieves the number of frozen curve segments. in
-                |                 the hybShpCurveSmooth hybrid shape curve
-                |                 smooth.
-                | 
-                |                  Dim oSize As  long
-                |                  oSize = hybShpCurveSmooth.GetFrozenCurveSegmentsSize
+                Func GetFrozenCurveSegmentsSize() As long
+                    Returns the number of frozen curve segments in the curve smooth
+                    object.
+                
+                    Parameters:
+                
+                        oSize
+                            Number of frozen curve segments in the curve
+                            smooth.
+                
+                            Example:
+                                This example retrieves the number of frozen curve segments. in
+                                the hybShpCurveSmooth hybrid shape curve
+                                smooth.
+                
+                                 Dim oSize As  long
+                                 oSize = hybShpCurveSmooth.GetFrozenCurveSegmentsSize
 
         :return: int
         """
@@ -509,24 +492,23 @@ class HybridShapeCurveSmooth(HybridShape):
     def get_frozen_point(self, i_pos: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetFrozenPoint(long iPos) As Reference
-                |     Retrieves the Frozen Point at specified position in the hybrid shape curve
-                |     smooth object.
-                | 
-                |     Parameters:
-                | 
-                |         iPos
-                |             The position of the Frozen Point to retrieve. 
-                | 
-                |     Example:
-                |         The following example gets the oPoint Frozen Point of the
-                |         hybShpCurveSmooth object at the position iPos.
-                | 
-                |          Dim oPoint As Reference
-                |          Set oPoint = hybShpCurveSmooth.GetFrozenPoint (iPos).
+                Func GetFrozenPoint(long iPos) As Reference
+                    Retrieves the Frozen Point at specified position in the hybrid shape curve
+                    smooth object.
+                
+                    Parameters:
+                
+                        iPos
+                            The position of the Frozen Point to retrieve. 
+                
+                    Example:
+                        The following example gets the oPoint Frozen Point of the
+                        hybShpCurveSmooth object at the position iPos.
+                
+                         Dim oPoint As Reference
+                         Set oPoint = hybShpCurveSmooth.GetFrozenPoint (iPos).
 
         :param int i_pos:
         :return: Reference
@@ -536,24 +518,23 @@ class HybridShapeCurveSmooth(HybridShape):
     def get_frozen_points_size(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetFrozenPointsSize() As long
-                |     Returns the number of Frozen Points in the curve smooth
-                |     object.
-                | 
-                |     Parameters:
-                | 
-                |         oSize
-                |             Number of Frozen Points in the curve smooth.
-                | 
-                |             Example:
-                |                 This example retrieves the number of Frozen Points. in the
-                |                 hybShpCurveSmooth hybrid shape curve smooth.
-                | 
-                |                  Dim oSize As  long
-                |                  oSize = hybShpCurveSmooth.GetFrozenPointsSize
+                Func GetFrozenPointsSize() As long
+                    Returns the number of Frozen Points in the curve smooth
+                    object.
+                
+                    Parameters:
+                
+                        oSize
+                            Number of Frozen Points in the curve smooth.
+                
+                            Example:
+                                This example retrieves the number of Frozen Points. in the
+                                hybShpCurveSmooth hybrid shape curve smooth.
+                
+                                 Dim oSize As  long
+                                 oSize = hybShpCurveSmooth.GetFrozenPointsSize
 
         :return: int
         """
@@ -562,17 +543,16 @@ class HybridShapeCurveSmooth(HybridShape):
     def remove_all_frozen_curve_segments(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveAllFrozenCurveSegments()
-                |     Removes all Frozen Curve Segment of the hybrid shape curve smooth object.
-                |     
-                | Example:
-                |     The following example removes all Frozen Curve Segments of the
-                |     hybShpCurveSmooth object.
-                | 
-                |      hybShpCurveSmooth.RemoveAllFrozenCurveSegments
+                Sub RemoveAllFrozenCurveSegments()
+                    Removes all Frozen Curve Segment of the hybrid shape curve smooth object.
+                    
+                Example:
+                    The following example removes all Frozen Curve Segments of the
+                    hybShpCurveSmooth object.
+                
+                     hybShpCurveSmooth.RemoveAllFrozenCurveSegments
 
         :return: None
         """
@@ -581,17 +561,16 @@ class HybridShapeCurveSmooth(HybridShape):
     def remove_all_frozen_points(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveAllFrozenPoints()
-                |     Removes all Frozen Points of the hybrid shape curve smooth object.
-                |     
-                | Example:
-                |     The following example removes all Frozen Points of the hybShpCurveSmooth
-                |     object.
-                | 
-                |      hybShpCurveSmooth.RemoveAllFrozenPoints
+                Sub RemoveAllFrozenPoints()
+                    Removes all Frozen Points of the hybrid shape curve smooth object.
+                    
+                Example:
+                    The following example removes all Frozen Points of the hybShpCurveSmooth
+                    object.
+                
+                     hybShpCurveSmooth.RemoveAllFrozenPoints
 
         :return: None
         """
@@ -600,23 +579,22 @@ class HybridShapeCurveSmooth(HybridShape):
     def remove_frozen_curve_segment(self, i_curve: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveFrozenCurveSegment(Reference iCurve)
-                |     Removes Frozen Curve Segment from the list of Forzen curves in hybrid shape
-                |     curve smooth object.
-                | 
-                |     Parameters:
-                | 
-                |         iCurve
-                |             The Frozen Curve Segment to remove. 
-                | 
-                |     Example:
-                |         The following example removes the Frozen Curve Segment from the
-                |         hybShpCurveSmooth object.
-                | 
-                |          hybShpCurveSmooth.RemoveFrozenCurveSegment iCurve.
+                Sub RemoveFrozenCurveSegment(Reference iCurve)
+                    Removes Frozen Curve Segment from the list of Forzen curves in hybrid shape
+                    curve smooth object.
+                
+                    Parameters:
+                
+                        iCurve
+                            The Frozen Curve Segment to remove. 
+                
+                    Example:
+                        The following example removes the Frozen Curve Segment from the
+                        hybShpCurveSmooth object.
+                
+                         hybShpCurveSmooth.RemoveFrozenCurveSegment iCurve.
 
         :param Reference i_curve:
         :return: None
@@ -626,23 +604,22 @@ class HybridShapeCurveSmooth(HybridShape):
     def remove_frozen_point(self, i_point: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveFrozenPoint(Reference iPoint)
-                |     Removes Frozen Point from the list of frozen points in hybrid shape curve
-                |     smooth object.
-                | 
-                |     Parameters:
-                | 
-                |         iPoint
-                |             The Frozen Point to remove. 
-                | 
-                |     Example:
-                |         The following example removes the Frozen Point from the
-                |         hybShpCurveSmooth object.
-                | 
-                |          hybShpCurveSmooth.RemoveFrozenPoint iPoint.
+                Sub RemoveFrozenPoint(Reference iPoint)
+                    Removes Frozen Point from the list of frozen points in hybrid shape curve
+                    smooth object.
+                
+                    Parameters:
+                
+                        iPoint
+                            The Frozen Point to remove. 
+                
+                    Example:
+                        The following example removes the Frozen Point from the
+                        hybShpCurveSmooth object.
+                
+                         hybShpCurveSmooth.RemoveFrozenPoint iPoint.
 
         :param Reference i_point:
         :return: None
@@ -652,16 +629,15 @@ class HybridShapeCurveSmooth(HybridShape):
     def set_maximum_deviation(self, i_max_deviation: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetMaximumDeviation(double iMaxDeviation)
-                |     Sets the maximum deviation.
-                | 
-                |     Parameters:
-                | 
-                |         iMaxDeviation
-                |             The maximium deviation
+                Sub SetMaximumDeviation(double iMaxDeviation)
+                    Sets the maximum deviation.
+                
+                    Parameters:
+                
+                        iMaxDeviation
+                            The maximium deviation
 
         :param float i_max_deviation:
         :return: None
@@ -671,16 +647,15 @@ class HybridShapeCurveSmooth(HybridShape):
     def set_tangency_threshold(self, i_tangency_threshold: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetTangencyThreshold(double iTangencyThreshold)
-                |     Sets the tangency threshold.
-                | 
-                |     Parameters:
-                | 
-                |         iTangencyThreshold
-                |             The tangency threshold
+                Sub SetTangencyThreshold(double iTangencyThreshold)
+                    Sets the tangency threshold.
+                
+                    Parameters:
+                
+                        iTangencyThreshold
+                            The tangency threshold
 
         :param float i_tangency_threshold:
         :return: None
@@ -688,4 +663,4 @@ class HybridShapeCurveSmooth(HybridShape):
         return self.com_object.SetTangencyThreshold(i_tangency_threshold)
 
     def __repr__(self):
-        return f'HybridShapeCurveSmooth(name="{ self.name }")'
+        return f'HybridShapeCurveSmooth(name="{self.name}")'

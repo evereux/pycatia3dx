@@ -1,5 +1,6 @@
 import sys
 
+from pycatia3dx import version
 from pycatia3dx.drafting.drawing_gen_service import DrawingGenService
 from pycatia3dx.drafting.drawing_root import DrawingRoot
 from pycatia3dx.hybrid_shapes.plane import Plane
@@ -9,14 +10,13 @@ from pycatia3dx.plm_session_builder.plm_new_service import PLMNewService
 from pycatia3dx.plm_session_builder.plm_propagate_service import PLMPropagateService
 from pycatia3dx.vpm_editor_context.plm_product_service import PLMProductService
 from tests.plm_helpers import open_plm_entity
-from tests.test_part_parameters import TEST_VPMREFERENCE_ONE, geom_set_planes, TEST_CATDRAWING_ONE, \
-    TEST_CATDRAWING_ONE_DESCRIPTION
+from tests.test_part_parameters import TEST_3DPART_ONE, geom_set_planes, TEST_CATDRAWING_ONE
 
 
 def create_test_drawing_one(application: Application):
     application.logger.info(f'Creating test file {TEST_CATDRAWING_ONE}.')
 
-    editor = open_plm_entity(application, TEST_VPMREFERENCE_ONE, 'VPMReference')
+    editor = open_plm_entity(application, TEST_3DPART_ONE, 'VPMReference')
 
     plm_pd_service: PLMProductService = editor.get_service('PLMProductService')
 
@@ -52,7 +52,7 @@ def create_test_drawing_one(application: Application):
     # create the new drawing
     plm_service: PLMNewService = application.get_session_service("PLMNewService")
     plm_service.set_attribute_value("V_Name", TEST_CATDRAWING_ONE)
-    plm_service.set_attribute_value("V_description", TEST_CATDRAWING_ONE_DESCRIPTION)
+    plm_service.set_attribute_value("V_description", version)
     editor = plm_service.plm_create("Drawing")
     drawing_root = DrawingRoot(editor.active_object.com_object)
     drawing_root.standard = "ISO"

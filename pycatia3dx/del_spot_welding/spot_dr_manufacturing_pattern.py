@@ -12,19 +12,17 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SpotDrManufacturingPattern(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SpotDrManufacturingPattern
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SpotDrManufacturingPattern
 
     
     """
@@ -36,16 +34,15 @@ class SpotDrManufacturingPattern(AnyObject):
     def add_mft(self, i_mft: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddMFT(AnyObject iMFT)
-                |     Adds a MFT to the Manufacturing Pattern.
-                | 
-                |     Parameters:
-                | 
-                |         iMFT
-                |             The MFT to be added.
+                Sub AddMFT(AnyObject iMFT)
+                    Adds a MFT to the Manufacturing Pattern.
+                
+                    Parameters:
+                
+                        iMFT
+                            The MFT to be added.
 
         :param AnyObject i_mft:
         :return: None
@@ -55,19 +52,18 @@ class SpotDrManufacturingPattern(AnyObject):
     def get_mft(self, i_position: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMFT(short iPosition) As AnyObject
-                |     Retrieve the MFT at the given index in the Manufacturing
-                |     Pattern.
-                | 
-                |     Parameters:
-                | 
-                |         iPosition
-                |             Index of the position to consider. 
-                |         oMFT
-                |             MFT found.
+                Func GetMFT(short iPosition) As AnyObject
+                    Retrieve the MFT at the given index in the Manufacturing
+                    Pattern.
+                
+                    Parameters:
+                
+                        iPosition
+                            Index of the position to consider. 
+                        oMFT
+                            MFT found.
 
         :param int i_position:
         :return: AnyObject
@@ -77,16 +73,15 @@ class SpotDrManufacturingPattern(AnyObject):
     def get_mf_ts(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMFTs() As CATSafeArrayVariant
-                |     Retrieve all the MFTs in the Manufacturing Pattern.
-                | 
-                |     Parameters:
-                | 
-                |         oPositions,
-                |             Array of CATIABase pointers MFTs in the pattern.
+                Func GetMFTs() As CATSafeArrayVariant
+                    Retrieve all the MFTs in the Manufacturing Pattern.
+                
+                    Parameters:
+                
+                        oPositions,
+                            Array of CATIABase pointers MFTs in the pattern.
 
         :return: tuple
         """
@@ -95,16 +90,15 @@ class SpotDrManufacturingPattern(AnyObject):
     def get_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetName() As CATBSTR
-                |     Gets the name of the Manufacturing Pattern.
-                | 
-                |     Parameters:
-                | 
-                |         oName
-                |             Manufacturing Pattern Name.
+                Func GetName() As CATBSTR
+                    Gets the name of the Manufacturing Pattern.
+                
+                    Parameters:
+                
+                        oName
+                            Manufacturing Pattern Name.
 
         :return: str
         """
@@ -113,16 +107,15 @@ class SpotDrManufacturingPattern(AnyObject):
     def get_owner(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetOwner() As AnyObject
-                |     Gets the owner of the Manufacturing Pattern.
-                | 
-                |     Parameters:
-                | 
-                |         ospParentProduct
-                |             Manufacturing Patter Owner.
+                Func GetOwner() As AnyObject
+                    Gets the owner of the Manufacturing Pattern.
+                
+                    Parameters:
+                
+                        ospParentProduct
+                            Manufacturing Patter Owner.
 
         :return: AnyObject
         """
@@ -131,16 +124,15 @@ class SpotDrManufacturingPattern(AnyObject):
     def remove_mft(self, i_position: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveMFT(short iPosition)
-                |     Adds an MFT to the Manufacturing Pattern.
-                | 
-                |     Parameters:
-                | 
-                |         iPosition
-                |             Index of the position to be removed. 
+                Sub RemoveMFT(short iPosition)
+                    Adds an MFT to the Manufacturing Pattern.
+                
+                    Parameters:
+                
+                        iPosition
+                            Index of the position to be removed. 
 
         :param int i_position:
         :return: None
@@ -148,4 +140,4 @@ class SpotDrManufacturingPattern(AnyObject):
         return self.com_object.RemoveMFT(i_position)
 
     def __repr__(self):
-        return f'SpotDrManufacturingPattern(name="{ self.name }")'
+        return f'SpotDrManufacturingPattern(name="{self.name}")'

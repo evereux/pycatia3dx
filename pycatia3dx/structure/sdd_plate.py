@@ -15,29 +15,28 @@ from pycatia3dx.structure.structure_plate import StructurePlate
 class SddPlate(StructurePlate):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATStrIDLItf.StructurePlate
-                |                         SddPlate
-                | 
-                | Object for representing Structure Detail Design Plate.
-                | Role: To manage the Plate structure object.
-                | 
-                | Example:
-                | 
-                | 
-                |          This example retrieves in SddPlate.
-                |          
-                | 
-                |          Dim ObjSddPlate As SddPlate
-                |          Set ObjSddPlate = ObjSddProductPlate.SddPlate
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATStrIDLItf.StructurePlate
+                                        SddPlate
+                
+                Object for representing Structure Detail Design Plate.
+                Role: To manage the Plate structure object.
+                
+                Example:
+                
+                
+                         This example retrieves in SddPlate.
+                         
+                
+                         Dim ObjSddPlate As SddPlate
+                         Set ObjSddPlate = ObjSddProductPlate.SddPlate
     
     """
 
@@ -49,23 +48,22 @@ class SddPlate(StructurePlate):
     def flanges(self) -> StrFlanges:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Flanges() As StrFlanges (Read Only)
-                |     Returns the StrFlanges object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjStrFlanges the StrFlanges
-                |              object
-                |              of the SddPlate
-                |              
-                | 
-                |              Dim ObjStrFlanges As StrFlanges
-                |              Set ObjStrFlanges = iObjSddPlate.Flanges
+                Property Flanges() As StrFlanges (Read Only)
+                    Returns the StrFlanges object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjStrFlanges the StrFlanges
+                             object
+                             of the SddPlate
+                             
+                
+                             Dim ObjStrFlanges As StrFlanges
+                             Set ObjStrFlanges = iObjSddPlate.Flanges
 
         :return: StrFlanges
         """
@@ -76,23 +74,22 @@ class SddPlate(StructurePlate):
     def plate_sub_elements(self) -> SddPlateSubElementMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PlateSubElements() As SddPlateSubElementMngt (Read
-                | Only)
-                |     Returns the SddPlateSubElementMngt object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in oObjSddPlateSubElementMngt the
-                |              SddPlateSubElementMngt object
-                |              of the SddPlate
-                |              
-                | 
-                |              Set oObjSddPlateSubElementMngt = iObjSddPlate.PlateSubElements
+                Property PlateSubElements() As SddPlateSubElementMngt (Read
+                Only)
+                    Returns the SddPlateSubElementMngt object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in oObjSddPlateSubElementMngt the
+                             SddPlateSubElementMngt object
+                             of the SddPlate
+                             
+                
+                             Set oObjSddPlateSubElementMngt = iObjSddPlate.PlateSubElements
 
         :return: SddPlateSubElementMngt
         """

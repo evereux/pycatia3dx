@@ -17,18 +17,17 @@ from pycatia3dx.types.general import CATVariant
 class Materials(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     Materials
-                | 
-                | Represents a collection of Material Entities.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    Materials
+                
+                Represents a collection of Material Entities.
     
     """
 
@@ -39,26 +38,25 @@ class Materials(Collection):
     def add(self, i_material: Material) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Add(Material iMaterial)
-                |     Allow to add a material in list.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterial
-                |             the material to add 
-                | 
-                |     Example:
-                | 
-                |          This example shows you how to add a material in list.
-                |            
-                | 
-                |            Dim myMatRef As Material
-                |            Dim myListMatRef As Materials
-                |            ...
-                |            myListMatRef.Add myMatRef
+                Sub Add(Material iMaterial)
+                    Allow to add a material in list.
+                
+                    Parameters:
+                
+                        iMaterial
+                            the material to add 
+                
+                    Example:
+                
+                         This example shows you how to add a material in list.
+                           
+                
+                           Dim myMatRef As Material
+                           Dim myListMatRef As Materials
+                           ...
+                           myListMatRef.Add myMatRef
 
         :param Material i_material:
         :return: None
@@ -68,28 +66,27 @@ class Materials(Collection):
     def item(self, i_index: CATVariant) -> Material:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As Material
-                |     Allow to get a material.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             Index in the list 
-                |         oMaterial
-                |             the retrieved material 
-                | 
-                |     Example:
-                | 
-                |          This example shows you how to get a material in list.
-                |            
-                | 
-                |            Dim myListMatRef As Materials
-                |            Dim myMatRef As Material
-                |            ...
-                |            Set myMatRef = myListMatRef.Item (1)
+                Func Item(CATVariant iIndex) As Material
+                    Allow to get a material.
+                
+                    Parameters:
+                
+                        iIndex
+                            Index in the list 
+                        oMaterial
+                            the retrieved material 
+                
+                    Example:
+                
+                         This example shows you how to get a material in list.
+                           
+                
+                           Dim myListMatRef As Materials
+                           Dim myMatRef As Material
+                           ...
+                           Set myMatRef = myListMatRef.Item (1)
 
         :param CATVariant i_index:
         :return: Material
@@ -99,27 +96,26 @@ class Materials(Collection):
     def remove(self, i_material: Material) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(Material iMaterial)
-                |     Allow to remove a material.
-                | 
-                |     Parameters:
-                | 
-                |         iItemValue
-                |             the material to remove 
-                | 
-                |     Example:
-                | 
-                |          This example shows you how to remove a material in
-                |          list.
-                |            
-                | 
-                |            Dim myListMatRef As Materials
-                |            Dim myMatRef As Material
-                |            ...
-                |            myListMatRef.Remove myMatRef
+                Sub Remove(Material iMaterial)
+                    Allow to remove a material.
+                
+                    Parameters:
+                
+                        iItemValue
+                            the material to remove 
+                
+                    Example:
+                
+                         This example shows you how to remove a material in
+                         list.
+                           
+                
+                           Dim myListMatRef As Materials
+                           Dim myMatRef As Material
+                           ...
+                           myListMatRef.Remove myMatRef
 
         :param Material i_material:
         :return: None

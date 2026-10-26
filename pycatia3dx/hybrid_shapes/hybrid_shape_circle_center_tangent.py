@@ -14,40 +14,38 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeCircleCenterTangent(HybridShapeCircle):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.HybridShapeCircle
-                |                             HybridShapeCircleCenterTangent
-                | 
-                | Represents the hybrid shape circle object defined using a center, a curve and a
-                | support.
-                | Role: To access the data of the hybrid shape circle tangent
-                | object.
-                | 
-                | This data includes:
-                | 
-                |     The center element
-                |     The tangent curve
-                |     The support
-                |     The value of the raduius
-                |     and also the type of solution index
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapeCircleCenterTangent
-                | object.
-                | 
-                | See also:
-                |     HybridShapeFactory.AddNewCircleCenterTangent
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.HybridShapeCircle
+                                            HybridShapeCircleCenterTangent
+                
+                Represents the hybrid shape circle object defined using a center, a curve and a
+                support.
+                Role: To access the data of the hybrid shape circle tangent
+                object.
+                
+                This data includes:
+                
+                    The center element
+                    The tangent curve
+                    The support
+                    The value of the raduius
+                    and also the type of solution index
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapeCircleCenterTangent
+                object.
+                
+                See also:
+                    HybridShapeFactory.AddNewCircleCenterTangent
     
     """
 
@@ -59,20 +57,19 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
     def begin_of_circle(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property BeginOfCircle() As long
-                |     Return or Set the number of the beginning curve of the circle. This
-                |     parameter is used to stabilize the resulting circle
-                | 
-                |     Example:
-                | 
-                |          This example set the beginning wire index of
-                |          the hybShpcircle hybrid shape circle 
-                |          
-                | 
-                |          hybShpcircle.BeginOfCircle = 1
+                Property BeginOfCircle() As long
+                    Return or Set the number of the beginning curve of the circle. This
+                    parameter is used to stabilize the resulting circle
+                
+                    Example:
+                
+                         This example set the beginning wire index of
+                         the hybShpcircle hybrid shape circle 
+                         
+                
+                         hybShpcircle.BeginOfCircle = 1
 
         :return: int
         """
@@ -91,19 +88,18 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
     def center_elem(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property CenterElem() As Reference
-                |     Returns or sets the Center Element of the circle.
-                | 
-                |     Example:
-                |         This example retrieves in HybShpCircleCenterCurve the first curve to
-                |         which the HybShpCircle hybrid shape circle is Center
-                |         curve.
-                | 
-                |          Dim HybShpCircleFirstCurve As Reference 
-                |          HybShpCircleFirstCurve = HybShpCircle.CenterElem
+                Property CenterElem() As Reference
+                    Returns or sets the Center Element of the circle.
+                
+                    Example:
+                        This example retrieves in HybShpCircleCenterCurve the first curve to
+                        which the HybShpCircle hybrid shape circle is Center
+                        curve.
+                
+                         Dim HybShpCircleFirstCurve As Reference 
+                         HybShpCircleFirstCurve = HybShpCircle.CenterElem
 
         :return: Reference
         """
@@ -122,19 +118,18 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
     def diameter(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Diameter() As Length (Read Only)
-                |     Returns the circle diameter. It is expressed as a Length literal. Succeeds
-                |     only if DiameterMode is set to True. 
-                | 
-                | Example:
-                |     This example retrieves in HybShpCircleDiameter the diameter of the
-                |     HybShpCircle hybrid shape circle feature
-                | 
-                |      Dim HybShpCircleDiameter As Length
-                |      HybShpCircleDiameter = HybShpCircle.Diameter
+                Property Diameter() As Length (Read Only)
+                    Returns the circle diameter. It is expressed as a Length literal. Succeeds
+                    only if DiameterMode is set to True. 
+                
+                Example:
+                    This example retrieves in HybShpCircleDiameter the diameter of the
+                    HybShpCircle hybrid shape circle feature
+                
+                     Dim HybShpCircleDiameter As Length
+                     HybShpCircleDiameter = HybShpCircle.Diameter
 
         :return: Length
         """
@@ -145,22 +140,21 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
     def diameter_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property DiameterMode() As boolean
-                |     Returns or sets the DiameterMode.
-                |     Legal values: True implies diameter False implies radius (default). When
-                |     DiameterMode is changed, Radius/Diameter value, which is stored will not be
-                |     modified.
-                | 
-                |     Example:
-                | 
-                |           This example sets that the DiameterMode of
-                |           the HybShpCircle hybrid shape circle feature
-                |           
-                | 
-                |           HybShpCircle.DiameterMode = True
+                Property DiameterMode() As boolean
+                    Returns or sets the DiameterMode.
+                    Legal values: True implies diameter False implies radius (default). When
+                    DiameterMode is changed, Radius/Diameter value, which is stored will not be
+                    modified.
+                
+                    Example:
+                
+                          This example sets that the DiameterMode of
+                          the HybShpCircle hybrid shape circle feature
+                          
+                
+                          HybShpCircle.DiameterMode = True
 
         :return: bool
         """
@@ -179,23 +173,22 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
     def discrimination_index(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property DiscriminationIndex() As long
-                |     Return or set the discrimination index of the current circle. Several
-                |     resulting solutions produced by the operator can be same oriented regarding to
-                |     the input wire bodies. In such a case, they are sorted in order to distinguish
-                |     them. The Sequence FirstOrientation - SecondOrientation - DiscriminationIndex
-                |     allows you to identify a unique one-domain solution.
-                | 
-                |     Example:
-                | 
-                |          This example set the discrimination index of
-                |          the hybShpcircle hybrid shape circle 
-                |          
-                | 
-                |          hybShpcircle.DiscriminationIndex = 2
+                Property DiscriminationIndex() As long
+                    Return or set the discrimination index of the current circle. Several
+                    resulting solutions produced by the operator can be same oriented regarding to
+                    the input wire bodies. In such a case, they are sorted in order to distinguish
+                    them. The Sequence FirstOrientation - SecondOrientation - DiscriminationIndex
+                    allows you to identify a unique one-domain solution.
+                
+                    Example:
+                
+                         This example set the discrimination index of
+                         the hybShpcircle hybrid shape circle 
+                         
+                
+                         hybShpcircle.DiscriminationIndex = 2
 
         :return: int
         """
@@ -214,23 +207,22 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
     def orientation1(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Orientation1() As long
-                |     Returns or sets the orientation of the first curve to which the circle is
-                |     tangent.
-                |     Role: The orientation of the first curve determines the side of this curve
-                |     taken into account to find the point where the circle is tangent to the
-                |     curve.
-                |     Legal values: To be provided by Claire (1/-1??)
-                | 
-                |     Example:
-                |         This example sets the orientation of the first curve to which the
-                |         HybShpCircle hybrid shape circle is tangent to
-                |         reverse.
-                | 
-                |          Set HybShpCircle.Orientation1 -1
+                Property Orientation1() As long
+                    Returns or sets the orientation of the first curve to which the circle is
+                    tangent.
+                    Role: The orientation of the first curve determines the side of this curve
+                    taken into account to find the point where the circle is tangent to the
+                    curve.
+                    Legal values: To be provided by Claire (1/-1??)
+                
+                    Example:
+                        This example sets the orientation of the first curve to which the
+                        HybShpCircle hybrid shape circle is tangent to
+                        reverse.
+                
+                         Set HybShpCircle.Orientation1 -1
 
         :return: int
         """
@@ -249,23 +241,22 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
     def orientation2(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Orientation2() As long
-                |     Returns or sets the orientation of the second curve to which the circle is
-                |     tangent.
-                |     Role: The orientation of the second curve determines the side of this curve
-                |     taken into account to find the point where the circle is tangent to the
-                |     curve.
-                |     Legal values: To be provided by Claire (1/-1??)
-                | 
-                |     Example:
-                |         This example retrieves in HybShpCircleOrientation the orientation of
-                |         the second curve to which the HybShpCircle hybrid shape circle is
-                |         tangent.
-                | 
-                |          HybShpCircleOrientation = HybShpCircle.Orientation2
+                Property Orientation2() As long
+                    Returns or sets the orientation of the second curve to which the circle is
+                    tangent.
+                    Role: The orientation of the second curve determines the side of this curve
+                    taken into account to find the point where the circle is tangent to the
+                    curve.
+                    Legal values: To be provided by Claire (1/-1??)
+                
+                    Example:
+                        This example retrieves in HybShpCircleOrientation the orientation of
+                        the second curve to which the HybShpCircle hybrid shape circle is
+                        tangent.
+                
+                         HybShpCircleOrientation = HybShpCircle.Orientation2
 
         :return: int
         """
@@ -284,18 +275,17 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
     def radius(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Radius() As Length (Read Only)
-                |     Returns the circle radius. It is expressed as a Length literal. Succeeds
-                |     only if DiameterMode is set to False. 
-                | Example:
-                |     This example retrieves in HybShpCircleRadius the radius of the HybShpCircle
-                |     hybrid shape circle.
-                | 
-                |      Dim HybShpCircleRadius As Length
-                |      HybShpCircleRadius = HybShpCircle.Radius
+                Property Radius() As Length (Read Only)
+                    Returns the circle radius. It is expressed as a Length literal. Succeeds
+                    only if DiameterMode is set to False. 
+                Example:
+                    This example retrieves in HybShpCircleRadius the radius of the HybShpCircle
+                    hybrid shape circle.
+                
+                     Dim HybShpCircleRadius As Length
+                     HybShpCircleRadius = HybShpCircle.Radius
 
         :return: Length
         """
@@ -306,19 +296,18 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Support() As Reference
-                |     Returns or sets the circle support surface.
-                |     Sub-element(s) supported (see Boundary object): Face.
-                | 
-                |     Example:
-                |         This example retrieves in HybShpCircleSupportSurf the support surface
-                |         of the HybShpCircle hybrid shape circle.
-                | 
-                |          Dim HybShpCircleSupportSurf As Reference 
-                |          Set HybShpCircleSupportSurf = HybShpCircle.Support
+                Property Support() As Reference
+                    Returns or sets the circle support surface.
+                    Sub-element(s) supported (see Boundary object): Face.
+                
+                    Example:
+                        This example retrieves in HybShpCircleSupportSurf the support surface
+                        of the HybShpCircle hybrid shape circle.
+                
+                         Dim HybShpCircleSupportSurf As Reference 
+                         Set HybShpCircleSupportSurf = HybShpCircle.Support
 
         :return: Reference
         """
@@ -337,18 +326,17 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
     def tangent_curve(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property TangentCurve() As Reference
-                |     Returns or sets the tangent curve to which the circle will be
-                |     tangent.
-                | 
-                |     Example:
-                |         This example sets the tangent curve to which the HybShpCircle hybrid
-                |         shape circle will be tangent to TgtCrv.
-                | 
-                |          Set HybShpCircle.Tangent Curve TgtCrv
+                Property TangentCurve() As Reference
+                    Returns or sets the tangent curve to which the circle will be
+                    tangent.
+                
+                    Example:
+                        This example sets the tangent curve to which the HybShpCircle hybrid
+                        shape circle will be tangent to TgtCrv.
+                
+                         Set HybShpCircle.Tangent Curve TgtCrv
 
         :return: Reference
         """
@@ -367,22 +355,21 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
     def tangent_orientation1(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property TangentOrientation1() As long
-                |     Returns or sets the tangent orientation of the circle first reference
-                |     element. compared to the circle itself
-                | 
-                |     Example:
-                | 
-                |          This example retrieves the tangent orientation of first reference
-                |          element of
-                |          the hybShpcircle hybrid shape circle in firstOrient.
-                |          
-                | 
-                |          Dim firstOrient As long
-                |          firstOrient = hybShpcircle.FirstTangentOrientation
+                Property TangentOrientation1() As long
+                    Returns or sets the tangent orientation of the circle first reference
+                    element. compared to the circle itself
+                
+                    Example:
+                
+                         This example retrieves the tangent orientation of first reference
+                         element of
+                         the hybShpcircle hybrid shape circle in firstOrient.
+                         
+                
+                         Dim firstOrient As long
+                         firstOrient = hybShpcircle.FirstTangentOrientation
 
         :return: int
         """
@@ -401,22 +388,21 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
     def tangent_orientation2(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property TangentOrientation2() As long
-                |     Returns or sets the tangent orientation of the circle second reference
-                |     element. compared to the corner itself
-                | 
-                |     Example:
-                | 
-                |          This example retrieves the tangent orientation of second reference
-                |          element of
-                |          the hybShpcircle hybrid shape circle in secondOrient.
-                |          
-                | 
-                |          Dim secondOrient As long
-                |          secondOrient = hybShpcircle.SecondTangentOrientation
+                Property TangentOrientation2() As long
+                    Returns or sets the tangent orientation of the circle second reference
+                    element. compared to the corner itself
+                
+                    Example:
+                
+                         This example retrieves the tangent orientation of second reference
+                         element of
+                         the hybShpcircle hybrid shape circle in secondOrient.
+                         
+                
+                         Dim secondOrient As long
+                         secondOrient = hybShpcircle.SecondTangentOrientation
 
         :return: int
         """
@@ -432,4 +418,4 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
         self.com_object.TangentOrientation2 = value
 
     def __repr__(self):
-        return f'HybridShapeCircleCenterTangent(name="{ self.name }")'
+        return f'HybridShapeCircleCenterTangent(name="{self.name}")'

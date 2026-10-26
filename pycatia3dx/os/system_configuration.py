@@ -14,19 +14,18 @@ from pycatia3dx.system.any_object import AnyObject
 class SystemConfiguration(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SystemConfiguration
-                | 
-                | Provides abstractions to resources which depend on the platform or the current
-                | configuration
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SystemConfiguration
+                
+                Provides abstractions to resources which depend on the platform or the current
+                configuration
     
     """
 
@@ -38,18 +37,17 @@ class SystemConfiguration(AnyObject):
     def operating_system(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property OperatingSystem() As CATBSTR (Read Only)
-                |     Returns a string which identifies the operating system on which the
-                |     application is currently running. Examples of identifiers include: intel_a,
-                |     solaris_a, aix_a, win_a, irix_a and hpux_a.
-                | 
-                |     Parameters:
-                | 
-                |         oOperatingSystem
-                |             The operating system identifier.
+                Property OperatingSystem() As CATBSTR (Read Only)
+                    Returns a string which identifies the operating system on which the
+                    application is currently running. Examples of identifiers include: intel_a,
+                    solaris_a, aix_a, win_a, irix_a and hpux_a.
+                
+                    Parameters:
+                
+                        oOperatingSystem
+                            The operating system identifier.
 
         :return: str
         """
@@ -60,17 +58,16 @@ class SystemConfiguration(AnyObject):
     def product_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property ProductCount() As long (Read Only)
-                |     Returns the number of product names names currently known to the
-                |     system.
-                | 
-                |     Parameters:
-                | 
-                |         oProductCount
-                |             The number of product names currently known to the system.
+                Property ProductCount() As long (Read Only)
+                    Returns the number of product names names currently known to the
+                    system.
+                
+                    Parameters:
+                
+                        oProductCount
+                            The number of product names currently known to the system.
 
         :return: int
         """
@@ -81,16 +78,15 @@ class SystemConfiguration(AnyObject):
     def release(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Release() As long (Read Only)
-                |     Returns the CATIA release number.
-                | 
-                |     Parameters:
-                | 
-                |         oVersion
-                |             The CATIA release number.
+                Property Release() As long (Read Only)
+                    Returns the CATIA release number.
+                
+                    Parameters:
+                
+                        oVersion
+                            The CATIA release number.
 
         :return: int
         """
@@ -101,16 +97,15 @@ class SystemConfiguration(AnyObject):
     def service_pack(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property ServicePack() As long (Read Only)
-                |     Returns the CATIA service pack number.
-                | 
-                |     Parameters:
-                | 
-                |         oServicePack
-                |             The CATIA service pack number.
+                Property ServicePack() As long (Read Only)
+                    Returns the CATIA service pack number.
+                
+                    Parameters:
+                
+                        oServicePack
+                            The CATIA service pack number.
 
         :return: int
         """
@@ -121,16 +116,15 @@ class SystemConfiguration(AnyObject):
     def version(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Version() As long (Read Only)
-                |     Returns the CATIA version number (usually version 5).
-                | 
-                |     Parameters:
-                | 
-                |         oVersion
-                |             The CATIA version.
+                Property Version() As long (Read Only)
+                    Returns the CATIA version number (usually version 5).
+                
+                    Parameters:
+                
+                        oVersion
+                            The CATIA version.
 
         :return: int
         """
@@ -140,30 +134,29 @@ class SystemConfiguration(AnyObject):
         def get_product_names(self, io_product_names: tuple) -> None:
             """
             .. note::
-                :class: toggle
-
+    
                 3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                    | Sub GetProductNames(CATSafeArrayVariant ioProductNames)
-                    |     Returns the product names of all the licenses currently known to the
-                    |     system.
+                    Sub GetProductNames(CATSafeArrayVariant ioProductNames)
+                        Returns the product names of all the licenses currently known to the
+                        system.
                     |
-                    |     Parameters:
+                        Parameters:
                     |
-                    |         CATSafeArrayVariant
-                    |             An properly dimensioned array of strings in which the product names
-                    |             will be stored.
+                            CATSafeArrayVariant
+                                An properly dimensioned array of strings in which the product names
+                                will be stored.
                     |
-                    |             Example:
-                    |                 This example determines if the first product in the list of
-                    |                 known product names is authorized.
+                                Example:
+                                    This example determines if the first product in the list of
+                                    known product names is authorized.
                     |
-                    |                  Dim SystemConfiguration1 As
-                    |                  SystemConfiguration
-                    |                  Set SystemConfiguration1 = CATIA.SystemConfiguration
-                    |                  ReDim NameArray(SystemConfiguration1.ProductCount-1)                |                  SystemConfiguration1.GetProductNames
-                    |                  NameArray
-                    |                  MsgBox "IsProductAuthorized for product " & NameArray(0) & "
-                    |                  returns " & SystemConfiguration1.IsProductAuthorized(NameArray(0))
+                                     Dim SystemConfiguration1 As
+                                     SystemConfiguration
+                                     Set SystemConfiguration1 = CATIA.SystemConfiguration
+                                     ReDim NameArray(SystemConfiguration1.ProductCount-1)                                 SystemConfiguration1.GetProductNames
+                                     NameArray
+                                     MsgBox "IsProductAuthorized for product " & NameArray(0) & "
+                                     returns " & SystemConfiguration1.IsProductAuthorized(NameArray(0))
 
             :param tuple io_product_names:
             :return: None
@@ -189,19 +182,18 @@ class SystemConfiguration(AnyObject):
     def is_product_authorized(self, i_product_name: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Func IsProductAuthorized(CATBSTR iProductName) As boolean
-                |     Returns True if the specified product is authorized, False
-                |     otherwise
-                | 
-                |     Parameters:
-                | 
-                |         iProductName
-                |             The name of the product to check. 
-                |         oAuthorized
-                |             A boolean which specifies if the product is authorized.
+                Func IsProductAuthorized(CATBSTR iProductName) As boolean
+                    Returns True if the specified product is authorized, False
+                    otherwise
+                
+                    Parameters:
+                
+                        iProductName
+                            The name of the product to check. 
+                        oAuthorized
+                            A boolean which specifies if the product is authorized.
 
         :param str i_product_name:
         :return: bool

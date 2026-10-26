@@ -17,18 +17,17 @@ from pycatia3dx.types.general import CATVariant
 class SrsGridFaces(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SrsGridFaces
-                | 
-                | Object for SrsGridFaces.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SrsGridFaces
+                
+                Object for SrsGridFaces.
     
     """
 
@@ -39,27 +38,26 @@ class SrsGridFaces(Collection):
     def item(self, i_index: CATVariant) -> SrsGridFace:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As SrsGridFace
-                |     Returns a GridFace from a list of GridFaces.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of SrsPlaneFace. 
-                | 
-                |     Returns:
-                |         The grid face using the index. 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the first SrsGridFace from the list of
-                |              GridFaces.
-                |              
-                | 
-                |               Set ObjSrsGridFace = ListOfGridFaces.Item(1)
+                Func Item(CATVariant iIndex) As SrsGridFace
+                    Returns a GridFace from a list of GridFaces.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of SrsPlaneFace. 
+                
+                    Returns:
+                        The grid face using the index. 
+                    Example:
+                
+                
+                             This example retrieves the first SrsGridFace from the list of
+                             GridFaces.
+                             
+                
+                              Set ObjSrsGridFace = ListOfGridFaces.Item(1)
 
         :param CATVariant i_index:
         :return: SrsGridFace

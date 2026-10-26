@@ -14,58 +14,56 @@ from pycatia3dx.sma_mpa_base.sim_table_column import SimTableColumn
 
 
 class SimElastic(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimElastic
-                | 
-                | Represents the Elastic object.
-                | 
-                | Example:
-                |     Given a SimMaterialOptions object, you can create a SimElastic as
-                |     following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyElastic As SimElastic
-                |      Set MyElastic = MyMaterialOptions.Add("SimElastic")
-                |      
-                | 
-                |     Given a SimMaterialOptions object, you can retrieve a SimElastic named
-                |     "Elastic.1" as following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyElastic As SimElastic
-                |      Set MyElastic = MyMaterialOptions.Item("Elastic.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMaterialOptions object myMaterialOptions, you can create a
-                |     SimElastic as following:
-                | 
-                |      ...
-                |      myElastic = myMaterialOptions.Add("SimElastic")
-                |      
-                | 
-                |     Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
-                |     SimElastic named "Elastic.1" as following:
-                | 
-                |      ...
-                |      myElastic = myMaterialOptions.Item("Elastic.1")
-                |      
-                | 
-                | See also:
-                |     SimMaterialOptions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimElastic
+                
+                Represents the Elastic object.
+                
+                Example:
+                    Given a SimMaterialOptions object, you can create a SimElastic as
+                    following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyElastic As SimElastic
+                     Set MyElastic = MyMaterialOptions.Add("SimElastic")
+                     
+                
+                    Given a SimMaterialOptions object, you can retrieve a SimElastic named
+                    "Elastic.1" as following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyElastic As SimElastic
+                     Set MyElastic = MyMaterialOptions.Item("Elastic.1")
+                     
+                
+                Example in Python:
+                    Given a SimMaterialOptions object myMaterialOptions, you can create a
+                    SimElastic as following:
+                
+                     ...
+                     myElastic = myMaterialOptions.Add("SimElastic")
+                     
+                
+                    Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
+                    SimElastic named "Elastic.1" as following:
+                
+                     ...
+                     myElastic = myMaterialOptions.Item("Elastic.1")
+                     
+                
+                See also:
+                    SimMaterialOptions
     
     """
 
@@ -77,11 +75,10 @@ class SimElastic(AnyObject):
     def elastic_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ElasticType() As SimElasticElasticType
-                |     Returns or sets the ElasticType.
+                Property ElasticType() As SimElasticElasticType
+                    Returns or sets the ElasticType.
 
         :return: int
         """
@@ -100,11 +97,10 @@ class SimElastic(AnyObject):
     def material_table(self) -> SimMaterialTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialTable() As SimMaterialTable (Read Only)
-                |     Returns the material table pointer to elastic material option.
+                Property MaterialTable() As SimMaterialTable (Read Only)
+                    Returns the material table pointer to elastic material option.
 
         :return: SimMaterialTable
         """
@@ -115,12 +111,11 @@ class SimElastic(AnyObject):
     def moduli_time_scaletype(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ModuliTimeScaletype() As
-                | SimElasticModuliTimeScaleType
-                |     Returns or sets the type of elastic material constant's behavior.
+                Property ModuliTimeScaletype() As
+                SimElasticModuliTimeScaleType
+                    Returns or sets the type of elastic material constant's behavior.
 
         :return: int
         """
@@ -138,22 +133,21 @@ class SimElastic(AnyObject):
     def get_material_table_column(self, i_material_table_column: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMaterialTableColumn(SimElasticMaterialTableColumn iMaterialTableColumn)
-                | As SimTableColumn
-                |     Retrieves the column object for the specified table
-                |     column.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterialTableColumn[in]
-                |             The specified table column. 
-                | 
-                |     Returns:
-                |         The table column object. This value will be NULL_var in case the
-                |         specified column is not found in the table.
+                Func GetMaterialTableColumn(SimElasticMaterialTableColumn iMaterialTableColumn)
+                As SimTableColumn
+                    Retrieves the column object for the specified table
+                    column.
+                
+                    Parameters:
+                
+                        iMaterialTableColumn[in]
+                            The specified table column. 
+                
+                    Returns:
+                        The table column object. This value will be NULL_var in case the
+                        specified column is not found in the table.
 
         :param int i_material_table_column:
         :return: SimTableColumn
@@ -161,4 +155,4 @@ class SimElastic(AnyObject):
         return SimTableColumn(self.com_object.GetMaterialTableColumn(i_material_table_column))
 
     def __repr__(self):
-        return f'SimElastic(name="{ self.name }")'
+        return f'SimElastic(name="{self.name}")'

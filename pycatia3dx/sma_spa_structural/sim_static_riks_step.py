@@ -12,59 +12,57 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimStaticRiksStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SMAMpaFoundationIDLItf.SimStep
-                |                         SimStaticRiksStep
-                | 
-                | Represents the Static Riks Step object.
-                | 
-                | Example:
-                |     Given a SimSteps object, you can create a SimStaticRiksStep as
-                |     following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyStaticRiksStep As SimStaticRiksStep
-                |      Set MyStaticRiksStep = MySteps.Add("SimStaticRiksStep")
-                |      
-                | 
-                |     Given a SimSteps object, you can retrieve a SimStaticRiksStep named "Static
-                |     Riks Step.1" as following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyStaticRiksStep As SimStaticRiksStep
-                |      Set MyStaticRiksStep = MySteps.Item("Static Riks Step.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimSteps object mySteps, you can create a SimStaticRiksStep as
-                |     following:
-                | 
-                |      ...
-                |      myStaticRiksStep = mySteps.Add("SimStaticRiksStep")
-                |      
-                | 
-                |     Given a SimSteps object mySteps, you can retrieve a SimStaticRiksStep named
-                |     "Static Riks Step.1" as following:
-                | 
-                |      ...
-                |      myStaticRiksStep = mySteps.Item("Static Riks Step.1")
-                |      
-                | 
-                | See also:
-                |     SimSteps
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SMAMpaFoundationIDLItf.SimStep
+                                        SimStaticRiksStep
+                
+                Represents the Static Riks Step object.
+                
+                Example:
+                    Given a SimSteps object, you can create a SimStaticRiksStep as
+                    following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyStaticRiksStep As SimStaticRiksStep
+                     Set MyStaticRiksStep = MySteps.Add("SimStaticRiksStep")
+                     
+                
+                    Given a SimSteps object, you can retrieve a SimStaticRiksStep named "Static
+                    Riks Step.1" as following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyStaticRiksStep As SimStaticRiksStep
+                     Set MyStaticRiksStep = MySteps.Item("Static Riks Step.1")
+                     
+                
+                Example in Python:
+                    Given a SimSteps object mySteps, you can create a SimStaticRiksStep as
+                    following:
+                
+                     ...
+                     myStaticRiksStep = mySteps.Add("SimStaticRiksStep")
+                     
+                
+                    Given a SimSteps object mySteps, you can retrieve a SimStaticRiksStep named
+                    "Static Riks Step.1" as following:
+                
+                     ...
+                     myStaticRiksStep = mySteps.Item("Static Riks Step.1")
+                     
+                
+                See also:
+                    SimSteps
     
     """
 
@@ -76,11 +74,10 @@ class SimStaticRiksStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -99,16 +96,15 @@ class SimStaticRiksStep(SimStep):
     def geometric_non_linearity_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property GeometricNonLinearityFlag() As boolean
-                |     Returns or sets the flag that determines if the step is geometrically
-                |     non-linear.
-                | 
-                |     TRUE: the step is geometrically non-linear.
-                | 
-                |     FALSE: the step is not geometrically non-linear.
+                Property GeometricNonLinearityFlag() As boolean
+                    Returns or sets the flag that determines if the step is geometrically
+                    non-linear.
+                
+                    TRUE: the step is geometrically non-linear.
+                
+                    FALSE: the step is not geometrically non-linear.
 
         :return: bool
         """
@@ -127,11 +123,10 @@ class SimStaticRiksStep(SimStep):
     def initial_arc_length_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InitialArcLengthIncrement() As double
-                |     Returns or sets the initial arc length increment for the Static Riks step.
+                Property InitialArcLengthIncrement() As double
+                    Returns or sets the initial arc length increment for the Static Riks step.
 
         :return: float
         """
@@ -150,11 +145,10 @@ class SimStaticRiksStep(SimStep):
     def matrix_storage_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MatrixStorageScheme() As SimMatrixStorageScheme
-                |     Returns or sets the type of the matrix storage for the Static Riks step.
+                Property MatrixStorageScheme() As SimMatrixStorageScheme
+                    Returns or sets the type of the matrix storage for the Static Riks step.
 
         :return: SimMatrixStorageScheme
         """
@@ -173,11 +167,10 @@ class SimStaticRiksStep(SimStep):
     def maximum_arc_length_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumArcLengthIncrement() As double
-                |     Returns or sets the maximum arc length increment for the Static Riks step.
+                Property MaximumArcLengthIncrement() As double
+                    Returns or sets the maximum arc length increment for the Static Riks step.
 
         :return: float
         """
@@ -196,13 +189,12 @@ class SimStaticRiksStep(SimStep):
     def maximum_displacement_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumDisplacementType() As
-                | SimStaticRiksStepDisplacementType
-                |     Returns or sets the type of maximum displacement at the monitored node for
-                |     the Static Riks step.
+                Property MaximumDisplacementType() As
+                SimStaticRiksStepDisplacementType
+                    Returns or sets the type of maximum displacement at the monitored node for
+                    the Static Riks step.
 
         :return: SimStaticRiksStepDisplacementType
         """
@@ -221,11 +213,10 @@ class SimStaticRiksStep(SimStep):
     def maximum_increments(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumIncrements() As long
-                |     Returns or sets the maximum number of increments for the Static Riks step.
+                Property MaximumIncrements() As long
+                    Returns or sets the maximum number of increments for the Static Riks step.
 
         :return: int
         """
@@ -244,12 +235,11 @@ class SimStaticRiksStep(SimStep):
     def maximum_load_proportionality_factor(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumLoadProportionalityFactor() As double
-                |     Returns or sets the maximum load proportionality factor for the Static Riks
-                |     step.
+                Property MaximumLoadProportionalityFactor() As double
+                    Returns or sets the maximum load proportionality factor for the Static Riks
+                    step.
 
         :return: float
         """
@@ -268,13 +258,12 @@ class SimStaticRiksStep(SimStep):
     def maximum_rotation(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumRotation() As double
-                |     Returns or sets the maximum rotational displacement which, if crossed at
-                |     the monitored node and DOF during an increment, ends the Static Riks step at
-                |     the current increment.
+                Property MaximumRotation() As double
+                    Returns or sets the maximum rotational displacement which, if crossed at
+                    the monitored node and DOF during an increment, ends the Static Riks step at
+                    the current increment.
 
         :return: float
         """
@@ -293,13 +282,12 @@ class SimStaticRiksStep(SimStep):
     def maximum_translation(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumTranslation() As double
-                |     Returns or sets the maximum translational displacement which, if crossed at
-                |     the monitored node and DOF during an increment, ends the Static Riks step at
-                |     the current increment.
+                Property MaximumTranslation() As double
+                    Returns or sets the maximum translational displacement which, if crossed at
+                    the monitored node and DOF during an increment, ends the Static Riks step at
+                    the current increment.
 
         :return: float
         """
@@ -318,11 +306,10 @@ class SimStaticRiksStep(SimStep):
     def minimum_arc_length_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MinimumArcLengthIncrement() As double
-                |     Returns or sets the minimum arc length increment for the Static Riks step.
+                Property MinimumArcLengthIncrement() As double
+                    Returns or sets the minimum arc length increment for the Static Riks step.
 
         :return: float
         """
@@ -341,11 +328,10 @@ class SimStaticRiksStep(SimStep):
     def monitored_node_support(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MonitoredNodeSupport() As CATBaseDispatch (Read Only)
-                |     Returns the support of the monitored node for the Static Riks step.
+                Property MonitoredNodeSupport() As CATBaseDispatch (Read Only)
+                    Returns the support of the monitored node for the Static Riks step.
 
         :return: AnyObject
         """
@@ -356,12 +342,11 @@ class SimStaticRiksStep(SimStep):
     def monitored_rotational_dof(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MonitoredRotationalDOF() As SimDof
-                |     Returns or sets the rotational degree of freedom of the node being
-                |     monitored for the Static Riks step.
+                Property MonitoredRotationalDOF() As SimDof
+                    Returns or sets the rotational degree of freedom of the node being
+                    monitored for the Static Riks step.
 
         :return: int
         """
@@ -380,12 +365,11 @@ class SimStaticRiksStep(SimStep):
     def monitored_translational_dof(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MonitoredTranslationalDOF() As SimDof
-                |     Returns or sets the translational degree of freedom of the node being
-                |     monitored for the Static Riks step.
+                Property MonitoredTranslationalDOF() As SimDof
+                    Returns or sets the translational degree of freedom of the node being
+                    monitored for the Static Riks step.
 
         :return: int
         """
@@ -404,12 +388,11 @@ class SimStaticRiksStep(SimStep):
     def time_incrementation_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TimeIncrementationScheme() As
-                | SimTimeIncrementationScheme
-                |     Returns or sets the time incrementation type for the Static Riks step.
+                Property TimeIncrementationScheme() As
+                SimTimeIncrementationScheme
+                    Returns or sets the time incrementation type for the Static Riks step.
 
         :return: SimTimeIncrementationScheme
         """
@@ -428,12 +411,11 @@ class SimStaticRiksStep(SimStep):
     def total_arc_length(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TotalArcLength() As double
-                |     Returns or sets the total arc length scale factor associated with the
-                |     Static Riks step. 
+                Property TotalArcLength() As double
+                    Returns or sets the total arc length scale factor associated with the
+                    Static Riks step. 
 
         :return: float
         """
@@ -449,4 +431,4 @@ class SimStaticRiksStep(SimStep):
         self.com_object.TotalArcLength = value
 
     def __repr__(self):
-        return f'SimStaticRiksStep(name="{ self.name }")'
+        return f'SimStaticRiksStep(name="{self.name}")'

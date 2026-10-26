@@ -12,22 +12,20 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class TPSParallelOnScreen(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     TPSParallelOnScreen
-                | 
-                | Interface for Parallel On Screen.
-                | TPS for Technological Product Specifications.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    TPSParallelOnScreen
+                
+                Interface for Parallel On Screen.
+                TPS for Technological Product Specifications.
     
     """
 
@@ -39,11 +37,10 @@ class TPSParallelOnScreen(AnyObject):
     def parallel_on_screen(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ParallelOnScreen() As boolean
-                |     Retrieves the Parallel On Screen for the annotation.
+                Property ParallelOnScreen() As boolean
+                    Retrieves the Parallel On Screen for the annotation.
 
         :return: bool
         """
@@ -62,11 +59,10 @@ class TPSParallelOnScreen(AnyObject):
     def zoomable(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Zoomable() As boolean
-                |     Retrieves the Zoomable for the annotation. 
+                Property Zoomable() As boolean
+                    Retrieves the Zoomable for the annotation. 
 
         :return: bool
         """
@@ -82,4 +78,4 @@ class TPSParallelOnScreen(AnyObject):
         self.com_object.Zoomable = value
 
     def __repr__(self):
-        return f'TpsParallelOnScreen(name="{ self.name }")'
+        return f'TpsParallelOnScreen(name="{self.name}")'

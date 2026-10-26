@@ -12,21 +12,19 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingToolHolderConical(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingToolHolderConical
-                | 
-                | Interface representing Conical Tool Holder.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingToolHolderConical
+                
+                Interface representing Conical Tool Holder.
     
     """
 
@@ -35,4 +33,4 @@ class ManufacturingToolHolderConical(AnyObject):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'ManufacturingToolHolderConical(name="{ self.name }")'
+        return f'ManufacturingToolHolderConical(name="{self.name}")'

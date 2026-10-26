@@ -12,21 +12,19 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimBuckleSubspaceEigensolver(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimBuckleSubspaceEigensolver
-                | 
-                | Represents the Buckle Subspace Eigensolver object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimBuckleSubspaceEigensolver
+                
+                Represents the Buckle Subspace Eigensolver object.
     
     """
 
@@ -38,11 +36,10 @@ class SimBuckleSubspaceEigensolver(AnyObject):
     def maximum_iterations(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumIterations() As long
-                |     Returns or sets the maximum number of iterations.
+                Property MaximumIterations() As long
+                    Returns or sets the maximum number of iterations.
 
         :return: int
         """
@@ -61,11 +58,10 @@ class SimBuckleSubspaceEigensolver(AnyObject):
     def number_of_eigenvalues(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfEigenvalues() As long
-                |     Returns or sets the number of Eigen values. 
+                Property NumberOfEigenvalues() As long
+                    Returns or sets the number of Eigen values. 
 
         :return: int
         """
@@ -81,4 +77,4 @@ class SimBuckleSubspaceEigensolver(AnyObject):
         self.com_object.NumberOfEigenvalues = value
 
     def __repr__(self):
-        return f'SimBuckleSubspaceEigensolver(name="{ self.name }")'
+        return f'SimBuckleSubspaceEigensolver(name="{self.name}")'

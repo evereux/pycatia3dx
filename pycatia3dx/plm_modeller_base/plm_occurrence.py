@@ -19,20 +19,19 @@ if TYPE_CHECKING:
 class PLMOccurrence(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PLMOccurrence
-                | 
-                | Represents a PLM Product Occurrence object.
-                | Enables to retrieve a PLM Entity (Instance/Reference) and a PLM Occurrences
-                | collection.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PLMOccurrence
+                
+                Represents a PLM Product Occurrence object.
+                Enables to retrieve a PLM Entity (Instance/Reference) and a PLM Occurrences
+                collection.
     
     """
 
@@ -44,14 +43,13 @@ class PLMOccurrence(AnyObject):
     def plm_entity(self) -> PLMEntity:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PLMEntity() As PLMEntity (Read Only)
-                |     Returns the Instance or Reference Product Model object.
-                |     Role: This method retrieves the corresponding PLM Product Instance if
-                |     calling object is an instance or the PLM Product Reference if it is a
-                |     reference.
+                Property PLMEntity() As PLMEntity (Read Only)
+                    Returns the Instance or Reference Product Model object.
+                    Role: This method retrieves the corresponding PLM Product Instance if
+                    calling object is an instance or the PLM Product Reference if it is a
+                    reference.
 
         :return: PLMEntity
         """
@@ -62,13 +60,12 @@ class PLMOccurrence(AnyObject):
     def plm_occurrences(self) -> 'PLMOccurrences':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PLMOccurrences() As PLMOccurrences (Read Only)
-                |     Returns the PLM Product Occurrences collection.
-                |     Role: This method returns the Product Occurrences collection directly
-                |     aggregated within this object.
+                Property PLMOccurrences() As PLMOccurrences (Read Only)
+                    Returns the PLM Product Occurrences collection.
+                    Role: This method returns the Product Occurrences collection directly
+                    aggregated within this object.
 
         :return: PLMOccurrences
         """

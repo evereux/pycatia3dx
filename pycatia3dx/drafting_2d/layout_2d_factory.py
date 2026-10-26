@@ -14,16 +14,15 @@ from pycatia3dx.system.any_object import AnyObject
 class Layout2DFactory(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Layout2DFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Layout2DFactory
 
     
     """
@@ -35,35 +34,34 @@ class Layout2DFactory(AnyObject):
     def create_2d_layout(self, i_standard_name: str) -> Layout2DRoot:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Create2DLayout(CATBSTR iStandardName) As Layout2DRoot
-                |     Create the 2DLayout associated to the 3D mechanical feature tha implement
-                |     this interface. E.g. a Mechanical Part.
-                | 
-                |     Parameters:
-                | 
-                |         CATBSTR
-                |             iStandardName The standard name to apply to the new layout.
-                |             
-                |         oLayout
-                |             The created 2DLayout. This feature is unique for a given 3D context
-                |             feature. Consequently requesting this interface on a 3D feature that is already
-                |             associated to a 2DLayout feature will fail. You must first request for any
-                |             existing 2DLayout via AnyObject.GetItem method using CATLayoutRoot key
-                |             parameter to check for 2DLayout pre-existing feature as follow
-                |             :
-                | 
-                |              Dim myPart As CATIAPart
-                |              Set myPart = CATIA.ActiveEditor.ActiveObject
-                |              Dim MyRoot As Layout2DRoot
-                |              Set MyRoot = myPart.GetItem("CATLayoutRoot")
-                |              if MyRoot Is Nothing then
-                |                Dim MyRootFact As Layout2DFactory
-                |                Set MyRootFact = myPart.GetItem("CATLayoutRootFactory")
-                |                Set MyRoot = MyRootFact.Create2DLayout("ISO_3D")
-                |              end if
+                Func Create2DLayout(CATBSTR iStandardName) As Layout2DRoot
+                    Create the 2DLayout associated to the 3D mechanical feature tha implement
+                    this interface. E.g. a Mechanical Part.
+                
+                    Parameters:
+                
+                        CATBSTR
+                            iStandardName The standard name to apply to the new layout.
+                            
+                        oLayout
+                            The created 2DLayout. This feature is unique for a given 3D context
+                            feature. Consequently requesting this interface on a 3D feature that is already
+                            associated to a 2DLayout feature will fail. You must first request for any
+                            existing 2DLayout via AnyObject.GetItem method using CATLayoutRoot key
+                            parameter to check for 2DLayout pre-existing feature as follow
+                            :
+                
+                             Dim myPart As CATIAPart
+                             Set myPart = CATIA.ActiveEditor.ActiveObject
+                             Dim MyRoot As Layout2DRoot
+                             Set MyRoot = myPart.GetItem("CATLayoutRoot")
+                             if MyRoot Is Nothing then
+                               Dim MyRootFact As Layout2DFactory
+                               Set MyRootFact = myPart.GetItem("CATLayoutRootFactory")
+                               Set MyRoot = MyRootFact.Create2DLayout("ISO_3D")
+                             end if
 
         :param str i_standard_name:
         :return: Layout2DRoot

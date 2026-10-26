@@ -12,22 +12,20 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SfdOpeningPlate(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SfdOpeningPlate
-                | 
-                | Object to filter a Structure Functional Modeler Opening for
-                | Plate.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SfdOpeningPlate
+                
+                Object to filter a Structure Functional Modeler Opening for
+                Plate.
     
     """
 
@@ -38,23 +36,22 @@ class SfdOpeningPlate(AnyObject):
     def move_to_opening_p_pr_set(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub MoveToOpeningPPrSet()
-                |     Moves the PlateOpening to the OpeningPPrSet. So this Opening will now
-                |     interrupt the stiffeners.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example moves this opening to
-                |              OpeningPlateProfileSet.
-                |              
-                | 
-                |              Dim ObjSfdOpeningPlate As SfdOpeningPlate
-                |              Set ObjSfdOpeningPlate = ObjStrOpening.GetItem("SfdOpeningPlate")
-                |              ObjSfdOpeningPlate.MoveToOpeningPPrSet
+                Sub MoveToOpeningPPrSet()
+                    Moves the PlateOpening to the OpeningPPrSet. So this Opening will now
+                    interrupt the stiffeners.
+                
+                    Example:
+                
+                
+                             This example moves this opening to
+                             OpeningPlateProfileSet.
+                             
+                
+                             Dim ObjSfdOpeningPlate As SfdOpeningPlate
+                             Set ObjSfdOpeningPlate = ObjStrOpening.GetItem("SfdOpeningPlate")
+                             ObjSfdOpeningPlate.MoveToOpeningPPrSet
 
         :return: None
         """
@@ -63,25 +60,24 @@ class SfdOpeningPlate(AnyObject):
     def move_to_opening_p_set(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub MoveToOpeningPSet()
-                |     Moves the PlateOpening to the OpeningPSet. So this Opening will not
-                |     interrupt the stiffeners.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example moves this opening to
-                |              OpeningPlateSet.
-                |              
-                | 
-                |              ObjSfdOpeningPlate.MoveToOpeningPSet
+                Sub MoveToOpeningPSet()
+                    Moves the PlateOpening to the OpeningPSet. So this Opening will not
+                    interrupt the stiffeners.
+                
+                    Example:
+                
+                
+                             This example moves this opening to
+                             OpeningPlateSet.
+                             
+                
+                             ObjSfdOpeningPlate.MoveToOpeningPSet
 
         :return: None
         """
         return self.com_object.MoveToOpeningPSet()
 
     def __repr__(self):
-        return f'SfdOpeningPlate(name="{ self.name }")'
+        return f'SfdOpeningPlate(name="{self.name}")'

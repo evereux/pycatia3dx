@@ -17,18 +17,17 @@ from pycatia3dx.types.general import CATVariant
 class PLMOccurrences(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     PLMOccurrences
-                | 
-                | Collection of PLM Product Occurrences.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    PLMOccurrences
+                
+                Collection of PLM Product Occurrences.
     
     """
 
@@ -39,23 +38,22 @@ class PLMOccurrences(Collection):
     def item(self, i_index: CATVariant) -> PLMOccurrence:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As PLMOccurrence
-                |     Returns a PLM Product Occurrence from its index.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the PLMOccurrence to retrieve from the collection of
-                |             PLMOccurrences. As a numerics, this index is the rank of the PLMOccurrence in
-                |             the collection. The index of the first PLMOccurrence in the collection is 1,
-                |             and the index of the last PLMOccurrence is returned by Collection.get_Count
-                |             method. 
-                | 
-                |     Returns:
-                |         A PLM Product Occurrence.
+                Func Item(CATVariant iIndex) As PLMOccurrence
+                    Returns a PLM Product Occurrence from its index.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the PLMOccurrence to retrieve from the collection of
+                            PLMOccurrences. As a numerics, this index is the rank of the PLMOccurrence in
+                            the collection. The index of the first PLMOccurrence in the collection is 1,
+                            and the index of the last PLMOccurrence is returned by Collection.get_Count
+                            method. 
+                
+                    Returns:
+                        A PLM Product Occurrence.
 
         :param CATVariant i_index:
         :return: PLMOccurrence

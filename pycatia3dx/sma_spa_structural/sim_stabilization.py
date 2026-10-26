@@ -12,21 +12,19 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimStabilization(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimStabilization
-                | 
-                | Represents the Stabilization object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimStabilization
+                
+                Represents the Stabilization object.
     
     """
 
@@ -38,16 +36,15 @@ class SimStabilization(AnyObject):
     def adaptive_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AdaptiveFlag() As boolean
-                |     Returns or sets the flag that determines if the adaptive automatic
-                |     stabilization is applied.
-                | 
-                |     TRUE: the adaptive automatic stabilization is applied.
-                | 
-                |     FALSE: the adaptive automatic stabilization is not applied.
+                Property AdaptiveFlag() As boolean
+                    Returns or sets the flag that determines if the adaptive automatic
+                    stabilization is applied.
+                
+                    TRUE: the adaptive automatic stabilization is applied.
+                
+                    FALSE: the adaptive automatic stabilization is not applied.
 
         :return: bool
         """
@@ -66,12 +63,11 @@ class SimStabilization(AnyObject):
     def damping_factor(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DampingFactor() As double
-                |     Returns or sets the stabilization damping factor. Quantity: Real, units:
-                |     None.
+                Property DampingFactor() As double
+                    Returns or sets the stabilization damping factor. Quantity: Real, units:
+                    None.
 
         :return: float
         """
@@ -90,12 +86,11 @@ class SimStabilization(AnyObject):
     def energy_fraction(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property EnergyFraction() As double
-                |     Returns or sets the stabilization energy fraction. Quantity: Real, units:
-                |     None.
+                Property EnergyFraction() As double
+                    Returns or sets the stabilization energy fraction. Quantity: Real, units:
+                    None.
 
         :return: float
         """
@@ -114,12 +109,11 @@ class SimStabilization(AnyObject):
     def energy_ratio_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property EnergyRatioTolerance() As double
-                |     Returns or sets the stabilization energy ratio tolerance. Quantity: Real,
-                |     units: None.
+                Property EnergyRatioTolerance() As double
+                    Returns or sets the stabilization energy ratio tolerance. Quantity: Real,
+                    units: None.
 
         :return: float
         """
@@ -138,12 +132,11 @@ class SimStabilization(AnyObject):
     def stabilization_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StabilizationType() As
-                | SimStabilizationStabilizationType
-                |     Returns or sets the stabilization type. 
+                Property StabilizationType() As
+                SimStabilizationStabilizationType
+                    Returns or sets the stabilization type. 
 
         :return: SimStabilizationStabilizationType
         """
@@ -159,4 +152,4 @@ class SimStabilization(AnyObject):
         self.com_object.StabilizationType = value
 
     def __repr__(self):
-        return f'SimStabilization(name="{ self.name }")'
+        return f'SimStabilization(name="{self.name}")'

@@ -12,25 +12,23 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DrManufacturingPattern(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DrManufacturingPattern
-                | 
-                | Represents an object that is Drilling Riveting Pattern Role: To manage Drill
-                | Rivet patterns
-                | 
-                | See also:
-                |     DrManufacturingPattern
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DrManufacturingPattern
+                
+                Represents an object that is Drilling Riveting Pattern Role: To manage Drill
+                Rivet patterns
+                
+                See also:
+                    DrManufacturingPattern
     
     """
 
@@ -41,16 +39,15 @@ class DrManufacturingPattern(AnyObject):
     def add_manufacturing_fastener(self, ih_mfg_fastener: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddManufacturingFastener(AnyObject ihMfgFastener)
-                |     Add a Manufacturing Fastener.
-                | 
-                |     Parameters:
-                | 
-                |         ihMfgFastener
-                |             The Manufacturing Fastener to add.
+                Sub AddManufacturingFastener(AnyObject ihMfgFastener)
+                    Add a Manufacturing Fastener.
+                
+                    Parameters:
+                
+                        ihMfgFastener
+                            The Manufacturing Fastener to add.
 
         :param AnyObject ih_mfg_fastener:
         :return: None
@@ -60,19 +57,18 @@ class DrManufacturingPattern(AnyObject):
     def get_manufacturing_fastener_from_index(self, i_index: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetManufacturingFastenerFromIndex(long iIndex) As
-                | AnyObject
-                |     Get the Manufacturing Fastener from the index.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The position index. 
-                |         ohMfgFastener
-                |             The Manufacturing Fastener.
+                Func GetManufacturingFastenerFromIndex(long iIndex) As
+                AnyObject
+                    Get the Manufacturing Fastener from the index.
+                
+                    Parameters:
+                
+                        iIndex
+                            The position index. 
+                        ohMfgFastener
+                            The Manufacturing Fastener.
 
         :param int i_index:
         :return: AnyObject
@@ -82,17 +78,16 @@ class DrManufacturingPattern(AnyObject):
     def get_manufacturing_fasteners(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetManufacturingFasteners() As CATSafeArrayVariant
-                |     Get all the Manufacturing Fasteners that belong to this
-                |     pattern.
-                | 
-                |     Parameters:
-                | 
-                |         oListMfgFasteners
-                |             The list of Manufacturing Fasteners.
+                Func GetManufacturingFasteners() As CATSafeArrayVariant
+                    Get all the Manufacturing Fasteners that belong to this
+                    pattern.
+                
+                    Parameters:
+                
+                        oListMfgFasteners
+                            The list of Manufacturing Fasteners.
 
         :return: tuple
         """
@@ -101,16 +96,15 @@ class DrManufacturingPattern(AnyObject):
     def get_ordering_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetOrderingMode() As long
-                |     Get the ordering mode of this pattern.
-                | 
-                |     Parameters:
-                | 
-                |         oOrderingMode
-                |             Ordering mode.
+                Func GetOrderingMode() As long
+                    Get the ordering mode of this pattern.
+                
+                    Parameters:
+                
+                        oOrderingMode
+                            Ordering mode.
 
         :return: int
         """
@@ -119,21 +113,20 @@ class DrManufacturingPattern(AnyObject):
     def move_after(self, i_from_index: int, i_to_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub MoveAfter(long iFromIndex,long iToIndex)
-                |     Move the Manufacturing Fastener from one index to another
-                |     index
-                | 
-                |     Parameters:
-                | 
-                |         iFromIndex
-                |             Position index from where the Manufacturing Fastener needs to be
-                |             moved. 
-                |         iToIndex
-                |             Position index to where the Manufacturing Fastener needs to be
-                |             moved.
+                Sub MoveAfter(long iFromIndex,long iToIndex)
+                    Move the Manufacturing Fastener from one index to another
+                    index
+                
+                    Parameters:
+                
+                        iFromIndex
+                            Position index from where the Manufacturing Fastener needs to be
+                            moved. 
+                        iToIndex
+                            Position index to where the Manufacturing Fastener needs to be
+                            moved.
 
         :param int i_from_index:
         :param int i_to_index:
@@ -144,16 +137,15 @@ class DrManufacturingPattern(AnyObject):
     def remove_manufacturing_fastener(self, ih_mfg_fastener: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveManufacturingFastener(AnyObject ihMfgFastener)
-                |     Remove a Manufacturing Fastener.
-                | 
-                |     Parameters:
-                | 
-                |         ihMfgFastener
-                |             The Manufacturing Fastener to remove.
+                Sub RemoveManufacturingFastener(AnyObject ihMfgFastener)
+                    Remove a Manufacturing Fastener.
+                
+                    Parameters:
+                
+                        ihMfgFastener
+                            The Manufacturing Fastener to remove.
 
         :param AnyObject ih_mfg_fastener:
         :return: None
@@ -163,16 +155,15 @@ class DrManufacturingPattern(AnyObject):
     def set_ordering_mode(self, i_ordering_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetOrderingMode(long iOrderingMode)
-                |     Set the ordering mode for this pattern
-                | 
-                |     Parameters:
-                | 
-                |         iOrderingMode
-                |             Ordering mode. 
+                Sub SetOrderingMode(long iOrderingMode)
+                    Set the ordering mode for this pattern
+                
+                    Parameters:
+                
+                        iOrderingMode
+                            Ordering mode. 
 
         :param int i_ordering_mode:
         :return: None
@@ -180,4 +171,4 @@ class DrManufacturingPattern(AnyObject):
         return self.com_object.SetOrderingMode(i_ordering_mode)
 
     def __repr__(self):
-        return f'DrManufacturingPattern(name="{ self.name }")'
+        return f'DrManufacturingPattern(name="{self.name}")'

@@ -12,33 +12,31 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SfdOpeningPlateSet(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SfdOpeningPlateSet
-                | 
-                | Object to filter a Structure Functional Modeler OpeningPlateSet by
-                | adhesion.
-                | 
-                | Example:
-                | 
-                | 
-                |          This example shows how to retrieve SfdOpeningPlateSet
-                |          object.
-                |          
-                | 
-                |          Dim ObjSfdOpeningPlateSet As SfdOpeningPlateSet
-                |          Set ObjSfdOpeningPlateSet=
-                |          ObjStrOpening.GetItem("SfdOpeningPlateSet")
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SfdOpeningPlateSet
+                
+                Object to filter a Structure Functional Modeler OpeningPlateSet by
+                adhesion.
+                
+                Example:
+                
+                
+                         This example shows how to retrieve SfdOpeningPlateSet
+                         object.
+                         
+                
+                         Dim ObjSfdOpeningPlateSet As SfdOpeningPlateSet
+                         Set ObjSfdOpeningPlateSet=
+                         ObjStrOpening.GetItem("SfdOpeningPlateSet")
 
     """
 
@@ -47,4 +45,4 @@ class SfdOpeningPlateSet(AnyObject):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'SfdOpeningPlateSet(name="{ self.name }")'
+        return f'SfdOpeningPlateSet(name="{self.name}")'

@@ -13,21 +13,19 @@ from pycatia3dx.sde.ssm_space_manager import SsmSpaceManager
 
 
 class SsmSpaceSystem(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SsmSpaceSystem
-                | 
-                | Role: This interface is specific to Space System
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SsmSpaceSystem
+                
+                Role: This interface is specific to Space System
     
     """
 
@@ -39,19 +37,18 @@ class SsmSpaceSystem(AnyObject):
     def space_manager(self) -> SsmSpaceManager:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpaceManager() As SsmSpaceManager (Read Only)
-                |     Get Child SpaceManager
-                | 
-                |     Parameters:
-                | 
-                |         oSpaceManager
-                |             output SpaceManager 
-                | 
-                |     Returns:
-                |         Error code of function. 
+                Property SpaceManager() As SsmSpaceManager (Read Only)
+                    Get Child SpaceManager
+                
+                    Parameters:
+                
+                        oSpaceManager
+                            output SpaceManager 
+                
+                    Returns:
+                        Error code of function. 
 
         :return: SsmSpaceManager
         """
@@ -59,4 +56,4 @@ class SsmSpaceSystem(AnyObject):
         return SsmSpaceManager(self.com_object.SpaceManager)
 
     def __repr__(self):
-        return f'SsmSpaceSystem(name="{ self.name }")'
+        return f'SsmSpaceSystem(name="{self.name}")'

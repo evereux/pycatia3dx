@@ -13,24 +13,22 @@ from pycatia3dx.tps.capture import Capture
 
 
 class CaptureFactory(Factory):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Factory
-                |                         CaptureFactory
-                | 
-                | Interface for the Capture Factory.
-                | This factory is implemented on the Set object. All the created Captures are
-                | added to the Set from which this interface is retrieved.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Factory
+                                        CaptureFactory
+                
+                Interface for the Capture Factory.
+                This factory is implemented on the Set object. All the created Captures are
+                added to the Set from which this interface is retrieved.
     
     """
 
@@ -41,20 +39,19 @@ class CaptureFactory(Factory):
     def create_capture(self) -> Capture:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateCapture() As Capture
-                |     Create a Capture.
-                | 
-                |     Parameters:
-                | 
-                |         oCapture
-                |             The new created Capture. 
+                Func CreateCapture() As Capture
+                    Create a Capture.
+                
+                    Parameters:
+                
+                        oCapture
+                            The new created Capture. 
 
         :return: Capture
         """
         return Capture(self.com_object.CreateCapture())
 
     def __repr__(self):
-        return f'CaptureFactory(name="{ self.name }")'
+        return f'CaptureFactory(name="{self.name}")'

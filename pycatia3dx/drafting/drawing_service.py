@@ -13,21 +13,20 @@ from pycatia3dx.interfaces.service import Service
 class DrawingService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         DrawingService
-                | 
-                | Interface representing the service to retrieve available drawing standards and
-                | sheet styles.
-                | Application.GetSessionService("CATDrawingService")
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        DrawingService
+                
+                Interface representing the service to retrieve available drawing standards and
+                sheet styles.
+                Application.GetSessionService("CATDrawingService")
     
     """
 
@@ -39,11 +38,10 @@ class DrawingService(Service):
     def number_of_standards(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfStandards() As long (Read Only)
-                |     Returns the number of standards in the environment.
+                Property NumberOfStandards() As long (Read Only)
+                    Returns the number of standards in the environment.
 
         :return: int
         """
@@ -53,19 +51,18 @@ class DrawingService(Service):
     def number_of_sheet_styles(self, i_standard_name: str) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func NumberOfSheetStyles(CATBSTR iStandardName) As long
-                |     Returns the number of sheet style from a given standard.
-                | 
-                |     Parameters:
-                | 
-                |         iNumOfStandard
-                |             Standard number. 
-                | 
-                |     Returns:
-                |         the number of sheet style for the given standard.
+                Func NumberOfSheetStyles(CATBSTR iStandardName) As long
+                    Returns the number of sheet style from a given standard.
+                
+                    Parameters:
+                
+                        iNumOfStandard
+                            Standard number. 
+                
+                    Returns:
+                        the number of sheet style for the given standard.
 
         :param str i_standard_name:
         :return: int
@@ -75,18 +72,17 @@ class DrawingService(Service):
     def sheet_style_names_list(self, i_standard_name: str, o_list_of_sheet_style_names: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SheetStyleNamesList(CATBSTR iStandardName,CATSafeArrayVariant
-                | oListOfSheetStyleNames)
-                |     Returns the list of available Sheet style for a given
-                |     standard.
-                | 
-                |     Parameters:
-                | 
-                |         oListOfSheetStyleNames
-                |             The list of available sheet style names.
+                Sub SheetStyleNamesList(CATBSTR iStandardName,CATSafeArrayVariant
+                oListOfSheetStyleNames)
+                    Returns the list of available Sheet style for a given
+                    standard.
+                
+                    Parameters:
+                
+                        oListOfSheetStyleNames
+                            The list of available sheet style names.
 
         :param str i_standard_name:
         :param tuple o_list_of_sheet_style_names:
@@ -97,20 +93,19 @@ class DrawingService(Service):
     def standard_names_list(self, o_list_of_standard_names: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub StandardNamesList(CATSafeArrayVariant
-                | oListOfStandardNames)
-                |     Returns the list of available standard names.
+                Sub StandardNamesList(CATSafeArrayVariant
+                oListOfStandardNames)
+                    Returns the list of available standard names.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oListOfStandardNames
-                |             The list of available standard names.
+                        oListOfStandardNames
+                            The list of available standard names.
                 |
                 |
-                | Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
+                Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
 
         :param tuple o_list_of_standard_names:
         :return: None

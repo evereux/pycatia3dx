@@ -18,18 +18,17 @@ from pycatia3dx.types.general import CATVariant
 class VALConcerns(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     VALConcerns
-                | 
-                | A collection of Concerns.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    VALConcerns
+                
+                A collection of Concerns.
     
     """
 
@@ -40,22 +39,21 @@ class VALConcerns(Collection):
     def add(self) -> VALConcern:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add() As VALConcern
-                |     Creates a Concern and adds it to the Concern collection.
-                | 
-                |     Returns:
-                |         The created Concern 
-                |     Example:
-                | 
-                |             This example creates a new Concern in the cConcerns
-                |             collection.
-                |             
-                | 
-                |             Dim oNewConcernText As Concern
-                |             Set oNewConcernText = cConcerns.Add
+                Func Add() As VALConcern
+                    Creates a Concern and adds it to the Concern collection.
+                
+                    Returns:
+                        The created Concern 
+                    Example:
+                
+                            This example creates a new Concern in the cConcerns
+                            collection.
+                            
+                
+                            Dim oNewConcernText As Concern
+                            Set oNewConcernText = cConcerns.Add
 
         :return: VALConcern
         """
@@ -64,36 +62,35 @@ class VALConcerns(Collection):
     def item(self, i_index: CATVariant) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As CATBaseDispatch
-                |     Returns a Concern using its index from the Concerns
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or the name of the Concern to retrieve from the
-                |             collection of Concerns. As a numerics, this index is the rank of the Concern in
-                |             the collection. The index of the first Concern in the collection is 1, and the
-                |             index of the last Concern is Count. As a string, it is the name you assigned to
-                |             the Concern. 
-                | 
-                |     Returns:
-                |         The retrieved Concern 
-                |     Example:
-                | 
-                |             This example retrieves in oConcern1 the ninth
-                |             Concern,
-                |             and in oConcern2 the Concern named
-                |             Concern3 from the cConcerns collection. 
-                |             
-                | 
-                |             Dim oConcern1 As Concern
-                |             Set oConcern1 = cConcerns.Item(9)
-                |             Dim oConcern2 As Concern
-                |             Set oConcern2 = cConcerns.Item("Concern3")
+                Func Item(CATVariant iIndex) As CATBaseDispatch
+                    Returns a Concern using its index from the Concerns
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index or the name of the Concern to retrieve from the
+                            collection of Concerns. As a numerics, this index is the rank of the Concern in
+                            the collection. The index of the first Concern in the collection is 1, and the
+                            index of the last Concern is Count. As a string, it is the name you assigned to
+                            the Concern. 
+                
+                    Returns:
+                        The retrieved Concern 
+                    Example:
+                
+                            This example retrieves in oConcern1 the ninth
+                            Concern,
+                            and in oConcern2 the Concern named
+                            Concern3 from the cConcerns collection. 
+                            
+                
+                            Dim oConcern1 As Concern
+                            Set oConcern1 = cConcerns.Item(9)
+                            Dim oConcern2 As Concern
+                            Set oConcern2 = cConcerns.Item("Concern3")
 
         :param CATVariant i_index:
         :return: AnyObject
@@ -103,30 +100,29 @@ class VALConcerns(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(CATVariant iIndex)
-                |     Removes a Concern from the Concerns collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or the name of the Concern to retrieve from the
-                |             collection of Concerns. As a numerics, this index is the rank of the Concern in
-                |             the collection. The index of the first Concern in the collection is 1, and the
-                |             index of the last Concern is Count. As a string, it is the name you assigned to
-                |             the Concern. 
-                | 
-                |     Example:
-                | 
-                |             The following example removes the tenth Concern and the Concern
-                |             named
-                |             Concern2 from the cConcerns collection.
-                |             
-                | 
-                |             cConcerns.Remove(10)
-                |             cConcerns.Remove("Concern2")
+                Sub Remove(CATVariant iIndex)
+                    Removes a Concern from the Concerns collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index or the name of the Concern to retrieve from the
+                            collection of Concerns. As a numerics, this index is the rank of the Concern in
+                            the collection. The index of the first Concern in the collection is 1, and the
+                            index of the last Concern is Count. As a string, it is the name you assigned to
+                            the Concern. 
+                
+                    Example:
+                
+                            The following example removes the tenth Concern and the Concern
+                            named
+                            Concern2 from the cConcerns collection.
+                            
+                
+                            cConcerns.Remove(10)
+                            cConcerns.Remove("Concern2")
 
         :param CATVariant i_index:
         :return: None

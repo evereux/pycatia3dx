@@ -13,25 +13,23 @@ from pycatia3dx.part.surface_based_shape import SurfaceBasedShape
 
 
 class ReplaceFace(SurfaceBasedShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.SurfaceBasedShape
-                |                             ReplaceFace
-                | 
-                | Represents the Replace Face operation.
-                | It replaces a face or a set of faces obtained by tangency continuity by a
-                | replacing element, such as a surface or a face or a skin.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.SurfaceBasedShape
+                                            ReplaceFace
+                
+                Represents the Replace Face operation.
+                It replaces a face or a set of faces obtained by tangency continuity by a
+                replacing element, such as a surface or a face or a skin.
     
     """
 
@@ -43,11 +41,10 @@ class ReplaceFace(SurfaceBasedShape):
     def remove_face(self) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RemoveFace() As References (Read Only)
-                |     Returns the face to be removed.
+                Property RemoveFace() As References (Read Only)
+                    Returns the face to be removed.
 
         :return: References
         """
@@ -58,13 +55,12 @@ class ReplaceFace(SurfaceBasedShape):
     def splitting_side(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SplittingSide() As CatSplitSide
-                |     Returns or sets the splitting side . The splitting side is the side of the
-                |     body kept after the splitting. A positive side refers to the same orientation
-                |     than the splitting element normal vector.
+                Property SplittingSide() As CatSplitSide
+                    Returns or sets the splitting side . The splitting side is the side of the
+                    body kept after the splitting. A positive side refers to the same orientation
+                    than the splitting element normal vector.
 
         :return: CatSplitSide
         """
@@ -82,11 +78,10 @@ class ReplaceFace(SurfaceBasedShape):
     def add_remove_face(self, i_remove_face: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddRemoveFace(Reference iRemoveFace)
-                |     Sets the face to be removed.
+                Sub AddRemoveFace(Reference iRemoveFace)
+                    Sets the face to be removed.
 
         :param Reference i_remove_face:
         :return: None
@@ -96,11 +91,10 @@ class ReplaceFace(SurfaceBasedShape):
     def add_split_plane(self, i_split_plane: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddSplitPlane(Reference iSplitPlane)
-                |     Sets the replacing element.
+                Sub AddSplitPlane(Reference iSplitPlane)
+                    Sets the replacing element.
 
         :param Reference i_split_plane:
         :return: None
@@ -110,11 +104,10 @@ class ReplaceFace(SurfaceBasedShape):
     def delete_remove_face(self, i_remove_face: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DeleteRemoveFace(Reference iRemoveFace)
-                |     Remove the face to be removed. 
+                Sub DeleteRemoveFace(Reference iRemoveFace)
+                    Remove the face to be removed. 
 
         :param Reference i_remove_face:
         :return: None
@@ -122,4 +115,4 @@ class ReplaceFace(SurfaceBasedShape):
         return self.com_object.DeleteRemoveFace(i_remove_face.com_object)
 
     def __repr__(self):
-        return f'ReplaceFace(name="{ self.name }")'
+        return f'ReplaceFace(name="{self.name}")'

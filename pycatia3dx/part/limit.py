@@ -14,24 +14,22 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class Limit(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Limit
-                | 
-                | Represents the limit of a prism or a hole shape.
-                | 
-                | See also:
-                |     Prism, Hole
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Limit
+                
+                Represents the limit of a prism or a hole shape.
+                
+                See also:
+                    Prism, Hole
     
     """
 
@@ -43,12 +41,11 @@ class Limit(AnyObject):
     def dimension(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Dimension() As Length (Read Only)
-                |     Returns or sets the limit dimension. This property is valid for the offset
-                |     limit mode only, that is when CatLimitMode is set to catOffsetLimit .
+                Property Dimension() As Length (Read Only)
+                    Returns or sets the limit dimension. This property is valid for the offset
+                    limit mode only, that is when CatLimitMode is set to catOffsetLimit .
 
         :return: Length
         """
@@ -59,11 +56,10 @@ class Limit(AnyObject):
     def limit_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LimitMode() As CatLimitMode
-                |     Returns or sets the limit mode.
+                Property LimitMode() As CatLimitMode
+                    Returns or sets the limit mode.
 
         :return: CatLimitMode
         """
@@ -82,14 +78,13 @@ class Limit(AnyObject):
     def limiting_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LimitingElement() As Reference
-                |     Returns or sets the limiting element. This property is valid when the
-                |     limiting object is a surface or a plane, that is when CatLimitMode is set to
-                |     catUpToSurfaceLimit and catUpToPlaneLimit.
-                |     To set the property, you can use the following Boundary object: Face.
+                Property LimitingElement() As Reference
+                    Returns or sets the limiting element. This property is valid when the
+                    limiting object is a surface or a plane, that is when CatLimitMode is set to
+                    catUpToSurfaceLimit and catUpToPlaneLimit.
+                    To set the property, you can use the following Boundary object: Face.
 
         :return: Reference
         """
@@ -105,4 +100,4 @@ class Limit(AnyObject):
         self.com_object.LimitingElement = value
 
     def __repr__(self):
-        return f'Limit(name="{ self.name }")'
+        return f'Limit(name="{self.name}")'

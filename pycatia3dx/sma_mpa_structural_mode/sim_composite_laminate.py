@@ -14,19 +14,18 @@ from pycatia3dx.system.any_object import AnyObject
 class SimCompositeLaminate(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimCompositeLaminate
-                | 
-                | Represents the Composite Laminate object.
-                | Given a SimCompositeShellSection object, you can retrieve a SimCompositeLaminate as below: Dim myCompShellSection As SimCompositeShellSection .... Refer SMAIAMpaCompositeShellSection.idl to see how a SimCompositeShellSection is created. .... Dim myCompositeParameters As SimCompositeParameters Set myCompositeParameters = myCompShellSection.GetCompositeParameters .... Dim myCompositeLaminate As SimCompositeLaminate Set myCompositeLaminate = myCompShellSection.CreateLaminate, "" or Set myCompositeLaminate = myCompositeParameters.GetLaminateByIndex 1 or Set myCompositeLaminate = myCompositeParameters.GetLaminateByName "Laminate.1" or Dim myCompositeLaminatelist myCompositeLaminatelist = myCompositeParameters.GetListOfRosettes ...Loop for listSize = UBound(myCompositeLaminatelist) - LBound(myCompositeLaminatelist) + 1 if needed.. myCompositeLaminate = myCompositeLaminatelist(0)
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimCompositeLaminate
+                
+                Represents the Composite Laminate object.
+                Given a SimCompositeShellSection object, you can retrieve a SimCompositeLaminate as below: Dim myCompShellSection As SimCompositeShellSection .... Refer SMAIAMpaCompositeShellSection.idl to see how a SimCompositeShellSection is created. .... Dim myCompositeParameters As SimCompositeParameters Set myCompositeParameters = myCompShellSection.GetCompositeParameters .... Dim myCompositeLaminate As SimCompositeLaminate Set myCompositeLaminate = myCompShellSection.CreateLaminate, "" or Set myCompositeLaminate = myCompositeParameters.GetLaminateByIndex 1 or Set myCompositeLaminate = myCompositeParameters.GetLaminateByName "Laminate.1" or Dim myCompositeLaminatelist myCompositeLaminatelist = myCompositeParameters.GetListOfRosettes ...Loop for listSize = UBound(myCompositeLaminatelist) - LBound(myCompositeLaminatelist) + 1 if needed.. myCompositeLaminate = myCompositeLaminatelist(0)
     
     """
 
@@ -37,15 +36,14 @@ class SimCompositeLaminate(AnyObject):
     def get_stacking_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetStackingType() As SimLaminateStackingType
-                |     Gets the stacking type of the laminate i.e. thickness law or stacking
-                |     sequence.
-                | 
-                |     Returns:
-                |         The stacking type of the laminate.
+                Func GetStackingType() As SimLaminateStackingType
+                    Gets the stacking type of the laminate i.e. thickness law or stacking
+                    sequence.
+                
+                    Returns:
+                        The stacking type of the laminate.
 
         :return: int
         """
@@ -54,15 +52,14 @@ class SimCompositeLaminate(AnyObject):
     def get_symmetry_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetSymmetryMode() As SimLaminateSymmetryMode
-                |     Retrieves the Symmetry mode of stacking type in the
-                |     laminate.
-                | 
-                |     Returns:
-                |         The symmetry mode of the laminate.
+                Func GetSymmetryMode() As SimLaminateSymmetryMode
+                    Retrieves the Symmetry mode of stacking type in the
+                    laminate.
+                
+                    Returns:
+                        The symmetry mode of the laminate.
 
         :return: int
         """
@@ -71,23 +68,22 @@ class SimCompositeLaminate(AnyObject):
     def set_stacking_as_thickness_law(self, i_materials: tuple, i_layers: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetStackingAsThicknessLaw(CATSafeArrayVariant
-                | iMaterials,CATSafeArrayVariant iLayers)
-                |     Sets the stacking as thickness law.
+                Sub SetStackingAsThicknessLaw(CATSafeArrayVariant
+                iMaterials,CATSafeArrayVariant iLayers)
+                    Sets the stacking as thickness law.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iMaterials
-                |             [in] The list of materials used.
-                |         iLayers
-                |             [in] The number of layers for each material and each orientation.
-                |             Size must equals number of materials in thickness law x number of orientations
-                |             in Composites Parameter. e.g. {0,2,2,0,0,0,0,1} when materials are {carbon,
-                |             kevlar} and orientations {0°,45°,-45°, 90°} for 2 layers of carbon 45°, 2
-                |             layers of carbon -45° and 1 layer of kevlar 90°.
+                        iMaterials
+                            [in] The list of materials used.
+                        iLayers
+                            [in] The number of layers for each material and each orientation.
+                            Size must equals number of materials in thickness law x number of orientations
+                            in Composites Parameter. e.g. {0,2,2,0,0,0,0,1} when materials are {carbon,
+                            kevlar} and orientations {0°,45°,-45°, 90°} for 2 layers of carbon 45°, 2
+                            layers of carbon -45° and 1 layer of kevlar 90°.
 
         :param tuple i_materials:
         :param tuple i_layers:
@@ -114,20 +110,19 @@ class SimCompositeLaminate(AnyObject):
     def set_stacking_sequence(self, i_materials: tuple, i_orientations: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetStackingSequence(CATSafeArrayVariant iMaterials,CATSafeArrayVariant
-                | iOrientations)
-                |     Set the stacking sequence in the laminate.
+                Sub SetStackingSequence(CATSafeArrayVariant iMaterials,CATSafeArrayVariant
+                iOrientations)
+                    Set the stacking sequence in the laminate.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iMaterials
-                |             [in] The list of materials in the laminate.
-                |         iOrientations
-                |             [in] The list of orientation of material in the laminate. The
-                |             material[i] with orientation[i] Both the input lists must be of same size.
+                        iMaterials
+                            [in] The list of materials in the laminate.
+                        iOrientations
+                            [in] The list of orientation of material in the laminate. The
+                            material[i] with orientation[i] Both the input lists must be of same size.
 
         :param tuple i_materials:
         :param tuple i_orientations:
@@ -154,17 +149,16 @@ class SimCompositeLaminate(AnyObject):
     def set_stacking_type(self, i_stacking_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetStackingType(SimLaminateStackingType iStackingType)
-                |     Set the stacking type in the laminate i.e. thickness law or stacking
-                |     sequence.
-                | 
-                |     Parameters:
-                | 
-                |         iStackingType
-                |             [in] The stacking type to be set in the laminate.
+                Sub SetStackingType(SimLaminateStackingType iStackingType)
+                    Set the stacking type in the laminate i.e. thickness law or stacking
+                    sequence.
+                
+                    Parameters:
+                
+                        iStackingType
+                            [in] The stacking type to be set in the laminate.
 
         :param int i_stacking_type:
         :return: None
@@ -174,16 +168,15 @@ class SimCompositeLaminate(AnyObject):
     def set_symmetry_mode(self, i_sym_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetSymmetryMode(SimLaminateSymmetryMode iSymMode)
-                |     Set the Symmetry mode of stacking type in the laminate.
-                | 
-                |     Parameters:
-                | 
-                |         iSymMode
-                |             [in] The symmetry mode to be set in the laminate. 
+                Sub SetSymmetryMode(SimLaminateSymmetryMode iSymMode)
+                    Set the Symmetry mode of stacking type in the laminate.
+                
+                    Parameters:
+                
+                        iSymMode
+                            [in] The symmetry mode to be set in the laminate. 
 
         :param int i_sym_mode:
         :return: None

@@ -14,37 +14,35 @@ from pycatia3dx.dnb_igp_olp_use.olp_object_frame_profile import OLPObjectFramePr
 
 
 class OLPUploadService(Service):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         OlpUploadService
-                | 
-                | Service to upload robot programs and convert them into 3DExperience
-                | Tasks.
-                | 
-                | Example: (VB.NET)
-                | 
-                |  Dim Uploader As OlpUploadService = CATIA.Application.GetSessionService("OlpUploadService")
-                |  Dim FilesToUpload as Object() = { C:\\ToUpload\\File1, C:\\ToUpload\\File2 }
-                |  Dim Robot as Object = RobotSelection 'getting this selection is outside the scope of this example
-                | 
-                |  Uploader.SetResource(Robot)
-                |  Uploader.SetFiles(FilesToUpload)
-                |  Uploader.Translator = "" 'Setting this to an empty string will use the default translator, set in your preferences. If you want to use a specific other translator, set that name instead
-                |  Uploader.Parse()
-                |  Uploader.Upload()
-                |  Uploader.PostProcess()
-                |  Uploader.Finalize()
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        OlpUploadService
+                
+                Service to upload robot programs and convert them into 3DExperience
+                Tasks.
+                
+                Example: (VB.NET)
+                
+                 Dim Uploader As OlpUploadService = CATIA.Application.GetSessionService("OlpUploadService")
+                 Dim FilesToUpload as Object() = { C:\\ToUpload\\File1, C:\\ToUpload\\File2 }
+                 Dim Robot as Object = RobotSelection 'getting this selection is outside the scope of this example
+                
+                 Uploader.SetResource(Robot)
+                 Uploader.SetFiles(FilesToUpload)
+                 Uploader.Translator = "" 'Setting this to an empty string will use the default translator, set in your preferences. If you want to use a specific other translator, set that name instead
+                 Uploader.Parse()
+                 Uploader.Upload()
+                 Uploader.PostProcess()
+                 Uploader.Finalize()
     
     """
 
@@ -56,17 +54,16 @@ class OLPUploadService(Service):
     def allow_device_param_update(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AllowDeviceParamUpdate() As boolean
-                |     Get/Set the option to allow device parameters to be
-                |     updated.
-                |     If false then any updates to the properties of the device that would
-                |     normally be modified by the translator will be ignored. This includes Hard
-                |     Limits, Soft Limits, Max Speeds and Accelerations, Singularity Tolerance, Heart
-                |     Beat, Controller Type, Acceleration Mode, and Turn Mode.
-                |     Default value is true. This must be called before Upload.
+                Property AllowDeviceParamUpdate() As boolean
+                    Get/Set the option to allow device parameters to be
+                    updated.
+                    If false then any updates to the properties of the device that would
+                    normally be modified by the translator will be ignored. This includes Hard
+                    Limits, Soft Limits, Max Speeds and Accelerations, Singularity Tolerance, Heart
+                    Beat, Controller Type, Acceleration Mode, and Turn Mode.
+                    Default value is true. This must be called before Upload.
 
         :return: bool
         """
@@ -85,16 +82,15 @@ class OLPUploadService(Service):
     def create_cartesian_homes(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CreateCartesianHomes() As boolean
-                |     Get/Set the option to create home positions with the Cartesian position
-                |     set.
-                |     If true, all created and modified home positions will be created as
-                |     Cartesian homes which preserves the Cartesian position instead of the joint
-                |     values when replacing a resource.
-                |     Default value is false. This must be called before Upload.
+                Property CreateCartesianHomes() As boolean
+                    Get/Set the option to create home positions with the Cartesian position
+                    set.
+                    If true, all created and modified home positions will be created as
+                    Cartesian homes which preserves the Cartesian position instead of the joint
+                    values when replacing a resource.
+                    Default value is false. This must be called before Upload.
 
         :return: bool
         """
@@ -113,16 +109,15 @@ class OLPUploadService(Service):
     def create_homes_for_joint_targets(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CreateHomesForJointTargets() As boolean
-                |     Get/Set the option to create home positions for all joint
-                |     targets.
-                |     If true, home positions for all joint target motions will be created
-                |     instead of just setting the joint values on the motion
-                |     directly.
-                |     Default value is false. This must be called before Upload.
+                Property CreateHomesForJointTargets() As boolean
+                    Get/Set the option to create home positions for all joint
+                    targets.
+                    If true, home positions for all joint target motions will be created
+                    instead of just setting the joint values on the motion
+                    directly.
+                    Default value is false. This must be called before Upload.
 
         :return: bool
         """
@@ -141,16 +136,15 @@ class OLPUploadService(Service):
     def delete_referenced_tags_and_homes(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DeleteReferencedTagsAndHomes() As boolean
-                |     Get/Set the option to delete tags and homes in replaced
-                |     tasks.
-                |     If true, then tags and homes used only in the tasks that are replaced will
-                |     be deleted. This only has an effect if ReplaceTasks is set to
-                |     true.
-                |     Default value is false. This must be called before Upload.
+                Property DeleteReferencedTagsAndHomes() As boolean
+                    Get/Set the option to delete tags and homes in replaced
+                    tasks.
+                    If true, then tags and homes used only in the tasks that are replaced will
+                    be deleted. This only has an effect if ReplaceTasks is set to
+                    true.
+                    Default value is false. This must be called before Upload.
 
         :return: bool
         """
@@ -169,15 +163,14 @@ class OLPUploadService(Service):
     def delete_unused_profiles(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DeleteUnusedProfiles() As boolean
-                |     Get/Set the option to delete unused profiles.
-                |     If true, then all profiles which are not used will be deleted at the end of
-                |     the upload. Any profiles defined on the robot reference will be
-                |     kept.
-                |     Default value is false. This must be called before Upload.
+                Property DeleteUnusedProfiles() As boolean
+                    Get/Set the option to delete unused profiles.
+                    If true, then all profiles which are not used will be deleted at the end of
+                    the upload. Any profiles defined on the robot reference will be
+                    kept.
+                    Default value is false. This must be called before Upload.
 
         :return: bool
         """
@@ -196,13 +189,12 @@ class OLPUploadService(Service):
     def files(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Files() As CATSafeArrayVariant
-                |     Get/Set the files to be translated.
-                |     Each entry is a string that is a full path to a file to be uploaded. Must
-                |     be called before Parse.
+                Property Files() As CATSafeArrayVariant
+                    Get/Set the files to be translated.
+                    Each entry is a string that is a full path to a file to be uploaded. Must
+                    be called before Parse.
 
         :return: tuple
         """
@@ -221,14 +213,13 @@ class OLPUploadService(Service):
     def replace_tasks(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ReplaceTasks() As boolean
-                |     Get/Set the option to replace the tasks.
-                |     If true existing tasks with the same name as the uploaded tasks will be
-                |     overwritten.
-                |     Default value is false. This must be called before Upload.
+                Property ReplaceTasks() As boolean
+                    Get/Set the option to replace the tasks.
+                    If true existing tasks with the same name as the uploaded tasks will be
+                    overwritten.
+                    Default value is false. This must be called before Upload.
 
         :return: bool
         """
@@ -247,13 +238,12 @@ class OLPUploadService(Service):
     def resource(self) -> VPMOccurrence:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Resource() As VPMOccurrence
-                |     Get/Set the resource.
-                |     This is the occurrence of the robot or tool that is being uploaded. If the
-                |     robot system contains multiple devices, any of the resources can be used.
+                Property Resource() As VPMOccurrence
+                    Get/Set the resource.
+                    This is the occurrence of the robot or tool that is being uploaded. If the
+                    robot system contains multiple devices, any of the resources can be used.
 
         :return: VPMOccurrence
         """
@@ -272,19 +262,18 @@ class OLPUploadService(Service):
     def tasks_to_upload(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TasksToUpload() As CATSafeArrayVariant
-                |     Get/Set the tasks to be upload.
-                |     This can be used to limit the tasks uploaded in cases where you do not want
-                |     to upload all tasks contained in the Parsed files. This is primarially used if
-                |     a file contains multiple tasks.
-                |     You can get the list of all tasks contained in the files and then set back
-                |     a subset of those tasks as the ones to be created. If you do nothing, all tasks
-                |     will be created.
-                |     Each item in the list is the name of a task as a string.
-                |     If called, this must be called after Parse but before Upload.
+                Property TasksToUpload() As CATSafeArrayVariant
+                    Get/Set the tasks to be upload.
+                    This can be used to limit the tasks uploaded in cases where you do not want
+                    to upload all tasks contained in the Parsed files. This is primarially used if
+                    a file contains multiple tasks.
+                    You can get the list of all tasks contained in the files and then set back
+                    a subset of those tasks as the ones to be created. If you do nothing, all tasks
+                    will be created.
+                    Each item in the list is the name of a task as a string.
+                    If called, this must be called after Parse but before Upload.
 
         :return: tuple
         """
@@ -303,14 +292,13 @@ class OLPUploadService(Service):
     def translator(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Translator() As CATBSTR
-                |     Get/Set the translator.
-                |     This is the title of the translator (e.g. "DELMIA Fanuc Translator"). The
-                |     database will be searched for a matching translator. If you do not specify a
-                |     translator, the default one from the preferences will be used.
+                Property Translator() As CATBSTR
+                    Get/Set the translator.
+                    This is the title of the translator (e.g. "DELMIA Fanuc Translator"). The
+                    database will be searched for a matching translator. If you do not specify a
+                    translator, the default one from the preferences will be used.
 
         :return: str
         """
@@ -329,13 +317,12 @@ class OLPUploadService(Service):
     def translator_option(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TranslatorOption() As CATBSTR
-                |     Get/Set the translator option.
-                |     This is upload option. If not set, the default one from the preferences
-                |     will be used.
+                Property TranslatorOption() As CATBSTR
+                    Get/Set the translator option.
+                    This is upload option. If not set, the default one from the preferences
+                    will be used.
 
         :return: str
         """
@@ -354,20 +341,19 @@ class OLPUploadService(Service):
     def upload_object_frame_coords(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UploadObjectFrameCoords() As boolean
-                |     Get/Set the option to use uploaded object frame
-                |     coordinates.
-                |     If false, the object frame coordinates imported from the robot program will
-                |     be ignored. In most cases you should leave this option set to true. Only set to
-                |     false if you have manually positioned the object frames in the correct
-                |     locations. You can perform a legacy part coordinate upload by creating an
-                |     object frame, attaching it to the part, and setting the offset to zero relative
-                |     to the part.
-                |     Default value is true. This must be called after Upload, but before
-                |     PostProcess.
+                Property UploadObjectFrameCoords() As boolean
+                    Get/Set the option to use uploaded object frame
+                    coordinates.
+                    If false, the object frame coordinates imported from the robot program will
+                    be ignored. In most cases you should leave this option set to true. Only set to
+                    false if you have manually positioned the object frames in the correct
+                    locations. You can perform a legacy part coordinate upload by creating an
+                    object frame, attaching it to the part, and setting the offset to zero relative
+                    to the part.
+                    Default value is true. This must be called after Upload, but before
+                    PostProcess.
 
         :return: bool
         """
@@ -386,14 +372,13 @@ class OLPUploadService(Service):
     def use_design_position(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UseDesignPosition() As DELOlpInitialPositionMode
-                |     Get/Set the option to use design position during download.
-                |     Can be set to either DELOlpDesignPosition or DELOlpCurrentPosition to
-                |     control behavior of points attached to moving objects. Default value is
-                |     DELOlpCurrentPosition. This must be called after Upload but before PostProcess.
+                Property UseDesignPosition() As DELOlpInitialPositionMode
+                    Get/Set the option to use design position during download.
+                    Can be set to either DELOlpDesignPosition or DELOlpCurrentPosition to
+                    control behavior of points attached to moving objects. Default value is
+                    DELOlpCurrentPosition. This must be called after Upload but before PostProcess.
 
         :return: DELOlpInitialPositionMode
         """
@@ -411,18 +396,17 @@ class OLPUploadService(Service):
     def export_messages_to_file(self, i_file: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ExportMessagesToFile(CATBSTR iFile)
-                |     Create a file with all the translation messagse.
-                | 
-                |     Parameters:
-                | 
-                |         iFile
-                |             The full path to the file to create. If the file extension is xls,
-                |             xlsx or xlsm an Excel file will be created otherwise a text file will be
-                |             created.
+                Sub ExportMessagesToFile(CATBSTR iFile)
+                    Create a file with all the translation messagse.
+                
+                    Parameters:
+                
+                        iFile
+                            The full path to the file to create. If the file extension is xls,
+                            xlsx or xlsm an Excel file will be created otherwise a text file will be
+                            created.
 
         :param str i_file:
         :return: None
@@ -432,12 +416,11 @@ class OLPUploadService(Service):
     def finalize(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Finalize()
-                |     Clean up the translation service's state manager.
-                |     This MUST be run after all translation service functions are complete.
+                Sub Finalize()
+                    Clean up the translation service's state manager.
+                    This MUST be run after all translation service functions are complete.
 
         :return: None
         """
@@ -446,18 +429,17 @@ class OLPUploadService(Service):
     def get_object_frames(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetObjectFrames() As CATSafeArrayVariant
-                |     Obtain the object frames associated with the upload.
-                | 
-                |     Parameters:
-                | 
-                |         oFrameList
-                |             The list of Object Frames associated with the upload. Each item in
-                |             the list is an OlpObjectFrameProfile. This must be called after Upload, but
-                |             before PostProcess.
+                Func GetObjectFrames() As CATSafeArrayVariant
+                    Obtain the object frames associated with the upload.
+                
+                    Parameters:
+                
+                        oFrameList
+                            The list of Object Frames associated with the upload. Each item in
+                            the list is an OlpObjectFrameProfile. This must be called after Upload, but
+                            before PostProcess.
 
         :return: tuple
         """
@@ -466,13 +448,12 @@ class OLPUploadService(Service):
     def parse(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Parse()
-                |     Parse the files to be uploaded in order to identify the tasks that will be
-                |     created and other information about the controller setup. (application types,
-                |     device types) This is called before Upload.
+                Sub Parse()
+                    Parse the files to be uploaded in order to identify the tasks that will be
+                    created and other information about the controller setup. (application types,
+                    device types) This is called before Upload.
 
         :return: None
         """
@@ -481,58 +462,57 @@ class OLPUploadService(Service):
     def post_process(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub PostProcess()
-                |     Finalize creation of the tasks, tags, profiles and call MacroSetConfigs.
-                |     This must be called only after Upload
+                Sub PostProcess()
+                    Finalize creation of the tasks, tags, profiles and call MacroSetConfigs.
+                    This must be called only after Upload
 
         :return: None
         """
         return self.com_object.PostProcess()
 
-    def set_part_for_object_frame(self, i_object_profile: OLPObjectFrameProfile, i_feature: AnyObject, i_part_occurrence: VPMOccurrence) -> None:
+    def set_part_for_object_frame(self, i_object_profile: OLPObjectFrameProfile, i_feature: AnyObject,
+                                  i_part_occurrence: VPMOccurrence) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetPartForObjectFrame(OlpObjectFrameProfile iObjectProfile,AnyObject
-                | iFeature,VPMOccurrence iPartOccurrence)
-                |     Set a part to attach an object frame to.
-                | 
-                |     Parameters:
-                | 
-                |         iObjectProfile
-                |             The Object Frame to be attached. 
-                |         iFeature
-                |             The Referential Feature to which to attach the frame. This should
-                |             be a tag, mount port, or other referential feature. This may be nothing if no
-                |             referential feature is used. 
-                |         iPartOccurrence
-                |             The part to which to attach the frame. This must be called after
-                |             Upload, but before PostProcess.
+                Sub SetPartForObjectFrame(OlpObjectFrameProfile iObjectProfile,AnyObject
+                iFeature,VPMOccurrence iPartOccurrence)
+                    Set a part to attach an object frame to.
+                
+                    Parameters:
+                
+                        iObjectProfile
+                            The Object Frame to be attached. 
+                        iFeature
+                            The Referential Feature to which to attach the frame. This should
+                            be a tag, mount port, or other referential feature. This may be nothing if no
+                            referential feature is used. 
+                        iPartOccurrence
+                            The part to which to attach the frame. This must be called after
+                            Upload, but before PostProcess.
 
         :param OLPObjectFrameProfile i_object_profile:
         :param AnyObject i_feature:
         :param VPMOccurrence i_part_occurrence:
         :return: None
         """
-        return self.com_object.SetPartForObjectFrame(i_object_profile.com_object, i_feature.com_object, i_part_occurrence.com_object)
+        return self.com_object.SetPartForObjectFrame(i_object_profile.com_object, i_feature.com_object,
+                                                     i_part_occurrence.com_object)
 
     def upload(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Upload()
-                |     Translate the files 
+                Sub Upload()
+                    Translate the files 
 
         :return: None
         """
         return self.com_object.Upload()
 
     def __repr__(self):
-        return f'OLPUploadService(name="{ self.name }")'
+        return f'OLPUploadService(name="{self.name}")'

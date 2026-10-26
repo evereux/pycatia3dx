@@ -12,21 +12,19 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DimensionLimit(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DimensionLimit
-                | 
-                | Represents the limit object of tolerance dimensions.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DimensionLimit
+                
+                Represents the limit object of tolerance dimensions.
     
     """
 
@@ -38,17 +36,16 @@ class DimensionLimit(AnyObject):
     def dimension_limit_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DimensionLimitType() As CATBSTR
-                |     Returns or sets the dimension limit type.
-                |     Legal values: Valid dimension limit type values are:
-                | 
-                |         CATTPSDLNotDefined
-                |         CATTPSDLNumerical
-                |         CATTPSDLTabulated
-                |         CATTPSDLSingleLimit
+                Property DimensionLimitType() As CATBSTR
+                    Returns or sets the dimension limit type.
+                    Legal values: Valid dimension limit type values are:
+                
+                        CATTPSDLNotDefined
+                        CATTPSDLNumerical
+                        CATTPSDLTabulated
+                        CATTPSDLSingleLimit
 
         :return: str
         """
@@ -67,11 +64,10 @@ class DimensionLimit(AnyObject):
     def modifier(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Modifier() As CATBSTR
-                |     Returns or sets the dimension single limit modifier.
+                Property Modifier() As CATBSTR
+                    Returns or sets the dimension single limit modifier.
 
         :return: str
         """
@@ -90,12 +86,11 @@ class DimensionLimit(AnyObject):
     def nominalvalue(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Nominalvalue() As double (Read Only)
-                |     Returns the dimension limit nominal value.
-                |     This value is expressed in millimeters.
+                Property Nominalvalue() As double (Read Only)
+                    Returns the dimension limit nominal value.
+                    This value is expressed in millimeters.
 
         :return: float
         """
@@ -106,12 +101,11 @@ class DimensionLimit(AnyObject):
     def symetric_value(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SymetricValue() As boolean
-                |     Returns or sets whether the dimension limit is symmetric.
-                |     TRUE if it is symmetric.
+                Property SymetricValue() As boolean
+                    Returns or sets whether the dimension limit is symmetric.
+                    TRUE if it is symmetric.
 
         :return: bool
         """
@@ -130,12 +124,11 @@ class DimensionLimit(AnyObject):
     def tabulated_limit(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TabulatedLimit() As CATBSTR
-                |     Returns or sets the dimension tabulated limit.
-                |     This tabulated limit is expressed as a string.
+                Property TabulatedLimit() As CATBSTR
+                    Returns or sets the dimension tabulated limit.
+                    This tabulated limit is expressed as a string.
 
         :return: str
         """
@@ -154,13 +147,12 @@ class DimensionLimit(AnyObject):
     def validated_tolerance_value(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ValidatedToleranceValue() As boolean
-                |     Returns or sets whether the value for the dimension limit is
-                |     validated.
-                |     TRUE if it is validated.
+                Property ValidatedToleranceValue() As boolean
+                    Returns or sets whether the value for the dimension limit is
+                    validated.
+                    TRUE if it is validated.
 
         :return: bool
         """
@@ -178,19 +170,18 @@ class DimensionLimit(AnyObject):
     def limits(self, o_bottom: float, o_up: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Limits(double oBottom,double oUp)
-                |     Retrieves dimension limit values.
-                |     These values are expressed in millimeters.
-                | 
-                |     Parameters:
-                | 
-                |         oBottom
-                |             The dimension limit bottom value 
-                |         oUp
-                |             The dimension limit up value
+                Sub Limits(double oBottom,double oUp)
+                    Retrieves dimension limit values.
+                    These values are expressed in millimeters.
+                
+                    Parameters:
+                
+                        oBottom
+                            The dimension limit bottom value 
+                        oUp
+                            The dimension limit up value
 
         :param float o_bottom:
         :param float o_up:
@@ -201,19 +192,18 @@ class DimensionLimit(AnyObject):
     def put_limits(self, i_bottom: float, i_up: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub PutLimits(double iBottom,double iUp)
-                |     Sets dimension limit values.
-                |     These values are expressed in millimeters.
-                | 
-                |     Parameters:
-                | 
-                |         iBottom
-                |             The dimension limit bottom value 
-                |         iUp
-                |             The dimension limit up value 
+                Sub PutLimits(double iBottom,double iUp)
+                    Sets dimension limit values.
+                    These values are expressed in millimeters.
+                
+                    Parameters:
+                
+                        iBottom
+                            The dimension limit bottom value 
+                        iUp
+                            The dimension limit up value 
 
         :param float i_bottom:
         :param float i_up:
@@ -222,4 +212,4 @@ class DimensionLimit(AnyObject):
         return self.com_object.PutLimits(i_bottom, i_up)
 
     def __repr__(self):
-        return f'DimensionLimit(name="{ self.name }")'
+        return f'DimensionLimit(name="{self.name}")'

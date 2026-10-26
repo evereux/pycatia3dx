@@ -15,18 +15,17 @@ from pycatia3dx.types.general import CATVariant
 class SimConnectionProperties(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SimConnectionProperties
-                | 
-                | Represents the collection of simulation connection properties.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SimConnectionProperties
+                
+                Represents the collection of simulation connection properties.
     
     """
 
@@ -38,20 +37,19 @@ class SimConnectionProperties(Collection):
     def add(self, i_type: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add(CATBSTR iType) As CATBaseDispatch
-                |     Creates a new connection property and adds it to the
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The type of connection property to create. 
-                | 
-                |     Returns:
-                |         The created connection property
+                Func Add(CATBSTR iType) As CATBaseDispatch
+                    Creates a new connection property and adds it to the
+                    collection.
+                
+                    Parameters:
+                
+                        iType
+                            The type of connection property to create. 
+                
+                    Returns:
+                        The created connection property
 
         :param str i_type:
         :return: AnyObject
@@ -61,27 +59,26 @@ class SimConnectionProperties(Collection):
     def item(self, i_index: CATVariant) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As CATBaseDispatch
-                |     Returns a connection property using its index or its name from the
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex:
-                |             The index or the name of the connection property to retrieve from
-                |             the collection.
-                |             As a numeric, this index is the rank of the connection property in
-                |             the collection. The index of the first connection property in the collection is
-                |             1, and the index of the last connection property is
-                |             Count.
-                |             As a string, it is the name you assigned to the connection property
-                |             using the Name object property. 
-                | 
-                |     Returns:
-                |         The retrieved connection property.
+                Func Item(CATVariant iIndex) As CATBaseDispatch
+                    Returns a connection property using its index or its name from the
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex:
+                            The index or the name of the connection property to retrieve from
+                            the collection.
+                            As a numeric, this index is the rank of the connection property in
+                            the collection. The index of the first connection property in the collection is
+                            1, and the index of the last connection property is
+                            Count.
+                            As a string, it is the name you assigned to the connection property
+                            using the Name object property. 
+                
+                    Returns:
+                        The retrieved connection property.
 
         :param CATVariant i_index:
         :return: AnyObject
@@ -91,24 +88,23 @@ class SimConnectionProperties(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(CATVariant iIndex)
-                |     Removes a connection property using its index or its name from the
-                |     connection property collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or the name of the connection property to retrieve from
-                |             the collection.
-                |             As a numeric, this index is the rank of the connection property in
-                |             the collection. The index of the first connection property in the collection is
-                |             1, and the index of the last connection property is
-                |             Count.
-                |             As a string, it is the name you assigned to the connection property
-                |             using the Name object property.
+                Sub Remove(CATVariant iIndex)
+                    Removes a connection property using its index or its name from the
+                    connection property collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index or the name of the connection property to retrieve from
+                            the collection.
+                            As a numeric, this index is the rank of the connection property in
+                            the collection. The index of the first connection property in the collection is
+                            1, and the index of the last connection property is
+                            Count.
+                            As a string, it is the name you assigned to the connection property
+                            using the Name object property.
 
         :param CATVariant i_index:
         :return: None

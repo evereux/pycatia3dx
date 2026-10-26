@@ -12,63 +12,61 @@ from pycatia3dx.sma_spa_structural.sim_analysis_restart_step_property import Sim
 
 
 class SimCoupledThermalStressExplicitStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SMAMpaFoundationIDLItf.SimStep
-                |                         SimCoupledThermalStressExplicitStep
-                | 
-                | Represents the Coupled Thermal Stress Explicit Step object.
-                | 
-                | Example:
-                |     Given a SimSteps object, you can create a
-                |     SimCoupledThermalStressExplicitStep as following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyCoupledThermalStressExplicitStep As
-                |      SimCoupledThermalStressExplicitStep
-                |      Set MyCoupledThermalStressExplicitStep = MySteps.Add("SimCoupledThermalStressExplicitStep")
-                |      
-                | 
-                |     Given a SimSteps object, you can retrieve a
-                |     SimCoupledThermalStressExplicitStep named "Coupled Thermal Stress Explicit
-                |     Step.1" as following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyCoupledThermalStressExplicitStep As
-                |      SimCoupledThermalStressExplicitStep
-                |      Set MyCoupledThermalStressExplicitStep = MySteps.Item("Coupled Thermal Stress Explicit Step.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimSteps object mySteps, you can create a
-                |     SimCoupledThermalStressExplicitStep as following:
-                | 
-                |      ...
-                |      myCoupledThermalStressExplicitStep = mySteps.Add("SimCoupledThermalStressExplicitStep")
-                |      
-                | 
-                |     Given a SimSteps object mySteps, you can retrieve a
-                |     SimCoupledThermalStressExplicitStep named "Coupled Thermal Stress Explicit
-                |     Step.1" as following:
-                | 
-                |      ...
-                |      myCoupledThermalStressExplicitStep = mySteps.Item("Coupled Thermal Stress Explicit Step.1")
-                |      
-                | 
-                | See also:
-                |     SimSteps
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SMAMpaFoundationIDLItf.SimStep
+                                        SimCoupledThermalStressExplicitStep
+                
+                Represents the Coupled Thermal Stress Explicit Step object.
+                
+                Example:
+                    Given a SimSteps object, you can create a
+                    SimCoupledThermalStressExplicitStep as following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyCoupledThermalStressExplicitStep As
+                     SimCoupledThermalStressExplicitStep
+                     Set MyCoupledThermalStressExplicitStep = MySteps.Add("SimCoupledThermalStressExplicitStep")
+                     
+                
+                    Given a SimSteps object, you can retrieve a
+                    SimCoupledThermalStressExplicitStep named "Coupled Thermal Stress Explicit
+                    Step.1" as following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyCoupledThermalStressExplicitStep As
+                     SimCoupledThermalStressExplicitStep
+                     Set MyCoupledThermalStressExplicitStep = MySteps.Item("Coupled Thermal Stress Explicit Step.1")
+                     
+                
+                Example in Python:
+                    Given a SimSteps object mySteps, you can create a
+                    SimCoupledThermalStressExplicitStep as following:
+                
+                     ...
+                     myCoupledThermalStressExplicitStep = mySteps.Add("SimCoupledThermalStressExplicitStep")
+                     
+                
+                    Given a SimSteps object mySteps, you can retrieve a
+                    SimCoupledThermalStressExplicitStep named "Coupled Thermal Stress Explicit
+                    Step.1" as following:
+                
+                     ...
+                     myCoupledThermalStressExplicitStep = mySteps.Item("Coupled Thermal Stress Explicit Step.1")
+                     
+                
+                See also:
+                    SimSteps
     
     """
 
@@ -80,11 +78,10 @@ class SimCoupledThermalStressExplicitStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -103,16 +100,15 @@ class SimCoupledThermalStressExplicitStep(SimStep):
     def bulk_viscosity_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property BulkViscosityFlag() As boolean
-                |     Returns or sets the flag that determines if the bulk viscosity parameters
-                |     are enabled.
-                | 
-                |     TRUE: The bulk viscosity parameters are enabled.
-                | 
-                |     FALSE: The bulk viscosity parameters are disabled.
+                Property BulkViscosityFlag() As boolean
+                    Returns or sets the flag that determines if the bulk viscosity parameters
+                    are enabled.
+                
+                    TRUE: The bulk viscosity parameters are enabled.
+                
+                    FALSE: The bulk viscosity parameters are disabled.
 
         :return: bool
         """
@@ -131,14 +127,13 @@ class SimCoupledThermalStressExplicitStep(SimStep):
     def element_by_element_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ElementByElementFlag() As boolean
-                |     Returns or sets the element by element flag.
-                |     TRUE: Element by element time incrementation calculation is
-                |     activated.
-                |     FALSE: Element by element time incrementation calculation is deactivated.
+                Property ElementByElementFlag() As boolean
+                    Returns or sets the element by element flag.
+                    TRUE: Element by element time incrementation calculation is
+                    activated.
+                    FALSE: Element by element time incrementation calculation is deactivated.
 
         :return: bool
         """
@@ -157,14 +152,13 @@ class SimCoupledThermalStressExplicitStep(SimStep):
     def geometric_non_linearity_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property GeometricNonLinearityFlag() As boolean
-                |     Returns or sets the flag that determines if the step is geometrically non
-                |     linear.
-                |     TRUE: the step is geometrically non linear.
-                |     FALSE: the step is not geometrically non linear.
+                Property GeometricNonLinearityFlag() As boolean
+                    Returns or sets the flag that determines if the step is geometrically non
+                    linear.
+                    TRUE: the step is geometrically non linear.
+                    FALSE: the step is not geometrically non linear.
 
         :return: bool
         """
@@ -183,13 +177,12 @@ class SimCoupledThermalStressExplicitStep(SimStep):
     def improved_dt_method_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ImprovedDTMethodFlag() As boolean
-                |     Returns or sets the improved DT method flag.
-                |     TRUE: Improved DT method option is activated.
-                |     FALSE: Improve DT method option is deactivated.
+                Property ImprovedDTMethodFlag() As boolean
+                    Returns or sets the improved DT method flag.
+                    TRUE: Improved DT method option is activated.
+                    FALSE: Improve DT method option is deactivated.
 
         :return: bool
         """
@@ -208,11 +201,10 @@ class SimCoupledThermalStressExplicitStep(SimStep):
     def incrementation_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IncrementationType() As SimTimeIncrementationScheme
-                |     Returns or sets the incrementation type.
+                Property IncrementationType() As SimTimeIncrementationScheme
+                    Returns or sets the incrementation type.
 
         :return: SimTimeIncrementationScheme
         """
@@ -231,11 +223,10 @@ class SimCoupledThermalStressExplicitStep(SimStep):
     def linear_bulk_viscosity(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LinearBulkViscosity() As double
-                |     Returns or sets the linear bulk viscosity parameter.
+                Property LinearBulkViscosity() As double
+                    Returns or sets the linear bulk viscosity parameter.
 
         :return: float
         """
@@ -254,12 +245,11 @@ class SimCoupledThermalStressExplicitStep(SimStep):
     def maximum_time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumTimeIncrement() As double
-                |     Returns or sets the maximum time for the increments of the Coupled Thermal
-                |     Explicit Stress step.
+                Property MaximumTimeIncrement() As double
+                    Returns or sets the maximum time for the increments of the Coupled Thermal
+                    Explicit Stress step.
 
         :return: float
         """
@@ -278,11 +268,10 @@ class SimCoupledThermalStressExplicitStep(SimStep):
     def quadratic_bulk_viscosity(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property QuadraticBulkViscosity() As double
-                |     Returns or sets the quadratic bulk viscosity parameter.
+                Property QuadraticBulkViscosity() As double
+                    Returns or sets the quadratic bulk viscosity parameter.
 
         :return: float
         """
@@ -301,13 +290,12 @@ class SimCoupledThermalStressExplicitStep(SimStep):
     def restart_step_property(self) -> SimAnalysisRestartStepProperty:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RestartStepProperty() As SimAnalysisRestartStepProperty (Read
-                | Only)
-                |     Returns the restart step property for the Coupled Thermal Explicit Stress
-                |     step.
+                Property RestartStepProperty() As SimAnalysisRestartStepProperty (Read
+                Only)
+                    Returns the restart step property for the Coupled Thermal Explicit Stress
+                    step.
 
         :return: SimAnalysisRestartStepProperty
         """
@@ -318,11 +306,10 @@ class SimCoupledThermalStressExplicitStep(SimStep):
     def scale_factor(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ScaleFactor() As double
-                |     Returns or sets the scale factor.
+                Property ScaleFactor() As double
+                    Returns or sets the scale factor.
 
         :return: float
         """
@@ -341,12 +328,11 @@ class SimCoupledThermalStressExplicitStep(SimStep):
     def step_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StepTime() As double
-                |     Returns or sets the retrieved total time for the Coupled Thermal Explicit
-                |     Stress step.
+                Property StepTime() As double
+                    Returns or sets the retrieved total time for the Coupled Thermal Explicit
+                    Stress step.
 
         :return: float
         """
@@ -365,12 +351,11 @@ class SimCoupledThermalStressExplicitStep(SimStep):
     def time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TimeIncrement() As double
-                |     Returns or sets the time increment for the Coupled Thermal Explicit Stress
-                |     step. 
+                Property TimeIncrement() As double
+                    Returns or sets the time increment for the Coupled Thermal Explicit Stress
+                    step. 
 
         :return: float
         """
@@ -386,4 +371,4 @@ class SimCoupledThermalStressExplicitStep(SimStep):
         self.com_object.TimeIncrement = value
 
     def __repr__(self):
-        return f'SimCoupledThermalStressExplicitStep(name="{ self.name }")'
+        return f'SimCoupledThermalStressExplicitStep(name="{self.name}")'

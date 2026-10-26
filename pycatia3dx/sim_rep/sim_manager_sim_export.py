@@ -14,17 +14,16 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 class SimManagerSimExport(CATBaseDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 SimManagerSIMExport
-                | 
-                | Represents the service to export data from a SIM manager.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                SimManagerSIMExport
+                
+                Represents the service to export data from a SIM manager.
     
     """
 
@@ -36,11 +35,10 @@ class SimManagerSimExport(CATBaseDispatch):
     def args(self) -> SimImportExportArgs:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Args() As SimImportExportArgs (Read Only)
-                |     Gets the current arguments of the export operation.
+                Property Args() As SimImportExportArgs (Read Only)
+                    Gets the current arguments of the export operation.
 
         :return: SimImportExportArgs
         """
@@ -50,17 +48,16 @@ class SimManagerSimExport(CATBaseDispatch):
     def export(self, i_exporter_id: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Export(CATBSTR iExporterId)
-                |     Exports data from this SIM manager thanks to a given SIM exporter
-                |     (identified by its id) using the current export arguments.
-                | 
-                |     Parameters:
-                | 
-                |         iExporterId:
-                |             The exporter id.
+                Sub Export(CATBSTR iExporterId)
+                    Exports data from this SIM manager thanks to a given SIM exporter
+                    (identified by its id) using the current export arguments.
+                
+                    Parameters:
+                
+                        iExporterId:
+                            The exporter id.
 
         :param str i_exporter_id:
         :return: None

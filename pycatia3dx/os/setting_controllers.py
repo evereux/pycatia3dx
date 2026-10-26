@@ -9,26 +9,29 @@
 """
 from typing import Iterator
 
+from pycatia3dx.os.macros_setting_att import MacrosSettingAtt
 from pycatia3dx.system.collection import Collection
+from pycatia3dx.system.dl_name_setting_att import DLNameSettingAtt
+from pycatia3dx.system.dyn_license_setting_att import DynLicenseSettingAtt
+from pycatia3dx.system.license_setting_att import LicenseSettingAtt
 from pycatia3dx.system.setting_controller import SettingController
 
 
 class SettingControllers(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SettingControllers
-                | 
-                | A collection of all the setting controllers objects currently managed by the
-                | application.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SettingControllers
+                
+                A collection of all the setting controllers objects currently managed by the
+                application.
     
     """
 
@@ -39,25 +42,40 @@ class SettingControllers(Collection):
     def item(self, i_index: str) -> SettingController:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Func Item(CATBSTR iIndex) As SettingController
-                |     Returns a setting controller using its name from the setting controllers
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The name of the window to retrieve from the collection of setting
-                |             controller. As a string. 
-                | 
-                |     Returns:
-                |         The retrieved setting controller.
+                Func Item(CATBSTR iIndex) As SettingController
+                    Returns a setting controller using its name from the setting controllers
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The name of the window to retrieve from the collection of setting
+                            controller. As a string. 
+                
+                    Returns:
+                        The retrieved setting controller.
+
+        Class Name           i_index
+        DLNameSettingAtt     CATSysDLNameSettingCtrl
+        DynLicenseSettingAtt CATSysDynLicenseSettingCtrl
+        LicenseSettingAtt    CATSysLicenseSettingCtrl
+        MacrosSettingAtt     CATScriptMacrosSettingCtrl
 
         :param str i_index:
         :return: SettingController
         """
+
+        if i_index == "CATSysDLNameSettingCtrl":
+            return DLNameSettingAtt(self.com_object.Item(i_index))
+        if i_index == "CATSysDynLicenseSettingCtrl":
+            return DynLicenseSettingAtt(self.com_object.Item(i_index))
+        if i_index == "CATSysLicenseSettingCtrl":
+            return LicenseSettingAtt(self.com_object.Item(i_index))
+        if i_index == "CATScriptMacrosSettingCtrl":
+            return MacrosSettingAtt(self.com_object.Item(i_index))
+
         return SettingController(self.com_object.Item(i_index))
 
     def __getitem__(self, n: int) -> SettingController:

@@ -68,8 +68,7 @@ instance/
 # Scrapy stuff:
 .scrapy
 
-# Sphinx documentation
-docs/_build/
+
 
 # PyBuilder
 .pybuilder/
@@ -212,6 +211,7 @@ __reference_scripts__
 __junk__
 
 temp*.py
-
-docs/generated/
+# Sphinx documentation
+docs/build/
+docs/generate_api.py
 .pyrc

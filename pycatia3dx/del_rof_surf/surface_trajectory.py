@@ -14,16 +14,15 @@ from pycatia3dx.system.any_object import AnyObject
 class SurfaceTrajectory(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SurfaceTrajectory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SurfaceTrajectory
 
     
     """
@@ -36,19 +35,18 @@ class SurfaceTrajectory(AnyObject):
     def points_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PointsCount() As short (Read Only)
-                |     Gets the number of points in the trajectory
-                | 
-                |     Parameters:
-                | 
-                |         oCount
-                |             Retrieves the number of points in the trajectory. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Property PointsCount() As short (Read Only)
+                    Gets the number of points in the trajectory
+                
+                    Parameters:
+                
+                        oCount
+                            Retrieves the number of points in the trajectory. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :return: int
         """
@@ -59,19 +57,18 @@ class SurfaceTrajectory(AnyObject):
     def sag(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Sag() As double
-                |     Sets and retrieves the Sag value.
-                | 
-                |     Parameters:
-                | 
-                |         oSag
-                |             The sag value. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Property Sag() As double
+                    Sets and retrieves the Sag value.
+                
+                    Parameters:
+                
+                        oSag
+                            The sag value. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :return: float
         """
@@ -90,20 +87,19 @@ class SurfaceTrajectory(AnyObject):
     def stroke_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrokeCount() As short (Read Only)
-                |     Gets the number of strokes in the trajectory
-                | 
-                |     Parameters:
-                | 
-                |         oStrokes
-                |             Retrieves the number of strokes in the trajectory.
-                |             
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Property StrokeCount() As short (Read Only)
+                    Gets the number of strokes in the trajectory
+                
+                    Parameters:
+                
+                        oStrokes
+                            Retrieves the number of strokes in the trajectory.
+                            
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :return: int
         """
@@ -113,23 +109,22 @@ class SurfaceTrajectory(AnyObject):
     def get_approach_distance(self, i_app_retract: int, o_app_distance: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetApproachDistance(APPROACH_RETRACT iAppRetract,double
-                | oAppDistance)
-                |     Retrieves the approach distance.
-                | 
-                |     Parameters:
-                | 
-                |         iAppRetract
-                |             Either UndefinedAppRet, First, Last, Retract, Approach, or
-                |             ApproachRetract 
-                |         oAppDistance
-                |             The returned distance 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub GetApproachDistance(APPROACH_RETRACT iAppRetract,double
+                oAppDistance)
+                    Retrieves the approach distance.
+                
+                    Parameters:
+                
+                        iAppRetract
+                            Either UndefinedAppRet, First, Last, Retract, Approach, or
+                            ApproachRetract 
+                        oAppDistance
+                            The returned distance 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_app_retract:
         :param float o_app_distance:
@@ -140,20 +135,19 @@ class SurfaceTrajectory(AnyObject):
     def get_approach_transformations(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetApproachTransformations(CATSafeArrayVariant
-                | oTransformations)
-                |     Retrieves a list of the approach transformations
+                Sub GetApproachTransformations(CATSafeArrayVariant
+                oTransformations)
+                    Retrieves a list of the approach transformations
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oTransformations
-                |             List of approach transformations
+                        oTransformations
+                            List of approach transformations
                 |
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :return: tuple
         """
@@ -178,19 +172,18 @@ class SurfaceTrajectory(AnyObject):
     def get_global_position(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetGlobalPosition(CATSafeArrayVariant oGlobalPos)
-                |     Retrieves the global position
+                Sub GetGlobalPosition(CATSafeArrayVariant oGlobalPos)
+                    Retrieves the global position
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oGlobalPos
-                |             The global position
+                        oGlobalPos
+                            The global position
                 |
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :return: tuple
         """
@@ -215,20 +208,19 @@ class SurfaceTrajectory(AnyObject):
     def get_retract_transformations(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetRetractTransformations(CATSafeArrayVariant
-                | oTransformations)
-                |     Retrieves a list of the retract transformations
+                Sub GetRetractTransformations(CATSafeArrayVariant
+                oTransformations)
+                    Retrieves a list of the retract transformations
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oTransformations
-                |             List of retract transformations
+                        oTransformations
+                            List of retract transformations
                 |
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :return: tuple
         """
@@ -253,19 +245,18 @@ class SurfaceTrajectory(AnyObject):
     def get_sweep_direction(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetSweepDirection(CATSafeArrayVariant oSweepDirection)
-                |     Retrieves the Sweep Direction
+                Sub GetSweepDirection(CATSafeArrayVariant oSweepDirection)
+                    Retrieves the Sweep Direction
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oGlobalPos
-                |             List of global positions
+                        oGlobalPos
+                            List of global positions
                 |
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :return: tuple
         """
@@ -290,14 +281,13 @@ class SurfaceTrajectory(AnyObject):
     def refresh_traj(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RefreshTraj()
-                |     Refreshes the trajectory.
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub RefreshTraj()
+                    Refreshes the trajectory.
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :return: None
         """
@@ -306,24 +296,23 @@ class SurfaceTrajectory(AnyObject):
     def resize_stroke(self, stroke_index: int, stroke_side: int, i_distance: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ResizeStroke(short StrokeIndex,STROKE_SIDE StrokeSide,double
-                | iDistance)
-                |     Resizes a given stroke based on the index.
-                | 
-                |     Parameters:
-                | 
-                |         StrokeIndex
-                |             The index of the stroke to modify. 
-                |         StrokeSide
-                |             The side of the stroke to modify. 
-                |         iDistance
-                |             The distance of the resized stroke. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub ResizeStroke(short StrokeIndex,STROKE_SIDE StrokeSide,double
+                iDistance)
+                    Resizes a given stroke based on the index.
+                
+                    Parameters:
+                
+                        StrokeIndex
+                            The index of the stroke to modify. 
+                        StrokeSide
+                            The side of the stroke to modify. 
+                        iDistance
+                            The distance of the resized stroke. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int stroke_index:
         :param int stroke_side:
@@ -335,21 +324,20 @@ class SurfaceTrajectory(AnyObject):
     def resize_trajectory(self, stroke_side: int, extent: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ResizeTrajectory(STROKE_SIDE StrokeSide,double extent)
-                |     Resizes a given stroke based on the index.
-                | 
-                |     Parameters:
-                | 
-                |         StrokeSide
-                |             The side of the trajectory to modify. 
-                |         extent
-                |             The distance of the resized trajectory. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub ResizeTrajectory(STROKE_SIDE StrokeSide,double extent)
+                    Resizes a given stroke based on the index.
+                
+                    Parameters:
+                
+                        StrokeSide
+                            The side of the trajectory to modify. 
+                        extent
+                            The distance of the resized trajectory. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int stroke_side:
         :param float extent:
@@ -360,23 +348,22 @@ class SurfaceTrajectory(AnyObject):
     def set_approach_distance(self, app_retract: int, i_distance: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetApproachDistance(APPROACH_RETRACT AppRetract,double
-                | iDistance)
-                |     Sets the approach distance.
-                | 
-                |     Parameters:
-                | 
-                |         AppRetract
-                |             Either UndefinedAppRet, First, Last, Retract, Approach, or
-                |             ApproachRetract 
-                |         iDistance
-                |             The distance to set the approach 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetApproachDistance(APPROACH_RETRACT AppRetract,double
+                iDistance)
+                    Sets the approach distance.
+                
+                    Parameters:
+                
+                        AppRetract
+                            Either UndefinedAppRet, First, Last, Retract, Approach, or
+                            ApproachRetract 
+                        iDistance
+                            The distance to set the approach 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int app_retract:
         :param float i_distance:
@@ -387,20 +374,19 @@ class SurfaceTrajectory(AnyObject):
     def set_approach_transformations(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetApproachTransformations(CATSafeArrayVariant
-                | iTransformations)
-                |     Sets the approach transformations
+                Sub SetApproachTransformations(CATSafeArrayVariant
+                iTransformations)
+                    Sets the approach transformations
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iTransformations
-                |             List of transformations
+                        iTransformations
+                            List of transformations
                 |
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :return: tuple
         """
@@ -425,19 +411,18 @@ class SurfaceTrajectory(AnyObject):
     def set_global_position(self, i_global_pos: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetGlobalPosition(CATSafeArrayVariant iGlobalPos)
-                |     Sets the global position
+                Sub SetGlobalPosition(CATSafeArrayVariant iGlobalPos)
+                    Sets the global position
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iGlobalPos
-                |             The global position
+                        iGlobalPos
+                            The global position
                 |
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param tuple i_global_pos:
         :return: None
@@ -463,20 +448,19 @@ class SurfaceTrajectory(AnyObject):
     def set_retract_transformations(self, i_transformations: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetRetractTransformations(CATSafeArrayVariant
-                | iTransformations)
-                |     Sets the retract transformations
+                Sub SetRetractTransformations(CATSafeArrayVariant
+                iTransformations)
+                    Sets the retract transformations
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iTransformations
-                |             List of transformations
+                        iTransformations
+                            List of transformations
                 |
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param tuple i_transformations:
         :return: None
@@ -502,19 +486,18 @@ class SurfaceTrajectory(AnyObject):
     def set_sweep_direction(self, i_sweep_direction: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetSweepDirection(CATSafeArrayVariant iSweepDirection)
-                |     Sets the Sweep Direction
+                Sub SetSweepDirection(CATSafeArrayVariant iSweepDirection)
+                    Sets the Sweep Direction
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iGlobalPos
-                |             List of global positions
+                        iGlobalPos
+                            List of global positions
                 |
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param tuple i_sweep_direction:
         :return: None

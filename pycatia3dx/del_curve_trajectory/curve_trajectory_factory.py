@@ -14,25 +14,23 @@ from pycatia3dx.del_curve_trajectory.curve_trajectory import CurveTrajectory
 
 
 class CurveTrajectoryFactory(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CurveTrajectoryFactory
-                | 
-                | Interface representing a Curve Trajectory factory to create and delete Curve
-                | Trajectory.
-                | 
-                | Role: This interface is used to create and delete Curve
-                | Trajectory.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CurveTrajectoryFactory
+                
+                Interface representing a Curve Trajectory factory to create and delete Curve
+                Trajectory.
+                
+                Role: This interface is used to create and delete Curve
+                Trajectory.
     
     """
 
@@ -43,32 +41,31 @@ class CurveTrajectoryFactory(AnyObject):
     def create_curve_trajectory(self, i_trajectory_type: int, i_name: str) -> CurveTrajectory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateCurveTrajectory(DNBTrajectoryType iTrajectoryType,CATBSTR iName) As
-                | CurveTrajectory
-                |     This method creates a CurveTrajectory
-                | 
-                |     Parameters:
-                | 
-                |         iTrajectoryType,
-                |             The trajectory type. The approved list of trajectory type are:
-                |             Weld, Sealant, Adhesive, General 
-                |         iName,
-                |             Name of the Curve Trajectory to create. 
-                | 
-                |     Returns:
-                |         The created Curve Trajectory. 
-                |     Example:
-                | 
-                |          Dim objCurveTrajectoryFactory As
-                |          CurveTrajectoryFactory
-                |                ........
-                |          Dim TrajectoryName As String
-                |          TrajectoryName = "CurveTrajectory.VB"
-                |          Dim objCurveTrajectory As CurveTrajectory
-                |          Set objCurveTrajectory = objCurveTrajectoryFactory.CreateCurveTrajectory("Weld", TrajectoryName)
+                Func CreateCurveTrajectory(DNBTrajectoryType iTrajectoryType,CATBSTR iName) As
+                CurveTrajectory
+                    This method creates a CurveTrajectory
+                
+                    Parameters:
+                
+                        iTrajectoryType,
+                            The trajectory type. The approved list of trajectory type are:
+                            Weld, Sealant, Adhesive, General 
+                        iName,
+                            Name of the Curve Trajectory to create. 
+                
+                    Returns:
+                        The created Curve Trajectory. 
+                    Example:
+                
+                         Dim objCurveTrajectoryFactory As
+                         CurveTrajectoryFactory
+                               ........
+                         Dim TrajectoryName As String
+                         TrajectoryName = "CurveTrajectory.VB"
+                         Dim objCurveTrajectory As CurveTrajectory
+                         Set objCurveTrajectory = objCurveTrajectoryFactory.CreateCurveTrajectory("Weld", TrajectoryName)
 
         :param int i_trajectory_type:
         :param str i_name:
@@ -79,23 +76,22 @@ class CurveTrajectoryFactory(AnyObject):
     def destroy_curve_trajectory(self, isp_curve_traj: CATBaseUnknown) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DestroyCurveTrajectory(CATBaseUnknown ispCurveTraj)
-                |     This method destroys a CurveTrajectory
-                | 
-                |     Parameters:
-                | 
-                |         ispCurveTraj
-                |             CurveTrajectory to be deleted. 
-                |         Example:
-                | 
-                |              Dim objCurveTrajectoryFactory As
-                |              CurveTrajectoryFactory
-                |              Dim objCurveTrajectory As CurveTrajectory
-                |                    ........
-                |              Call
+                Sub DestroyCurveTrajectory(CATBaseUnknown ispCurveTraj)
+                    This method destroys a CurveTrajectory
+                
+                    Parameters:
+                
+                        ispCurveTraj
+                            CurveTrajectory to be deleted. 
+                        Example:
+                
+                             Dim objCurveTrajectoryFactory As
+                             CurveTrajectoryFactory
+                             Dim objCurveTrajectory As CurveTrajectory
+                                   ........
+                             Call
 objCurveTrajectoryFactory.DestroyCurveTrajectory(objCurveTrajectory)
 
         :param CATBaseUnknown isp_curve_traj:
@@ -106,22 +102,21 @@ objCurveTrajectoryFactory.DestroyCurveTrajectory(objCurveTrajectory)
     def set_generic_prefix(self, ib_generic: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetGenericPrefix(boolean ibGeneric)
-                |     This method must be called prior to CreateCurveTrajectory to define the
-                |     prefix used for the feature name.
-                | 
-                |     Parameters:
-                | 
-                |         ibGeneric,
-                |             TRUE to define the prefix as "Arc". FALSE to define the prefix
-                |             accordingly to the type. ex.: "Weld", "Sealant", "Adhesive" By default the
-                |             value is FALSE. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure. 
+                Sub SetGenericPrefix(boolean ibGeneric)
+                    This method must be called prior to CreateCurveTrajectory to define the
+                    prefix used for the feature name.
+                
+                    Parameters:
+                
+                        ibGeneric,
+                            TRUE to define the prefix as "Arc". FALSE to define the prefix
+                            accordingly to the type. ex.: "Weld", "Sealant", "Adhesive" By default the
+                            value is FALSE. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure. 
 
         :param bool ib_generic:
         :return: None
@@ -129,4 +124,4 @@ objCurveTrajectoryFactory.DestroyCurveTrajectory(objCurveTrajectory)
         return self.com_object.SetGenericPrefix(ib_generic)
 
     def __repr__(self):
-        return f'CurveTrajectoryFactory(name="{ self.name }")'
+        return f'CurveTrajectoryFactory(name="{self.name}")'

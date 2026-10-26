@@ -13,27 +13,25 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class Shape(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Shape
-                | 
-                | Represents the Shape object.
-                | It is an abstract object which is not intended to be created as such, from
-                | which all objects having a shape representation derive.
-                | 
-                | See also:
-                |     SketchBasedShape, BooleanShape, DressUpShape,
-                |     TransformationShape
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Shape
+                
+                Represents the Shape object.
+                It is an abstract object which is not intended to be created as such, from
+                which all objects having a shape representation derive.
+                
+                See also:
+                    SketchBasedShape, BooleanShape, DressUpShape,
+                    TransformationShape
     
     """
 
@@ -42,4 +40,4 @@ class Shape(AnyObject):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'Shape(name="{ self.name }")'
+        return f'Shape(name="{self.name}")'

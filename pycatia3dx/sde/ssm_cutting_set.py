@@ -13,22 +13,20 @@ from pycatia3dx.sde.ssm_cutting_familys import SsmCuttingFamilys
 
 
 class SsmCuttingSet(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SsmCuttingSet
-                | 
-                | Role: This interface is specific to CuttingSet Of Space
-                | Manager
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SsmCuttingSet
+                
+                Role: This interface is specific to CuttingSet Of Space
+                Manager
     
     """
 
@@ -39,19 +37,18 @@ class SsmCuttingSet(AnyObject):
     def get_children(self, ol_child_objects: SsmCuttingFamilys) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetChildren(SsmCuttingFamilys olChildObjects)
-                |     Get the list of children
-                | 
-                |     Parameters:
-                | 
-                |         olChildObjects
-                |             output list of child 
-                | 
-                |     Returns:
-                |         Error code of function. 
+                Sub GetChildren(SsmCuttingFamilys olChildObjects)
+                    Get the list of children
+                
+                    Parameters:
+                
+                        olChildObjects
+                            output list of child 
+                
+                    Returns:
+                        Error code of function. 
 
         :param SsmCuttingFamilys ol_child_objects:
         :return: None
@@ -59,4 +56,4 @@ class SsmCuttingSet(AnyObject):
         return self.com_object.GetChildren(ol_child_objects.com_object)
 
     def __repr__(self):
-        return f'SsmCuttingSet(name="{ self.name }")'
+        return f'SsmCuttingSet(name="{self.name}")'

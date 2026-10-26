@@ -7,27 +7,27 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia3dx import CATScriptLanguage
 from pycatia3dx.measure.measurable_in_context import MeasurableInContext
 
 
 class MeasurableCurve(MeasurableInContext):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATOpnsMeasureIDLItf.MeasurableInContext
-                |                         MeasurableCurve
-                | 
-                | Interface representing the measurement on a curve.
-                | Get the length and the characteristic points on the curve(start, middle and end
-                | points).
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATOpnsMeasureIDLItf.MeasurableInContext
+                                        MeasurableCurve
+                
+                Interface representing the measurement on a curve.
+                Get the length and the characteristic points on the curve(start, middle and end
+                points).
     
     """
 
@@ -38,108 +38,113 @@ class MeasurableCurve(MeasurableInContext):
     def get_length(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetLength() As double
-                |     Retrieves the Length of the curve.
-                | 
-                |     Example:
-                | 
-                |            This example retrieves the Length of theMeasurableCurve
-                |            measure.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasurableCurve As MeasurableCurve
-                |              Set theMeasurableCurve = theMeasureService.GetMeasurable(theSelection, CAAMeasurableCurve)
-                |              Dim theLength As Double
-                |              theLength = theMeasurableCurve.GetLength
+                Func GetLength() As double
+                    Retrieves the Length of the curve.
+                
+                    Example:
+                
+                           This example retrieves the Length of theMeasurableCurve
+                           measure.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasurableCurve As MeasurableCurve
+                             Set theMeasurableCurve = theMeasureService.GetMeasurable(theSelection, CAAMeasurableCurve)
+                             Dim theLength As Double
+                             theLength = theMeasurableCurve.GetLength
 
         :return: float
         """
         return self.com_object.GetLength()
 
-    def get_points(self) -> tuple:
+    def get_points(self) -> tuple | None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetPoints(CATSafeArrayVariant ioStartPoint,CATSafeArrayVariant
-                | ioMidPoint,CATSafeArrayVariant ioEndPoint)
-                |     Retrieves the characteristic points of the curve : the start point, the middle point and the end point.
-                | 
-                |     Parameters:
-                | 
-                |         ioStartPoint
-                |             The information of the start point of the curve with respect to the
-                |             product coordinate system:
-                | 
-                |                 ioStartPoint(0) is the X coordinate of the startpoint of the
-                |                 curve
-                |                 ioStartPoint(1) is the Y coordinate of the startpoint of the
-                |                 curve
-                |                 ioStartPoint(2) is the Z coordinate of the startpoint of the
-                |                 curve 
-                | 
-                |         ioMidPoint
-                |             The information of the middle point of the curve with respect to
-                |             the product coordinate system:
-                | 
-                |                 oCoordinates(0) is the X coordinate of the midpoint of the
-                |                 curve
-                |                 oCoordinates(1) is the Y coordinate of the midpoint of the
-                |                 curve
-                |                 oCoordinates(2) is the Z coordinate of the midpoint of the
-                |                 curve 
-                | 
-                |         ioEndPoint
-                |             The information of the end point of the curve with respect to the
-                |             product coordinate system:
-                | 
-                |                 oCoordinates(0) is the X coordinate of the endpoint of the
-                |                 curve
-                |                 oCoordinates(1) is the Y coordinate of the endpoint of the
-                |                 curve
-                |                 oCoordinates(2) is the Z coordinate of the endpoint of the
-                |                 curve 
-                | 
-                |     Example:
-                | 
-                |            This example retrieves the characteristic points of the curve of
-                |            theMeasurableCurve measure.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasurableCurve As MeasurableCurve
-                |              Set theMeasurableCurve = theMeasureService.GetMeasurable(theSelection, CAAMeasurableCurve)
-                |              Dim theStartPoint(2)
-                |              Dim theMidPoint(2)
-                |              Dim theEndPoint(2)
-                |              theMeasurableCurve.GetPoints theStartPoint, theMidPoint,
-                |              theEndPoint
+                Sub GetPoints(CATSafeArrayVariant ioStartPoint,CATSafeArrayVariant
+                ioMidPoint,CATSafeArrayVariant ioEndPoint)
+                    Retrieves the characteristic points of the curve : the start point, the middle point and the end point.
+                
+                    Parameters:
+                
+                        ioStartPoint
+                            The information of the start point of the curve with respect to the
+                            product coordinate system:
+                
+                                ioStartPoint(0) is the X coordinate of the startpoint of the
+                                curve
+                                ioStartPoint(1) is the Y coordinate of the startpoint of the
+                                curve
+                                ioStartPoint(2) is the Z coordinate of the startpoint of the
+                                curve 
+                
+                        ioMidPoint
+                            The information of the middle point of the curve with respect to
+                            the product coordinate system:
+                
+                                oCoordinates(0) is the X coordinate of the midpoint of the
+                                curve
+                                oCoordinates(1) is the Y coordinate of the midpoint of the
+                                curve
+                                oCoordinates(2) is the Z coordinate of the midpoint of the
+                                curve 
+                
+                        ioEndPoint
+                            The information of the end point of the curve with respect to the
+                            product coordinate system:
+                
+                                oCoordinates(0) is the X coordinate of the endpoint of the
+                                curve
+                                oCoordinates(1) is the Y coordinate of the endpoint of the
+                                curve
+                                oCoordinates(2) is the Z coordinate of the endpoint of the
+                                curve 
+                
+                    Example:
+                
+                           This example retrieves the characteristic points of the curve of
+                           theMeasurableCurve measure.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasurableCurve As MeasurableCurve
+                             Set theMeasurableCurve = theMeasureService.GetMeasurable(theSelection, CAAMeasurableCurve)
+                             Dim theStartPoint(2)
+                             Dim theMidPoint(2)
+                             Dim theEndPoint(2)
+                             theMeasurableCurve.GetPoints theStartPoint, theMidPoint, theEndPoint
 
         :return: tuple
         """
-        # todo: check this method, does it require system service?
-        return self.com_object.GetPoints()
-        # todo: check this method, does it require system service?
-        # Autogenerated comment:
-        # some methods require a system service call as the methods expects a vb array object
-        # passed to it and there is no way to do this directly with python. In those cases the following code
-        # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # vba_function_name = 'get_points'
-        # vba_code = """
-        # Public Function get_points(measurable_curve)
-        #     Dim ioStartPoint (2)
-        #     measurable_curve.GetPoints ioStartPoint
-        #     get_points = ioStartPoint
-        # End Function
-        # """
+        vba_function_name = 'get_points'
+        vba_code = """
+        Public Function get_points(measurable_curve)
+            Dim ioStartPoint (2)
+            Dim theStartPoint(2)
+            Dim theMidPoint(2)
+            Dim theEndPoint(2)
+            measurable_curve.GetPoints theStartPoint, theMidPoint, theEndPoint
+            Dim Points(2) 
+            Points(0) = theStartPoint
+            Points(1) = theMidPoint
+            Points(2) = theEndPoint
+            get_points = Points
+        End Function
+        """
 
-        # system_service = SystemService(self.application.SystemService)
-        # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        result = self.application.system_service.evaluate(
+            vba_code,
+            CATScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
+
+        if isinstance(result, tuple):
+            return result
+        return None
 
     def __repr__(self):
         return f'MeasurableCurve(name="{self.name}")'

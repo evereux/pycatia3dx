@@ -11,63 +11,61 @@ from pycatia3dx.sma_mpa_foundation.sim_step import SimStep
 
 
 class SimCoupledThermalElectroChemicalStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SMAMpaFoundationIDLItf.SimStep
-                |                         SimCoupledThermalElectroChemicalStep
-                | 
-                | Represents the Coupled Thermal Electro Chemical Step object.
-                | 
-                | Example:
-                |     Given a SimSteps object, you can create a
-                |     SimCoupledThermalElectroChemicalStep as following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyCoupledThermalElectroChemicalStep As
-                |      SimCoupledThermalElectroChemicalStep
-                |      Set MyCoupledThermalElectroChemicalStep = MySteps.Add("SimCoupledThermalElectroChemicalStep")
-                |      
-                | 
-                |     Given a SimSteps object, you can retrieve a
-                |     SimCoupledThermalElectroChemicalStep named "Coupled Thermal Electro Chemical
-                |     Step.1" as following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyCoupledThermalElectroChemicalStep As
-                |      SimCoupledThermalElectroChemicalStep
-                |      Set MyCoupledThermalElectroChemicalStep = MySteps.Item("Coupled Thermal Electro Chemical Step.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimSteps object mySteps, you can create a
-                |     SimCoupledThermalElectroChemicalStep as following:
-                | 
-                |      ...
-                |      myCoupledThermalElectroChemicalStep = mySteps.Add("SimCoupledThermalElectroChemicalStep")
-                |      
-                | 
-                |     Given a SimSteps object mySteps, you can retrieve a
-                |     SimCoupledThermalElectroChemicalStep named "Coupled Thermal Electro Chemical
-                |     Step.1" as following:
-                | 
-                |      ...
-                |      myCoupledThermalElectroChemicalStep = mySteps.Item("Coupled Thermal Electro Chemical Step.1")
-                |      
-                | 
-                | See also:
-                |     SimSteps
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SMAMpaFoundationIDLItf.SimStep
+                                        SimCoupledThermalElectroChemicalStep
+                
+                Represents the Coupled Thermal Electro Chemical Step object.
+                
+                Example:
+                    Given a SimSteps object, you can create a
+                    SimCoupledThermalElectroChemicalStep as following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyCoupledThermalElectroChemicalStep As
+                     SimCoupledThermalElectroChemicalStep
+                     Set MyCoupledThermalElectroChemicalStep = MySteps.Add("SimCoupledThermalElectroChemicalStep")
+                     
+                
+                    Given a SimSteps object, you can retrieve a
+                    SimCoupledThermalElectroChemicalStep named "Coupled Thermal Electro Chemical
+                    Step.1" as following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyCoupledThermalElectroChemicalStep As
+                     SimCoupledThermalElectroChemicalStep
+                     Set MyCoupledThermalElectroChemicalStep = MySteps.Item("Coupled Thermal Electro Chemical Step.1")
+                     
+                
+                Example in Python:
+                    Given a SimSteps object mySteps, you can create a
+                    SimCoupledThermalElectroChemicalStep as following:
+                
+                     ...
+                     myCoupledThermalElectroChemicalStep = mySteps.Add("SimCoupledThermalElectroChemicalStep")
+                     
+                
+                    Given a SimSteps object mySteps, you can retrieve a
+                    SimCoupledThermalElectroChemicalStep named "Coupled Thermal Electro Chemical
+                    Step.1" as following:
+                
+                     ...
+                     myCoupledThermalElectroChemicalStep = mySteps.Item("Coupled Thermal Electro Chemical Step.1")
+                     
+                
+                See also:
+                    SimSteps
     
     """
 
@@ -79,11 +77,10 @@ class SimCoupledThermalElectroChemicalStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -102,13 +99,12 @@ class SimCoupledThermalElectroChemicalStep(SimStep):
     def initial_time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InitialTimeIncrement() As double
-                |     Returns or sets the initial time for the increments of the Coupled Thermal
-                |     Electro-Chemical step. Only applicable when the incrementation scheme is
-                |     Automatic.
+                Property InitialTimeIncrement() As double
+                    Returns or sets the initial time for the increments of the Coupled Thermal
+                    Electro-Chemical step. Only applicable when the incrementation scheme is
+                    Automatic.
 
         :return: float
         """
@@ -127,11 +123,10 @@ class SimCoupledThermalElectroChemicalStep(SimStep):
     def matrix_storage_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MatrixStorageScheme() As SimMatrixStorageScheme
-                |     Returns or sets the matrix storage scheme.
+                Property MatrixStorageScheme() As SimMatrixStorageScheme
+                    Returns or sets the matrix storage scheme.
 
         :return: SimMatrixStorageScheme
         """
@@ -150,13 +145,12 @@ class SimCoupledThermalElectroChemicalStep(SimStep):
     def maximum_increments(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumIncrements() As long
-                |     Returns or sets the maximum number of increments for the Coupled Thermal
-                |     Electro-Chemical step. Only applicable when the incrementation scheme is
-                |     Automatic.
+                Property MaximumIncrements() As long
+                    Returns or sets the maximum number of increments for the Coupled Thermal
+                    Electro-Chemical step. Only applicable when the incrementation scheme is
+                    Automatic.
 
         :return: int
         """
@@ -175,11 +169,10 @@ class SimCoupledThermalElectroChemicalStep(SimStep):
     def maximum_temperature_change(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumTemperatureChange() As double
-                |     Returns or sets the maximum temperature change.
+                Property MaximumTemperatureChange() As double
+                    Returns or sets the maximum temperature change.
 
         :return: float
         """
@@ -198,13 +191,12 @@ class SimCoupledThermalElectroChemicalStep(SimStep):
     def maximum_time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumTimeIncrement() As double
-                |     Returns or sets the maximum time for the increments of the Coupled Thermal
-                |     Electro-Chemical step. Only applicable when the incrementation scheme is
-                |     Automatic.
+                Property MaximumTimeIncrement() As double
+                    Returns or sets the maximum time for the increments of the Coupled Thermal
+                    Electro-Chemical step. Only applicable when the incrementation scheme is
+                    Automatic.
 
         :return: float
         """
@@ -223,13 +215,12 @@ class SimCoupledThermalElectroChemicalStep(SimStep):
     def minimum_time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MinimumTimeIncrement() As double
-                |     Returns or sets the minimum time for the increments of the Coupled Thermal
-                |     Electro-Chemical step. Only applicable when the incrementation scheme is
-                |     Automatic.
+                Property MinimumTimeIncrement() As double
+                    Returns or sets the minimum time for the increments of the Coupled Thermal
+                    Electro-Chemical step. Only applicable when the incrementation scheme is
+                    Automatic.
 
         :return: float
         """
@@ -248,12 +239,11 @@ class SimCoupledThermalElectroChemicalStep(SimStep):
     def step_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StepTime() As double
-                |     Returns or sets the step time for the Coupled Thermal Electro-Chemical
-                |     step.
+                Property StepTime() As double
+                    Returns or sets the step time for the Coupled Thermal Electro-Chemical
+                    step.
 
         :return: float
         """
@@ -272,12 +262,11 @@ class SimCoupledThermalElectroChemicalStep(SimStep):
     def thermal_response_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ThermalResponseType() As
-                | SimCoupledThermalResponseType
-                |     Returns or sets the thermal response type.
+                Property ThermalResponseType() As
+                SimCoupledThermalResponseType
+                    Returns or sets the thermal response type.
 
         :return: SimCoupledThermalResponseType
         """
@@ -296,12 +285,11 @@ class SimCoupledThermalElectroChemicalStep(SimStep):
     def time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TimeIncrement() As double
-                |     Returns or sets the time increment of the Coupled Thermal Electro-Chemical
-                |     step. Only applicable when the incrementation scheme is Fixed.
+                Property TimeIncrement() As double
+                    Returns or sets the time increment of the Coupled Thermal Electro-Chemical
+                    step. Only applicable when the incrementation scheme is Fixed.
 
         :return: float
         """
@@ -320,12 +308,11 @@ class SimCoupledThermalElectroChemicalStep(SimStep):
     def time_incrementation_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TimeIncrementationScheme() As
-                | SimTimeIncrementationScheme
-                |     Returns or sets the time incrementation scheme. 
+                Property TimeIncrementationScheme() As
+                SimTimeIncrementationScheme
+                    Returns or sets the time incrementation scheme. 
 
         :return: SimTimeIncrementationScheme
         """
@@ -341,4 +328,4 @@ class SimCoupledThermalElectroChemicalStep(SimStep):
         self.com_object.TimeIncrementationScheme = value
 
     def __repr__(self):
-        return f'SimCoupledThermalElectroChemicalStep(name="{ self.name }")'
+        return f'SimCoupledThermalElectroChemicalStep(name="{self.name}")'

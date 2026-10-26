@@ -12,64 +12,62 @@ from pycatia3dx.sma_few_optimization.sim_non_parametric_response_variable import
 
 
 class SimCalculatedResponseVariable(SimNonParametricResponseVariable):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                    SMAFeaOptimizationIDLItf.SimDesignImprovementResponseVariable
-                |                        SMAFeaOptimizationIDLItf.SimNonParametricResponseVariable
-                |                             SimCalculatedResponseVariable
-                | 
-                | Represents the Reaction Force constraint object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimCalculatedResponseVariable as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyCalculatedResponseVariable As
-                |      SimCalculatedResponseVariable
-                |      Set MyCalculatedResponseVariable = MyFeatures.Add("SimCalculatedResponseVariable")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimCalculatedResponseVariable named "Calculated Response Variable.1" as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyCalculatedResponseVariable As
-                |      SimCalculatedResponseVariable
-                |      Set MyCalculatedResponseVariable = MyFeatures.Item("Calculated Response Variable.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimCalculatedResponseVariable as following:
-                | 
-                |      ...
-                |      MyCalculatedResponseVariable = MyFeatures.Add("SimCalculatedResponseVariable")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimCalculatedResponseVariable named "Calculated Response Variable.1" as
-                |     following:
-                | 
-                |      ...
-                |      MyCalculatedResponseVariable = MyFeatures.Item("Calculated Response Variable.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                   SMAFeaOptimizationIDLItf.SimDesignImprovementResponseVariable
+                                       SMAFeaOptimizationIDLItf.SimNonParametricResponseVariable
+                                            SimCalculatedResponseVariable
+                
+                Represents the Reaction Force constraint object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimCalculatedResponseVariable as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyCalculatedResponseVariable As
+                     SimCalculatedResponseVariable
+                     Set MyCalculatedResponseVariable = MyFeatures.Add("SimCalculatedResponseVariable")
+                     
+                
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimCalculatedResponseVariable named "Calculated Response Variable.1" as
+                    following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyCalculatedResponseVariable As
+                     SimCalculatedResponseVariable
+                     Set MyCalculatedResponseVariable = MyFeatures.Item("Calculated Response Variable.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimCalculatedResponseVariable as following:
+                
+                     ...
+                     MyCalculatedResponseVariable = MyFeatures.Add("SimCalculatedResponseVariable")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimCalculatedResponseVariable named "Calculated Response Variable.1" as
+                    following:
+                
+                     ...
+                     MyCalculatedResponseVariable = MyFeatures.Item("Calculated Response Variable.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -81,11 +79,10 @@ class SimCalculatedResponseVariable(SimNonParametricResponseVariable):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As SimCalculatedResponseVariableType
-                |     Returns or sets the type of calculated response variable.
+                Property Type() As SimCalculatedResponseVariableType
+                    Returns or sets the type of calculated response variable.
 
         :return: int
         """
@@ -103,18 +100,17 @@ class SimCalculatedResponseVariable(SimNonParametricResponseVariable):
     def add_response_variable(self, i_design_response: AnyObject, i_weight: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddResponseVariable(AnyObject iDesignResponse,double
-                | iWeight)
-                |     Combines number of design responses of same type for
-                |     SimCombineValues
-                | 
-                |     Parameters:
-                | 
-                |         iDesignResponse
-                |             [in], iWeight [in]
+                Sub AddResponseVariable(AnyObject iDesignResponse,double
+                iWeight)
+                    Combines number of design responses of same type for
+                    SimCombineValues
+                
+                    Parameters:
+                
+                        iDesignResponse
+                            [in], iWeight [in]
 
         :param AnyObject i_design_response:
         :param float i_weight:
@@ -125,17 +121,16 @@ class SimCalculatedResponseVariable(SimNonParametricResponseVariable):
     def set_first_response_variable(self, i_design_response: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetFirstResponseVariable(AnyObject iDesignResponse)
-                |     Sets the first response variable for SimAddAbsoluteValues,
-                |     SimSubtractValues and SimSubtractAbsoluteValues
-                | 
-                |     Parameters:
-                | 
-                |         iDesignResponse
-                |             [in]
+                Sub SetFirstResponseVariable(AnyObject iDesignResponse)
+                    Sets the first response variable for SimAddAbsoluteValues,
+                    SimSubtractValues and SimSubtractAbsoluteValues
+                
+                    Parameters:
+                
+                        iDesignResponse
+                            [in]
 
         :param AnyObject i_design_response:
         :return: None
@@ -145,17 +140,16 @@ class SimCalculatedResponseVariable(SimNonParametricResponseVariable):
     def set_second_response_variable(self, i_design_response: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetSecondResponseVariable(AnyObject iDesignResponse)
-                |     Sets the second response variable for SimAddAbsoluteValues,
-                |     SimSubtractValues and SimSubtractAbsoluteValues
-                | 
-                |     Parameters:
-                | 
-                |         iDesignResponse
-                |             [in]
+                Sub SetSecondResponseVariable(AnyObject iDesignResponse)
+                    Sets the second response variable for SimAddAbsoluteValues,
+                    SimSubtractValues and SimSubtractAbsoluteValues
+                
+                    Parameters:
+                
+                        iDesignResponse
+                            [in]
 
         :param AnyObject i_design_response:
         :return: None
@@ -163,4 +157,4 @@ class SimCalculatedResponseVariable(SimNonParametricResponseVariable):
         return self.com_object.SetSecondResponseVariable(i_design_response.com_object)
 
     def __repr__(self):
-        return f'SimCalculatedResponseVariable(name="{ self.name }")'
+        return f'SimCalculatedResponseVariable(name="{self.name}")'

@@ -12,60 +12,58 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimStressConstraint(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimStressConstraint
-                | 
-                | Represents the stress constraint object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimStressConstraint as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyStressConstraint As SimStressConstraint
-                |      Set MyStressConstraint = MyFeatures.Add("SimStressConstraint")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimStressConstraint named " Stress Constraint.1" as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyStressConstraint As SimStressConstraint
-                |      Set MyStressConstraint = MyFeatures.Item("Stress Constraint.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimStressConstraint as following:
-                | 
-                |      ...
-                |      MyStressConstraint = MyFeatures.Add("SimStressConstraint")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimStressConstraint named "Stress Constraint.1" as
-                |     following:
-                | 
-                |      ...
-                |      MyStressConstraint = MyFeatures.Item("Stress Constraint.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimStressConstraint
+                
+                Represents the stress constraint object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimStressConstraint as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyStressConstraint As SimStressConstraint
+                     Set MyStressConstraint = MyFeatures.Add("SimStressConstraint")
+                     
+                
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimStressConstraint named " Stress Constraint.1" as
+                    following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyStressConstraint As SimStressConstraint
+                     Set MyStressConstraint = MyFeatures.Item("Stress Constraint.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimStressConstraint as following:
+                
+                     ...
+                     MyStressConstraint = MyFeatures.Add("SimStressConstraint")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimStressConstraint named "Stress Constraint.1" as
+                    following:
+                
+                     ...
+                     MyStressConstraint = MyFeatures.Item("Stress Constraint.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -77,11 +75,10 @@ class SimStressConstraint(AnyObject):
     def load_case(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LoadCase() As CATBaseDispatch (Read Only)
-                |     Returns the Linear Loadcase used for the stress constraint.
+                Property LoadCase() As CATBaseDispatch (Read Only)
+                    Returns the Linear Loadcase used for the stress constraint.
 
         :return: AnyObject
         """
@@ -91,16 +88,15 @@ class SimStressConstraint(AnyObject):
     def get_maximum_stress(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetMaximumStress(double oVal)
-                |     Gets the Maximum Stress constraint.
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Constraint value. Quantity: STRESS, units:N/m_2
+                Sub GetMaximumStress(double oVal)
+                    Gets the Maximum Stress constraint.
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Constraint value. Quantity: STRESS, units:N/m_2
 
         :param float o_val:
         :return: None
@@ -110,16 +106,15 @@ class SimStressConstraint(AnyObject):
     def set_maximum_stress(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMaximumStress(double iVal)
-                |     Sets the Maximum Stress constraint.
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Constraint value. Quantity: STRESS, units:N/m_2
+                Sub SetMaximumStress(double iVal)
+                    Sets the Maximum Stress constraint.
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Constraint value. Quantity: STRESS, units:N/m_2
 
         :param float i_val:
         :return: None
@@ -127,4 +122,4 @@ class SimStressConstraint(AnyObject):
         return self.com_object.SetMaximumStress(i_val)
 
     def __repr__(self):
-        return f'SimStressConstraint(name="{ self.name }")'
+        return f'SimStressConstraint(name="{self.name}")'

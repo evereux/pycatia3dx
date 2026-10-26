@@ -13,61 +13,59 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimRotaryAccelerationForce(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimRotaryAccelerationForce
-                | 
-                | Represents the Rotary Acceleration Force object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimRotaryAccelerationForce as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyRotaryAccelerationForce As
-                |      SimRotaryAccelerationForce
-                |      Set MyRotaryAccelerationForce = MyFeatures.Add("SimRotaryAccelerationForce")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimRotaryAccelerationForce
-                |     named "Rotary Acceleration Force.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyRotaryAccelerationForce As
-                |      SimRotaryAccelerationForce
-                |      Set MyRotaryAccelerationForce = MyFeatures.Item("Rotary Acceleration Force.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a
-                |     SimRotaryAccelerationForce as following:
-                | 
-                |      ...
-                |      myRotaryAccelerationForce = myFeatures.Add("SimRotaryAccelerationForce")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a
-                |     SimRotaryAccelerationForce named "Rotary Acceleration Force.1" as
-                |     following:
-                | 
-                |      ...
-                |      myRotaryAccelerationForce = myFeatures.Item("Rotary Acceleration Force.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimRotaryAccelerationForce
+                
+                Represents the Rotary Acceleration Force object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimRotaryAccelerationForce as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyRotaryAccelerationForce As
+                     SimRotaryAccelerationForce
+                     Set MyRotaryAccelerationForce = MyFeatures.Add("SimRotaryAccelerationForce")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimRotaryAccelerationForce
+                    named "Rotary Acceleration Force.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyRotaryAccelerationForce As
+                     SimRotaryAccelerationForce
+                     Set MyRotaryAccelerationForce = MyFeatures.Item("Rotary Acceleration Force.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a
+                    SimRotaryAccelerationForce as following:
+                
+                     ...
+                     myRotaryAccelerationForce = myFeatures.Add("SimRotaryAccelerationForce")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a
+                    SimRotaryAccelerationForce named "Rotary Acceleration Force.1" as
+                    following:
+                
+                     ...
+                     myRotaryAccelerationForce = myFeatures.Item("Rotary Acceleration Force.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -79,11 +77,10 @@ class SimRotaryAccelerationForce(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -102,11 +99,10 @@ class SimRotaryAccelerationForce(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureHistory() As SimFeatureHistory (Read Only)
-                |     Returns the feature history.
+                Property FeatureHistory() As SimFeatureHistory (Read Only)
+                    Returns the feature history.
 
         :return: SimFeatureHistory
         """
@@ -117,13 +113,12 @@ class SimRotaryAccelerationForce(AnyObject):
     def line(self) -> SimAxis:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Line() As SimAxis (Read Only)
-                |     Returns the line of the rotary acceleration force. The graphical user
-                |     interface editor for this feature only supports geometric axis types. See
-                |     SimAxisAxisType for additional information.
+                Property Line() As SimAxis (Read Only)
+                    Returns the line of the rotary acceleration force. The graphical user
+                    interface editor for this feature only supports geometric axis types. See
+                    SimAxisAxisType for additional information.
 
         :return: SimAxis
         """
@@ -134,12 +129,11 @@ class SimRotaryAccelerationForce(AnyObject):
     def rotational_acceleration(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RotationalAcceleration() As double
-                |     Rotational acceleration of the rotary acceleration force. Quantity:
-                |     ANGACCELRTN, units: turn_mn2 
+                Property RotationalAcceleration() As double
+                    Rotational acceleration of the rotary acceleration force. Quantity:
+                    ANGACCELRTN, units: turn_mn2 
 
         :return: float
         """
@@ -155,4 +149,4 @@ class SimRotaryAccelerationForce(AnyObject):
         self.com_object.RotationalAcceleration = value
 
     def __repr__(self):
-        return f'SimRotaryAccelerationForce(name="{ self.name }")'
+        return f'SimRotaryAccelerationForce(name="{self.name}")'

@@ -15,18 +15,17 @@ from pycatia3dx.types.general import CATVariant
 class SimProperties(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SimProperties
-                | 
-                | Represents the collection of simulation properties.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SimProperties
+                
+                Represents the collection of simulation properties.
     
     """
 
@@ -38,19 +37,18 @@ class SimProperties(Collection):
     def add(self, i_type: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add(CATBSTR iType) As CATBaseDispatch
-                |     Creates a new property and adds it to the collection.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The type of property to create. 
-                | 
-                |     Returns:
-                |         The created property
+                Func Add(CATBSTR iType) As CATBaseDispatch
+                    Creates a new property and adds it to the collection.
+                
+                    Parameters:
+                
+                        iType
+                            The type of property to create. 
+                
+                    Returns:
+                        The created property
 
         :param str i_type:
         :return: AnyObject
@@ -60,26 +58,25 @@ class SimProperties(Collection):
     def item(self, i_index: CATVariant) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As CATBaseDispatch
-                |     Returns a property using its index or its name from the
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex:
-                |             The index or the name of the property to retrieve from the
-                |             collection.
-                |             As a numeric, this index is the rank of the property in the
-                |             collection. The index of the first property in the collection is 1, and the
-                |             index of the last property is Count.
-                |             As a string, it is the name you assigned to the property using the
-                |             Name object property. 
-                | 
-                |     Returns:
-                |         The retrieved property.
+                Func Item(CATVariant iIndex) As CATBaseDispatch
+                    Returns a property using its index or its name from the
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex:
+                            The index or the name of the property to retrieve from the
+                            collection.
+                            As a numeric, this index is the rank of the property in the
+                            collection. The index of the first property in the collection is 1, and the
+                            index of the last property is Count.
+                            As a string, it is the name you assigned to the property using the
+                            Name object property. 
+                
+                    Returns:
+                        The retrieved property.
 
         :param CATVariant i_index:
         :return: AnyObject
@@ -89,23 +86,22 @@ class SimProperties(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(CATVariant iIndex)
-                |     Removes a property using its index or its name from the property
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or the name of the property to retrieve from the
-                |             collection.
-                |             As a numeric, this index is the rank of the property in the
-                |             collection. The index of the first property in the collection is 1, and the
-                |             index of the last property is Count.
-                |             As a string, it is the name you assigned to the property using the
-                |             Name object property.
+                Sub Remove(CATVariant iIndex)
+                    Removes a property using its index or its name from the property
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index or the name of the property to retrieve from the
+                            collection.
+                            As a numeric, this index is the rank of the property in the
+                            collection. The index of the first property in the collection is 1, and the
+                            index of the last property is Count.
+                            As a string, it is the name you assigned to the property using the
+                            Name object property.
 
         :param CATVariant i_index:
         :return: None

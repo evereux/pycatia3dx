@@ -20,7 +20,6 @@ sys.path.insert(0, os.path.abspath("..\\pycatia3dx"))
 ##########################################################
 
 from pycatia3dx import catia3dx
-
 from pycatia3dx import CatPaperOrientation
 from pycatia3dx import CatPaperSize
 from pycatia3dx import CatTextAnchorPosition
@@ -29,6 +28,7 @@ from pycatia3dx.drafting.drawing_view import DrawingView
 from pycatia3dx.annotation.drawing_text import DrawingText
 from pycatia3dx.annotation.drawing_text_properties import DrawingTextProperties
 from pycatia3dx.exceptions import CATIAApplicationException
+from pycatia3dx.plm_session_builder.plm_new_service import PLMNewService
 from pycatia3dx.system.any_object import AnyObject
 
 # A0 sheet size
@@ -36,7 +36,7 @@ a0_x = 1189
 a0_y = 841
 
 application = catia3dx()
-plm_service = application.get_session_service("PLMNewService")
+plm_service: PLMNewService = application.get_session_service("PLMNewService")
 
 editor = plm_service.plm_create("Drawing")
 

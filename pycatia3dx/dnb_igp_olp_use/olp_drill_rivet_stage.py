@@ -17,24 +17,23 @@ from pycatia3dx.system.any_object import AnyObject
 class OLPDrillRivetStage(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     OlpDrillRivetStage
-                | 
-                | Interface representing a stage within a
-                | OlpDrillRivetProfile or within a OlpCFrameRivetProfile This interface can only
-                | be used by a translator within the Robotics Off-line Programming (OLP) Download
-                | or Upload command. A stage in itself does not exist, as it is part of its
-                | containing OlpDrillRivetProfile or its containing DELMIAOlpCFrameRivetProfile
-                | Use this interface to modify data related to a stage within a
-                | profile.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    OlpDrillRivetStage
+                
+                Interface representing a stage within a
+                OlpDrillRivetProfile or within a OlpCFrameRivetProfile This interface can only
+                be used by a translator within the Robotics Off-line Programming (OLP) Download
+                or Upload command. A stage in itself does not exist, as it is part of its
+                containing OlpDrillRivetProfile or its containing DELMIAOlpCFrameRivetProfile
+                Use this interface to modify data related to a stage within a
+                profile.
     
     """
 
@@ -45,15 +44,14 @@ class OLPDrillRivetStage(AnyObject):
     def get_accuracy_profile(self) -> OLPAccuracyProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAccuracyProfile() As OlpAccuracyProfile
-                |     Get the accuracy profile which controls the motion planning for this
-                |     stage.
-                | 
-                |     Returns:
-                |         The accuracy profile.
+                Func GetAccuracyProfile() As OlpAccuracyProfile
+                    Get the accuracy profile which controls the motion planning for this
+                    stage.
+                
+                    Returns:
+                        The accuracy profile.
 
         :return: OLPAccuracyProfile
         """
@@ -62,14 +60,13 @@ class OLPDrillRivetStage(AnyObject):
     def get_all_process_schedules(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAllProcessSchedules() As CATSafeArrayVariant
-                |     Get all linked applicative profile schedules.
-                | 
-                |     Returns:
-                |         A list of profiles. Empty if none.
+                Func GetAllProcessSchedules() As CATSafeArrayVariant
+                    Get all linked applicative profile schedules.
+                
+                    Returns:
+                        A list of profiles. Empty if none.
 
         :return: tuple
         """
@@ -78,14 +75,13 @@ class OLPDrillRivetStage(AnyObject):
     def get_enabled(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetEnabled() As boolean
-                |     Get the stage enabled state
-                | 
-                |     Returns:
-                |         oEnabled The stage enabled state
+                Func GetEnabled() As boolean
+                    Get the stage enabled state
+                
+                    Returns:
+                        oEnabled The stage enabled state
 
         :return: bool
         """
@@ -94,15 +90,14 @@ class OLPDrillRivetStage(AnyObject):
     def get_motion_profile(self) -> OLPMotionProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMotionProfile() As OlpMotionProfile
-                |     Get the motion profile which controls the motion planning for this
-                |     stage.
-                | 
-                |     Returns:
-                |         The motion profile.
+                Func GetMotionProfile() As OlpMotionProfile
+                    Get the motion profile which controls the motion planning for this
+                    stage.
+                
+                    Returns:
+                        The motion profile.
 
         :return: OLPMotionProfile
         """
@@ -111,18 +106,17 @@ class OLPDrillRivetStage(AnyObject):
     def get_moving_tcp_clearance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMovingTCPClearance() As double
-                |     Get the moving distance the TCP is from at the end of the move for this
-                |     stage.
-                |     This method is only valid for stages within a CFrameRivet profile. This
-                |     method is not valid for any stage within a Drill, Rivet or DrillRivet
-                |     profile.
-                | 
-                |     Returns:
-                |         The value in meters.
+                Func GetMovingTCPClearance() As double
+                    Get the moving distance the TCP is from at the end of the move for this
+                    stage.
+                    This method is only valid for stages within a CFrameRivet profile. This
+                    method is not valid for any stage within a Drill, Rivet or DrillRivet
+                    profile.
+                
+                    Returns:
+                        The value in meters.
 
         :return: float
         """
@@ -131,23 +125,22 @@ class OLPDrillRivetStage(AnyObject):
     def get_moving_tcp_clearance_link(self, o_profile: OLPProfile, o_controller_param_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetMovingTCPClearanceLink(OlpProfile oProfile,CATBSTR
-                | oControllerParamName)
-                |     Get the schedule parameter that is linked to a moving TCP clearance
-                |     parameter.
-                |     This method is only valid for stages within a CFrameRivet profile. This
-                |     method is not valid for any stage within a Drill, Rivet or DrillRivet
-                |     profile.
-                | 
-                |     Parameters:
-                | 
-                |         oProfile
-                |             The applicative profile. 
-                |         oControllerParamName
-                |             The name of the linked parameter.
+                Sub GetMovingTCPClearanceLink(OlpProfile oProfile,CATBSTR
+                oControllerParamName)
+                    Get the schedule parameter that is linked to a moving TCP clearance
+                    parameter.
+                    This method is only valid for stages within a CFrameRivet profile. This
+                    method is not valid for any stage within a Drill, Rivet or DrillRivet
+                    profile.
+                
+                    Parameters:
+                
+                        oProfile
+                            The applicative profile. 
+                        oControllerParamName
+                            The name of the linked parameter.
 
         :param OLPProfile o_profile:
         :param str o_controller_param_name:
@@ -158,14 +151,13 @@ class OLPDrillRivetStage(AnyObject):
     def get_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetName() As CATBSTR
-                |     Get the stage name.
-                | 
-                |     Returns:
-                |         The stage name
+                Func GetName() As CATBSTR
+                    Get the stage name.
+                
+                    Returns:
+                        The stage name
 
         :return: str
         """
@@ -174,20 +166,19 @@ class OLPDrillRivetStage(AnyObject):
     def get_process_schedules(self, i_profile_type: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetProcessSchedules(CATBSTR iProfileType) As
-                | CATSafeArrayVariant
-                |     Get linked applicative profile schedules by type.
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The applicative profile type 
-                | 
-                |     Returns:
-                |         A list of profiles. Empty if none.
+                Func GetProcessSchedules(CATBSTR iProfileType) As
+                CATSafeArrayVariant
+                    Get linked applicative profile schedules by type.
+                
+                    Parameters:
+                
+                        iProfileType
+                            The applicative profile type 
+                
+                    Returns:
+                        A list of profiles. Empty if none.
 
         :param str i_profile_type:
         :return: tuple
@@ -197,19 +188,18 @@ class OLPDrillRivetStage(AnyObject):
     def get_profile_process_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetProfileProcessType() As CATBSTR
-                |     Get the cycle's parent profile process type.
-                |     Valid profile process types are:
-                | 
-                |         DRILL
-                |         RIVET
-                |         DRILL-RIVET
-                | 
-                |     Returns:
-                |         The cycle's parent profile process type
+                Func GetProfileProcessType() As CATBSTR
+                    Get the cycle's parent profile process type.
+                    Valid profile process types are:
+                
+                        DRILL
+                        RIVET
+                        DRILL-RIVET
+                
+                    Returns:
+                        The cycle's parent profile process type
 
         :return: str
         """
@@ -218,20 +208,19 @@ class OLPDrillRivetStage(AnyObject):
     def get_stationary_tcp_clearance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetStationaryTCPClearance() As double
-                |     Get the stationary distance the TCP is from at the end of the move for this
-                |     stage.
-                |     This method gets the approach distance for the approach stage in a Drill or
-                |     a Rivet profile. This method gets the retract clearance for the retract stage
-                |     in a DrillRivet profile. This method gets the stationary distance for any stage
-                |     within a CFrameRivet profile. Any specific combination not listed here is not
-                |     supported.
-                | 
-                |     Returns:
-                |         The value in meters.
+                Func GetStationaryTCPClearance() As double
+                    Get the stationary distance the TCP is from at the end of the move for this
+                    stage.
+                    This method gets the approach distance for the approach stage in a Drill or
+                    a Rivet profile. This method gets the retract clearance for the retract stage
+                    in a DrillRivet profile. This method gets the stationary distance for any stage
+                    within a CFrameRivet profile. Any specific combination not listed here is not
+                    supported.
+                
+                    Returns:
+                        The value in meters.
 
         :return: float
         """
@@ -240,25 +229,24 @@ class OLPDrillRivetStage(AnyObject):
     def get_stationary_tcp_clearance_link(self, o_profile: OLPProfile, o_controller_param_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetStationaryTCPClearanceLink(OlpProfile oProfile,CATBSTR
-                | oControllerParamName)
-                |     Get the schedule parameter that is linked to a stationary TCP clearance
-                |     parameter.
-                |     This method gets the approach distance profile for the approach stage in a
-                |     Drill or a Rivet profile. This method gets the retract clearance profile for
-                |     the retract stage in a DrillRivet profile. This method gets the stationary
-                |     distance profile for any stage within a CFrameRivet profile. Any specific
-                |     combination not listed here is not supported.
-                | 
-                |     Parameters:
-                | 
-                |         oProfile
-                |             The applicative profile. 
-                |         oControllerParamName
-                |             The name of the linked parameter.
+                Sub GetStationaryTCPClearanceLink(OlpProfile oProfile,CATBSTR
+                oControllerParamName)
+                    Get the schedule parameter that is linked to a stationary TCP clearance
+                    parameter.
+                    This method gets the approach distance profile for the approach stage in a
+                    Drill or a Rivet profile. This method gets the retract clearance profile for
+                    the retract stage in a DrillRivet profile. This method gets the stationary
+                    distance profile for any stage within a CFrameRivet profile. Any specific
+                    combination not listed here is not supported.
+                
+                    Parameters:
+                
+                        oProfile
+                            The applicative profile. 
+                        oControllerParamName
+                            The name of the linked parameter.
 
         :param OLPProfile o_profile:
         :param str o_controller_param_name:
@@ -269,20 +257,19 @@ class OLPDrillRivetStage(AnyObject):
     def is_process_schedule_set(self, i_profile_type: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsProcessScheduleSet(CATBSTR iProfileType) As boolean
-                |     Get whether this cycle has a linked applicative profile schedule for a
-                |     type.
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The applicative profile type 
-                | 
-                |     Returns:
-                |         True if the schedule is set.
+                Func IsProcessScheduleSet(CATBSTR iProfileType) As boolean
+                    Get whether this cycle has a linked applicative profile schedule for a
+                    type.
+                
+                    Parameters:
+                
+                        iProfileType
+                            The applicative profile type 
+                
+                    Returns:
+                        True if the schedule is set.
 
         :param str i_profile_type:
         :return: bool
@@ -292,19 +279,18 @@ class OLPDrillRivetStage(AnyObject):
     def set_accuracy_profile(self, i_profile: OLPAccuracyProfile, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAccuracyProfile(OlpAccuracyProfile iProfile,boolean
-                | iMatch)
-                |     Set the accuracy profile which controls the motion planning for this
-                |     stage.
-                | 
-                |     Parameters:
-                | 
-                |         iProfile
-                |             The accuracy profile. 
-                |         iMatch
+                Sub SetAccuracyProfile(OlpAccuracyProfile iProfile,boolean
+                iMatch)
+                    Set the accuracy profile which controls the motion planning for this
+                    stage.
+                
+                    Parameters:
+                
+                        iProfile
+                            The accuracy profile. 
+                        iMatch
                 |             If TRUE use value to find existing profile.
 
         :param OLPAccuracyProfile i_profile:
@@ -316,7 +302,6 @@ class OLPDrillRivetStage(AnyObject):
     def set_all_process_schedules(self, i_profiles: tuple, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetAllProcessSchedules(CATSafeArrayVariant iProfiles,boolean
@@ -353,7 +338,6 @@ class OLPDrillRivetStage(AnyObject):
     def set_enabled(self, i_enabled: bool, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetEnabled(boolean iEnabled,boolean iMatch)
@@ -373,7 +357,6 @@ class OLPDrillRivetStage(AnyObject):
     def set_motion_profile(self, o_profile: OLPMotionProfile, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMotionProfile(OlpMotionProfile oProfile,boolean iMatch)
@@ -396,7 +379,6 @@ class OLPDrillRivetStage(AnyObject):
     def set_moving_tcp_clearance(self, i_distance: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMovingTCPClearance(double iDistance,boolean iMatch)
@@ -422,7 +404,6 @@ class OLPDrillRivetStage(AnyObject):
     def set_moving_tcp_clearance_link(self, i_profile: OLPProfile, i_controller_param_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMovingTCPClearanceLink(OlpProfile iProfile,CATBSTR
@@ -450,7 +431,6 @@ class OLPDrillRivetStage(AnyObject):
     def set_process_schedules(self, i_profiles: tuple, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetProcessSchedules(CATSafeArrayVariant iProfiles,boolean
@@ -492,7 +472,6 @@ class OLPDrillRivetStage(AnyObject):
     def set_process_schedules_to_nothing(self, i_profile_type: str, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetProcessSchedulesToNothing(CATBSTR iProfileType,boolean
@@ -518,7 +497,6 @@ class OLPDrillRivetStage(AnyObject):
     def set_stationary_tcp_clearance(self, i_distance: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetStationaryTCPClearance(double iDistance,boolean iMatch)
@@ -546,7 +524,6 @@ class OLPDrillRivetStage(AnyObject):
     def set_stationary_tcp_clearance_link(self, i_profile: OLPProfile, i_controller_param_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetStationaryTCPClearanceLink(OlpProfile iProfile,CATBSTR

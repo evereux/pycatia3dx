@@ -20,19 +20,18 @@ from pycatia3dx.system.any_object import AnyObject
 class AGTRoot(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     AGTRoot
-                | 
-                | Object to AGTRoot.
-                | To retrieve collection from part object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    AGTRoot
+                
+                Object to AGTRoot.
+                To retrieve collection from part object.
     
     """
 
@@ -44,22 +43,21 @@ class AGTRoot(AnyObject):
     def connectors(self) -> AGTConnectors:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Connectors() As AGTConnectors (Read Only)
-                |     Returns the collection of Connector.
-                | 
-                |     Example:
-                |         This example retrieves in Connector Collection from part
-                |         object.
-                | 
-                |          Dim myPart As CATIAPart
-                |          Set myPart = CATIA.ActiveEditor.ActiveObject
-                |          Dim MyRoot As AGTRoot
-                |          Set MyRoot = MyRoot.GetItem("CATAGTRoot")
-                |          Dim ConnectorCollection As AGTConnectors
-                |          Set ConnectorCollection = MyRoot.Connectors
+                Property Connectors() As AGTConnectors (Read Only)
+                    Returns the collection of Connector.
+                
+                    Example:
+                        This example retrieves in Connector Collection from part
+                        object.
+                
+                         Dim myPart As CATIAPart
+                         Set myPart = CATIA.ActiveEditor.ActiveObject
+                         Dim MyRoot As AGTRoot
+                         Set MyRoot = MyRoot.GetItem("CATAGTRoot")
+                         Dim ConnectorCollection As AGTConnectors
+                         Set ConnectorCollection = MyRoot.Connectors
 
         :return: AGTConnectors
         """
@@ -70,22 +68,21 @@ class AGTRoot(AnyObject):
     def coverings(self) -> Coverings:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Coverings() As Coverings (Read Only)
-                |     Returns the collection of Covering.
-                | 
-                |     Example:
-                |         This example retrieves in Covering Collection from part
-                |         object.
-                | 
-                |          Dim myPart As CATIAPart
-                |          Set myPart = CATIA.ActiveEditor.ActiveObject
-                |          Dim MyRoot As AGTRoot
-                |          Set MyRoot = MyRoot.GetItem("CATAGTRoot")
-                |          Dim CoveringCollection As Coverings
-                |          Set CoveringCollection = MyRoot.Coverings
+                Property Coverings() As Coverings (Read Only)
+                    Returns the collection of Covering.
+                
+                    Example:
+                        This example retrieves in Covering Collection from part
+                        object.
+                
+                         Dim myPart As CATIAPart
+                         Set myPart = CATIA.ActiveEditor.ActiveObject
+                         Dim MyRoot As AGTRoot
+                         Set MyRoot = MyRoot.GetItem("CATAGTRoot")
+                         Dim CoveringCollection As Coverings
+                         Set CoveringCollection = MyRoot.Coverings
 
         :return: Coverings
         """
@@ -96,22 +93,21 @@ class AGTRoot(AnyObject):
     def draught_stops(self) -> AGTDraughtStops:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DraughtStops() As AGTDraughtStops (Read Only)
-                |     Returns the collection of DraughtStop.
-                | 
-                |     Example:
-                |         This example retrieves in DraughtStop Collection from part
-                |         object.
-                | 
-                |          Dim myPart As CATIAPart
-                |          Set myPart = CATIA.ActiveEditor.ActiveObject
-                |          Dim MyRoot As AGTRoot
-                |          Set MyRoot = MyRoot.GetItem("CATAGTRoot")
-                |          Dim DraughtStopsCollection As AGTDraughtStops
-                |          Set DraughtStopsCollection = MyRoot.DraughtStops
+                Property DraughtStops() As AGTDraughtStops (Read Only)
+                    Returns the collection of DraughtStop.
+                
+                    Example:
+                        This example retrieves in DraughtStop Collection from part
+                        object.
+                
+                         Dim myPart As CATIAPart
+                         Set myPart = CATIA.ActiveEditor.ActiveObject
+                         Dim MyRoot As AGTRoot
+                         Set MyRoot = MyRoot.GetItem("CATAGTRoot")
+                         Dim DraughtStopsCollection As AGTDraughtStops
+                         Set DraughtStopsCollection = MyRoot.DraughtStops
 
         :return: AGTDraughtStops
         """
@@ -122,22 +118,21 @@ class AGTRoot(AnyObject):
     def fire_bridges(self) -> AGTFireBridges:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FireBridges() As AGTFireBridges (Read Only)
-                |     Returns the collection of FireBridge.
-                | 
-                |     Example:
-                |         This example retrieves in FireBridge Collection from part
-                |         object.
-                | 
-                |          Dim myPart As CATIAPart
-                |          Set myPart = CATIA.ActiveEditor.ActiveObject
-                |          Dim MyRoot As AGTRoot
-                |          Set MyRoot = MyRoot.GetItem("CATAGTRoot")
-                |          Dim FireBridgesCollection As AGTFireBridges
-                |          Set FireBridgesCollection = MyRoot.FireBridges
+                Property FireBridges() As AGTFireBridges (Read Only)
+                    Returns the collection of FireBridge.
+                
+                    Example:
+                        This example retrieves in FireBridge Collection from part
+                        object.
+                
+                         Dim myPart As CATIAPart
+                         Set myPart = CATIA.ActiveEditor.ActiveObject
+                         Dim MyRoot As AGTRoot
+                         Set MyRoot = MyRoot.GetItem("CATAGTRoot")
+                         Dim FireBridgesCollection As AGTFireBridges
+                         Set FireBridgesCollection = MyRoot.FireBridges
 
         :return: AGTFireBridges
         """
@@ -148,22 +143,21 @@ class AGTRoot(AnyObject):
     def insulations(self) -> AGTInsulations:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Insulations() As AGTInsulations (Read Only)
-                |     Returns the collection of insulation.
-                | 
-                |     Example:
-                |         This example retrieves in Insulation Collection from part
-                |         object.
-                | 
-                |          Dim myPart As CATIAPart
-                |          Set myPart = CATIA.ActiveEditor.ActiveObject
-                |          Dim MyRoot As AGTRoot
-                |          Set MyRoot = MyRoot.GetItem("CATAGTRoot")
-                |          Dim InsulationCollection As AGTInsulations
-                |          Set InsulationCollection = MyRoot.Insulations
+                Property Insulations() As AGTInsulations (Read Only)
+                    Returns the collection of insulation.
+                
+                    Example:
+                        This example retrieves in Insulation Collection from part
+                        object.
+                
+                         Dim myPart As CATIAPart
+                         Set myPart = CATIA.ActiveEditor.ActiveObject
+                         Dim MyRoot As AGTRoot
+                         Set MyRoot = MyRoot.GetItem("CATAGTRoot")
+                         Dim InsulationCollection As AGTInsulations
+                         Set InsulationCollection = MyRoot.Insulations
 
         :return: AGTInsulations
         """
@@ -174,22 +168,21 @@ class AGTRoot(AnyObject):
     def sills(self) -> AGTSills:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Sills() As AGTSills (Read Only)
-                |     Returns the collection of Sill.
-                | 
-                |     Example:
-                |         This example retrieves in Sill Collection from part
-                |         object.
-                | 
-                |          Dim myPart As CATIAPart
-                |          Set myPart = CATIA.ActiveEditor.ActiveObject
-                |          Dim MyRoot As AGTRoot
-                |          Set MyRoot = MyRoot.GetItem("CATAGTRoot")
-                |          Dim SillCollection As AGTSills
-                |          Set SillCollection = MyRoot.Sills
+                Property Sills() As AGTSills (Read Only)
+                    Returns the collection of Sill.
+                
+                    Example:
+                        This example retrieves in Sill Collection from part
+                        object.
+                
+                         Dim myPart As CATIAPart
+                         Set myPart = CATIA.ActiveEditor.ActiveObject
+                         Dim MyRoot As AGTRoot
+                         Set MyRoot = MyRoot.GetItem("CATAGTRoot")
+                         Dim SillCollection As AGTSills
+                         Set SillCollection = MyRoot.Sills
 
         :return: AGTSills
         """
@@ -200,26 +193,25 @@ class AGTRoot(AnyObject):
     def walls(self) -> Walls:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Walls() As Walls (Read Only)
-                |     Returns the collection of Wall.
-                | 
-                |     Example:
-                |         This example retrieves in Wall Collection from part
-                |         object.
-                | 
-                |          Dim myPart As CATIAPart
-                |          Set myPart = CATIA.ActiveEditor.ActiveObject
-                |          Dim MyRoot As AGTRoot
-                |          Set MyRoot = MyRoot.GetItem("CATAGTRoot")
-                |          Dim WallsCollection As AGTWalls
-                |          Set WallsCollection = MyRoot.Walls
-                |          
-                | 
-                | 
-                | Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
+                Property Walls() As Walls (Read Only)
+                    Returns the collection of Wall.
+                
+                    Example:
+                        This example retrieves in Wall Collection from part
+                        object.
+                
+                         Dim myPart As CATIAPart
+                         Set myPart = CATIA.ActiveEditor.ActiveObject
+                         Dim MyRoot As AGTRoot
+                         Set MyRoot = MyRoot.GetItem("CATAGTRoot")
+                         Dim WallsCollection As AGTWalls
+                         Set WallsCollection = MyRoot.Walls
+                         
+                
+                
+                Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
 
         :return: Walls
         """

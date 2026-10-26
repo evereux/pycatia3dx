@@ -16,38 +16,36 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapePointOnCurve(Point):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.Point
-                |                             HybridShapePointOnCurve
-                | 
-                | Represents the hybrid shape point on a curve.
-                | Role: To access the data of the point object created on a curve. This data
-                | includes:
-                | 
-                |     The curve onto which the point is created
-                |     The reference point from which the point is created
-                |     The curvilinear distance from the reference point
-                |     The ratio of distance with respect to the curve length
-                |     The distance stored value type, either distance or ratio
-                |     The curve orientation
-                |     The distance type, either geodesic or euclidean.
-                |     The direction along which point is created with specified
-                |     distance.
-                | 
-                | Use the HybridShapeFactory to create a HybridShapePointOnCurve
-                | object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.Point
+                                            HybridShapePointOnCurve
+                
+                Represents the hybrid shape point on a curve.
+                Role: To access the data of the point object created on a curve. This data
+                includes:
+                
+                    The curve onto which the point is created
+                    The reference point from which the point is created
+                    The curvilinear distance from the reference point
+                    The ratio of distance with respect to the curve length
+                    The distance stored value type, either distance or ratio
+                    The curve orientation
+                    The distance type, either geodesic or euclidean.
+                    The direction along which point is created with specified
+                    distance.
+                
+                Use the HybridShapeFactory to create a HybridShapePointOnCurve
+                object.
     
     """
 
@@ -59,24 +57,23 @@ class HybridShapePointOnCurve(Point):
     def curve(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Curve() As Reference
-                |     Returns or sets the curve onto which the point is or should be
-                |     created.
-                |     Sub-element(s) supported (see Boundary object): TriDimFeatEdge or
-                |     BiDimFeatEdge.
-                | 
-                |     Example:
-                | 
-                |          This example retrieves in oCurve the supporting curve 
-                |          for
-                |          the pointOnCurve hybrid shape point.
-                |          
-                | 
-                |          Dim oCurve As CATIAReference
-                |          Set oCurve = pointOnCurve.Curve
+                Property Curve() As Reference
+                    Returns or sets the curve onto which the point is or should be
+                    created.
+                    Sub-element(s) supported (see Boundary object): TriDimFeatEdge or
+                    BiDimFeatEdge.
+                
+                    Example:
+                
+                         This example retrieves in oCurve the supporting curve 
+                         for
+                         the pointOnCurve hybrid shape point.
+                         
+                
+                         Dim oCurve As CATIAReference
+                         Set oCurve = pointOnCurve.Curve
 
         :return: Reference
         """
@@ -95,19 +92,18 @@ class HybridShapePointOnCurve(Point):
     def direction(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Direction() As HybridShapeDirection
-                |     Returns or sets the direction along which the point is or should be
-                |     created.
-                | 
-                |     Example
-                |         This example retrieves in Dir the direction for the PointOnCurve hybrid
-                |         shape feature.
-                | 
-                |          Dim Dir As CATIAHybridShapeDirection
-                |          Set Dir=pointOnCurve.Direction
+                Property Direction() As HybridShapeDirection
+                    Returns or sets the direction along which the point is or should be
+                    created.
+                
+                    Example
+                        This example retrieves in Dir the direction for the PointOnCurve hybrid
+                        shape feature.
+                
+                         Dim Dir As CATIAHybridShapeDirection
+                         Set Dir=pointOnCurve.Direction
 
         :return: HybridShapeDirection
         """
@@ -126,29 +122,28 @@ class HybridShapePointOnCurve(Point):
     def distance_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property DistanceType() As long
-                |     Returns or sets the distance type.
-                |     Legal values: 1 for geodesic, -1 for euclidean.
-                |     Default is geodesic.
-                | 
-                |         Geodesic means that the distance is measured with a curvilinear
-                |         abscissa
-                |         Euclidean means that the point is created as the intersection between
-                |         the reference curve and a circle whose radius is the length defined
-                |         above.
-                | 
-                |     Example:
-                | 
-                |          This example retrieves in oDistanceType the distance computation type
-                |          used 
-                |          for the pointOnCurve hybrid shape object.
-                |          
-                | 
-                |          Dim oDistanceType As  long
-                |          Set oDistanceType = pointOnCurve.DistanceType
+                Property DistanceType() As long
+                    Returns or sets the distance type.
+                    Legal values: 1 for geodesic, -1 for euclidean.
+                    Default is geodesic.
+                
+                        Geodesic means that the distance is measured with a curvilinear
+                        abscissa
+                        Euclidean means that the point is created as the intersection between
+                        the reference curve and a circle whose radius is the length defined
+                        above.
+                
+                    Example:
+                
+                         This example retrieves in oDistanceType the distance computation type
+                         used 
+                         for the pointOnCurve hybrid shape object.
+                         
+                
+                         Dim oDistanceType As  long
+                         Set oDistanceType = pointOnCurve.DistanceType
 
         :return: int
         """
@@ -167,25 +162,24 @@ class HybridShapePointOnCurve(Point):
     def offset(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Offset() As Length (Read Only)
-                |     Returns the distance to the reference point.
-                |     This distance is a distance in a length unit, The distance can be null.In
-                |     this case, the reference point is the curve end point defined using the
-                |     Orientation parameter.
-                | 
-                |     Example:
-                | 
-                |          This example retrieves in oOffset the distance from the reference
-                |          point
-                |          on the supporting curve for the pointOnCurve hybrid shape
-                |          object.
-                |          
-                | 
-                |          Dim oOffset As  CATIALength  
-                |          Set oOffset = pointOnCurve.Offset
+                Property Offset() As Length (Read Only)
+                    Returns the distance to the reference point.
+                    This distance is a distance in a length unit, The distance can be null.In
+                    this case, the reference point is the curve end point defined using the
+                    Orientation parameter.
+                
+                    Example:
+                
+                         This example retrieves in oOffset the distance from the reference
+                         point
+                         on the supporting curve for the pointOnCurve hybrid shape
+                         object.
+                         
+                
+                         Dim oOffset As  CATIALength  
+                         Set oOffset = pointOnCurve.Offset
 
         :return: Length
         """
@@ -196,13 +190,12 @@ class HybridShapePointOnCurve(Point):
     def on_curve_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property OnCurveType() As long
-                |     Returns or sets the OnCurve type for created point on
-                |     curve.
-                |     Legal values: 0 = Distance on curve 1 = Distance along direction 2 = Ratio of Curve length
+                Property OnCurveType() As long
+                    Returns or sets the OnCurve type for created point on
+                    curve.
+                    Legal values: 0 = Distance on curve 1 = Distance along direction 2 = Ratio of Curve length
 
         :return: int
         """
@@ -221,28 +214,27 @@ class HybridShapePointOnCurve(Point):
     def orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Orientation() As long
-                |     Returns or sets the curve orientation.
-                |     Legal values: -1 means that the distance (length or ratio) is
-                |     measured:
-                | 
-                |         in the other orientation of the curve, when a reference point has been
-                |         set
-                |         in the other orientation of the curve and from the other extremity,
-                |         when no reference point has been set.
-                | 
-                |     Example:
-                | 
-                |          This example retrieves in oOrientation curve Orientation use
-                |          
-                |          for the pointOnCurve hybrid shape feature.
-                |          
-                | 
-                |          Dim oOrientation As  long
-                |          Set oOrientation = pointOnCurve.Orientation
+                Property Orientation() As long
+                    Returns or sets the curve orientation.
+                    Legal values: -1 means that the distance (length or ratio) is
+                    measured:
+                
+                        in the other orientation of the curve, when a reference point has been
+                        set
+                        in the other orientation of the curve and from the other extremity,
+                        when no reference point has been set.
+                
+                    Example:
+                
+                         This example retrieves in oOrientation curve Orientation use
+                         
+                         for the pointOnCurve hybrid shape feature.
+                         
+                
+                         Dim oOrientation As  long
+                         Set oOrientation = pointOnCurve.Orientation
 
         :return: int
         """
@@ -261,31 +253,30 @@ class HybridShapePointOnCurve(Point):
     def point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Point() As Reference
-                |     Returns or sets the reference point.
-                | 
-                |     If the point does not lie on the curve, the point on the curve with the
-                |     smallest distance to this point is taken.
-                | 
-                |     The reference point may not exist. In this case, the extremity of the curve
-                |     is taken as reference point.
-                | 
-                | 
-                |     Sub-element(s) supported (see Boundary object): Vertex.
-                | 
-                |     Example:
-                | 
-                |          This example retrieves in oRefPoint the reference
-                |          point
-                |          on the supporting curve for the pointOnCurve hybrid shape
-                |          object.
-                |          
-                | 
-                |          Dim oRefPoint As  CATIAReference
-                |          Set oRefPoint = pointOnCurve.Point
+                Property Point() As Reference
+                    Returns or sets the reference point.
+                
+                    If the point does not lie on the curve, the point on the curve with the
+                    smallest distance to this point is taken.
+                
+                    The reference point may not exist. In this case, the extremity of the curve
+                    is taken as reference point.
+                
+                
+                    Sub-element(s) supported (see Boundary object): Vertex.
+                
+                    Example:
+                
+                         This example retrieves in oRefPoint the reference
+                         point
+                         on the supporting curve for the pointOnCurve hybrid shape
+                         object.
+                         
+                
+                         Dim oRefPoint As  CATIAReference
+                         Set oRefPoint = pointOnCurve.Point
 
         :return: Reference
         """
@@ -304,26 +295,25 @@ class HybridShapePointOnCurve(Point):
     def ratio(self) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Ratio() As RealParam (Read Only)
-                |     Returns the distance ratio to the reference point.
-                |     This is a real parameter which corresponds to the ratio of the distance
-                |     from the reference point with respect to the length of the supporting curve.
-                |     The ratio can be null. In this case, the reference point is the curve end point
-                |     defined using the Orientation parameter.
-                | 
-                |     Example:
-                | 
-                |          This example retrieves in oRatio the distance ratio from the reference
-                |          point
-                |          on the supporting curve for the pointOnCurve hybrid shape
-                |          object.
-                |          
-                | 
-                |          Dim oRatio As  CATIALength  
-                |          Set oRatio = PointOnCurve.Ratio
+                Property Ratio() As RealParam (Read Only)
+                    Returns the distance ratio to the reference point.
+                    This is a real parameter which corresponds to the ratio of the distance
+                    from the reference point with respect to the length of the supporting curve.
+                    The ratio can be null. In this case, the reference point is the curve end point
+                    defined using the Orientation parameter.
+                
+                    Example:
+                
+                         This example retrieves in oRatio the distance ratio from the reference
+                         point
+                         on the supporting curve for the pointOnCurve hybrid shape
+                         object.
+                         
+                
+                         Dim oRatio As  CATIALength  
+                         Set oRatio = PointOnCurve.Ratio
 
         :return: RealParam
         """
@@ -334,25 +324,24 @@ class HybridShapePointOnCurve(Point):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Type() As long (Read Only)
-                |     Returns the distance stored value type.
-                |     Legal values:
-                | 
-                |         1 when the type of measure is the length
-                |         -1 when the type of measure is the distance ratio
-                | 
-                |     Example:
-                | 
-                |          This example retrieves in oType the distance type computation
-                |          
-                |          for the pointOnCurve hybrid shape object.
-                |          
-                | 
-                |          Dim oType As long
-                |          Set oType = pointOnCurve.Type
+                Property Type() As long (Read Only)
+                    Returns the distance stored value type.
+                    Legal values:
+                
+                        1 when the type of measure is the length
+                        -1 when the type of measure is the distance ratio
+                
+                    Example:
+                
+                         This example retrieves in oType the distance type computation
+                         
+                         for the pointOnCurve hybrid shape object.
+                         
+                
+                         Dim oType As long
+                         Set oType = pointOnCurve.Type
 
         :return: int
         """
@@ -360,4 +349,4 @@ class HybridShapePointOnCurve(Point):
         return self.com_object.Type
 
     def __repr__(self):
-        return f'HybridShapePointOnCurve(name="{ self.name }")'
+        return f'HybridShapePointOnCurve(name="{self.name}")'

@@ -13,24 +13,22 @@ from pycatia3dx.del_robot_simulation.tag_point import TagPoint
 
 
 class TagGroup(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     TagGroup
-                | 
-                | Interface representing a Tag Group.
-                | 
-                | Role: This interface is used to retrieve/assign the attributes from the tag
-                | group.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    TagGroup
+                
+                Interface representing a Tag Group.
+                
+                Role: This interface is used to retrieve/assign the attributes from the tag
+                group.
     
     """
 
@@ -42,22 +40,21 @@ class TagGroup(AnyObject):
     def owner(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Owner() As AnyObject (Read Only)
-                |     This property returns the owner of the tag group
-                | 
-                |     Returns:
-                |         oOwner The first occurrence of the owner.
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objTagGroup As TagGroup
-                |                   ......
-                |         Dim oOwner As AnyObject
-                |         Set oOwner = objTagGroup.Owner
+                Property Owner() As AnyObject (Read Only)
+                    This property returns the owner of the tag group
+                
+                    Returns:
+                        oOwner The first occurrence of the owner.
+                    Example:
+                
+                           
+                
+                           Dim objTagGroup As TagGroup
+                                  ......
+                        Dim oOwner As AnyObject
+                        Set oOwner = objTagGroup.Owner
 
         :return: AnyObject
         """
@@ -68,23 +65,22 @@ class TagGroup(AnyObject):
     def tag_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TagCount() As long (Read Only)
-                |     This property returns the number of tags under the tag
-                |     group
-                | 
-                |     Returns:
-                |         oTagCount The number of tags under the tag group. 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objTagGroup As TagGroup
-                |                   ......
-                |         Dim oTagCount
-                |         oTagCount = oTagGroup.TagCount
+                Property TagCount() As long (Read Only)
+                    This property returns the number of tags under the tag
+                    group
+                
+                    Returns:
+                        oTagCount The number of tags under the tag group. 
+                    Example:
+                
+                           
+                
+                           Dim objTagGroup As TagGroup
+                                  ......
+                        Dim oTagCount
+                        oTagCount = oTagGroup.TagCount
 
         :return: int
         """
@@ -95,22 +91,21 @@ class TagGroup(AnyObject):
     def tag_list(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TagList() As CATSafeArrayVariant (Read Only)
-                |     This property returns the tag list under the tag group
-                | 
-                |     Returns:
-                |         oTagList The List of tags. 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objTagGroup As TagGroup
-                |                   ......
-                |         Dim oTagList
-                |         oTagList = oTagGroup.TagList
+                Property TagList() As CATSafeArrayVariant (Read Only)
+                    This property returns the tag list under the tag group
+                
+                    Returns:
+                        oTagList The List of tags. 
+                    Example:
+                
+                           
+                
+                           Dim objTagGroup As TagGroup
+                                  ......
+                        Dim oTagList
+                        oTagList = oTagGroup.TagList
 
         :return: tuple
         """
@@ -120,26 +115,25 @@ class TagGroup(AnyObject):
     def delete_tag(self, i_tag: TagPoint) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DeleteTag(TagPoint iTag)
-                |     Deletes a Tag
-                | 
-                |     Parameters:
-                | 
-                |         ioTag
-                |             Tag to be deleted 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objTagGroup As TagGroup
-                |                   ......
-                |         Dim oTag As Tag
-                |                   ......
-                |         Call objTagGroup.DeleteTag(oTag)
+                Sub DeleteTag(TagPoint iTag)
+                    Deletes a Tag
+                
+                    Parameters:
+                
+                        ioTag
+                            Tag to be deleted 
+                
+                    Example:
+                
+                           
+                
+                           Dim objTagGroup As TagGroup
+                                  ......
+                        Dim oTag As Tag
+                                  ......
+                        Call objTagGroup.DeleteTag(oTag)
 
         :param TagPoint i_tag:
         :return: None
@@ -149,19 +143,18 @@ class TagGroup(AnyObject):
     def empty(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Empty()
-                |     Empties a Tag Group
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objTagGroup As TagGroup
-                |                   ......
-                |         Call objTagGroup.Empty
+                Sub Empty()
+                    Empties a Tag Group
+                
+                    Example:
+                
+                           
+                
+                           Dim objTagGroup As TagGroup
+                                  ......
+                        Call objTagGroup.Empty
 
         :return: None
         """
@@ -170,30 +163,29 @@ class TagGroup(AnyObject):
     def get_tag(self, index: int) -> TagPoint:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTag(short index) As TagPoint
-                |     Returns a Tag by Index.
-                | 
-                |     Parameters:
-                | 
-                |         index
-                |             Index of the Required Tag. 
-                | 
-                |     Returns:
-                |         oTag Returned Tag. 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objTagGroup As TagGroup
-                |                   ......
-                |         Dim oTag As Tag
-                |         Dim iIndex As Integer
-                |                   ......
-                |         Set oTag = oTagGroup.GetTag(iIndex)
-                |                   ......
+                Func GetTag(short index) As TagPoint
+                    Returns a Tag by Index.
+                
+                    Parameters:
+                
+                        index
+                            Index of the Required Tag. 
+                
+                    Returns:
+                        oTag Returned Tag. 
+                    Example:
+                
+                           
+                
+                           Dim objTagGroup As TagGroup
+                                  ......
+                        Dim oTag As Tag
+                        Dim iIndex As Integer
+                                  ......
+                        Set oTag = oTagGroup.GetTag(iIndex)
+                                  ......
 
         :param int index:
         :return: TagPoint
@@ -201,4 +193,4 @@ class TagGroup(AnyObject):
         return TagPoint(self.com_object.GetTag(index))
 
     def __repr__(self):
-        return f'TagGroup(name="{ self.name }")'
+        return f'TagGroup(name="{self.name}")'

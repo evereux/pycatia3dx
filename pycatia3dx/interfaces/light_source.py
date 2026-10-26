@@ -14,22 +14,21 @@ from pycatia3dx.system.any_object import AnyObject
 class LightSource(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     LightSource
-                | 
-                | Represents the light source.
-                | The light source is the object that stores lighting data used by a viewer to
-                | display a scene where a document is presented. Two kinds of light sources are
-                | available: an infinite light source and a neon lighting system simulating a set
-                | of parallel neon tubes.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    LightSource
+                
+                Represents the light source.
+                The light source is the object that stores lighting data used by a viewer to
+                display a scene where a document is presented. Two kinds of light sources are
+                available: an infinite light source and a neon lighting system simulating a set
+                of parallel neon tubes.
     
     """
 
@@ -40,19 +39,18 @@ class LightSource(AnyObject):
     def get_direction(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Sub GetDirection(CATSafeArrayVariant oDirection)
-                |     Returns the lighting direction as an array of 3 variants. This value is
-                |     available with an infinite light source only.
-                | 
-                |     Example:
-                |         This example gets the lighting direction of the LightSource light
-                |         source to the direction with components (5,8,-2).
-                | 
-                |          Dim direction(2)
-                |          LightSource.GetDirection direction
+                Sub GetDirection(CATSafeArrayVariant oDirection)
+                    Returns the lighting direction as an array of 3 variants. This value is
+                    available with an infinite light source only.
+                
+                    Example:
+                        This example gets the lighting direction of the LightSource light
+                        source to the direction with components (5,8,-2).
+                
+                         Dim direction(2)
+                         LightSource.GetDirection direction
 
         :return: tuple
         """
@@ -77,18 +75,17 @@ class LightSource(AnyObject):
     def put_direction(self, o_direction: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Sub PutDirection(CATSafeArrayVariant oDirection)
-                |     Defines the lighting direction as an array of 3 variants. This value can be
-                |     set with an infinite light source only.
-                | 
-                |     Example:
-                |         This example defines the lighting direction of the LightSource light
-                |         source to the direction with components (5,8,-2).
-                | 
-                |          LightSource.PutDirection Array(5,8,-2)
+                Sub PutDirection(CATSafeArrayVariant oDirection)
+                    Defines the lighting direction as an array of 3 variants. This value can be
+                    set with an infinite light source only.
+                
+                    Example:
+                        This example defines the lighting direction of the LightSource light
+                        source to the direction with components (5,8,-2).
+                
+                         LightSource.PutDirection Array(5,8,-2)
 
 
         :param tuple o_direction:

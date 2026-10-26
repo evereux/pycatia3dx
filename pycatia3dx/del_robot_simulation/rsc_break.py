@@ -11,25 +11,23 @@ from pycatia3dx.del_robot_simulation.rsc_instruction import RscInstruction
 
 
 class RscBreak(RscInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DELRobotSimulationIDLItf.RscInstruction
-                |                         RscBreak
-                | 
-                | Interface representing a Resource Break Instruction.
-                | 
-                | Role: This interface represents a RscBreak Instruction in a Resource
-                | Task
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DELRobotSimulationIDLItf.RscInstruction
+                                        RscBreak
+                
+                Interface representing a Resource Break Instruction.
+                
+                Role: This interface represents a RscBreak Instruction in a Resource
+                Task
 
     """
 
@@ -38,4 +36,4 @@ class RscBreak(RscInstruction):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'RscBreak(name="{ self.name }")'
+        return f'RscBreak(name="{self.name}")'

@@ -13,25 +13,23 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapePlane1Curve(Plane):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.Plane
-                |                             HybridShapePlane1Curve
-                | 
-                | plane through a curve.
-                | Role: Allows to access data of the plane feature passing though a planar
-                | curve.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.Plane
+                                            HybridShapePlane1Curve
+                
+                plane through a curve.
+                Role: Allows to access data of the plane feature passing though a planar
+                curve.
     
     """
 
@@ -43,24 +41,23 @@ class HybridShapePlane1Curve(Plane):
     def curve(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Curve() As Reference
-                |     Role: Get the planar curve.
-                | 
-                |     Parameters:
-                | 
-                |         oCurve
-                |             Curve. 
-                | 
-                |     See also:
-                |         Reference
-                |     Returns:
-                |         HRESULT S_OK if Ok E_FAIL else return error code for C++
-                |         Implementations 
-                |     See also:
-                |         HybridShapeFactory
+                Property Curve() As Reference
+                    Role: Get the planar curve.
+                
+                    Parameters:
+                
+                        oCurve
+                            Curve. 
+                
+                    See also:
+                        Reference
+                    Returns:
+                        HRESULT S_OK if Ok E_FAIL else return error code for C++
+                        Implementations 
+                    See also:
+                        HybridShapeFactory
 
         :return: Reference
         """
@@ -76,4 +73,4 @@ class HybridShapePlane1Curve(Plane):
         self.com_object.Curve = value
 
     def __repr__(self):
-        return f'HybridShapePlane1Curve(name="{ self.name }")'
+        return f'HybridShapePlane1Curve(name="{self.name}")'

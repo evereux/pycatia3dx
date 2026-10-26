@@ -16,18 +16,17 @@ from pycatia3dx.system.any_object import AnyObject
 class SimAxis(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimAxis
-                | 
-                | Represents the Axis object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimAxis
+                
+                Represents the Axis object.
     
     """
 
@@ -39,11 +38,10 @@ class SimAxis(AnyObject):
     def axis(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Axis() As CATBaseDispatch (Read Only)
-                |     Returns of set the axis.
+                Property Axis() As CATBaseDispatch (Read Only)
+                    Returns of set the axis.
 
         :return: AnyObject
         """
@@ -54,13 +52,12 @@ class SimAxis(AnyObject):
     def axis_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisType() As SimAxisAxisType
-                |     Returns of set the axis type. The graphical user interface editor for this
-                |     SimAxis only supports geometric axis types. See SimAxisAxisType for additional
-                |     information.
+                Property AxisType() As SimAxisAxisType
+                    Returns of set the axis type. The graphical user interface editor for this
+                    SimAxis only supports geometric axis types. See SimAxisAxisType for additional
+                    information.
 
         :return: int
         """
@@ -78,18 +75,17 @@ class SimAxis(AnyObject):
     def get_axis(self, o_origin: SimMathPoint, o_vector: SimMathVector) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetAxis(SimMathPoint oOrigin,SimMathVector oVector)
-                |     Retrieves the axis point and direction.
-                | 
-                |     Parameters:
-                | 
-                |         oOrigin[out]
-                |             is the point 
-                |         oVector[out]
-                |             is the direction of the line
+                Sub GetAxis(SimMathPoint oOrigin,SimMathVector oVector)
+                    Retrieves the axis point and direction.
+                
+                    Parameters:
+                
+                        oOrigin[out]
+                            is the point 
+                        oVector[out]
+                            is the direction of the line
 
         :param SimMathPoint o_origin:
         :param SimMathVector o_vector:
@@ -101,21 +97,20 @@ class SimAxis(AnyObject):
     def set_axis(self, i_origin: SimMathPoint, i_vector: SimMathVector) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAxis(SimMathPoint iOrigin,SimMathVector iVector)
-                |     Sets the axis data using point and direction. If this method is used to set
-                |     the Axis then GetAxis( CATMathPoint & oOrigin, CATMathVector & oVector ) must
-                |     be used to retrieve the axis and not GetAxis(CATISimLinkAccess_var & ispSupport
-                |     ).
-                | 
-                |     Parameters:
-                | 
-                |         iOrigin[in]
-                |             is the point 
-                |         iVector[in]
-                |             is the direction of the line 
+                Sub SetAxis(SimMathPoint iOrigin,SimMathVector iVector)
+                    Sets the axis data using point and direction. If this method is used to set
+                    the Axis then GetAxis( CATMathPoint & oOrigin, CATMathVector & oVector ) must
+                    be used to retrieve the axis and not GetAxis(CATISimLinkAccess_var & ispSupport
+                    ).
+                
+                    Parameters:
+                
+                        iOrigin[in]
+                            is the point 
+                        iVector[in]
+                            is the direction of the line 
 
         :param SimMathPoint i_origin:
         :param SimMathVector i_vector:

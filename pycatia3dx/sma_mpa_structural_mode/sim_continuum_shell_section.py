@@ -13,59 +13,57 @@ from pycatia3dx.sma_mpa_structural_mode.sim_orientation import SimOrientation
 
 
 class SimContinuumShellSection(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimContinuumShellSection
-                | 
-                | Represents the Continuum Shell Section object.
-                | 
-                | Example:
-                |     Given a SimProperties object, you can create a SimContinuumShellSection as
-                |     following:
-                | 
-                |      Dim MyProperties As SimProperties
-                |      ...
-                |      Dim MyContinuumShellSection As SimContinuumShellSection
-                |      Set MyContinuumShellSection = MyProperties.Add("SimContinuumShellSection")
-                |      
-                | 
-                |     Given a SimProperties object, you can retrieve a SimContinuumShellSection
-                |     named "Continuum Shell Section.1" as following:
-                | 
-                |      Dim MyProperties As SimProperties
-                |      ...
-                |      Dim MyContinuumShellSection As SimContinuumShellSection
-                |      Set MyContinuumShellSection = MyProperties.Item("Continuum Shell Section.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimProperties object myProperties, you can create a
-                |     SimContinuumShellSection as following:
-                | 
-                |      ...
-                |      myContinuumShellSection = myProperties.Add("SimContinuumShellSection")
-                |      
-                | 
-                |     Given a SimProperties object myProperties, you can retrieve a
-                |     SimContinuumShellSection named "Continuum Shell Section.1" as
-                |     following:
-                | 
-                |      ...
-                |      myContinuumShellSection = myProperties.Item("Continuum Shell Section.1")
-                |      
-                | 
-                | See also:
-                |     SimProperties
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimContinuumShellSection
+                
+                Represents the Continuum Shell Section object.
+                
+                Example:
+                    Given a SimProperties object, you can create a SimContinuumShellSection as
+                    following:
+                
+                     Dim MyProperties As SimProperties
+                     ...
+                     Dim MyContinuumShellSection As SimContinuumShellSection
+                     Set MyContinuumShellSection = MyProperties.Add("SimContinuumShellSection")
+                     
+                
+                    Given a SimProperties object, you can retrieve a SimContinuumShellSection
+                    named "Continuum Shell Section.1" as following:
+                
+                     Dim MyProperties As SimProperties
+                     ...
+                     Dim MyContinuumShellSection As SimContinuumShellSection
+                     Set MyContinuumShellSection = MyProperties.Item("Continuum Shell Section.1")
+                     
+                
+                Example in Python:
+                    Given a SimProperties object myProperties, you can create a
+                    SimContinuumShellSection as following:
+                
+                     ...
+                     myContinuumShellSection = myProperties.Add("SimContinuumShellSection")
+                     
+                
+                    Given a SimProperties object myProperties, you can retrieve a
+                    SimContinuumShellSection named "Continuum Shell Section.1" as
+                    following:
+                
+                     ...
+                     myContinuumShellSection = myProperties.Item("Continuum Shell Section.1")
+                     
+                
+                See also:
+                    SimProperties
     
     """
 
@@ -77,12 +75,11 @@ class SimContinuumShellSection(AnyObject):
     def integration_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IntegrationScheme() As
-                | SimShellSectionIntegrationScheme
-                |     Returns or sets the integration scheme used for the section.
+                Property IntegrationScheme() As
+                SimShellSectionIntegrationScheme
+                    Returns or sets the integration scheme used for the section.
 
         :return: int
         """
@@ -101,11 +98,10 @@ class SimContinuumShellSection(AnyObject):
     def material_behavior(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialBehavior() As CATBaseDispatch
-                |     Returns or sets the material behavior.
+                Property MaterialBehavior() As CATBaseDispatch
+                    Returns or sets the material behavior.
 
         :return: AnyObject
         """
@@ -124,11 +120,10 @@ class SimContinuumShellSection(AnyObject):
     def material_behavior_by_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialBehaviorByName() As CATBSTR
-                |     Returns or sets the simulation material behavior by name.
+                Property MaterialBehaviorByName() As CATBSTR
+                    Returns or sets the simulation material behavior by name.
 
         :return: str
         """
@@ -147,11 +142,10 @@ class SimContinuumShellSection(AnyObject):
     def num_int_points(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumIntPoints() As long
-                |     Number of integration points.
+                Property NumIntPoints() As long
+                    Number of integration points.
 
         :return: int
         """
@@ -170,11 +164,10 @@ class SimContinuumShellSection(AnyObject):
     def orientation(self) -> SimOrientation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Orientation() As SimOrientation (Read Only)
-                |     Returns the orientation used for the section.
+                Property Orientation() As SimOrientation (Read Only)
+                    Returns the orientation used for the section.
 
         :return: SimOrientation
         """
@@ -185,11 +178,10 @@ class SimContinuumShellSection(AnyObject):
     def poisson_method(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PoissonMethod() As SimShellSectionPoissonMethod
-                |     Poisson method used for the section.
+                Property PoissonMethod() As SimShellSectionPoissonMethod
+                    Poisson method used for the section.
 
         :return: int
         """
@@ -208,11 +200,10 @@ class SimContinuumShellSection(AnyObject):
     def poisson_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PoissonValue() As double
-                |     Poisson's ratio used for the section. Quantity: Real, units: None
+                Property PoissonValue() As double
+                    Poisson's ratio used for the section. Quantity: Real, units: None
 
         :return: float
         """
@@ -231,16 +222,15 @@ class SimContinuumShellSection(AnyObject):
     def pre_integration_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PreIntegrationFlag() As boolean
-                |     Returns or sets the flag that determines if the continuum shell section is
-                |     pre-integrated.
-                | 
-                |     TRUE: the continuum shell section is pre-integrated.
-                | 
-                |     FALSE: the continuum shell section is not pre-integrated.
+                Property PreIntegrationFlag() As boolean
+                    Returns or sets the flag that determines if the continuum shell section is
+                    pre-integrated.
+                
+                    TRUE: the continuum shell section is pre-integrated.
+                
+                    FALSE: the continuum shell section is not pre-integrated.
 
         :return: bool
         """
@@ -259,17 +249,16 @@ class SimContinuumShellSection(AnyObject):
     def solids_at_junction_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SolidsAtJunctionFlag() As boolean
-                |     Returns or sets the flag that determines if the solid section will be
-                |     assigned to junctions elements of inflation mesh.
-                |     TRUE: solid section will be assigned to junctions elements of inflation
-                |     mesh.
-                | 
-                |     FALSE: solid section will not be assigned to junctions elements of
-                |     inflation mesh.
+                Property SolidsAtJunctionFlag() As boolean
+                    Returns or sets the flag that determines if the solid section will be
+                    assigned to junctions elements of inflation mesh.
+                    TRUE: solid section will be assigned to junctions elements of inflation
+                    mesh.
+                
+                    FALSE: solid section will not be assigned to junctions elements of
+                    inflation mesh.
 
         :return: bool
         """
@@ -288,36 +277,35 @@ class SimContinuumShellSection(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. Possible values are:
-                | 
-                |         Abstractions
-                |         Amplitudes
-                |         Controls
-                |         Connections
-                |         Damping
-                |         ElementTypeAssignments
-                |         Envelopes
-                |         FieldPlots
-                |         FlowConditions
-                |         HistoryPlots
-                |         InitialConditions
-                |         Interactions
-                |         LinearLoadCases
-                |         Loads
-                |         LoadSets
-                |         OutputRequests
-                |         PredefinedFields
-                |         Properties
-                |         Restraints
-                |         Sensors
-                |         Streams
-                |         ThermalConditions
-                |         NotDefined
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. Possible values are:
+                
+                        Abstractions
+                        Amplitudes
+                        Controls
+                        Connections
+                        Damping
+                        ElementTypeAssignments
+                        Envelopes
+                        FieldPlots
+                        FlowConditions
+                        HistoryPlots
+                        InitialConditions
+                        Interactions
+                        LinearLoadCases
+                        Loads
+                        LoadSets
+                        OutputRequests
+                        PredefinedFields
+                        Properties
+                        Restraints
+                        Sensors
+                        Streams
+                        ThermalConditions
+                        NotDefined
 
         :return: str
         """
@@ -327,17 +315,16 @@ class SimContinuumShellSection(AnyObject):
     def get_material_behavior(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMaterialBehavior() As CATBaseDispatch
-                | 
-                |     Deprecated:
-                |         R418 Retrieves the material behavior. 
-                |     Returns:
-                |         The material behavior. 
-                |     Returns:
-                |         S_OK if successful.
+                Func GetMaterialBehavior() As CATBaseDispatch
+                
+                    Deprecated:
+                        R418 Retrieves the material behavior. 
+                    Returns:
+                        The material behavior. 
+                    Returns:
+                        S_OK if successful.
 
         :return: AnyObject
         """
@@ -346,23 +333,22 @@ class SimContinuumShellSection(AnyObject):
     def set_material_behavior(self, i_behavior_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMaterialBehavior(CATBSTR iBehaviorName)
-                | 
-                |     Deprecated:
-                |         R418 Sets the material behavior. 
-                |     Parameters:
-                | 
-                |         iBehaviorName
-                |             [in] Alias (name) of the simulation material behavior. Default
-                |             behavior is set if the specified behavior is not found. If multiple behaviors
-                |             have the same alias, the first one found is selected.
-                |             
-                | 
-                |     Returns:
-                |         S_OK if successful. 
+                Sub SetMaterialBehavior(CATBSTR iBehaviorName)
+                
+                    Deprecated:
+                        R418 Sets the material behavior. 
+                    Parameters:
+                
+                        iBehaviorName
+                            [in] Alias (name) of the simulation material behavior. Default
+                            behavior is set if the specified behavior is not found. If multiple behaviors
+                            have the same alias, the first one found is selected.
+                            
+                
+                    Returns:
+                        S_OK if successful. 
 
         :param str i_behavior_name:
         :return: None
@@ -370,4 +356,4 @@ class SimContinuumShellSection(AnyObject):
         return self.com_object.SetMaterialBehavior(i_behavior_name)
 
     def __repr__(self):
-        return f'SimContinuumShellSection(name="{ self.name }")'
+        return f'SimContinuumShellSection(name="{self.name}")'

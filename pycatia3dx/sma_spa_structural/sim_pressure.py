@@ -13,58 +13,56 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimPressure(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimPressure
-                | 
-                | Represents the Pressure object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimPressure as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyPressure As SimPressure
-                |      Set MyPressure = MyFeatures.Add("SimPressure")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimPressure named
-                |     "Pressure.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyPressure As SimPressure
-                |      Set MyPressure = MyFeatures.Item("Pressure.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a SimPressure as
-                |     following:
-                | 
-                |      ...
-                |      myPressure = myFeatures.Add("SimPressure")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a SimPressure named
-                |     "Pressure.1" as following:
-                | 
-                |      ...
-                |      myPressure = myFeatures.Item("Pressure.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimPressure
+                
+                Represents the Pressure object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimPressure as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyPressure As SimPressure
+                     Set MyPressure = MyFeatures.Add("SimPressure")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimPressure named
+                    "Pressure.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyPressure As SimPressure
+                     Set MyPressure = MyFeatures.Item("Pressure.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a SimPressure as
+                    following:
+                
+                     ...
+                     myPressure = myFeatures.Add("SimPressure")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a SimPressure named
+                    "Pressure.1" as following:
+                
+                     ...
+                     myPressure = myFeatures.Item("Pressure.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -76,11 +74,10 @@ class SimPressure(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -99,11 +96,10 @@ class SimPressure(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureHistory() As SimFeatureHistory (Read Only)
-                |     Returns the feature history.
+                Property FeatureHistory() As SimFeatureHistory (Read Only)
+                    Returns the feature history.
 
         :return: SimFeatureHistory
         """
@@ -114,11 +110,10 @@ class SimPressure(AnyObject):
     def scalar_field(self) -> SimScalarField:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ScalarField() As SimScalarField (Read Only)
-                |     Returns the scalar field.
+                Property ScalarField() As SimScalarField (Read Only)
+                    Returns the scalar field.
 
         :return: SimScalarField
         """
@@ -129,12 +124,11 @@ class SimPressure(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. See SimFeatures.GetSpecTreeCategory for usage.
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. See SimFeatures.GetSpecTreeCategory for usage.
 
         :return: str
         """
@@ -145,11 +139,10 @@ class SimPressure(AnyObject):
     def uniform_magnitude(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UniformMagnitude() As double
-                |     Returns or sets the magnitude. Quantity: PRESSURE, units: N_m2
+                Property UniformMagnitude() As double
+                    Returns or sets the magnitude. Quantity: PRESSURE, units: N_m2
 
         :return: float
         """
@@ -168,16 +161,15 @@ class SimPressure(AnyObject):
     def uniform_magnitude_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UniformMagnitudeFlag() As boolean (Read Only)
-                |     Returns or sets the flag that determines if the magnitude is
-                |     uniform.
-                | 
-                |     TRUE: the magnitude is uniform.
-                | 
-                |     FALSE: the magnitude is not uniform. 
+                Property UniformMagnitudeFlag() As boolean (Read Only)
+                    Returns or sets the flag that determines if the magnitude is
+                    uniform.
+                
+                    TRUE: the magnitude is uniform.
+                
+                    FALSE: the magnitude is not uniform. 
 
         :return: bool
         """
@@ -185,4 +177,4 @@ class SimPressure(AnyObject):
         return self.com_object.UniformMagnitudeFlag
 
     def __repr__(self):
-        return f'SimPressure(name="{ self.name }")'
+        return f'SimPressure(name="{self.name}")'

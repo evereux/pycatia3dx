@@ -12,24 +12,22 @@ from pycatia3dx.part.surface_based_shape import SurfaceBasedShape
 
 
 class CloseSurface(SurfaceBasedShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.SurfaceBasedShape
-                |                             CloseSurface
-                | 
-                | Represents the Close feature.
-                | It Closes a skin .
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.SurfaceBasedShape
+                                            CloseSurface
+                
+                Represents the Close feature.
+                It Closes a skin .
 
     """
 
@@ -38,4 +36,4 @@ class CloseSurface(SurfaceBasedShape):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'CloseSurface(name="{ self.name }")'
+        return f'CloseSurface(name="{self.name}")'

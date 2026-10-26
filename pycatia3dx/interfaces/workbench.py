@@ -14,23 +14,22 @@ from pycatia3dx.system.any_object import AnyObject
 class Workbench(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Workbench
-                | 
-                | Represents a workbench on a document.
-                | Role:A workbench is a set of commands that can be used to create, modify and
-                | edit the objects making up the document.
-                | 
-                | See also:
-                |     CATIADocument
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Workbench
+                
+                Represents a workbench on a document.
+                Role:A workbench is a set of commands that can be used to create, modify and
+                edit the objects making up the document.
+                
+                See also:
+                    CATIADocument
     
     """
 

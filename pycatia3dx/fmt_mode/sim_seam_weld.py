@@ -14,18 +14,17 @@ from pycatia3dx.system.any_object import AnyObject
 class SimSeamWeld(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimSeamWeld
-                | 
-                | Represents a Seam Weld Local Specification.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimSeamWeld
+                
+                Represents a Seam Weld Local Specification.
     
     """
 
@@ -36,12 +35,11 @@ class SimSeamWeld(AnyObject):
     def add_all_compatible_fasteners_as_supports(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddAllCompatibleFastenersAsSupports()
-                |     Retrieves all the compatible line fasteners from the Mesh Part support and
-                |     adds them as Seam Weld Local Specification support.
+                Sub AddAllCompatibleFastenersAsSupports()
+                    Retrieves all the compatible line fasteners from the Mesh Part support and
+                    adds them as Seam Weld Local Specification support.
 
         :return: None
         """

@@ -12,25 +12,23 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ExpertRuleBaseComponentRuntime(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ExpertRuleBaseComponentRuntime
-                | 
-                | Represents a rule base component in a ruleset.
-                | 
-                | See also:
-                |     ExpertRuleBaseComponentRuntimes.Item, ExpertRuleRuntime,
-                |     ExpertCheckRuntime, ExpertRuleSetRuntime
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ExpertRuleBaseComponentRuntime
+                
+                Represents a rule base component in a ruleset.
+                
+                See also:
+                    ExpertRuleBaseComponentRuntimes.Item, ExpertRuleRuntime,
+                    ExpertCheckRuntime, ExpertRuleSetRuntime
     
     """
 
@@ -42,11 +40,10 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
     def comment(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Comment() As CATBSTR
-                |     Returns or sets the comment of a rulebase component.
+                Property Comment() As CATBSTR
+                    Returns or sets the comment of a rulebase component.
 
         :return: str
         """
@@ -64,16 +61,15 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
     def accurate_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func AccurateType() As CATBSTR
-                |     Returns as a string the type of component. Returns a string among
-                |     ("ExpertCheck", "ExpertCheckRuntime", "ExpertRule", "ExpertRuleRuntime",
-                |     "ExpertRuleSet", "ExpertRuleSetRuntime").
-                | 
-                |     Returns:
-                |         Type name of the rule base component
+                Func AccurateType() As CATBSTR
+                    Returns as a string the type of component. Returns a string among
+                    ("ExpertCheck", "ExpertCheckRuntime", "ExpertRule", "ExpertRuleRuntime",
+                    "ExpertRuleSet", "ExpertRuleSetRuntime").
+                
+                    Returns:
+                        Type name of the rule base component
 
         :return: str
         """
@@ -82,11 +78,10 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
     def activate(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Activate()
-                |     Activates the RuleBaseComponent.
+                Sub Activate()
+                    Activates the RuleBaseComponent.
 
         :return: None
         """
@@ -95,11 +90,10 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
     def deactivate(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Deactivate()
-                |     Desactivates the RuleBaseComponent.
+                Sub Deactivate()
+                    Desactivates the RuleBaseComponent.
 
         :return: None
         """
@@ -108,14 +102,13 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
     def is_use_only(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsUseOnly() As boolean
-                |     Retrieves the use-only status of the component.
-                | 
-                |     Returns:
-                |         Use only status of the component
+                Func IsUseOnly() As boolean
+                    Retrieves the use-only status of the component.
+                
+                    Returns:
+                        Use only status of the component
 
         :return: bool
         """
@@ -124,14 +117,13 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
     def isactivate(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Isactivate() As boolean
-                |     Tells if the RuleBaseComponent is active.
-                | 
-                |     Returns:
-                |         Activity of the rule base component
+                Func Isactivate() As boolean
+                    Tells if the RuleBaseComponent is active.
+                
+                    Returns:
+                        Activity of the rule base component
 
         :return: bool
         """
@@ -140,14 +132,13 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
     def parse(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Parse() As CATBSTR
-                |     Syntactically analyses (ie parses) the component.
-                | 
-                |     Returns:
-                |         Empty string if the parse is correct, otherwise comments on the errors
+                Func Parse() As CATBSTR
+                    Syntactically analyses (ie parses) the component.
+                
+                    Returns:
+                        Empty string if the parse is correct, otherwise comments on the errors
 
         :return: str
         """
@@ -156,15 +147,14 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
     def set_use_only(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetUseOnly()
-                |     Prevents any access to the component for reading or deleting. Be careful : this operation is not reversible.
+                Sub SetUseOnly()
+                    Prevents any access to the component for reading or deleting. Be careful : this operation is not reversible.
 
         :return: None
         """
         return self.com_object.SetUseOnly()
 
     def __repr__(self):
-        return f'ExpertRuleBaseComponentRuntime(name="{ self.name }")'
+        return f'ExpertRuleBaseComponentRuntime(name="{self.name}")'

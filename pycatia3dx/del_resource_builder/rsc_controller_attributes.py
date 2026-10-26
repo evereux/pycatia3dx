@@ -12,44 +12,42 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class RscControllerAttributes(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     RscControllerAttributes
-                | 
-                | Interface to access the controller attributes.
-                | Role: This interface provides methods to access the controller
-                | parameters.
-                | This API retrieves the default attributes of the controller. There are used
-                | before any simulation and must be modified before the simulation
-                | starts.
-                | 
-                | Example:
-                |     Let assume there is a robot opened as a root entity in a given
-                |     editor.
-                | 
-                |      Dim MainResource As Variant
-                |      Set MainResource = CATIA.ActiveEditor.ActiveObject
-                | 
-                |      Dim MySelectedResource As RscControllerAttributesAccess
-                |      Set MySelectedResource = MainResource.GetItem("CAARscControllerAttributesAccess")
-                |      
-                |      If Not MySelectedResource Is Nothing Then
-                |        Dim MyControllerData As RscControllerAttributes
-                |        MyControllerData = MySelectedResource.RetrieveControllerAttributesObject
-                |      End If
-                | 
-                | See also:
-                |     RscControllerAttributesAccess
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    RscControllerAttributes
+                
+                Interface to access the controller attributes.
+                Role: This interface provides methods to access the controller
+                parameters.
+                This API retrieves the default attributes of the controller. There are used
+                before any simulation and must be modified before the simulation
+                starts.
+                
+                Example:
+                    Let assume there is a robot opened as a root entity in a given
+                    editor.
+                
+                     Dim MainResource As Variant
+                     Set MainResource = CATIA.ActiveEditor.ActiveObject
+                
+                     Dim MySelectedResource As RscControllerAttributesAccess
+                     Set MySelectedResource = MainResource.GetItem("CAARscControllerAttributesAccess")
+                     
+                     If Not MySelectedResource Is Nothing Then
+                       Dim MyControllerData As RscControllerAttributes
+                       MyControllerData = MySelectedResource.RetrieveControllerAttributesObject
+                     End If
+                
+                See also:
+                    RscControllerAttributesAccess
     
     """
 
@@ -61,19 +59,18 @@ class RscControllerAttributes(AnyObject):
     def acceleration_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AccelerationMode() As long
-                |     Indicates the accelration scaling mode mode.
-                | 
-                |         0: variable acceleration time
-                |         1: constant acceleration time
-                | 
-                |     Example:
-                | 
-                |      Dim MyMode As Integer
-                |      MyMode = MyControllerData.AccelerationMode
+                Property AccelerationMode() As long
+                    Indicates the accelration scaling mode mode.
+                
+                        0: variable acceleration time
+                        1: constant acceleration time
+                
+                    Example:
+                
+                     Dim MyMode As Integer
+                     MyMode = MyControllerData.AccelerationMode
 
         :return: int
         """
@@ -92,19 +89,18 @@ class RscControllerAttributes(AnyObject):
     def acceleration_scaling(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AccelerationScaling() As long
-                |     Indicates the accelration scaling mode mode.
-                | 
-                |         0: variable time
-                |         1: constant time
-                | 
-                |     Example:
-                | 
-                |      Dim MyMode As Integer
-                |      MyMode = MyControllerData.AccelerationScaling
+                Property AccelerationScaling() As long
+                    Indicates the accelration scaling mode mode.
+                
+                        0: variable time
+                        1: constant time
+                
+                    Example:
+                
+                     Dim MyMode As Integer
+                     MyMode = MyControllerData.AccelerationScaling
 
         :return: int
         """
@@ -123,16 +119,15 @@ class RscControllerAttributes(AnyObject):
     def controller_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ControllerType() As CATBSTR
-                |     Indicates the controller type.
-                | 
-                |     Example:
-                | 
-                |      Dim MyControllerType As String
-                |      MyControllerType = MyControllerData.ControllerType
+                Property ControllerType() As CATBSTR
+                    Indicates the controller type.
+                
+                    Example:
+                
+                     Dim MyControllerType As String
+                     MyControllerType = MyControllerData.ControllerType
 
         :return: str
         """
@@ -151,16 +146,15 @@ class RscControllerAttributes(AnyObject):
     def heart_beat(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HeartBeat() As double
-                |     Indicates the resource sampling rate.
-                | 
-                |     Example:
-                | 
-                |      Dim MyValue As Double
-                |      MyValue = MyControllerData.HeartBeat
+                Property HeartBeat() As double
+                    Indicates the resource sampling rate.
+                
+                    Example:
+                
+                     Dim MyValue As Double
+                     MyValue = MyControllerData.HeartBeat
 
         :return: float
         """
@@ -179,22 +173,21 @@ class RscControllerAttributes(AnyObject):
     def joint_interpolation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property JointInterpolationMode() As long
-                |     Indicates the joint interpolation mode.
-                | 
-                |         0: shortest angle
-                |         1: solution angle
-                |         2: turn numbers
-                |         3: absolute shortest angle
-                |         4: turn signs
-                | 
-                |     Example:
-                | 
-                |      Dim MyMode As Integer
-                |      MyMode = MyControllerData.JointInterpolationMode
+                Property JointInterpolationMode() As long
+                    Indicates the joint interpolation mode.
+                
+                        0: shortest angle
+                        1: solution angle
+                        2: turn numbers
+                        3: absolute shortest angle
+                        4: turn signs
+                
+                    Example:
+                
+                     Dim MyMode As Integer
+                     MyMode = MyControllerData.JointInterpolationMode
 
         :return: int
         """
@@ -213,16 +206,15 @@ class RscControllerAttributes(AnyObject):
     def response_delay(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ResponseDelay() As double
-                |     Indicates the resource response delay.
-                | 
-                |     Example:
-                | 
-                |      Dim MyValue As Double
-                |      MyValue = MyControllerData.ResponseDelay
+                Property ResponseDelay() As double
+                    Indicates the resource response delay.
+                
+                    Example:
+                
+                     Dim MyValue As Double
+                     MyValue = MyControllerData.ResponseDelay
 
         :return: float
         """
@@ -241,16 +233,15 @@ class RscControllerAttributes(AnyObject):
     def settle_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SettleTime() As double
-                |     Indicates the resource settle time.
-                | 
-                |     Example:
-                | 
-                |      Dim MyValue As Double
-                |      MyValue = MyControllerData.SettleTime
+                Property SettleTime() As double
+                    Indicates the resource settle time.
+                
+                    Example:
+                
+                     Dim MyValue As Double
+                     MyValue = MyControllerData.SettleTime
 
         :return: float
         """
@@ -269,17 +260,16 @@ class RscControllerAttributes(AnyObject):
     def singularity_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SingularityTolerance() As double
-                |     Indicates the singularity tolerance. A 0 value will deactivate the
-                |     singularity check.
-                | 
-                |     Example:
-                | 
-                |      Dim MyValue As Double
-                |      MyValue = MyControllerData.SingularityTolerance
+                Property SingularityTolerance() As double
+                    Indicates the singularity tolerance. A 0 value will deactivate the
+                    singularity check.
+                
+                    Example:
+                
+                     Dim MyValue As Double
+                     MyValue = MyControllerData.SingularityTolerance
 
         :return: float
         """
@@ -298,19 +288,18 @@ class RscControllerAttributes(AnyObject):
     def time_based_motion(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TimeBasedMotion() As long
-                |     Indicates the time based motion mode.
-                | 
-                |         0: exact
-                |         1: constrained
-                | 
-                |     Example:
-                | 
-                |      Dim MyMode As Integer
-                |      MyMode = MyControllerData.TimeBasedMotion
+                Property TimeBasedMotion() As long
+                    Indicates the time based motion mode.
+                
+                        0: exact
+                        1: constrained
+                
+                    Example:
+                
+                     Dim MyMode As Integer
+                     MyMode = MyControllerData.TimeBasedMotion
 
         :return: int
         """
@@ -326,4 +315,4 @@ class RscControllerAttributes(AnyObject):
         self.com_object.TimeBasedMotion = value
 
     def __repr__(self):
-        return f'RscControllerAttributes(name="{ self.name }")'
+        return f'RscControllerAttributes(name="{self.name}")'

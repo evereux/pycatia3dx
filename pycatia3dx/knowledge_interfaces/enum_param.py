@@ -12,25 +12,23 @@ from pycatia3dx.knowledge_interfaces.parameter import Parameter
 
 
 class EnumParam(Parameter):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     KnowledgeIDLItf.Parameter
-                |                         EnumParam
-                | 
-                | Represents the enum parameter.
-                | 
-                | See also:
-                |     BoolParam
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    KnowledgeIDLItf.Parameter
+                                        EnumParam
+                
+                Represents the enum parameter.
+                
+                See also:
+                    BoolParam
     
     """
 
@@ -42,21 +40,20 @@ class EnumParam(Parameter):
     def value_enum(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property ValueEnum() As CATBSTR
-                |     Returns or sets the value of the EnumParameter object. Units are expressed
-                |     in the IS unit system, except for lengths expressed in millimeters, and angles
-                |     expressed in decimal degrees.
-                | 
-                |     Example:
-                |         This example sets the param1 value to 1 if its value is greater than
-                |         2.5:
-                | 
-                |          If (density.Value > 2.5)  Then
-                |              density.Value = 1
-                |          End If
+                Property ValueEnum() As CATBSTR
+                    Returns or sets the value of the EnumParameter object. Units are expressed
+                    in the IS unit system, except for lengths expressed in millimeters, and angles
+                    expressed in decimal degrees.
+                
+                    Example:
+                        This example sets the param1 value to 1 if its value is greater than
+                        2.5:
+                
+                         If (density.Value > 2.5)  Then
+                             density.Value = 1
+                         End If
 
         :return: str
         """
@@ -72,4 +69,4 @@ class EnumParam(Parameter):
         self.com_object.ValueEnum = value
 
     def __repr__(self):
-        return f'EnumParam(name="{ self.name }")'
+        return f'EnumParam(name="{self.name}")'
